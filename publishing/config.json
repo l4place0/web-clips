@@ -15,7 +15,12 @@
       ".video-sum-temp/**",
       ".video-sum-work/**",
       "node_modules/**",
-      "publishing/**"
+      "publishing/**",
+      "public/**",
+      "public.tmp-*/**",
+      "public.backup-*/**",
+      "site/**",
+      "README.md"
     ]
   },
   "frontmatter": {

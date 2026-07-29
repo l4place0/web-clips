@@ -215,6 +215,10 @@ export async function loadConfig(root) {
 function excludedDirectory(config, relativePath) {
   const posix = toPosix(relativePath)
   return config.source.exclude.some((pattern) => {
+    if (pattern.endsWith("*/**")) {
+      const prefix = pattern.slice(0, -4)
+      return posix.startsWith(prefix)
+    }
     if (pattern.endsWith("/**")) {
       const prefix = pattern.slice(0, -3)
       return posix === prefix || posix.startsWith(`${prefix}/`)

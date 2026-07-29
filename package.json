@@ -7,9 +7,11 @@
     "publish:validate": "node publishing/cli.mjs validate",
     "publish:dry-run": "node publishing/cli.mjs build --dry-run",
     "build:site": "node site/build.mjs",
-    "test:publisher": "node --test publishing/*.test.mjs",
-    "test:site": "node --test site/*.test.mjs",
-    "test": "node --test publishing/*.test.mjs site/*.test.mjs"
+    "test:publisher": "node --test --test-concurrency=1 publishing/*.test.mjs",
+    "test:site": "node --test --test-concurrency=1 site/*.test.mjs",
+    "test": "node --test --test-concurrency=1 publishing/*.test.mjs site/*.test.mjs",
+    "test:mvp": "npm test && npm run build:site",
+    "test:mvp:live": "node site/live-check.mjs"
   },
   "devDependencies": {
     "@jackyzha0/quartz": "https://github.com/jackyzha0/quartz/archive/ab346fa66a895e12d63a308e70ce330ba795822a.tar.gz",
