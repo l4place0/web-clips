@@ -1258,6 +1258,61 @@ export async function assignId(rootInput, noteInput, { now = () => new Date().to
   }
 }
 
+export async function optInForAutomaticPublishing(rootInput, noteInput) {
+  const root = path.resolve(rootInput)
+  const config = await loadConfig(root)
+  const noteAbsolute = path.resolve(root, noteInput)
+  if (
+    !isWithin(root, noteAbsolute) ||
+    noteAbsolute === root ||
+    path.extname(noteAbsolute).toLowerCase() !== ".md"
+  ) {
+    throw new PublishError("Note path is outside the source workspace", contractExit(config), [
+      diag("E_CONFIG_INVALID", noteInput, "unsafe-note-path"),
+    ])
+  }
+  const relativePath = normalizeRelative(path.relative(root, noteAbsolute))
+  if (excludedDirectory(config, relativePath)) {
+    throw new PublishError("Note path is excluded", contractExit(config), [
+      diag("E_CONFIG_INVALID", relativePath, "excluded-note-path"),
+    ])
+  }
+  const text = await fs.readFile(noteAbsolute, "utf8")
+  const parsed = parseFrontmatter(text, relativePath)
+  const field = config.frontmatter.publishField
+  if (Object.hasOwn(parsed.data, field)) {
+    if (typeof parsed.data[field] !== "boolean") {
+      throw new PublishError("Publish field must be a YAML boolean", contentExit(config), [
+        diag("E_PUBLISH_TYPE", relativePath, typeof parsed.data[field]),
+      ])
+    }
+    return {
+      ok: true,
+      command: "auto-opt-in",
+      path: relativePath,
+      changed: false,
+      optedOut: parsed.data[field] === false,
+      exitCode: 0,
+    }
+  }
+  const nextText = insertFrontmatterFields(text, parsed, { [field]: true })
+  try {
+    await transactionalWriteFiles([{ path: noteAbsolute, content: nextText }])
+  } catch (error) {
+    throw new PublishError("Failed to opt note into automatic publishing", filesystemExit(config), [
+      diag("E_CONFIG_INVALID", relativePath, error.code ?? "io-failure"),
+    ])
+  }
+  return {
+    ok: true,
+    command: "auto-opt-in",
+    path: relativePath,
+    changed: true,
+    optedOut: false,
+    exitCode: 0,
+  }
+}
+
 export async function clean(rootInput) {
   const root = path.resolve(rootInput)
   const config = await loadConfig(root)

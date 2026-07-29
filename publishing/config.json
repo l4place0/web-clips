@@ -23,6 +23,10 @@
       "README.md"
     ]
   },
+  "autoSync": {
+    "rootMarkdownOnly": true,
+    "quietWindowSeconds": 30
+  },
   "frontmatter": {
     "publishField": "publish",
     "publishedValueType": "boolean",
