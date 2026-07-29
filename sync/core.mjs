@@ -440,12 +440,15 @@ async function appendLog(root, event) {
   }
 }
 
-function npmExecutable() {
-  return process.platform === "win32" ? "npm.cmd" : "npm"
-}
-
 async function runGate(root, script) {
-  return run(npmExecutable(), ["run", script], { cwd: root })
+  const commands = {
+    "publish:validate": [path.join(root, "publishing", "cli.mjs"), "validate"],
+    "publish:dry-run": [path.join(root, "publishing", "cli.mjs"), "build", "--dry-run"],
+    "build:site": [path.join(root, "site", "build.mjs")],
+  }
+  const args = commands[script]
+  if (!args) throw new Error(`unknown sync gate: ${script}`)
+  return run(process.execPath, args, { cwd: root })
 }
 
 function affectedAssetPaths(previousState, analysis, affectedNotes) {
