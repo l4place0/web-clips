@@ -1,0 +1,6480 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV19v3g6EENM",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV19v3g6EENM/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV19v3g6EENM"
+  },
+  "title": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）",
+  "metadata": {
+    "title": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）",
+    "duration": 3710,
+    "thumbnail": "http://i1.hdslb.com/bfs/archive/5b67b491be7061ab186cca7d4035345ed7610e2d.jpg",
+    "uploader": "KeepAsking追问",
+    "video_id": "BV19v3g6EENM",
+    "description": "L8 Principal's Agentic Engineering Setup (just copy him)\n前 Meta / Microsoft / Google L8 首席工程师 Kun Chen，每天用 AI Agent 发 40-50 个 PR，他是怎么做到的？\n\n本视频完整拆解他的 Agentic Engineering 工作流：\n\n🖥️ 终端优先的开发环境（WezTerm + tmux + Neovim）\n🧠 全局 & 项目级 Memory 文件——让 Agent 记住你的偏好\n🛠️ Skills 渐进式披露——精简 system prompt，减少 token 消耗\n🎙️ 语音输入（OpenSuperWhisper 本地运行）\n✅ No Mistakes 管道——自动化代码审查 + 测试 + PR 创建\n🌙 GNHF（Goodnight Have Fun）——睡觉时 Agent 继续干活\n🌲 Treehouse——并行 Git worktree 管理\n⚓ First Mate——让一个 Agent 指挥其他 Agent，你只做决策\n\n原视频：David Ondrej x Kun Chen 播客（2026.07.16）\nKun Chen YouTube：@kunchenguid\n完整配置获取：https://www.davidondrej.com/kun-chen-podcast",
+    "tags": [
+      "克劳德",
+      "软件工程",
+      "终端工具",
+      "代码审查",
+      "AI工作流",
+      "AI Agent",
+      "Agentic编程",
+      "AI编程",
+      "编程效率",
+      "上B站看播客"
+    ],
+    "view_count": 1112,
+    "like_count": 25,
+    "upload_date": 1784978600,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "5f3202d4c6ea2cc5bd877942e871d6420b775dc021a101614eaf2f497e0d8db3",
+    "audio": "cbce36b95be65724c6bd0955ff13662395ee1f371e7472f4e48ae22939be738a",
+    "transcript": "ab57c809a232f47c6bfce4e56808f72abb5fa8bcb45fc5a7dcea4faf4996eeba",
+    "frames": "278e744e943ce7b0e5fceb0fb2d02843fdde91451e2d61fc28a5b9f8693844c1"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 26.0,
+      "text": "I just have a frameless terminal window here, this is using western, I like western because it's really highly customizable, I can just like change everything about it, what I have here is a hearder session, hearder is kind of like a modern version of T-Mux, I was using T-Mux for like over 10 years and only recently discovered hearder and I just really like it, it's a more modern take, how you manage multiple sessions in your terminal window."
+    },
+    {
+      "start": 26.0,
+      "end": 41.0,
+      "text": "So this is running on my Mac mini, and I can connect to this same session from my phone, so I can take my phone, I do a SSH connection, I can get this exact same terminal window, and that's a good thing about hearder, which is that it understands what agents are."
+    },
+    {
+      "start": 41.0,
+      "end": 64.0,
+      "text": "So in order to get more work done, people have to manage multiple parallel agent sessions, because one agent can take a while to get work done, so people start to spin up more sessions, and sometimes I see people have like 20-30 sessions, but then I kind of like was going crazy, because 20 sessions you have to keep that in your head."
+    },
+    {
+      "start": 64.0,
+      "end": 77.0,
+      "text": "So that pain caused me to develop first mate, because I just don't think that's gonna be the end game, like I don't want to spend all day just juggling between the tabs, and remembering what was what."
+    },
+    {
+      "start": 77.0,
+      "end": 93.0,
+      "text": "I developed first mate because I think the agents as they become more capable should be able to juggle all those things for me, and I started experimenting with this setup since a few months ago, and it actually works, so now this is like the only agent I talk to most of the time."
+    },
+    {
+      "start": 94.0,
+      "end": 101.0,
+      "text": "Rightkun, so you were an elite engineer at some elite companies like Meta, Microsoft, Atlation, what does your current AI coding setup look like?"
+    },
+    {
+      "start": 101.0,
+      "end": 108.0,
+      "text": "I have been using AI to pretty much like write everything I want to build, I very rarely would manually write any code now."
+    },
+    {
+      "start": 108.0,
+      "end": 109.0,
+      "text": "And when did that change by the way?"
+    },
+    {
+      "start": 109.0,
+      "end": 127.0,
+      "text": "I think it was a gradual process, so initially I think three years ago we had GitHub co-pilot, code completion, and we started with just like taking the code suggestions one line after another, and then it evolved, it started to give us like multiple lines a whole function at a time,"
+    },
+    {
+      "start": 127.0,
+      "end": 146.0,
+      "text": "And then I think like one inflection point that changed that status quo was when sonnet3.5v2 was introduced, that was a game changing moment, so that was the first time I think an agent can take a task and start to do things for us and come back with like a complete set of results."
+    },
+    {
+      "start": 146.0,
+      "end": 156.0,
+      "text": "So I started working with agents around that time.It was also very interesting because I was working at Atlation at the time, and my job was to develop coding agents."
+    },
+    {
+      "start": 156.0,
+      "end": 166.0,
+      "text": "So I played with the model a lot, I tried various kind of models starting from GPT3.5, it was just not working, asking it to edit a file, it's already a lot of trouble."
+    },
+    {
+      "start": 166.0,
+      "end": 172.0,
+      "text": "GP4 was a little bit better, but still not quite there, it was really sonnet3.5v2, that's really changed the game."
+    },
+    {
+      "start": 172.0,
+      "end": 180.0,
+      "text": "So that was another I think inflection point, a few of these inflection points really like changed my workflow a lot through the past three years."
+    },
+    {
+      "start": 180.0,
+      "end": 182.0,
+      "text": "So can you screenshot and show us your current setup?"
+    },
+    {
+      "start": 182.0,
+      "end": 186.0,
+      "text": "Yeah, yeah, sure. David, are you a terminal person or a GUI?"
+    },
+    {
+      "start": 186.0,
+      "end": 194.0,
+      "text": "I'm actually both, like literally there's weeks when I'm only using the terminal like CMUX, and there's weeks when I'm like either the Codex app or the cursor agents window."
+    },
+    {
+      "start": 194.0,
+      "end": 195.0,
+      "text": "So I'm a hybrid."
+    },
+    {
+      "start": 195.0,
+      "end": 196.0,
+      "text": "Okay, cool, cool, cool."
+    },
+    {
+      "start": 196.0,
+      "end": 197.0,
+      "text": "I'm more on the terminal side."
+    },
+    {
+      "start": 197.0,
+      "end": 202.0,
+      "text": "So I try to use the terminal as my primary development experience."
+    },
+    {
+      "start": 202.0,
+      "end": 204.0,
+      "text": "I have just built so much muscle memory with it."
+    },
+    {
+      "start": 204.0,
+      "end": 209.0,
+      "text": "I have been using my setup for like over two decades writing code in terminal."
+    },
+    {
+      "start": 209.0,
+      "end": 215.0,
+      "text": "I think the habit it creates for me is just to have my hands on the keyboards pretty much at all times."
+    },
+    {
+      "start": 215.0,
+      "end": 218.0,
+      "text": "What would you tell to people who like are afraid of the terminal?"
+    },
+    {
+      "start": 218.0,
+      "end": 221.0,
+      "text": "You know, maybe they were not developers, they're not that technical."
+    },
+    {
+      "start": 221.0,
+      "end": 222.0,
+      "text": "What would you say to those?"
+    },
+    {
+      "start": 222.0,
+      "end": 233.0,
+      "text": "There is a learning curve initially to get used to a different kind of workflow where you are using your keyboard to control like all the movements and everything in the terminal."
+    },
+    {
+      "start": 233.0,
+      "end": 244.0,
+      "text": "So initially, I think you will feel there is like a productivity loss because you are not comfortable and you are just you're not sure how to get everything done, right?"
+    },
+    {
+      "start": 244.0,
+      "end": 245.0,
+      "text": "So there is the initial phase."
+    },
+    {
+      "start": 245.0,
+      "end": 254.0,
+      "text": "But once you get past that, it keeps you in the flow because you can just have your hands on the keyboard, like control everything from here using keyboard shortcuts and everything."
+    },
+    {
+      "start": 254.0,
+      "end": 258.0,
+      "text": "Your thoughts is like the only thing that's flowing."
+    },
+    {
+      "start": 258.0,
+      "end": 259.0,
+      "text": "Awesome."
+    },
+    {
+      "start": 259.0,
+      "end": 260.0,
+      "text": "So work us through it."
+    },
+    {
+      "start": 260.0,
+      "end": 261.0,
+      "text": "We have Pigeon here."
+    },
+    {
+      "start": 261.0,
+      "end": 262.0,
+      "text": "What's happening?"
+    },
+    {
+      "start": 262.0,
+      "end": 264.0,
+      "text": "The bottleneck isn't coding anymore."
+    },
+    {
+      "start": 264.0,
+      "end": 270.0,
+      "text": "The bottleneck is reviewing thousands of lines of AI written code to make sure you're not shipping slop."
+    },
+    {
+      "start": 270.0,
+      "end": 275.0,
+      "text": "And a lot of you already use cloud code, cursor or codex to write code."
+    },
+    {
+      "start": 275.0,
+      "end": 280.0,
+      "text": "But what you don't have yet is something that reviews your code as carefully as a human would."
+    },
+    {
+      "start": 280.0,
+      "end": 282.0,
+      "text": "That is what CodeRabbit is."
+    },
+    {
+      "start": 282.0,
+      "end": 286.0,
+      "text": "And CodeRabbit doesn't just take one look at your code through an LLM."
+    },
+    {
+      "start": 286.0,
+      "end": 290.0,
+      "text": "Instead, you connect CodeRabbit to your repo and it understands your entire code base."
+    },
+    {
+      "start": 290.0,
+      "end": 294.0,
+      "text": "It pulls in external context like linked issues and documentation."
+    },
+    {
+      "start": 294.0,
+      "end": 297.0,
+      "text": "And on top of that, it runs 40 plus different linters and security scanners."
+    },
+    {
+      "start": 297.0,
+      "end": 301.0,
+      "text": "Then it surfaces it in one digestible format so you can act on it."
+    },
+    {
+      "start": 301.0,
+      "end": 305.0,
+      "text": "And the feedback CodeRabbit gives you isn't just add more tests."
+    },
+    {
+      "start": 305.0,
+      "end": 307.0,
+      "text": "It's clear, specific and actionable."
+    },
+    {
+      "start": 307.0,
+      "end": 310.0,
+      "text": "It shows you what changed, why it matters and how to fix it."
+    },
+    {
+      "start": 310.0,
+      "end": 316.0,
+      "text": "And when it finds something like a bug, there's an easy fix with AI button that solves the issue with one click."
+    },
+    {
+      "start": 316.0,
+      "end": 319.0,
+      "text": "And what's nice about CodeRabbit is that it meets you where you already work."
+    },
+    {
+      "start": 319.0,
+      "end": 324.0,
+      "text": "Whether that is during PR review in your IDE, in the CLI, in Slack or Discord."
+    },
+    {
+      "start": 324.0,
+      "end": 327.0,
+      "text": "So you can review where is the most convenient for you."
+    },
+    {
+      "start": 327.0,
+      "end": 329.0,
+      "text": "And it's not a static checklist either."
+    },
+    {
+      "start": 329.0,
+      "end": 334.0,
+      "text": "Give it feedback once in plain English and it remembers your standards and preferences every review after that."
+    },
+    {
+      "start": 334.0,
+      "end": 340.0,
+      "text": "Even today CodeRabbit is already reviewing over 3 million unique pull requests every single week."
+    },
+    {
+      "start": 340.0,
+      "end": 344.0,
+      "text": "Which makes it the most installed AI app on both github and goodlap."
+    },
+    {
+      "start": 344.0,
+      "end": 348.0,
+      "text": "And if you're building a public open source postory CodeRabbit is free forever."
+    },
+    {
+      "start": 348.0,
+      "end": 351.0,
+      "text": "All of us are shipping more code than ever before."
+    },
+    {
+      "start": 351.0,
+      "end": 355.0,
+      "text": "And it has never been more important to understand and review your pull requests properly."
+    },
+    {
+      "start": 355.0,
+      "end": 357.0,
+      "text": "That is what CodeRabbit solves."
+    },
+    {
+      "start": 357.0,
+      "end": 361.0,
+      "text": "If you wanna try CodeRabbit yourself, it's gonna be the first link in the description."
+    },
+    {
+      "start": 361.0,
+      "end": 363.0,
+      "text": "I just have a frameless terminal window here."
+    },
+    {
+      "start": 363.0,
+      "end": 365.0,
+      "text": "This is using west term."
+    },
+    {
+      "start": 365.0,
+      "end": 368.0,
+      "text": "I like west term because it's really highly customizable."
+    },
+    {
+      "start": 368.0,
+      "end": 370.0,
+      "text": "I can just like change everything about it."
+    },
+    {
+      "start": 370.0,
+      "end": 372.0,
+      "text": "And here I made it frameless."
+    },
+    {
+      "start": 372.0,
+      "end": 374.0,
+      "text": "So there is no window border."
+    },
+    {
+      "start": 374.0,
+      "end": 377.0,
+      "text": "There is no nothing like it's just a pure terminal window."
+    },
+    {
+      "start": 377.0,
+      "end": 379.0,
+      "text": "And with like background blur and everything."
+    },
+    {
+      "start": 379.0,
+      "end": 382.0,
+      "text": "I like it to look good."
+    },
+    {
+      "start": 382.0,
+      "end": 385.0,
+      "text": "So when I work I can look at a pleasing experience."
+    },
+    {
+      "start": 385.0,
+      "end": 388.0,
+      "text": "What I have here is a herder session."
+    },
+    {
+      "start": 388.0,
+      "end": 391.0,
+      "text": "Herder is kind of like a modern version of T-Max."
+    },
+    {
+      "start": 391.0,
+      "end": 393.0,
+      "text": "I was using T-Max for like over 10 years."
+    },
+    {
+      "start": 393.0,
+      "end": 396.0,
+      "text": "And only recently discovered herder and I just really like it."
+    },
+    {
+      "start": 396.0,
+      "end": 398.0,
+      "text": "It's a more modern take."
+    },
+    {
+      "start": 398.0,
+      "end": 401.0,
+      "text": "How you manage multiple sessions in your terminal window."
+    },
+    {
+      "start": 401.0,
+      "end": 406.0,
+      "text": "So have you tried like C-Max and what's the difference between like C-Max and herder?"
+    },
+    {
+      "start": 406.0,
+      "end": 409.0,
+      "text": "So herder is even more in the terminal."
+    },
+    {
+      "start": 409.0,
+      "end": 411.0,
+      "text": "C-Max has a GUI frame."
+    },
+    {
+      "start": 411.0,
+      "end": 415.0,
+      "text": "And within the frame there is like some pains that are terminals."
+    },
+    {
+      "start": 415.0,
+      "end": 417.0,
+      "text": "But herder is like entirely in the terminal."
+    },
+    {
+      "start": 417.0,
+      "end": 422.0,
+      "text": "So the good thing about this is like this terminal window is just a program running."
+    },
+    {
+      "start": 422.0,
+      "end": 424.0,
+      "text": "This is running on my Mac mini."
+    },
+    {
+      "start": 424.0,
+      "end": 427.0,
+      "text": "And I can connect to this same session from my phone."
+    },
+    {
+      "start": 427.0,
+      "end": 428.0,
+      "text": "So I can take my phone."
+    },
+    {
+      "start": 428.0,
+      "end": 430.0,
+      "text": "I do a SSH connection."
+    },
+    {
+      "start": 430.0,
+      "end": 433.0,
+      "text": "I can get this exact same terminal window."
+    },
+    {
+      "start": 433.0,
+      "end": 435.0,
+      "text": "So everything stays the same."
+    },
+    {
+      "start": 435.0,
+      "end": 437.0,
+      "text": "Other GUI applications is harder."
+    },
+    {
+      "start": 437.0,
+      "end": 441.0,
+      "text": "Because you can't quite just like remove desktop."
+    },
+    {
+      "start": 441.0,
+      "end": 443.0,
+      "text": "And that's not going to be a good experience either."
+    },
+    {
+      "start": 443.0,
+      "end": 445.0,
+      "text": "So this is like the main difference for me."
+    },
+    {
+      "start": 445.0,
+      "end": 446.0,
+      "text": "I see. Real quick."
+    },
+    {
+      "start": 446.0,
+      "end": 448.0,
+      "text": "If you want to implement Kun's entire setup for yourself."
+    },
+    {
+      "start": 448.0,
+      "end": 451.0,
+      "text": "It's going to be available in the second link below the video."
+    },
+    {
+      "start": 451.0,
+      "end": 452.0,
+      "text": "Completely for free."
+    },
+    {
+      "start": 452.0,
+      "end": 455.0,
+      "text": "This includes its first mate setup,herder,westerm."
+    },
+    {
+      "start": 455.0,
+      "end": 458.0,
+      "text": "And everything else Kun uses to actually build with AI agents."
+    },
+    {
+      "start": 458.0,
+      "end": 460.0,
+      "text": "Again grab it completely for free."
+    },
+    {
+      "start": 460.0,
+      "end": 462.0,
+      "text": "Second link below the video."
+    },
+    {
+      "start": 462.0,
+      "end": 464.0,
+      "text": "So here I have a herder session running."
+    },
+    {
+      "start": 464.0,
+      "end": 466.0,
+      "text": "And in this herder session."
+    },
+    {
+      "start": 466.0,
+      "end": 468.0,
+      "text": "You can see on the top left."
+    },
+    {
+      "start": 468.0,
+      "end": 469.0,
+      "text": "There are spaces."
+    },
+    {
+      "start": 469.0,
+      "end": 470.0,
+      "text": "And I'll talk about that in a bit."
+    },
+    {
+      "start": 470.0,
+      "end": 472.0,
+      "text": "It's basically like work spaces in herder."
+    },
+    {
+      "start": 472.0,
+      "end": 475.0,
+      "text": "You can use that to organize your work."
+    },
+    {
+      "start": 475.0,
+      "end": 477.0,
+      "text": "Your different projects and etc."
+    },
+    {
+      "start": 477.0,
+      "end": 478.0,
+      "text": "And on the bottom left."
+    },
+    {
+      "start": 478.0,
+      "end": 479.0,
+      "text": "There's agents."
+    },
+    {
+      "start": 479.0,
+      "end": 481.0,
+      "text": "And that's a good thing about herder."
+    },
+    {
+      "start": 481.0,
+      "end": 484.0,
+      "text": "Which is that it understands what agents are."
+    },
+    {
+      "start": 484.0,
+      "end": 486.0,
+      "text": "The previous like terminal multiplexers."
+    },
+    {
+      "start": 486.0,
+      "end": 488.0,
+      "text": "Like TMux and Zelige."
+    },
+    {
+      "start": 488.0,
+      "end": 491.0,
+      "text": "They don't quite understand agents."
+    },
+    {
+      "start": 491.0,
+      "end": 493.0,
+      "text": "They understand your terminal windows."
+    },
+    {
+      "start": 493.0,
+      "end": 496.0,
+      "text": "Your tabs and panes."
+    },
+    {
+      "start": 496.0,
+      "end": 498.0,
+      "text": "They don't know what agents are."
+    },
+    {
+      "start": 498.0,
+      "end": 502.0,
+      "text": "But herder knows that I have a pie agent working here."
+    },
+    {
+      "start": 502.0,
+      "end": 506.0,
+      "text": "The working status basically tells me that I don't need to look at it."
+    },
+    {
+      "start": 506.0,
+      "end": 508.0,
+      "text": "It's still working.It's not waiting on me."
+    },
+    {
+      "start": 508.0,
+      "end": 510.0,
+      "text": "So that's a very useful thing."
+    },
+    {
+      "start": 510.0,
+      "end": 513.0,
+      "text": "In this herder,I use herder to organize my agents."
+    },
+    {
+      "start": 513.0,
+      "end": 517.0,
+      "text": "And allow me to navigate across all the sessions I'm working on."
+    },
+    {
+      "start": 517.0,
+      "end": 519.0,
+      "text": "So that's the thing I like about it."
+    },
+    {
+      "start": 519.0,
+      "end": 523.0,
+      "text": "But most of the time,I only work on one session,which is this first mate."
+    },
+    {
+      "start": 523.0,
+      "end": 529.0,
+      "text": "So this is a workflow that was developed like maybe since a few months ago."
+    },
+    {
+      "start": 529.0,
+      "end": 533.0,
+      "text": "When I realized that I'm managing so many sessions all the time."
+    },
+    {
+      "start": 533.0,
+      "end": 539.0,
+      "text": "Similarly,I think when people use CMux and other kind of orchestration apps."
+    },
+    {
+      "start": 539.0,
+      "end": 542.0,
+      "text": "In order to get more work done."
+    },
+    {
+      "start": 542.0,
+      "end": 545.0,
+      "text": "People have to manage multiple parallel agent sessions."
+    },
+    {
+      "start": 545.0,
+      "end": 549.0,
+      "text": "Because one agent can take a while to get work done."
+    },
+    {
+      "start": 549.0,
+      "end": 551.0,
+      "text": "So people start to spin up more sessions."
+    },
+    {
+      "start": 551.0,
+      "end": 555.0,
+      "text": "And sometimes I see people have like 20-30 sessions."
+    },
+    {
+      "start": 555.0,
+      "end": 559.0,
+      "text": "But then I kind of was going crazy."
+    },
+    {
+      "start": 559.0,
+      "end": 563.0,
+      "text": "Because 20 sessions,you have to keep that in your head."
+    },
+    {
+      "start": 563.0,
+      "end": 566.0,
+      "text": "You need to remember,Oh,what is this session?"
+    },
+    {
+      "start": 566.0,
+      "end": 567.0,
+      "text": "What is it doing?"
+    },
+    {
+      "start": 567.0,
+      "end": 571.0,
+      "text": "So that pain caused me to develop first mate."
+    },
+    {
+      "start": 571.0,
+      "end": 574.0,
+      "text": "Because I just don't think that's going to be the end game."
+    },
+    {
+      "start": 574.0,
+      "end": 578.0,
+      "text": "I don't want to spend all day just juggling between the tabs."
+    },
+    {
+      "start": 578.0,
+      "end": 580.0,
+      "text": "And remembering what was what."
+    },
+    {
+      "start": 580.0,
+      "end": 585.0,
+      "text": "I developed first mate because I think the agents,as they become more capable."
+    },
+    {
+      "start": 585.0,
+      "end": 588.0,
+      "text": "Should be able to juggle all those things for me."
+    },
+    {
+      "start": 588.0,
+      "end": 591.0,
+      "text": "And I started experimenting with this setup since a few months ago."
+    },
+    {
+      "start": 591.0,
+      "end": 593.0,
+      "text": "And it actually works."
+    },
+    {
+      "start": 593.0,
+      "end": 596.0,
+      "text": "So now this is like the only agent I talk to most of the time."
+    },
+    {
+      "start": 596.0,
+      "end": 598.0,
+      "text": "I just talk to first mates."
+    },
+    {
+      "start": 598.0,
+      "end": 601.0,
+      "text": "And let first mates manage all the other sessions for me."
+    },
+    {
+      "start": 601.0,
+      "end": 603.0,
+      "text": "So I can maybe like walk through some examples here."
+    },
+    {
+      "start": 603.0,
+      "end": 606.0,
+      "text": "So this is already something is already happening."
+    },
+    {
+      "start": 606.0,
+      "end": 609.0,
+      "text": "It's doing some work.It's telling me no actions needed."
+    },
+    {
+      "start": 609.0,
+      "end": 613.0,
+      "text": "And now I'm wondering about some some work that was happening a while ago."
+    },
+    {
+      "start": 613.0,
+      "end": 620.0,
+      "text": "So I can just ask,Hey,did Apple approve our app review for this app?"
+    },
+    {
+      "start": 620.0,
+      "end": 622.0,
+      "text": "So that's an iOS app I was building."
+    },
+    {
+      "start": 622.0,
+      "end": 625.0,
+      "text": "And I submitted for app store review."
+    },
+    {
+      "start": 625.0,
+      "end": 627.0,
+      "text": "And I'm not sure whether that's approved."
+    },
+    {
+      "start": 627.0,
+      "end": 629.0,
+      "text": "So I can just check with first mate."
+    },
+    {
+      "start": 629.0,
+      "end": 632.0,
+      "text": "And first mate is not going to do that by itself."
+    },
+    {
+      "start": 632.0,
+      "end": 635.0,
+      "text": "It's going to delegate the task to another crewmate."
+    },
+    {
+      "start": 635.0,
+      "end": 638.0,
+      "text": "The reason is that if first mate does this for me,"
+    },
+    {
+      "start": 638.0,
+      "end": 640.0,
+      "text": "then first mate will get busy."
+    },
+    {
+      "start": 640.0,
+      "end": 643.0,
+      "text": "And I cannot talk to first mate again."
+    },
+    {
+      "start": 643.0,
+      "end": 645.0,
+      "text": "So now you can see captain,I'm checking this now."
+    },
+    {
+      "start": 645.0,
+      "end": 648.0,
+      "text": "It's asked another crewmate to check it for me."
+    },
+    {
+      "start": 648.0,
+      "end": 651.0,
+      "text": "The benefit is that I can talk to first mate now"
+    },
+    {
+      "start": 651.0,
+      "end": 653.0,
+      "text": "without it's like blocking on something else."
+    },
+    {
+      "start": 653.0,
+      "end": 656.0,
+      "text": "I can just ask for something else."
+    },
+    {
+      "start": 656.0,
+      "end": 661.0,
+      "text": "I remember there are some good PRs sitting on me"
+    },
+    {
+      "start": 661.0,
+      "end": 664.0,
+      "text": "for review in treehouse."
+    },
+    {
+      "start": 664.0,
+      "end": 665.0,
+      "text": "Can you check?"
+    },
+    {
+      "start": 665.0,
+      "end": 667.0,
+      "text": "So first mate has access to all the projects that we're working on."
+    },
+    {
+      "start": 667.0,
+      "end": 669.0,
+      "text": "Yeah.It's the coordinator of everything."
+    },
+    {
+      "start": 669.0,
+      "end": 671.0,
+      "text": "It knows about all my projects."
+    },
+    {
+      "start": 671.0,
+      "end": 675.0,
+      "text": "I'll talk through some scaling issues later on as well."
+    },
+    {
+      "start": 675.0,
+      "end": 680.0,
+      "text": "But basically I have maybe 20 to 30 GitHub repos"
+    },
+    {
+      "start": 680.0,
+      "end": 683.0,
+      "text": "that are public and have quite some popularity"
+    },
+    {
+      "start": 683.0,
+      "end": 686.0,
+      "text": "and people file issues and PRs to me."
+    },
+    {
+      "start": 686.0,
+      "end": 691.0,
+      "text": "If I am to manually juggle all the 20-30 projects,"
+    },
+    {
+      "start": 691.0,
+      "end": 692.0,
+      "text": "I'll just go crazy."
+    },
+    {
+      "start": 692.0,
+      "end": 695.0,
+      "text": "So I pretty much let first mate manage all the projects for me."
+    },
+    {
+      "start": 695.0,
+      "end": 697.0,
+      "text": "So when I say treehouse,"
+    },
+    {
+      "start": 697.0,
+      "end": 699.0,
+      "text": "first mate knows which project that is."
+    },
+    {
+      "start": 699.0,
+      "end": 701.0,
+      "text": "My main question would be like how did you develop"
+    },
+    {
+      "start": 701.0,
+      "end": 704.0,
+      "text": "enough trust to delegate so much responsibility"
+    },
+    {
+      "start": 704.0,
+      "end": 705.0,
+      "text": "to first mate?"
+    },
+    {
+      "start": 705.0,
+      "end": 707.0,
+      "text": "So trust takes time to build."
+    },
+    {
+      "start": 707.0,
+      "end": 710.0,
+      "text": "So I didn't initially just trust it for everything."
+    },
+    {
+      "start": 710.0,
+      "end": 713.0,
+      "text": "I started playing with it initially as a prototype."
+    },
+    {
+      "start": 713.0,
+      "end": 717.0,
+      "text": "And I started really letting it do more and more for me."
+    },
+    {
+      "start": 717.0,
+      "end": 719.0,
+      "text": "And I observed how it does."
+    },
+    {
+      "start": 719.0,
+      "end": 723.0,
+      "text": "And sometimes initially,especially when I just first began using it,"
+    },
+    {
+      "start": 723.0,
+      "end": 727.0,
+      "text": "there were many problems such as it's not delegating"
+    },
+    {
+      "start": 727.0,
+      "end": 729.0,
+      "text": "the right thing to the right crewmate."
+    },
+    {
+      "start": 729.0,
+      "end": 732.0,
+      "text": "Or it's like sometimes having multiple crewmates"
+    },
+    {
+      "start": 732.0,
+      "end": 733.0,
+      "text": "doing the same thing,"
+    },
+    {
+      "start": 733.0,
+      "end": 735.0,
+      "text": "conflicting with each other things like that."
+    },
+    {
+      "start": 735.0,
+      "end": 738.0,
+      "text": "And I started optimizing the process more and more"
+    },
+    {
+      "start": 738.0,
+      "end": 740.0,
+      "text": "and eventually got to a pretty sweet spot"
+    },
+    {
+      "start": 740.0,
+      "end": 742.0,
+      "text": "where I can just let first mate handle all those for me."
+    },
+    {
+      "start": 742.0,
+      "end": 747.0,
+      "text": "And I don't see mistakes or suboptimal routing anymore."
+    },
+    {
+      "start": 747.0,
+      "end": 751.0,
+      "text": "So now it's also started a task to review"
+    },
+    {
+      "start": 751.0,
+      "end": 753.0,
+      "text": "some of the treehouse PRs,right?"
+    },
+    {
+      "start": 753.0,
+      "end": 755.0,
+      "text": "And now I can continue talking to it"
+    },
+    {
+      "start": 755.0,
+      "end": 757.0,
+      "text": "about something like anything else I want to do."
+    },
+    {
+      "start": 757.0,
+      "end": 761.0,
+      "text": "Remember there was work happening around"
+    },
+    {
+      "start": 761.0,
+      "end": 766.0,
+      "text": "optimizing the workspace organization for first mate."
+    },
+    {
+      "start": 766.0,
+      "end": 767.0,
+      "text": "Where are we?"
+    },
+    {
+      "start": 767.0,
+      "end": 770.0,
+      "text": "So I can just keep asking about these things"
+    },
+    {
+      "start": 770.0,
+      "end": 771.0,
+      "text": "that are crossing my mind."
+    },
+    {
+      "start": 771.0,
+      "end": 774.0,
+      "text": "The really good feeling I get here right now"
+    },
+    {
+      "start": 774.0,
+      "end": 776.0,
+      "text": "the thing I enjoy the most"
+    },
+    {
+      "start": 776.0,
+      "end": 780.0,
+      "text": "is that I'm constantly in a brain dump kind of mode."
+    },
+    {
+      "start": 780.0,
+      "end": 783.0,
+      "text": "I have thoughts and I just dump my thoughts to first mate"
+    },
+    {
+      "start": 783.0,
+      "end": 785.0,
+      "text": "and let first mate do everything else."
+    },
+    {
+      "start": 785.0,
+      "end": 788.0,
+      "text": "I don't need to worry about all the steps it needs to take"
+    },
+    {
+      "start": 788.0,
+      "end": 790.0,
+      "text": "to get things done."
+    },
+    {
+      "start": 790.0,
+      "end": 792.0,
+      "text": "And do you ever go into the specific subagents"
+    },
+    {
+      "start": 792.0,
+      "end": 794.0,
+      "text": "to look at what they're doing or not really?"
+    },
+    {
+      "start": 794.0,
+      "end": 796.0,
+      "text": "Very rarely now."
+    },
+    {
+      "start": 796.0,
+      "end": 798.0,
+      "text": "Initially when I was developing first mate"
+    },
+    {
+      "start": 798.0,
+      "end": 800.0,
+      "text": "I did that a lot just to observe,right?"
+    },
+    {
+      "start": 800.0,
+      "end": 802.0,
+      "text": "Is it doing the right thing?"
+    },
+    {
+      "start": 802.0,
+      "end": 806.0,
+      "text": "Is first mate communicating efficiently,right?"
+    },
+    {
+      "start": 806.0,
+      "end": 809.0,
+      "text": "Did it actually bring the context to the crewmates?"
+    },
+    {
+      "start": 809.0,
+      "end": 811.0,
+      "text": "So initially I did a lot of observation myself"
+    },
+    {
+      "start": 811.0,
+      "end": 813.0,
+      "text": "but now I don't do that much."
+    },
+    {
+      "start": 813.0,
+      "end": 817.0,
+      "text": "But if I sometimes I will still feel like"
+    },
+    {
+      "start": 817.0,
+      "end": 819.0,
+      "text": "why is this taking so long,right?"
+    },
+    {
+      "start": 819.0,
+      "end": 822.0,
+      "text": "Kind of like working in a real company,in a real team."
+    },
+    {
+      "start": 822.0,
+      "end": 825.0,
+      "text": "Sometimes the manager will still go to a direct report"
+    },
+    {
+      "start": 825.0,
+      "end": 826.0,
+      "text": "directly,right?"
+    },
+    {
+      "start": 826.0,
+      "end": 828.0,
+      "text": "Like maybe bypassing the tech lead"
+    },
+    {
+      "start": 828.0,
+      "end": 830.0,
+      "text": "because sometimes it's like more efficient"
+    },
+    {
+      "start": 830.0,
+      "end": 832.0,
+      "text": "to directly communicate."
+    },
+    {
+      "start": 832.0,
+      "end": 834.0,
+      "text": "So if I want to do that,I can just like in herder"
+    },
+    {
+      "start": 834.0,
+      "end": 836.0,
+      "text": "I can bring up this view."
+    },
+    {
+      "start": 836.0,
+      "end": 838.0,
+      "text": "This view pretty much like lets me jump"
+    },
+    {
+      "start": 838.0,
+      "end": 840.0,
+      "text": "to any other agent session."
+    },
+    {
+      "start": 840.0,
+      "end": 842.0,
+      "text": "I can just jump."
+    },
+    {
+      "start": 842.0,
+      "end": 844.0,
+      "text": "And see like what is really happening there."
+    },
+    {
+      "start": 844.0,
+      "end": 846.0,
+      "text": "Yeah,that's very,very nice."
+    },
+    {
+      "start": 846.0,
+      "end": 849.0,
+      "text": "Yeah,so here basically first mate answered"
+    },
+    {
+      "start": 849.0,
+      "end": 851.0,
+      "text": "my last question."
+    },
+    {
+      "start": 851.0,
+      "end": 853.0,
+      "text": "This is at a strong design checkpoint."
+    },
+    {
+      "start": 853.0,
+      "end": 855.0,
+      "text": "Okay,I discussed like an idea"
+    },
+    {
+      "start": 855.0,
+      "end": 857.0,
+      "text": "with first mate a while ago."
+    },
+    {
+      "start": 857.0,
+      "end": 859.0,
+      "text": "But we didn't proceed to implement"
+    },
+    {
+      "start": 859.0,
+      "end": 862.0,
+      "text": "because I wasn't sure about this approach."
+    },
+    {
+      "start": 862.0,
+      "end": 864.0,
+      "text": "I felt like something was off."
+    },
+    {
+      "start": 864.0,
+      "end": 866.0,
+      "text": "Let me actually show you something here."
+    },
+    {
+      "start": 866.0,
+      "end": 868.0,
+      "text": "So with this kind of technical design"
+    },
+    {
+      "start": 868.0,
+      "end": 870.0,
+      "text": "sometimes it's a little bit complex,right?"
+    },
+    {
+      "start": 870.0,
+      "end": 872.0,
+      "text": "It has lots of moving pieces"
+    },
+    {
+      "start": 872.0,
+      "end": 875.0,
+      "text": "it has tradeoffs,it has like pros and cons."
+    },
+    {
+      "start": 875.0,
+      "end": 878.0,
+      "text": "So this kind of case,I usually use lavish"
+    },
+    {
+      "start": 878.0,
+      "end": 881.0,
+      "text": "a interactive HTML artifact"
+    },
+    {
+      "start": 881.0,
+      "end": 884.0,
+      "text": "to allow me to more easily understand"
+    },
+    {
+      "start": 884.0,
+      "end": 887.0,
+      "text": "what the idea is and what the tradeoffs are."
+    },
+    {
+      "start": 887.0,
+      "end": 889.0,
+      "text": "So let me try that now."
+    },
+    {
+      "start": 889.0,
+      "end": 891.0,
+      "text": "Can you use lavish to reveal"
+    },
+    {
+      "start": 891.0,
+      "end": 894.0,
+      "text": "the herder workspace"
+    },
+    {
+      "start": 894.0,
+      "end": 896.0,
+      "text": "design with me."
+    },
+    {
+      "start": 896.0,
+      "end": 898.0,
+      "text": "What this does is that first mate will"
+    },
+    {
+      "start": 898.0,
+      "end": 901.0,
+      "text": "create a HTML artifact"
+    },
+    {
+      "start": 901.0,
+      "end": 903.0,
+      "text": "with visuals about the design decisions"
+    },
+    {
+      "start": 903.0,
+      "end": 905.0,
+      "text": "we have to make."
+    },
+    {
+      "start": 905.0,
+      "end": 907.0,
+      "text": "So it's going to be easier for us to collaborate on that."
+    },
+    {
+      "start": 907.0,
+      "end": 910.0,
+      "text": "Yeah,it's using the lavish axis to do this."
+    },
+    {
+      "start": 910.0,
+      "end": 913.0,
+      "text": "It can take a little while to create the artifact."
+    },
+    {
+      "start": 913.0,
+      "end": 915.0,
+      "text": "Right now you were typing"
+    },
+    {
+      "start": 915.0,
+      "end": 917.0,
+      "text": "but you were a big proponent of speaking."
+    },
+    {
+      "start": 917.0,
+      "end": 919.0,
+      "text": "When do you do which?"
+    },
+    {
+      "start": 919.0,
+      "end": 922.0,
+      "text": "I pretty much always use voice input now."
+    },
+    {
+      "start": 922.0,
+      "end": 924.0,
+      "text": "The reason you saw me typing"
+    },
+    {
+      "start": 924.0,
+      "end": 926.0,
+      "text": "was I realized a while ago"
+    },
+    {
+      "start": 926.0,
+      "end": 929.0,
+      "text": "that if I use voice input"
+    },
+    {
+      "start": 929.0,
+      "end": 932.0,
+      "text": "it actually interferes with my microphone somehow."
+    },
+    {
+      "start": 932.0,
+      "end": 934.0,
+      "text": "I haven't fixed that yet."
+    },
+    {
+      "start": 934.0,
+      "end": 937.0,
+      "text": "But mostly when I prompt I just use voice input."
+    },
+    {
+      "start": 937.0,
+      "end": 940.0,
+      "text": "The only exception I would say"
+    },
+    {
+      "start": 940.0,
+      "end": 942.0,
+      "text": "is when I have to copy paste a URL"
+    },
+    {
+      "start": 942.0,
+      "end": 944.0,
+      "text": "or a file path"
+    },
+    {
+      "start": 944.0,
+      "end": 946.0,
+      "text": "or something like that"
+    },
+    {
+      "start": 946.0,
+      "end": 948.0,
+      "text": "it just doesn't make sense to speak that out."
+    },
+    {
+      "start": 948.0,
+      "end": 950.0,
+      "text": "So now it's writing the design review"
+    },
+    {
+      "start": 950.0,
+      "end": 952.0,
+      "text": "in a HTML"
+    },
+    {
+      "start": 952.0,
+      "end": 954.0,
+      "text": "and very soon we can probably see that in my browser."
+    },
+    {
+      "start": 954.0,
+      "end": 956.0,
+      "text": "So you're using 5.6"
+    },
+    {
+      "start": 956.0,
+      "end": 958.0,
+      "text": "as your main agent."
+    },
+    {
+      "start": 958.0,
+      "end": 959.0,
+      "text": "Why is that?"
+    },
+    {
+      "start": 959.0,
+      "end": 961.0,
+      "text": "Yeah,so 5.6 saw"
+    },
+    {
+      "start": 961.0,
+      "end": 963.0,
+      "text": "on xhigh as my first mate."
+    },
+    {
+      "start": 963.0,
+      "end": 965.0,
+      "text": "So first mate"
+    },
+    {
+      "start": 965.0,
+      "end": 967.0,
+      "text": "the thing I learned is that"
+    },
+    {
+      "start": 967.0,
+      "end": 969.0,
+      "text": "first mate is kind of like"
+    },
+    {
+      "start": 969.0,
+      "end": 971.0,
+      "text": "juggling through a lot of context."
+    },
+    {
+      "start": 971.0,
+      "end": 973.0,
+      "text": "It rationalizes a lot of different things."
+    },
+    {
+      "start": 973.0,
+      "end": 975.0,
+      "text": "Like which thing am I talking about?"
+    },
+    {
+      "start": 975.0,
+      "end": 977.0,
+      "text": "When I say herder workspace"
+    },
+    {
+      "start": 977.0,
+      "end": 979.0,
+      "text": "view design"
+    },
+    {
+      "start": 979.0,
+      "end": 982.0,
+      "text": "it needs to know a while ago we worked on that"
+    },
+    {
+      "start": 982.0,
+      "end": 984.0,
+      "text": "and that's what I mean."
+    },
+    {
+      "start": 984.0,
+      "end": 986.0,
+      "text": "So first mate actually needs a lot of reasoning."
+    },
+    {
+      "start": 986.0,
+      "end": 988.0,
+      "text": "It needs to really be able to rationalize"
+    },
+    {
+      "start": 988.0,
+      "end": 990.0,
+      "text": "all the complexity."
+    },
+    {
+      "start": 990.0,
+      "end": 992.0,
+      "text": "And then I have different rules"
+    },
+    {
+      "start": 992.0,
+      "end": 994.0,
+      "text": "for different crewmates."
+    },
+    {
+      "start": 994.0,
+      "end": 996.0,
+      "text": "So when first mate is dispatching a task"
+    },
+    {
+      "start": 996.0,
+      "end": 999.0,
+      "text": "to a crewmate,it has a set of preferences."
+    },
+    {
+      "start": 999.0,
+      "end": 1001.0,
+      "text": "And it will use those preferences"
+    },
+    {
+      "start": 1001.0,
+      "end": 1003.0,
+      "text": "to route the task."
+    },
+    {
+      "start": 1003.0,
+      "end": 1005.0,
+      "text": "Here this file is basically"
+    },
+    {
+      "start": 1005.0,
+      "end": 1007.0,
+      "text": "where I write the rules."
+    },
+    {
+      "start": 1007.0,
+      "end": 1009.0,
+      "text": "And the rules will basically tell"
+    },
+    {
+      "start": 1009.0,
+      "end": 1011.0,
+      "text": "first mate in what case"
+    },
+    {
+      "start": 1011.0,
+      "end": 1013.0,
+      "text": "should we use which agent"
+    },
+    {
+      "start": 1013.0,
+      "end": 1015.0,
+      "text": "which model and at what reasoning efforts."
+    },
+    {
+      "start": 1015.0,
+      "end": 1017.0,
+      "text": "Previously there was"
+    },
+    {
+      "start": 1017.0,
+      "end": 1019.0,
+      "text": "a rule here that says"
+    },
+    {
+      "start": 1019.0,
+      "end": 1021.0,
+      "text": "for any high complexity"
+    },
+    {
+      "start": 1021.0,
+      "end": 1023.0,
+      "text": "technical design and product design"
+    },
+    {
+      "start": 1023.0,
+      "end": 1026.0,
+      "text": "use fable in cloud code."
+    },
+    {
+      "start": 1026.0,
+      "end": 1028.0,
+      "text": "I think fable has the depth"
+    },
+    {
+      "start": 1028.0,
+      "end": 1030.0,
+      "text": "and has the creativity that I really like."
+    },
+    {
+      "start": 1030.0,
+      "end": 1032.0,
+      "text": "So for those very complex designs"
+    },
+    {
+      "start": 1032.0,
+      "end": 1034.0,
+      "text": "I like to use fable as the crewmate."
+    },
+    {
+      "start": 1034.0,
+      "end": 1036.0,
+      "text": "But by default right now"
+    },
+    {
+      "start": 1036.0,
+      "end": 1038.0,
+      "text": "it's using 5.6."
+    },
+    {
+      "start": 1038.0,
+      "end": 1040.0,
+      "text": "So purely because of the subscription"
+    },
+    {
+      "start": 1040.0,
+      "end": 1041.0,
+      "text": "practicality."
+    },
+    {
+      "start": 1041.0,
+      "end": 1043.0,
+      "text": "So I can show you."
+    },
+    {
+      "start": 1043.0,
+      "end": 1045.0,
+      "text": "I have this thing tracking my quota."
+    },
+    {
+      "start": 1045.0,
+      "end": 1047.0,
+      "text": "I ran out of my grog quota"
+    },
+    {
+      "start": 1047.0,
+      "end": 1049.0,
+      "text": "and waiting for the reset."
+    },
+    {
+      "start": 1049.0,
+      "end": 1052.0,
+      "text": "I'm almost out of the fable quota this week."
+    },
+    {
+      "start": 1052.0,
+      "end": 1055.0,
+      "text": "And the reset is still like ways to go."
+    },
+    {
+      "start": 1055.0,
+      "end": 1057.0,
+      "text": "So I'm saving this remaining fable quota"
+    },
+    {
+      "start": 1057.0,
+      "end": 1060.0,
+      "text": "for things I really need fable for."
+    },
+    {
+      "start": 1060.0,
+      "end": 1062.0,
+      "text": "This whole LLM quota"
+    },
+    {
+      "start": 1062.0,
+      "end": 1064.0,
+      "text": "from the subscriptions we get"
+    },
+    {
+      "start": 1064.0,
+      "end": 1066.0,
+      "text": "are just not enough."
+    },
+    {
+      "start": 1066.0,
+      "end": 1068.0,
+      "text": "I think I would suggest"
+    },
+    {
+      "start": 1068.0,
+      "end": 1070.0,
+      "text": "the LLM companies to actually think"
+    },
+    {
+      "start": 1070.0,
+      "end": 1072.0,
+      "text": "about having a higher tier."
+    },
+    {
+      "start": 1072.0,
+      "end": 1074.0,
+      "text": "Because the $200 tier"
+    },
+    {
+      "start": 1074.0,
+      "end": 1076.0,
+      "text": "right now is not sufficient."
+    },
+    {
+      "start": 1076.0,
+      "end": 1077.0,
+      "text": "I agree completely."
+    },
+    {
+      "start": 1077.0,
+      "end": 1079.0,
+      "text": "People are going to hate this take"
+    },
+    {
+      "start": 1079.0,
+      "end": 1081.0,
+      "text": "but we do need some $500 tier."
+    },
+    {
+      "start": 1081.0,
+      "end": 1083.0,
+      "text": "So you never do API pricing?"
+    },
+    {
+      "start": 1083.0,
+      "end": 1085.0,
+      "text": "Yeah.So I think for individuals"
+    },
+    {
+      "start": 1085.0,
+      "end": 1087.0,
+      "text": "it doesn't make sense to do API pricing."
+    },
+    {
+      "start": 1087.0,
+      "end": 1089.0,
+      "text": "If I actually take API pricing"
+    },
+    {
+      "start": 1089.0,
+      "end": 1091.0,
+      "text": "for everything I worked on for the past month"
+    },
+    {
+      "start": 1091.0,
+      "end": 1094.0,
+      "text": "it's going to cost more than like $10,000."
+    },
+    {
+      "start": 1094.0,
+      "end": 1095.0,
+      "text": "It's just not sustainable."
+    },
+    {
+      "start": 1095.0,
+      "end": 1097.0,
+      "text": "I think another thing that might help"
+    },
+    {
+      "start": 1097.0,
+      "end": 1100.0,
+      "text": "you know like GPT 5.5 and 5.6"
+    },
+    {
+      "start": 1100.0,
+      "end": 1102.0,
+      "text": "and a lot of the cloud models"
+    },
+    {
+      "start": 1102.0,
+      "end": 1104.0,
+      "text": "have a fast mode."
+    },
+    {
+      "start": 1104.0,
+      "end": 1106.0,
+      "text": "Right.The fast mode will basically"
+    },
+    {
+      "start": 1106.0,
+      "end": 1109.0,
+      "text": "cost more to get you lower latency."
+    },
+    {
+      "start": 1109.0,
+      "end": 1110.0,
+      "text": "I want the opposite of that."
+    },
+    {
+      "start": 1110.0,
+      "end": 1112.0,
+      "text": "I want something that's slower"
+    },
+    {
+      "start": 1112.0,
+      "end": 1114.0,
+      "text": "but will be cheaper."
+    },
+    {
+      "start": 1114.0,
+      "end": 1115.0,
+      "text": "Because there are so many tasks"
+    },
+    {
+      "start": 1115.0,
+      "end": 1117.0,
+      "text": "there are like background tasks"
+    },
+    {
+      "start": 1117.0,
+      "end": 1119.0,
+      "text": "that I don't really care about."
+    },
+    {
+      "start": 1119.0,
+      "end": 1121.0,
+      "text": "It's being finished very fast."
+    },
+    {
+      "start": 1121.0,
+      "end": 1122.0,
+      "text": "I care about how much work"
+    },
+    {
+      "start": 1122.0,
+      "end": 1124.0,
+      "text": "can I get done in total"
+    },
+    {
+      "start": 1124.0,
+      "end": 1126.0,
+      "text": "because my total quota"
+    },
+    {
+      "start": 1126.0,
+      "end": 1128.0,
+      "text": "is the bottleneck right now."
+    },
+    {
+      "start": 1128.0,
+      "end": 1130.0,
+      "text": "So I wish they will"
+    },
+    {
+      "start": 1130.0,
+      "end": 1132.0,
+      "text": "eventually develop something like that."
+    },
+    {
+      "start": 1132.0,
+      "end": 1133.0,
+      "text": "There is demand for this for sure."
+    },
+    {
+      "start": 1133.0,
+      "end": 1134.0,
+      "text": "Different tasks require"
+    },
+    {
+      "start": 1134.0,
+      "end": 1136.0,
+      "text": "different tools and settings."
+    },
+    {
+      "start": 1136.0,
+      "end": 1137.0,
+      "text": "If you're working on something"
+    },
+    {
+      "start": 1137.0,
+      "end": 1139.0,
+      "text": "I have this very important meaning"
+    },
+    {
+      "start": 1139.0,
+      "end": 1140.0,
+      "text": "in 10 minutes."
+    },
+    {
+      "start": 1140.0,
+      "end": 1142.0,
+      "text": "We have a transcript from last week."
+    },
+    {
+      "start": 1142.0,
+      "end": 1143.0,
+      "text": "You need the fast mode."
+    },
+    {
+      "start": 1143.0,
+      "end": 1144.0,
+      "text": "But like if you're just"
+    },
+    {
+      "start": 1144.0,
+      "end": 1145.0,
+      "text": "dispatching the agent overnight"
+    },
+    {
+      "start": 1145.0,
+      "end": 1147.0,
+      "text": "you need the slowest of slow modes."
+    },
+    {
+      "start": 1147.0,
+      "end": 1148.0,
+      "text": "You don't care if it's"
+    },
+    {
+      "start": 1148.0,
+      "end": 1149.0,
+      "text": "5 tokens per second."
+    },
+    {
+      "start": 1149.0,
+      "end": 1150.0,
+      "text": "You just want it done."
+    },
+    {
+      "start": 1150.0,
+      "end": 1151.0,
+      "text": "Yeah exactly."
+    },
+    {
+      "start": 1151.0,
+      "end": 1153.0,
+      "text": "I think the whole spectrum"
+    },
+    {
+      "start": 1153.0,
+      "end": 1154.0,
+      "text": "ideally the options are"
+    },
+    {
+      "start": 1154.0,
+      "end": 1156.0,
+      "text": "available to us to make the tradeoffs."
+    },
+    {
+      "start": 1156.0,
+      "end": 1158.0,
+      "text": "So this is the question I asked"
+    },
+    {
+      "start": 1158.0,
+      "end": 1160.0,
+      "text": "earlier about the herder organization."
+    },
+    {
+      "start": 1160.0,
+      "end": 1163.0,
+      "text": "So this idea for some context"
+    },
+    {
+      "start": 1163.0,
+      "end": 1165.0,
+      "text": "is about how first mate"
+    },
+    {
+      "start": 1165.0,
+      "end": 1168.0,
+      "text": "uses herder to organize his crewmates."
+    },
+    {
+      "start": 1168.0,
+      "end": 1169.0,
+      "text": "So right now everything"
+    },
+    {
+      "start": 1169.0,
+      "end": 1170.0,
+      "text": "is like a flat list."
+    },
+    {
+      "start": 1170.0,
+      "end": 1172.0,
+      "text": "And it's sometimes hard to understand"
+    },
+    {
+      "start": 1172.0,
+      "end": 1174.0,
+      "text": "like which agent is doing what."
+    },
+    {
+      "start": 1174.0,
+      "end": 1175.0,
+      "text": "So there was an idea"
+    },
+    {
+      "start": 1175.0,
+      "end": 1177.0,
+      "text": "to do better organization."
+    },
+    {
+      "start": 1177.0,
+      "end": 1179.0,
+      "text": "So here basically it brought up"
+    },
+    {
+      "start": 1179.0,
+      "end": 1181.0,
+      "text": "this design review artifact."
+    },
+    {
+      "start": 1181.0,
+      "end": 1183.0,
+      "text": "It has a recommendation."
+    },
+    {
+      "start": 1183.0,
+      "end": 1185.0,
+      "text": "But let me walk through"
+    },
+    {
+      "start": 1185.0,
+      "end": 1187.0,
+      "text": "the actual proposals."
+    },
+    {
+      "start": 1187.0,
+      "end": 1188.0,
+      "text": "Yeah this is kind of"
+    },
+    {
+      "start": 1188.0,
+      "end": 1189.0,
+      "text": "the hierarchy we have today."
+    },
+    {
+      "start": 1189.0,
+      "end": 1191.0,
+      "text": "It used this kind"
+    },
+    {
+      "start": 1191.0,
+      "end": 1193.0,
+      "text": "of like a tree view"
+    },
+    {
+      "start": 1193.0,
+      "end": 1195.0,
+      "text": "to show me what this is."
+    },
+    {
+      "start": 1195.0,
+      "end": 1197.0,
+      "text": "And this is very helpful."
+    },
+    {
+      "start": 1197.0,
+      "end": 1199.0,
+      "text": "Otherwise what we usually do"
+    },
+    {
+      "start": 1199.0,
+      "end": 1200.0,
+      "text": "is like in the terminal"
+    },
+    {
+      "start": 1200.0,
+      "end": 1201.0,
+      "text": "we discuss with the agent"
+    },
+    {
+      "start": 1201.0,
+      "end": 1203.0,
+      "text": "and the agent will just print"
+    },
+    {
+      "start": 1203.0,
+      "end": 1205.0,
+      "text": "long wall of text."
+    },
+    {
+      "start": 1205.0,
+      "end": 1207.0,
+      "text": "So here I can see this visually."
+    },
+    {
+      "start": 1207.0,
+      "end": 1209.0,
+      "text": "It's a tree structure."
+    },
+    {
+      "start": 1209.0,
+      "end": 1211.0,
+      "text": "This is what it does today."
+    },
+    {
+      "start": 1211.0,
+      "end": 1214.0,
+      "text": "Native now,report tree"
+    },
+    {
+      "start": 1214.0,
+      "end": 1216.0,
+      "text": "and work tree hierarchy."
+    },
+    {
+      "start": 1216.0,
+      "end": 1218.0,
+      "text": "Yeah different work trees"
+    },
+    {
+      "start": 1218.0,
+      "end": 1220.0,
+      "text": "get grouped into"
+    },
+    {
+      "start": 1220.0,
+      "end": 1221.0,
+      "text": "by repo."
+    },
+    {
+      "start": 1221.0,
+      "end": 1224.0,
+      "text": "And there is a recommended architecture here."
+    },
+    {
+      "start": 1224.0,
+      "end": 1227.0,
+      "text": "So this is also pretty cool."
+    },
+    {
+      "start": 1227.0,
+      "end": 1229.0,
+      "text": "Lavage makes the agent"
+    },
+    {
+      "start": 1229.0,
+      "end": 1230.0,
+      "text": "actually produce a white board."
+    },
+    {
+      "start": 1230.0,
+      "end": 1232.0,
+      "text": "So this is a kind of"
+    },
+    {
+      "start": 1232.0,
+      "end": 1233.0,
+      "text": "draw white board."
+    },
+    {
+      "start": 1233.0,
+      "end": 1234.0,
+      "text": "And I can pretty much"
+    },
+    {
+      "start": 1234.0,
+      "end": 1236.0,
+      "text": "just look at"
+    },
+    {
+      "start": 1236.0,
+      "end": 1239.0,
+      "text": "other diagrams."
+    },
+    {
+      "start": 1239.0,
+      "end": 1241.0,
+      "text": "I can adjust this as well."
+    },
+    {
+      "start": 1241.0,
+      "end": 1243.0,
+      "text": "I can say this is not right."
+    },
+    {
+      "start": 1243.0,
+      "end": 1245.0,
+      "text": "I will move the boxes around."
+    },
+    {
+      "start": 1245.0,
+      "end": 1247.0,
+      "text": "And I can send the feedback"
+    },
+    {
+      "start": 1247.0,
+      "end": 1249.0,
+      "text": "back to the agent."
+    },
+    {
+      "start": 1249.0,
+      "end": 1250.0,
+      "text": "So there's a lot we can do"
+    },
+    {
+      "start": 1250.0,
+      "end": 1252.0,
+      "text": "interactively on this artifact."
+    },
+    {
+      "start": 1252.0,
+      "end": 1254.0,
+      "text": "And that's what I really"
+    },
+    {
+      "start": 1254.0,
+      "end": 1256.0,
+      "text": "like about using this"
+    },
+    {
+      "start": 1256.0,
+      "end": 1258.0,
+      "text": "lavage-based workflow."
+    },
+    {
+      "start": 1258.0,
+      "end": 1260.0,
+      "text": "At the end,it will usually point out"
+    },
+    {
+      "start": 1260.0,
+      "end": 1262.0,
+      "text": "the decisions I have to make."
+    },
+    {
+      "start": 1262.0,
+      "end": 1264.0,
+      "text": "The open questions it has"
+    },
+    {
+      "start": 1264.0,
+      "end": 1266.0,
+      "text": "is ambiguous."
+    },
+    {
+      "start": 1266.0,
+      "end": 1268.0,
+      "text": "So it has a few approaches."
+    },
+    {
+      "start": 1268.0,
+      "end": 1270.0,
+      "text": "I need to decide on one."
+    },
+    {
+      "start": 1270.0,
+      "end": 1273.0,
+      "text": "I think I want to prioritize the supervisor ownership"
+    },
+    {
+      "start": 1273.0,
+      "end": 1275.0,
+      "text": "because the grouping will make more sense"
+    },
+    {
+      "start": 1275.0,
+      "end": 1277.0,
+      "text": "when it's grouped by supervisor."
+    },
+    {
+      "start": 1277.0,
+      "end": 1279.0,
+      "text": "There's a lot of context here."
+    },
+    {
+      "start": 1279.0,
+      "end": 1281.0,
+      "text": "So I'll probably not spend too much time on this."
+    },
+    {
+      "start": 1281.0,
+      "end": 1283.0,
+      "text": "But I'll kill this decision"
+    },
+    {
+      "start": 1283.0,
+      "end": 1285.0,
+      "text": "and I'll send that back to the agent."
+    },
+    {
+      "start": 1285.0,
+      "end": 1286.0,
+      "text": "And that's it."
+    },
+    {
+      "start": 1286.0,
+      "end": 1289.0,
+      "text": "The workflow to make a decision like this."
+    },
+    {
+      "start": 1289.0,
+      "end": 1291.0,
+      "text": "So the main question,like you said,"
+    },
+    {
+      "start": 1291.0,
+      "end": 1293.0,
+      "text": "there's a lot of context with these different projects."
+    },
+    {
+      "start": 1293.0,
+      "end": 1295.0,
+      "text": "You know them.How do you still"
+    },
+    {
+      "start": 1295.0,
+      "end": 1297.0,
+      "text": "achieve something like deep work?"
+    },
+    {
+      "start": 1297.0,
+      "end": 1299.0,
+      "text": "How do you still go into the flow"
+    },
+    {
+      "start": 1299.0,
+      "end": 1301.0,
+      "text": "without going crazy?"
+    },
+    {
+      "start": 1301.0,
+      "end": 1303.0,
+      "text": "Even with the setup,you can still"
+    },
+    {
+      "start": 1303.0,
+      "end": 1304.0,
+      "text": "have too many thoughts."
+    },
+    {
+      "start": 1304.0,
+      "end": 1306.0,
+      "text": "I wonder how that project is doing."
+    },
+    {
+      "start": 1306.0,
+      "end": 1308.0,
+      "text": "I wonder what this agent is doing."
+    },
+    {
+      "start": 1308.0,
+      "end": 1310.0,
+      "text": "How do you still achieve deep work?"
+    },
+    {
+      "start": 1310.0,
+      "end": 1312.0,
+      "text": "Most of the time,when you think about"
+    },
+    {
+      "start": 1312.0,
+      "end": 1314.0,
+      "text": "the time I was spendingwith first mates"
+    },
+    {
+      "start": 1314.0,
+      "end": 1317.0,
+      "text": "it was mostly spent on ambiguous decisions."
+    },
+    {
+      "start": 1317.0,
+      "end": 1319.0,
+      "text": "So I was not really like"
+    },
+    {
+      "start": 1319.0,
+      "end": 1322.0,
+      "text": "jumping between tabs or wondering"
+    },
+    {
+      "start": 1322.0,
+      "end": 1324.0,
+      "text": "hey,was that work still happening?"
+    },
+    {
+      "start": 1324.0,
+      "end": 1326.0,
+      "text": "Was that waiting on something?"
+    },
+    {
+      "start": 1326.0,
+      "end": 1328.0,
+      "text": "I don't need to worry about those things."
+    },
+    {
+      "start": 1328.0,
+      "end": 1330.0,
+      "text": "The only thing I spend my time on"
+    },
+    {
+      "start": 1330.0,
+      "end": 1332.0,
+      "text": "is like truly ambiguous decisions."
+    },
+    {
+      "start": 1332.0,
+      "end": 1335.0,
+      "text": "The things that really does need my judgment."
+    },
+    {
+      "start": 1335.0,
+      "end": 1337.0,
+      "text": "So pretty much like all day"
+    },
+    {
+      "start": 1337.0,
+      "end": 1339.0,
+      "text": "what I'm doing is like I"
+    },
+    {
+      "start": 1339.0,
+      "end": 1341.0,
+      "text": "one is that I'm dumping my thoughts"
+    },
+    {
+      "start": 1341.0,
+      "end": 1344.0,
+      "text": "into first mate.Everything I want to do,"
+    },
+    {
+      "start": 1344.0,
+      "end": 1346.0,
+      "text": "I just tell first mate I want to do that."
+    },
+    {
+      "start": 1346.0,
+      "end": 1348.0,
+      "text": "And then I can forget about it.It will"
+    },
+    {
+      "start": 1348.0,
+      "end": 1350.0,
+      "text": "either get done or it will come back"
+    },
+    {
+      "start": 1350.0,
+      "end": 1352.0,
+      "text": "to me as a decision to be made."
+    },
+    {
+      "start": 1352.0,
+      "end": 1354.0,
+      "text": "So that's one thing I do,just tell"
+    },
+    {
+      "start": 1354.0,
+      "end": 1356.0,
+      "text": "first mate all my thoughts.The other"
+    },
+    {
+      "start": 1356.0,
+      "end": 1358.0,
+      "text": "thing is like to deal with the decisions"
+    },
+    {
+      "start": 1358.0,
+      "end": 1360.0,
+      "text": "that I have to make.That first mate"
+    },
+    {
+      "start": 1360.0,
+      "end": 1362.0,
+      "text": "cannot determine by itself."
+    },
+    {
+      "start": 1362.0,
+      "end": 1364.0,
+      "text": "I actually have a lot of instructions"
+    },
+    {
+      "start": 1364.0,
+      "end": 1366.0,
+      "text": "for first mate when it should come"
+    },
+    {
+      "start": 1366.0,
+      "end": 1369.0,
+      "text": "back to me.Because that is actually"
+    },
+    {
+      "start": 1369.0,
+      "end": 1371.0,
+      "text": "a tricky thing to get right.Sometimes we"
+    },
+    {
+      "start": 1371.0,
+      "end": 1374.0,
+      "text": "see agents to just go wild."
+    },
+    {
+      "start": 1374.0,
+      "end": 1376.0,
+      "text": "And they do a lot of things"
+    },
+    {
+      "start": 1376.0,
+      "end": 1379.0,
+      "text": "autonomously without really your eyes"
+    },
+    {
+      "start": 1379.0,
+      "end": 1381.0,
+      "text": "on it.And at the end you will notice"
+    },
+    {
+      "start": 1381.0,
+      "end": 1383.0,
+      "text": "it did the wrong thing.And I think"
+    },
+    {
+      "start": 1383.0,
+      "end": 1385.0,
+      "text": "that's one thing that we really need"
+    },
+    {
+      "start": 1385.0,
+      "end": 1387.0,
+      "text": "to tweak about our agent behaviors"
+    },
+    {
+      "start": 1387.0,
+      "end": 1389.0,
+      "text": "to figure out what is a sweet spot."
+    },
+    {
+      "start": 1389.0,
+      "end": 1392.0,
+      "text": "And each person maybe have a slightly"
+    },
+    {
+      "start": 1392.0,
+      "end": 1395.0,
+      "text": "different preference for where that is."
+    },
+    {
+      "start": 1395.0,
+      "end": 1397.0,
+      "text": "So that is something we need to really"
+    },
+    {
+      "start": 1397.0,
+      "end": 1399.0,
+      "text": "talk through with our agent."
+    },
+    {
+      "start": 1399.0,
+      "end": 1401.0,
+      "text": "So with this set up,how many tokens"
+    },
+    {
+      "start": 1401.0,
+      "end": 1403.0,
+      "text": "are you doing on a typical day?"
+    },
+    {
+      "start": 1403.0,
+      "end": 1405.0,
+      "text": "I actually didn't count the tokens.I mostly"
+    },
+    {
+      "start": 1405.0,
+      "end": 1408.0,
+      "text": "count how many percentage of"
+    },
+    {
+      "start": 1408.0,
+      "end": 1410.0,
+      "text": "the quota I am using."
+    },
+    {
+      "start": 1410.0,
+      "end": 1413.0,
+      "text": "Right now I try to keep a good"
+    },
+    {
+      "start": 1413.0,
+      "end": 1416.0,
+      "text": "balance.The reason you saw that I"
+    },
+    {
+      "start": 1416.0,
+      "end": 1420.0,
+      "text": "exhausted my cloud quota more"
+    },
+    {
+      "start": 1420.0,
+      "end": 1423.0,
+      "text": "quickly than I should,is that"
+    },
+    {
+      "start": 1423.0,
+      "end": 1426.0,
+      "text": "anthropic told usfavor will be gone."
+    },
+    {
+      "start": 1426.0,
+      "end": 1428.0,
+      "text": "Ive even called them out and said"
+    },
+    {
+      "start": 1428.0,
+      "end": 1430.0,
+      "text": "what are these childish games,either"
+    },
+    {
+      "start": 1430.0,
+      "end": 1432.0,
+      "text": "keep it or remove it.Don't do this"
+    },
+    {
+      "start": 1432.0,
+      "end": 1434.0,
+      "text": "weekly extensions.Or like give us"
+    },
+    {
+      "start": 1434.0,
+      "end": 1437.0,
+      "text": "the banked resets that OpenAI has.Right?"
+    },
+    {
+      "start": 1437.0,
+      "end": 1439.0,
+      "text": "So we can control it.So unfortunate"
+    },
+    {
+      "start": 1439.0,
+      "end": 1442.0,
+      "text": "situation.Almost out of cloud quota."
+    },
+    {
+      "start": 1442.0,
+      "end": 1444.0,
+      "text": "There was even a couple of people that"
+    },
+    {
+      "start": 1444.0,
+      "end": 1446.0,
+      "text": "went to the hospital.Have you seen that?Because"
+    },
+    {
+      "start": 1446.0,
+      "end": 1448.0,
+      "text": "they stayed up for two days straight"
+    },
+    {
+      "start": 1448.0,
+      "end": 1450.0,
+      "text": "because they thought Fable was getting"
+    },
+    {
+      "start": 1450.0,
+      "end": 1452.0,
+      "text": "removed and they ended up in the ICU."
+    },
+    {
+      "start": 1452.0,
+      "end": 1454.0,
+      "text": "Transparency I think.This is something I"
+    },
+    {
+      "start": 1454.0,
+      "end": 1456.0,
+      "text": "couldn't really struggle with.Everytime they"
+    },
+    {
+      "start": 1456.0,
+      "end": 1458.0,
+      "text": "communicate with developers like the way"
+    },
+    {
+      "start": 1458.0,
+      "end": 1460.0,
+      "text": "they have handled a lot of the major"
+    },
+    {
+      "start": 1460.0,
+      "end": 1462.0,
+      "text": "changes in the past.It's just not"
+    },
+    {
+      "start": 1462.0,
+      "end": 1464.0,
+      "text": "quite transparent enough and give"
+    },
+    {
+      "start": 1464.0,
+      "end": 1466.0,
+      "text": "everyone enough clarity to make"
+    },
+    {
+      "start": 1466.0,
+      "end": 1468.0,
+      "text": "their decisions.This is just like a"
+    },
+    {
+      "start": 1468.0,
+      "end": 1471.0,
+      "text": "quick rant.But usually I just use"
+    },
+    {
+      "start": 1471.0,
+      "end": 1474.0,
+      "text": "this to keep my eyes on my quota.And I"
+    },
+    {
+      "start": 1474.0,
+      "end": 1477.0,
+      "text": "try to make sure I'm at a good pace"
+    },
+    {
+      "start": 1477.0,
+      "end": 1480.0,
+      "text": "with the resets.Right?With OpenAI I can be"
+    },
+    {
+      "start": 1480.0,
+      "end": 1482.0,
+      "text": "a little bit more aggressive because I"
+    },
+    {
+      "start": 1482.0,
+      "end": 1484.0,
+      "text": "have a few resets I can use.And they"
+    },
+    {
+      "start": 1484.0,
+      "end": 1486.0,
+      "text": "give so many resets.But didn't you find"
+    },
+    {
+      "start": 1486.0,
+      "end": 1488.0,
+      "text": "like gbd 5.6 sold especially on"
+    },
+    {
+      "start": 1488.0,
+      "end": 1490.0,
+      "text": "extra-high or ultra is like"
+    },
+    {
+      "start": 1490.0,
+      "end": 1492.0,
+      "text": "burning like crazy?At least it was in the"
+    },
+    {
+      "start": 1492.0,
+      "end": 1495.0,
+      "text": "first like day or 24-48 hours.So there were"
+    },
+    {
+      "start": 1495.0,
+      "end": 1497.0,
+      "text": "a few things there.The first couple of days"
+    },
+    {
+      "start": 1497.0,
+      "end": 1500.0,
+      "text": "OpenAI made a mistake.They adjusted"
+    },
+    {
+      "start": 1500.0,
+      "end": 1502.0,
+      "text": "the context window,the compaction"
+    },
+    {
+      "start": 1502.0,
+      "end": 1505.0,
+      "text": "threshold for 5.6 to"
+    },
+    {
+      "start": 1505.0,
+      "end": 1510.0,
+      "text": "372k tokens.Right?And later they"
+    },
+    {
+      "start": 1510.0,
+      "end": 1513.0,
+      "text": "advisedany request that goes beyond"
+    },
+    {
+      "start": 1513.0,
+      "end": 1517.0,
+      "text": "272k tokens will get overcharged.So a"
+    },
+    {
+      "start": 1517.0,
+      "end": 1519.0,
+      "text": "lot of people are burning tokens more"
+    },
+    {
+      "start": 1519.0,
+      "end": 1521.0,
+      "text": "quickly than they should.And they did a"
+    },
+    {
+      "start": 1521.0,
+      "end": 1524.0,
+      "text": "reset for that.So I think they are fixing"
+    },
+    {
+      "start": 1524.0,
+      "end": 1526.0,
+      "text": "it.But that was one of the reasons"
+    },
+    {
+      "start": 1526.0,
+      "end": 1529.0,
+      "text": "people felt5.6 was burning tokens"
+    },
+    {
+      "start": 1529.0,
+      "end": 1532.0,
+      "text": "morequickly than they used to.The"
+    },
+    {
+      "start": 1532.0,
+      "end": 1535.0,
+      "text": "other interesting thing was that"
+    },
+    {
+      "start": 1535.0,
+      "end": 1539.0,
+      "text": "ultra is a special case.So I think"
+    },
+    {
+      "start": 1539.0,
+      "end": 1542.0,
+      "text": "ultra and theultracode in cloud"
+    },
+    {
+      "start": 1542.0,
+      "end": 1545.0,
+      "text": "they are not necessarily a reasoning"
+    },
+    {
+      "start": 1545.0,
+      "end": 1548.0,
+      "text": "effort level.They are a prompt"
+    },
+    {
+      "start": 1548.0,
+      "end": 1551.0,
+      "text": "that tells the agent to use subagents"
+    },
+    {
+      "start": 1551.0,
+      "end": 1554.0,
+      "text": "aggressively to fan out tasks.And"
+    },
+    {
+      "start": 1554.0,
+      "end": 1557.0,
+      "text": "for a while,I think maybe even right"
+    },
+    {
+      "start": 1557.0,
+      "end": 1560.0,
+      "text": "now,OpenAI codecs when it uses"
+    },
+    {
+      "start": 1560.0,
+      "end": 1563.0,
+      "text": "ultra,it will spin up so many subagents"
+    },
+    {
+      "start": 1563.0,
+      "end": 1566.0,
+      "text": "and every subagent is an ultra agent.It's"
+    },
+    {
+      "start": 1566.0,
+      "end": 1568.0,
+      "text": "just burning tokens way too fast.I think"
+    },
+    {
+      "start": 1568.0,
+      "end": 1571.0,
+      "text": "xhigh and high are very different.xhigh"
+    },
+    {
+      "start": 1571.0,
+      "end": 1573.0,
+      "text": "doesn't burn my tokens that fast.xhigh"
+    },
+    {
+      "start": 1573.0,
+      "end": 1576.0,
+      "text": "is actually my sweet spot.Because"
+    },
+    {
+      "start": 1576.0,
+      "end": 1579.0,
+      "text": "despiteit being xhigh,it's actually pretty"
+    },
+    {
+      "start": 1579.0,
+      "end": 1582.0,
+      "text": "fast.The prompts that we just went"
+    },
+    {
+      "start": 1582.0,
+      "end": 1584.0,
+      "text": "through,it usually comes back pretty"
+    },
+    {
+      "start": 1584.0,
+      "end": 1586.0,
+      "text": "quickly.Oh,actually,yesterday"
+    },
+    {
+      "start": 1586.0,
+      "end": 1588.0,
+      "text": "on that point,I did testing with"
+    },
+    {
+      "start": 1588.0,
+      "end": 1590.0,
+      "text": "some people.And I was observing"
+    },
+    {
+      "start": 1590.0,
+      "end": 1593.0,
+      "text": "they were running5.6 Luna.And I was like"
+    },
+    {
+      "start": 1593.0,
+      "end": 1595.0,
+      "text": "why is it so slow?They switched to 5.6"
+    },
+    {
+      "start": 1595.0,
+      "end": 1598.0,
+      "text": "medium.And it was faster.So I don't know"
+    },
+    {
+      "start": 1598.0,
+      "end": 1600.0,
+      "text": "what's happening at OpenAI.But literally,Luna is slower"
+    },
+    {
+      "start": 1600.0,
+      "end": 1603.0,
+      "text": "than so right now.Yeah.So you know"
+    },
+    {
+      "start": 1603.0,
+      "end": 1606.0,
+      "text": "why that's the case.There's a benchmark I can show"
+    },
+    {
+      "start": 1606.0,
+      "end": 1609.0,
+      "text": "here.It's called DeepSwee.I think you probably"
+    },
+    {
+      "start": 1609.0,
+      "end": 1612.0,
+      "text": "have seen this as well.DeepSwee.This is"
+    },
+    {
+      "start": 1612.0,
+      "end": 1616.0,
+      "text": "probably like the benchmark I currently trust the most.Because"
+    },
+    {
+      "start": 1616.0,
+      "end": 1619.0,
+      "text": "it's not contaminated yet.It's new enough.That's"
+    },
+    {
+      "start": 1619.0,
+      "end": 1622.0,
+      "text": "the training data does not have this.So maybe eventually"
+    },
+    {
+      "start": 1622.0,
+      "end": 1625.0,
+      "text": "it will need a refresh.But right now,I trust"
+    },
+    {
+      "start": 1625.0,
+      "end": 1628.0,
+      "text": "this a lot.And you can see there are a few"
+    },
+    {
+      "start": 1628.0,
+      "end": 1631.0,
+      "text": "reallyinteresting outliers here.Clock"
+    },
+    {
+      "start": 1631.0,
+      "end": 1635.0,
+      "text": "sonic 5.If you look at sonic 5,up until"
+    },
+    {
+      "start": 1635.0,
+      "end": 1639.0,
+      "text": "like from low,medium,high,xhigh,it's"
+    },
+    {
+      "start": 1639.0,
+      "end": 1644.0,
+      "text": "like it's a reasonable curve,right?So this"
+    },
+    {
+      "start": 1644.0,
+      "end": 1647.0,
+      "text": "graph is like the left-hand side is more"
+    },
+    {
+      "start": 1647.0,
+      "end": 1652.0,
+      "text": "expensive.And the top-end is more intelligent.So the"
+    },
+    {
+      "start": 1652.0,
+      "end": 1656.0,
+      "text": "top-right is good.So sonic 5 is reasonable"
+    },
+    {
+      "start": 1656.0,
+      "end": 1661.0,
+      "text": "up untilxhigh.But if you do max,it's going"
+    },
+    {
+      "start": 1661.0,
+      "end": 1665.0,
+      "text": "crazy.It's the most expensive model there"
+    },
+    {
+      "start": 1665.0,
+      "end": 1669.0,
+      "text": "is.Sonic 5 is more expensive than fable.So I"
+    },
+    {
+      "start": 1669.0,
+      "end": 1673.0,
+      "text": "think the reason this is happening is thatwhen the"
+    },
+    {
+      "start": 1673.0,
+      "end": 1676.0,
+      "text": "model itself is not intelligent enough,it will"
+    },
+    {
+      "start": 1676.0,
+      "end": 1679.0,
+      "text": "justwaste a lot of cycles,right?It's the wrong"
+    },
+    {
+      "start": 1679.0,
+      "end": 1682.0,
+      "text": "thing.Especially when you ask it to do"
+    },
+    {
+      "start": 1682.0,
+      "end": 1685.0,
+      "text": "max reasoning,it will think very hard,but it's"
+    },
+    {
+      "start": 1685.0,
+      "end": 1687.0,
+      "text": "still not intelligent enough to solve the"
+    },
+    {
+      "start": 1687.0,
+      "end": 1689.0,
+      "text": "problem.So it will justwaste a lot of time"
+    },
+    {
+      "start": 1689.0,
+      "end": 1693.0,
+      "text": "and tokens.So Ithink it's the same withlunar.The"
+    },
+    {
+      "start": 1693.0,
+      "end": 1696.0,
+      "text": "unique thing aboutlunar is thatit's a really"
+    },
+    {
+      "start": 1696.0,
+      "end": 1700.0,
+      "text": "tall curve.It meansit stretches between"
+    },
+    {
+      "start": 1700.0,
+      "end": 1703.0,
+      "text": "very,verylow intelligence to very high"
+    },
+    {
+      "start": 1703.0,
+      "end": 1706.0,
+      "text": "intelligence.So Ithink there is probably a similar"
+    },
+    {
+      "start": 1706.0,
+      "end": 1709.0,
+      "text": "thing happening withlunar,where if you asklunar to"
+    },
+    {
+      "start": 1709.0,
+      "end": 1712.0,
+      "text": "work on a hard problem,it willjust not be able"
+    },
+    {
+      "start": 1712.0,
+      "end": 1715.0,
+      "text": "to solve it,but it willwaste a lot of tokens"
+    },
+    {
+      "start": 1715.0,
+      "end": 1718.0,
+      "text": "trying to.My observation is exactly that.You did"
+    },
+    {
+      "start": 1718.0,
+      "end": 1720.0,
+      "text": "way too many tool calls to achieve something"
+    },
+    {
+      "start": 1720.0,
+      "end": 1723.0,
+      "text": "relatively simple.And then 5.6 sole on medium"
+    },
+    {
+      "start": 1723.0,
+      "end": 1727.0,
+      "text": "just did it in like a minute.Exactly.So right now"
+    },
+    {
+      "start": 1727.0,
+      "end": 1730.0,
+      "text": "I pretty much only use sole for my day-to-day"
+    },
+    {
+      "start": 1730.0,
+      "end": 1733.0,
+      "text": "tasks.So I can like adjust the reasoning level"
+    },
+    {
+      "start": 1733.0,
+      "end": 1736.0,
+      "text": "for sole,right?I find very little reason to use"
+    },
+    {
+      "start": 1736.0,
+      "end": 1740.0,
+      "text": "TERRA.Because why do I useTERRA when I can"
+    },
+    {
+      "start": 1740.0,
+      "end": 1743.0,
+      "text": "just adjust the reasoning level down for sole?"
+    },
+    {
+      "start": 1743.0,
+      "end": 1746.0,
+      "text": "Then I get more intelligent modelat a lower"
+    },
+    {
+      "start": 1746.0,
+      "end": 1750.0,
+      "text": "cost.I uselunar in some cases though,in my"
+    },
+    {
+      "start": 1750.0,
+      "end": 1753.0,
+      "text": "home assistant.So I have a home assistant"
+    },
+    {
+      "start": 1753.0,
+      "end": 1755.0,
+      "text": "running my house,and I can control my"
+    },
+    {
+      "start": 1755.0,
+      "end": 1760.0,
+      "text": "light,and everything,right?Music players,etc.etc.That"
+    },
+    {
+      "start": 1760.0,
+      "end": 1763.0,
+      "text": "I uselunar.Because it's fast.I need to be"
+    },
+    {
+      "start": 1763.0,
+      "end": 1765.0,
+      "text": "really,really fast.Why not like an open source"
+    },
+    {
+      "start": 1765.0,
+      "end": 1767.0,
+      "text": "model for that?Like you know,communicate 2.7 code"
+    },
+    {
+      "start": 1767.0,
+      "end": 1770.0,
+      "text": "with like the nitros to fix an open router.You can"
+    },
+    {
+      "start": 1770.0,
+      "end": 1773.0,
+      "text": "get like 200,300 tokens per second.Yeah.Yeah.So open"
+    },
+    {
+      "start": 1773.0,
+      "end": 1776.0,
+      "text": "source models.So there's a few ways to do"
+    },
+    {
+      "start": 1776.0,
+      "end": 1779.0,
+      "text": "that.One is to run that locally.Actually,I think"
+    },
+    {
+      "start": 1779.0,
+      "end": 1782.0,
+      "text": "for this kind of home assistant scenario,I can"
+    },
+    {
+      "start": 1782.0,
+      "end": 1785.0,
+      "text": "run something locally on my Mac mini,and get it"
+    },
+    {
+      "start": 1785.0,
+      "end": 1788.0,
+      "text": "to work reasonably well,right?The thing is"
+    },
+    {
+      "start": 1788.0,
+      "end": 1791.0,
+      "text": "that my Mac mini right now is a very"
+    },
+    {
+      "start": 1791.0,
+      "end": 1794.0,
+      "text": "precious resource.Because I do everything else"
+    },
+    {
+      "start": 1794.0,
+      "end": 1797.0,
+      "text": "on my Mac mini.I have a lot of tasks to be"
+    },
+    {
+      "start": 1797.0,
+      "end": 1801.0,
+      "text": "done,right?So when I build the iOS apps,when I"
+    },
+    {
+      "start": 1801.0,
+      "end": 1804.0,
+      "text": "build everything else I'm doing,it consumes"
+    },
+    {
+      "start": 1804.0,
+      "end": 1807.0,
+      "text": "the compute from my Mac mini.And I connect my"
+    },
+    {
+      "start": 1807.0,
+      "end": 1810.0,
+      "text": "phone to it.I connect everything else to it.Mac mini"
+    },
+    {
+      "start": 1810.0,
+      "end": 1815.0,
+      "text": "is kind of my personal compute.Make sense.And if I run"
+    },
+    {
+      "start": 1815.0,
+      "end": 1820.0,
+      "text": "a open source model on that,it will just like"
+    },
+    {
+      "start": 1820.0,
+      "end": 1823.0,
+      "text": "compete with everything else I'm doing.So that's"
+    },
+    {
+      "start": 1823.0,
+      "end": 1827.0,
+      "text": "one constraint.I could also run open"
+    },
+    {
+      "start": 1827.0,
+      "end": 1831.0,
+      "text": "source models through cloud providers,right?But I"
+    },
+    {
+      "start": 1831.0,
+      "end": 1835.0,
+      "text": "find that cost saving not meaningful enough"
+    },
+    {
+      "start": 1835.0,
+      "end": 1838.0,
+      "text": "for me to really like switch away from"
+    },
+    {
+      "start": 1838.0,
+      "end": 1843.0,
+      "text": "something like Luna.So far,I haven't really"
+    },
+    {
+      "start": 1843.0,
+      "end": 1847.0,
+      "text": "got into local LMS and open source models"
+    },
+    {
+      "start": 1847.0,
+      "end": 1850.0,
+      "text": "that much.And in terms of the harness,is Pi"
+    },
+    {
+      "start": 1850.0,
+      "end": 1853.0,
+      "text": "your favourite harness right now?Yeah,so there's"
+    },
+    {
+      "start": 1853.0,
+      "end": 1856.0,
+      "text": "a few harnesses I use.Right now,I'm using Pi"
+    },
+    {
+      "start": 1856.0,
+      "end": 1859.0,
+      "text": "because I'm mostly working with GPT 5.6"
+    },
+    {
+      "start": 1859.0,
+      "end": 1862.0,
+      "text": "today,because of the quota.But what I do"
+    },
+    {
+      "start": 1862.0,
+      "end": 1865.0,
+      "text": "right now,is that if I use Anthropics models,I"
+    },
+    {
+      "start": 1865.0,
+      "end": 1868.0,
+      "text": "use Cloud Codebecause they banned everything else.If I"
+    },
+    {
+      "start": 1868.0,
+      "end": 1871.0,
+      "text": "use GPT 5.6today,I use that in Pi.The reason is"
+    },
+    {
+      "start": 1871.0,
+      "end": 1875.0,
+      "text": "that the codecoli is not that good as a"
+    },
+    {
+      "start": 1875.0,
+      "end": 1879.0,
+      "text": "harness.It has some strength.For example,it's got"
+    },
+    {
+      "start": 1879.0,
+      "end": 1883.0,
+      "text": "out-of-the-box integration with the image generation,which"
+    },
+    {
+      "start": 1883.0,
+      "end": 1886.0,
+      "text": "is very handy.A lot of the other capabilities,such"
+    },
+    {
+      "start": 1886.0,
+      "end": 1890.0,
+      "text": "as likemanaging background processes,it's just"
+    },
+    {
+      "start": 1890.0,
+      "end": 1893.0,
+      "text": "not as good.It doesn't have all the bells and whistles"
+    },
+    {
+      "start": 1893.0,
+      "end": 1896.0,
+      "text": "that make the COI experience really smooth.If I compare"
+    },
+    {
+      "start": 1896.0,
+      "end": 1899.0,
+      "text": "that with Pi,Pi is highly customizable.Right,so"
+    },
+    {
+      "start": 1899.0,
+      "end": 1903.0,
+      "text": "everything I want to achieve,I can pretty much just build a plug-in"
+    },
+    {
+      "start": 1903.0,
+      "end": 1907.0,
+      "text": "to achieve that.So that's the main reason I choose Pi"
+    },
+    {
+      "start": 1907.0,
+      "end": 1911.0,
+      "text": "over codecs for GPT models.For"
+    },
+    {
+      "start": 1911.0,
+      "end": 1915.0,
+      "text": "Groc,it's the other model I use because I have a X subscription"
+    },
+    {
+      "start": 1915.0,
+      "end": 1919.0,
+      "text": "already and there's some quota there.I actually findGroc"
+    },
+    {
+      "start": 1919.0,
+      "end": 1924.0,
+      "text": "4.5 really good.Yeah,I'm in the EU,so I cannot use it"
+    },
+    {
+      "start": 1924.0,
+      "end": 1929.0,
+      "text": "because it's banned in the EU.Oh,okay,that's unfortunate.So"
+    },
+    {
+      "start": 1929.0,
+      "end": 1933.0,
+      "text": "it's a pretty good model.The way I think aboutGroc 4.5"
+    },
+    {
+      "start": 1933.0,
+      "end": 1938.0,
+      "text": "is that it's opus,but on fast mode.Damn.Yeah,it's pretty much"
+    },
+    {
+      "start": 1938.0,
+      "end": 1942.0,
+      "text": "capable as doing everything opus can do,and it's super fast.And"
+    },
+    {
+      "start": 1942.0,
+      "end": 1946.0,
+      "text": "the interesting thing about usingGroc,especially in theGroc harness,the"
+    },
+    {
+      "start": 1946.0,
+      "end": 1950.0,
+      "text": "Groc build harness,is that it seemsGroc build"
+    },
+    {
+      "start": 1950.0,
+      "end": 1954.0,
+      "text": "gives you free XAPI access to like read"
+    },
+    {
+      "start": 1954.0,
+      "end": 1958.0,
+      "text": "post and search for things,whichotherwise would cost"
+    },
+    {
+      "start": 1958.0,
+      "end": 1962.0,
+      "text": "you,because XAPI cost money.So that's another benefit."
+    },
+    {
+      "start": 1962.0,
+      "end": 1966.0,
+      "text": "I can useGroc build to like search for tweets and rationalize"
+    },
+    {
+      "start": 1966.0,
+      "end": 1969.0,
+      "text": "like news,things like that for me.I think it's like one of the fastest"
+    },
+    {
+      "start": 1969.0,
+      "end": 1973.0,
+      "text": "improving harnesses as well,right.Yeah,yeah,totally.It's very young,right.It's"
+    },
+    {
+      "start": 1973.0,
+      "end": 1977.0,
+      "text": "it's very new,and they only recently started being really serious about"
+    },
+    {
+      "start": 1977.0,
+      "end": 1981.0,
+      "text": "that.Andit's already got like better capability than Codex,at some of"
+    },
+    {
+      "start": 1981.0,
+      "end": 1987.0,
+      "text": "the background process,polling,etc.I see.Okay,any other Asian harness?"
+    },
+    {
+      "start": 1987.0,
+      "end": 1992.0,
+      "text": "I also use OpenCode,quite a bit.So OpenCode is also pretty smooth."
+    },
+    {
+      "start": 1992.0,
+      "end": 1998.0,
+      "text": "I like the TUI experience there.But I think over time,I started leaning"
+    },
+    {
+      "start": 1998.0,
+      "end": 2003.0,
+      "text": "towards PIE for more and more things,because PIE is like"
+    },
+    {
+      "start": 2003.0,
+      "end": 2007.0,
+      "text": "more deeply customizable.You can pretty much change every aspect"
+    },
+    {
+      "start": 2007.0,
+      "end": 2012.0,
+      "text": "about PIE,and I kind of like about that.So like you are big on"
+    },
+    {
+      "start": 2012.0,
+      "end": 2015.0,
+      "text": "customizability,right.So do you think in the future,more and more people"
+    },
+    {
+      "start": 2015.0,
+      "end": 2019.0,
+      "text": "will have their own setup,instead of like these predefined,you know,packaged"
+    },
+    {
+      "start": 2019.0,
+      "end": 2024.0,
+      "text": "apps?I think likely there is going to be a spectrum of preference."
+    },
+    {
+      "start": 2024.0,
+      "end": 2028.0,
+      "text": "What I think will happen is that there will be a group of people who are"
+    },
+    {
+      "start": 2028.0,
+      "end": 2032.0,
+      "text": "not very opinionated about how things should work.They are kind of"
+    },
+    {
+      "start": 2032.0,
+      "end": 2036.0,
+      "text": "looking for others,like give them proven playbooks.So they just want"
+    },
+    {
+      "start": 2036.0,
+      "end": 2040.0,
+      "text": "something that can work out of the box.They don't have to worry about"
+    },
+    {
+      "start": 2040.0,
+      "end": 2045.0,
+      "text": "tinkering with that all day.That I think will always exist.And that's good."
+    },
+    {
+      "start": 2045.0,
+      "end": 2050.0,
+      "text": "And people will build tools and publish that to those people.So they"
+    },
+    {
+      "start": 2050.0,
+      "end": 2053.0,
+      "text": "can just use something that can work out of box.There will be another group"
+    },
+    {
+      "start": 2053.0,
+      "end": 2057.0,
+      "text": "of people who will start to have more and more personal preferences for"
+    },
+    {
+      "start": 2057.0,
+      "end": 2061.0,
+      "text": "how things should work.And those people will need things that can"
+    },
+    {
+      "start": 2061.0,
+      "end": 2066.0,
+      "text": "really be customized and evolve.One thing I showed you earlier was"
+    },
+    {
+      "start": 2066.0,
+      "end": 2071.0,
+      "text": "this quota widget I have on the menu bar,right.This thing,I call it baby"
+    },
+    {
+      "start": 2071.0,
+      "end": 2077.0,
+      "text": "menu.I built this myself.And this thing is self-modifiable.So right now"
+    },
+    {
+      "start": 2077.0,
+      "end": 2081.0,
+      "text": "you can see it's a bunch of things that would never exist together in a"
+    },
+    {
+      "start": 2081.0,
+      "end": 2086.0,
+      "text": "product.There's my github stats,right.And there's like CPU"
+    },
+    {
+      "start": 2086.0,
+      "end": 2091.0,
+      "text": "and memory.And then there's like mycloth and codex quota.No one will"
+    },
+    {
+      "start": 2091.0,
+      "end": 2095.0,
+      "text": "build a product like this and ship it to other people.This is,this belongs"
+    },
+    {
+      "start": 2095.0,
+      "end": 2100.0,
+      "text": "to me.And the reason I have it like this,the way I got it to become"
+    },
+    {
+      "start": 2100.0,
+      "end": 2105.0,
+      "text": "like this,is through talking to babymenu.So babymenu started as empty"
+    },
+    {
+      "start": 2105.0,
+      "end": 2110.0,
+      "text": "thing.And I tell babymenu what I want.And babymenu will self"
+    },
+    {
+      "start": 2110.0,
+      "end": 2115.0,
+      "text": "modify and start to become like that.That's,I think one version"
+    },
+    {
+      "start": 2115.0,
+      "end": 2119.0,
+      "text": "of the future that I think will happen to a lot of software.They will"
+    },
+    {
+      "start": 2119.0,
+      "end": 2123.0,
+      "text": "ship a reasonable experience out of,out of the box.But now everyone has"
+    },
+    {
+      "start": 2123.0,
+      "end": 2126.0,
+      "text": "agents.So everyone should be able to talk to their agent and"
+    },
+    {
+      "start": 2126.0,
+      "end": 2130.0,
+      "text": "customize the software they use.And also like a lot of self healing"
+    },
+    {
+      "start": 2130.0,
+      "end": 2133.0,
+      "text": "loops.You know,like a lot of software will have like a way to easily report"
+    },
+    {
+      "start": 2133.0,
+      "end": 2138.0,
+      "text": "a bug.That starts like a codex CLI,implements it,goes into PR.You have"
+    },
+    {
+      "start": 2138.0,
+      "end": 2141.0,
+      "text": "like something like code rabbit review it.And the bug could be fixed"
+    },
+    {
+      "start": 2141.0,
+      "end": 2145.0,
+      "text": "within 20 minutes without any human involvement.Yeah.Yeah.Totally.Totally."
+    },
+    {
+      "start": 2145.0,
+      "end": 2148.0,
+      "text": "Something else that's very interesting that's happening is like"
+    },
+    {
+      "start": 2148.0,
+      "end": 2154.0,
+      "text": "firstmade.Firstmade is basically a agents.md file.So there's"
+    },
+    {
+      "start": 2154.0,
+      "end": 2160.0,
+      "text": "the agents.md.That prescribes how firstmade should behave.How it should"
+    },
+    {
+      "start": 2160.0,
+      "end": 2164.0,
+      "text": "coordinate different tasks across a larger number of crewmates.So this is"
+    },
+    {
+      "start": 2164.0,
+      "end": 2170.0,
+      "text": "the instruction for firstmade.It also has a bunch of script files.So in"
+    },
+    {
+      "start": 2170.0,
+      "end": 2175.0,
+      "text": "this binary folder,it has a bunch of batch scripts.This batch"
+    },
+    {
+      "start": 2175.0,
+      "end": 2179.0,
+      "text": "scripts basically handle a lot of the deterministic steps that"
+    },
+    {
+      "start": 2179.0,
+      "end": 2184.0,
+      "text": "firstmade would otherwise have to take.So bundle them into a batch"
+    },
+    {
+      "start": 2184.0,
+      "end": 2188.0,
+      "text": "script so thatfirstmade does not need to spend tokens going through"
+    },
+    {
+      "start": 2188.0,
+      "end": 2192.0,
+      "text": "all those deterministic steps.Now,the good thing about this is that"
+    },
+    {
+      "start": 2192.0,
+      "end": 2196.0,
+      "text": "boththeagents.md and this batch scripts are in the current"
+    },
+    {
+      "start": 2196.0,
+      "end": 2201.0,
+      "text": "directory.So firstmade can modify this,right?So one"
+    },
+    {
+      "start": 2201.0,
+      "end": 2204.0,
+      "text": "interesting thing I didn't even realize what's going to happen was"
+    },
+    {
+      "start": 2204.0,
+      "end": 2208.0,
+      "text": "that when firstmade has a bug,that's likepreventing it from"
+    },
+    {
+      "start": 2208.0,
+      "end": 2212.0,
+      "text": "doing something correctly,right?It will just work around the bug"
+    },
+    {
+      "start": 2212.0,
+      "end": 2217.0,
+      "text": "by itself.So now this software is pretty much likeunstoppable.There's"
+    },
+    {
+      "start": 2217.0,
+      "end": 2221.0,
+      "text": "no way you can stop firstmade from doing what it needs to do.Even"
+    },
+    {
+      "start": 2221.0,
+      "end": 2225.0,
+      "text": "ifthis scripts have various kind of bugs,it will maybe make"
+    },
+    {
+      "start": 2225.0,
+      "end": 2229.0,
+      "text": "firstmade a little more inefficient.It will not stop it from working.This"
+    },
+    {
+      "start": 2229.0,
+      "end": 2233.0,
+      "text": "is a really big change fromtraditional software,right?In a"
+    },
+    {
+      "start": 2233.0,
+      "end": 2237.0,
+      "text": "traditional software,ifyou have a bug,then it's a bug.It may be like"
+    },
+    {
+      "start": 2237.0,
+      "end": 2241.0,
+      "text": "breaking the app,it may be crashing the app.You can never get through it.But now"
+    },
+    {
+      "start": 2241.0,
+      "end": 2245.0,
+      "text": "we have this intelligent software that's pretty muchalways flexible.And it's"
+    },
+    {
+      "start": 2245.0,
+      "end": 2249.0,
+      "text": "very hard to write a bug thatcan stop it from working.So basically"
+    },
+    {
+      "start": 2249.0,
+      "end": 2253.0,
+      "text": "then the challenge becomes likewhere are all the things thatwe humans are slowing"
+    },
+    {
+      "start": 2253.0,
+      "end": 2257.0,
+      "text": "down the agents.And how can we remove ourselves fromas many of them as possible"
+    },
+    {
+      "start": 2257.0,
+      "end": 2261.0,
+      "text": "only beinginvolved in the ones thatreally matter.Yeah,yeah,totally.What"
+    },
+    {
+      "start": 2261.0,
+      "end": 2265.0,
+      "text": "is about your setup,should people know?I think maybe the other thing is"
+    },
+    {
+      "start": 2265.0,
+      "end": 2269.0,
+      "text": "no mistakes.So what we very,very often I run into"
+    },
+    {
+      "start": 2269.0,
+      "end": 2273.0,
+      "text": "so much is thatI get AI to generate codefor me,right?And"
+    },
+    {
+      "start": 2273.0,
+      "end": 2277.0,
+      "text": "fable and 5.6,they can write codevery,very quickly"
+    },
+    {
+      "start": 2277.0,
+      "end": 2281.0,
+      "text": "and very well.They can dovery complex changes.But now"
+    },
+    {
+      "start": 2281.0,
+      "end": 2285.0,
+      "text": "ifthere is a complex changethat's made by AI"
+    },
+    {
+      "start": 2285.0,
+      "end": 2289.0,
+      "text": "how do I knowit's okay to merge it,right?So let me"
+    },
+    {
+      "start": 2289.0,
+      "end": 2293.0,
+      "text": "show you averyreal example here.I'll go to myother project"
+    },
+    {
+      "start": 2293.0,
+      "end": 2297.0,
+      "text": "for the hybrid.This is aAI harness I'm building for children"
+    },
+    {
+      "start": 2297.0,
+      "end": 2301.0,
+      "text": "to learn to use agents.I just did"
+    },
+    {
+      "start": 2301.0,
+      "end": 2305.0,
+      "text": "a whole bunch of changes.You can see here.This is the diff.I made a bunch of changes"
+    },
+    {
+      "start": 2305.0,
+      "end": 2309.0,
+      "text": "usingfable yesterday.And now I have this"
+    },
+    {
+      "start": 2309.0,
+      "end": 2313.0,
+      "text": "change sitting here.What do I do now?If I go"
+    },
+    {
+      "start": 2313.0,
+      "end": 2317.0,
+      "text": "review everyline of this diff,it's going to take"
+    },
+    {
+      "start": 2317.0,
+      "end": 2321.0,
+      "text": "a long time,right?And our time is like really limited.So"
+    },
+    {
+      "start": 2321.0,
+      "end": 2325.0,
+      "text": "ifIreview AI-generated code,then"
+    },
+    {
+      "start": 2325.0,
+      "end": 2329.0,
+      "text": "there is an upper bound ofhow much workI can get done,right?Because"
+    },
+    {
+      "start": 2329.0,
+      "end": 2333.0,
+      "text": "it pretty much depends onhow much codeI can review every day,without going"
+    },
+    {
+      "start": 2333.0,
+      "end": 2337.0,
+      "text": "insane.So now what I dois that I have pretty much"
+    },
+    {
+      "start": 2337.0,
+      "end": 2341.0,
+      "text": "I send all these changes to NoMistakes,which performs"
+    },
+    {
+      "start": 2341.0,
+      "end": 2345.0,
+      "text": "a pipeline where it doesadversarial review"
+    },
+    {
+      "start": 2345.0,
+      "end": 2349.0,
+      "text": "and validation and everything,and present me with something that I can more"
+    },
+    {
+      "start": 2349.0,
+      "end": 2353.0,
+      "text": "easily determine whether it's okay.So the way I do that is just"
+    },
+    {
+      "start": 2353.0,
+      "end": 2357.0,
+      "text": "nm.This is ashort hand for NoMistakes"
+    },
+    {
+      "start": 2357.0,
+      "end": 2361.0,
+      "text": "-y,which pretty much like just"
+    },
+    {
+      "start": 2361.0,
+      "end": 2365.0,
+      "text": "means gets all the code changes that are in the current working directory"
+    },
+    {
+      "start": 2365.0,
+      "end": 2369.0,
+      "text": "into a branch and pass that to NoMistakes.So I just run"
+    },
+    {
+      "start": 2369.0,
+      "end": 2373.0,
+      "text": "that to show you.NoMistakes will create a branch,will ask the agent to create"
+    },
+    {
+      "start": 2373.0,
+      "end": 2377.0,
+      "text": "a branch for me,and create a commit,and like put all"
+    },
+    {
+      "start": 2377.0,
+      "end": 2381.0,
+      "text": "the necessary information in there,and then push that branch"
+    },
+    {
+      "start": 2381.0,
+      "end": 2385.0,
+      "text": "into a local git proxy,where it performs the validation in"
+    },
+    {
+      "start": 2385.0,
+      "end": 2389.0,
+      "text": "a isolated work tree.So we can see that in a bit.Yeah,it's already created"
+    },
+    {
+      "start": 2389.0,
+      "end": 2393.0,
+      "text": "the commit.So this is the NoMistakes pipeline.It first"
+    },
+    {
+      "start": 2393.0,
+      "end": 2397.0,
+      "text": "will analyze the intent,and the way it understands"
+    },
+    {
+      "start": 2397.0,
+      "end": 2401.0,
+      "text": "the intent is by analyzing the agent's session"
+    },
+    {
+      "start": 2401.0,
+      "end": 2405.0,
+      "text": "that produced this change.So the agent's session is where I worked"
+    },
+    {
+      "start": 2405.0,
+      "end": 2409.0,
+      "text": "with Fable to create this code change,right?I send"
+    },
+    {
+      "start": 2409.0,
+      "end": 2413.0,
+      "text": "my prompt,I expressed my intent originally there.So the first step is"
+    },
+    {
+      "start": 2413.0,
+      "end": 2417.0,
+      "text": "to understand that intent,because that intent is the true requirements"
+    },
+    {
+      "start": 2417.0,
+      "end": 2421.0,
+      "text": "that should be respected.It's what I said I want,right?It understands"
+    },
+    {
+      "start": 2421.0,
+      "end": 2425.0,
+      "text": "the intent.It does a rebaseon the latest"
+    },
+    {
+      "start": 2425.0,
+      "end": 2429.0,
+      "text": "remote origin main branch,so we don't runinto merge"
+    },
+    {
+      "start": 2429.0,
+      "end": 2433.0,
+      "text": "conflict later on.And now it's doing the adversarial review.So here it's"
+    },
+    {
+      "start": 2433.0,
+      "end": 2437.0,
+      "text": "using GPT 5.6 sole on medium"
+    },
+    {
+      "start": 2437.0,
+      "end": 2441.0,
+      "text": "to review the change.If it found something,it will either auto fix"
+    },
+    {
+      "start": 2441.0,
+      "end": 2445.0,
+      "text": "if it's a very obvious bug,or it will escalate to me"
+    },
+    {
+      "start": 2445.0,
+      "end": 2449.0,
+      "text": "for approval,if it's not obvious enough.If it has some product implications"
+    },
+    {
+      "start": 2449.0,
+      "end": 2453.0,
+      "text": "sometimes we find a bug,and the solution to fix the bug"
+    },
+    {
+      "start": 2453.0,
+      "end": 2457.0,
+      "text": "will require changing the product,right?Those are the cases I want"
+    },
+    {
+      "start": 2457.0,
+      "end": 2461.0,
+      "text": "to actually have a say.I set some rules to sayfor those cases"
+    },
+    {
+      "start": 2461.0,
+      "end": 2465.0,
+      "text": "escalate to me.And here we can maybe see whether it will just auto"
+    },
+    {
+      "start": 2465.0,
+      "end": 2469.0,
+      "text": "complete or escalate something.But basically this review step will"
+    },
+    {
+      "start": 2469.0,
+      "end": 2473.0,
+      "text": "keep going for a while,and it will pretty muchcatch all the edge cases"
+    },
+    {
+      "start": 2473.0,
+      "end": 2477.0,
+      "text": "and bugs and missing things.And"
+    },
+    {
+      "start": 2477.0,
+      "end": 2481.0,
+      "text": "at the end,after the adversarial review,it will do testing"
+    },
+    {
+      "start": 2481.0,
+      "end": 2485.0,
+      "text": "as well.And the testing will produce some"
+    },
+    {
+      "start": 2485.0,
+      "end": 2489.0,
+      "text": "visible evidence that can really tell me it's really working"
+    },
+    {
+      "start": 2489.0,
+      "end": 2493.0,
+      "text": "as intended.And then documentation,linting,and it will push"
+    },
+    {
+      "start": 2493.0,
+      "end": 2497.0,
+      "text": "for PR.And it will babysit the CI pipeline until the PR is"
+    },
+    {
+      "start": 2497.0,
+      "end": 2501.0,
+      "text": "green.And then it will tell me,okay,now you can go look at that.So usually"
+    },
+    {
+      "start": 2501.0,
+      "end": 2505.0,
+      "text": "when I launch NoMistakes,I don't look at this view.I just go away"
+    },
+    {
+      "start": 2505.0,
+      "end": 2509.0,
+      "text": "and do something else.Now a days,I don't even launch NoMistakes"
+    },
+    {
+      "start": 2509.0,
+      "end": 2513.0,
+      "text": "myself.I ask FirstMate to do that.So it's FirstMate launching this"
+    },
+    {
+      "start": 2513.0,
+      "end": 2517.0,
+      "text": "for me.Yeah,but pretty much this is like something that I think helped me"
+    },
+    {
+      "start": 2517.0,
+      "end": 2523.0,
+      "text": "a ton.Because otherwise,I would have seen all the problems"
+    },
+    {
+      "start": 2523.0,
+      "end": 2529.0,
+      "text": "NoMistakes cut.Told me thatmy code basis would absolutely go into a mess"
+    },
+    {
+      "start": 2529.0,
+      "end": 2533.0,
+      "text": "if I didn't use something like this.But doesn't it on large project like burn up"
+    },
+    {
+      "start": 2533.0,
+      "end": 2537.0,
+      "text": "too much limits,too many tokens.Because for example,this reminded me of"
+    },
+    {
+      "start": 2537.0,
+      "end": 2541.0,
+      "text": "DeepSec from Vercel.And they have so many warnings that"
+    },
+    {
+      "start": 2541.0,
+      "end": 2545.0,
+      "text": "if you run this on a large code base,it's gonna burn tens of"
+    },
+    {
+      "start": 2545.0,
+      "end": 2549.0,
+      "text": "thous of dollars of API credits because of how deep it goes.So how do you"
+    },
+    {
+      "start": 2549.0,
+      "end": 2553.0,
+      "text": "balance the number of review it does versusburning your"
+    },
+    {
+      "start": 2553.0,
+      "end": 2557.0,
+      "text": "usage?Yeah,good question.So I think there is one"
+    },
+    {
+      "start": 2557.0,
+      "end": 2561.0,
+      "text": "aspect,which is the inevitable cost of quality.So think"
+    },
+    {
+      "start": 2561.0,
+      "end": 2565.0,
+      "text": "of a software team.If we remove the code review"
+    },
+    {
+      "start": 2565.0,
+      "end": 2569.0,
+      "text": "process between humans,everyone will be able to merge code faster,right?"
+    },
+    {
+      "start": 2569.0,
+      "end": 2573.0,
+      "text": "But then you will have all kinds of like quality problems,incidents"
+    },
+    {
+      "start": 2573.0,
+      "end": 2577.0,
+      "text": "that will happen in production sites.And then eventually you have to pay the cost"
+    },
+    {
+      "start": 2577.0,
+      "end": 2581.0,
+      "text": "in another way.So that's the inevitable part."
+    },
+    {
+      "start": 2581.0,
+      "end": 2585.0,
+      "text": "I think we have to make a tradeoff.How much do we care about the quality"
+    },
+    {
+      "start": 2585.0,
+      "end": 2589.0,
+      "text": "of a certain project?And in some projects.For example,it's"
+    },
+    {
+      "start": 2589.0,
+      "end": 2593.0,
+      "text": "a demo for a weekend showcase.It doesn't really matter"
+    },
+    {
+      "start": 2593.0,
+      "end": 2597.0,
+      "text": "that much,right?In those cases,we can probably skiprunning"
+    },
+    {
+      "start": 2597.0,
+      "end": 2601.0,
+      "text": "this kind of heavy validation pipeline.But if it's building"
+    },
+    {
+      "start": 2601.0,
+      "end": 2605.0,
+      "text": "a production software and there are a lot of users that would be affected,there"
+    },
+    {
+      "start": 2605.0,
+      "end": 2609.0,
+      "text": "are customers who will stop paying if we like break their experience,that's"
+    },
+    {
+      "start": 2609.0,
+      "end": 2613.0,
+      "text": "the case we want to be careful.So I think there's a tradeoff to be made"
+    },
+    {
+      "start": 2613.0,
+      "end": 2617.0,
+      "text": "which projects to apply this kind of approach.The other thing"
+    },
+    {
+      "start": 2617.0,
+      "end": 2621.0,
+      "text": "I do is thatI don't send every single change"
+    },
+    {
+      "start": 2621.0,
+      "end": 2625.0,
+      "text": "into this pipeline.Sometimes I make a very simple fix,right?"
+    },
+    {
+      "start": 2625.0,
+      "end": 2629.0,
+      "text": "I'm confident enoughthat it's not going to break."
+    },
+    {
+      "start": 2629.0,
+      "end": 2633.0,
+      "text": "And I can make a judgment call to saythis change,let's just merge."
+    },
+    {
+      "start": 2633.0,
+      "end": 2637.0,
+      "text": "So there are cases like that as well.But yeah,the vast majority"
+    },
+    {
+      "start": 2637.0,
+      "end": 2641.0,
+      "text": "of my changes will go into this pipeline.I can show you my stats"
+    },
+    {
+      "start": 2641.0,
+      "end": 2645.0,
+      "text": "here.I have this No Mistakes stats."
+    },
+    {
+      "start": 2645.0,
+      "end": 2649.0,
+      "text": "I keep track of all the changes.I send to No Mistakes."
+    },
+    {
+      "start": 2649.0,
+      "end": 2653.0,
+      "text": "And I have a bunch of counters to help me understand"
+    },
+    {
+      "start": 2653.0,
+      "end": 2657.0,
+      "text": "how my changes are doing.That's another great thing about AI.It's like you can"
+    },
+    {
+      "start": 2657.0,
+      "end": 2661.0,
+      "text": "measure so many things that otherwise would be a hassle to measure.Thanks to"
+    },
+    {
+      "start": 2661.0,
+      "end": 2665.0,
+      "text": "agentic engineering,you can start tracking literally everything about your work."
+    },
+    {
+      "start": 2665.0,
+      "end": 2669.0,
+      "text": "Yeah,that's a really good point.So with humans,it's harder to track."
+    },
+    {
+      "start": 2669.0,
+      "end": 2673.0,
+      "text": "But if I have a hundred humans working for me,I want to know everything"
+    },
+    {
+      "start": 2673.0,
+      "end": 2677.0,
+      "text": "they do,it's going to be hard,right?Unless I'm likeMark Zuckerberg"
+    },
+    {
+      "start": 2677.0,
+      "end": 2681.0,
+      "text": "who records everything.But yeah,so with agents"
+    },
+    {
+      "start": 2681.0,
+      "end": 2685.0,
+      "text": "it's just like everything can be automated.We can count everything.That's"
+    },
+    {
+      "start": 2685.0,
+      "end": 2689.0,
+      "text": "really awesome.So this is my No Mistakes stats.This is like maybe the past"
+    },
+    {
+      "start": 2689.0,
+      "end": 2693.0,
+      "text": "three months or something like that.Total changes a thousand across"
+    },
+    {
+      "start": 2693.0,
+      "end": 2697.0,
+      "text": "59 repos.63%of the changes got a mistake cut."
+    },
+    {
+      "start": 2697.0,
+      "end": 2701.0,
+      "text": "Andok,why do you think that is like if you had to guess which part"
+    },
+    {
+      "start": 2701.0,
+      "end": 2705.0,
+      "text": "of the process?Is it like an adversarial review by a different model?Which part"
+    },
+    {
+      "start": 2705.0,
+      "end": 2709.0,
+      "text": "is the most effective?Yeah,so this is this.Oh nice.Yeah,fixes"
+    },
+    {
+      "start": 2709.0,
+      "end": 2713.0,
+      "text": "by step.The review step cut and fixed most problems.So what I"
+    },
+    {
+      "start": 2713.0,
+      "end": 2717.0,
+      "text": "noticed is that I think every starting from GPT 5.5"
+    },
+    {
+      "start": 2717.0,
+      "end": 2721.0,
+      "text": "the GPT model got really good at catching edge cases.I compare"
+    },
+    {
+      "start": 2721.0,
+      "end": 2725.0,
+      "text": "the few models and I like GPT the mostas a reviewer.It's"
+    },
+    {
+      "start": 2725.0,
+      "end": 2729.0,
+      "text": "really thorough.It's really good at identifying edge cases"
+    },
+    {
+      "start": 2729.0,
+      "end": 2733.0,
+      "text": "that can happen in like a rare scenario"
+    },
+    {
+      "start": 2733.0,
+      "end": 2737.0,
+      "text": "but will happen.So those kindof adversarial review"
+    },
+    {
+      "start": 2737.0,
+      "end": 2741.0,
+      "text": "from GPT just help a lot in catching these kind"
+    },
+    {
+      "start": 2741.0,
+      "end": 2745.0,
+      "text": "of problems.Another big hitter is documentation.So very often"
+    },
+    {
+      "start": 2745.0,
+      "end": 2749.0,
+      "text": "what I notice is that I will make a change.The agents will make a change"
+    },
+    {
+      "start": 2749.0,
+      "end": 2753.0,
+      "text": "and it will not update for example the readme file"
+    },
+    {
+      "start": 2753.0,
+      "end": 2757.0,
+      "text": "which is still saying something that's like stale.That's conflicting"
+    },
+    {
+      "start": 2757.0,
+      "end": 2761.0,
+      "text": "with the change we made.So those cases all got cut"
+    },
+    {
+      "start": 2761.0,
+      "end": 2765.0,
+      "text": "by this step which is really helpful.Very nice.I mean one thing that comes to mind"
+    },
+    {
+      "start": 2765.0,
+      "end": 2769.0,
+      "text": "when I see these like advanced setups is that I know so many people from my audience"
+    },
+    {
+      "start": 2769.0,
+      "end": 2773.0,
+      "text": "who just spentall their time on their setup.They literally"
+    },
+    {
+      "start": 2773.0,
+      "end": 2777.0,
+      "text": "have like this crazy agentic engineering setupbut they never ship anything.So"
+    },
+    {
+      "start": 2777.0,
+      "end": 2781.0,
+      "text": "how do you keep yourself like in a rational way where like"
+    },
+    {
+      "start": 2781.0,
+      "end": 2785.0,
+      "text": "maybe 10-20% of your time is spentimproving your setupand building these scripts"
+    },
+    {
+      "start": 2785.0,
+      "end": 2789.0,
+      "text": "and systemsand other stuff is like you're actually building products with it.Yeah"
+    },
+    {
+      "start": 2789.0,
+      "end": 2793.0,
+      "text": "So that's a very very good topicbecause"
+    },
+    {
+      "start": 2793.0,
+      "end": 2797.0,
+      "text": "I see even myself a few months ago"
+    },
+    {
+      "start": 2797.0,
+      "end": 2801.0,
+      "text": "I was struggling with that.Everything takes time and when"
+    },
+    {
+      "start": 2801.0,
+      "end": 2805.0,
+      "text": "I'm building something I run into some frictionI want to build the tooling to"
+    },
+    {
+      "start": 2805.0,
+      "end": 2809.0,
+      "text": "remove that frictionbut building the tooling will take time from me.And"
+    },
+    {
+      "start": 2809.0,
+      "end": 2813.0,
+      "text": "the tooling will have problems.I have to fix those problemsand then for a while"
+    },
+    {
+      "start": 2813.0,
+      "end": 2817.0,
+      "text": "for a little whileI think a week or twoI found that I'm mostly"
+    },
+    {
+      "start": 2817.0,
+      "end": 2821.0,
+      "text": "just working on tooling.I'm not building the real things.So that changed"
+    },
+    {
+      "start": 2821.0,
+      "end": 2825.0,
+      "text": "after I started using FirstMate.So the good thing about FirstMate"
+    },
+    {
+      "start": 2825.0,
+      "end": 2829.0,
+      "text": "is that the mundane things like bug fixor"
+    },
+    {
+      "start": 2829.0,
+      "end": 2833.0,
+      "text": "I run into this problemand I just need that to be improved.I don't really"
+    },
+    {
+      "start": 2833.0,
+      "end": 2837.0,
+      "text": "need to spend much time at all.I just say to FirstMate hey there's a problem"
+    },
+    {
+      "start": 2837.0,
+      "end": 2841.0,
+      "text": "and FirstMate will get that fixed.The things that take my time will naturally"
+    },
+    {
+      "start": 2841.0,
+      "end": 2845.0,
+      "text": "gravitate towardsthe more interesting and ambiguous decisions"
+    },
+    {
+      "start": 2845.0,
+      "end": 2849.0,
+      "text": "which tends to be new product development.So now with FirstMate"
+    },
+    {
+      "start": 2849.0,
+      "end": 2853.0,
+      "text": "managing all the mundane things for me.I have more time"
+    },
+    {
+      "start": 2853.0,
+      "end": 2857.0,
+      "text": "to actually work on the products I want to work on.Like HiBit and my iOS"
+    },
+    {
+      "start": 2857.0,
+      "end": 2861.0,
+      "text": "app.A thing I did not intendbut it was emergent"
+    },
+    {
+      "start": 2861.0,
+      "end": 2865.0,
+      "text": "after I started doing thiswith FirstMate.Yeah I think that's like what I love about your setup"
+    },
+    {
+      "start": 2865.0,
+      "end": 2869.0,
+      "text": "is that it's also refreshing to see.Like a lot of these things actually emerge from real"
+    },
+    {
+      "start": 2869.0,
+      "end": 2873.0,
+      "text": "problems.Because there is a large percentage of people in the AI space which is like"
+    },
+    {
+      "start": 2873.0,
+      "end": 2877.0,
+      "text": "do things for the sake of it.You know it's like I connected this together or like I built this setup"
+    },
+    {
+      "start": 2877.0,
+      "end": 2881.0,
+      "text": "look how it works.You know look how many agents it can run.But like it's not from FirstPrinciples"
+    },
+    {
+      "start": 2881.0,
+      "end": 2885.0,
+      "text": "it's not because they needed to get their work done.It's just like oh it wouldn't it be cool"
+    },
+    {
+      "start": 2885.0,
+      "end": 2889.0,
+      "text": "if these 200 agents were running in parallel.But like as you're going through it"
+    },
+    {
+      "start": 2889.0,
+      "end": 2893.0,
+      "text": "I can see reasoning for everything.Yeah yeah so that's definitely"
+    },
+    {
+      "start": 2893.0,
+      "end": 2897.0,
+      "text": "like my approach.I initially I didn't even want to build any of these tools."
+    },
+    {
+      "start": 2897.0,
+      "end": 2901.0,
+      "text": "I very recently three months ago I quit my big tech"
+    },
+    {
+      "start": 2901.0,
+      "end": 2905.0,
+      "text": "job to go solo.And my intention was to"
+    },
+    {
+      "start": 2905.0,
+      "end": 2909.0,
+      "text": "build a few B2C apps that I think have potential"
+    },
+    {
+      "start": 2909.0,
+      "end": 2913.0,
+      "text": "like the AI tutor for children and things like that.I have"
+    },
+    {
+      "start": 2913.0,
+      "end": 2917.0,
+      "text": "a few ideas I really want to build.And that was my planto spend"
+    },
+    {
+      "start": 2917.0,
+      "end": 2921.0,
+      "text": "all my time building those.The interesting thing about building solo versus working in a"
+    },
+    {
+      "start": 2921.0,
+      "end": 2925.0,
+      "text": "big company is that in a big company there is a lot of other bottlenecks"
+    },
+    {
+      "start": 2925.0,
+      "end": 2929.0,
+      "text": "slowing you down.So you spend your time in meetings coordinating"
+    },
+    {
+      "start": 2929.0,
+      "end": 2933.0,
+      "text": "with other people right.And I got to a pretty senior level and what happened"
+    },
+    {
+      "start": 2933.0,
+      "end": 2937.0,
+      "text": "was that all my time is spent on telling other people what to do"
+    },
+    {
+      "start": 2937.0,
+      "end": 2941.0,
+      "text": "instead of doing things myself.So I don't have these bottlenecks with"
+    },
+    {
+      "start": 2941.0,
+      "end": 2945.0,
+      "text": "like running agents and getting work done the way I do now"
+    },
+    {
+      "start": 2945.0,
+      "end": 2949.0,
+      "text": "when I build solo.When I build solo there is no"
+    },
+    {
+      "start": 2949.0,
+      "end": 2953.0,
+      "text": "bottleneck other than myself right.Everything is like bottlenecked"
+    },
+    {
+      "start": 2953.0,
+      "end": 2957.0,
+      "text": "on myself on my own work.So I started running into all these kind"
+    },
+    {
+      "start": 2957.0,
+      "end": 2961.0,
+      "text": "of problems.How do I validate AI generated code.How do I really plan"
+    },
+    {
+      "start": 2961.0,
+      "end": 2965.0,
+      "text": "with AI more interactively instead of like looking at the terminal like a long wall of text."
+    },
+    {
+      "start": 2965.0,
+      "end": 2969.0,
+      "text": "How do I really juggle through all the 20s 30s sessions"
+    },
+    {
+      "start": 2969.0,
+      "end": 2973.0,
+      "text": "without going crazy right.I started running into these problems.And then"
+    },
+    {
+      "start": 2973.0,
+      "end": 2977.0,
+      "text": "I was forced to develop this tooling because there's nothing else that can"
+    },
+    {
+      "start": 2977.0,
+      "end": 2981.0,
+      "text": "solve it very well.So then I kindof accidentally became"
+    },
+    {
+      "start": 2981.0,
+      "end": 2985.0,
+      "text": "an open source maintainer.Now I have to deal"
+    },
+    {
+      "start": 2985.0,
+      "end": 2989.0,
+      "text": "with the open source issues and PRs which is good and it keeps"
+    },
+    {
+      "start": 2989.0,
+      "end": 2993.0,
+      "text": "the tooling become better.And now I have to balance my time.How much"
+    },
+    {
+      "start": 2993.0,
+      "end": 2997.0,
+      "text": "do I spend.Open source maintenance versus my original plan of building"
+    },
+    {
+      "start": 2997.0,
+      "end": 3001.0,
+      "text": "the apps I want to build.I see.Okay.Broad question"
+    },
+    {
+      "start": 3001.0,
+      "end": 3005.0,
+      "text": "what types of software you expect to be changing.And what do you think will stick around."
+    },
+    {
+      "start": 3005.0,
+      "end": 3009.0,
+      "text": "That's a really good question.I think there's a few big trends that are happening."
+    },
+    {
+      "start": 3009.0,
+      "end": 3013.0,
+      "text": "One is that a lot of the software especially the SaaS software"
+    },
+    {
+      "start": 3013.0,
+      "end": 3017.0,
+      "text": "that were built in the past two decades are mostly built for"
+    },
+    {
+      "start": 3017.0,
+      "end": 3021.0,
+      "text": "humans.They are essentially a human interface"
+    },
+    {
+      "start": 3021.0,
+      "end": 3025.0,
+      "text": "plugged in with a database in the back end and have a somewhat"
+    },
+    {
+      "start": 3025.0,
+      "end": 3029.0,
+      "text": "scalable system to manage that.The human interface part I think will"
+    },
+    {
+      "start": 3029.0,
+      "end": 3033.0,
+      "text": "pretty much like go away.We don't really want to click through"
+    },
+    {
+      "start": 3033.0,
+      "end": 3037.0,
+      "text": "all the websites ourselves in sales force in"
+    },
+    {
+      "start": 3037.0,
+      "end": 3041.0,
+      "text": "all those SaaS websites.Most of the time we want our agents"
+    },
+    {
+      "start": 3041.0,
+      "end": 3045.0,
+      "text": "to work with those services and agents need a different"
+    },
+    {
+      "start": 3045.0,
+      "end": 3049.0,
+      "text": "interface to work with that.So I think there is going to be a rebuild"
+    },
+    {
+      "start": 3049.0,
+      "end": 3053.0,
+      "text": "a very big rebuild of a lot of these services to really"
+    },
+    {
+      "start": 3053.0,
+      "end": 3057.0,
+      "text": "make them more headless and get rid of the human interface"
+    },
+    {
+      "start": 3057.0,
+      "end": 3061.0,
+      "text": "aspect of it or change the human interface to be something"
+    },
+    {
+      "start": 3061.0,
+      "end": 3065.0,
+      "text": "that allows the human to collaborate with AI to get work done.So there"
+    },
+    {
+      "start": 3065.0,
+      "end": 3069.0,
+      "text": "is a big rebuild that I think will be happening.The software that gives"
+    },
+    {
+      "start": 3069.0,
+      "end": 3073.0,
+      "text": "agents really good interfaces so that agents can work very"
+    },
+    {
+      "start": 3073.0,
+      "end": 3077.0,
+      "text": "productively with those services.Those I think will remain.So"
+    },
+    {
+      "start": 3077.0,
+      "end": 3081.0,
+      "text": "right now I think if we think of the new kind of like GitHub"
+    },
+    {
+      "start": 3081.0,
+      "end": 3085.0,
+      "text": "equivalence.I think whoever that will win that race to become"
+    },
+    {
+      "start": 3085.0,
+      "end": 3089.0,
+      "text": "the new GitHub has to nail this aspect.It needs to be a"
+    },
+    {
+      "start": 3089.0,
+      "end": 3094.0,
+      "text": "headless service that agents can operate.Not like a website that humans"
+    },
+    {
+      "start": 3094.0,
+      "end": 3098.0,
+      "text": "have to go click through.So what does that look like?Is it like better documentation,stabled"
+    },
+    {
+      "start": 3098.0,
+      "end": 3103.0,
+      "text": "API schema?What are the things that actually matter for agents?So this is something"
+    },
+    {
+      "start": 3103.0,
+      "end": 3107.0,
+      "text": "that's also very interesting.Let me bring up this site I have"
+    },
+    {
+      "start": 3107.0,
+      "end": 3112.0,
+      "text": "calledaxi.md.So Axi this is something I discovered.I started to get into"
+    },
+    {
+      "start": 3112.0,
+      "end": 3116.0,
+      "text": "when I started building tools for agents.I noticed that a lot of the tools"
+    },
+    {
+      "start": 3116.0,
+      "end": 3120.0,
+      "text": "includingmcp servers andcois that people"
+    },
+    {
+      "start": 3120.0,
+      "end": 3125.0,
+      "text": "developed.They were not really optimized for agents.So take"
+    },
+    {
+      "start": 3125.0,
+      "end": 3129.0,
+      "text": "mcp servers for example.I think a lot of companies are still learning"
+    },
+    {
+      "start": 3129.0,
+      "end": 3133.0,
+      "text": "how to develop really good interfaces for agents.So as a result"
+    },
+    {
+      "start": 3133.0,
+      "end": 3137.0,
+      "text": "some of themcp servers are really not very efficient.GitHub"
+    },
+    {
+      "start": 3137.0,
+      "end": 3141.0,
+      "text": "I will probably call them out.GitHubmcp server is probably the most inefficient"
+    },
+    {
+      "start": 3141.0,
+      "end": 3145.0,
+      "text": "and unnecessarymcp server out there.Because GitHub has a really good"
+    },
+    {
+      "start": 3145.0,
+      "end": 3150.0,
+      "text": "cois and agents can use GitHubcois to get most of the work done.Why do we need"
+    },
+    {
+      "start": 3150.0,
+      "end": 3155.0,
+      "text": "a mcp server?And what I did was that I actually ran out of benchmarks.So let me"
+    },
+    {
+      "start": 3155.0,
+      "end": 3160.0,
+      "text": "see if I can find the GitHubbenchmark that we can"
+    },
+    {
+      "start": 3160.0,
+      "end": 3166.0,
+      "text": "look at here.I ran a benchmark to really evaluate for the same tasks.If we"
+    },
+    {
+      "start": 3166.0,
+      "end": 3171.0,
+      "text": "just change the interface,how much does that matter?And here we can see"
+    },
+    {
+      "start": 3171.0,
+      "end": 3176.0,
+      "text": "if we use the GitHubcois.This is GitHub measuring the GitHub operations.If we"
+    },
+    {
+      "start": 3176.0,
+      "end": 3182.0,
+      "text": "use the GitHubcois.This is the average cost.If we use the mcp server"
+    },
+    {
+      "start": 3182.0,
+      "end": 3187.0,
+      "text": "there's a few variants without two-search with two-search with code mode.But it's"
+    },
+    {
+      "start": 3187.0,
+      "end": 3191.0,
+      "text": "always more expensive than thecois to get the same work done.So this is like"
+    },
+    {
+      "start": 3191.0,
+      "end": 3199.0,
+      "text": "GitHub operations.This mcp-based approaches are slower,take more turns,spend more"
+    },
+    {
+      "start": 3199.0,
+      "end": 3204.0,
+      "text": "tokens.It's just worse in every way.The GitHubcois is more"
+    },
+    {
+      "start": 3204.0,
+      "end": 3209.0,
+      "text": "optimized and is better.I think because they have existed for a long time"
+    },
+    {
+      "start": 3209.0,
+      "end": 3213.0,
+      "text": "and the LLM's training data already has a lot of examples for how to use"
+    },
+    {
+      "start": 3213.0,
+      "end": 3217.0,
+      "text": "that very efficiently.So that's why it's already pretty good.So I think"
+    },
+    {
+      "start": 3217.0,
+      "end": 3222.0,
+      "text": "for GitHub operations there's pretty much no reason to do mcp except for"
+    },
+    {
+      "start": 3222.0,
+      "end": 3228.0,
+      "text": "some server-to-server integrations.So the thing aboutcois is that most"
+    },
+    {
+      "start": 3228.0,
+      "end": 3235.0,
+      "text": "cois out thereare designed in a human development kind of scenario.It's humans"
+    },
+    {
+      "start": 3235.0,
+      "end": 3241.0,
+      "text": "running thosecois.So I thought there's probably room to improve.So I"
+    },
+    {
+      "start": 3241.0,
+      "end": 3248.0,
+      "text": "developed a bunch ofcois for agents and I started to really distill down a few"
+    },
+    {
+      "start": 3248.0,
+      "end": 3255.0,
+      "text": "principles that can makecois very ergonomic for agents.And my proof point is"
+    },
+    {
+      "start": 3255.0,
+      "end": 3260.0,
+      "text": "here.The proof point I have here,besides the GitHub benchmark,where I built"
+    },
+    {
+      "start": 3260.0,
+      "end": 3267.0,
+      "text": "an axi following the principles I haveto build agent ergonomiccois,it can be"
+    },
+    {
+      "start": 3267.0,
+      "end": 3272.0,
+      "text": "even cheaper than the GitHubcoisand have higher success rate.That's one"
+    },
+    {
+      "start": 3272.0,
+      "end": 3277.0,
+      "text": "example.I also did one for the Chrome DevTools because browser automation is"
+    },
+    {
+      "start": 3277.0,
+      "end": 3283.0,
+      "text": "also a very commonuse case.A lot of people use agents and run their browser"
+    },
+    {
+      "start": 3283.0,
+      "end": 3287.0,
+      "text": "to do various kind of things.So I benchmarked various kind of common"
+    },
+    {
+      "start": 3287.0,
+      "end": 3293.0,
+      "text": "approaches to connect browser to the agent.There's Chrome DevTools"
+    },
+    {
+      "start": 3293.0,
+      "end": 3297.0,
+      "text": "mcp server,which is very popular.There's agent browser,there's dev browser."
+    },
+    {
+      "start": 3297.0,
+      "end": 3302.0,
+      "text": "There's a few tools like that.I built a Chrome DevTools axi by following"
+    },
+    {
+      "start": 3302.0,
+      "end": 3306.0,
+      "text": "the principles I defined and iterated on over time.Following those principles"
+    },
+    {
+      "start": 3306.0,
+      "end": 3311.0,
+      "text": "and I built a wrapper.This Chrome DevTools axi is a wrapper of the Chrome"
+    },
+    {
+      "start": 3311.0,
+      "end": 3316.0,
+      "text": "DevTools mcp.So there's no functional difference.It does everything the"
+    },
+    {
+      "start": 3316.0,
+      "end": 3321.0,
+      "text": "same way.It's like the mcp server under the hood.I just only changed the"
+    },
+    {
+      "start": 3321.0,
+      "end": 3326.0,
+      "text": "interface.And now it's significantly more efficient.So the average cost"
+    },
+    {
+      "start": 3326.0,
+      "end": 3331.0,
+      "text": "reduced by over 20%without losing anything.And latency also improved"
+    },
+    {
+      "start": 3331.0,
+      "end": 3337.0,
+      "text": "a lot.So that's likethe browser use case.The principles I really"
+    },
+    {
+      "start": 3337.0,
+      "end": 3342.0,
+      "text": "distilled this down to are 10 principles here.So I documented.Everyone"
+    },
+    {
+      "start": 3342.0,
+      "end": 3347.0,
+      "text": "can go to the axi.md website to see this.It's just like a public set of"
+    },
+    {
+      "start": 3347.0,
+      "end": 3352.0,
+      "text": "standers.The first one is like use token-efficient output.A lot of the mcp"
+    },
+    {
+      "start": 3352.0,
+      "end": 3357.0,
+      "text": "serversand COI tools,they use JSON to output data.So JSON is very useful"
+    },
+    {
+      "start": 3357.0,
+      "end": 3362.0,
+      "text": "when you have something else that needs to parse the data in a structured way."
+    },
+    {
+      "start": 3362.0,
+      "end": 3366.0,
+      "text": "But LLMs agents don't parse the data like that.They only needs to"
+    },
+    {
+      "start": 3366.0,
+      "end": 3370.0,
+      "text": "understand the content and the semantics of the data.So use the token-efficient"
+    },
+    {
+      "start": 3370.0,
+      "end": 3375.0,
+      "text": "output format.It can save a lot of tokens straight out of the gate.And"
+    },
+    {
+      "start": 3375.0,
+      "end": 3379.0,
+      "text": "then there's likeminimal default schema.Some like COI tools when you ask for"
+    },
+    {
+      "start": 3379.0,
+      "end": 3383.0,
+      "text": "some data.It will produce likeliterally every single column,every"
+    },
+    {
+      "start": 3383.0,
+      "end": 3388.0,
+      "text": "single field.So various kind of things like that.I documented them as a set"
+    },
+    {
+      "start": 3388.0,
+      "end": 3394.0,
+      "text": "ofprinciples that can make an interface really ergonomic for agents.And by"
+    },
+    {
+      "start": 3394.0,
+      "end": 3399.0,
+      "text": "following this,I was able to consistently build wrappers and tools"
+    },
+    {
+      "start": 3399.0,
+      "end": 3404.0,
+      "text": "that are just more efficient for agents than their original counterparts.And"
+    },
+    {
+      "start": 3404.0,
+      "end": 3409.0,
+      "text": "I have a few published over here.There's a catalog here as well.I have"
+    },
+    {
+      "start": 3409.0,
+      "end": 3415.0,
+      "text": "github-axi,chrome-dev-tools-axi,lavish itself is an axi.I recently published a quota"
+    },
+    {
+      "start": 3415.0,
+      "end": 3421.0,
+      "text": "axi as well that can expose the agent quota data to your agents.This is for"
+    },
+    {
+      "start": 3421.0,
+      "end": 3428.0,
+      "text": "firstmate to be smart about not using a crewmate that are like not using a"
+    },
+    {
+      "start": 3428.0,
+      "end": 3432.0,
+      "text": "subscription that's mostly out of quota.And then there's a bunch of"
+    },
+    {
+      "start": 3432.0,
+      "end": 3438.0,
+      "text": "community-contributed axes already.There's npm,sqlite.A lot of the common tools"
+    },
+    {
+      "start": 3438.0,
+      "end": 3443.0,
+      "text": "that we use already have an axi version.So I definitely recommend people who"
+    },
+    {
+      "start": 3443.0,
+      "end": 3448.0,
+      "text": "like are running into the bottleneck of token efficiency to start looking into"
+    },
+    {
+      "start": 3448.0,
+      "end": 3452.0,
+      "text": "like just using more efficient tools. Real quick,if you want to implement"
+    },
+    {
+      "start": 3452.0,
+      "end": 3455.0,
+      "text": "kun's entire setup for yourself,it's going to be available in the second"
+    },
+    {
+      "start": 3455.0,
+      "end": 3459.0,
+      "text": "link below the video,completely for free.This includes its firstmate setup,"
+    },
+    {
+      "start": 3459.0,
+      "end": 3464.0,
+      "text": "herder,westerm,and everything else Kun uses to actually build with AI agents.Again,"
+    },
+    {
+      "start": 3464.0,
+      "end": 3468.0,
+      "text": "grab it completely for free,second link below the video.Man,this is amazing."
+    },
+    {
+      "start": 3468.0,
+      "end": 3472.0,
+      "text": "Like,I'm going to run all my software through this to make sure they're like agent native."
+    },
+    {
+      "start": 3472.0,
+      "end": 3477.0,
+      "text": "Yeah,I could like talk about this for hours.Let me ask on the like product level"
+    },
+    {
+      "start": 3477.0,
+      "end": 3482.0,
+      "text": "basically.You know,I think B&U probably agree that like soon enough 99.9%"
+    },
+    {
+      "start": 3482.0,
+      "end": 3486.0,
+      "text": "of software and tools will be used by agents.And again,we will talk to our main"
+    },
+    {
+      "start": 3486.0,
+      "end": 3490.0,
+      "text": "agent,you know,whatever name we have for that.Why are so many people still missing"
+    },
+    {
+      "start": 3490.0,
+      "end": 3494.0,
+      "text": "this?Because so many people still are like focused on like,I won't be going to build"
+    },
+    {
+      "start": 3494.0,
+      "end": 3497.0,
+      "text": "this like human native web UI.They don't think about the backend at all."
+    },
+    {
+      "start": 3497.0,
+      "end": 3501.0,
+      "text": "They don't think about the CLI at all.What was the moment you realized like agents"
+    },
+    {
+      "start": 3501.0,
+      "end": 3505.0,
+      "text": "are going to run all the software,which is going to talk to like our main agent."
+    },
+    {
+      "start": 3505.0,
+      "end": 3509.0,
+      "text": "That's a good question.I think this is a learning curve.We have seen this repeated"
+    },
+    {
+      "start": 3509.0,
+      "end": 3514.0,
+      "text": "every time when there is a new technological transformation.So all the"
+    },
+    {
+      "start": 3514.0,
+      "end": 3519.0,
+      "text": "industrial revolutions,right?When like steam engines were introduced,when electricity"
+    },
+    {
+      "start": 3519.0,
+      "end": 3525.0,
+      "text": "was introduced,when internet was happening.It always started with a small"
+    },
+    {
+      "start": 3525.0,
+      "end": 3533.0,
+      "text": "set of early adopters,who are just really,who just really like to tinker around,right?"
+    },
+    {
+      "start": 3533.0,
+      "end": 3538.0,
+      "text": "Who likes to play with the technology,even if the technology is not paying off."
+    },
+    {
+      "start": 3538.0,
+      "end": 3544.0,
+      "text": "So I think we are at that phase right now,where a lot of tinkering in some areas is"
+    },
+    {
+      "start": 3544.0,
+      "end": 3550.0,
+      "text": "indeed not going to pay off.So there are still a lot of legacy projects where AI"
+    },
+    {
+      "start": 3550.0,
+      "end": 3556.0,
+      "text": "can only help you so much.It can still help,but it's not going to be as big of a boost"
+    },
+    {
+      "start": 3556.0,
+      "end": 3563.0,
+      "text": "as what you get from a green field project,right?So people who are in those domains"
+    },
+    {
+      "start": 3563.0,
+      "end": 3568.0,
+      "text": "when they try AI,they will see oh,it's like not that helpful.Why do I spend"
+    },
+    {
+      "start": 3568.0,
+      "end": 3572.0,
+      "text": "the effort to really work with it?And those are reasonable arguments."
+    },
+    {
+      "start": 3572.0,
+      "end": 3577.0,
+      "text": "But that's the reason we see the early adopters are usually tinkerers"
+    },
+    {
+      "start": 3577.0,
+      "end": 3581.0,
+      "text": "who are just playing with the technology for the sake of it.But those are the people"
+    },
+    {
+      "start": 3581.0,
+      "end": 3585.0,
+      "text": "who will figure out what is actually going to work.Those are the people who will figure"
+    },
+    {
+      "start": 3585.0,
+      "end": 3591.0,
+      "text": "out the tooling,the gaps,and ways of working that can really benefit from this"
+    },
+    {
+      "start": 3591.0,
+      "end": 3596.0,
+      "text": "new technology.And those people will start to share those tools and products"
+    },
+    {
+      "start": 3596.0,
+      "end": 3601.0,
+      "text": "with others.And this takes time.So it takes time for the early adopters"
+    },
+    {
+      "start": 3601.0,
+      "end": 3607.0,
+      "text": "to really prove something is good.It takes time for them to boil down those"
+    },
+    {
+      "start": 3607.0,
+      "end": 3613.0,
+      "text": "experiences into really good tools that others can also use.It takes time for"
+    },
+    {
+      "start": 3613.0,
+      "end": 3618.0,
+      "text": "others to really get convinced of the new tools and start to spend time with it."
+    },
+    {
+      "start": 3618.0,
+      "end": 3623.0,
+      "text": "So all this is going to take time.And I think it's reasonable to expect"
+    },
+    {
+      "start": 3623.0,
+      "end": 3628.0,
+      "text": "that it's not going to be overnight.That everyone will realize the same thing."
+    },
+    {
+      "start": 3628.0,
+      "end": 3634.0,
+      "text": "That AI is here.And this is the way everything will change.I think everyone"
+    },
+    {
+      "start": 3634.0,
+      "end": 3639.0,
+      "text": "is in a different circumstance.And their constraints,what they do every day,"
+    },
+    {
+      "start": 3639.0,
+      "end": 3644.0,
+      "text": "the projects they're working with,etc.etc.will shape what's the right timing"
+    },
+    {
+      "start": 3644.0,
+      "end": 3648.0,
+      "text": "for them to get through that inflection point.I think this is an amazing point"
+    },
+    {
+      "start": 3648.0,
+      "end": 3651.0,
+      "text": "to end this alone,kun.I couldn't agree more.Thank you very much for"
+    },
+    {
+      "start": 3651.0,
+      "end": 3655.0,
+      "text": "spending your time.What are the main things people should go and check out?"
+    },
+    {
+      "start": 3655.0,
+      "end": 3659.0,
+      "text": "Maybe check out my GitHub,where I listed a lot of the tooling that I built"
+    },
+    {
+      "start": 3659.0,
+      "end": 3665.0,
+      "text": "and shared.I pretty much open source everything I have.So everything I do"
+    },
+    {
+      "start": 3665.0,
+      "end": 3669.0,
+      "text": "in my workflow that helps me get a lot doneare already shared on my GitHub"
+    },
+    {
+      "start": 3669.0,
+      "end": 3675.0,
+      "text": "repo.And I also have a YouTube channel where I made some videos"
+    },
+    {
+      "start": 3675.0,
+      "end": 3679.0,
+      "text": "walking through exactly how I code,how I use the tools that I built"
+    },
+    {
+      "start": 3679.0,
+      "end": 3685.0,
+      "text": "to build new things efficiently.So those are really good resources as well."
+    },
+    {
+      "start": 3685.0,
+      "end": 3689.0,
+      "text": "Those are probably good starting points.And if you run into any problems"
+    },
+    {
+      "start": 3689.0,
+      "end": 3693.0,
+      "text": "using the tools or have questions about how to use agents more efficiently,"
+    },
+    {
+      "start": 3693.0,
+      "end": 3698.0,
+      "text": "I have a discord channel as well,discord server,where we have a pretty good"
+    },
+    {
+      "start": 3698.0,
+      "end": 3702.0,
+      "text": "community of people who are really helpful at helping each other."
+    },
+    {
+      "start": 3702.0,
+      "end": 3705.0,
+      "text": "And I often go there to discuss with everyone as well."
+    },
+    {
+      "start": 3705.0,
+      "end": 3707.0,
+      "text": "Awesome,I'm going to link all of that below."
+    },
+    {
+      "start": 3707.0,
+      "end": 3709.0,
+      "text": "Cool,cool.Thanks David for having me here."
+    },
+    {
+      "start": 3709.0,
+      "end": 3710.0,
+      "text": "Yeah,like wise."
+    }
+  ],
+  "artifacts": {
+    "note": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+    "frames": [
+      "assets/bilibili-BV19v3g6EENM-frame-0001.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0002.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0003.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0004.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0005.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0006.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0007.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0008.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0009.webp",
+      "assets/bilibili-BV19v3g6EENM-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-07-27T04:35:21.550462+00:00",
+  "corrections": {
+    "source": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\library\\这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+    "evidence_scope": "# Data > ## 原始转写稿 only",
+    "timestamp_count": 1103,
+    "correction_types": "High-confidence ASR terminology/name/command corrections; no summarization or substantive rewriting.",
+    "corrections": [
+      {
+        "original": "sonnet3.5v2",
+        "corrected": "Claude 3.5 Sonnet v2",
+        "reason": "Model name inferred from the repeated Sonnet/model discussion.",
+        "confidence": 0.99,
+        "occurrences": 2,
+        "timestamps": [
+          "02:07",
+          "02:46"
+        ]
+      },
+      {
+        "original": "GPT3.5",
+        "corrected": "GPT-3.5",
+        "reason": "Standard OpenAI model styling.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "02:36"
+        ]
+      },
+      {
+        "original": "GP4",
+        "corrected": "GPT-4",
+        "reason": "Model-name ASR omission in a GPT model sequence.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "02:46"
+        ]
+      },
+      {
+        "original": "Atlation",
+        "corrected": "Atlassian",
+        "reason": "Company name; the speaker says he worked there on coding agents.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "01:34",
+          "02:26"
+        ]
+      },
+      {
+        "original": "west term",
+        "corrected": "WezTerm",
+        "reason": "Terminal emulator name, described as highly customizable.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "06:03",
+          "06:05"
+        ]
+      },
+      {
+        "original": "westerm",
+        "corrected": "WezTerm",
+        "reason": "Terminal emulator name; recurring ASR variant.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "07:32",
+          "57:39"
+        ]
+      },
+      {
+        "original": "western",
+        "corrected": "WezTerm",
+        "reason": "Terminal emulator name in the opening setup description.",
+        "confidence": 0.99,
+        "occurrences": 2,
+        "timestamps": [
+          "00:00"
+        ]
+      },
+      {
+        "original": "T-Mux",
+        "corrected": "tmux",
+        "reason": "Terminal multiplexer name.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "00:00"
+        ]
+      },
+      {
+        "original": "T-Max",
+        "corrected": "tmux",
+        "reason": "Terminal multiplexer name; recurring ASR variant.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "06:28",
+          "06:31"
+        ]
+      },
+      {
+        "original": "TMux",
+        "corrected": "tmux",
+        "reason": "Normalize terminal multiplexer styling.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "08:06"
+        ]
+      },
+      {
+        "original": "C-Max",
+        "corrected": "cmux",
+        "reason": "Terminal orchestration app contrasted with Herder.",
+        "confidence": 0.98,
+        "occurrences": 3,
+        "timestamps": [
+          "06:41",
+          "06:49"
+        ]
+      },
+      {
+        "original": "CMux",
+        "corrected": "cmux",
+        "reason": "Normalize app styling.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "08:53"
+        ]
+      },
+      {
+        "original": "CMUX",
+        "corrected": "cmux",
+        "reason": "Normalize app styling.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "03:06"
+        ]
+      },
+      {
+        "original": "Zelige",
+        "corrected": "Zellij",
+        "reason": "Terminal multiplexer named alongside tmux.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "08:06"
+        ]
+      },
+      {
+        "original": "hearder",
+        "corrected": "Herder",
+        "reason": "Recurring name of the agent-aware terminal session manager.",
+        "confidence": 0.99,
+        "occurrences": 4,
+        "timestamps": [
+          "00:00",
+          "00:26"
+        ]
+      },
+      {
+        "original": "herder",
+        "corrected": "Herder",
+        "reason": "Normalize the recurring agent-aware terminal manager name.",
+        "confidence": 0.98,
+        "occurrences": 19,
+        "timestamps": [
+          "06:25",
+          "06:33",
+          "06:41",
+          "06:46",
+          "06:55",
+          "07:32",
+          "07:42",
+          "07:44",
+          "07:50",
+          "07:59",
+          "08:18",
+          "08:30",
+          "13:52",
+          "14:51",
+          "16:15",
+          "19:18",
+          "19:25",
+          "57:39"
+        ]
+      },
+      {
+        "original": "pie agent",
+        "corrected": "Pi agent",
+        "reason": "Agent harness later explicitly discussed as Pi.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "08:18"
+        ]
+      },
+      {
+        "original": "cloud code",
+        "corrected": "Claude Code",
+        "reason": "Anthropic coding-agent product name.",
+        "confidence": 0.99,
+        "occurrences": 2,
+        "timestamps": [
+          "04:30",
+          "17:03"
+        ]
+      },
+      {
+        "original": "Cloud Code",
+        "corrected": "Claude Code",
+        "reason": "Anthropic coding-agent product name; capitalization/phonetic correction.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "31:05"
+        ]
+      },
+      {
+        "original": "goodlap",
+        "corrected": "GitLab",
+        "reason": "Code hosting platform paired with GitHub.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "05:40"
+        ]
+      },
+      {
+        "original": "public open source postory",
+        "corrected": "public open-source repository",
+        "reason": "Phrase describing the free plan for public repositories.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "05:44"
+        ]
+      },
+      {
+        "original": "lavage",
+        "corrected": "Lavish",
+        "reason": "Interactive HTML artifact tool; later explicitly named Lavish.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "20:56"
+        ]
+      },
+      {
+        "original": "Lavage",
+        "corrected": "Lavish",
+        "reason": "Interactive HTML artifact tool; recurring ASR variant.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "20:27"
+        ]
+      },
+      {
+        "original": "lavish axis",
+        "corrected": "Lavish AXI",
+        "reason": "Lavish is later described as an AXI.",
+        "confidence": 0.97,
+        "occurrences": 1,
+        "timestamps": [
+          "15:07"
+        ]
+      },
+      {
+        "original": "lavish",
+        "corrected": "Lavish",
+        "reason": "Normalize interactive artifact tool name.",
+        "confidence": 0.98,
+        "occurrences": 3,
+        "timestamps": [
+          "14:35",
+          "14:49",
+          "15:07",
+          "56:49"
+        ]
+      },
+      {
+        "original": "firstmade",
+        "corrected": "First Mate",
+        "reason": "Coordinator-agent name used throughout the interview.",
+        "confidence": 1,
+        "occurrences": 9,
+        "timestamps": [
+          "35:48",
+          "35:54",
+          "36:04",
+          "36:19",
+          "36:24",
+          "36:36",
+          "36:44",
+          "36:57",
+          "37:05"
+        ]
+      },
+      {
+        "original": "Firstmade",
+        "corrected": "First Mate",
+        "reason": "Coordinator-agent name used throughout the interview.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "35:48"
+        ]
+      },
+      {
+        "original": "FirstMate",
+        "corrected": "First Mate",
+        "reason": "Normalize coordinator-agent name.",
+        "confidence": 0.99,
+        "occurrences": 8,
+        "timestamps": [
+          "41:49",
+          "47:01",
+          "47:13",
+          "47:17",
+          "47:25",
+          "47:41"
+        ]
+      },
+      {
+        "original": "firstmate",
+        "corrected": "First Mate",
+        "reason": "Normalize coordinator-agent name.",
+        "confidence": 0.99,
+        "occurrences": 2,
+        "timestamps": [
+          "57:01",
+          "57:35"
+        ]
+      },
+      {
+        "original": "first mates",
+        "corrected": "First Mate",
+        "reason": "Coordinator-agent name, not a plural reference in context.",
+        "confidence": 0.98,
+        "occurrences": 3,
+        "timestamps": [
+          "09:56",
+          "09:58",
+          "21:52"
+        ]
+      },
+      {
+        "original": "first mate",
+        "corrected": "First Mate",
+        "reason": "Normalize coordinator-agent name.",
+        "confidence": 0.99,
+        "occurrences": 37,
+        "timestamps": [
+          "01:04",
+          "01:17",
+          "07:32",
+          "08:39",
+          "09:27",
+          "09:40",
+          "09:56",
+          "09:58",
+          "10:27",
+          "10:29",
+          "10:35",
+          "10:38",
+          "10:40",
+          "10:48",
+          "11:05",
+          "11:32",
+          "11:37",
+          "11:44",
+          "12:20",
+          "12:41",
+          "13:00",
+          "13:03",
+          "13:16",
+          "13:22",
+          "14:06",
+          "14:15",
+          "14:56",
+          "16:01",
+          "16:03",
+          "16:07",
+          "16:24",
+          "16:34",
+          "16:49",
+          "19:23",
+          "21:52",
+          "22:21",
+          "22:24",
+          "22:34",
+          "22:38",
+          "22:44"
+        ]
+      },
+      {
+        "original": "grog",
+        "corrected": "Grok",
+        "reason": "xAI model/quota name.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "17:25"
+        ]
+      },
+      {
+        "original": "Groc",
+        "corrected": "Grok",
+        "reason": "xAI model and Grok Build harness.",
+        "confidence": 1,
+        "occurrences": 8,
+        "timestamps": [
+          "31:51",
+          "31:55",
+          "32:09",
+          "32:22",
+          "32:26",
+          "32:42"
+        ]
+      },
+      {
+        "original": "favor",
+        "corrected": "Fable",
+        "reason": "Anthropic model/quota nickname repeatedly rendered as Fable nearby.",
+        "confidence": 0.92,
+        "occurrences": 1,
+        "timestamps": [
+          "23:43"
+        ]
+      },
+      {
+        "original": "fable",
+        "corrected": "Fable",
+        "reason": "Normalize model/quota nickname used throughout the transcript.",
+        "confidence": 0.94,
+        "occurrences": 9,
+        "timestamps": [
+          "17:03",
+          "17:06",
+          "17:12",
+          "17:29",
+          "17:35",
+          "17:37",
+          "27:45",
+          "37:53",
+          "38:25"
+        ]
+      },
+      {
+        "original": "5.6 saw",
+        "corrected": "GPT-5.6 Sol",
+        "reason": "The same model is later repeatedly rendered as 5.6 Sol.",
+        "confidence": 0.97,
+        "occurrences": 1,
+        "timestamps": [
+          "15:59"
+        ]
+      },
+      {
+        "original": "5.6 sold",
+        "corrected": "GPT-5.6 Sol",
+        "reason": "Model-name ASR variant in the quota discussion.",
+        "confidence": 0.97,
+        "occurrences": 1,
+        "timestamps": [
+          "24:46"
+        ]
+      },
+      {
+        "original": "GPT 5.6 sole",
+        "corrected": "GPT-5.6 Sol",
+        "reason": "Normalize model name and codename.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "40:33"
+        ]
+      },
+      {
+        "original": "5.6 sole",
+        "corrected": "GPT-5.6 Sol",
+        "reason": "Model-name ASR variant; Sol is contrasted with Terra and Luna.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "28:40",
+          "40:33"
+        ]
+      },
+      {
+        "original": "GPT 5.6",
+        "corrected": "GPT-5.6",
+        "reason": "Normalize OpenAI model styling.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "30:56",
+          "31:08",
+          "40:33"
+        ]
+      },
+      {
+        "original": "GPT 5.5",
+        "corrected": "GPT-5.5",
+        "reason": "Normalize OpenAI model styling.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "18:17",
+          "45:13"
+        ]
+      },
+      {
+        "original": "sonic 5",
+        "corrected": "Sonnet 5",
+        "reason": "Model name repeated in the benchmark discussion.",
+        "confidence": 0.95,
+        "occurrences": 3,
+        "timestamps": [
+          "27:11",
+          "27:32"
+        ]
+      },
+      {
+        "original": "Sonic 5",
+        "corrected": "Sonnet 5",
+        "reason": "Model name repeated in the benchmark discussion.",
+        "confidence": 0.95,
+        "occurrences": 1,
+        "timestamps": [
+          "27:45"
+        ]
+      },
+      {
+        "original": "DeepSwee",
+        "corrected": "DeepSWE",
+        "reason": "Software-engineering benchmark name.",
+        "confidence": 0.96,
+        "occurrences": 2,
+        "timestamps": [
+          "26:46",
+          "26:49"
+        ]
+      },
+      {
+        "original": "OpenAI codecs",
+        "corrected": "OpenAI Codex",
+        "reason": "OpenAI coding-agent product name.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "25:57"
+        ]
+      },
+      {
+        "original": "codecs",
+        "corrected": "Codex",
+        "reason": "Coding-agent harness contrasted directly with Pi.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "25:57",
+          "31:47"
+        ]
+      },
+      {
+        "original": "codecoli",
+        "corrected": "Codex CLI",
+        "reason": "Command-line harness contrasted with Pi.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "31:11"
+        ]
+      },
+      {
+        "original": "codex CLI",
+        "corrected": "Codex CLI",
+        "reason": "Normalize product styling.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "35:33"
+        ]
+      },
+      {
+        "original": "Anthropics models",
+        "corrected": "Anthropic's models",
+        "reason": "Company possessive in the model-routing explanation.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "31:02"
+        ]
+      },
+      {
+        "original": "local LMS",
+        "corrected": "local LLMs",
+        "reason": "Discussion is about local/open-source language models.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "30:43"
+        ]
+      },
+      {
+        "original": "PIE",
+        "corrected": "Pi",
+        "reason": "Agent harness name, explicitly introduced earlier as Pi.",
+        "confidence": 0.99,
+        "occurrences": 3,
+        "timestamps": [
+          "33:18",
+          "33:27"
+        ]
+      },
+      {
+        "original": "Asian harness",
+        "corrected": "agent harness",
+        "reason": "Question follows a discussion of coding-agent harnesses.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "33:01"
+        ]
+      },
+      {
+        "original": "Grok build",
+        "corrected": "Grok Build",
+        "reason": "Normalize xAI agent harness name after model-name correction.",
+        "confidence": 0.99,
+        "occurrences": 3,
+        "timestamps": []
+      },
+      {
+        "original": "XAPI",
+        "corrected": "X API",
+        "reason": "API for the X platform.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "32:30",
+          "32:38"
+        ]
+      },
+      {
+        "original": "mycloth and codex quota",
+        "corrected": "my Claude and Codex quota",
+        "reason": "Menu widget displays Anthropic/OpenAI subscription quotas.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "34:46"
+        ]
+      },
+      {
+        "original": "cloud quota",
+        "corrected": "Claude quota",
+        "reason": "Anthropic subscription quota discussed together with the Fable model.",
+        "confidence": 0.96,
+        "occurrences": 2,
+        "timestamps": [
+          "23:36",
+          "23:59"
+        ]
+      },
+      {
+        "original": "a agents.md",
+        "corrected": "an AGENTS.md",
+        "reason": "Agent-instruction filename plus required article repair.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "35:48"
+        ]
+      },
+      {
+        "original": "agents.md",
+        "corrected": "AGENTS.md",
+        "reason": "Agent-instruction filename.",
+        "confidence": 1,
+        "occurrences": 2,
+        "timestamps": [
+          "35:48",
+          "35:54",
+          "36:32"
+        ]
+      },
+      {
+        "original": "the hybrid",
+        "corrected": "HiBit",
+        "reason": "The same children-focused app is later explicitly called HiBit.",
+        "confidence": 0.94,
+        "occurrences": 1,
+        "timestamps": [
+          "38:13"
+        ]
+      },
+      {
+        "original": "No Mistakes",
+        "corrected": "NoMistakes",
+        "reason": "Normalize the validation pipeline/tool name.",
+        "confidence": 0.99,
+        "occurrences": 3,
+        "timestamps": [
+          "44:01",
+          "44:05",
+          "44:45"
+        ]
+      },
+      {
+        "original": "no mistakes",
+        "corrected": "NoMistakes",
+        "reason": "Normalize the validation pipeline/tool name.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "37:45"
+        ]
+      },
+      {
+        "original": "mistake cut",
+        "corrected": "mistake caught",
+        "reason": "The statistic describes issues caught by the validation pipeline.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "44:53"
+        ]
+      },
+      {
+        "original": "thous of dollars",
+        "corrected": "thousands of dollars",
+        "reason": "Incomplete ASR rendering of the quantity.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "42:25"
+        ]
+      },
+      {
+        "original": "sales force",
+        "corrected": "Salesforce",
+        "reason": "SaaS company/product name.",
+        "confidence": 1,
+        "occurrences": 1,
+        "timestamps": [
+          "50:33"
+        ]
+      },
+      {
+        "original": "calledaxi.md",
+        "corrected": "called AXI.md",
+        "reason": "Website/project name later referenced repeatedly as axi.md.",
+        "confidence": 0.98,
+        "occurrences": 1,
+        "timestamps": [
+          "51:47"
+        ]
+      },
+      {
+        "original": "Axi",
+        "corrected": "AXI",
+        "reason": "Normalize the agent-interface/tool concept name.",
+        "confidence": 0.97,
+        "occurrences": 1,
+        "timestamps": [
+          "51:47"
+        ]
+      },
+      {
+        "original": " axi",
+        "corrected": " AXI",
+        "reason": "Normalize the agent-interface/tool concept name.",
+        "confidence": 0.97,
+        "occurrences": 7,
+        "timestamps": [
+          "15:07",
+          "54:20",
+          "54:57",
+          "55:06",
+          "55:42",
+          "56:49",
+          "56:55",
+          "57:18"
+        ]
+      },
+      {
+        "original": " axes",
+        "corrected": " AXIs",
+        "reason": "Plural of AXI in the community catalog discussion.",
+        "confidence": 0.95,
+        "occurrences": 1,
+        "timestamps": [
+          "57:12"
+        ]
+      },
+      {
+        "original": "mcp",
+        "corrected": "MCP",
+        "reason": "Model Context Protocol acronym.",
+        "confidence": 1,
+        "occurrences": 13,
+        "timestamps": [
+          "51:56",
+          "52:05",
+          "52:13",
+          "52:17",
+          "52:21",
+          "52:30",
+          "52:56",
+          "53:11",
+          "53:37",
+          "54:53",
+          "55:11",
+          "55:16",
+          "55:47"
+        ]
+      },
+      {
+        "original": "cois",
+        "corrected": "CLIs",
+        "reason": "Command-line interfaces contrasted with MCP servers.",
+        "confidence": 0.99,
+        "occurrences": 14,
+        "timestamps": [
+          "51:56",
+          "52:25",
+          "52:51",
+          "52:56",
+          "53:07",
+          "53:19",
+          "53:42",
+          "53:48",
+          "53:55",
+          "54:01",
+          "54:08",
+          "54:20",
+          "54:27"
+        ]
+      },
+      {
+        "original": "COI",
+        "corrected": "CLI",
+        "reason": "Command-line interface acronym; phonetic ASR error.",
+        "confidence": 0.99,
+        "occurrences": 3,
+        "timestamps": [
+          "31:33",
+          "55:52",
+          "56:15"
+        ]
+      },
+      {
+        "original": "two-search",
+        "corrected": "tool search",
+        "reason": "MCP benchmark variant described by whether tool search is enabled.",
+        "confidence": 0.95,
+        "occurrences": 2,
+        "timestamps": [
+          "53:02"
+        ]
+      },
+      {
+        "original": "standers",
+        "corrected": "standards",
+        "reason": "Public set of interface-design principles.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "55:47"
+        ]
+      },
+      {
+        "original": "end this alone,kun",
+        "corrected": "end this on, Kun",
+        "reason": "Closing phrase addressed to Kun.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "60:48"
+        ]
+      },
+      {
+        "original": "Rightkun",
+        "corrected": "Right, Kun",
+        "reason": "Host addresses the guest Kun.",
+        "confidence": 0.99,
+        "occurrences": 1,
+        "timestamps": [
+          "01:34"
+        ]
+      }
+    ]
+  }
+}

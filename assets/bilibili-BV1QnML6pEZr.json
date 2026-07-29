@@ -1,0 +1,550 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1QnML6pEZr",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1QnML6pEZr/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1QnML6pEZr"
+  },
+  "title": "2026年过半，我是怎样使用 Agent 的？",
+  "metadata": {
+    "title": "2026年过半，我是怎样使用 Agent 的？",
+    "duration": 360,
+    "thumbnail": "http://i2.hdslb.com/bfs/archive/9c2af9851658a7f193c310711cd17b97b9e5aa6a.jpg",
+    "uploader": "卡普迪姆",
+    "video_id": "BV1QnML6pEZr",
+    "description": "调度 sub-agent 的提示词原图在图文版里，放在公众号：减 AI\n其实核心就是让 cc 怎么利用 codex exec 调用便宜的 gpt 5.5\n看完视频后，欢迎在评论区交流分享自己的使用心得！\n\n相关引用：\n[1]: https://x.com/theo/status/2072482460122964067\n[2]: https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md\n[3]: https://x.com/trq212/status/2073100352921215386",
+    "tags": [
+      "科普",
+      "AI",
+      "实用技巧",
+      "Agent",
+      "Codex",
+      "分享我的专业知识",
+      "千早爱音"
+    ],
+    "view_count": 37205,
+    "like_count": 1413,
+    "upload_date": 1783560662,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "2f302233724ec7257c3276887543e0fb3833679b068aafc5d65ad50b1a343b56",
+    "audio": "d610c33f2b87c5e289f16ac4fde84f0d020a06db7031d493e2d32c8e3ea56973",
+    "transcript": "db9e832b9313b729372c30d020963ae926809cb91ce2cef4c49e2533291a6a99",
+    "frames": "552f468a8755fa7531574afa63e66cfe110ac5a943cb00608c57916a0d128301"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 12.0,
+      "text": "2026年过得真快,年初我还在被AntiGravity里的Opus 4.5和Gemini3折磨。"
+    },
+    {
+      "start": 12.0,
+      "end": 19.0,
+      "text": "如今已经偷看自由,高强度用着Cloud Code配Fable 5, Codex配GBT 5.5。"
+    },
+    {
+      "start": 19.0,
+      "end": 27.0,
+      "text": "对AI的认识可以说是翻天覆地,先说说我平时都拿Agent干什么。"
+    },
+    {
+      "start": 27.0,
+      "end": 35.0,
+      "text": "除了日常的科研学习,我还凭兴趣维护一个开源项目,Gemini Voyager,19000多star。"
+    },
+    {
+      "start": 35.0,
+      "end": 42.0,
+      "text": "它就是我实践Agent协作的地方,看它的贡献者阵容你就懂了。"
+    },
+    {
+      "start": 42.0,
+      "end": 49.0,
+      "text": "第一贡献者是我,第二是Cloud,第三是Codex,后面还跟着Gemini。"
+    },
+    {
+      "start": 49.0,
+      "end": 54.0,
+      "text": "这期视频就聊聊我是怎么指挥他们的。"
+    },
+    {
+      "start": 54.0,
+      "end": 60.0,
+      "text": "先看现状,断根了两个月的社群飞输文档,现在可以更新一下喽。"
+    },
+    {
+      "start": 60.0,
+      "end": 68.0,
+      "text": "综合,皮质纯友好,Agent的交互,信息查找,四个维度我都重新讨了一遍。"
+    },
+    {
+      "start": 68.0,
+      "end": 78.0,
+      "text": "结果,Fable 5一个人就包来了三个维度的第一,Fable 5目前是断档的强,回来了都回来了。"
+    },
+    {
+      "start": 78.0,
+      "end": 87.0,
+      "text": "前段时间GPT5.5降质,Opus 4.8幻觉严重,我睡前的皮质纯直接爆表。"
+    },
+    {
+      "start": 87.0,
+      "end": 96.0,
+      "text": "换回Fable之后,整个人才回到那种特别舒服的状态,不过现在每周只能花一半额度在Fable身上。"
+    },
+    {
+      "start": 96.0,
+      "end": 103.0,
+      "text": "于是我把它当成核心Leader,做项目分析,架构设计,任务编排。"
+    },
+    {
+      "start": 103.0,
+      "end": 110.0,
+      "text": "改文件、查资料这些实伙,自动发给若干的GPT5.5 sub-agent去做。"
+    },
+    {
+      "start": 110.0,
+      "end": 119.0,
+      "text": "几乎一样的效果,额度开销却低得多,File也在用类似的思路。"
+    },
+    {
+      "start": 119.0,
+      "end": 130.0,
+      "text": "我越来越觉得Agent时代真正重要的,不是让AIT我多些几行代码,而是重新审视那些习以为常的工作流。"
+    },
+    {
+      "start": 130.0,
+      "end": 134.0,
+      "text": "有人把它总结成了Agent的八戎八尺。"
+    },
+    {
+      "start": 134.0,
+      "end": 138.0,
+      "text": "那作为调度者,我们也该有自己的容许。"
+    },
+    {
+      "start": 138.0,
+      "end": 147.0,
+      "text": "以人类幻觉为尺,以动手疏手为容,别拿豆包式的意想当方案,跳过了动手查证。"
+    },
+    {
+      "start": 147.0,
+      "end": 151.0,
+      "text": "以傲慢次大为尺,以Agent友好为容。"
+    },
+    {
+      "start": 151.0,
+      "end": 161.0,
+      "text": "他做错了,先别急着说,就这,想想是加条Agent's MB,还是给他写个小功绩。"
+    },
+    {
+      "start": 161.0,
+      "end": 169.0,
+      "text": "以上下文膨胀为尺,以简化操作为容,把彩坑提炼成一份笔记,别把三个月没更新的Cloud.MD硬塞解它。"
+    },
+    {
+      "start": 169.0,
+      "end": 175.0,
+      "text": "再插一句,写项目我现在更爱用GiGiuzu,也就是GiGi,而不是Git。"
+    },
+    {
+      "start": 175.0,
+      "end": 182.0,
+      "text": "提交,只要一行GiGiu,Agent不用再处理AddCommitPushG整转。"
+    },
+    {
+      "start": 182.0,
+      "end": 191.0,
+      "text": "而架架安度和Oplog,让Agent搞砸了,不再吓人,只是一次可回滚的普通操作。"
+    },
+    {
+      "start": 191.0,
+      "end": 204.0,
+      "text": "说到底,所谓Agent友好,就是把人脑里影视的,不可恢复的流程,改造成显示的,可回滚的工程系统。"
+    },
+    {
+      "start": 204.0,
+      "end": 209.0,
+      "text": "我的核心观点是,skill不再多,有用才新。"
+    },
+    {
+      "start": 209.0,
+      "end": 217.0,
+      "text": "那些改变人生的神级skill,很可能早就在你上下文理机会,又废偷肯,又脱离模型,"
+    },
+    {
+      "start": 217.0,
+      "end": 222.0,
+      "text": "能补你不懂的领域知识,比如设计至于程序员,"
+    },
+    {
+      "start": 222.0,
+      "end": 228.0,
+      "text": "能解决你生活里的痛点,比如给Windows总结PowerShell,"
+    },
+    {
+      "start": 228.0,
+      "end": 237.0,
+      "text": "能把你高频的流程模板化,比如读论文转件发板,还有一个我每天必用的prompt,叫Griomi。"
+    },
+    {
+      "start": 237.0,
+      "end": 244.0,
+      "text": "它会就我计划的每个方面不间断追问,一次只问一个,直到我们达成共识。"
+    },
+    {
+      "start": 244.0,
+      "end": 248.0,
+      "text": "能靠查代码库回答的,它就直接去查。"
+    },
+    {
+      "start": 248.0,
+      "end": 254.0,
+      "text": "这早就内化成习惯了,我直接用语音,说出这次想怎么被它烤的。"
+    },
+    {
+      "start": 254.0,
+      "end": 263.0,
+      "text": "可以把认知拆成四个相写,一知的未知是quail的主场,"
+    },
+    {
+      "start": 263.0,
+      "end": 270.0,
+      "text": "它把你想不清的地方一层层问出来,而最值钱的是未知的未知。"
+    },
+    {
+      "start": 270.0,
+      "end": 276.0,
+      "text": "认着依赖、架构、边界条件,帮你发现压杆没想到的问题。"
+    },
+    {
+      "start": 276.0,
+      "end": 280.0,
+      "text": "其实这套认知我早就前一幕化在用了。"
+    },
+    {
+      "start": 280.0,
+      "end": 288.0,
+      "text": "直到看到那篇文章,才把我脑子里隐性的想法清清楚楚的摆了出来,那感觉简直嘛。"
+    },
+    {
+      "start": 288.0,
+      "end": 293.0,
+      "text": "grill一次,短则十分钟,长则几个小时。"
+    },
+    {
+      "start": 293.0,
+      "end": 301.0,
+      "text": "但都值得从videcoding到agentic engineering,也许就差这一个思维模式。"
+    },
+    {
+      "start": 303.0,
+      "end": 310.0,
+      "text": "最后聊聊语音输入,一句话,不用固定在键盘前能快速扎住当时的想法。"
+    },
+    {
+      "start": 310.0,
+      "end": 318.0,
+      "text": "给模型的输入更接近真实的自然思考,速度远快已打字,还不打断心流。"
+    },
+    {
+      "start": 318.0,
+      "end": 324.0,
+      "text": "考古一下,coppercy当初提videcoding,身边就提了语音输入。"
+    },
+    {
+      "start": 324.0,
+      "end": 328.0,
+      "text": "现在的模型已经内化了对语音识别错误的如人。"
+    },
+    {
+      "start": 328.0,
+      "end": 336.0,
+      "text": "就算转错几个词,它也会想,你可能把cloud写成cloud,然后按对的理解。"
+    },
+    {
+      "start": 336.0,
+      "end": 341.0,
+      "text": "我体验下来效果最好的还是types,为此还专门买了个麦克风。"
+    },
+    {
+      "start": 341.0,
+      "end": 347.0,
+      "text": "你也可以试试豆包、微信输入法、闪电说,不是非得花这个钱。"
+    },
+    {
+      "start": 347.0,
+      "end": 353.0,
+      "text": "觉得语音输入尴尬是你自己的事,自己用着舒服就好。"
+    },
+    {
+      "start": 353.0,
+      "end": 359.0,
+      "text": "2026下半场,继续把影视的经验,变成可回滚的系统。"
+    }
+  ],
+  "artifacts": {
+    "note": "2026年过半，我是怎样使用 Agent 的？.md",
+    "frames": [
+      "assets/bilibili-BV1QnML6pEZr-frame-0001.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0002.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0003.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0004.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0005.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0006.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0007.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0008.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0009.webp",
+      "assets/bilibili-BV1QnML6pEZr-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-07-29T07:04:12.875241+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1QnML6pEZr",
+    "domain": "Agent 工作流、Agentic Coding、技能复用、版本控制与语音输入",
+    "principles": [
+      "保留全部 50 个原始时间戳、顺序与分段",
+      "只校正可由原始转写、上下文或 manifest 视频简介可靠判断的术语和明显语病",
+      "不改变作者对个人 Agent 工作流的评价与偏好",
+      "不猜测型号或专有名词；无法可靠识别时显式标注听不清或疑似"
+    ],
+    "glossary": [
+      {
+        "term": "Claude Code / CC",
+        "note": "主调度 Agent；原始转写误作 Cloud Code / Cloud"
+      },
+      {
+        "term": "Codex exec",
+        "note": "manifest 视频简介明确提到的子 Agent 调度入口"
+      },
+      {
+        "term": "GPT-5.5 sub-agent",
+        "note": "接受文件修改和资料查询等任务的执行 Agent；型号按视频原话保留"
+      },
+      {
+        "term": "AGENTS.md / CLAUDE.md",
+        "note": "项目中的 Agent 指令文件"
+      },
+      {
+        "term": "Jujutsu / jj",
+        "note": "与 Git 对比的版本控制工具及命令"
+      },
+      {
+        "term": "grilling / grill",
+        "note": "一次一个问题地追问计划、暴露未知依赖和边界条件的工作方式"
+      },
+      {
+        "term": "vibe coding / agentic engineering",
+        "note": "视频用来对比的两种 AI 编程工作方式"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:12",
+        "from": "Cloud Code配Fable 5, Codex配GBT 5.5",
+        "to": "Claude Code 配 Fable 5，Codex 配 GPT-5.5",
+        "reason": "Claude Code 与 GPT 型号的明显语音识别错误；视频简介亦明确写出 cc、codex exec 和 gpt 5.5"
+      },
+      {
+        "timestamp": "00:42",
+        "from": "第二是Cloud",
+        "to": "第二是 Claude",
+        "reason": "与贡献者阵容和 Claude Code 上下文一致"
+      },
+      {
+        "timestamp": "00:54",
+        "from": "社群飞输文档",
+        "to": "社群飞书文档",
+        "reason": "常用产品名的同音误识别"
+      },
+      {
+        "timestamp": "01:00",
+        "from": "皮质纯友好",
+        "to": "[听不清]",
+        "reason": "该维度名称无法由当前原始材料可靠还原"
+      },
+      {
+        "timestamp": "01:08",
+        "from": "包来了三个维度的第一",
+        "to": "包揽了三个维度的第一",
+        "reason": "固定表达的明显误识别"
+      },
+      {
+        "timestamp": "01:18",
+        "from": "GPT5.5降质",
+        "to": "GPT-5.5 降智",
+        "reason": "结合主观模型体验语境修复词语并规范型号样式"
+      },
+      {
+        "timestamp": "01:18",
+        "from": "皮质纯直接爆表",
+        "to": "皮质醇直接爆表",
+        "reason": "生理名词同音误识别"
+      },
+      {
+        "timestamp": "01:43",
+        "from": "实伙",
+        "to": "实活",
+        "reason": "结合改文件、查资料的任务语境校正"
+      },
+      {
+        "timestamp": "01:43",
+        "from": "GPT5.5 sub-agent",
+        "to": "GPT-5.5 sub-agent",
+        "reason": "规范视频所述型号写法"
+      },
+      {
+        "timestamp": "01:50",
+        "from": "File也在用类似的思路",
+        "to": "Fable 也在用类似的思路",
+        "reason": "与相邻段落反复出现的 Fable 5 一致"
+      },
+      {
+        "timestamp": "01:59",
+        "from": "让AIT我多些几行代码",
+        "to": "让 AI 替我多写几行代码",
+        "reason": "恢复明显断词与同音误识别"
+      },
+      {
+        "timestamp": "02:10",
+        "from": "Agent的八戎八尺",
+        "to": "Agent 的“八荣八耻”",
+        "reason": "固定成语与随后荣辱对举结构一致"
+      },
+      {
+        "timestamp": "02:18",
+        "from": "以人类幻觉为尧,以动手疏手为宕",
+        "to": "以人类幻觉为耻，以动手核实为荣",
+        "reason": "结合“八荣八耻”和动手查证语境恢复对举句"
+      },
+      {
+        "timestamp": "02:27",
+        "from": "以傲慢次大为尧,以Agent友好为容",
+        "to": "以傲慢自大为耻，以 Agent 友好为荣",
+        "reason": "恢复明显同音误识别与对举结构"
+      },
+      {
+        "timestamp": "02:31",
+        "from": "加条Agent's MB",
+        "to": "加条 AGENTS.md",
+        "reason": "Agent 项目指令文件名；结合用户指定术语校正"
+      },
+      {
+        "timestamp": "02:41",
+        "from": "把彩坑提炼成一份笔记",
+        "to": "把踩坑提炼成一份笔记",
+        "reason": "固定表达的同音误识别"
+      },
+      {
+        "timestamp": "02:41",
+        "from": "Cloud.MD",
+        "to": "CLAUDE.md",
+        "reason": "Claude Code 项目指令文件名"
+      },
+      {
+        "timestamp": "02:49",
+        "from": "GiGiuzu,也就是GiGi",
+        "to": "Jujutsu，也就是 jj",
+        "reason": "与 Git 对比且后文提到单行 jj 提交，术语可由上下文可靠判断"
+      },
+      {
+        "timestamp": "02:55",
+        "from": "AddCommitPushG整转",
+        "to": "add、commit、push 这一整套",
+        "reason": "Git 操作序列的明显误识别"
+      },
+      {
+        "timestamp": "03:02",
+        "from": "Oplog",
+        "to": "operation log",
+        "reason": "Jujutsu 可回滚操作语境中的术语展开"
+      },
+      {
+        "timestamp": "03:11",
+        "from": "人脑里影视的,不可恢复的流程,改造成显示的",
+        "to": "人脑里隐式的、不可恢复的流程，改造成显式的",
+        "reason": "“隐式/显式”工程流程对举的同音误识别"
+      },
+      {
+        "timestamp": "03:48",
+        "from": "prompt,叫Griomi",
+        "to": "prompt，叫 grilling",
+        "reason": "manifest 描述中给出了 grilling skill 的链接"
+      },
+      {
+        "timestamp": "04:14",
+        "from": "四个相冉",
+        "to": "四个象限",
+        "reason": "认知分类语境中的固定表达"
+      },
+      {
+        "timestamp": "04:14",
+        "from": "一知的未知是quail的主场",
+        "to": "已知的未知是 grill 的主场",
+        "reason": "与后文“未知的未知”及 grilling 语境一致"
+      },
+      {
+        "timestamp": "04:30",
+        "from": "认着依赖、架构、边界条件",
+        "to": "顺着依赖、架构、边界条件",
+        "reason": "恢复句法和工作流语义"
+      },
+      {
+        "timestamp": "04:53",
+        "from": "videcoding到agentic engineering",
+        "to": "vibe coding 到 agentic engineering",
+        "reason": "AI 编程术语的明显误识别"
+      },
+      {
+        "timestamp": "05:18",
+        "from": "coppercy",
+        "to": "[疑似 Karpathy]",
+        "reason": "上下文指向提出 vibe coding 并提及语音输入的人名，但当前材料不足以无保留确认，故显式保留不确定性"
+      },
+      {
+        "timestamp": "05:28",
+        "from": "把cloud写成cloud",
+        "to": "把 Claude 写成 cloud",
+        "reason": "示例说明语音识别把专有名词转成普通同音词"
+      },
+      {
+        "timestamp": "05:36",
+        "from": "types",
+        "to": "[语音输入工具名听不清]",
+        "reason": "无法仅凭原始转写和 manifest 可靠确定工具名，避免猜测"
+      },
+      {
+        "timestamp": "05:53",
+        "from": "把影视的经验",
+        "to": "把隐式的经验",
+        "reason": "呼应 03:11 的“隐式流程”与可回滚系统主题"
+      }
+    ],
+    "uncertain_segments": [
+      {
+        "timestamp": "01:00",
+        "text": "四个评测维度中的第二项名称听不清"
+      },
+      {
+        "timestamp": "05:18",
+        "text": "人名疑似 Karpathy，但没有在当前材料中无歧义出现"
+      },
+      {
+        "timestamp": "05:36",
+        "text": "语音输入工具名无法可靠识别"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1297 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1fXKx6WEXk",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1fXKx6WEXk/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1fXKx6WEXk"
+  },
+  "title": "gpt-5.6速度慢解决方法",
+  "metadata": {
+    "title": "gpt-5.6速度慢解决方法",
+    "duration": 922,
+    "thumbnail": "http://i1.hdslb.com/bfs/archive/d81c09d168a7cc8533d197699ffee09d717ab026.jpg",
+    "uploader": "白菜工厂1145号员工",
+    "video_id": "BV1fXKx6WEXk",
+    "description": "配置文件：https://multiagentconfig.baicai1145.com\ncodex内置提示词：https://codexprompt.baicai1145.com",
+    "tags": [
+      "学习",
+      "教程",
+      "subagent",
+      "gpt-5.6",
+      "ai",
+      "codex",
+      "gpt",
+      "openai codex"
+    ],
+    "view_count": 12847,
+    "like_count": 478,
+    "upload_date": 1784599800,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "d40a3aae40ddf589ad12b63b543cb34dcefe0c3be31c65ed66d8c15952c72ad1",
+    "audio": "500fc105b8c8a3976733100c37961436e6fc8b9b2a5d676c3b0bdbb4fea3aefe",
+    "transcript": "e9ef9a559eb425d759147b788519e65b43217e9e648d2a377e2c22e65ee82a69",
+    "frames": "4d52a64c7e86d46c75d1077b948e482c5c246626af5db311ebf20576ded3023e"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 7.5,
+      "text": "哈嘍大家好,從上週四開始,OPEN-I更新了GPT5.4和Codex0.143"
+    },
+    {
+      "start": 7.5,
+      "end": 16.3,
+      "text": "然後,相信點進視頻,大家都覺得GPT5.4雖然它TPS可能更高了"
+    },
+    {
+      "start": 16.3,
+      "end": 19.8,
+      "text": "但是它實際完成任務的速度反而更慢了"
+    },
+    {
+      "start": 19.8,
+      "end": 23.1,
+      "text": "然後我也是在前三天遇到的這個問題"
+    },
+    {
+      "start": 23.1,
+      "end": 29.7,
+      "text": "然後我就去分析了一下那三天我的Codex會話,對話出現了什麼問題"
+    },
+    {
+      "start": 29.7,
+      "end": 40.0,
+      "text": "就發現,Codex官方把GPT5.6、Saw和Terror的默認三倍證詞版本強制改為了V1"
+    },
+    {
+      "start": 40.0,
+      "end": 43.3,
+      "text": "然後Lona還是V1"
+    },
+    {
+      "start": 43.3,
+      "end": 51.6,
+      "text": "就是Codex在0.143之前版本的時候,所有模型默認都是V1"
+    },
+    {
+      "start": 51.6,
+      "end": 56.8,
+      "text": "V1的話就是比較簡單的三倍證詞"
+    },
+    {
+      "start": 56.8,
+      "end": 65.9,
+      "text": "V1還是Beta版本的三倍證詞,但是不知道為什麼OPEN-I就強制把Terror和Saw的三倍證版本改成了V1"
+    },
+    {
+      "start": 65.9,
+      "end": 70.7,
+      "text": "而且到現在沒有,原碼仍然不允許更改為V1"
+    },
+    {
+      "start": 70.7,
+      "end": 74.9,
+      "text": "只要改成了V1之後就會出現一個很嚴重的問題"
+    },
+    {
+      "start": 74.9,
+      "end": 81.5,
+      "text": "現在在Codex原碼裡,V1版本是強制要隱藏三倍證詞的原數據的"
+    },
+    {
+      "start": 81.5,
+      "end": 85.5,
+      "text": "而且哪怕改成了不隱藏,它也會直接爆錯"
+    },
+    {
+      "start": 87.5,
+      "end": 93.1,
+      "text": "然後這就導致了肉圖模型去派發三倍證詞任務的時候"
+    },
+    {
+      "start": 93.1,
+      "end": 96.6,
+      "text": "它使用的模型是和肉圖模型是一樣的"
+    },
+    {
+      "start": 96.6,
+      "end": 101.0,
+      "text": "比如說你肉圖模型使用的是高級一點的模型是Saw Ultra"
+    },
+    {
+      "start": 101.0,
+      "end": 104.4,
+      "text": "然後結果三倍證詞仍然使用的是Saw Ultra"
+    },
+    {
+      "start": 104.4,
+      "end": 108.6,
+      "text": "這就完全不符合正常的邏輯"
+    },
+    {
+      "start": 108.6,
+      "end": 118.8,
+      "text": "就是曾經在V1的時候Codex Openx把它把三倍證詞定位定為了就是那種處理簡單的去完成那些主模型"
+    },
+    {
+      "start": 118.8,
+      "end": 124.0,
+      "text": "不一定強制依賴的上下文的那些任務可以交給三倍證詞去完成"
+    },
+    {
+      "start": 124.0,
+      "end": 128.8,
+      "text": "也可以同時交給那些簡單的模型去更快的完成"
+    },
+    {
+      "start": 128.8,
+      "end": 132.2,
+      "text": "也可以簡直升主模型的上下文窗口"
+    },
+    {
+      "start": 132.2,
+      "end": 135.5,
+      "text": "但是現在就完全沒有任何用作用了"
+    },
+    {
+      "start": 135.5,
+      "end": 141.2,
+      "text": "那個三倍證詞的耗時甚至比主模型還要更久就本末倒置了"
+    },
+    {
+      "start": 141.2,
+      "end": 143.6,
+      "text": "然後還有一個嚴重的就是Folk Tense"
+    },
+    {
+      "start": 143.6,
+      "end": 148.8,
+      "text": "就是在V1的版本的時候它只有兩種選項一個是Force一個是True"
+    },
+    {
+      "start": 148.8,
+      "end": 157.0,
+      "text": "如果是True的話就是把主模型的全部歷史上下文發給Saw Rendant讓它繼續"
+    },
+    {
+      "start": 157.0,
+      "end": 163.8,
+      "text": "然後VR的時候也是直接就是它的圓碼裡面直接強行使用了"
+    },
+    {
+      "start": 163.8,
+      "end": 171.0,
+      "text": "這VR就有三個版本分別是N和N還有O"
+    },
+    {
+      "start": 171.0,
+      "end": 176.8,
+      "text": "就是把主模型的所有上下文直接給Saw Rendant讓它繼續"
+    },
+    {
+      "start": 176.8,
+      "end": 183.8,
+      "text": "N就是把前幾輪的比如如果N是O就是前兩輪如果3就是前三輪"
+    },
+    {
+      "start": 183.8,
+      "end": 187.4,
+      "text": "N的話就是完全不給主模型的上下文"
+    },
+    {
+      "start": 187.4,
+      "end": 190.4,
+      "text": "正常情況都是N就行了"
+    },
+    {
+      "start": 190.4,
+      "end": 194.0,
+      "text": "但是不知道為什麼OpenR官方把它改成了O"
+    },
+    {
+      "start": 194.0,
+      "end": 199.0,
+      "text": "O的話它只適合三類接管的任務"
+    },
+    {
+      "start": 199.0,
+      "end": 205.6,
+      "text": "就是需要那種完整的接管的全繪畫副盤或者關鍵信息"
+    },
+    {
+      "start": 205.6,
+      "end": 210.8,
+      "text": "只存在於上下文記錄中這種情況下才需要用到O"
+    },
+    {
+      "start": 210.8,
+      "end": 214.6,
+      "text": "就是主模型去派發Saw Rendant的時候"
+    },
+    {
+      "start": 214.6,
+      "end": 217.4,
+      "text": "它主要是需要讓它去完成那些"
+    },
+    {
+      "start": 217.4,
+      "end": 221.0,
+      "text": "簡單的可並行的不依賴上下文的任務"
+    },
+    {
+      "start": 221.0,
+      "end": 226.4,
+      "text": "所以OpenR這個設置就反而導致了Saw Rendant完成任務非常地慢"
+    },
+    {
+      "start": 226.4,
+      "end": 228.9,
+      "text": "而且Forten如果設為O的話"
+    },
+    {
+      "start": 228.9,
+      "end": 236.6,
+      "text": "哪怕在Agent Time裡面設置了使用哪一種的Saw Rendant"
+    },
+    {
+      "start": 236.6,
+      "end": 240.4,
+      "text": "它也是直接參數會被忽略"
+    },
+    {
+      "start": 240.4,
+      "end": 247.6,
+      "text": "它會強制只使用和Route模型一樣的模型和思考強度"
+    },
+    {
+      "start": 247.6,
+      "end": 252.8,
+      "text": "但是這些OpenR在Codex更新日子裡面根本就沒有講到"
+    },
+    {
+      "start": 252.8,
+      "end": 258.6,
+      "text": "然後就是Saw Rendant它仍然會繼續開生存的Saw Rendant"
+    },
+    {
+      "start": 258.6,
+      "end": 261.0,
+      "text": "但是這個是用戶根本看不見的"
+    },
+    {
+      "start": 261.0,
+      "end": 263.2,
+      "text": "就是在Codex CLI裡面是看不見的"
+    },
+    {
+      "start": 263.2,
+      "end": 264.6,
+      "text": "APP裡面是看不見的"
+    },
+    {
+      "start": 264.6,
+      "end": 266.4,
+      "text": "但是APP裡面就會看見"
+    },
+    {
+      "start": 266.4,
+      "end": 268.8,
+      "text": "比如說它開了幾十個Agent"
+    },
+    {
+      "start": 268.8,
+      "end": 272.0,
+      "text": "你也不知道它的深度是到哪了"
+    },
+    {
+      "start": 272.0,
+      "end": 275.8,
+      "text": "原因還是因為它Mass Deep被刪掉了"
+    },
+    {
+      "start": 275.8,
+      "end": 277.2,
+      "text": "它就直接被忽略了"
+    },
+    {
+      "start": 277.2,
+      "end": 278.6,
+      "text": "它也沒有刪"
+    },
+    {
+      "start": 278.6,
+      "end": 279.6,
+      "text": "根據原碼來看的話"
+    },
+    {
+      "start": 279.6,
+      "end": 281.4,
+      "text": "它是如果是VR的話"
+    },
+    {
+      "start": 281.4,
+      "end": 283.8,
+      "text": "這個參數就被忽略了沒有用"
+    },
+    {
+      "start": 283.8,
+      "end": 285.0,
+      "text": "V1的時候"
+    },
+    {
+      "start": 285.0,
+      "end": 290.2,
+      "text": "比如說Mass Deep默認是1就只能開一層Saw Rendant"
+    },
+    {
+      "start": 290.2,
+      "end": 294.8,
+      "text": "然後現在VR沒有限制了"
+    },
+    {
+      "start": 294.8,
+      "end": 297.4,
+      "text": "它就一個Saw Rendant可以再開Saw Rendant"
+    },
+    {
+      "start": 297.4,
+      "end": 300.0,
+      "text": "Saw Rendant可以再開Saw Rendant"
+    },
+    {
+      "start": 300.0,
+      "end": 303.8,
+      "text": "所以就是這幾個問題疊加在一起了"
+    },
+    {
+      "start": 303.8,
+      "end": 308.6,
+      "text": "就是5.6Saw和Terror模型如果再開了什麼"
+    },
+    {
+      "start": 308.6,
+      "end": 312.2,
+      "text": "比如說四卡強度Max或者Altre之後"
+    },
+    {
+      "start": 312.2,
+      "end": 319.6,
+      "text": "它這個本身模型就被要求的去積極的調用Saw Rendant"
+    },
+    {
+      "start": 319.6,
+      "end": 325.8,
+      "text": "然後再給大家看一下Saw Rendant提示詞"
+    },
+    {
+      "start": 327.4,
+      "end": 338.8,
+      "text": "這裡比如說使用Saw Rendant和Altre思考強度"
+    },
+    {
+      "start": 338.8,
+      "end": 345.6,
+      "text": "這是肉體模型的基礎指令和Saw Rendant的基礎指令"
+    },
+    {
+      "start": 345.6,
+      "end": 347.6,
+      "text": "這兩者是相同的"
+    },
+    {
+      "start": 347.6,
+      "end": 356.0,
+      "text": "不同為一不同的就是有一個肉體Agent的專門的關於Saw Rendant的提示詞"
+    },
+    {
+      "start": 356.0,
+      "end": 360.8,
+      "text": "它會講它是肉體模型需要去派發任務"
+    },
+    {
+      "start": 360.8,
+      "end": 364.6,
+      "text": "可以使用Saw Rendant去完成任務"
+    },
+    {
+      "start": 364.6,
+      "end": 372.6,
+      "text": "然後它這裡還專門對Altre多加了一個要更加積極的去調用多Agent"
+    },
+    {
+      "start": 372.6,
+      "end": 379.0,
+      "text": "但是這一個Altre相關的提示詞也進入了Saw Rendant當中"
+    },
+    {
+      "start": 379.0,
+      "end": 384.4,
+      "text": "然後Saw Rendant也認為它需要更加積極的去調用Saw Rendant"
+    },
+    {
+      "start": 384.4,
+      "end": 386.4,
+      "text": "從此陷入了一個循環"
+    },
+    {
+      "start": 386.4,
+      "end": 388.4,
+      "text": "就總共這幾個問題"
+    },
+    {
+      "start": 388.4,
+      "end": 390.4,
+      "text": "就是要Folk全部歷史"
+    },
+    {
+      "start": 390.4,
+      "end": 393.8,
+      "text": "然後簡單的任務複雜化"
+    },
+    {
+      "start": 393.8,
+      "end": 397.2,
+      "text": "然後持續使用Altre的複雜模型"
+    },
+    {
+      "start": 397.2,
+      "end": 402.6,
+      "text": "然後VialAgent它也不止有一個創建Agent的藉口"
+    },
+    {
+      "start": 402.6,
+      "end": 404.6,
+      "text": "它還有歷史的所有Agent"
+    },
+    {
+      "start": 404.6,
+      "end": 410.2,
+      "text": "然後還可以給正在運行中的Agent發消息"
+    },
+    {
+      "start": 410.2,
+      "end": 413.4,
+      "text": "然後還可以附用已經完成的Agent"
+    },
+    {
+      "start": 413.4,
+      "end": 415.4,
+      "text": "也可以打斷當前的工作"
+    },
+    {
+      "start": 415.4,
+      "end": 420.4,
+      "text": "在V的時候它只有一個它只有創建Agent"
+    },
+    {
+      "start": 420.4,
+      "end": 422.4,
+      "text": "關閉Agent"
+    },
+    {
+      "start": 422.4,
+      "end": 427.4,
+      "text": "還有就是讓一個已經停止的Agent去Receive使用"
+    },
+    {
+      "start": 427.4,
+      "end": 431.4,
+      "text": "但是現在有的這些藉口"
+    },
+    {
+      "start": 431.4,
+      "end": 436.4,
+      "text": "它只在提示從前前的提到這些"
+    },
+    {
+      "start": 436.4,
+      "end": 438.4,
+      "text": "可能就是5.6在訓練的時候"
+    },
+    {
+      "start": 438.4,
+      "end": 443.4,
+      "text": "它使用的是VSaw Rendant時候的數據"
+    },
+    {
+      "start": 443.4,
+      "end": 448.4,
+      "text": "然後導致5.6騷和Taro根本就不知道Vial有這些藉口"
+    },
+    {
+      "start": 448.4,
+      "end": 450.4,
+      "text": "可以去附用Saw Rendant"
+    },
+    {
+      "start": 450.4,
+      "end": 453.4,
+      "text": "然後就去看了Saw Rendant的"
+    },
+    {
+      "start": 453.4,
+      "end": 457.4,
+      "text": "每次初始的任務都在幹什麼"
+    },
+    {
+      "start": 457.4,
+      "end": 460.4,
+      "text": "它基本都在做什麼RG、C的"
+    },
+    {
+      "start": 460.4,
+      "end": 466.4,
+      "text": "就是那種最初始去了解一個項目的情況的那些重複性的工作"
+    },
+    {
+      "start": 466.4,
+      "end": 469.4,
+      "text": "所以導致它的任務更加的慢了"
+    },
+    {
+      "start": 471.4,
+      "end": 474.4,
+      "text": "然後就是Saw Rendant的槽位"
+    },
+    {
+      "start": 474.4,
+      "end": 477.4,
+      "text": "這裡可以設置Saw Rendant的最大數"
+    },
+    {
+      "start": 477.4,
+      "end": 479.4,
+      "text": "默認是4"
+    },
+    {
+      "start": 479.4,
+      "end": 482.4,
+      "text": "但是這個是不提醒用戶已經被用滿了"
+    },
+    {
+      "start": 482.4,
+      "end": 485.4,
+      "text": "4就是包含一個肉圍模型"
+    },
+    {
+      "start": 485.4,
+      "end": 487.4,
+      "text": "三個Saw Rendant"
+    },
+    {
+      "start": 487.4,
+      "end": 492.4,
+      "text": "然後當肉圍模型要創建第四個Saw Rendant的時候"
+    },
+    {
+      "start": 492.4,
+      "end": 495.4,
+      "text": "第一個Saw Rendant它會直接被清除"
+    },
+    {
+      "start": 495.4,
+      "end": 498.4,
+      "text": "正確的順序應該是先list"
+    },
+    {
+      "start": 498.4,
+      "end": 500.4,
+      "text": "然後看有沒有可以附用的"
+    },
+    {
+      "start": 500.4,
+      "end": 504.4,
+      "text": "能附用的相同的任務的就可以進行附用"
+    },
+    {
+      "start": 504.4,
+      "end": 508.4,
+      "text": "減少每個Saw Rendant初次啟動了解項目的成本"
+    },
+    {
+      "start": 508.4,
+      "end": 515.4,
+      "text": "然後只有在任務類型不同時再清建Saw Rendant"
+    },
+    {
+      "start": 515.4,
+      "end": 520.4,
+      "text": "同時我這裡還把Saw Rendant總數改到了12個最多"
+    },
+    {
+      "start": 520.4,
+      "end": 525.4,
+      "text": "這個根據每個人的習慣可以改更高更低"
+    },
+    {
+      "start": 525.4,
+      "end": 528.4,
+      "text": "就自己跟自己習慣好點"
+    },
+    {
+      "start": 528.4,
+      "end": 530.4,
+      "text": "然後就是Cli的問題"
+    },
+    {
+      "start": 530.4,
+      "end": 535.4,
+      "text": "在APP里面是可以看見Saw Rendant內部的一些減藥信息的"
+    },
+    {
+      "start": 535.4,
+      "end": 541.4,
+      "text": "但是Codecli它只能看見就一直在微停微停"
+    },
+    {
+      "start": 541.4,
+      "end": 544.4,
+      "text": "然後要麽就是肉圍模型它finish微停"
+    },
+    {
+      "start": 544.4,
+      "end": 546.4,
+      "text": "也不知道Saw Rendant它得出了什麽結論"
+    },
+    {
+      "start": 546.4,
+      "end": 551.4,
+      "text": "但是在VE的時候是起碼能看見它的結論的"
+    },
+    {
+      "start": 551.4,
+      "end": 555.4,
+      "text": "這個也導致了就是比如說Saw Rendant內部"
+    },
+    {
+      "start": 555.4,
+      "end": 558.4,
+      "text": "它已經在循環的派發Saw Rendant了"
+    },
+    {
+      "start": 558.4,
+      "end": 562.4,
+      "text": "然後它已經陷入可能一種失控的狀態了"
+    },
+    {
+      "start": 562.4,
+      "end": 565.4,
+      "text": "結果用戶仍然不知道"
+    },
+    {
+      "start": 565.4,
+      "end": 567.4,
+      "text": "用戶還在等待"
+    },
+    {
+      "start": 567.4,
+      "end": 574.4,
+      "text": "所以我的解決方法就是在Agent這個文件夾中"
+    },
+    {
+      "start": 574.4,
+      "end": 579.4,
+      "text": "去創建了大概十三個我常用的Saw Rendant"
+    },
+    {
+      "start": 579.4,
+      "end": 584.4,
+      "text": "尤其是默認的 工作的 測試的"
+    },
+    {
+      "start": 584.4,
+      "end": 587.4,
+      "text": "搜索 審查"
+    },
+    {
+      "start": 587.4,
+      "end": 589.4,
+      "text": "然後一些是關於逆向的"
+    },
+    {
+      "start": 589.4,
+      "end": 594.4,
+      "text": "還有Gas相關的 閱讀代碼相關的"
+    },
+    {
+      "start": 594.4,
+      "end": 595.4,
+      "text": "閱讀MacDom相關的"
+    },
+    {
+      "start": 595.4,
+      "end": 601.4,
+      "text": "這些都是偏簡單的不需要主模型去完成的任務"
+    },
+    {
+      "start": 601.4,
+      "end": 604.4,
+      "text": "然後我都全部去交給Lunar模型"
+    },
+    {
+      "start": 604.4,
+      "end": 608.4,
+      "text": "把Saw Rendant設為VE的時候失敗了之後"
+    },
+    {
+      "start": 608.4,
+      "end": 610.4,
+      "text": "我就只能去使用VIAO"
+    },
+    {
+      "start": 610.4,
+      "end": 616.4,
+      "text": "VIAO這裡把隱藏Saw Rendant原數據這個選項要改為Force"
+    },
+    {
+      "start": 616.4,
+      "end": 622.4,
+      "text": "同時要把工具空間改為Agent"
+    },
+    {
+      "start": 622.4,
+      "end": 628.4,
+      "text": "因為原本克代克斯把它硬編碼成了一個空間"
+    },
+    {
+      "start": 628.4,
+      "end": 630.4,
+      "text": "導致沒有辦法改這個Force"
+    },
+    {
+      "start": 630.4,
+      "end": 632.4,
+      "text": "這樣改完就OK了"
+    },
+    {
+      "start": 632.4,
+      "end": 637.4,
+      "text": "然後我習慣把默認的位置時間改得很大"
+    },
+    {
+      "start": 637.4,
+      "end": 640.4,
+      "text": "然後最長時間也讓它改得更大一點"
+    },
+    {
+      "start": 640.4,
+      "end": 643.4,
+      "text": "因為我有的時候會跑TES的那些命令的時候"
+    },
+    {
+      "start": 643.4,
+      "end": 644.4,
+      "text": "它會等很久"
+    },
+    {
+      "start": 644.4,
+      "end": 647.4,
+      "text": "然後就是追加一些提示詞"
+    },
+    {
+      "start": 647.4,
+      "end": 649.4,
+      "text": "Use as a Hatex"
+    },
+    {
+      "start": 649.4,
+      "end": 652.4,
+      "text": "這一部分是追加"
+    },
+    {
+      "start": 652.4,
+      "end": 655.4,
+      "text": "Rose Agents Usage Hatex"
+    },
+    {
+      "start": 655.4,
+      "end": 657.4,
+      "text": "它就是替換"
+    },
+    {
+      "start": 657.4,
+      "end": 659.4,
+      "text": "這一部分是替換Sub Agents的"
+    },
+    {
+      "start": 659.4,
+      "end": 663.4,
+      "text": "這一部分是替換Rose"
+    },
+    {
+      "start": 663.4,
+      "end": 666.4,
+      "text": "就主模型的Sub Agents描述的"
+    },
+    {
+      "start": 666.4,
+      "end": 670.4,
+      "text": "這一部分是替換Sub Agents的Sub Agents描述的"
+    },
+    {
+      "start": 670.4,
+      "end": 673.4,
+      "text": "對應的就是"
+    },
+    {
+      "start": 675.4,
+      "end": 678.4,
+      "text": "對應的就是這兩部分"
+    },
+    {
+      "start": 678.4,
+      "end": 680.4,
+      "text": "對應的就是這兩部分"
+    },
+    {
+      "start": 680.4,
+      "end": 686.4,
+      "text": "然後下面的Altr主動多代理模式是沒有辦法替換的"
+    },
+    {
+      "start": 686.4,
+      "end": 690.4,
+      "text": "除非去改Codex的原碼然後自己編譯"
+    },
+    {
+      "start": 690.4,
+      "end": 694.4,
+      "text": "然後創建工具的說明也是沒有辦法替換的"
+    },
+    {
+      "start": 694.4,
+      "end": 696.4,
+      "text": "下面的都是沒有辦法替換的"
+    },
+    {
+      "start": 696.4,
+      "end": 699.4,
+      "text": "所以只能去追加一些信息"
+    },
+    {
+      "start": 699.4,
+      "end": 703.4,
+      "text": "我這邊追加就是V1和V2都通用的"
+    },
+    {
+      "start": 703.4,
+      "end": 707.4,
+      "text": "最重要的就是不可以Foxen全部信息"
+    },
+    {
+      "start": 707.4,
+      "end": 711.4,
+      "text": "然後就是關於主模型如何使用Sub Agents的"
+    },
+    {
+      "start": 711.4,
+      "end": 716.4,
+      "text": "在原本的基礎上提示它要先List"
+    },
+    {
+      "start": 716.4,
+      "end": 719.4,
+      "text": "查看有哪些Sub Agents仍然存在"
+    },
+    {
+      "start": 719.4,
+      "end": 722.4,
+      "text": "然後去儘可能附用可以附用的"
+    },
+    {
+      "start": 722.4,
+      "end": 726.4,
+      "text": "只有在沒有可附用的Sub Agents的時候"
+    },
+    {
+      "start": 726.4,
+      "end": 728.4,
+      "text": "然後再創建新的Sub Agents"
+    },
+    {
+      "start": 728.4,
+      "end": 733.4,
+      "text": "然後不需要去強制等待Sub Agents"
+    },
+    {
+      "start": 733.4,
+      "end": 740.4,
+      "text": "除非Sub Agents信息是被當前主模型強制依賴的信息"
+    },
+    {
+      "start": 740.4,
+      "end": 743.4,
+      "text": "才要去等待這樣子不浪費時間"
+    },
+    {
+      "start": 743.4,
+      "end": 747.4,
+      "text": "當然有的時候如果你的習慣是"
+    },
+    {
+      "start": 747.4,
+      "end": 751.4,
+      "text": "把那種較難的任務也派發給Sub Agents的"
+    },
+    {
+      "start": 751.4,
+      "end": 754.4,
+      "text": "那麼你可以這裡改為強制位置"
+    },
+    {
+      "start": 754.4,
+      "end": 758.4,
+      "text": "然後就是Sub Agents的關於Sub Agents的描述"
+    },
+    {
+      "start": 758.4,
+      "end": 761.4,
+      "text": "我這邊就改成了禁止繼續派發Sub Agents"
+    },
+    {
+      "start": 761.4,
+      "end": 765.4,
+      "text": "因為我沒有用到過那種一個Sub Agents的"
+    },
+    {
+      "start": 765.4,
+      "end": 768.4,
+      "text": "它已經是去完成比如說Review任務了"
+    },
+    {
+      "start": 768.4,
+      "end": 772.4,
+      "text": "它結果還要去派發Sub Agents再幫助它完成任務"
+    },
+    {
+      "start": 772.4,
+      "end": 776.4,
+      "text": "我覺得已經這種情況是提出不了的"
+    },
+    {
+      "start": 776.4,
+      "end": 778.4,
+      "text": "所以我這邊直接禁止了"
+    },
+    {
+      "start": 778.4,
+      "end": 783.4,
+      "text": "如果你的習慣是喜歡Sub Agents繼續去派發Sub Agents的話"
+    },
+    {
+      "start": 783.4,
+      "end": 793.4,
+      "text": "那你可以這裡寫成適當的去讓Sub Agents可以繼續派發Sub Agents"
+    },
+    {
+      "start": 793.4,
+      "end": 798.4,
+      "text": "然後就是我還喜歡自己去自定義一下的基礎指令"
+    },
+    {
+      "start": 798.4,
+      "end": 802.4,
+      "text": "我那裏面就提到了作為一個Sub Agents"
+    },
+    {
+      "start": 802.4,
+      "end": 810.4,
+      "text": "它要完成的任務是偏簡單的輔助主模型的那種A Agents"
+    },
+    {
+      "start": 810.4,
+      "end": 812.4,
+      "text": "它的定位是那個樣子的"
+    },
+    {
+      "start": 812.4,
+      "end": 816.4,
+      "text": "但是Kodak官方他可能想的是"
+    },
+    {
+      "start": 816.4,
+      "end": 821.4,
+      "text": "在5.64和Terror模型它的能力足夠強了之後"
+    },
+    {
+      "start": 821.4,
+      "end": 826.4,
+      "text": "它的定位就變成了主模型它就像一個萬能模型"
+    },
+    {
+      "start": 826.4,
+      "end": 830.4,
+      "text": "然後它的Sub Agents相當於它的分身"
+    },
+    {
+      "start": 830.4,
+      "end": 834.4,
+      "text": "去繼承它的前面的記憶繼續去完成"
+    },
+    {
+      "start": 834.4,
+      "end": 836.4,
+      "text": "並行的去完成那些任務"
+    },
+    {
+      "start": 836.4,
+      "end": 842.4,
+      "text": "但是可能目前的哪怕是最好的Sub Agents模型"
+    },
+    {
+      "start": 842.4,
+      "end": 845.4,
+      "text": "仍然沒有辦法很好的控制這麼多的Sub Agents"
+    },
+    {
+      "start": 845.4,
+      "end": 853.4,
+      "text": "所以我仍然喜歡去在第14次裏面要求把較簡單的任務裁分發給Sub Agents"
+    },
+    {
+      "start": 853.4,
+      "end": 858.4,
+      "text": "而不是比如說肉特模型列了一個大綱"
+    },
+    {
+      "start": 858.4,
+      "end": 862.4,
+      "text": "總共四個部分結果它直接派發給了四個Sub Agents"
+    },
+    {
+      "start": 862.4,
+      "end": 867.4,
+      "text": "然後那四個Sub Agents要完成那四個特別難的任務"
+    },
+    {
+      "start": 867.4,
+      "end": 872.4,
+      "text": "結果可能那四個任務之間還互相有所關聯互相有所依賴"
+    },
+    {
+      "start": 872.4,
+      "end": 875.4,
+      "text": "那四個Sub Agents之間又無法互相交流"
+    },
+    {
+      "start": 875.4,
+      "end": 882.4,
+      "text": "就可能導致肉特模型對Sub Agents完成的任務就是不滿意"
+    },
+    {
+      "start": 882.4,
+      "end": 884.4,
+      "text": "結果它又去派發一遍"
+    },
+    {
+      "start": 884.4,
+      "end": 887.4,
+      "text": "最後一直陷入這種循環"
+    },
+    {
+      "start": 887.4,
+      "end": 890.4,
+      "text": "我在前三天的時候就遇到了這樣的問題"
+    },
+    {
+      "start": 890.4,
+      "end": 894.4,
+      "text": "所以我就直接不讓Sub Agents完成那些複雜任務了"
+    },
+    {
+      "start": 894.4,
+      "end": 898.4,
+      "text": "但是這些都只是提示詞方面的優化"
+    },
+    {
+      "start": 898.4,
+      "end": 902.4,
+      "text": "就是在Codex原碼上它的Folkton仍然是Out"
+    },
+    {
+      "start": 902.4,
+      "end": 906.4,
+      "text": "V2仍然沒有限制V1的Message Deep"
+    },
+    {
+      "start": 906.4,
+      "end": 909.4,
+      "text": "子代裏如果比如說使用了Out的話"
+    },
+    {
+      "start": 909.4,
+      "end": 913.4,
+      "text": "它仍然有可能會繼續創建Sub Agents"
+    },
+    {
+      "start": 913.4,
+      "end": 918.4,
+      "text": "然後CLI仍然是無法查看Sub Agents內部的證文內容"
+    },
+    {
+      "start": 918.4,
+      "end": 920.4,
+      "text": "好 這些視頻就到這裏 謝謝大家"
+    }
+  ],
+  "artifacts": {
+    "note": "gpt-5.6速度慢解决方法.md",
+    "frames": [
+      "assets/bilibili-BV1fXKx6WEXk-frame-0001.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0002.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0003.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0004.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0005.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0006.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0007.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0008.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0009.webp",
+      "assets/bilibili-BV1fXKx6WEXk-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-07-27T13:32:49.017668+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1fXKx6WEXk",
+    "language": "zh",
+    "domain": "OpenAI Codex 多代理工作流与 subagent 配置",
+    "glossary": [
+      {
+        "canonical": "OpenAI",
+        "asr_variants": [
+          "OPEN-I",
+          "OpenR",
+          "Openx"
+        ]
+      },
+      {
+        "canonical": "GPT-5.6",
+        "asr_variants": [
+          "GPT5.4",
+          "5.64"
+        ]
+      },
+      {
+        "canonical": "Sol",
+        "asr_variants": [
+          "Saw",
+          "騷"
+        ]
+      },
+      {
+        "canonical": "Terra",
+        "asr_variants": [
+          "Terror",
+          "Taro"
+        ]
+      },
+      {
+        "canonical": "Luna",
+        "asr_variants": [
+          "Lona",
+          "Lunar"
+        ]
+      },
+      {
+        "canonical": "subagent",
+        "asr_variants": [
+          "三倍證詞",
+          "Saw Rendant",
+          "Sub Agents"
+        ]
+      },
+      {
+        "canonical": "root 模型 / root agent",
+        "asr_variants": [
+          "肉圖模型",
+          "肉體模型",
+          "肉圍模型",
+          "Route模型",
+          "肉特模型"
+        ]
+      },
+      {
+        "canonical": "fork_context",
+        "asr_variants": [
+          "Folk Tense",
+          "Forten",
+          "Folkton"
+        ]
+      },
+      {
+        "canonical": "max_depth",
+        "asr_variants": [
+          "Mass Deep",
+          "Message Deep"
+        ]
+      }
+    ],
+    "major_corrections": [
+      {
+        "timestamp": "00:29",
+        "original": "Codex官方把GPT5.6、Saw和Terror的默認三倍證詞版本強制改為了V1",
+        "corrected": "Codex 官方把 GPT-5.6 Sol 和 Terra 的默认 subagent 版本强制改成了 v2",
+        "reason": "结合后续 v1/v2 对比与模型命名统一校正。"
+      },
+      {
+        "timestamp": "02:21",
+        "original": "Folk Tense",
+        "corrected": "fork_context",
+        "reason": "Codex 多代理上下文传递配置术语。"
+      },
+      {
+        "timestamp": "02:43",
+        "original": "N和N還有O",
+        "corrected": "all、N 和 none",
+        "reason": "根据相邻段落对“全部、前 N 轮、完全不传”的解释恢复枚举值。"
+      },
+      {
+        "timestamp": "04:32",
+        "original": "Mass Deep",
+        "corrected": "max_depth",
+        "reason": "根据后续“限制嵌套层数”的语义恢复配置名。"
+      },
+      {
+        "timestamp": "07:37",
+        "original": "RG、C",
+        "corrected": "rg、git",
+        "reason": "根据“重新了解项目”的上下文恢复常见项目探索命令；git 一词仍有轻微不确定性。"
+      },
+      {
+        "timestamp": "08:15",
+        "original": "先List",
+        "corrected": "先 list",
+        "reason": "统一 agent 工具操作名称。"
+      },
+      {
+        "timestamp": "10:10",
+        "original": "把隱藏Saw Rendant原數據這個選項要改為Force",
+        "corrected": "把“隐藏 subagent 原始数据”选项改为 false",
+        "reason": "结合前文 true/false 布尔设置及“不隐藏”语义校正。"
+      }
+    ],
+    "uncertain_terms": [
+      {
+        "timestamp": "10:47",
+        "rendered": "use_as_handoff",
+        "note": "由画面代码名发音推定，建议在最终综合时结合关键帧复核。"
+      },
+      {
+        "timestamp": "10:52",
+        "rendered": "root_agents_usage_handoff",
+        "note": "由画面代码名发音推定，建议在最终综合时结合关键帧复核。"
+      }
+    ]
+  }
+}
