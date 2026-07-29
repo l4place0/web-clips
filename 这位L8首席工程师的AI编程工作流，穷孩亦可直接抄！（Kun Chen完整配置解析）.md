@@ -6,6 +6,9 @@ video_id: "BV19v3g6EENM"
 uploader: "KeepAsking追问"
 duration_seconds: 3710
 tags: ["克劳德", "软件工程", "终端工具", "代码审查", "AI工作流", "AI Agent", "Agentic编程", "AI编程", "编程效率", "上B站看播客"]
+publish: true
+rid: "ad2961fc-e3da-44ee-ad26-a36a3ccecba6"
+permalink: "/r/ad2961fc-e3da-44ee-ad26-a36a3ccecba6"
 ---
 
 # 总结稿

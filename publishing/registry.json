@@ -24,6 +24,294 @@
       "assignedAt": "2026-07-29T16:05:11.194Z",
       "everPublished": true,
       "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "9f68012f-7161-4bcb-ac9b-23c8b12bed67": {
+      "firstAssignedPath": "2026-04-08_WC_01.md",
+      "lastKnownSourcePath": "2026-04-08_WC_01.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.024Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae": {
+      "firstAssignedPath": "2026-04-08_WC_02.md",
+      "lastKnownSourcePath": "2026-04-08_WC_02.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.205Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21": {
+      "firstAssignedPath": "2026-04-19_WC.md",
+      "lastKnownSourcePath": "2026-04-19_WC.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.426Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2bafdbf3-58c1-4598-9c92-46a53c774058": {
+      "firstAssignedPath": "2026-04-20_WC_01.md",
+      "lastKnownSourcePath": "2026-04-20_WC_01.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.855Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2259721f-78d2-45f2-9f4a-20e703359cdc": {
+      "firstAssignedPath": "2026-04-20_WC_02.md",
+      "lastKnownSourcePath": "2026-04-20_WC_02.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.047Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "715a7ba8-da1e-4320-abb0-61628f520f5c": {
+      "firstAssignedPath": "2026-05-19_Sum_01.md",
+      "lastKnownSourcePath": "2026-05-19_Sum_01.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.229Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "cc318c9a-a0c8-4d69-ad6c-959b419c4a53": {
+      "firstAssignedPath": "2026-05-20_Sum_01.md",
+      "lastKnownSourcePath": "2026-05-20_Sum_01.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.372Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "7127a789-4722-4742-94b4-f2263418fa75": {
+      "firstAssignedPath": "2026-05-20_Sum_02.md",
+      "lastKnownSourcePath": "2026-05-20_Sum_02.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.542Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "995fbe00-95ab-49c6-a928-ad1d2a11cfa5": {
+      "firstAssignedPath": "2026-05-20_Sum_03.md",
+      "lastKnownSourcePath": "2026-05-20_Sum_03.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.730Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1": {
+      "firstAssignedPath": "2026-05-20_Sum_04.md",
+      "lastKnownSourcePath": "2026-05-20_Sum_04.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.865Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "988e7cdb-6eac-4583-bb46-7c843db80550": {
+      "firstAssignedPath": "2026-05-20_Sum_05.md",
+      "lastKnownSourcePath": "2026-05-20_Sum_05.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.009Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "3510b460-90c9-4fca-9155-0c2ff225684d": {
+      "firstAssignedPath": "2026-05-20_WC.md",
+      "lastKnownSourcePath": "2026-05-20_WC.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.138Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "50e557f9-9169-4b3f-8729-bf8db0e828d7": {
+      "firstAssignedPath": "2026-05-28_WC.md",
+      "lastKnownSourcePath": "2026-05-28_WC.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.297Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "6d1fa00c-7224-4691-ad07-b170ad4510e6": {
+      "firstAssignedPath": "2026-05-29_WC.md",
+      "lastKnownSourcePath": "2026-05-29_WC.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.565Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "24135def-07d2-40e7-82e5-ca2b00f96176": {
+      "firstAssignedPath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "lastKnownSourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.698Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b8472df3-4e5a-4bcd-8e05-1e44b2945b20": {
+      "firstAssignedPath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "lastKnownSourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.857Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "83350e33-0732-4452-a55b-bbc2f5122d9b": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Best_Practices.md",
+      "lastKnownSourcePath": "2026-06-26_AI_Coding_Best_Practices.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.046Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "88707bc6-cdf5-4ed4-8083-f00efe2f15cd": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Guide.md",
+      "lastKnownSourcePath": "2026-06-26_AI_Coding_Guide.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.299Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ada23994-d3cb-4995-895a-227cfe5abbf0": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Tools_Comparison.md",
+      "lastKnownSourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.416Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ad536a24-c5ad-4259-83d2-f40cd58ca7cf": {
+      "firstAssignedPath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "lastKnownSourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.555Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "e2ff2ed1-2dab-475d-b9a3-17a219479a43": {
+      "firstAssignedPath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "lastKnownSourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.672Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "845c5970-c51e-480a-863c-e84a613c7f64": {
+      "firstAssignedPath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "lastKnownSourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.792Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3": {
+      "firstAssignedPath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "lastKnownSourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.955Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "9e8c8aac-7857-4eba-a085-117d71f6fadf": {
+      "firstAssignedPath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "lastKnownSourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.175Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ac8282be-cc85-4e70-98f0-5043d9cd0d20": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "lastKnownSourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.365Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "cedae9cb-caf7-4d4c-9b57-23892a6735f3": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "lastKnownSourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.681Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "6184ec72-c0b0-4866-9a20-379f9053a83c": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "lastKnownSourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.840Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "lastKnownSourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.029Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "lastKnownSourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.660Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ce936931-25bf-446e-a451-30808c82b729": {
+      "firstAssignedPath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "lastKnownSourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.872Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "07945d2c-9acb-4b99-ab99-97fd6f8e44dc": {
+      "firstAssignedPath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "lastKnownSourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.160Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "267504d7-da48-48b3-b7fc-acf9b1f4bf50": {
+      "firstAssignedPath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "lastKnownSourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.548Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25": {
+      "firstAssignedPath": "gpt-5.6速度慢解决方法.md",
+      "lastKnownSourcePath": "gpt-5.6速度慢解决方法.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.938Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "c8b78427-cef2-4a1f-b761-0af0397bb6f4": {
+      "firstAssignedPath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "lastKnownSourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.446Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ad2961fc-e3da-44ee-ad26-a36a3ccecba6": {
+      "firstAssignedPath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "lastKnownSourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.623Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "39770cb1-ca37-4c6f-a7f8-253c0e01f32e": {
+      "firstAssignedPath": "连续21天十点睡六点起，我真的会变健康吗？.md",
+      "lastKnownSourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.883Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
     }
   },
   "events": [
@@ -62,6 +350,438 @@
       "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
       "at": "2026-07-29T16:14:00.610Z",
       "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-29T20:44:19.024Z",
+      "sourcePath": "2026-04-08_WC_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-29T20:44:19.205Z",
+      "sourcePath": "2026-04-08_WC_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-29T20:44:19.426Z",
+      "sourcePath": "2026-04-19_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-29T20:44:19.855Z",
+      "sourcePath": "2026-04-20_WC_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-29T20:44:20.047Z",
+      "sourcePath": "2026-04-20_WC_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-29T20:44:20.229Z",
+      "sourcePath": "2026-05-19_Sum_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-29T20:44:20.372Z",
+      "sourcePath": "2026-05-20_Sum_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-29T20:44:20.542Z",
+      "sourcePath": "2026-05-20_Sum_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-29T20:44:20.730Z",
+      "sourcePath": "2026-05-20_Sum_03.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-29T20:44:20.865Z",
+      "sourcePath": "2026-05-20_Sum_04.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-29T20:44:21.009Z",
+      "sourcePath": "2026-05-20_Sum_05.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-29T20:44:21.138Z",
+      "sourcePath": "2026-05-20_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-29T20:44:21.297Z",
+      "sourcePath": "2026-05-28_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-29T20:44:21.565Z",
+      "sourcePath": "2026-05-29_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-29T20:44:21.698Z",
+      "sourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-29T20:44:21.857Z",
+      "sourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-29T20:44:22.046Z",
+      "sourcePath": "2026-06-26_AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-29T20:44:22.299Z",
+      "sourcePath": "2026-06-26_AI_Coding_Guide.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-29T20:44:22.416Z",
+      "sourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-29T20:44:22.555Z",
+      "sourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-29T20:44:22.672Z",
+      "sourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-29T20:44:22.792Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-29T20:44:22.955Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-29T20:44:23.175Z",
+      "sourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-29T20:44:23.365Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-29T20:44:23.681Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-29T20:44:23.840Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-29T20:44:24.029Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-29T20:44:24.660Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-29T20:44:24.872Z",
+      "sourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-29T20:44:25.160Z",
+      "sourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+      "at": "2026-07-29T20:44:25.548Z",
+      "sourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25",
+      "at": "2026-07-29T20:44:25.938Z",
+      "sourcePath": "gpt-5.6速度慢解决方法.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "c8b78427-cef2-4a1f-b761-0af0397bb6f4",
+      "at": "2026-07-29T20:44:26.446Z",
+      "sourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ad2961fc-e3da-44ee-ad26-a36a3ccecba6",
+      "at": "2026-07-29T20:44:26.623Z",
+      "sourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "39770cb1-ca37-4c6f-a7f8-253c0e01f32e",
+      "at": "2026-07-29T20:44:26.883Z",
+      "sourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md"
+    },
+    {
+      "type": "published",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-08_WC_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-08_WC_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-19_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-20_WC_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-20_WC_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-19_Sum_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_03.md"
+    },
+    {
+      "type": "published",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_04.md"
+    },
+    {
+      "type": "published",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_05.md"
+    },
+    {
+      "type": "published",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-28_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-29_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "published",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "published",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "published",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Guide.md"
+    },
+    {
+      "type": "published",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "published",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "published",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "published",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "published",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "published",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "published",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "published",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "published",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "published",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "published",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "published",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "published",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "published",
+      "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md"
+    },
+    {
+      "type": "published",
+      "rid": "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "gpt-5.6速度慢解决方法.md"
+    },
+    {
+      "type": "published",
+      "rid": "c8b78427-cef2-4a1f-b761-0af0397bb6f4",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md"
+    },
+    {
+      "type": "published",
+      "rid": "ad2961fc-e3da-44ee-ad26-a36a3ccecba6",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md"
+    },
+    {
+      "type": "published",
+      "rid": "39770cb1-ca37-4c6f-a7f8-253c0e01f32e",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md"
     }
   ]
 }

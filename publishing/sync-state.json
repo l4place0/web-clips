@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "resources": {
+    "07945d2c-9acb-4b99-ab99-97fd6f8e44dc": {
+      "sourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "published": true,
+      "noteSha256": "e969b87a59f4035c8d4f8ecddf05643a92128bae8da343c7a3a4aaea8d64b5b2",
+      "assets": {}
+    },
+    "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce": {
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "published": true,
+      "noteSha256": "1293a89c45f8a6ad6feb8b2b3de1bd8f1f5848131669a8ad7dce046de8be1e0b",
+      "assets": {}
+    },
+    "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab": {
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "published": true,
+      "noteSha256": "9ebb5b574ac0a22a5ac64b3b21ff66b59728916ed0e35358ea1d53618170acd5",
+      "assets": {}
+    },
+    "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25": {
+      "sourcePath": "gpt-5.6速度慢解决方法.md",
+      "published": true,
+      "noteSha256": "17c86b81adc67c456c89bd4f889e159ac1c26ae77443cdd36ba46a5abe48c7d2",
+      "assets": {
+        "assets/bilibili-BV1fXKx6WEXk-frame-0001.webp": "1c44e68c1503beff9f8c097bba63e24273fd1f5ae7c9d3dc1ddbc7e79833d40a",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0002.webp": "3ffd3edf736671c17fab7f92a14141775acc802aef7abc95a2d453303c6c6258",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0003.webp": "55d6278a07121b61b67c66896db6a7447f6ed5c02b473a55dfddf1bb61336dad",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0004.webp": "b859bafd5f9563c05938feb1495c8e0f75d941c45f216ea8c7cb3e6dc6dc765b",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0005.webp": "35e9c665ac9435804d288d4be860adf614ee5390932c4af9f932e979f3fa8efb",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0006.webp": "5b9c09a6bb1319a5145ad2eb4f73734ef68581dca865953e89f458b4fc95d184",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0007.webp": "44099f9ca2e58dcbe1bab46be927d5b0cad68323d94ee6094ed16a4e4c5f0fa7",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0008.webp": "bc6d2f7bce0532de7071186ed4a3a24f8f13e81ee1a405e2fce5a61a846e0c53",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0009.webp": "4e4e6ca1547fa2ed2e662ff41f21172b4ec3ec00c29b2102706ad33dbe45c096",
+        "assets/bilibili-BV1fXKx6WEXk-frame-0010.webp": "b1c6182f81927326d462aaa572d5412742c039a34bfde31f6a5e6a3373622d77"
+      }
+    },
+    "1fe2d2f1-ea47-47be-8925-083fb8e67d2a": {
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "published": true,
+      "noteSha256": "085a1b55f5fd46faa4d46a2a1b35b5f7643cacfc921323bee41467344c0e8a2b",
+      "assets": {
+        "assets/bilibili-BV1tQgb64E1f-frame-0001.webp": "5eb759d6437564979b8f09a165bc48b508c53f243df3b9edcac23997f0477430",
+        "assets/bilibili-BV1tQgb64E1f-frame-0002.webp": "b4e54bc99fef03d645b3124c62070c1060b6e4883b7fca6c6968c967172d21cf",
+        "assets/bilibili-BV1tQgb64E1f-frame-0003.webp": "93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990",
+        "assets/bilibili-BV1tQgb64E1f-frame-0004.webp": "302f76616cee040e6a98d13779e2a3447c63999a7c863de91c326b91f9bb6685",
+        "assets/bilibili-BV1tQgb64E1f-frame-0005.webp": "c55c906fcc247ea4aee7e3f3a9230583fcd9a8c93c05dea77d3177ec994df375",
+        "assets/bilibili-BV1tQgb64E1f-frame-0006.webp": "7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0",
+        "assets/bilibili-BV1tQgb64E1f-frame-0007.webp": "31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8",
+        "assets/bilibili-BV1tQgb64E1f-frame-0008.webp": "cdfbe494a5d0700a386c77a808850c821efdda0024528c5d7bf9d8eef962a05f",
+        "assets/bilibili-BV1tQgb64E1f-frame-0009.webp": "79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78",
+        "assets/bilibili-BV1tQgb64E1f-frame-0010.webp": "e6df5816f11f661e95067ddf8a3a68f859fdf443da8e842f2f1fc195181299eb",
+        "assets/bilibili-BV1tQgb64E1f-frame-0011.webp": "f07364cc158068f520d6366ecdd4f6c36564647efea0df6ebe193c1824bee8c8",
+        "assets/bilibili-BV1tQgb64E1f-frame-0012.webp": "1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17",
+        "assets/bilibili-BV1tQgb64E1f-frame-0013.webp": "a21e4b0cc16a9afab380401970f4e50e51555e4dccd10b4ddfab82306a007168"
+      }
+    },
+    "2259721f-78d2-45f2-9f4a-20e703359cdc": {
+      "sourcePath": "2026-04-20_WC_02.md",
+      "published": true,
+      "noteSha256": "364300906daf4f4d3d997391fa8e2912d107cf6efc5fc56cda57f4446ce4541e",
+      "assets": {}
+    },
+    "24135def-07d2-40e7-82e5-ca2b00f96176": {
+      "sourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "published": true,
+      "noteSha256": "6e0fbc44c790da34e91a20d70cc5d0ebd917b6f27ad6cbc4e8375a611a01b73c",
+      "assets": {}
+    },
+    "267504d7-da48-48b3-b7fc-acf9b1f4bf50": {
+      "sourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "published": true,
+      "noteSha256": "c9016de796a3e39eefc9b6d8a4f462f2d9b810877fde659be195cf7eeb10ceb2",
+      "assets": {
+        "assets/bilibili-BV1uwTS66Eqg-frame-0001.webp": "999a21a40db192da029c6f37f02cf22f25b9b490c414af2432d590e621c8dc27",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0002.webp": "2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0003.webp": "81303fe55c175009362062942787b18581ea285601e8a8572df4900ba4b92029",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0004.webp": "957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0005.webp": "d2d90625a1e7ea3b6058d424973776180d9a6eab89454f5a680a6278a9123c52",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0006.webp": "193f9865e3b152d30c6c5d26f1c4a8a4de7323c13c170cf8681cecd7fcf51511",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0007.webp": "8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0008.webp": "743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0009.webp": "62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59",
+        "assets/bilibili-BV1uwTS66Eqg-frame-0010.webp": "420bf67dac138b5fc0cefcb7d8e9226a1a37e1357f98188c18d380a11f4a8081"
+      }
+    },
+    "2bafdbf3-58c1-4598-9c92-46a53c774058": {
+      "sourcePath": "2026-04-20_WC_01.md",
+      "published": true,
+      "noteSha256": "d63bfd13a54d31d7a9e1f2c04fb3b0c93ee2d841bfb59dc8d3d7a6e4a6f80711",
+      "assets": {}
+    },
+    "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1": {
+      "sourcePath": "2026-05-20_Sum_04.md",
+      "published": true,
+      "noteSha256": "af9adde9f89a9ce1b0240030687b3bae25d68222917f41a3a73ac704312d8b3e",
+      "assets": {}
+    },
+    "3510b460-90c9-4fca-9155-0c2ff225684d": {
+      "sourcePath": "2026-05-20_WC.md",
+      "published": true,
+      "noteSha256": "9224a2510f2273a52cc59f70350230efbc264e13085cb64df340767585095623",
+      "assets": {}
+    },
+    "39770cb1-ca37-4c6f-a7f8-253c0e01f32e": {
+      "sourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md",
+      "published": true,
+      "noteSha256": "bcaae78674df72eeb78c33bda82f649ce41eac4af2705fdde439cd00a832e587",
+      "assets": {
+        "assets/bilibili-BV1DAgS6SEqa-frame-0001.webp": "75c5a861222bb1622489a6ea85e56931057b1a0b6efff670d4eda609c16a9420",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0002.webp": "3af79b571ecedbb714f88f595081eac307f99c7edbbcc8c3853218543c9fae0b",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0003.webp": "46ef8b3e413d738e8398d0a3cf12b9df5917175dba8cc7044b253cdc599273dd",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0004.webp": "571796b278c10ec5e7670260b45c52c734bed4338b58c5cf1b3651909818a563",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0005.webp": "1ba5f3fcaecafb41f8832867bea953634e6006bfa5307e62b0428172cbdfe716",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0006.webp": "85ba4163226ef7f78cd4726177398f069ca38ea1f30cbbe905bcda254a459759",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0007.webp": "4434e777076da25f8e38851d56f4d7f7dae68c9336d6bbca92f0822a9ceb604d",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0008.webp": "fe5056cdbc092daa1e77e3e1dce5973d04e39b78a1a2a84157b793a4a58d1e3a",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0009.webp": "c212051741ac199d1b73fb9b283ddcb27702d4fd9d7dc1f74cbe2b267103d780",
+        "assets/bilibili-BV1DAgS6SEqa-frame-0010.webp": "d96c077823afefeb9ad79a4786b4e5131f69b1336bd581e32f190225df3f6e53"
+      }
+    },
+    "43a0eb11-e472-4b3c-a312-7a2530276d8d": {
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "published": true,
+      "noteSha256": "455c6b7a580df513a3cb66d160b1dee1b37bb244c3492007b4003d1c35bc2fe2",
+      "assets": {
+        "assets/bilibili-BV15T3E66Eo9-frame-0001.webp": "3482c90ee736508201708acb876b67e9b29714394cd558dcc3bc2a410af42027",
+        "assets/bilibili-BV15T3E66Eo9-frame-0002.webp": "18b66171dff803af684e1a4cb543aba0251aeeb8d1086de09670fd517e147b38",
+        "assets/bilibili-BV15T3E66Eo9-frame-0003.webp": "6bd3901a1f3afdb06082e6ece15af5a7c9fb94a8bb190f9d6666577560838abc",
+        "assets/bilibili-BV15T3E66Eo9-frame-0004.webp": "8d181850613eb02a4f9dd5eee3ccc16a6b69823646cb5dac05ed9a85f86df76e",
+        "assets/bilibili-BV15T3E66Eo9-frame-0005.webp": "4ef788a3dda491e8eceddef63ebaf2f9e659c8aeb46a36ef8b5f6558db0f8ccd",
+        "assets/bilibili-BV15T3E66Eo9-frame-0006.webp": "a623dc01bb639c5dd13031b0b047b86d126ef9dd1ea26a0907d85cc54a582955",
+        "assets/bilibili-BV15T3E66Eo9-frame-0007.webp": "3366ee4169c253bbfe7c72eeffe9afa78fc26d58948b3e362e9c5a87995c1607",
+        "assets/bilibili-BV15T3E66Eo9-frame-0008.webp": "739ab04e78974259b5be03a0d2fc01595557ed3090746be976dab886667f2f63",
+        "assets/bilibili-BV15T3E66Eo9-frame-0009.webp": "48a46ddc30bda62c5735bfc05f6f72bc7c4339d85d15e4529307be263eaa6e7a",
+        "assets/bilibili-BV15T3E66Eo9-frame-0010.webp": "8f71cbf40f69bf1ace14cc4e3cde473ec8a9c8bcd648883e26b13b9953294c5b"
+      }
+    },
+    "50e557f9-9169-4b3f-8729-bf8db0e828d7": {
+      "sourcePath": "2026-05-28_WC.md",
+      "published": true,
+      "noteSha256": "f39ee4dd1470b93556487fa05ed3854575dcaccd7a9250b5a0ddcd07777c94fa",
+      "assets": {}
+    },
+    "6184ec72-c0b0-4866-9a20-379f9053a83c": {
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "published": true,
+      "noteSha256": "4dac88a37620458eff09fec6b3a0ea3c88c4b8e69d7a1423392c23161f480fb2",
+      "assets": {}
+    },
+    "6d1fa00c-7224-4691-ad07-b170ad4510e6": {
+      "sourcePath": "2026-05-29_WC.md",
+      "published": true,
+      "noteSha256": "53dbaa5e6419aa2b3a926bdb8ad7c326f84312c50ab6dce31836a0aa9c4161d1",
+      "assets": {}
+    },
+    "7127a789-4722-4742-94b4-f2263418fa75": {
+      "sourcePath": "2026-05-20_Sum_02.md",
+      "published": true,
+      "noteSha256": "44bf18cd55d2df6a7dee3089b4d3c6d57faa8cc860331310954159f970301875",
+      "assets": {}
+    },
+    "715a7ba8-da1e-4320-abb0-61628f520f5c": {
+      "sourcePath": "2026-05-19_Sum_01.md",
+      "published": true,
+      "noteSha256": "a1027366a59e7e8af3d3a8ca086fe7ccbe9a003efdc8b6abb2f9dfe5607d403c",
+      "assets": {}
+    },
+    "83350e33-0732-4452-a55b-bbc2f5122d9b": {
+      "sourcePath": "2026-06-26_AI_Coding_Best_Practices.md",
+      "published": true,
+      "noteSha256": "b4b5a3d9d15b2fbbf01e4dd2c67e202f6033802d968929e610a38b13a66ed48b",
+      "assets": {}
+    },
+    "845c5970-c51e-480a-863c-e84a613c7f64": {
+      "sourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "published": true,
+      "noteSha256": "47199915bbbf887479fdb74d957250cb036e3d5651a985411b40332f2006c760",
+      "assets": {}
+    },
+    "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae": {
+      "sourcePath": "2026-04-08_WC_02.md",
+      "published": true,
+      "noteSha256": "36ab0242633fa5f2f8b282c4a6d4746235e0a938ceb59cd20f10dcca0201fda6",
+      "assets": {}
+    },
+    "88707bc6-cdf5-4ed4-8083-f00efe2f15cd": {
+      "sourcePath": "2026-06-26_AI_Coding_Guide.md",
+      "published": true,
+      "noteSha256": "8ea704512fe1c11cb1d365d2b86e32b098b9da0819b460d1cf3672c4b457acf6",
+      "assets": {}
+    },
+    "988e7cdb-6eac-4583-bb46-7c843db80550": {
+      "sourcePath": "2026-05-20_Sum_05.md",
+      "published": true,
+      "noteSha256": "a5b177a8af1ffd9952e0c9286a120a8ae5a55c58683bcc6e41592b196e64fe4b",
+      "assets": {}
+    },
+    "995fbe00-95ab-49c6-a928-ad1d2a11cfa5": {
+      "sourcePath": "2026-05-20_Sum_03.md",
+      "published": true,
+      "noteSha256": "78aac341fb009111c42e91d8143beaaddc2341dce74fed22435276a3280e2440",
+      "assets": {}
+    },
+    "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21": {
+      "sourcePath": "2026-04-19_WC.md",
+      "published": true,
+      "noteSha256": "99c9a6e73f1d98ee19ebffdc7123e75e20335eb018f50e1b86e2fcd2daabd0a0",
+      "assets": {}
+    },
+    "9e8c8aac-7857-4eba-a085-117d71f6fadf": {
+      "sourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "published": true,
+      "noteSha256": "302461ccfd9d7b5adee83643b6524c9deb2b5c777876f4ff641365b3df71f61d",
+      "assets": {}
+    },
+    "9f68012f-7161-4bcb-ac9b-23c8b12bed67": {
+      "sourcePath": "2026-04-08_WC_01.md",
+      "published": true,
+      "noteSha256": "00f7bce92e9078c25311aec67a29ff4c1841ebcf9393829f8c924040375eb733",
+      "assets": {}
+    },
+    "ac8282be-cc85-4e70-98f0-5043d9cd0d20": {
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "published": true,
+      "noteSha256": "b62baca8996bb333759f899e846de425336f08dc5db2d4af1f89d25aa11878d8",
+      "assets": {}
+    },
+    "ad2961fc-e3da-44ee-ad26-a36a3ccecba6": {
+      "sourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "published": true,
+      "noteSha256": "dfc762a102ce4d599b431c2aaeccdfb9686b2235b3112ef18363f696ffab4f85",
+      "assets": {
+        "assets/bilibili-BV19v3g6EENM-frame-0001.webp": "34b81b7ba629118e629db66056a0297f6feb2b00cbad98c8770dded4f82da1f1",
+        "assets/bilibili-BV19v3g6EENM-frame-0002.webp": "27bf9fab57e04c612fb453dccabe681c4a289d2ca8cf46830504deaa8ef5e721",
+        "assets/bilibili-BV19v3g6EENM-frame-0003.webp": "0ea8e7282edeed05b1cad8136a28499e8a3b0e111d70d0cd9ecbc50296bb838e",
+        "assets/bilibili-BV19v3g6EENM-frame-0004.webp": "a5fc8314be8279b4e26d729b93e90be911e3263cb9e329d5983bc9c63704469e",
+        "assets/bilibili-BV19v3g6EENM-frame-0005.webp": "d6a9de7bcfa7125268568a4e5a57d8f60e260d6f004b7751e99f9f5ec85df305",
+        "assets/bilibili-BV19v3g6EENM-frame-0006.webp": "7c14dcf619ceb76b396c581432f68e4dbb9d0b23fc602427bed7de757a4a0d4f",
+        "assets/bilibili-BV19v3g6EENM-frame-0007.webp": "9c5b8ce2fbaaec1d32838457c93cc0db535ba0a38d3a3dd1f05975e7dec3c7c8",
+        "assets/bilibili-BV19v3g6EENM-frame-0008.webp": "2faae4443b00779ddd371fd43083ace6b30845c584480cc250f08f6044db8192",
+        "assets/bilibili-BV19v3g6EENM-frame-0009.webp": "7324445552564d2c270a477f3cbeb42386691ee6b12d5aae1d3625b2e53be035",
+        "assets/bilibili-BV19v3g6EENM-frame-0010.webp": "cf9f932e9b5e5ae8d3ba1ef20491b22700d3f7bbb02f146f4b7e6febbe2d79e2"
+      }
+    },
+    "ad536a24-c5ad-4259-83d2-f40cd58ca7cf": {
+      "sourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "published": true,
+      "noteSha256": "d56d74c546e0f3e8df85462d0fff0d455c16bf75534c1b921b4e533e203c01c4",
+      "assets": {}
+    },
+    "ada23994-d3cb-4995-895a-227cfe5abbf0": {
+      "sourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md",
+      "published": true,
+      "noteSha256": "f7f8271cd94133899b8e88f23f57d64e3b1674f49a05ad9603ad789e5692a44e",
+      "assets": {}
+    },
+    "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3": {
+      "sourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "published": true,
+      "noteSha256": "981220b65e32068dfeb1521736c6f416de5624206dce62dbd5aba16679c3806e",
+      "assets": {}
+    },
+    "b8472df3-4e5a-4bcd-8e05-1e44b2945b20": {
+      "sourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "published": true,
+      "noteSha256": "5add085e63885d596973b9c4fe73f070c36227a869651bdd121d98b1a5be743d",
+      "assets": {}
+    },
+    "c8b78427-cef2-4a1f-b761-0af0397bb6f4": {
+      "sourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "published": true,
+      "noteSha256": "46149ee08e524c833f21ac9e513842bf917508107525ed50b1d05dbc3dfda167",
+      "assets": {
+        "assets/bilibili-BV1tegr64E3z-frame-0001.webp": "63ad048660cb88bd78d7b3be383dd8d99c35fe848005b73517de8980c8b3a869",
+        "assets/bilibili-BV1tegr64E3z-frame-0002.webp": "7e262f347b4ffc0e1d3335bd2be36c2c4a49e638ed42fd24cf63febcab93e0bd",
+        "assets/bilibili-BV1tegr64E3z-frame-0003.webp": "0d829eff80807e66b93f68221806175ebfb7eff88051e7f542135396f872280b",
+        "assets/bilibili-BV1tegr64E3z-frame-0004.webp": "7b8cde23c57e84138b33c4417b3b66b39a771ab5bedf06a2c69836dd129a78eb",
+        "assets/bilibili-BV1tegr64E3z-frame-0005.webp": "4c1295fa6e587c11061ac3cc48d8e4e53a5111c23d11907064f0905b6f31cf9c",
+        "assets/bilibili-BV1tegr64E3z-frame-0006.webp": "b7c31d0bde06879da1cd257ffd22ce6c28ad29e0440b03ba9abe60fafe984a32",
+        "assets/bilibili-BV1tegr64E3z-frame-0007.webp": "470734c5fa3055b946280b9546acdf0d2d6feb34b5c7a431e34ff9de36fc731f",
+        "assets/bilibili-BV1tegr64E3z-frame-0008.webp": "445e558836964b8f1d3d17ff5712bd7bf10243692e203c8eb0fccf00e871cd50",
+        "assets/bilibili-BV1tegr64E3z-frame-0009.webp": "ad71b7e24baad1611019ba25f82bc36fad07b1c5373d4167ee0b74f710d7b7e1",
+        "assets/bilibili-BV1tegr64E3z-frame-0010.webp": "83759d84f85cf6e19b47d097b7deafeb30069bc7be3689a2372c5a0d496c6de2"
+      }
+    },
+    "cc318c9a-a0c8-4d69-ad6c-959b419c4a53": {
+      "sourcePath": "2026-05-20_Sum_01.md",
+      "published": true,
+      "noteSha256": "f11335cd767b47443c685e00c1ccb8de0b832b17bb2f0659fc32fad78ac9059e",
+      "assets": {}
+    },
+    "ce936931-25bf-446e-a451-30808c82b729": {
+      "sourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "published": true,
+      "noteSha256": "a18c256c718ac6c1e266e9aaf5e9b01ac477d230e431972031818326852a0f34",
+      "assets": {}
+    },
+    "cedae9cb-caf7-4d4c-9b57-23892a6735f3": {
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "published": true,
+      "noteSha256": "dc2b0bb5fee9a48fc17f78a671994e54f9304a741cce854e7913c527080e1cf8",
+      "assets": {}
+    },
+    "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1": {
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md",
+      "published": true,
+      "noteSha256": "56e6b1dc276cf55e9074de328124b823b7c255034877d7d770110dffa52121c9",
+      "assets": {
+        "assets/bilibili-BV1QnML6pEZr-frame-0001.webp": "719ddd66e6bec3114e7eff2397a5f74858536a14ef586235b9107401fee5a03b",
+        "assets/bilibili-BV1QnML6pEZr-frame-0002.webp": "7b973f6af237d46d812d159073098c6d26680fa67f26f5ed2c305049e15788f4",
+        "assets/bilibili-BV1QnML6pEZr-frame-0003.webp": "91509b036f54f7ebfaa4aeef32127f388475b5e7ca0d751c8f0569cc85ce6576",
+        "assets/bilibili-BV1QnML6pEZr-frame-0004.webp": "eb28cda221479d5163f113a0f29642b29062ee304a278d87a138f3cd2d675517",
+        "assets/bilibili-BV1QnML6pEZr-frame-0005.webp": "a009ea0641f6770ecbb14a2e39a0b343af39f046d31d59f60cfd3a4e3cf8ef63",
+        "assets/bilibili-BV1QnML6pEZr-frame-0006.webp": "4d5a0a5ff0dd456cddedc6f28aa866fdf35bcc41428f49f049532a79a257ae14",
+        "assets/bilibili-BV1QnML6pEZr-frame-0007.webp": "b5a9d10f8669f7324a4b6b013a5be5414ad5d3b429302535e26d373c1727da99",
+        "assets/bilibili-BV1QnML6pEZr-frame-0008.webp": "d0f343a6848ff125a3ebde3a68862eb6d8c0edba29abef577c2066b2ef4f19b0",
+        "assets/bilibili-BV1QnML6pEZr-frame-0009.webp": "70c6bcbec28b2c8eaa22f9716644b1639b634159fe7b64a1b5acf1942222267a",
+        "assets/bilibili-BV1QnML6pEZr-frame-0010.webp": "b80f2c6b9a45a7bd7c88e73b5f02f743fe80abe84e97fd32695d261f2c742ccd"
+      }
+    },
+    "e2ff2ed1-2dab-475d-b9a3-17a219479a43": {
+      "sourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "published": true,
+      "noteSha256": "6b2ccb8498048795b3930db18c2c085b9f73bf7501d13c1cdd9b529788f78cb6",
+      "assets": {}
+    }
+  }
+}

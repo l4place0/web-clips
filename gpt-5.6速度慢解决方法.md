@@ -6,6 +6,9 @@ video_id: "BV1fXKx6WEXk"
 uploader: "白菜工厂1145号员工"
 duration_seconds: 922
 tags: ["学习", "教程", "subagent", "gpt-5.6", "ai", "codex", "gpt", "openai codex"]
+publish: true
+rid: "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
+permalink: "/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
 ---
 
 # 总结稿

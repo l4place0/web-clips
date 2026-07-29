@@ -6,6 +6,9 @@ video_id: "BV1uwTS66Eqg"
 uploader: "五里墩茶社"
 duration_seconds: 498
 tags: ["AI", "人工智能", "B站AI创造公开赛", "Loop Engineering"]
+publish: true
+rid: "267504d7-da48-48b3-b7fc-acf9b1f4bf50"
+permalink: "/r/267504d7-da48-48b3-b7fc-acf9b1f4bf50"
 ---
 
 # 总结稿
