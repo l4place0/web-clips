@@ -21,6 +21,7 @@ const SECRET_PATTERNS = [
 async function fetchText(route) {
   const response = await fetch(new URL(route, BASE_URL), {
     redirect: "follow",
+    signal: AbortSignal.timeout(30_000),
     headers: { "user-agent": "web-clips-mvp-acceptance/1" },
   })
   return { response, text: await response.text() }
@@ -122,16 +123,18 @@ async function main() {
     )
     assert.ok(home.text.includes(resource.rid), `Homepage missing RID: ${resource.rid}`)
     assert.ok(index.text.includes(resource.rid), `Search index missing RID: ${resource.rid}`)
-    const assetStatuses = []
-    for (const asset of resource.assets) {
-      const response = await fetch(new URL(asset, BASE_URL), {
-        redirect: "follow",
-        headers: { "user-agent": "web-clips-mvp-acceptance/1" },
-      })
-      assert.equal(response.status, 200, `Published asset must return 200: ${asset}`)
-      assert.match(response.headers.get("content-type") ?? "", /^image\//i)
-      assetStatuses.push(response.status)
-    }
+    const assetStatuses = await Promise.all(
+      resource.assets.map(async (asset) => {
+        const response = await fetch(new URL(asset, BASE_URL), {
+          redirect: "follow",
+          signal: AbortSignal.timeout(30_000),
+          headers: { "user-agent": "web-clips-mvp-acceptance/1" },
+        })
+        assert.equal(response.status, 200, `Published asset must return 200: ${asset}`)
+        assert.match(response.headers.get("content-type") ?? "", /^image\//i)
+        return response.status
+      }),
+    )
     resourceTexts.push(page.text, raw.text)
     resourceChecks.push({
       rid: resource.rid,
