@@ -156,6 +156,22 @@ test("build copies only the referenced image closure and rewrites all supported 
   assert.equal(await exists(path.join(root, ".publish-stage/quartz/content/assets/unreferenced.json")), false)
 })
 
+test("remote Markdown links remain external and are not treated as private notes", async (t) => {
+  const root = await fixture(t)
+  const external = "https://github.com/example/project/blob/main/README.md"
+  await write(root, "公开.md", `---\ntitle: 公开\n---\n[上游文档](${external})\n`)
+  await assignId(root, "公开.md", { uuid: () => RID_A, now: () => "2026-01-01T00:00:00.000Z" })
+  await write(root, "公开.md", publishText(await read(root, "公开.md")))
+
+  const result = await build(root, { now: () => "2026-01-02T00:00:00.000Z" })
+  assert.equal(result.ok, true)
+  assert.equal(result.diagnostics.some((item) => item.code === "W_PRIVATE_LINK"), false)
+  const page = await read(root, `.publish-stage/quartz/content/r/${RID_A}.md`)
+  const raw = await read(root, `.publish-stage/raw/${RID_A}.md`)
+  assert.match(page, new RegExp(external.replaceAll(".", "\\.")))
+  assert.match(raw, new RegExp(external.replaceAll(".", "\\.")))
+})
+
 test("rename keeps routes stable and updates only lastKnownSourcePath", async (t) => {
   const root = await fixture(t)
   await write(root, "note.md", "---\ntitle: move\n---\nbody\n")

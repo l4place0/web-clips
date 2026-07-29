@@ -1,5 +1,108 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-29T15:34:06.923Z",
-  "resources": []
+  "generatedAt": "2026-07-29T16:14:00.610Z",
+  "resources": [
+    {
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "page": "/r/1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "raw": "/raw/1fe2d2f1-ea47-47be-8925-083fb8e67d2a.md",
+      "assets": [
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0001.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0002.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0003.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0004.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0005.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0006.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0007.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0008.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0009.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0010.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0011.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0012.webp",
+        "/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0013.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0001.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0002.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0003.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0004.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0005.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0006.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0007.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0008.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0009.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0010.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0011.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0012.webp",
+        "quartz/content/assets/1fe2d2f1-ea47-47be-8925-083fb8e67d2a/bilibili-BV1tQgb64E1f-frame-0013.webp",
+        "quartz/content/r/1fe2d2f1-ea47-47be-8925-083fb8e67d2a.md",
+        "raw/1fe2d2f1-ea47-47be-8925-083fb8e67d2a.md"
+      ]
+    },
+    {
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "page": "/r/43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "raw": "/raw/43a0eb11-e472-4b3c-a312-7a2530276d8d.md",
+      "assets": [
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0001.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0002.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0003.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0004.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0005.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0006.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0007.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0008.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0009.webp",
+        "/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0010.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0001.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0002.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0003.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0004.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0005.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0006.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0007.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0008.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0009.webp",
+        "quartz/content/assets/43a0eb11-e472-4b3c-a312-7a2530276d8d/bilibili-BV15T3E66Eo9-frame-0010.webp",
+        "quartz/content/r/43a0eb11-e472-4b3c-a312-7a2530276d8d.md",
+        "raw/43a0eb11-e472-4b3c-a312-7a2530276d8d.md"
+      ]
+    },
+    {
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md",
+      "page": "/r/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "raw": "/raw/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1.md",
+      "assets": [
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0001.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0002.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0003.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0004.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0005.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0006.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0007.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0008.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0009.webp",
+        "/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0010.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0001.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0002.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0003.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0004.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0005.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0006.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0007.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0008.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0009.webp",
+        "quartz/content/assets/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1/bilibili-BV1QnML6pEZr-frame-0010.webp",
+        "quartz/content/r/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1.md",
+        "raw/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1.md"
+      ]
+    }
+  ]
 }

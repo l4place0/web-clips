@@ -664,6 +664,13 @@ async function processPublishedNote(root, config, note, publishedByPath) {
       replacements.push({ ...reference, rewritten: reference.replacementText })
       continue
     }
+    let schemeTarget = reference.target.trim()
+    if (schemeTarget.startsWith("<") && schemeTarget.endsWith(">")) {
+      schemeTarget = schemeTarget.slice(1, -1)
+    }
+    if (reference.kind === "link" && remoteScheme(schemeTarget)) {
+      continue
+    }
     const extension = localExtension(reference.target)
     if (reference.kind === "link" && extension === ".md") {
       const decoded = decodeLocalTarget(reference.target)

@@ -26,8 +26,14 @@ async function fetchText(route) {
   return { response, text: await response.text() }
 }
 
-async function privateNameCandidates() {
+async function privateNameCandidates(manifest) {
   const names = new Set()
+  const publishedNotes = new Set(manifest.resources.map((resource) => path.normalize(resource.sourcePath)))
+  const publishedAssets = new Set(
+    manifest.resources.flatMap((resource) =>
+      resource.assets.map((asset) => decodeURIComponent(path.posix.basename(asset))),
+    ),
+  )
   const excludedRoots = new Set([
     ".codex",
     ".git",
@@ -50,7 +56,11 @@ async function privateNameCandidates() {
       if (entry.isDirectory()) {
         if (!relative && excludedRoots.has(entry.name)) continue
         await visit(child, childRelative)
-      } else if (entry.isFile() && entry.name.toLowerCase().endsWith(".md")) {
+      } else if (
+        entry.isFile() &&
+        entry.name.toLowerCase().endsWith(".md") &&
+        !publishedNotes.has(path.normalize(childRelative))
+      ) {
         names.add(path.basename(entry.name, ".md"))
       }
     }
@@ -60,7 +70,7 @@ async function privateNameCandidates() {
     for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
       const child = path.join(directory, entry.name)
       if (entry.isDirectory()) await visitAssets(child)
-      else if (entry.isFile()) names.add(entry.name)
+      else if (entry.isFile() && !publishedAssets.has(entry.name)) names.add(entry.name)
     }
   }
 
@@ -95,15 +105,56 @@ async function main() {
   assert.equal(missingPage.response.status, 404, "Unknown stable page must return 404")
   assert.equal(missingRaw.response.status, 404, "Unknown raw Markdown must return 404")
 
-  const publicText = [home.text, tags.text, index.text, missingPage.text, missingRaw.text].join("\n")
-  const candidates = await privateNameCandidates()
+  const manifest = JSON.parse(
+    await fs.readFile(path.join(REPOSITORY_ROOT, "publishing", "manifest.json"), "utf8"),
+  )
+  const resourceChecks = []
+  const resourceTexts = []
+  for (const resource of manifest.resources) {
+    const page = await fetchText(resource.page)
+    const raw = await fetchText(resource.raw)
+    assert.equal(page.response.status, 200, `Stable page must return 200: ${resource.rid}`)
+    assert.equal(raw.response.status, 200, `Raw Markdown must return 200: ${resource.rid}`)
+    assert.match(
+      raw.response.headers.get("content-type") ?? "",
+      /^text\/markdown\b/i,
+      `Raw Markdown MIME mismatch: ${resource.rid}`,
+    )
+    assert.ok(home.text.includes(resource.rid), `Homepage missing RID: ${resource.rid}`)
+    assert.ok(index.text.includes(resource.rid), `Search index missing RID: ${resource.rid}`)
+    const assetStatuses = []
+    for (const asset of resource.assets) {
+      const response = await fetch(new URL(asset, BASE_URL), {
+        redirect: "follow",
+        headers: { "user-agent": "web-clips-mvp-acceptance/1" },
+      })
+      assert.equal(response.status, 200, `Published asset must return 200: ${asset}`)
+      assert.match(response.headers.get("content-type") ?? "", /^image\//i)
+      assetStatuses.push(response.status)
+    }
+    resourceTexts.push(page.text, raw.text)
+    resourceChecks.push({
+      rid: resource.rid,
+      page: page.response.status,
+      raw: raw.response.status,
+      rawContentType: raw.response.headers.get("content-type"),
+      assets: assetStatuses.length,
+    })
+  }
+
+  const publicText = [
+    home.text,
+    tags.text,
+    index.text,
+    missingPage.text,
+    missingRaw.text,
+    ...resourceTexts,
+  ].join("\n")
+  const candidates = await privateNameCandidates(manifest)
   const leakedNames = candidates.filter((name) => publicText.includes(name))
   assert.equal(leakedNames.length, 0, `Private source name leak count: ${leakedNames.length}`)
   for (const pattern of SECRET_PATTERNS) assert.doesNotMatch(publicText, pattern)
 
-  const manifest = JSON.parse(
-    await fs.readFile(path.join(REPOSITORY_ROOT, "publishing", "manifest.json"), "utf8"),
-  )
   if (manifest.resources.length === 0) {
     assert.doesNotMatch(index.text, /"slug":"r\//)
   }
@@ -123,6 +174,7 @@ async function main() {
       frameOptions: home.response.headers.get("x-frame-options"),
       referrerPolicy: home.response.headers.get("referrer-policy"),
     },
+    resources: resourceChecks,
     privateNameCandidatesChecked: candidates.length,
     secretPatternMatches: 0,
   }

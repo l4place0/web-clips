@@ -1,5 +1,67 @@
 {
   "version": 1,
-  "resources": {},
-  "events": []
+  "resources": {
+    "1fe2d2f1-ea47-47be-8925-083fb8e67d2a": {
+      "firstAssignedPath": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "lastKnownSourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:04:27.213Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "43a0eb11-e472-4b3c-a312-7a2530276d8d": {
+      "firstAssignedPath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "lastKnownSourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:04:53.797Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1": {
+      "firstAssignedPath": "2026年过半，我是怎样使用 Agent 的？.md",
+      "lastKnownSourcePath": "2026年过半，我是怎样使用 Agent 的？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:05:11.194Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    }
+  },
+  "events": [
+    {
+      "type": "assigned",
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "at": "2026-07-29T16:04:27.213Z",
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "at": "2026-07-29T16:04:53.797Z",
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "at": "2026-07-29T16:05:11.194Z",
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md"
+    },
+    {
+      "type": "published",
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md"
+    },
+    {
+      "type": "published",
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md"
+    },
+    {
+      "type": "published",
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md"
+    }
+  ]
 }

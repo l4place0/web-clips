@@ -6,6 +6,9 @@ video_id: "BV1tQgb64E1f"
 uploader: "人月聊IT"
 duration_seconds: 400
 tags: ["人工智能", "思维", "知识体系", "知识架构"]
+publish: true
+rid: "1fe2d2f1-ea47-47be-8925-083fb8e67d2a"
+permalink: "/r/1fe2d2f1-ea47-47be-8925-083fb8e67d2a"
 ---
 
 # 总结稿
