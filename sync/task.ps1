@@ -17,7 +17,27 @@ $PowerShell = Join-Path $env:SystemRoot "System32\WindowsPowerShell\v1.0\powersh
 $Description = "WebClipsAutoSync managed task for $Repository"
 
 function Get-WebClipsTask {
-  Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
+  try {
+    Get-ScheduledTask -TaskName $TaskName -ErrorAction Stop
+  } catch {
+    if (
+      $_.Exception.HResult -eq -2147217405 -or
+      $_.FullyQualifiedErrorId -match "0x80041003" -or
+      $_.CategoryInfo.Category -eq "PermissionDenied"
+    ) {
+      throw "Task Scheduler query denied for the current Windows identity. Run this command as the interactive user who installed $TaskName."
+    }
+    if (
+      $_.Exception.HResult -eq -2147024894 -or
+      $_.FullyQualifiedErrorId -match "0x80070002"
+    ) {
+      return $null
+    }
+    if ($_.Exception.Message -match "cannot find") {
+      return $null
+    }
+    throw
+  }
 }
 
 function Write-TaskStatus([string]$Operation) {
