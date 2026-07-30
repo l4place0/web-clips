@@ -18,6 +18,9 @@ node_modules/
 .obsidian/cache/
 .obsidian/.trash/
 
+# Codex repo-local skills and configuration
+.codex/
+
 # video-sum caches and working data
 .video-sum-cache/
 .video-sum-work/
@@ -44,7 +47,6 @@ public.tmp-*/
 public.backup-*/
 
 # Logs and transient files
-.publish-sync/
 *.log
 logs/
 npm-debug.log*
