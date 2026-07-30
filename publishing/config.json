@@ -1,11 +1,7 @@
 {
   "contractVersion": 1,
   "source": {
-    "root": ".",
-    "include": [
-      "*.md",
-      "**/*.md"
-    ],
+    "root": "clips",
     "exclude": [
       ".codex/**",
       ".git/**",
@@ -14,6 +10,7 @@
       ".video-sum-cache/**",
       ".video-sum-temp/**",
       ".video-sum-work/**",
+      "clips/assets/**",
       "node_modules/**",
       "publishing/**",
       "public/**",
@@ -73,7 +70,7 @@
   },
   "attachments": {
     "allowedLocalRoots": [
-      "assets"
+      "clips/assets"
     ],
     "localImages": {
       "enabled": true,

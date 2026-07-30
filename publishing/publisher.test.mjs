@@ -16,7 +16,10 @@ async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), "web-clips-publisher-"))
   await fs.mkdir(path.join(root, "publishing"), { recursive: true })
   await fs.mkdir(path.join(root, "assets"), { recursive: true })
-  await fs.copyFile(SOURCE_CONFIG, path.join(root, "publishing", "config.json"))
+  const config = JSON.parse(await fs.readFile(SOURCE_CONFIG, "utf8"))
+  config.source.root = "."
+  config.attachments.allowedLocalRoots = ["assets"]
+  await fs.writeFile(path.join(root, "publishing", "config.json"), `${JSON.stringify(config, null, 2)}\n`)
   t.after(async () => fs.rm(root, { recursive: true, force: true }))
   return root
 }
@@ -110,6 +113,40 @@ test("validate is default-private and rejects non-boolean publish", async (t) =>
   result = await validate(root)
   assert.equal(result.exitCode, 3)
   assert.ok(result.diagnostics.some((item) => item.code === "E_PUBLISH_TYPE"))
+})
+
+test("configured source root is enforced and missing roots fail closed", async (t) => {
+  const root = await fixture(t)
+  const configPath = path.join(root, "publishing", "config.json")
+  const config = JSON.parse(await fs.readFile(configPath, "utf8"))
+  config.source.root = "clips"
+  config.attachments.allowedLocalRoots = ["clips/assets"]
+  await fs.writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`)
+  await fs.mkdir(path.join(root, "clips", "assets"), { recursive: true })
+  await write(root, "root-note.md", "# Must stay outside the content root\n")
+  await write(root, "clips/note.md", "# Published from clips\n")
+
+  await assert.rejects(
+    assignId(root, "root-note.md"),
+    (error) =>
+      error instanceof PublishError &&
+      error.diagnostics.some((item) => item.detail === "excluded-note-path"),
+  )
+  await assignId(root, "clips/note.md", { uuid: () => RID_A })
+  const assigned = await read(root, "clips/note.md")
+  await write(root, "clips/note.md", publishText(assigned))
+
+  const result = await validate(root)
+  assert.equal(result.notesScanned, 1)
+  assert.equal(result.publishedCount, 1)
+
+  await fs.rm(path.join(root, "clips"), { recursive: true, force: true })
+  await assert.rejects(
+    validate(root),
+    (error) =>
+      error instanceof PublishError &&
+      error.diagnostics.some((item) => item.detail === "missing-source-root"),
+  )
 })
 
 test("build copies only the referenced image closure and rewrites all supported forms", async (t) => {

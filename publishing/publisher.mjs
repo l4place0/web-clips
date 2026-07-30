@@ -157,6 +157,14 @@ async function readJsonIfExists(file, fallback, invalidCode = "E_CONFIG_INVALID"
 function validateConfig(config) {
   const problems = []
   if (config.contractVersion !== 1) problems.push("contractVersion")
+  if (
+    typeof config.source?.root !== "string" ||
+    config.source.root.trim() === "" ||
+    path.isAbsolute(config.source.root) ||
+    normalizeRelative(config.source.root).startsWith("../")
+  ) {
+    problems.push("source.root")
+  }
   if (config.frontmatter?.publishedValueType !== "boolean" || config.frontmatter?.publishedValue !== true) {
     problems.push("frontmatter.publish")
   }
@@ -229,6 +237,28 @@ function excludedDirectory(config, relativePath) {
 
 async function walkMarkdown(root, config) {
   const found = []
+  const sourceRelative = normalizeRelative(config.source.root)
+  const sourceRoot = path.resolve(root, fromPosix(sourceRelative))
+  if (!isWithin(root, sourceRoot)) {
+    throw new PublishError("Source root escapes the workspace", contractExit(config), [
+      diag("E_CONFIG_INVALID", "publishing/config.json", "unsafe-source-root"),
+    ])
+  }
+  try {
+    const stat = await fs.lstat(sourceRoot)
+    if (!stat.isDirectory() || stat.isSymbolicLink()) {
+      throw new PublishError("Source root must be a real directory", contractExit(config), [
+        diag("E_CONFIG_INVALID", sourceRelative, "invalid-source-root"),
+      ])
+    }
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      throw new PublishError("Configured source root is missing", contractExit(config), [
+        diag("E_CONFIG_INVALID", sourceRelative, "missing-source-root"),
+      ])
+    }
+    throw error
+  }
   async function visit(directory, relativeDirectory = "") {
     const entries = await fs.readdir(directory, { withFileTypes: true })
     entries.sort((a, b) => a.name.localeCompare(b.name, "en"))
@@ -244,8 +274,14 @@ async function walkMarkdown(root, config) {
       }
     }
   }
-  await visit(root)
+  await visit(sourceRoot, sourceRelative)
   return found
+}
+
+function insideConfiguredSource(config, relativePath) {
+  const sourceRelative = normalizeRelative(config.source.root)
+  if (sourceRelative === ".") return true
+  return relativePath === sourceRelative || relativePath.startsWith(`${sourceRelative}/`)
 }
 
 async function scanNotes(root, config) {
@@ -1158,7 +1194,7 @@ export async function assignId(rootInput, noteInput, { now = () => new Date().to
     ])
   }
   const relativePath = normalizeRelative(path.relative(root, noteAbsolute))
-  if (excludedDirectory(config, relativePath)) {
+  if (!insideConfiguredSource(config, relativePath) || excludedDirectory(config, relativePath)) {
     throw new PublishError("Note path is excluded", contractExit(config), [
       diag("E_CONFIG_INVALID", relativePath, "excluded-note-path"),
     ])

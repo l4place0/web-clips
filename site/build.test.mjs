@@ -41,9 +41,14 @@ test("production pipeline publishes only the staged closure with stable routes",
 
   const repositoryRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)))
   await fs.mkdir(path.join(fixture, "publishing"), { recursive: true })
-  await fs.copyFile(
-    path.join(repositoryRoot, "publishing", "config.json"),
+  const config = JSON.parse(
+    await fs.readFile(path.join(repositoryRoot, "publishing", "config.json"), "utf8"),
+  )
+  config.source.root = "."
+  config.attachments.allowedLocalRoots = ["assets"]
+  await fs.writeFile(
     path.join(fixture, "publishing", "config.json"),
+    `${JSON.stringify(config, null, 2)}\n`,
   )
   await write(fixture, "assets/图片 空格.png", PNG)
   await write(fixture, "assets/未引用.png", PRIVATE_SENTINEL)

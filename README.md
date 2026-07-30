@@ -1,5 +1,9 @@
 # Web Clips 剪藏馆
 
+> 内容目录：Markdown 剪藏统一存放在 `clips/`，本地附件统一存放在
+> `clips/assets/`。Obsidian 的附件目录已配置为 `clips/assets`；video-sum
+> 或其他剪藏工具也应将输出目录设为仓库内的 `clips`。
+
 这是一个“私有源仓库、选择性公开”的 Markdown 剪藏馆。只有 frontmatter 中严格写为
 `publish: true` 且通过全部校验的笔记，才会进入
 [公开站点](https://l4p-web-clips.pages.dev)。
@@ -17,7 +21,7 @@
 1. 为指定笔记分配永久 ID：
 
    ```powershell
-   npm.cmd run publish -- assign-id "你的笔记.md"
+   npm.cmd run publish -- assign-id "clips/你的笔记.md"
    ```
 
    命令会写入 `rid` 和由它派生的 `permalink`，但不会公开笔记。不要手工修改或复用这两个
@@ -50,7 +54,7 @@
    `git add -A`。Cloudflare Pages 会从 `main` 自动构建：
 
    ```powershell
-   git add -- "你的笔记.md" "assets/这篇笔记引用的新图片.png" publishing/registry.json publishing/manifest.json
+   git add -- "clips/你的笔记.md" "clips/assets/这篇笔记引用的新图片.png" publishing/registry.json publishing/manifest.json
    git status --short
    git diff --cached
    git commit -m "publish: add resource"
@@ -68,7 +72,7 @@
 npm.cmd run publish:validate
 npm.cmd run publish:dry-run
 npm.cmd run build:site
-git add -- "你的笔记.md" publishing/registry.json publishing/manifest.json
+git add -- "clips/你的笔记.md" publishing/registry.json publishing/manifest.json
 git commit -m "publish: retire resource"
 git push
 ```
@@ -109,7 +113,7 @@ npm.cmd run test:mvp:live
 | `E_RID_DUPLICATE` / `E_RID_REUSED` | ID 重复或已经退休；不要复制或手改 `rid` |
 | `E_PERMALINK_MISSING` / `E_PERMALINK_MISMATCH` | `permalink` 缺失或漂移；不要手改，检查版本历史 |
 | `E_ATTACHMENT_MISSING` | 引用的本地图片不存在或路径大小写不一致 |
-| `E_ATTACHMENT_ESCAPE` | 附件路径越过允许的 `assets/` 边界 |
+| `E_ATTACHMENT_ESCAPE` | 附件路径越过允许的 `clips/assets/` 边界 |
 | `E_ATTACHMENT_AMBIGUOUS` | 附件路径大小写不精确或解析不唯一 |
 | `E_PRIVATE_EMBED` | 公开笔记嵌入了另一篇笔记；MVP 会阻止发布 |
 | `E_FEATURE_DISABLED` | 使用了尚未启用的 PDF/OSS 功能 |

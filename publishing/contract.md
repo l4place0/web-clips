@@ -1,5 +1,8 @@
 # Web Clips 发布契约（v1）
 
+当前仓库内容根为 `clips/`，唯一允许的本地附件根为 `clips/assets/`。正文继续使用
+相对引用 `assets/<文件名>`，公开附件地址仍为 `/assets/<rid>/<文件名>`。
+
 本文件定义仓库从私有剪藏库生成公开站点时必须遵守的稳定身份、路由和隐私边界。`publishing/config.json` 是同一契约的机器可读版本；发生冲突时，发布器必须报 `E_CONFIG_INVALID`，不得自行猜测或发布。
 
 ## 1. 默认私有与发布授权
@@ -67,7 +70,7 @@ Quartz v5 当前会把 frontmatter `permalink` 当作别名重定向入口，而
 ### 4.1 本地图片（MVP）
 
 - 只复制公开笔记正文实际引用的本地图片，以及 `cover` 明确引用的本地图片；不得整目录复制。
-- 允许根目录由配置限定，v1 仅允许 `assets/`。
+- 允许根目录由配置限定，当前仅允许 `clips/assets/`。
 - 支持解析标准 Markdown image、Obsidian image embed；M3 还应识别 HTML `<img src>`，无法安全解析时 fail closed。
 - 解析后的真实路径必须仍位于允许根内。绝对本地路径、`..` 越界、符号链接或 junction 逃逸一律报 `E_ATTACHMENT_ESCAPE`。
 - 路径必须按实际目录条目做大小写精确匹配，即使在 Windows 上也不能放宽；缺失、大小写不符、类型非法或同名解析不唯一分别阻断发布。
@@ -86,7 +89,7 @@ frontmatter 预留一个主 PDF：
 
 ```yaml
 pdf:
-  path: assets/documents/example.pdf
+  path: clips/assets/documents/example.pdf
   title: 可选标题
 ```
 

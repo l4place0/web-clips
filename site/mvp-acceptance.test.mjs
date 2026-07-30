@@ -23,7 +23,10 @@ async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), "web-clips-mvp-"))
   await fs.mkdir(path.join(root, "publishing"), { recursive: true })
   await fs.mkdir(path.join(root, "assets"), { recursive: true })
-  await fs.copyFile(SOURCE_CONFIG, path.join(root, "publishing", "config.json"))
+  const config = JSON.parse(await fs.readFile(SOURCE_CONFIG, "utf8"))
+  config.source.root = "."
+  config.attachments.allowedLocalRoots = ["assets"]
+  await fs.writeFile(path.join(root, "publishing", "config.json"), `${JSON.stringify(config, null, 2)}\n`)
   t.after(async () => fs.rm(root, { recursive: true, force: true }))
   return root
 }
