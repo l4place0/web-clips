@@ -5,13 +5,12 @@
 
 本文件定义仓库从私有剪藏库生成公开站点时必须遵守的稳定身份、路由和隐私边界。`publishing/config.json` 是同一契约的机器可读版本；发生冲突时，发布器必须报 `E_CONFIG_INVALID`，不得自行猜测或发布。
 
-## 1. 默认私有与发布授权
+## 1. 内容根即公开边界
 
-- 只有 YAML frontmatter 解析成功，并且 `publish` 的值是 YAML 布尔值 `true` 的 Markdown 才是公开候选。
-- `publish` 缺失或为布尔值 `false` 时，笔记保持私有。
-- 字符串 `"true"`、数字 `1` 等不得宽松转换；应报 `E_PUBLISH_TYPE`，并且绝不发布该笔记。
+- 当 `source.publishAll` 为 `true` 时，内容根目录中的所有 Markdown 都是公开候选。
+- 本仓库以 `clips/` 作为公开边界，`publish` 字段不再控制公开状态。
 - frontmatter 无法解析时应报 `E_FRONTMATTER_PARSE`，该次构建整体失败。
-- `publish: true` 表示笔记正文及其 frontmatter 已获公开授权。发布前仍必须通过本契约的身份、附件和嵌入校验。
+- `clips/` 中的笔记正文及其 frontmatter 均视为已获公开授权。发布前仍必须通过本契约的身份、附件和嵌入校验。
 - 发布器只能把公开候选和它们明确引用的附件放入隔离暂存树。不得把整个私有仓库直接交给 Quartz；Quartz 的 Markdown 过滤不会自动保护同目录下的所有非 Markdown 文件。
 
 ## 2. 稳定资源身份
@@ -24,12 +23,12 @@
 - 长度：精确 36 个字符。
 - 正则：`^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$`。
 - 生成：仅由显式的 `assign-id` 操作（或 M3 中同义命令）调用系统 CSPRNG/标准 UUIDv4 生成。
-- 普通 `validate`、`build` 和 `dry-run` 不得隐式修改源笔记。`publish: true` 但缺少 `rid` 时应报 `E_RID_MISSING`。
+- `prepare`/`assign-id` 负责修改源笔记；普通 `validate`、`build` 和 `dry-run` 不得隐式修改源笔记。公开候选缺少 `rid` 时应报 `E_RID_MISSING`。
 - 写入前必须重新扫描所有声明过 `rid` 的笔记及历史注册表。若候选 ID 冲突，丢弃候选并重新生成；绝不覆盖。
 - 一旦 ID 经显式分配并登记，就永久不可更改、不可转让、不可复用。取消发布或删除源文件后也必须保留 retired/tombstone 记录。
 - 不得自动将大写或其他 UUID 变体“修正”为规范值；不规范值应报 `E_RID_INVALID`，避免静默改变 URL。
 
-M3 应创建并维护 `publishing/registry.json`。它是可版本控制、append-only 的身份账本，至少记录 RID、首次登记的资源归属、状态（active/retired）和最后已知源路径。扫描重复时必须覆盖公开与私有笔记，而不只检查 `publish: true`。
+M3 应创建并维护 `publishing/registry.json`。它是可版本控制、append-only 的身份账本，至少记录 RID、首次登记的资源归属、状态（active/retired）和最后已知源路径。扫描重复时必须覆盖内容根中的所有笔记。
 
 ### 2.2 `permalink`
 
@@ -40,7 +39,7 @@ permalink = "/r/" + rid
 ```
 
 - 显式 `assign-id` 应一次写入 `rid` 和规范 `permalink`。
-- `publish: true` 且缺少 `permalink` 时应报 `E_PERMALINK_MISSING`。
+- 公开候选缺少 `permalink` 时应报 `E_PERMALINK_MISSING`。
 - 值与派生结果不完全一致时应报 `E_PERMALINK_MISMATCH`，不得静默覆盖。
 - 文件改名、移动或标题变化时，不修改 `rid` 或 `permalink`，公开 URL 因而保持稳定。
 
@@ -113,7 +112,6 @@ Post-MVP 启用时，逻辑地址固定为 `/pdf/<rid>.pdf`。阿里云 OSS 的 
 ```yaml
 ---
 title: 示例资源
-publish: true
 rid: 5d3b8f6e-19c4-4c62-9a71-2f0e8d7b6c45
 permalink: /r/5d3b8f6e-19c4-4c62-9a71-2f0e8d7b6c45
 tags:
@@ -129,8 +127,7 @@ tags:
 | --- | --- | --- | --- |
 | 配置不可解析或文档/配置关键约束不一致 | `E_CONFIG_INVALID` | error | 不发布，退出 2 |
 | frontmatter YAML 解析失败 | `E_FRONTMATTER_PARSE` | error | 不发布，退出 3 |
-| `publish` 存在但不是布尔值 | `E_PUBLISH_TYPE` | error | 不发布，退出 3 |
-| `publish: true` 缺少 RID | `E_RID_MISSING` | error | 提示显式分配，不修改源文件，退出 3 |
+| 公开候选缺少 RID | `E_RID_MISSING` | error | 提示运行 `prepare`，不由构建隐式修改源文件，退出 3 |
 | RID 非 canonical lowercase UUIDv4 | `E_RID_INVALID` | error | 不自动修正，退出 3 |
 | 任意笔记/注册表之间 RID 重复 | `E_RID_DUPLICATE` | error | 列出冲突路径，不显示正文，退出 3 |
 | RID 试图转给其他资源或复用 retired ID | `E_RID_REUSED` | error | 退出 3 |
@@ -161,11 +158,12 @@ tags:
 
 M3 至少提供以下等价能力，具体命令名可调整：
 
-1. `assign-id <note>`：显式生成并原子写入 `rid`、`permalink`，登记身份，不发布。
-2. `validate`：只读全库扫描、身份/隐私/附件检查，生成机器可读诊断。
-3. `build --dry-run`：展示候选、附件闭包、目标路由和将移除的旧产物，不修改源、manifest 或生产输出。
-4. `build`：在全新 `.publish-stage/` 中生成 Quartz 内容树、raw 副本与附件闭包；全部成功后才原子更新 registry/manifest。
-5. `clean`：只允许清理配置声明的受控暂存/输出根。
+1. `prepare`：为内容根中缺少身份的笔记批量生成并原子写入 `rid`、`permalink`。
+2. `assign-id <note>`：为单篇笔记显式登记身份。
+3. `validate`：只读全库扫描、身份/隐私/附件检查，生成机器可读诊断。
+4. `build --dry-run`：展示候选、附件闭包、目标路由和将移除的旧产物，不修改源、manifest 或生产输出。
+5. `build`：在全新 `.publish-stage/` 中生成 Quartz 内容树、raw 副本与附件闭包；全部成功后才原子更新 registry/manifest。
+6. `clean`：只允许清理配置声明的受控暂存/输出根。
 
 ## 9. Quartz 与静态托管依据
 

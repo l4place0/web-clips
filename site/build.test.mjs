@@ -45,6 +45,7 @@ test("production pipeline publishes only the staged closure with stable routes",
     await fs.readFile(path.join(repositoryRoot, "publishing", "config.json"), "utf8"),
   )
   config.source.root = "."
+  config.source.publishAll = false
   config.attachments.allowedLocalRoots = ["assets"]
   await fs.writeFile(
     path.join(fixture, "publishing", "config.json"),

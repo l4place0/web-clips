@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+node publishing/cli.mjs prepare
+git add -- clips publishing/registry.json
+node publishing/cli.mjs validate

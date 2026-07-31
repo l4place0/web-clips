@@ -4,8 +4,7 @@
 > `clips/assets/`。Obsidian 的附件目录已配置为 `clips/assets`；video-sum
 > 或其他剪藏工具也应将输出目录设为仓库内的 `clips`。
 
-这是一个“私有源仓库、选择性公开”的 Markdown 剪藏馆。只有 frontmatter 中严格写为
-`publish: true` 且通过全部校验的笔记，才会进入
+这是一个自动公开的 Markdown 剪藏馆。`clips/` 下通过校验的 Markdown 笔记都会进入
 [公开站点](https://l4p-web-clips.pages.dev)。
 
 稳定地址只由 `rid` 决定，与文件名、目录和标题无关：
@@ -13,44 +12,48 @@
 - 阅读页面：`https://l4p-web-clips.pages.dev/r/<rid>`
 - 原始 Markdown：`https://l4p-web-clips.pages.dev/raw/<rid>.md`
 
-## 发布第一篇笔记
+## 自动同步
+
+日常使用只有一条链路：
+
+```text
+Obsidian 保存 → Obsidian Git 自动提交并推送 → Cloudflare Pages 自动构建
+```
+
+Obsidian Git 在文件变化稳定约 1 分钟后合并提交并推送。Git 提交钩子会自动为新笔记补齐稳定
+RID 和 permalink，再执行发布校验。Cloudflare Pages 监听 `main` 分支，无需额外同步服务或
+Windows 计划任务。
+
+首次克隆后运行一次：
+
+```powershell
+git config core.hooksPath .githooks
+```
+
+并在 Obsidian 中安装、启用 Git 社区插件。仓库已经保存所需的插件设置。
+
+## 手工发布与诊断
 
 以下命令均在仓库根目录执行。Windows PowerShell 使用 `npm.cmd`，其他环境可以使用
 `npm`。
 
-1. 为指定笔记分配永久 ID：
+1. 自动为新增笔记补齐永久 ID，并检查发布内容：
 
    ```powershell
-   npm.cmd run publish -- assign-id "clips/你的笔记.md"
-   ```
-
-   命令会写入 `rid` 和由它派生的 `permalink`，但不会公开笔记。不要手工修改或复用这两个
-   字段。
-
-2. 检查笔记内容，确认其中没有不希望公开的信息，然后在 frontmatter 中手工加入或修改：
-
-   ```yaml
-   publish: true
-   ```
-
-   必须是 YAML 布尔值 `true`，不能写成字符串 `"true"`。
-
-3. 校验并预览将要发布的闭包：
-
-   ```powershell
+   npm.cmd run publish:prepare
    npm.cmd run publish:validate
    npm.cmd run publish:dry-run
    ```
 
    `dry-run` 会列出公开笔记、引用图片和目标路由，不写入发布产物。
 
-4. 本地执行与 Cloudflare 完全相同的生产构建：
+2. 本地执行与 Cloudflare 完全相同的生产构建：
 
    ```powershell
    npm.cmd run build:site
    ```
 
-5. 提交并推送。把 `dry-run` 列出的新图片也逐一加入暂存；不要使用宽泛的
+3. 如需手工提交并推送，把 `dry-run` 列出的新图片也逐一加入暂存；不要使用宽泛的
    `git add -A`。Cloudflare Pages 会从 `main` 自动构建：
 
    ```powershell
@@ -61,18 +64,15 @@
    git push
    ```
 
-6. 从笔记 frontmatter 读取 `rid`，拼出稳定页面和 raw URL。文件以后改名、移动或改标题都
+4. 从笔记 frontmatter 读取 `rid`，拼出稳定页面和 raw URL。文件以后改名、移动或改标题都
    不会改变这两个地址。
 
 ## 取消发布
 
-把笔记的 `publish` 改为 `false`（或删除该字段），然后重新校验、构建、提交和推送：
+从 `clips/` 删除笔记，然后提交和推送：
 
 ```powershell
-npm.cmd run publish:validate
-npm.cmd run publish:dry-run
-npm.cmd run build:site
-git add -- "clips/你的笔记.md" publishing/registry.json publishing/manifest.json
+git add -- "clips/你的笔记.md"
 git commit -m "publish: retire resource"
 git push
 ```

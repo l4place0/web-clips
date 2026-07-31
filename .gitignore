@@ -17,6 +17,10 @@ node_modules/
 .obsidian/workspace*.json
 .obsidian/cache/
 .obsidian/.trash/
+.obsidian/plugins/*
+!.obsidian/plugins/obsidian-git/
+.obsidian/plugins/obsidian-git/*
+!.obsidian/plugins/obsidian-git/data.json
 
 # Codex repo-local skills and configuration
 .codex/

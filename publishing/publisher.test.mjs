@@ -4,7 +4,7 @@ import os from "node:os"
 import path from "node:path"
 import test from "node:test"
 import { fileURLToPath } from "node:url"
-import { assignId, build, clean, PublishError, validate } from "./publisher.mjs"
+import { assignId, build, clean, prepareAll, PublishError, validate } from "./publisher.mjs"
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const SOURCE_CONFIG = path.join(HERE, "config.json")
@@ -18,6 +18,7 @@ async function fixture(t) {
   await fs.mkdir(path.join(root, "assets"), { recursive: true })
   const config = JSON.parse(await fs.readFile(SOURCE_CONFIG, "utf8"))
   config.source.root = "."
+  config.source.publishAll = false
   config.attachments.allowedLocalRoots = ["assets"]
   await fs.writeFile(path.join(root, "publishing", "config.json"), `${JSON.stringify(config, null, 2)}\n`)
   t.after(async () => fs.rm(root, { recursive: true, force: true }))
@@ -113,6 +114,23 @@ test("validate is default-private and rejects non-boolean publish", async (t) =>
   result = await validate(root)
   assert.equal(result.exitCode, 3)
   assert.ok(result.diagnostics.some((item) => item.code === "E_PUBLISH_TYPE"))
+})
+
+test("publishAll makes every source note public and prepare assigns missing identities", async (t) => {
+  const root = await fixture(t)
+  const configPath = path.join(root, "publishing", "config.json")
+  const config = JSON.parse(await fs.readFile(configPath, "utf8"))
+  config.source.publishAll = true
+  await fs.writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`)
+  await write(root, "open.md", "# Open by default\n")
+
+  const prepared = await prepareAll(root)
+  assert.equal(prepared.preparedCount, 1)
+  assert.match(await read(root, "open.md"), /rid: "[0-9a-f-]{36}"/)
+
+  const result = await validate(root)
+  assert.equal(result.ok, true)
+  assert.equal(result.publishedCount, 1)
 })
 
 test("configured source root is enforced and missing roots fail closed", async (t) => {

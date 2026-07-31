@@ -165,6 +165,7 @@ function validateConfig(config) {
   ) {
     problems.push("source.root")
   }
+  if (typeof config.source?.publishAll !== "boolean") problems.push("source.publishAll")
   if (config.frontmatter?.publishedValueType !== "boolean" || config.frontmatter?.publishedValue !== true) {
     problems.push("frontmatter.publish")
   }
@@ -304,10 +305,12 @@ async function scanNotes(root, config) {
     const data = parsed.data
     const publishField = config.frontmatter.publishField
     const hasPublish = Object.hasOwn(data, publishField)
-    if (hasPublish && typeof data[publishField] !== "boolean") {
+    if (!config.source.publishAll && hasPublish && typeof data[publishField] !== "boolean") {
       diagnostics.push(diag("E_PUBLISH_TYPE", relativePath, typeof data[publishField]))
     }
-    const published = data[publishField] === true && typeof data[publishField] === "boolean"
+    const published =
+      config.source.publishAll ||
+      (data[publishField] === true && typeof data[publishField] === "boolean")
     const rid = data[config.frontmatter.ridField]
     const permalink = data[config.frontmatter.permalinkField]
     if (rid !== undefined && (typeof rid !== "string" || !RID_PATTERN.test(rid))) {
@@ -1290,6 +1293,39 @@ export async function assignId(rootInput, noteInput, { now = () => new Date().to
     generated,
     changed: writes.length > 0,
     publishChanged: false,
+    exitCode: 0,
+  }
+}
+
+export async function prepareAll(rootInput) {
+  const root = path.resolve(rootInput)
+  const config = await loadConfig(root)
+  const state = await loadState(root, config)
+  const scan = await scanNotes(root, config)
+  const diagnostics = [
+    ...scan.diagnostics,
+    ...validateIdentityAgainstRegistry(scan, state.registry),
+  ]
+  if (hasErrors(diagnostics)) {
+    throw new PublishError("Cannot prepare notes while validation fails", contentExit(config), diagnostics)
+  }
+
+  const prepared = []
+  for (const note of scan.notes) {
+    if (note.rid && note.permalink !== undefined) continue
+    const result = await assignId(root, note.relativePath)
+    prepared.push({
+      path: result.path,
+      rid: result.rid,
+      permalink: result.permalink,
+    })
+  }
+  return {
+    ok: true,
+    command: "prepare",
+    notesScanned: scan.notes.length,
+    prepared,
+    preparedCount: prepared.length,
     exitCode: 0,
   }
 }

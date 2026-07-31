@@ -25,6 +25,7 @@ async function fixture(t) {
   await fs.mkdir(path.join(root, "assets"), { recursive: true })
   const config = JSON.parse(await fs.readFile(SOURCE_CONFIG, "utf8"))
   config.source.root = "."
+  config.source.publishAll = false
   config.attachments.allowedLocalRoots = ["assets"]
   await fs.writeFile(path.join(root, "publishing", "config.json"), `${JSON.stringify(config, null, 2)}\n`)
   t.after(async () => fs.rm(root, { recursive: true, force: true }))

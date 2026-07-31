@@ -2,6 +2,7 @@
   "contractVersion": 1,
   "source": {
     "root": "clips",
+    "publishAll": true,
     "exclude": [
       ".codex/**",
       ".git/**",
