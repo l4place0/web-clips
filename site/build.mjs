@@ -102,8 +102,13 @@ async function copyStagedPages(stageContentRoot, destinationRoot, manifest) {
   }
 }
 
-function escapeMarkdownLabel(value) {
-  return String(value).replaceAll("\\", "\\\\").replaceAll("[", "\\[").replaceAll("]", "\\]")
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;")
 }
 
 async function writeSafeIndex(contentRoot, manifest) {
@@ -119,24 +124,36 @@ async function writeSafeIndex(contentRoot, manifest) {
   resources.sort((a, b) => a.title.localeCompare(b.title, "zh-CN"))
 
   const status = resources.length === 0
-    ? "当前暂无公开内容。私有剪藏不会进入本站。"
-    : `当前公开资源：${resources.length} 条。`
-  const links = resources.length === 0
-    ? ""
-    : `\n## 公开资源\n\n${resources
-      .map(({ rid, title }) => `- [${escapeMarkdownLabel(title)}](/r/${rid})`)
-      .join("\n")}\n`
+    ? "当前暂无公开内容。"
+    : `已收录 ${resources.length} 条公开资源，持续从本地剪藏同步更新。`
+  const cards = resources.length === 0
+    ? '<p class="clip-home-empty">第一条剪藏正在路上。</p>'
+    : `<div class="clip-grid">\n${resources
+      .map(({ rid, title }) => `<a class="clip-card" href="/r/${rid}">
+  <span class="clip-card-title">${escapeHtml(title)}</span>
+  <span class="clip-card-action">阅读全文 <span aria-hidden="true">→</span></span>
+</a>`)
+      .join("\n")}\n</div>`
 
   const markdown = `---
 title: L4P 剪藏馆
+description: 一个持续更新、方便检索与引用的个人互联网资源剪藏馆。
 ---
 
-# L4P 剪藏馆
+<section class="clip-home-hero">
+  <p class="clip-home-eyebrow">PERSONAL WEB CLIPS</p>
+  <p class="clip-home-lede">把散落在互联网上的好内容，整理成随时可检索、可引用的个人资料库。</p>
+  <p class="clip-home-status">${escapeHtml(status)}</p>
+  <div class="clip-home-actions">
+    <a class="clip-home-primary" href="#all-clips">浏览全部</a>
+    <a class="clip-home-secondary" href="/tags">按标签浏览</a>
+  </div>
+  <p class="clip-home-search-hint">使用左侧的“搜索”，可以按标题、正文或标签快速定位。</p>
+</section>
 
-${status}
+<h2 id="all-clips">全部资源</h2>
 
-[浏览标签](/tags)
-${links}`
+${cards}`
   await fs.writeFile(path.join(contentRoot, "index.md"), markdown, "utf8")
 }
 
@@ -179,6 +196,10 @@ async function prepareQuartzEngine() {
 
   await fs.copyFile(path.join(SITE_DIR, "quartz.config.yaml"), path.join(engineRoot, "quartz.config.yaml"))
   await fs.copyFile(path.join(SITE_DIR, "quartz.lock.json"), path.join(engineRoot, "quartz.lock.json"))
+  await fs.copyFile(
+    path.join(SITE_DIR, "custom.scss"),
+    path.join(engineRoot, "quartz", "styles", "custom.scss"),
+  )
 
   const loaderPath = path.join(engineRoot, "quartz", "plugins", "loader", "gitLoader.ts")
   const loader = await fs.readFile(loaderPath, "utf8")

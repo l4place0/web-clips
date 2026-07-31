@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-31T04:31:37.995Z",
+  "generatedAt": "2026-07-31T10:37:52.625Z",
   "resources": [
     {
       "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
@@ -112,8 +112,8 @@
     },
     {
       "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
-      "title": "WC_02-2",
-      "sourcePath": "clips/WC_02-2.md",
+      "title": "作为多年病友，聊聊关于失眠的问题 - 搞七捻三",
+      "sourcePath": "clips/作为多年病友，聊聊关于失眠的问题 - 搞七捻三.md",
       "page": "/r/2259721f-78d2-45f2-9f4a-20e703359cdc",
       "raw": "/raw/2259721f-78d2-45f2-9f4a-20e703359cdc.md",
       "assets": [],
@@ -169,8 +169,8 @@
     },
     {
       "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
-      "title": "WC_01-2",
-      "sourcePath": "clips/WC_01-2.md",
+      "title": "[长文手敲] 回顾Agent的来时路，以及它将何去何从... - 搞七捻三",
+      "sourcePath": "clips/[长文手敲] 回顾Agent的来时路，以及它将何去何从... - 搞七捻三.md",
       "page": "/r/2bafdbf3-58c1-4598-9c92-46a53c774058",
       "raw": "/raw/2bafdbf3-58c1-4598-9c92-46a53c774058.md",
       "assets": [],
@@ -182,7 +182,7 @@
     {
       "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
       "title": "四个步骤，建立知识体系的简单方法，借助直觉，直觉不是瞎猜，不是超能力【吸收人类优秀学习理论32】",
-      "sourcePath": "clips/Sum_04.md",
+      "sourcePath": "clips/四个步骤，建立知识体系的简单方法，借助直觉，直觉不是瞎猜，不是超能力【吸收人类优秀学习理论32】.md",
       "page": "/r/2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
       "raw": "/raw/2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1.md",
       "assets": [],
@@ -193,8 +193,8 @@
     },
     {
       "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
-      "title": "WC-2",
-      "sourcePath": "clips/WC-2.md",
+      "title": "【开源推广】作为一名在读博士生，我在日常是如何与 AI 协作的？——ai-collab-playbook - 开发调优",
+      "sourcePath": "clips/【开源推广】作为一名在读博士生，我在日常是如何与 AI 协作的？——ai-collab-playbook - 开发调优.md",
       "page": "/r/3510b460-90c9-4fca-9155-0c2ff225684d",
       "raw": "/raw/3510b460-90c9-4fca-9155-0c2ff225684d.md",
       "assets": [],
@@ -271,8 +271,8 @@
     },
     {
       "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
-      "title": "WC-3",
-      "sourcePath": "clips/WC-3.md",
+      "title": "【开源】Agent需要的不是更长的context，而是可追溯的state - 开发调优",
+      "sourcePath": "clips/【开源】Agent需要的不是更长的context，而是可追溯的state - 开发调优.md",
       "page": "/r/50e557f9-9169-4b3f-8729-bf8db0e828d7",
       "raw": "/raw/50e557f9-9169-4b3f-8729-bf8db0e828d7.md",
       "assets": [],
@@ -295,8 +295,8 @@
     },
     {
       "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
-      "title": "WC-4",
-      "sourcePath": "clips/WC-4.md",
+      "title": "AI科研不完全指北：Top10 PhD烧了上万刀的真实经验。 Context Is All You Need - 开发调优",
+      "sourcePath": "clips/AI科研不完全指北：Top10 PhD烧了上万刀的真实经验。 Context Is All You Need - 开发调优.md",
       "page": "/r/6d1fa00c-7224-4691-ad07-b170ad4510e6",
       "raw": "/raw/6d1fa00c-7224-4691-ad07-b170ad4510e6.md",
       "assets": [],
@@ -308,7 +308,7 @@
     {
       "rid": "7127a789-4722-4742-94b4-f2263418fa75",
       "title": "情绪管理是第一优先级",
-      "sourcePath": "clips/Sum_02.md",
+      "sourcePath": "clips/情绪管理是第一优先级.md",
       "page": "/r/7127a789-4722-4742-94b4-f2263418fa75",
       "raw": "/raw/7127a789-4722-4742-94b4-f2263418fa75.md",
       "assets": [],
@@ -320,7 +320,7 @@
     {
       "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
       "title": "19 - 协程、Goroutine、异步编程 [2026 南京大学操作系统原理]",
-      "sourcePath": "clips/Sum_01.md",
+      "sourcePath": "clips/19 - 协程、Goroutine、异步编程 [2026 南京大学操作系统原理].md",
       "page": "/r/715a7ba8-da1e-4320-abb0-61628f520f5c",
       "raw": "/raw/715a7ba8-da1e-4320-abb0-61628f520f5c.md",
       "assets": [],
@@ -355,8 +355,8 @@
     },
     {
       "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
-      "title": "WC_02",
-      "sourcePath": "clips/WC_02.md",
+      "title": "我对 PARA 的理解与实践 - 少数派",
+      "sourcePath": "clips/我对 PARA 的理解与实践 - 少数派.md",
       "page": "/r/84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
       "raw": "/raw/84f1b6b2-1bdf-45a2-86ef-c8ef467663ae.md",
       "assets": [],
@@ -380,7 +380,7 @@
     {
       "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
       "title": "【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享",
-      "sourcePath": "clips/Sum_05.md",
+      "sourcePath": "clips/【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享.md",
       "page": "/r/988e7cdb-6eac-4583-bb46-7c843db80550",
       "raw": "/raw/988e7cdb-6eac-4583-bb46-7c843db80550.md",
       "assets": [],
@@ -392,7 +392,7 @@
     {
       "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
       "title": "无家族托举读研读博就业路线分享讨论",
-      "sourcePath": "clips/Sum_03.md",
+      "sourcePath": "clips/无家族托举读研读博就业路线分享讨论.md",
       "page": "/r/995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
       "raw": "/raw/995fbe00-95ab-49c6-a928-ad1d2a11cfa5.md",
       "assets": [],
@@ -403,8 +403,8 @@
     },
     {
       "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
-      "title": "WC",
-      "sourcePath": "clips/WC.md",
+      "title": "AI无需恐慌，棋局尚未结束… - 搞七捻三",
+      "sourcePath": "clips/AI无需恐慌，棋局尚未结束… - 搞七捻三.md",
       "page": "/r/9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
       "raw": "/raw/9c58ab47-0c47-4b85-88fe-c9fbbaeafc21.md",
       "assets": [],
@@ -427,8 +427,8 @@
     },
     {
       "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
-      "title": "WC_01",
-      "sourcePath": "clips/WC_01.md",
+      "title": "揭开 skill 被吹嘘的神秘面纱-及与MCP的相关性 - 开发调优",
+      "sourcePath": "clips/揭开 skill 被吹嘘的神秘面纱-及与MCP的相关性 - 开发调优.md",
       "page": "/r/9f68012f-7161-4bcb-ac9b-23c8b12bed67",
       "raw": "/raw/9f68012f-7161-4bcb-ac9b-23c8b12bed67.md",
       "assets": [],
@@ -566,7 +566,7 @@
     {
       "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
       "title": "人类想学会任何新知识，必须联系旧知识，因为演化让大脑以贝叶斯推理方式学习，所谓知识是由五类元素组成【吸收人类优秀学习理论31：新旧联系1】",
-      "sourcePath": "clips/Sum_01-2.md",
+      "sourcePath": "clips/人类想学会任何新知识，必须联系旧知识，因为演化让大脑以贝叶斯推理方式学习，所谓知识是由五类元素组成【吸收人类优秀学习理论31：新旧联系1】.md",
       "page": "/r/cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
       "raw": "/raw/cc318c9a-a0c8-4d69-ad6c-959b419c4a53.md",
       "assets": [],
