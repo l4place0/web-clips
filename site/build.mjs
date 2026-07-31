@@ -119,11 +119,10 @@ async function writeSafeIndex(contentRoot, manifest) {
   const resources = []
   for (const resource of manifest.resources) {
     if (!RID_PATTERN.test(resource.rid)) throw new Error("Manifest contains an invalid RID")
-    const page = path.join(contentRoot, "r", `${resource.rid}.md`)
-    const frontmatter = parseFrontmatter(await fs.readFile(page, "utf8"))
-    const title = typeof frontmatter.title === "string" && frontmatter.title.trim()
-      ? frontmatter.title.trim()
-      : resource.rid
+    if (typeof resource.title !== "string" || !resource.title.trim()) {
+      throw new Error(`Manifest contains an invalid title for ${resource.rid}`)
+    }
+    const title = resource.title.trim()
     resources.push({ rid: resource.rid, title })
   }
   resources.sort((a, b) => a.title.localeCompare(b.title, "zh-CN"))

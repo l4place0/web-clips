@@ -10,6 +10,8 @@ const HERE = path.dirname(fileURLToPath(import.meta.url))
 const SOURCE_CONFIG = path.join(HERE, "config.json")
 const RID_A = "11111111-1111-4111-8111-111111111111"
 const RID_B = "22222222-2222-4222-8222-222222222222"
+const RID_C = "33333333-3333-4333-8333-333333333333"
+const RID_D = "44444444-4444-4444-8444-444444444444"
 const PNG = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00])
 
 async function fixture(t) {
@@ -131,6 +133,30 @@ test("publishAll makes every source note public and prepare assigns missing iden
   const result = await validate(root)
   assert.equal(result.ok, true)
   assert.equal(result.publishedCount, 1)
+})
+
+test("display titles prefer frontmatter, then H1, then source basename and never fall back to RID", async (t) => {
+  const root = await fixture(t)
+  const notes = [
+    ["frontmatter.md", "---\ntitle: Frontmatter title\n---\n# Ignored H1\n", RID_A, "Frontmatter title"],
+    ["heading.md", "# 正文一级标题\n", RID_B, "正文一级标题"],
+    ["中文文件名.md", "正文没有标题。\n", RID_C, "中文文件名"],
+    ["空标题.md", "---\ntitle: \"\"\n---\n正文没有标题。\n", RID_D, "空标题"],
+  ]
+  for (const [relative, content, rid] of notes) {
+    await write(root, relative, content)
+    await assignId(root, relative, { uuid: () => rid })
+    await write(root, relative, publishText(await read(root, relative)))
+  }
+
+  const result = await build(root)
+  const titles = new Map(result.manifest.resources.map((resource) => [resource.rid, resource.title]))
+  for (const [, , rid, expected] of notes) assert.equal(titles.get(rid), expected)
+  for (const [, , rid] of notes) {
+    const staged = await read(root, `.publish-stage/quartz/content/r/${rid}.md`)
+    assert.match(staged, new RegExp(`title: ${titles.get(rid)}`))
+    assert.notEqual(titles.get(rid), rid)
+  }
 })
 
 test("configured source root is enforced and missing roots fail closed", async (t) => {

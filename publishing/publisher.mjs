@@ -686,6 +686,32 @@ function localExtension(target) {
   return path.extname(decoded.target).toLowerCase()
 }
 
+function firstHeadingTitle(body) {
+  let fence
+  for (const line of body.split(/\r?\n/)) {
+    const fenceMatch = /^\s*(`{3,}|~{3,})/.exec(line)
+    if (fenceMatch) {
+      const marker = fenceMatch[1][0]
+      if (!fence) fence = marker
+      else if (fence === marker) fence = undefined
+      continue
+    }
+    if (fence) continue
+    const heading = /^#(?!#)\s+(.+?)\s*#*\s*$/.exec(line.trim())
+    if (heading?.[1]?.trim()) return heading[1].trim()
+  }
+  return undefined
+}
+
+function displayTitle(note) {
+  if (typeof note.data.title === "string" && note.data.title.trim()) {
+    return note.data.title.trim()
+  }
+  const heading = firstHeadingTitle(note.parsed.body)
+  if (heading) return heading
+  return path.posix.basename(note.relativePath, path.posix.extname(note.relativePath))
+}
+
 async function processPublishedNote(root, config, note, publishedByPath) {
   const diagnostics = []
   const assets = new Map()
@@ -761,6 +787,8 @@ async function processPublishedNote(root, config, note, publishedByPath) {
   if (Object.hasOwn(note.data, config.frontmatter.pdfField)) {
     diagnostics.push(diag("E_FEATURE_DISABLED", note.relativePath, { feature: "pdf" }))
   }
+  const title = displayTitle(note)
+  pageDocument.set("title", title)
   for (const field of config.quartzAdapter.stripFrontmatterFields) pageDocument.delete(field)
 
   let rewrittenBody = note.parsed.body
@@ -770,6 +798,7 @@ async function processPublishedNote(root, config, note, publishedByPath) {
   }
   return {
     diagnostics,
+    title,
     assets: [...assets.values()].sort((a, b) => a.assetPath.localeCompare(b.assetPath, "en")),
     pageText: renderDocument(pageDocument, rewrittenBody, note.parsed),
     rawText: renderDocument(rawDocument, rewrittenBody, note.parsed),
@@ -879,6 +908,7 @@ function buildManifest(analysis, timestamp) {
     const rid = item.note.rid
     return {
       rid,
+      title: item.title,
       sourcePath: item.note.relativePath,
       page: analysis.config.routes.pagePattern.replace("{rid}", rid),
       raw: analysis.config.routes.rawPattern.replace("{rid}", rid),
