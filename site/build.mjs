@@ -4,7 +4,6 @@ import fs from "node:fs/promises"
 import os from "node:os"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import YAML from "yaml"
 
 import { build as buildPublication, validate as validatePublication } from "../publishing/publisher.mjs"
 
@@ -101,14 +100,6 @@ async function copyStagedPages(stageContentRoot, destinationRoot, manifest) {
     if (!(await pathExists(source))) throw new Error(`Missing staged page for ${resource.rid}`)
     await fs.copyFile(source, destination)
   }
-}
-
-function parseFrontmatter(markdown) {
-  if (!markdown.startsWith("---")) return {}
-  const match = markdown.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/)
-  if (!match) return {}
-  const value = YAML.parse(match[1])
-  return value && typeof value === "object" && !Array.isArray(value) ? value : {}
 }
 
 function escapeMarkdownLabel(value) {
