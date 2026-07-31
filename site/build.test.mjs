@@ -132,6 +132,8 @@ ${PRIVATE_SENTINEL}
   assert.doesNotMatch(homepage, new RegExp(PRIVATE_SENTINEL))
   assert.match(homepageCss, /\.clip-home-hero/)
   assert.match(homepageCss, /\.clip-grid/)
+  assert.match(homepageCss, /body\[data-slug=index\] \.page>#quartz-body\{[^}]*display:block/)
+  assert.match(homepageCss, /body\[data-slug=index\] \.page>#quartz-body \.sidebar\.left/)
   assert.equal(files.some((file) => file.includes(".publishing-state")), false)
   assert.equal(files.some((file) => file.endsWith("未引用.png")), false)
   assert.match(headers, /\/raw\/\*\.md/)

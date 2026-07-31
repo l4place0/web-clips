@@ -1,6 +1,54 @@
 @use "./base.scss";
 
 body[data-slug="index"] {
+  .page {
+    max-width: 70rem;
+    padding: 0 clamp(1rem, 4vw, 2rem);
+  }
+
+  .page > #quartz-body {
+    display: block;
+    padding: 0;
+  }
+
+  .page > #quartz-body .sidebar.left {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    height: auto;
+    min-height: 4.25rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--lightgray);
+    background: color-mix(in srgb, var(--light) 88%, transparent);
+    backdrop-filter: blur(14px);
+  }
+
+  .page > #quartz-body .sidebar.left > .flex-component {
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .page > #quartz-body .sidebar.right {
+    display: none;
+  }
+
+  .page > #quartz-body .center {
+    min-width: 0;
+    max-width: 58rem;
+    margin: 2rem auto 0;
+  }
+
+  .page > #quartz-body footer {
+    min-width: 0;
+    max-width: 58rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .page-header {
     display: none;
   }
@@ -136,6 +184,21 @@ body[data-slug="index"] {
 }
 
 @media (max-width: 680px) {
+  body[data-slug="index"] {
+    .page {
+      padding: 0 0.8rem;
+    }
+
+    .page > #quartz-body .sidebar.left {
+      min-height: 3.7rem;
+      padding: 0.65rem 0;
+    }
+
+    .page > #quartz-body .center {
+      margin-top: 1rem;
+    }
+  }
+
   .clip-home-hero {
     border-radius: 0.9rem;
   }
