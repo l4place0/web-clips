@@ -5,6 +5,9 @@ import os from "node:os"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
+import { slugTag } from "@quartz-community/utils"
+import { parse } from "yaml"
+
 import { build as buildPublication, validate as validatePublication } from "../publishing/publisher.mjs"
 
 const SITE_DIR = path.dirname(fileURLToPath(import.meta.url))
@@ -111,6 +114,46 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;")
 }
 
+const TOPIC_CLUSTERS = [
+  { title: "AI 与编程", tags: ["AI", "Codex", "AI编程", "人工智能"] },
+  { title: "学习与认知", tags: ["学习", "学习方法", "知识体系", "思维"] },
+  { title: "健康与心理", tags: ["健康", "心理学", "睡眠", "情绪管理"] },
+  { title: "学业与职业", tags: ["考研", "就业", "博士", "面试"] },
+  { title: "系统与方法", tags: ["系统论", "系统思想", "软件工程", "工作流"] },
+]
+
+function tagHref(slug) {
+  return `/tags/${String(slug).split("/").map(encodeURIComponent).join("/")}`
+}
+
+async function collectPublishedTags(contentRoot, resources) {
+  const tagsBySlug = new Map()
+  for (const resource of resources) {
+    const source = path.join(contentRoot, "r", `${resource.rid}.md`)
+    const markdown = await fs.readFile(source, "utf8")
+    const frontmatter = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
+    if (!frontmatter) continue
+    const parsed = parse(frontmatter[1]) ?? {}
+    const tags = Array.isArray(parsed.tags) ? parsed.tags : parsed.tags ? [parsed.tags] : []
+    for (const value of tags) {
+      const tag = String(value).trim()
+      if (!tag) continue
+      const slug = String(slugTag(tag))
+      const current = tagsBySlug.get(slug)
+      tagsBySlug.set(slug, {
+        slug,
+        label: current?.label ?? tag,
+        count: (current?.count ?? 0) + 1,
+      })
+    }
+  }
+  return tagsBySlug
+}
+
+function renderTagLink(tag, className = "clip-tag-link") {
+  return `<a class="${className}" href="${tagHref(tag.slug)}"><span>${escapeHtml(tag.label)}</span><small>${tag.count}</small></a>`
+}
+
 async function writeSafeIndex(contentRoot, manifest) {
   const resources = []
   for (const resource of manifest.resources) {
@@ -122,6 +165,24 @@ async function writeSafeIndex(contentRoot, manifest) {
     resources.push({ rid: resource.rid, title })
   }
   resources.sort((a, b) => a.title.localeCompare(b.title, "zh-CN"))
+  const tagsBySlug = await collectPublishedTags(contentRoot, resources)
+  const rankedTags = [...tagsBySlug.values()]
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "zh-CN"))
+  const repeatedTags = rankedTags.filter((tag) => tag.count > 1)
+  const popularTags = (repeatedTags.length >= 6 ? repeatedTags : rankedTags).slice(0, 10)
+  const popularTagLinks = popularTags.length > 0
+    ? popularTags.map((tag) => renderTagLink(tag)).join("\n")
+    : '<p class="clip-rail-empty">标签将在内容增加后出现。</p>'
+  const clusters = TOPIC_CLUSTERS.map((cluster) => {
+    const tags = cluster.tags
+      .map((label) => tagsBySlug.get(String(slugTag(label))))
+      .filter(Boolean)
+    if (tags.length === 0) return ""
+    return `<section class="clip-topic-cluster">
+  <h3>${escapeHtml(cluster.title)}</h3>
+  <div class="clip-topic-tags">${tags.map((tag) => renderTagLink(tag, "clip-topic-link")).join("\n")}</div>
+</section>`
+  }).filter(Boolean).join("\n")
 
   const status = resources.length === 0
     ? "当前暂无公开内容。"
@@ -140,6 +201,21 @@ title: L4P 剪藏馆
 description: 一个持续更新、方便检索与引用的个人互联网资源剪藏馆。
 ---
 
+<div class="clip-home-layout">
+<aside class="clip-retrieval-rail clip-retrieval-left" aria-label="快速检索">
+  <section class="clip-rail-panel">
+    <p class="clip-rail-eyebrow">快速检索</p>
+    <h2>从这里开始</h2>
+    <p>使用顶部搜索，可检索标题、正文和标签。</p>
+    <a class="clip-all-tags" href="/tags">浏览全部标签 <span aria-hidden="true">→</span></a>
+  </section>
+  <section class="clip-rail-panel">
+    <h2>热门标签</h2>
+    <div class="clip-tag-stack">${popularTagLinks}</div>
+  </section>
+</aside>
+
+<main class="clip-home-main">
 <section class="clip-home-hero">
   <p class="clip-home-eyebrow">PERSONAL WEB CLIPS</p>
   <p class="clip-home-lede">把散落在互联网上的好内容，整理成随时可检索、可引用的个人资料库。</p>
@@ -148,12 +224,23 @@ description: 一个持续更新、方便检索与引用的个人互联网资源�
     <a class="clip-home-primary" href="#all-clips">浏览全部</a>
     <a class="clip-home-secondary" href="/tags">按标签浏览</a>
   </div>
-  <p class="clip-home-search-hint">使用左侧的“搜索”，可以按标题、正文或标签快速定位。</p>
+  <p class="clip-home-search-hint">使用顶部“搜索”，可以按标题、正文或标签快速定位。</p>
 </section>
 
 <h2 id="all-clips">全部资源</h2>
 
-${cards}`
+${cards}
+</main>
+
+<aside class="clip-retrieval-rail clip-retrieval-right" aria-label="主题聚类">
+  <section class="clip-rail-panel">
+    <p class="clip-rail-eyebrow">主题聚类</p>
+    <h2>按主题发现</h2>
+    <p>暂时直接使用现有标签归组，不修改原始元数据。</p>
+  </section>
+  ${clusters || '<p class="clip-rail-empty">更多主题将在标签积累后出现。</p>'}
+</aside>
+</div>`
   await fs.writeFile(path.join(contentRoot, "index.md"), markdown, "utf8")
 }
 
