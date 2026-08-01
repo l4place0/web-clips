@@ -319,6 +319,20 @@
       "status": "active",
       "assignedAt": "2026-08-01T03:58:02.544Z",
       "everPublished": false
+    },
+    "29855abf-0e06-4a68-9bd9-b8b1daf3d3ad": {
+      "firstAssignedPath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "lastKnownSourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T05:23:19.318Z",
+      "everPublished": false
+    },
+    "8187cb22-28eb-47b3-82b7-eebd43d9846c": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T05:23:27.582Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1383,6 +1397,18 @@
       "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
       "at": "2026-08-01T03:58:02.544Z",
       "sourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "29855abf-0e06-4a68-9bd9-b8b1daf3d3ad",
+      "at": "2026-08-01T05:23:19.318Z",
+      "sourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8187cb22-28eb-47b3-82b7-eebd43d9846c",
+      "at": "2026-08-01T05:23:27.582Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md"
     }
   ]
 }
