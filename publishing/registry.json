@@ -312,6 +312,13 @@
       "assignedAt": "2026-07-29T20:44:26.883Z",
       "everPublished": true,
       "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b64dc8ab-41ec-4276-89a1-7de75ddd29ee": {
+      "firstAssignedPath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+      "lastKnownSourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T03:58:02.544Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1370,6 +1377,12 @@
       "at": "2026-07-31T10:28:57.145Z",
       "from": "clips/WC-4.md",
       "to": "clips/AI科研不完全指北：Top10 PhD烧了上万刀的真实经验。 Context Is All You Need - 开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+      "at": "2026-08-01T03:58:02.544Z",
+      "sourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md"
     }
   ]
 }
