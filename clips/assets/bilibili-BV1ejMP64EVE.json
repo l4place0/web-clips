@@ -31,7 +31,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -2062,5 +2062,334 @@
       "assets/bilibili-BV1ejMP64EVE-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-01T04:29:25.846300+00:00"
+  "updated_at": "2026-08-01T05:30:18.246729+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1ejMP64EVE",
+    "domain": "AI 辅助编程、软件工程就业与生产力、LLM 可靠性、AI 智能体、氛围编程与上下文工程",
+    "principles": [
+      "保留全部原始时间戳、顺序与分段",
+      "仅校正可由上下文可靠判断的术语、产品名、同音误识别和明显语病",
+      "不改变视频原意",
+      "不确定内容保留原转写"
+    ],
+    "glossary": [
+      {
+        "term": "ChatGPT",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "GitHub Copilot",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "Stack Overflow",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "多模态 AI",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "Devin AI",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "代码改动率 / churn",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "大语言模型（LLM）",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "AI 幻觉",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "Replit",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "API",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "SaaS",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "AI 智能体（agent）",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "氛围编程（vibe coding）",
+        "note": "视频中的 AI 编程/软件工程术语"
+      },
+      {
+        "term": "上下文工程（context engineering）",
+        "note": "视频中的 AI 编程/软件工程术语"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:56",
+        "from": "具体机能",
+        "to": "具体技能",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:07",
+        "from": "故事真正 10 月 2022 年 11 月",
+        "to": "故事真正始于 2022 年 11 月",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:09",
+        "from": "Chat GPT",
+        "to": "ChatGPT",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:19",
+        "from": "遇见未来",
+        "to": "预见未来",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:34",
+        "from": "欲掩欲裂",
+        "to": "愈演愈烈",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:40",
+        "from": "Get Up Copilot",
+        "to": "GitHub Copilot",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "01:49",
+        "from": "有Chat GPT",
+        "to": "有 ChatGPT",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "02:22",
+        "from": "惊人的成为",
+        "to": "惊人地成为",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "02:28",
+        "from": "多摩太 AI",
+        "to": "多模态 AI",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:06",
+        "from": "掩饰和投票新闻",
+        "to": "炒作和头条新闻",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:10",
+        "from": "最活泼的例子之一就是 Devon AI",
+        "to": "最典型的例子之一就是 Devin AI",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:16",
+        "from": "Devon 规划任务编写代码",
+        "to": "Devin 规划任务、编写代码",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:19",
+        "from": "端道端",
+        "to": "端到端",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:38",
+        "from": "Devon",
+        "to": "Devin",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:47",
+        "from": "他比做大一计算机",
+        "to": "它比作大一计算机系",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "03:49",
+        "from": "细心生",
+        "to": "新生",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "04:14",
+        "from": "相区甚远",
+        "to": "相去甚远",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "04:37",
+        "from": "AI 人类的工作量反而分贝了",
+        "to": "AI，人类的工作量反而翻倍了",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "04:46",
+        "from": "边界情况固着",
+        "to": "边界情况问题",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "06:36",
+        "from": "被财了",
+        "to": "被裁了",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "06:44",
+        "from": "被财的软件工程师",
+        "to": "被裁的软件工程师",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "06:51",
+        "from": "被财",
+        "to": "被裁",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "07:32",
+        "from": "在脑头",
+        "to": "在脑中",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "07:34",
+        "from": "再想",
+        "to": "在想",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "08:20",
+        "from": "财人",
+        "to": "裁人",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "08:21",
+        "from": "财人",
+        "to": "裁人",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "09:23",
+        "from": "教这个真",
+        "to": "较这个真",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "09:42",
+        "from": "有两个人们",
+        "to": "有两个",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "09:43",
+        "from": "一直忽视的技术结构性限制",
+        "to": "人们一直忽视的技术结构性限制",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "10:04",
+        "from": "在这的生日",
+        "to": "赞达亚的生日",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "10:34",
+        "from": "不存在的酷",
+        "to": "不存在的库",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "10:45",
+        "from": "Raplit",
+        "to": "Replit",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "10:49",
+        "from": "工厂是个好工具",
+        "to": "它当然是个好工具",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "10:53",
+        "from": "理出他的项目",
+        "to": "起初他的项目",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "11:36",
+        "from": "仅凭起奖励系统",
+        "to": "仅凭其奖励系统",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "11:53",
+        "from": "源于人类是一种",
+        "to": "源于一种",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "12:04",
+        "from": "碰碰",
+        "to": "砰",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "12:11",
+        "from": "超一个",
+        "to": "抄一个",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "12:28",
+        "from": "一直点示",
+        "to": "一直点“是”",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "13:35",
+        "from": "日新月易",
+        "to": "日新月异",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "13:37",
+        "from": "投号技能",
+        "to": "头号技能",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "13:43",
+        "from": "分水灵",
+        "to": "分水岭",
+        "reason": "高置信度 ASR 术语或语句校正"
+      },
+      {
+        "timestamp": "14:01",
+        "from": "包担所有编码设计和创意工作",
+        "to": "包揽所有编码、设计和创意工作",
+        "reason": "高置信度 ASR 术语或语句校正"
+      }
+    ]
+  }
 }

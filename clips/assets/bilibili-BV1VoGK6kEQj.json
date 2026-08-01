@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1667,5 +1667,62 @@
       "assets/bilibili-BV1VoGK6kEQj-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-01T05:04:34.391222+00:00"
+  "updated_at": "2026-08-01T05:39:20.034760+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1VoGK6kEQj",
+    "domain": "AI coding / Wayfinder skill / cross-session planning",
+    "segment_count": 321,
+    "correction_count": 425,
+    "corrections": [
+      {
+        "original": "Ai",
+        "corrected": "AI",
+        "occurrences": 2,
+        "confidence": "high",
+        "reason": "Standard capitalization of the artificial-intelligence acronym."
+      },
+      {
+        "original": "wayfinder",
+        "corrected": "Wayfinder",
+        "occurrences": 1,
+        "confidence": "high",
+        "reason": "Canonical capitalization of the skill name."
+      },
+      {
+        "original": "帳户/账户",
+        "corrected": "ticket",
+        "occurrences": 422,
+        "confidence": "high",
+        "reason": "Domain-context restoration of issue-tracker ticket terminology; the ASR repeatedly rendered ticket as account."
+      }
+    ],
+    "glossary": [
+      "Wayfinder",
+      "AI coding agent",
+      "skill",
+      "context window",
+      "cross-session planning",
+      "issue tracker",
+      "ticket",
+      "decision ticket",
+      "research",
+      "prototype",
+      "grilling",
+      "task",
+      "blocking dependency",
+      "frontier",
+      "fog of war",
+      "toSpec",
+      "toTickets",
+      "spec-driven development",
+      "Codex",
+      "Claude Code"
+    ],
+    "quality_notes": [
+      "All 321 source segment timestamps are preserved.",
+      "The source ASR becomes extensively repetitive after approximately 00:04:30; uncertain wording was retained rather than reconstructed.",
+      "Only high-confidence domain terminology corrections were applied."
+    ]
+  }
 }
