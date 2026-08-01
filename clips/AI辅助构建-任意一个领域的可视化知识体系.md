@@ -9,6 +9,7 @@ tags: ["人工智能", "思维", "知识体系", "知识架构"]
 publish: true
 rid: "1fe2d2f1-ea47-47be-8925-083fb8e67d2a"
 permalink: "/r/1fe2d2f1-ea47-47be-8925-083fb8e67d2a"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/1fe2d2f1-ea47-47be-8925-083fb8e67d2a"
 ---
 
 # 总结稿

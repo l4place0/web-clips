@@ -17,6 +17,7 @@ description: Agentic AI 时代，“软件工程” 已然被重新定义。在�
 publish: true
 rid: "715a7ba8-da1e-4320-abb0-61628f520f5c"
 permalink: "/r/715a7ba8-da1e-4320-abb0-61628f520f5c"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/715a7ba8-da1e-4320-abb0-61628f520f5c"
 ---
 
 # 19 - 协程、Goroutine、异步编程 [2026 南京大学操作系统原理]

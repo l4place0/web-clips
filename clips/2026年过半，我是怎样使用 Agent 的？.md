@@ -9,6 +9,7 @@ tags: ["科普", "AI", "实用技巧", "Agent", "Codex", "分享我的专业知�
 publish: true
 rid: "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1"
 permalink: "/r/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1"
 ---
 
 # 总结稿

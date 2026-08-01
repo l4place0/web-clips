@@ -4,7 +4,7 @@ import os from "node:os"
 import path from "node:path"
 import test from "node:test"
 import { fileURLToPath } from "node:url"
-import { assignId, build, clean, prepareAll, PublishError, validate } from "./publisher.mjs"
+import { annotatePublicUrls, assignId, build, clean, prepareAll, PublishError, validate } from "./publisher.mjs"
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const SOURCE_CONFIG = path.join(HERE, "config.json")
@@ -133,6 +133,37 @@ test("publishAll makes every source note public and prepare assigns missing iden
   const result = await validate(root)
   assert.equal(result.ok, true)
   assert.equal(result.publishedCount, 1)
+})
+
+test("annotate-urls adds, corrects, and preserves the derived public URL idempotently", async (t) => {
+  const root = await fixture(t)
+  const configPath = path.join(root, "publishing", "config.json")
+  const config = JSON.parse(await fs.readFile(configPath, "utf8"))
+  config.source.publishAll = true
+  await fs.writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`)
+  await write(root, "公开地址.md", "\uFEFF---\r\ntitle: 公开地址 # keep\r\ntags: [x]\r\n---\r\n正文\r\n")
+  await assignId(root, "公开地址.md", { uuid: () => RID_A })
+
+  const first = await annotatePublicUrls(root)
+  assert.equal(first.annotatedCount, 1)
+  assert.equal(first.annotated[0].action, "added")
+  const expected = `https://l4p-web-clips.pages.dev/r/${RID_A}`
+  const once = await read(root, "公开地址.md")
+  assert.match(once, /^\uFEFF---\r\n/)
+  assert.match(once, /title: 公开地址 # keep\r\n/)
+  assert.match(once, new RegExp(`webClipUrl: "${expected}"\\r\\n`))
+  assert.ok(once.endsWith("正文\r\n"))
+
+  await write(root, "公开地址.md", once.replace(expected, "https://example.invalid/old"))
+  const corrected = await annotatePublicUrls(root)
+  assert.equal(corrected.annotatedCount, 1)
+  assert.equal(corrected.annotated[0].action, "corrected")
+  const correctedText = await read(root, "公开地址.md")
+  assert.match(correctedText, new RegExp(`webClipUrl: "${expected}"\\r\\n`))
+
+  const second = await annotatePublicUrls(root)
+  assert.equal(second.annotatedCount, 0)
+  assert.equal(await read(root, "公开地址.md"), correctedText)
 })
 
 test("display titles prefer frontmatter, then H1, then source basename and never fall back to RID", async (t) => {

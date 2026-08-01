@@ -9,6 +9,7 @@ tags: ["学习", "教程", "subagent", "gpt-5.6", "ai", "codex", "gpt", "openai 
 publish: true
 rid: "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
 permalink: "/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
 ---
 
 # 总结稿

@@ -15,6 +15,7 @@ Cover: "https://cdn.ldstatic.com/user_avatar/linux.do/woji_666/96/1696850_2.png"
 publish: true
 rid: "b8472df3-4e5a-4bcd-8e05-1e44b2945b20"
 permalink: "/r/b8472df3-4e5a-4bcd-8e05-1e44b2945b20"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/b8472df3-4e5a-4bcd-8e05-1e44b2945b20"
 ---
 [这里是沃基](https://linux.do/u/woji_666) [woji_666](https://linux.do/u/woji_666) 活跃用户
 

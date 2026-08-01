@@ -21,8 +21,8 @@ Obsidian 保存 → Obsidian Git 自动提交并推送 → Cloudflare Pages 自�
 ```
 
 Obsidian Git 在文件变化稳定约 1 分钟后合并提交并推送。Git 提交钩子会自动为新笔记补齐稳定
-RID 和 permalink，再执行发布校验。Cloudflare Pages 监听 `main` 分支，无需额外同步服务或
-Windows 计划任务。
+RID、permalink 和可点击的 `webClipUrl` 公开地址，再执行发布校验。Cloudflare Pages 监听
+`main` 分支，无需额外同步服务或 Windows 计划任务。
 
 首次克隆后运行一次：
 
@@ -41,6 +41,7 @@ git config core.hooksPath .githooks
 
    ```powershell
    npm.cmd run publish:prepare
+   npm.cmd run publish:annotate-urls
    npm.cmd run publish:validate
    npm.cmd run publish:dry-run
    ```
@@ -64,8 +65,8 @@ git config core.hooksPath .githooks
    git push
    ```
 
-4. 从笔记 frontmatter 读取 `rid`，拼出稳定页面和 raw URL。文件以后改名、移动或改标题都
-   不会改变这两个地址。
+4. 笔记 frontmatter 中的 `webClipUrl` 是可直接点击和复制的展示地址。它由 RID 派生；文件
+   以后改名、移动或改标题都不会改变该地址。
 
 ## 取消发布
 

@@ -15,6 +15,7 @@ Cover: "https://assets.cnblogs.com/images/wechat-share.jpg"
 publish: true
 rid: "845c5970-c51e-480a-863c-e84a613c7f64"
 permalink: "/r/845c5970-c51e-480a-863c-e84a613c7f64"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/845c5970-c51e-480a-863c-e84a613c7f64"
 ---
 ## 前言
 

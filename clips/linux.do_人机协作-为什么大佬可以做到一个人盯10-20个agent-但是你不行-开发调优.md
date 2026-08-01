@@ -15,6 +15,7 @@ Cover: "https://cdn3.ldstatic.com/optimized/4X/b/3/d/b3d9c4bc412dd1b6b9069bb5859
 publish: true
 rid: "ce936931-25bf-446e-a451-30808c82b729"
 permalink: "/r/ce936931-25bf-446e-a451-30808c82b729"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/ce936931-25bf-446e-a451-30808c82b729"
 ---
 [BosaBosa](https://linux.do/u/bosa) [Bosa](https://linux.do/u/bosa) 不二之选
 

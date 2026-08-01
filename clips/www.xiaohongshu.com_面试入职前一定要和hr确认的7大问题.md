@@ -20,6 +20,7 @@ Cover: "http://sns-webpic-qc.xhscdn.com/202606302250/b5b68f51832ad6113d2d730f557
 publish: true
 rid: "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab"
 permalink: "/r/1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab"
 ---
 ![](https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/notes-attactments/1782831047568-8memaq.jpg)
 

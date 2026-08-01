@@ -43,6 +43,17 @@ permalink = "/r/" + rid
 - 值与派生结果不完全一致时应报 `E_PERMALINK_MISMATCH`，不得静默覆盖。
 - 文件改名、移动或标题变化时，不修改 `rid` 或 `permalink`，公开 URL 因而保持稳定。
 
+### 2.3 `webClipUrl`
+
+`webClipUrl` 是供 Obsidian 属性面板直接点击、复制的完整公开展示地址：
+
+```text
+webClipUrl = routes.publicBaseUrl + permalink
+```
+
+该字段是派生值，不是新的身份来源。`annotate-urls` 命令负责幂等地添加或修正它；Git
+`pre-commit` hook 在分配 RID 后调用该命令，并把变化重新加入本次提交。
+
 Quartz v5 当前会把 frontmatter `permalink` 当作别名重定向入口，而不是直接改变 canonical 页面 slug。若暂存文件已经位于 `content/r/<rid>.md`，继续把相同 `permalink` 交给 Quartz 可能造成输出冲突或自重定向。因此 M3 必须先校验源字段，再从交给 Quartz 的暂存副本中移除 `permalink`。源笔记和 raw Markdown 中保留该字段。
 
 ## 3. 公开路由

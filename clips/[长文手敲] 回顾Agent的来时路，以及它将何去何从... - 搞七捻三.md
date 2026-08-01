@@ -16,6 +16,7 @@ Cover: "https://cdn3.linux.do/original/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c2593
 publish: true
 rid: "2bafdbf3-58c1-4598-9c92-46a53c774058"
 permalink: "/r/2bafdbf3-58c1-4598-9c92-46a53c774058"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/2bafdbf3-58c1-4598-9c92-46a53c774058"
 ---
 [白芸汐](https://linux.do/u/cloudwide) [cloudwide](https://linux.do/u/cloudwide) 指导顾问
 

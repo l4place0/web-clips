@@ -2,12 +2,12 @@
 
 import path from "node:path"
 import process from "node:process"
-import { assignId, build, clean, formatFailure, prepareAll, validate } from "./publisher.mjs"
+import { annotatePublicUrls, assignId, build, clean, formatFailure, prepareAll, validate } from "./publisher.mjs"
 
 function usage(root) {
   return {
     ok: false,
-    error: "Usage: publish <prepare|assign-id <note>|validate|build [--dry-run]|clean> [--root <workspace>]",
+    error: "Usage: publish <prepare|annotate-urls|assign-id <note>|validate|build [--dry-run]|clean> [--root <workspace>]",
     root,
     diagnostics: [
       {
@@ -45,6 +45,9 @@ async function main() {
   }
   if (command === "prepare" && args.length === 1) {
     return prepareAll(root)
+  }
+  if (command === "annotate-urls" && args.length === 1) {
+    return annotatePublicUrls(root)
   }
   if (command === "validate" && args.length === 1) {
     return validate(root)

@@ -2,5 +2,6 @@
 set -eu
 
 node publishing/cli.mjs prepare
+node publishing/cli.mjs annotate-urls
 git add -- clips publishing/registry.json
 node publishing/cli.mjs validate

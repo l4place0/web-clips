@@ -10,6 +10,7 @@ Cover: "https://cdn.ldstatic.com/user_avatar/linux.do/jingxuan/96/1775542_2.png"
 publish: true
 rid: "6d1fa00c-7224-4691-ad07-b170ad4510e6"
 permalink: "/r/6d1fa00c-7224-4691-ad07-b170ad4510e6"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/6d1fa00c-7224-4691-ad07-b170ad4510e6"
 ---
 Info
 

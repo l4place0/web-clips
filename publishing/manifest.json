@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-31T10:37:52.625Z",
+  "generatedAt": "2026-08-01T06:53:33.235Z",
   "resources": [
     {
       "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
@@ -237,6 +237,39 @@
       ]
     },
     {
+      "rid": "3a566b9f-f530-4b50-8de1-fd7339758124",
+      "title": "Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】",
+      "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "page": "/r/3a566b9f-f530-4b50-8de1-fd7339758124",
+      "raw": "/raw/3a566b9f-f530-4b50-8de1-fd7339758124.md",
+      "assets": [
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0001.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0002.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0003.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0004.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0005.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0006.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0007.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0008.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0009.webp",
+        "/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0010.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0001.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0002.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0003.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0004.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0005.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0006.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0007.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0008.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0009.webp",
+        "quartz/content/assets/3a566b9f-f530-4b50-8de1-fd7339758124/bilibili-BV1VoGK6kEQj-frame-0010.webp",
+        "quartz/content/r/3a566b9f-f530-4b50-8de1-fd7339758124.md",
+        "raw/3a566b9f-f530-4b50-8de1-fd7339758124.md"
+      ]
+    },
+    {
       "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
       "title": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？",
       "sourcePath": "clips/黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
@@ -378,6 +411,39 @@
       ]
     },
     {
+      "rid": "93b247db-03db-4f00-95dc-415889b62f58",
+      "title": "AI取代程序员彻底失败？2022-2026真相复盘",
+      "sourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "page": "/r/93b247db-03db-4f00-95dc-415889b62f58",
+      "raw": "/raw/93b247db-03db-4f00-95dc-415889b62f58.md",
+      "assets": [
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0001.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0002.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0003.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0004.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0005.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0006.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0007.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0008.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0009.webp",
+        "/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0010.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0001.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0002.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0003.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0004.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0005.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0006.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0007.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0008.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0009.webp",
+        "quartz/content/assets/93b247db-03db-4f00-95dc-415889b62f58/bilibili-BV1ejMP64EVE-frame-0010.webp",
+        "quartz/content/r/93b247db-03db-4f00-95dc-415889b62f58.md",
+        "raw/93b247db-03db-4f00-95dc-415889b62f58.md"
+      ]
+    },
+    {
       "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
       "title": "【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享",
       "sourcePath": "clips/【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享.md",
@@ -504,6 +570,39 @@
       "artifacts": [
         "quartz/content/r/ada23994-d3cb-4995-895a-227cfe5abbf0.md",
         "raw/ada23994-d3cb-4995-895a-227cfe5abbf0.md"
+      ]
+    },
+    {
+      "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+      "title": "一个人如何在看不到希望时，依然坚持去做难且正确的事？",
+      "sourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+      "page": "/r/b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+      "raw": "/raw/b64dc8ab-41ec-4276-89a1-7de75ddd29ee.md",
+      "assets": [
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0001.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0002.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0003.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0004.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0005.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0006.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0007.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0008.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0009.webp",
+        "/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0010.webp"
+      ],
+      "artifacts": [
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0001.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0002.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0003.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0004.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0005.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0006.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0007.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0008.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0009.webp",
+        "quartz/content/assets/b64dc8ab-41ec-4276-89a1-7de75ddd29ee/bilibili-BV1LQNB6SE3d-frame-0010.webp",
+        "quartz/content/r/b64dc8ab-41ec-4276-89a1-7de75ddd29ee.md",
+        "raw/b64dc8ab-41ec-4276-89a1-7de75ddd29ee.md"
       ]
     },
     {

@@ -5,6 +5,7 @@
   "scripts": {
     "publish": "node publishing/cli.mjs",
     "publish:prepare": "node publishing/cli.mjs prepare",
+    "publish:annotate-urls": "node publishing/cli.mjs annotate-urls",
     "publish:validate": "node publishing/cli.mjs validate",
     "publish:dry-run": "node publishing/cli.mjs build --dry-run",
     "build:site": "node site/build.mjs",

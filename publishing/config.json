@@ -27,6 +27,7 @@
     "publishedValue": true,
     "ridField": "rid",
     "permalinkField": "permalink",
+    "publicUrlField": "webClipUrl",
     "pdfField": "pdf"
   },
   "rid": {
@@ -40,6 +41,7 @@
     "reusable": false
   },
   "routes": {
+    "publicBaseUrl": "https://l4p-web-clips.pages.dev",
     "pagePattern": "/r/{rid}",
     "rawPattern": "/raw/{rid}.md",
     "postMvpPdfPattern": "/pdf/{rid}.pdf",

@@ -143,6 +143,21 @@ function insertFrontmatterFields(text, parsed, fields) {
   return `${parsed.bom}${before}${separator}${lines.join(lineEnding)}${lineEnding}${after}`
 }
 
+function setFrontmatterField(text, parsed, key, value) {
+  if (!Object.hasOwn(parsed.data, key)) return insertFrontmatterFields(text, parsed, { [key]: value })
+  if (parsed.data[key] === value) return text
+  const node = parsed.document.get(key, true)
+  if (!node?.range || node.range.length < 2) {
+    throw new PublishError("Cannot update derived frontmatter field", 3, [
+      diag("E_FRONTMATTER_PARSE", key, "field-range-unavailable"),
+    ])
+  }
+  const start = parsed.headerStart + node.range[0]
+  const end = parsed.headerStart + node.range[1]
+  const content = parsed.original
+  return `${parsed.bom}${content.slice(0, start)}${JSON.stringify(value)}${content.slice(end)}`
+}
+
 async function readJsonIfExists(file, fallback, invalidCode = "E_CONFIG_INVALID") {
   try {
     return JSON.parse(await fs.readFile(file, "utf8"))
@@ -169,11 +184,22 @@ function validateConfig(config) {
   if (config.frontmatter?.publishedValueType !== "boolean" || config.frontmatter?.publishedValue !== true) {
     problems.push("frontmatter.publish")
   }
+  if (typeof config.frontmatter?.publicUrlField !== "string" || config.frontmatter.publicUrlField.trim() === "") {
+    problems.push("frontmatter.publicUrlField")
+  }
   if (config.rid?.pattern !== RID_PATTERN.source || config.rid?.format !== "uuid-v4") {
     problems.push("rid")
   }
   if (config.routes?.pagePattern !== "/r/{rid}" || config.routes?.rawPattern !== "/raw/{rid}.md") {
     problems.push("routes")
+  }
+  try {
+    const publicBaseUrl = new URL(config.routes?.publicBaseUrl)
+    if (publicBaseUrl.protocol !== "https:" || publicBaseUrl.origin !== config.routes.publicBaseUrl) {
+      problems.push("routes.publicBaseUrl")
+    }
+  } catch {
+    problems.push("routes.publicBaseUrl")
   }
   if (config.state?.registry !== "publishing/registry.json") problems.push("registry")
   if (config.state?.manifest !== "publishing/manifest.json") problems.push("manifest")
@@ -1356,6 +1382,57 @@ export async function prepareAll(rootInput) {
     notesScanned: scan.notes.length,
     prepared,
     preparedCount: prepared.length,
+    exitCode: 0,
+  }
+}
+
+export async function annotatePublicUrls(rootInput) {
+  const root = path.resolve(rootInput)
+  const config = await loadConfig(root)
+  const state = await loadState(root, config)
+  const scan = await scanNotes(root, config)
+  const diagnostics = [
+    ...scan.diagnostics,
+    ...validateIdentityAgainstRegistry(scan, state.registry),
+  ]
+  for (const note of scan.notes.filter((candidate) => candidate.published)) {
+    if (!note.rid) diagnostics.push(diag("E_RID_MISSING", note.relativePath))
+    else if (note.permalink === undefined) diagnostics.push(diag("E_PERMALINK_MISSING", note.relativePath))
+  }
+  if (hasErrors(diagnostics)) {
+    throw new PublishError("Cannot annotate public URLs while identity validation fails", contentExit(config), diagnostics)
+  }
+
+  const field = config.frontmatter.publicUrlField
+  const baseUrl = config.routes.publicBaseUrl.replace(/\/$/, "")
+  const annotated = []
+  const writes = []
+  for (const note of scan.notes.filter((candidate) => candidate.published)) {
+    const url = `${baseUrl}${config.routes.pagePattern.replace("{rid}", note.rid)}`
+    const previous = note.data[field]
+    const nextText = setFrontmatterField(note.text, note.parsed, field, url)
+    if (nextText === note.text) continue
+    writes.push({ path: note.absolutePath, content: nextText })
+    annotated.push({
+      path: note.relativePath,
+      url,
+      action: previous === undefined ? "added" : "corrected",
+    })
+  }
+  try {
+    if (writes.length > 0) await transactionalWriteFiles(writes)
+  } catch (error) {
+    if (error instanceof PublishError) throw error
+    throw new PublishError("Failed to annotate public URLs atomically", filesystemExit(config), [
+      diag("E_CONFIG_INVALID", config.source.root, error.code ?? "io-failure"),
+    ])
+  }
+  return {
+    ok: true,
+    command: "annotate-urls",
+    notesScanned: scan.notes.length,
+    annotated,
+    annotatedCount: annotated.length,
     exitCode: 0,
   }
 }

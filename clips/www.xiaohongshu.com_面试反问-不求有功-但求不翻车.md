@@ -19,6 +19,7 @@ Cover: "http://sns-webpic-qc.xhscdn.com/202606302304/53b4d23c45e3990587407018464
 publish: true
 rid: "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce"
 permalink: "/r/0a244d5d-84b1-4563-bc6b-b43ca65ea6ce"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/0a244d5d-84b1-4563-bc6b-b43ca65ea6ce"
 ---
 ![](https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/notes-attactments/1782831943527-0309qh.jpg)
 

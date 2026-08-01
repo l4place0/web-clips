@@ -9,6 +9,7 @@ tags: ["克劳德", "软件工程", "终端工具", "代码审查", "AI工作流
 publish: true
 rid: "ad2961fc-e3da-44ee-ad26-a36a3ccecba6"
 permalink: "/r/ad2961fc-e3da-44ee-ad26-a36a3ccecba6"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/ad2961fc-e3da-44ee-ad26-a36a3ccecba6"
 ---
 
 # 总结稿
