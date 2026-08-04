@@ -7197,6 +7197,300 @@
       "assets/bilibili-BV1HgNd6rEEJ-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-04T04:36:47.215258+00:00",
-  "corrections": []
+  "updated_at": "2026-08-04T04:43:16.392671+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "domain": "个人成长/励志（深度工作与专注力，英文演讲）",
+    "glossary": [
+      {
+        "term": "deep work",
+        "definition": "深度工作：在无干扰状态下高强度投入认知任务的状态"
+      },
+      {
+        "term": "dopamine",
+        "definition": "多巴胺：驱动动机与奖赏的神经递质；视频用它解释成瘾与动机迁移"
+      },
+      {
+        "term": "elimination",
+        "definition": "消除：主动删掉一切与使命无关的事物以获得专注"
+      },
+      {
+        "term": "addiction switch",
+        "definition": "成瘾开关：把瘾从短效刺激切换到工作/进步本身"
+      },
+      {
+        "term": "mechanics of focus",
+        "definition": "专注机制：仪式、环境设计、顺序安排等可操作方法"
+      },
+      {
+        "term": "sacred sacrifice",
+        "definition": "神圣献祭：为专注目标自愿放弃舒适、旧习惯乃至部分人际"
+      },
+      {
+        "term": "micro commitments",
+        "definition": "微承诺：各种“顺便答应”的小承诺，属于隐性精力泄漏"
+      }
+    ],
+    "corrections": [
+      {
+        "start_seconds": 125,
+        "timestamp": "02:05",
+        "original": "real growthlives at the edge of discomfort",
+        "corrected": "real growth lives at the edge of discomfort",
+        "reason": "ASR 漏词间空格"
+      },
+      {
+        "start_seconds": 139,
+        "timestamp": "02:19",
+        "original": "intucidation by Netflix",
+        "corrected": "sedation by Netflix",
+        "reason": "ASR 错词；据上下文“被 Netflix 哄入镇静”"
+      },
+      {
+        "start_seconds": 141,
+        "timestamp": "02:21",
+        "original": "corn",
+        "corrected": "porn",
+        "reason": "上下文为低俗短刺激清单（Netflix/porn/healthy distractions）"
+      },
+      {
+        "start_seconds": 147,
+        "timestamp": "02:27",
+        "original": "stereolized",
+        "corrected": "sterilized",
+        "reason": "ASR 错词；padded/curated/sterilized 并列"
+      },
+      {
+        "start_seconds": 349,
+        "timestamp": "05:49",
+        "original": "eliminating you something",
+        "corrected": "eliminating something",
+        "reason": "口吃重复字误听"
+      },
+      {
+        "start_seconds": 435,
+        "timestamp": "07:15",
+        "original": "they're weight around your ankles",
+        "corrected": "they're a weight around your ankles",
+        "reason": "补缺失冠词"
+      },
+      {
+        "start_seconds": 440,
+        "timestamp": "07:20",
+        "original": "they're most likely guilt trip you",
+        "corrected": "they'll most likely guilt-trip you",
+        "reason": "语法与时态纠正"
+      },
+      {
+        "start_seconds": 476,
+        "timestamp": "07:56",
+        "original": "idol scrolling,gossip",
+        "corrected": "idle scrolling,gossip",
+        "reason": "应为 idle scrolling（无目的刷屏）"
+      },
+      {
+        "start_seconds": 514,
+        "timestamp": "08:34",
+        "original": "build walls,build modes",
+        "corrected": "build walls,build moats",
+        "reason": "上下文为防御性比喻，应为 moats（护城河）"
+      },
+      {
+        "start_seconds": 613,
+        "timestamp": "10:13",
+        "original": "that a standard so high",
+        "corrected": "it's a standard so high",
+        "reason": "句意修复"
+      },
+      {
+        "start_seconds": 614,
+        "timestamp": "10:14",
+        "original": "that only the extra ordinary",
+        "corrected": "that only the extraordinary",
+        "reason": "词间空格"
+      },
+      {
+        "start_seconds": 708,
+        "timestamp": "11:48",
+        "original": "focus in a strange kind of joy",
+        "corrected": "focus becomes a strange kind of joy",
+        "reason": "句意修复"
+      },
+      {
+        "start_seconds": 724,
+        "timestamp": "12:04",
+        "original": "and why is the greatest addiction",
+        "corrected": "and why it's the greatest addiction",
+        "reason": "语序修复"
+      },
+      {
+        "start_seconds": 837,
+        "timestamp": "13:57",
+        "original": "not as the same as the old stuff",
+        "corrected": "not the same as the old stuff",
+        "reason": "去掉多余 as"
+      },
+      {
+        "start_seconds": 935,
+        "timestamp": "15:35",
+        "original": "way before the subscribers views comments and mics",
+        "corrected": "way before the subscribers views comments and likes",
+        "reason": "mics 应为 likes（互动指标清单）"
+      },
+      {
+        "start_seconds": 1119,
+        "timestamp": "18:39",
+        "original": "like a farmer planting rose in a hard earth",
+        "corrected": "like a farmer planting rows in a hard earth",
+        "reason": "frame 7 中文字幕为“在坚硬土地播种”，应为 rows"
+      },
+      {
+        "start_seconds": 1125,
+        "timestamp": "18:45",
+        "original": "until your brain revolves",
+        "corrected": "until your brain rebels",
+        "reason": "语义为“大脑造反/失控”，revolves 不通"
+      },
+      {
+        "start_seconds": 1142,
+        "timestamp": "19:02",
+        "original": "their not quirks",
+        "corrected": "they're not quirks",
+        "reason": "拼写/语法"
+      },
+      {
+        "start_seconds": 1143,
+        "timestamp": "19:03",
+        "original": "their weapons",
+        "corrected": "they're weapons",
+        "reason": "拼写/语法"
+      },
+      {
+        "start_seconds": 1211,
+        "timestamp": "20:11",
+        "original": "you'll feel like hell to protect more",
+        "corrected": "you'll feel compelled to protect more",
+        "reason": "ASR 短语不清，按句意修复"
+      },
+      {
+        "start_seconds": 1236,
+        "timestamp": "20:36",
+        "original": "lateryou'll crave it",
+        "corrected": "later you'll crave it",
+        "reason": "词间空格"
+      },
+      {
+        "start_seconds": 1246,
+        "timestamp": "20:46",
+        "original": "usually 30sometimes 45 minutes in",
+        "corrected": "usually 30, sometimes 45 minutes in",
+        "reason": "词间空格/标点"
+      },
+      {
+        "start_seconds": 1282,
+        "timestamp": "21:22",
+        "original": "the night beforeget everything ready",
+        "corrected": "the night before, get everything ready",
+        "reason": "词间空格/标点"
+      },
+      {
+        "start_seconds": 1337,
+        "timestamp": "22:17",
+        "original": "you lose touch with the most of the world",
+        "corrected": "you lose touch with most of the world",
+        "reason": "去掉多余 the"
+      },
+      {
+        "start_seconds": 1451,
+        "timestamp": "24:11",
+        "original": "and more effort",
+        "corrected": "in more effort",
+        "reason": "与“paid in letting go”对照，应为 in"
+      },
+      {
+        "start_seconds": 1572,
+        "timestamp": "26:12",
+        "original": "think it for getting you here",
+        "corrected": "thank it for getting you here",
+        "reason": "thank it 才对"
+      },
+      {
+        "start_seconds": 1579,
+        "timestamp": "26:19",
+        "original": "beginnings end",
+        "corrected": "beginning's end",
+        "reason": "所有格"
+      },
+      {
+        "start_seconds": 1664,
+        "timestamp": "27:44",
+        "original": "and sacrifice itself becomes a source of joy",
+        "corrected": "(去重)",
+        "reason": "与前一行 [27:41] 重复，删除"
+      },
+      {
+        "start_seconds": 1780,
+        "timestamp": "29:40",
+        "original": "and you stop thinking",
+        "corrected": "(去重)",
+        "reason": "与 [29:39] 重复，删除"
+      },
+      {
+        "start_seconds": 1782,
+        "timestamp": "29:42",
+        "original": "and you stop thinking",
+        "corrected": "(去重)",
+        "reason": "与 [29:39] 重复，删除"
+      },
+      {
+        "start_seconds": 1808,
+        "timestamp": "30:08",
+        "original": "was you're willing to burn to keep going",
+        "corrected": "what you're willing to burn to keep going",
+        "reason": "was 应为 what"
+      },
+      {
+        "start_seconds": 1891,
+        "timestamp": "31:31",
+        "original": "pull enough times in your broke before lunch",
+        "corrected": "pull enough times and you'll be broke before lunch",
+        "reason": "老虎机比喻，句意修复"
+      },
+      {
+        "start_seconds": 1908,
+        "timestamp": "31:48",
+        "original": "auditory relationships with the same cold eye",
+        "corrected": "audit your relationships with the same cold eye",
+        "reason": "auditory 应为 audit（审计人际关系）"
+      },
+      {
+        "start_seconds": 1937,
+        "timestamp": "32:17",
+        "original": "are worth ten times than the ones you outgrow",
+        "corrected": "are worth ten times the ones you outgrow",
+        "reason": "语法：去掉 than"
+      },
+      {
+        "start_seconds": 1944,
+        "timestamp": "32:24",
+        "original": "food,sleep,caffeine,corn,weed,alcohol",
+        "corrected": "food,sleep,caffeine,porn,weed,alcohol",
+        "reason": "corn 应为 porn（与 [02:21] 同类误听）"
+      },
+      {
+        "start_seconds": 2020,
+        "timestamp": "33:40",
+        "original": "shuts and maybes",
+        "corrected": "shoulds and maybes",
+        "reason": "应为 shoulds and maybes（“应该做”和“也许做”的小承诺）"
+      },
+      {
+        "start_seconds": 2132,
+        "timestamp": "35:32",
+        "original": "it's gorgeous your excuses",
+        "corrected": "it's bigger than your excuses",
+        "reason": "句意“愿景大到压过借口”"
+      }
+    ]
+  }
 }

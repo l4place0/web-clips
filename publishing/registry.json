@@ -382,6 +382,13 @@
       "status": "active",
       "assignedAt": "2026-08-04T04:41:45.381Z",
       "everPublished": false
+    },
+    "5bc8ebaa-f5d7-4f11-b10c-bf92a702ce04": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:45:06.165Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1523,6 +1530,12 @@
       "type": "assigned",
       "rid": "db763353-4bb2-41f2-ae14-daff23c44692",
       "at": "2026-08-04T04:41:45.381Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "5bc8ebaa-f5d7-4f11-b10c-bf92a702ce04",
+      "at": "2026-08-04T04:45:06.165Z",
       "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
     }
   ]
