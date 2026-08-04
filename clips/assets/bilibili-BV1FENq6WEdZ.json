@@ -1,0 +1,6651 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1FENq6WEdZ",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1FENq6WEdZ/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1FENq6WEdZ"
+  },
+  "title": "Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计",
+  "metadata": {
+    "title": "Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计",
+    "duration": 6451,
+    "thumbnail": "http://i0.hdslb.com/bfs/archive/007e08dafc0fc8b6df964198045f0005c3de75c4.jpg",
+    "uploader": "ChHsich",
+    "video_id": "BV1FENq6WEdZ",
+    "description": "Matt Pocock（mattpocock/skills）在这场直播中完整展示了他从零开始构思一个新项目的过程。\n\n项目叫 SlopWatch——一个自托管的编程 Agent 监控平台，用来追踪团队使用 Claude Code、Codex 等编程 Agent 时的 token 消耗、会话质量和 context window 占用。\n\n整场直播没有写代码。他用自己写的 GrillMe 反复诘问需求，用 DomainModel 敲定统一语言（session / turn / model request / listener / server），通过 DDD 的方法把一个模糊的想法逐步推进到有明确架构的系统设计。项目名 SlopWatch 来自直播间观众 Eddie 的建议。\n\n看点：\n1. Skills 的实际用法——GrillMe 怎么工作，DomainModel 怎么用，不是讲概念而是看他真正在用\n2. DDD + AI 编程的结合——先敲定统一语言，再让架构从语言中自然浮现\n3. 完整的架构决策过程——从\"为谁做\"到\"怎么部署\"，每一步都有取舍\n\n关键内容：\n- 项目选型：从一堆点子锁定\"编程 Agent 监控平台\"\n- GrillMe 诘问：为谁做、数据归属、接入怎么做\n- 多 Agent 研究：Claude Code / Codex / Crush / OpenCode / Copilot CLI 的 hook 和 JSONL\n- 命名：观众 Eddie 贡献了 SlopWatch\n- 架构决策：单二进制 + Postgres，自托管，不做 SaaS\n- 统一语言：session / turn / model request / DAG / sidecar / listener / server\n- 认证方案：v1 用管理员签发 token，OIDC 推到 v2\n\n来源：\n- 作者：Matt Pocock（@mattpocockuk）\n- 原视频：https://www.youtube.com/watch?v=K-mA3MZ_EzU\n- SlopWatch 仓库：https://github.com/mattpocock/slopwatch\n- Skills 仓库：https://github.com/mattpocock/skills\n\n中英双语字幕，AI 辅助转录 + 翻译并经人工校对，技术术语已对齐。\n如有不准确之处，欢迎在弹幕或评论指出。",
+    "tags": [
+      "AI",
+      "开发",
+      "教程",
+      "编程",
+      "Matt Pocock",
+      "实战",
+      "双语",
+      "Agent",
+      "Skills",
+      "AI创作者"
+    ],
+    "view_count": 12309,
+    "like_count": 384,
+    "upload_date": 1784110764,
+    "content_type": "unclassified",
+    "language": "en"
+  },
+  "providers": {
+    "asr": "configured-default",
+    "asr_profile": "configured-default",
+    "asr_model": "configured-default",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "b1c57cab75654947a0ecc3ad0b9b2b39f182b00f68e1b6f8ad5c7f685dedcd2e",
+    "audio": "cbe5afeec12d4c28e7c410eb21de5ca9bdea61d16c5d59b45cf4798462948d9e",
+    "transcript": "4a4593e5a707c510785d630255ddf3b298b1b98d05f6ae08cb1c1598f7415f6f",
+    "frames": "ee80369ba2cfdd045739b1967effc25fadae5b5990c2ad7e748d9c4418628bc4"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "How are we doing?"
+    },
+    {
+      "start": 2.0,
+      "end": 4.0,
+      "text": "How are we doing?"
+    },
+    {
+      "start": 4.38,
+      "end": 6.58,
+      "text": "This is a very very rare live stream for me"
+    },
+    {
+      "start": 7.42,
+      "end": 9.42,
+      "text": "but I"
+    },
+    {
+      "start": 9.46,
+      "end": 14.56,
+      "text": "have a kind of gap today before sort of figuring out my next course on Monday and"
+    },
+    {
+      "start": 15.34,
+      "end": 17.5,
+      "text": "I've been reading a lot about DDD"
+    },
+    {
+      "start": 18.14,
+      "end": 24.92,
+      "text": "the main driven design. I've been thinking about kind of retooling my skills and also I've been thinking about this I"
+    },
+    {
+      "start": 27.46,
+      "end": 29.46,
+      "text": "Want to do more kind of"
+    },
+    {
+      "start": 30.14,
+      "end": 36.08,
+      "text": "Watch me work long-form content and I want a project idea that I can"
+    },
+    {
+      "start": 36.76,
+      "end": 40.46,
+      "text": "Basically use as my playground for this kind of content"
+    },
+    {
+      "start": 43.62,
+      "end": 47.78,
+      "text": "Going back to the voyeur of the mat you the voyeur of the mat Colin"
+    },
+    {
+      "start": 48.78,
+      "end": 50.78,
+      "text": "Hello. Hello mark"
+    },
+    {
+      "start": 51.98,
+      "end": 53.98,
+      "text": "So what I want from you guys is project ideas"
+    },
+    {
+      "start": 55.42,
+      "end": 57.26,
+      "text": "because"
+    },
+    {
+      "start": 57.26,
+      "end": 59.26,
+      "text": "another to-do app"
+    },
+    {
+      "start": 59.58,
+      "end": 61.14,
+      "text": "could do"
+    },
+    {
+      "start": 61.14,
+      "end": 65.06,
+      "text": "I love her to do app who doesn't love her to do app customized for your needs, you know"
+    },
+    {
+      "start": 66.22,
+      "end": 68.02,
+      "text": "Could make it work"
+    },
+    {
+      "start": 68.02,
+      "end": 69.74,
+      "text": "That's some cool ones here"
+    },
+    {
+      "start": 69.74,
+      "end": 73.14,
+      "text": "These are my constraints. I want it to be useful in my everyday work"
+    },
+    {
+      "start": 73.14,
+      "end": 76.82,
+      "text": "I want to have some kind of front-end and back-end pieces and"
+    },
+    {
+      "start": 77.74,
+      "end": 83.82,
+      "text": "I want it to have a decent amount of complexity. I also want it to be ideally something that's useful to the viewers as well"
+    },
+    {
+      "start": 83.82,
+      "end": 86.34,
+      "text": "So something AI coding related I think would be cool"
+    },
+    {
+      "start": 86.86,
+      "end": 91.14,
+      "text": "Maybe like a coding agent observability platform in interesting"
+    },
+    {
+      "start": 92.1,
+      "end": 94.1,
+      "text": "The horde is here"
+    },
+    {
+      "start": 95.46,
+      "end": 99.02,
+      "text": "Yeah, we're vibe coding. Absolutely. That's what we're doing with vibe coding"
+    },
+    {
+      "start": 99.02,
+      "end": 101.92,
+      "text": "I feel like we need to like a definition of vibe coding. You know, I mean"
+    },
+    {
+      "start": 103.9,
+      "end": 107.58,
+      "text": "See my see me craft my skills absolutely"
+    },
+    {
+      "start": 108.62,
+      "end": 112.14,
+      "text": "Use Nuxed. Yeah, I mean, I'm not averse to using Nuxed"
+    },
+    {
+      "start": 113.02,
+      "end": 115.02,
+      "text": "Give my opinion about Claude"
+    },
+    {
+      "start": 116.18,
+      "end": 122.14,
+      "text": "Hmm a quite complicated opinion about Claude given I just taught a course on it a new commerce. Yeah, maybe"
+    },
+    {
+      "start": 123.7,
+      "end": 129.58,
+      "text": "Maybe I don't know. It's not very useful for my people though for like my squad for you guys a"
+    },
+    {
+      "start": 130.42,
+      "end": 136.3,
+      "text": "Complete AI coding company a live stream chat manager. I mean, I do so I stream so rarely"
+    },
+    {
+      "start": 137.42,
+      "end": 142.02,
+      "text": "An app that defines vibe coding my own simplified open claw"
+    },
+    {
+      "start": 143.18,
+      "end": 146.96,
+      "text": "See, I've never this is this is gonna kind of I don't know"
+    },
+    {
+      "start": 147.94,
+      "end": 153.64,
+      "text": "Denigrate me in your eyes, maybe but I've never used open claw. I've never tried open claw never really felt the need to actually"
+    },
+    {
+      "start": 155.06,
+      "end": 160.06,
+      "text": "Hmm, but some kind of my own platform something that's useful for you guys would be super cool"
+    },
+    {
+      "start": 160.34,
+      "end": 162.74,
+      "text": "Also, I don't want to get in trouble with anthropic, right, you know"
+    },
+    {
+      "start": 164.82,
+      "end": 169.46,
+      "text": "That's a cheap joke a code-based skills rules adherence observability"
+    },
+    {
+      "start": 169.9,
+      "end": 173.66,
+      "text": "Maybe I think we'd sort of reach that by actually building the thing itself"
+    },
+    {
+      "start": 174.54,
+      "end": 179.4,
+      "text": "Everlight v2. I wanted to be from scratch. I wanted to be from nothing Greenfield"
+    },
+    {
+      "start": 180.18,
+      "end": 184.46,
+      "text": "Coding agent skills prompt eval system leave it all for his tasks Kanban. Yeah"
+    },
+    {
+      "start": 185.18,
+      "end": 188.9,
+      "text": "AI coding Kanban board kind of thing interesting"
+    },
+    {
+      "start": 190.1,
+      "end": 192.1,
+      "text": "See what she people said here"
+    },
+    {
+      "start": 192.98,
+      "end": 194.98,
+      "text": "What do people actually say"
+    },
+    {
+      "start": 196.38,
+      "end": 200.06,
+      "text": "What's this using relatively newer third-party libraries"
+    },
+    {
+      "start": 201.22,
+      "end": 205.68,
+      "text": "Agents not using library specific skills during implementation. Yeah, maybe"
+    },
+    {
+      "start": 208.06,
+      "end": 214.62,
+      "text": "Editing system, hmm, I don't know. I mean, this is terrible, but I just think my own and my own idea is the best"
+    },
+    {
+      "start": 215.5,
+      "end": 218.42,
+      "text": "It's the best idea. I use VS code as my code editor"
+    },
+    {
+      "start": 219.42,
+      "end": 221.42,
+      "text": "Get alternative"
+    },
+    {
+      "start": 222.62,
+      "end": 226.14,
+      "text": "Maybe it's kind of like you get you in the weeds of git stuff really quickly"
+    },
+    {
+      "start": 227.26,
+      "end": 229.26,
+      "text": "And I feel like"
+    },
+    {
+      "start": 230.42,
+      "end": 233.98,
+      "text": "Form wizard, I don't know. I mean, these are these are good like"
+    },
+    {
+      "start": 235.62,
+      "end": 240.54,
+      "text": "Interview level tasks, you know, you can imagine people like doing these interview and then being impressive demos"
+    },
+    {
+      "start": 241.62,
+      "end": 247.78,
+      "text": "Bookmarks manager. Yeah obsidian vault integration. I want to be pretty complex pretty complicated"
+    },
+    {
+      "start": 253.46,
+      "end": 256.02,
+      "text": "I don't know. This is the one though. I mean, this is the one I'm feeling"
+    },
+    {
+      "start": 256.46,
+      "end": 261.58,
+      "text": "Because I think this is something that I noticed that teams need all the time is that if you're"
+    },
+    {
+      "start": 262.1,
+      "end": 265.98,
+      "text": "I'm thinking about like if you're running coding agents in your organization"
+    },
+    {
+      "start": 265.98,
+      "end": 271.02,
+      "text": "You want to see how many tokens people are spending first of all, you want to see if they're having successful sessions or not"
+    },
+    {
+      "start": 271.14,
+      "end": 273.14,
+      "text": "You want to see if those sessions are"
+    },
+    {
+      "start": 275.74,
+      "end": 282.06,
+      "text": "You know productive or not and how many tokens they're using how much context window using up how what models people are using all that stuff"
+    },
+    {
+      "start": 283.98,
+      "end": 287.1,
+      "text": "Monoripo, yeah, probably could be a monoripo if it gets big enough"
+    },
+    {
+      "start": 292.66,
+      "end": 295.74,
+      "text": "When OSS SDK that can be used independently from the platform"
+    },
+    {
+      "start": 295.74,
+      "end": 300.9,
+      "text": "Absolutely, that's what I'm thinking is that you would have a version of it that was deployed and then a version of it that was local"
+    },
+    {
+      "start": 302.26,
+      "end": 304.26,
+      "text": "What my tokens am I expecting to burn here?"
+    },
+    {
+      "start": 305.38,
+      "end": 307.38,
+      "text": "I don't know. I'm on"
+    },
+    {
+      "start": 308.38,
+      "end": 310.38,
+      "text": "Anthropic 20x max"
+    },
+    {
+      "start": 310.66,
+      "end": 312.98,
+      "text": "Yeah, I mean, that's what I'm thinking Ralph needs a dashboard"
+    },
+    {
+      "start": 314.98,
+      "end": 319.34,
+      "text": "How do I recommend using my skills along with relatively newer third-party libraries?"
+    },
+    {
+      "start": 321.18,
+      "end": 328.34,
+      "text": "If you're having trouble with those third-party libraries, I would create a skill for that third-party library and then pull it into like"
+    },
+    {
+      "start": 329.26,
+      "end": 331.26,
+      "text": "Basically create documentation for that skill"
+    },
+    {
+      "start": 333.02,
+      "end": 338.9,
+      "text": "That sort of tells the coding agent how to use it and then you can pull it in during the review phase"
+    },
+    {
+      "start": 339.98,
+      "end": 342.78,
+      "text": "This is the kind of stuff that will just be really like"
+    },
+    {
+      "start": 343.98,
+      "end": 350.3,
+      "text": "This is I think why you guys want to watch me is so that you can pick up because I feel like actually I'm sort of I don't know"
+    },
+    {
+      "start": 350.3,
+      "end": 352.3,
+      "text": "I feel like I'm"
+    },
+    {
+      "start": 352.74,
+      "end": 357.26,
+      "text": "Just based on the conversations and the questions people ask I'm sort of quite I don't have far ahead"
+    },
+    {
+      "start": 357.26,
+      "end": 361.78,
+      "text": "It's not the right way of framing it. I think but I have very clearly"
+    },
+    {
+      "start": 362.34,
+      "end": 367.42,
+      "text": "Very clear opinions about all this stuff. I don't know if they're good opinions, but I have very clear and definite opinions"
+    },
+    {
+      "start": 368.62,
+      "end": 372.38,
+      "text": "The cell workflows, isn't it a coding agent observability platform? I don't think so"
+    },
+    {
+      "start": 373.7,
+      "end": 377.58,
+      "text": "Yeah, that's what I'm thinking like you need somewhere to gather the data for your organization"
+    },
+    {
+      "start": 377.9,
+      "end": 381.62,
+      "text": "For a coding agent observability platform. I'm sort of talking myself into this now"
+    },
+    {
+      "start": 381.74,
+      "end": 389.7,
+      "text": "You needed like a central place for all this data and I feel like you might want that to be a kind of pluggable storage mechanism as well"
+    },
+    {
+      "start": 390.02,
+      "end": 392.3,
+      "text": "You know, you might want to store it in your own servers"
+    },
+    {
+      "start": 395.02,
+      "end": 399.34,
+      "text": "There's sort of there's a lot of complexity there which I like I've gone deeper"
+    },
+    {
+      "start": 402.5,
+      "end": 404.5,
+      "text": "I use Opus most of the time. Yeah"
+    },
+    {
+      "start": 405.94,
+      "end": 410.18,
+      "text": "Yeah, most of the time. I'm really testing 4.7 now"
+    },
+    {
+      "start": 411.46,
+      "end": 415.86,
+      "text": "Yeah, I think maybe maybe I should just do it coding agent observability platform"
+    },
+    {
+      "start": 417.22,
+      "end": 423.78,
+      "text": "Because yeah, I feel like it's the missing link in the way I'm teaching as well because I'm I'm not observing my own sessions in the same way"
+    },
+    {
+      "start": 425.98,
+      "end": 430.62,
+      "text": "But I should I think a BIOS I'm not building a BIOS. Hell no"
+    },
+    {
+      "start": 433.34,
+      "end": 435.34,
+      "text": "Mmm"
+    },
+    {
+      "start": 435.34,
+      "end": 439.22,
+      "text": "For a new project why not build like Cody Kent agent? I'm gonna leave it Kent's you know"
+    },
+    {
+      "start": 439.22,
+      "end": 443.18,
+      "text": "I can't just copy Kent all the time. My whole career is basically copying Kent"
+    },
+    {
+      "start": 443.18,
+      "end": 446.02,
+      "text": "It's just doing the Kent playbook, but worse than Kent"
+    },
+    {
+      "start": 449.14,
+      "end": 453.54,
+      "text": "Haven't moved past agent in the ID can barely control that let alone a swarm of agents. Yeah, I mean I"
+    },
+    {
+      "start": 454.86,
+      "end": 456.86,
+      "text": "Just want to dive in you know, I mean I"
+    },
+    {
+      "start": 458.06,
+      "end": 460.7,
+      "text": "What do you think I mean is there a way I can add votes here"
+    },
+    {
+      "start": 461.78,
+      "end": 463.98,
+      "text": "Can I add votes? I think I can"
+    },
+    {
+      "start": 465.54,
+      "end": 467.54,
+      "text": "Feel like I can I feel like there's a way of doing it"
+    },
+    {
+      "start": 469.66,
+      "end": 471.66,
+      "text": "Yes, hang on start a poll"
+    },
+    {
+      "start": 475.62,
+      "end": 477.78,
+      "text": "Should I build a coding agent observability platform"
+    },
+    {
+      "start": 478.66,
+      "end": 481.86,
+      "text": "Just did a bit of dictation. I'm just gonna say yes or no"
+    },
+    {
+      "start": 482.9,
+      "end": 486.3,
+      "text": "Start poll. I've never done this before. I've no idea if it's gonna be any good"
+    },
+    {
+      "start": 488.18,
+      "end": 492.38,
+      "text": "Thanks for ever lights. Oh, sweet. Thank you. I haven't been working on it as much as I should"
+    },
+    {
+      "start": 494.9,
+      "end": 496.9,
+      "text": "Yeah, we need to do a slide-o I"
+    },
+    {
+      "start": 497.38,
+      "end": 501.1,
+      "text": "Don't know. Can you see that pole? I'm just gonna check if actually I can see that pole"
+    },
+    {
+      "start": 504.06,
+      "end": 506.06,
+      "text": "Go over here for a sec"
+    },
+    {
+      "start": 508.62,
+      "end": 510.62,
+      "text": "Is there one there?"
+    },
+    {
+      "start": 512.18,
+      "end": 517.7,
+      "text": "Can you guys see a pole? Oh, yes. Okay. Yes, okay 78% for yes, that's pretty good"
+    },
+    {
+      "start": 518.3,
+      "end": 520.3,
+      "text": "hide my discord DMs"
+    },
+    {
+      "start": 520.86,
+      "end": 522.86,
+      "text": "T3 code"
+    },
+    {
+      "start": 524.78,
+      "end": 528.7,
+      "text": "Do I have any help I suppose well, I've given you really is a"
+    },
+    {
+      "start": 529.66,
+      "end": 531.66,
+      "text": "one idea I haven't sort of"
+    },
+    {
+      "start": 534.42,
+      "end": 536.42,
+      "text": "Developed it. Yeah, you can see it good"
+    },
+    {
+      "start": 537.14,
+      "end": 542.34,
+      "text": "Claude is moderator. Wolf. I don't know when we when we get big enough to need mods then we'll gather"
+    },
+    {
+      "start": 545.06,
+      "end": 549.34,
+      "text": "Am I into piano? Yes, I am into piano. I used to be a singing teacher weird question"
+    },
+    {
+      "start": 552.34,
+      "end": 555.6,
+      "text": "You saw the pole before I saw the video of them really interesting"
+    },
+    {
+      "start": 557.26,
+      "end": 559.26,
+      "text": "Interesting"
+    },
+    {
+      "start": 561.18,
+      "end": 566.66,
+      "text": "Yeah, I mean because there's AI observability like for AI in applications, right?"
+    },
+    {
+      "start": 566.78,
+      "end": 571.06,
+      "text": "But then I feel like there's a layer missing which is observability for"
+    },
+    {
+      "start": 571.66,
+      "end": 578.94,
+      "text": "Your own coding agents. I don't know maybe we should probably validate this, right? Let's actually open up a terminal"
+    },
+    {
+      "start": 580.62,
+      "end": 582.62,
+      "text": "And let's just ask Claude about this"
+    },
+    {
+      "start": 583.26,
+      "end": 585.26,
+      "text": "So I'm just gonna run Claude in my home directory"
+    },
+    {
+      "start": 587.3,
+      "end": 589.3,
+      "text": "Yes, I trust this folder"
+    },
+    {
+      "start": 591.58,
+      "end": 598.54,
+      "text": "Claude I've got an idea for an application. I want to build it's an observability platform and it's an observability platform that"
+    },
+    {
+      "start": 599.78,
+      "end": 603.46,
+      "text": "Essentially is personal. So it's something that you run yourself"
+    },
+    {
+      "start": 604.58,
+      "end": 606.18,
+      "text": "targeting"
+    },
+    {
+      "start": 606.18,
+      "end": 612.5,
+      "text": "Claude code or whatever coding agent you're using I imagine what we're really trying to do is just upload the session to"
+    },
+    {
+      "start": 612.98,
+      "end": 615.34,
+      "text": "Somewhere shared and then we can do"
+    },
+    {
+      "start": 617.66,
+      "end": 622.78,
+      "text": "Let's have a think I'm using whisper flow by the way is my transcription tool"
+    },
+    {
+      "start": 628.34,
+      "end": 630.18,
+      "text": "metrics and"
+    },
+    {
+      "start": 630.18,
+      "end": 631.46,
+      "text": "analysis and"
+    },
+    {
+      "start": 631.46,
+      "end": 636.34,
+      "text": "Maybe human feedback rating different sessions to see how they're doing and have"
+    },
+    {
+      "start": 636.86,
+      "end": 641.14,
+      "text": "This done per user so we can see across our organization. What's going on?"
+    },
+    {
+      "start": 643.66,
+      "end": 648.74,
+      "text": "And I'm gonna use let's use just a standard grill me for this. This is one of my skills"
+    },
+    {
+      "start": 648.74,
+      "end": 653.54,
+      "text": "I want you to harden this into a decent idea that I can potentially build"
+    },
+    {
+      "start": 655.38,
+      "end": 657.38,
+      "text": "The stack will be TypeScript"
+    },
+    {
+      "start": 659.34,
+      "end": 662.38,
+      "text": "You can't talk to it. I mean, this is just me using whisper flow basically"
+    },
+    {
+      "start": 665.14,
+      "end": 670.34,
+      "text": "Yes, it's not me replacing Claude, it's just adding a layer of observable observability on top of it"
+    },
+    {
+      "start": 672.02,
+      "end": 677.42,
+      "text": "Groom is great. Groom is so good. So it's loading the skill. It's okay. Here we go. Whoa"
+    },
+    {
+      "start": 679.18,
+      "end": 681.18,
+      "text": "Geez boy, that's a lot of text"
+    },
+    {
+      "start": 681.46,
+      "end": 685.46,
+      "text": "Okay, this is a good question though. Who's the primary user? What decisions does this tool help them make?"
+    },
+    {
+      "start": 685.54,
+      "end": 691.98,
+      "text": "There's a big fork here individual developer engineering manager or team lead or platform dev ex at a company"
+    },
+    {
+      "start": 692.14,
+      "end": 698.74,
+      "text": "That's good. What's our agent ROI? What prompts tools? MCPs are worth to spend where are we bleeding tokens costs and adoption?"
+    },
+    {
+      "start": 698.86,
+      "end": 703.62,
+      "text": "Analytics ha these sound compatible, but they're not they dictate completely different UX"
+    },
+    {
+      "start": 704.94,
+      "end": 709.3,
+      "text": "So good a is a personal timeline with a deep dive in one session. Correct"
+    },
+    {
+      "start": 709.42,
+      "end": 712.82,
+      "text": "B is cohort dashboards and comparisons which creates surveillance anxiety"
+    },
+    {
+      "start": 713.98,
+      "end": 716.98,
+      "text": "C is aggregate metrics and doesn't care about individuals"
+    },
+    {
+      "start": 720.62,
+      "end": 723.62,
+      "text": "Yeah, so I suppose our what's our ideal user here I"
+    },
+    {
+      "start": 724.7,
+      "end": 727.74,
+      "text": "Have tried caveman. Yeah, I mean, I haven't tried it properly"
+    },
+    {
+      "start": 728.5,
+      "end": 733.42,
+      "text": "And maybe I should try caveman. I do have a caveman skill available. That's sort of my version of caveman"
+    },
+    {
+      "start": 735.98,
+      "end": 740.5,
+      "text": "Whisper flows fine for me. You think one individual developer, I mean"
+    },
+    {
+      "start": 742.66,
+      "end": 746.3,
+      "text": "Let's see a first with C star aggregates as a natural roll up"
+    },
+    {
+      "start": 747.66,
+      "end": 751.7,
+      "text": "See B though, I think you do want groupings of individual developers, right?"
+    },
+    {
+      "start": 752.9,
+      "end": 755.94,
+      "text": "We think one or a are we choosing a?"
+    },
+    {
+      "start": 760.02,
+      "end": 765.46,
+      "text": "Yes, I think you do want a manager to be able to open and review a specific engineers session"
+    },
+    {
+      "start": 765.46,
+      "end": 769.62,
+      "text": "I imagine that the way these are going to work in teams is you're going to"
+    },
+    {
+      "start": 771.58,
+      "end": 773.58,
+      "text": "Need to think about"
+    },
+    {
+      "start": 774.74,
+      "end": 781.26,
+      "text": "Or someone on the team is going to be responsible for making the AI better on that team and is going to be the DRI for that"
+    },
+    {
+      "start": 781.46,
+      "end": 786.18,
+      "text": "So you need the ability to dive into someone's session as well as to debug that session with them"
+    },
+    {
+      "start": 787.42,
+      "end": 789.42,
+      "text": "There's also the potential for"
+    },
+    {
+      "start": 789.82,
+      "end": 796.86,
+      "text": "Actually doing this live so someone's having a problem in their session right now the engineering manager can view that and see what's going on with it. I"
+    },
+    {
+      "start": 798.9,
+      "end": 802.74,
+      "text": "Really like this idea. I'm really talking myself into it. So I'm gonna end the poll"
+    },
+    {
+      "start": 804.02,
+      "end": 806.34,
+      "text": "You know, by the way, I'm not really answering the question"
+    },
+    {
+      "start": 806.34,
+      "end": 810.82,
+      "text": "I'm sort of it's prompting me to think of things that I'm saying that's something really important with grill me"
+    },
+    {
+      "start": 813.38,
+      "end": 816.1,
+      "text": "No, I can't do a poll for each one of these it's going to take forever"
+    },
+    {
+      "start": 816.94,
+      "end": 819.58,
+      "text": "Okay, consent and visibility model is session"
+    },
+    {
+      "start": 820.06,
+      "end": 824.5,
+      "text": "Sharing opt-in per session always on by all policy or developer control with redaction. Oh"
+    },
+    {
+      "start": 825.3,
+      "end": 832.42,
+      "text": "How good are these questions, man? How good are these questions coding sessions often contain secrets half form thoughts?"
+    },
+    {
+      "start": 832.42,
+      "end": 836.54,
+      "text": "Yeah, so PII personal identifiable information is going to be really important here"
+    },
+    {
+      "start": 837.42,
+      "end": 842.98,
+      "text": "Manager can watch live without a clear consent model will either I get the tool banned by legal security. Absolutely, right?"
+    },
+    {
+      "start": 843.14,
+      "end": 847.7,
+      "text": "We'll make developers self-censor and root real work elsewhere killing the data quality you need brilliant"
+    },
+    {
+      "start": 849.7,
+      "end": 853.46,
+      "text": "So always on aug mandated like corporate endpoint monitoring"
+    },
+    {
+      "start": 854.42,
+      "end": 856.42,
+      "text": "Simple but hostile"
+    },
+    {
+      "start": 857.14,
+      "end": 860.1,
+      "text": "Per session opt-in. Yeah, so you share this session. I mean"
+    },
+    {
+      "start": 860.9,
+      "end": 866.66,
+      "text": "This is bad. You don't want per session opt-in because you want stats on what the devs are doing"
+    },
+    {
+      "start": 870.9,
+      "end": 874.9,
+      "text": "When the DRI opens someone past session does the developer get notified I"
+    },
+    {
+      "start": 876.5,
+      "end": 883.06,
+      "text": "Don't think so. I think that's gross. I don't think so. I think what you've got to realize is that your sessions are public to the organization"
+    },
+    {
+      "start": 884.9,
+      "end": 886.9,
+      "text": "I think the developer"
+    },
+    {
+      "start": 887.14,
+      "end": 889.14,
+      "text": "When they're plugged into the system"
+    },
+    {
+      "start": 890.1,
+      "end": 892.1,
+      "text": "It should be kind of"
+    },
+    {
+      "start": 892.58,
+      "end": 896.42,
+      "text": "tacitly understood that their coding sessions are public within the organization"
+    },
+    {
+      "start": 899.7,
+      "end": 903.38,
+      "text": "Having that data is incredibly valuable to companies and so it's important that it's"
+    },
+    {
+      "start": 904.5,
+      "end": 906.5,
+      "text": "Visible to all stakeholders"
+    },
+    {
+      "start": 908.98,
+      "end": 911.22,
+      "text": "We're grilling on the idea of an observability platform"
+    },
+    {
+      "start": 911.94,
+      "end": 913.94,
+      "text": "um for agents"
+    },
+    {
+      "start": 914.42,
+      "end": 920.58,
+      "text": "That's what we're up to. Um, I have sort of tried pie. I mean, I haven't really tried pie. I need to try more"
+    },
+    {
+      "start": 925.54,
+      "end": 927.54,
+      "text": "Hmm where am I going here?"
+    },
+    {
+      "start": 931.54,
+      "end": 933.54,
+      "text": "I think"
+    },
+    {
+      "start": 935.14,
+      "end": 937.14,
+      "text": "Oh my brain's gone"
+    },
+    {
+      "start": 937.7,
+      "end": 939.78,
+      "text": "um"
+    },
+    {
+      "start": 939.78,
+      "end": 944.66,
+      "text": "So I think we need to be less concerned about the privacy of the individual developer more about the"
+    },
+    {
+      "start": 946.26,
+      "end": 950.26,
+      "text": "Importance of the data that we're getting I also think that there's"
+    },
+    {
+      "start": 951.7,
+      "end": 956.9,
+      "text": "We need to support on-premises data so that the data never leaves the organization never leaves their servers"
+    },
+    {
+      "start": 959.3,
+      "end": 966.1,
+      "text": "Because i'm not interested in building this into a massive company. I want this to be an open source tool that is uh useful everywhere"
+    },
+    {
+      "start": 969.38,
+      "end": 974.1,
+      "text": "Something I notice people do with these grilling sessions is they just answer like a b or c, right?"
+    },
+    {
+      "start": 974.42,
+      "end": 977.54,
+      "text": "And when we're in the kind of blue sky phase here when we're really not sure"
+    },
+    {
+      "start": 978.18,
+      "end": 980.18,
+      "text": "um, what's"
+    },
+    {
+      "start": 980.18,
+      "end": 981.7,
+      "text": "uh"
+    },
+    {
+      "start": 981.7,
+      "end": 985.86,
+      "text": "How we're supposed to be working then it's or what we're even building"
+    },
+    {
+      "start": 987.54,
+      "end": 990.26,
+      "text": "It's not good to be railroaded that much. Okay, here we go"
+    },
+    {
+      "start": 992.26,
+      "end": 995.54,
+      "text": "Q3 how do sessions get into the system? What's the ingestion mechanism?"
+    },
+    {
+      "start": 995.94,
+      "end": 1003.46,
+      "text": "This decides the entire shape of the client and it's the technical spine. Oh, I love the way it chooses really nice words like this technical spine here"
+    },
+    {
+      "start": 1004.74,
+      "end": 1006.74,
+      "text": "um, okay. Yeah, so this is"
+    },
+    {
+      "start": 1008.5,
+      "end": 1010.5,
+      "text": "This is important, but it's sort of like a"
+    },
+    {
+      "start": 1012.74,
+      "end": 1014.74,
+      "text": "um implementation detail"
+    },
+    {
+      "start": 1016.82,
+      "end": 1018.82,
+      "text": "Tail the json. Yeah, so you got"
+    },
+    {
+      "start": 1019.62,
+      "end": 1021.62,
+      "text": "My initial thought here was hooks"
+    },
+    {
+      "start": 1021.86,
+      "end": 1024.74,
+      "text": "You've got claw code hooks post tool use stop session end hooks"
+    },
+    {
+      "start": 1026.18,
+      "end": 1031.7,
+      "text": "So all you've got something like this where it creates a bunch of transcripts on disk"
+    },
+    {
+      "start": 1032.82,
+      "end": 1036.1,
+      "text": "Um, you've got a little demon that watches the directory uploads deltas"
+    },
+    {
+      "start": 1036.82,
+      "end": 1039.46,
+      "text": "um sort of works with cursor codex"
+    },
+    {
+      "start": 1040.18,
+      "end": 1042.18,
+      "text": "Ada that's a random one"
+    },
+    {
+      "start": 1042.66,
+      "end": 1045.46,
+      "text": "No hook config required survives across agent restarts"
+    },
+    {
+      "start": 1047.38,
+      "end": 1049.38,
+      "text": "Yes, um, so"
+    },
+    {
+      "start": 1053.62,
+      "end": 1058.98,
+      "text": "Now this is tricky because I don't want to commit to something super early before we understand the trade-offs"
+    },
+    {
+      "start": 1059.62,
+      "end": 1062.58,
+      "text": "Um, so I think I need to get it to do some research here"
+    },
+    {
+      "start": 1063.46,
+      "end": 1069.06,
+      "text": "I'm getting high on claud's poetry. Absolutely. I mean, wherever good ideas come from you've got to give them credit"
+    },
+    {
+      "start": 1071.14,
+      "end": 1075.54,
+      "text": "I think I'm going to do some research here. I want something that's coding agent agnostic"
+    },
+    {
+      "start": 1075.86,
+      "end": 1080.42,
+      "text": "That at least works with the top coding agents. I'm going to define the top coding agents as claw code"
+    },
+    {
+      "start": 1080.98,
+      "end": 1083.78,
+      "text": "codex pie open code and"
+    },
+    {
+      "start": 1084.34,
+      "end": 1086.34,
+      "text": "github copilot cli"
+    },
+    {
+      "start": 1088.42,
+      "end": 1094.58,
+      "text": "So if we have hooks there, I want to I want you to go and investigate each of those with different sub agents"
+    },
+    {
+      "start": 1095.14,
+      "end": 1098.82,
+      "text": "to ping me backs and information on what they support and"
+    },
+    {
+      "start": 1102.26,
+      "end": 1107.86,
+      "text": "Whether they support open telemetry or whether we would need some kind of proxy over them to grab all of the right information"
+    },
+    {
+      "start": 1108.82,
+      "end": 1111.38,
+      "text": "I think it's inevitable that they will emit"
+    },
+    {
+      "start": 1114.02,
+      "end": 1119.78,
+      "text": "Uh different schemas and different shapes and we might just need to handle that inside the application for instance"
+    },
+    {
+      "start": 1120.34,
+      "end": 1122.34,
+      "text": "the shapes that"
+    },
+    {
+      "start": 1122.66,
+      "end": 1127.7,
+      "text": "pie emitted changed very very recently in a patch version so"
+    },
+    {
+      "start": 1129.54,
+      "end": 1133.22,
+      "text": "Whatever we do we're going to be kind of on the hook for these systems"
+    },
+    {
+      "start": 1135.94,
+      "end": 1137.94,
+      "text": "There we go, that was a big one"
+    },
+    {
+      "start": 1139.7,
+      "end": 1142.58,
+      "text": "Whisper flow does a really good job of like turning this into transcription"
+    },
+    {
+      "start": 1143.22,
+      "end": 1144.42,
+      "text": "or like"
+    },
+    {
+      "start": 1144.42,
+      "end": 1152.18,
+      "text": "Whoops of making the transcription nicer and notice that I'm using a specifically call out sub agents because I noticed a"
+    },
+    {
+      "start": 1154.58,
+      "end": 1156.58,
+      "text": "Oh, not sure which agent you mean"
+    },
+    {
+      "start": 1158.02,
+      "end": 1161.06,
+      "text": "Pie is the agent. I mean you luddite"
+    },
+    {
+      "start": 1163.78,
+      "end": 1168.74,
+      "text": "So it's kicking off for in parallel. It's kicking off a claud code guide agents, which is nice"
+    },
+    {
+      "start": 1168.74,
+      "end": 1172.18,
+      "text": "That's it's kind of built-in agents that understands how to teach claud code"
+    },
+    {
+      "start": 1172.58,
+      "end": 1178.74,
+      "text": "Then it's doing one for open ai codex cli observability open code observability github copilot cli observability"
+    },
+    {
+      "start": 1179.46,
+      "end": 1182.74,
+      "text": "So, yeah, there's probably going to be a ton of permission requests here"
+    },
+    {
+      "start": 1184.18,
+      "end": 1186.42,
+      "text": "We're on claud code. We're on 4.7"
+    },
+    {
+      "start": 1189.46,
+      "end": 1192.58,
+      "text": "Yeah, exactly Colin you can just add your own jsnl files"
+    },
+    {
+      "start": 1194.74,
+      "end": 1197.94,
+      "text": "Yeah, I grill it. I mean grilling sessions are amazing"
+    },
+    {
+      "start": 1197.94,
+      "end": 1204.1,
+      "text": "So if you've got any questions ask me them now because I'm probably just going to be answering permissions requests for a few minutes"
+    },
+    {
+      "start": 1214.74,
+      "end": 1220.66,
+      "text": "Can't wait for the day when claud starts to learn how to code from a claud code course. Well, I mean skills are basically that, you know"
+    },
+    {
+      "start": 1223.06,
+      "end": 1225.06,
+      "text": "Oh"
+    },
+    {
+      "start": 1226.58,
+      "end": 1230.58,
+      "text": "I mean the luddites are often right. That's what makes them historically notable"
+    },
+    {
+      "start": 1234.82,
+      "end": 1238.42,
+      "text": "Will you ever return to talk about pure software principles that is not on the rounds of ai topics?"
+    },
+    {
+      "start": 1238.98,
+      "end": 1241.86,
+      "text": "I I'm really loving this new area because I get to talk about"
+    },
+    {
+      "start": 1242.58,
+      "end": 1244.58,
+      "text": "software principles"
+    },
+    {
+      "start": 1244.58,
+      "end": 1247.38,
+      "text": "While dressing them up as ai gossip"
+    },
+    {
+      "start": 1248.9,
+      "end": 1252.18,
+      "text": "I'm not on bypass permissions mode because I'm not running inside a sandbox"
+    },
+    {
+      "start": 1252.58,
+      "end": 1254.58,
+      "text": "I could run this inside a sandbox"
+    },
+    {
+      "start": 1254.66,
+      "end": 1256.5,
+      "text": "um"
+    },
+    {
+      "start": 1256.5,
+      "end": 1258.5,
+      "text": "But I'm just not at the moment"
+    },
+    {
+      "start": 1265.78,
+      "end": 1268.5,
+      "text": "Have I tried auto mode? I don't think I have access to auto mode yet"
+    },
+    {
+      "start": 1273.94,
+      "end": 1279.14,
+      "text": "Do I think it would be beneficial to have codex go over my claud plan now I think people um"
+    },
+    {
+      "start": 1280.1,
+      "end": 1286.1,
+      "text": "Over review their plans and I think this is a classic mistake in web development"
+    },
+    {
+      "start": 1288.18,
+      "end": 1290.18,
+      "text": "We got brist or what's up"
+    },
+    {
+      "start": 1290.58,
+      "end": 1296.66,
+      "text": "Some like people go over and over the specs that they're going to create when what they need to be doing is getting to code"
+    },
+    {
+      "start": 1300.58,
+      "end": 1305.86,
+      "text": "Um, claud flower is releasing some amazing features. Am I planning interested to cover them? I don't know maybe"
+    },
+    {
+      "start": 1309.22,
+      "end": 1315.3,
+      "text": "Can I touch on my afk implementation method? Yeah, I've really made some big updates to that recently which is I have"
+    },
+    {
+      "start": 1316.26,
+      "end": 1318.26,
+      "text": "oh my uh"
+    },
+    {
+      "start": 1318.82,
+      "end": 1324.26,
+      "text": "Uh wind is blowing outside is a uh repo here called sandcastle and sandcastle"
+    },
+    {
+      "start": 1325.14,
+      "end": 1330.34,
+      "text": "Is a coding agent orchestrator and this is incredible because it allows you to run"
+    },
+    {
+      "start": 1331.3,
+      "end": 1334.5,
+      "text": "Some agent inside some sandbox"
+    },
+    {
+      "start": 1335.22,
+      "end": 1337.22,
+      "text": "so it allows you to"
+    },
+    {
+      "start": 1337.78,
+      "end": 1343.38,
+      "text": "Really do amazing things with your setup. It is really really cool"
+    },
+    {
+      "start": 1356.1,
+      "end": 1361.3,
+      "text": "Yeah, and um when we actually get to build this then I will be using sandcastle for it because it's incredible"
+    },
+    {
+      "start": 1362.5,
+      "end": 1365.94,
+      "text": "Uh, yeah, don't worry about raw github user content"
+    },
+    {
+      "start": 1368.1,
+      "end": 1371.14,
+      "text": "Ooh, we got a lot of folks in this stream. Hey 250 of you"
+    },
+    {
+      "start": 1373.38,
+      "end": 1375.38,
+      "text": "I'm your inspiration. Oh, thank you"
+    },
+    {
+      "start": 1378.1,
+      "end": 1379.46,
+      "text": "Oh"
+    },
+    {
+      "start": 1379.46,
+      "end": 1384.58,
+      "text": "So it's done all of its fetching. It seems about copilot cli observability"
+    },
+    {
+      "start": 1388.18,
+      "end": 1394.34,
+      "text": "Just added an issue requesting docker sbx as a provider. Haha interesting. Let's just quickly check that out"
+    },
+    {
+      "start": 1397.14,
+      "end": 1399.14,
+      "text": "Uh-huh"
+    },
+    {
+      "start": 1399.38,
+      "end": 1401.38,
+      "text": "micro vms"
+    },
+    {
+      "start": 1406.34,
+      "end": 1408.34,
+      "text": "Interesting"
+    },
+    {
+      "start": 1409.38,
+      "end": 1414.26,
+      "text": "What were some challenges when creating sandcastle? I don't know. Um"
+    },
+    {
+      "start": 1416.26,
+      "end": 1421.38,
+      "text": "That usual software development challenges really sort of figuring out the language figuring out the api figuring out what we're supposed to do"
+    },
+    {
+      "start": 1424.98,
+      "end": 1429.7,
+      "text": "Yeah, this is it. This is um, this is what we're building clod code observability. Um, trying to"
+    },
+    {
+      "start": 1430.5,
+      "end": 1435.14,
+      "text": "Or coding agent observability. Let's see what it says. It's been going for about four minutes now"
+    },
+    {
+      "start": 1443.38,
+      "end": 1447.86,
+      "text": "Use sandcastle to automate the app kind of works, but it's not structured at all becoming tough to change things"
+    },
+    {
+      "start": 1448.34,
+      "end": 1451.86,
+      "text": "um, if you end up with an application that's really difficult to change or you"
+    },
+    {
+      "start": 1452.9,
+      "end": 1453.94,
+      "text": "um"
+    },
+    {
+      "start": 1453.94,
+      "end": 1460.82,
+      "text": "There's a really nice definition of complexity in application, which is complex apps are hard to change"
+    },
+    {
+      "start": 1461.46,
+      "end": 1463.46,
+      "text": "Simple apps are easy to change"
+    },
+    {
+      "start": 1463.78,
+      "end": 1464.9,
+      "text": "the"
+    },
+    {
+      "start": 1464.9,
+      "end": 1470.18,
+      "text": "Way you turn a complex app into a simple app is you run this improve code base architecture skill"
+    },
+    {
+      "start": 1470.18,
+      "end": 1472.26,
+      "text": "Or at least this will give you opportunities for doing it"
+    },
+    {
+      "start": 1473.78,
+      "end": 1483.3,
+      "text": "This explores a code base like an ai would surface architectural friction discover opportunities for improving testability and propose module deepening refactors as github issues"
+    },
+    {
+      "start": 1484.5,
+      "end": 1490.74,
+      "text": "So, yeah, it's it's difficult to turn a crap code base into a good code base, but this will set you on the right road"
+    },
+    {
+      "start": 1493.62,
+      "end": 1497.94,
+      "text": "Could you please recommend a technology stack for projects so I can create bots backends and my sas projects"
+    },
+    {
+      "start": 1498.42,
+      "end": 1500.42,
+      "text": "A tap script just use tap script"
+    },
+    {
+      "start": 1500.58,
+      "end": 1502.58,
+      "text": "Tap script node. It's brilliant"
+    },
+    {
+      "start": 1502.82,
+      "end": 1504.82,
+      "text": "It's what I built my entire career on"
+    },
+    {
+      "start": 1505.94,
+      "end": 1507.94,
+      "text": "So, okay, here we go. Here we go"
+    },
+    {
+      "start": 1508.9,
+      "end": 1511.94,
+      "text": "All five agents have a similar shape thankfully"
+    },
+    {
+      "start": 1512.98,
+      "end": 1514.98,
+      "text": "so"
+    },
+    {
+      "start": 1517.46,
+      "end": 1522.82,
+      "text": "So they have a hook surface here, okay, so claw code has some sort of hook service"
+    },
+    {
+      "start": 1524.18,
+      "end": 1524.98,
+      "text": "um"
+    },
+    {
+      "start": 1524.98,
+      "end": 1526.98,
+      "text": "pie has a hook surface to"
+    },
+    {
+      "start": 1527.7,
+      "end": 1529.7,
+      "text": "Open code has a plugin system"
+    },
+    {
+      "start": 1530.18,
+      "end": 1532.26,
+      "text": "co-pilot cli has some hooks"
+    },
+    {
+      "start": 1534.66,
+      "end": 1539.3,
+      "text": "And every agent gives you an event hook and an append only jsnl on disk interesting"
+    },
+    {
+      "start": 1539.78,
+      "end": 1543.78,
+      "text": "Schemers all differ and all evolve. There's no single just use hotel answer"
+    },
+    {
+      "start": 1544.18,
+      "end": 1549.7,
+      "text": "Copilot and pie have no useful hotel at the cli level. The proxy path is blocked for copilot. Okay, interesting"
+    },
+    {
+      "start": 1550.74,
+      "end": 1552.58,
+      "text": "so"
+    },
+    {
+      "start": 1552.58,
+      "end": 1555.06,
+      "text": "A per agent adapter is unavoidable. Yeah, that's what I thought"
+    },
+    {
+      "start": 1555.7,
+      "end": 1562.42,
+      "text": "Each adapter uses that agent's best surface hooks for live events just tailors backstop and normalizes into your internal event schema"
+    },
+    {
+      "start": 1562.42,
+      "end": 1564.58,
+      "text": "Yeah, one local demon loads the right adapter"
+    },
+    {
+      "start": 1565.3,
+      "end": 1570.5,
+      "text": "Uh, does it resolve q3 chill out mate chill out ai's are we so aggressive in like"
+    },
+    {
+      "start": 1571.86,
+      "end": 1572.98,
+      "text": "Trying to"
+    },
+    {
+      "start": 1572.98,
+      "end": 1574.98,
+      "text": "Create consensus, you know"
+    },
+    {
+      "start": 1576.1,
+      "end": 1580.26,
+      "text": "Yeah, so i'm not going to answer q4 yet because we haven't resolved q3"
+    },
+    {
+      "start": 1582.18,
+      "end": 1584.18,
+      "text": "Go back to q3 for me"
+    },
+    {
+      "start": 1588.42,
+      "end": 1594.18,
+      "text": "I still haven't decided yet about whether we do a hooks based system or whether we track the jsnl locally"
+    },
+    {
+      "start": 1595.7,
+      "end": 1597.7,
+      "text": "I"
+    },
+    {
+      "start": 1600.58,
+      "end": 1602.58,
+      "text": "Happy to catch me live happy to be live"
+    },
+    {
+      "start": 1603.94,
+      "end": 1608.42,
+      "text": "279 of you in the chat it's huge this is big for my streams"
+    },
+    {
+      "start": 1610.98,
+      "end": 1612.98,
+      "text": "I mean I almost never streamed so"
+    },
+    {
+      "start": 1615.38,
+      "end": 1618.74,
+      "text": "Yeah, haven't decided about a hooks based system or whether we track the jsnl locally"
+    },
+    {
+      "start": 1618.9,
+      "end": 1622.98,
+      "text": "I guess I mean this is just something that we could experiment with an implementation"
+    },
+    {
+      "start": 1623.06,
+      "end": 1626.02,
+      "text": "It's kind of an implementation detail. It sounds like"
+    },
+    {
+      "start": 1630.18,
+      "end": 1632.18,
+      "text": "Either option is viable"
+    },
+    {
+      "start": 1634.98,
+      "end": 1639.46,
+      "text": "Need your opinion about models miss the edge cases in the product you're making we always have to write it manually"
+    },
+    {
+      "start": 1639.46,
+      "end": 1641.46,
+      "text": "These can be solved by making a skill or something. It gives you edge"
+    },
+    {
+      "start": 1642.34,
+      "end": 1646.66,
+      "text": "Edge cases. I mean catching edge cases is hard like it's a hard thing"
+    },
+    {
+      "start": 1646.98,
+      "end": 1650.58,
+      "text": "You have to um, accept that you're not going to catch all edge cases when you're planning"
+    },
+    {
+      "start": 1650.9,
+      "end": 1656.5,
+      "text": "So you have to build in the idea that you're going to qa your application. You're going to make sure that nothing got missed"
+    },
+    {
+      "start": 1657.54,
+      "end": 1661.62,
+      "text": "You know, it's just hard thinking about all the edge cases ahead of time and it's largely impossible"
+    },
+    {
+      "start": 1663.94,
+      "end": 1665.78,
+      "text": "Okay, here we go"
+    },
+    {
+      "start": 1665.78,
+      "end": 1670.5,
+      "text": "Let me lay this out properly now the research is in the research shifted my thinking. It's not really a binary choice"
+    },
+    {
+      "start": 1670.74,
+      "end": 1672.74,
+      "text": "Hook's a learner insufficient for most agents"
+    },
+    {
+      "start": 1673.3,
+      "end": 1678.02,
+      "text": "Claude code hook payloads don't include message content. So you still read the jsnl interesting"
+    },
+    {
+      "start": 1678.5,
+      "end": 1684.5,
+      "text": "Copilot hook payloads are thin codex hooks are flag gated and windows excluded. Ha I'm on windows"
+    },
+    {
+      "start": 1685.14,
+      "end": 1686.98,
+      "text": "I want windows"
+    },
+    {
+      "start": 1686.98,
+      "end": 1689.7,
+      "text": "jsnl alone is sufficient insufficient for some"
+    },
+    {
+      "start": 1690.98,
+      "end": 1692.98,
+      "text": "right"
+    },
+    {
+      "start": 1695.54,
+      "end": 1701.46,
+      "text": "Right, right, right, right. So what we need to do is change the approach per agent that makes sense"
+    },
+    {
+      "start": 1704.34,
+      "end": 1706.34,
+      "text": "That makes sense"
+    },
+    {
+      "start": 1709.46,
+      "end": 1711.46,
+      "text": "Yep"
+    },
+    {
+      "start": 1711.7,
+      "end": 1713.7,
+      "text": "No, I dig it so"
+    },
+    {
+      "start": 1714.98,
+      "end": 1716.98,
+      "text": "We are trying to investigate"
+    },
+    {
+      "start": 1717.62,
+      "end": 1718.98,
+      "text": "um"
+    },
+    {
+      "start": 1718.98,
+      "end": 1722.18,
+      "text": "Building a coding agent observability platform"
+    },
+    {
+      "start": 1723.7,
+      "end": 1725.7,
+      "text": "That's the plan"
+    },
+    {
+      "start": 1728.1,
+      "end": 1732.34,
+      "text": "Uh, I switched to windows so that I could expense my graphics card to the business"
+    },
+    {
+      "start": 1738.66,
+      "end": 1745.7,
+      "text": "What's my opinion of people saying that UI front-end is the differentiator in the AI era, I don't know. I'm not a pundit"
+    },
+    {
+      "start": 1747.06,
+      "end": 1749.06,
+      "text": "I'm just a teacher"
+    },
+    {
+      "start": 1751.62,
+      "end": 1759.46,
+      "text": "Um, okay. So at this point, I'm thinking right this this context window is now really good, right? We've got a really cool context window"
+    },
+    {
+      "start": 1759.54,
+      "end": 1762.18,
+      "text": "It's full of um interesting information"
+    },
+    {
+      "start": 1763.54,
+      "end": 1767.54,
+      "text": "How do we preserve this going forward because I'm I'm not in a directory here"
+    },
+    {
+      "start": 1769.06,
+      "end": 1774.18,
+      "text": "Um, we've like invested uh 42 point or 45 point 2k tokens here"
+    },
+    {
+      "start": 1774.82,
+      "end": 1778.74,
+      "text": "into researching different coding agents into figuring out some early decisions"
+    },
+    {
+      "start": 1779.54,
+      "end": 1780.82,
+      "text": "and"
+    },
+    {
+      "start": 1780.82,
+      "end": 1785.94,
+      "text": "I want to save this somewhere and the best place for that is to actually kick off a repo I think"
+    },
+    {
+      "start": 1789.46,
+      "end": 1792.42,
+      "text": "Should have gone with mac os and remote linux windows system for the gpu"
+    },
+    {
+      "start": 1794.5,
+      "end": 1796.5,
+      "text": "Yeah, that's a good idea"
+    },
+    {
+      "start": 1797.06,
+      "end": 1799.06,
+      "text": "That's a good idea"
+    },
+    {
+      "start": 1799.7,
+      "end": 1803.38,
+      "text": "Uh, so I knew I want to save this somewhere. I want to save it in a markdown file"
+    },
+    {
+      "start": 1806.02,
+      "end": 1815.38,
+      "text": "But I feel like at this point, you know, we've um sort of figured out the first few bits of the project"
+    },
+    {
+      "start": 1819.38,
+      "end": 1824.58,
+      "text": "Have you speak to text in windows 11? Yeah, uh, it's not great. The native one is not great. I don't love it"
+    },
+    {
+      "start": 1825.06,
+      "end": 1828.82,
+      "text": "Uh, I use whisper flow. Yeah, we've got to create a research document. Um"
+    },
+    {
+      "start": 1831.06,
+      "end": 1833.06,
+      "text": "Yeah, let's do it"
+    },
+    {
+      "start": 1834.26,
+      "end": 1840.42,
+      "text": "Okay, I love the things that we found here. Um, I want you to create a new repo for this"
+    },
+    {
+      "start": 1844.58,
+      "end": 1847.22,
+      "text": "This new repo is going to live inside"
+    },
+    {
+      "start": 1850.26,
+      "end": 1852.5,
+      "text": "Repos AI what can what should we call this?"
+    },
+    {
+      "start": 1854.58,
+      "end": 1858.82,
+      "text": "Oh, yeah, let's figure out a name with opus. What name should I give to this project?"
+    },
+    {
+      "start": 1863.94,
+      "end": 1868.82,
+      "text": "I want a just quick placeholder name I can put down to differentiate it from my other projects"
+    },
+    {
+      "start": 1870.58,
+      "end": 1875.62,
+      "text": "Opus is really good at choosing names for stuff. Um, it shows the name sandcastle, which I really like. I think that's a clever one"
+    },
+    {
+      "start": 1876.34,
+      "end": 1878.34,
+      "text": "agent scope"
+    },
+    {
+      "start": 1880.1,
+      "end": 1885.3,
+      "text": "Okay, guys, I need your help. Uh, this is not good agent scope. No, I don't like that"
+    },
+    {
+      "start": 1887.22,
+      "end": 1893.7,
+      "text": "Loop a jewelers magnifier to inspect sessions or peak. I don't like peak peak is sort of, you know, like you're peeking in the"
+    },
+    {
+      "start": 1895.06,
+      "end": 1897.06,
+      "text": "Peek it in the park dirty little peeker"
+    },
+    {
+      "start": 1898.18,
+      "end": 1900.18,
+      "text": "agents watch tower"
+    },
+    {
+      "start": 1902.1,
+      "end": 1905.54,
+      "text": "I barely use by the way, I suppose it is a good by the way"
+    },
+    {
+      "start": 1906.34,
+      "end": 1909.7,
+      "text": "But it just feels by the way just feels so underpowered that I just never use it"
+    },
+    {
+      "start": 1910.34,
+      "end": 1912.34,
+      "text": "We're building an agents"
+    },
+    {
+      "start": 1912.74,
+      "end": 1914.74,
+      "text": "In fact, we can recap, can't we?"
+    },
+    {
+      "start": 1916.34,
+      "end": 1918.34,
+      "text": "That's actually really good for streams"
+    },
+    {
+      "start": 1919.46,
+      "end": 1922.18,
+      "text": "There you go. I don't need to talk now. I could just we"
+    },
+    {
+      "start": 1924.18,
+      "end": 1926.18,
+      "text": "agent master"
+    },
+    {
+      "start": 1926.18,
+      "end": 1928.18,
+      "text": "telescope telescope"
+    },
+    {
+      "start": 1930.34,
+      "end": 1933.3,
+      "text": "Agent guard beeping to me"
+    },
+    {
+      "start": 1937.7,
+      "end": 1939.7,
+      "text": "Seeker"
+    },
+    {
+      "start": 1939.78,
+      "end": 1943.7,
+      "text": "Harry Potter inflected. Hmm peak peak"
+    },
+    {
+      "start": 1945.78,
+      "end": 1947.78,
+      "text": "I kind of want it like metrics based, you know"
+    },
+    {
+      "start": 1949.94,
+      "end": 1951.94,
+      "text": "pen up the con"
+    },
+    {
+      "start": 1953.14,
+      "end": 1954.98,
+      "text": "Sauron"
+    },
+    {
+      "start": 1954.98,
+      "end": 1956.98,
+      "text": "Baradour"
+    },
+    {
+      "start": 1957.94,
+      "end": 1959.94,
+      "text": "Hmm Pilante"
+    },
+    {
+      "start": 1961.3,
+      "end": 1963.3,
+      "text": "Pilante is taken"
+    },
+    {
+      "start": 1963.86,
+      "end": 1965.86,
+      "text": "Mother agent"
+    },
+    {
+      "start": 1967.78,
+      "end": 1969.78,
+      "text": "Vantage isn't Vantage a"
+    },
+    {
+      "start": 1973.3,
+      "end": 1976.58,
+      "text": "Yeah, Vantage. No, what am I thinking of? This is tough"
+    },
+    {
+      "start": 1978.98,
+      "end": 1981.38,
+      "text": "Give me more ideas. I want them to be kind of metrics based"
+    },
+    {
+      "start": 1985.22,
+      "end": 1987.22,
+      "text": "Token scoop"
+    },
+    {
+      "start": 1987.7,
+      "end": 1993.54,
+      "text": "As this is an accidental beard. It's not an intentional beard. I see each cue. Oh, here we go"
+    },
+    {
+      "start": 1994.98,
+      "end": 1996.98,
+      "text": "tally"
+    },
+    {
+      "start": 1997.06,
+      "end": 1998.26,
+      "text": "yardstick"
+    },
+    {
+      "start": 1998.26,
+      "end": 2000.02,
+      "text": "ledger"
+    },
+    {
+      "start": 2000.02,
+      "end": 2001.46,
+      "text": "rubric"
+    },
+    {
+      "start": 2001.46,
+      "end": 2002.74,
+      "text": "quanta"
+    },
+    {
+      "start": 2002.74,
+      "end": 2004.74,
+      "text": "Readout Argos agents"
+    },
+    {
+      "start": 2005.7,
+      "end": 2007.7,
+      "text": "agent reef"
+    },
+    {
+      "start": 2008.58,
+      "end": 2010.98,
+      "text": "I mean all of these ideas are taken right surely"
+    },
+    {
+      "start": 2014.34,
+      "end": 2017.3,
+      "text": "I don't think I can do full beard full beard for me is like a sort of"
+    },
+    {
+      "start": 2017.94,
+      "end": 2022.82,
+      "text": "A row of dead hamsters all just sort of gathered along if they didn't join up, you know"
+    },
+    {
+      "start": 2023.86,
+      "end": 2025.86,
+      "text": "Rubric readout quanta"
+    },
+    {
+      "start": 2026.34,
+      "end": 2028.74,
+      "text": "Carton it's all just rubbish, isn't it?"
+    },
+    {
+      "start": 2030.02,
+      "end": 2032.02,
+      "text": "caliper agent index"
+    },
+    {
+      "start": 2032.42,
+      "end": 2034.42,
+      "text": "quanta"
+    },
+    {
+      "start": 2036.82,
+      "end": 2038.82,
+      "text": "yardstick"
+    },
+    {
+      "start": 2038.82,
+      "end": 2040.82,
+      "text": "Sort of feels British, you know"
+    },
+    {
+      "start": 2041.78,
+      "end": 2043.78,
+      "text": "I don't know"
+    },
+    {
+      "start": 2044.98,
+      "end": 2047.78,
+      "text": "Burning a lot of tokens on it. I know yardstick"
+    },
+    {
+      "start": 2049.3,
+      "end": 2052.02,
+      "text": "Yeah, we're looking for a temporary name. All right, let's just call it yardstick"
+    },
+    {
+      "start": 2053.46,
+      "end": 2055.46,
+      "text": "token site"
+    },
+    {
+      "start": 2057.3,
+      "end": 2059.3,
+      "text": "Agency"
+    },
+    {
+      "start": 2059.86,
+      "end": 2062.26,
+      "text": "It's be your if be your"
+    },
+    {
+      "start": 2069.7,
+      "end": 2071.7,
+      "text": "Something in Latin"
+    },
+    {
+      "start": 2071.86,
+      "end": 2074.66,
+      "text": "We need a motto. That's what we need. We need a"
+    },
+    {
+      "start": 2075.94,
+      "end": 2077.94,
+      "text": "Would call it a coat of arms"
+    },
+    {
+      "start": 2079.38,
+      "end": 2081.38,
+      "text": "Baseline"
+    },
+    {
+      "start": 2082.02,
+      "end": 2084.02,
+      "text": "Where my token go"
+    },
+    {
+      "start": 2084.9,
+      "end": 2086.9,
+      "text": "Where do token go?"
+    },
+    {
+      "start": 2087.14,
+      "end": 2089.14,
+      "text": "Where do token come from?"
+    },
+    {
+      "start": 2091.06,
+      "end": 2093.06,
+      "text": "Um"
+    },
+    {
+      "start": 2093.14,
+      "end": 2096.58,
+      "text": "I mean yardstick seems like it's got a bit of uh metric ass"
+    },
+    {
+      "start": 2098.34,
+      "end": 2100.34,
+      "text": "Let's just go with yardstick"
+    },
+    {
+      "start": 2100.9,
+      "end": 2104.58,
+      "text": "Okay, I want to save all of the research that we've done apart from the name stuff"
+    },
+    {
+      "start": 2106.42,
+      "end": 2108.42,
+      "text": "In"
+    },
+    {
+      "start": 2109.7,
+      "end": 2115.38,
+      "text": "In fact, you know what let's um, let's take Claude out of this. Let's actually go back and resume"
+    },
+    {
+      "start": 2116.34,
+      "end": 2121.62,
+      "text": "to um, just here so that we kill all of that context"
+    },
+    {
+      "start": 2122.5,
+      "end": 2124.9,
+      "text": "Basically, we just sort of clip off that bit of context"
+    },
+    {
+      "start": 2125.22,
+      "end": 2130.5,
+      "text": "So now we're just right at the end of the research phase because that little sort of diversion is not something"
+    },
+    {
+      "start": 2130.5,
+      "end": 2134.1,
+      "text": "I sort of want to go back to so it's almost like we've gone back in time now"
+    },
+    {
+      "start": 2134.1,
+      "end": 2136.98,
+      "text": "We don't have to keep that in our context. So we figured out yardstick"
+    },
+    {
+      "start": 2138.66,
+      "end": 2140.66,
+      "text": "Dilly tally"
+    },
+    {
+      "start": 2140.98,
+      "end": 2144.02,
+      "text": "That's good dilly tally crow's nest"
+    },
+    {
+      "start": 2145.3,
+      "end": 2149.46,
+      "text": "That's nice. I mean, how many observability companies that let's just look for the"
+    },
+    {
+      "start": 2150.34,
+      "end": 2152.34,
+      "text": "uh crow's nest"
+    },
+    {
+      "start": 2153.06,
+      "end": 2155.06,
+      "text": "Observability company"
+    },
+    {
+      "start": 2156.42,
+      "end": 2159.62,
+      "text": "Crow's nest software there we go monitor key business metrics"
+    },
+    {
+      "start": 2160.26,
+      "end": 2162.26,
+      "text": "uh yardstick"
+    },
+    {
+      "start": 2162.9,
+      "end": 2168.42,
+      "text": "Observability company yardstick trust reimagined a technology platform that makes human credibility into something you can"
+    },
+    {
+      "start": 2168.66,
+      "end": 2173.22,
+      "text": "Continuously see yes build your dream team with yardsticks our powered interview tools"
+    },
+    {
+      "start": 2174.1,
+      "end": 2177.06,
+      "text": "I mean every one of these people just asked those opus, right?"
+    },
+    {
+      "start": 2179.86,
+      "end": 2186.74,
+      "text": "I cut the context by uh, just doing resume basically so I went back to a previous conversation"
+    },
+    {
+      "start": 2188.98,
+      "end": 2194.18,
+      "text": "Um, my next school code for real engineers is happening. Um, I don't know. I'm going to work it out on monday"
+    },
+    {
+      "start": 2194.58,
+      "end": 2196.58,
+      "text": "but probably mid-may I think"
+    },
+    {
+      "start": 2197.62,
+      "end": 2199.38,
+      "text": "Token autopsy"
+    },
+    {
+      "start": 2199.38,
+      "end": 2201.38,
+      "text": "Let's just go with yardstick"
+    },
+    {
+      "start": 2201.78,
+      "end": 2206.26,
+      "text": "So we've produced some really good stuff inside this context window and I want to"
+    },
+    {
+      "start": 2206.74,
+      "end": 2211.46,
+      "text": "Take it all and put it inside a research document. I want you to create a new repo for me here"
+    },
+    {
+      "start": 2213.3,
+      "end": 2215.3,
+      "text": "Slop watch"
+    },
+    {
+      "start": 2215.86,
+      "end": 2217.86,
+      "text": "Slop watch is really good"
+    },
+    {
+      "start": 2221.3,
+      "end": 2223.3,
+      "text": "Slop watch is really good"
+    },
+    {
+      "start": 2224.66,
+      "end": 2226.66,
+      "text": "Hmm"
+    },
+    {
+      "start": 2227.3,
+      "end": 2229.3,
+      "text": "That's really good"
+    },
+    {
+      "start": 2229.7,
+      "end": 2231.7,
+      "text": "Slop watch"
+    },
+    {
+      "start": 2232.26,
+      "end": 2239.14,
+      "text": "Slop watch is is a winner. Sorry. That has just pipped yardstick to the post. That is incredible"
+    },
+    {
+      "start": 2239.94,
+      "end": 2244.5,
+      "text": "So it's going to be inside repose AI slop watch. That's genius"
+    },
+    {
+      "start": 2246.42,
+      "end": 2250.58,
+      "text": "Wow eddy, so every everyone just go and follow eddy for that one"
+    },
+    {
+      "start": 2256.42,
+      "end": 2258.42,
+      "text": "Where's eddy eddy vink"
+    },
+    {
+      "start": 2259.38,
+      "end": 2261.22,
+      "text": "There you are pal"
+    },
+    {
+      "start": 2261.22,
+      "end": 2265.7,
+      "text": "Is my guy eddy go and follow eddy a funny funny man"
+    },
+    {
+      "start": 2269.86,
+      "end": 2271.86,
+      "text": "Did was it was it you yes"
+    },
+    {
+      "start": 2272.82,
+      "end": 2274.82,
+      "text": "Slop watch is great perfect"
+    },
+    {
+      "start": 2275.62,
+      "end": 2282.02,
+      "text": "Oh, that's really funny. That just makes it feel more real doesn't it? I want you to create a new repo for me here"
+    },
+    {
+      "start": 2284.26,
+      "end": 2287.3,
+      "text": "Put it inside the research directory as a markdown file"
+    },
+    {
+      "start": 2290.26,
+      "end": 2293.86,
+      "text": "I want you to specifically focus on the valuable stuff that we learned here"
+    },
+    {
+      "start": 2294.5,
+      "end": 2299.06,
+      "text": "On the differences between the coding agents and the fact that we'll need to take different approaches in"
+    },
+    {
+      "start": 2301.3,
+      "end": 2303.3,
+      "text": "Recording their data and uploading them somewhere"
+    },
+    {
+      "start": 2306.1,
+      "end": 2310.1,
+      "text": "Cool there we go slot watch incredible. So we've kind of"
+    },
+    {
+      "start": 2311.3,
+      "end": 2317.7,
+      "text": "Let's let's just walk through what we did there, which is over the past. How long will we go in like"
+    },
+    {
+      "start": 2318.98,
+      "end": 2320.98,
+      "text": "40 minutes, hey"
+    },
+    {
+      "start": 2322.66,
+      "end": 2325.7,
+      "text": "We've gone from idea to essentially"
+    },
+    {
+      "start": 2327.78,
+      "end": 2332.5,
+      "text": "A research document that's sort of where we're at and this I think is like an early"
+    },
+    {
+      "start": 2334.02,
+      "end": 2336.02,
+      "text": "Is the way that I treat greenfield projects"
+    },
+    {
+      "start": 2336.1,
+      "end": 2342.82,
+      "text": "Is there essentially until you get to code until you start sort of putting prds down until you start um"
+    },
+    {
+      "start": 2345.14,
+      "end": 2348.1,
+      "text": "Working through your ideas properly seeing your ideas reified into code"
+    },
+    {
+      "start": 2348.9,
+      "end": 2352.98,
+      "text": "You're really just um working with research. That's what you're doing. It's a research task"
+    },
+    {
+      "start": 2355.3,
+      "end": 2357.3,
+      "text": "Registering gift the slot watch domain name"
+    },
+    {
+      "start": 2359.14,
+      "end": 2362.34,
+      "text": "It's the danger of doing this stuff actually I remember I was doing a um"
+    },
+    {
+      "start": 2365.06,
+      "end": 2368.98,
+      "text": "I was streaming something about ts reset. I remember and someone nabbed the"
+    },
+    {
+      "start": 2369.62,
+      "end": 2371.62,
+      "text": "Nabbed the package name from me"
+    },
+    {
+      "start": 2372.98,
+      "end": 2374.98,
+      "text": "I use whisper flow"
+    },
+    {
+      "start": 2377.86,
+      "end": 2382.98,
+      "text": "That is not a Garmin that is a pixel watch it's uh got loads of scratches on it very annoying"
+    },
+    {
+      "start": 2385.7,
+      "end": 2393.46,
+      "text": "How do I get claud to focus on system dines scalability to a million users, uh, well scalability to a million users is a hard problem so"
+    },
+    {
+      "start": 2394.5,
+      "end": 2397.62,
+      "text": "Once you realize how difficult the problems are that you're asking claude to do"
+    },
+    {
+      "start": 2398.42,
+      "end": 2399.3,
+      "text": "um"
+    },
+    {
+      "start": 2399.3,
+      "end": 2403.14,
+      "text": "Oh slop cop slop cop. That's good. You'll realize that"
+    },
+    {
+      "start": 2406.26,
+      "end": 2412.74,
+      "text": "Maybe you should just um AI is going to do better when you help it so"
+    },
+    {
+      "start": 2416.74,
+      "end": 2421.86,
+      "text": "Yeah, I think human plus AI is always going to perform AI no matter how good AI gets"
+    },
+    {
+      "start": 2425.14,
+      "end": 2428.18,
+      "text": "Pebble to a get a pebble to okay"
+    },
+    {
+      "start": 2428.18,
+      "end": 2435.22,
+      "text": "So we got you initialized repose AI slop watches a git repo and we wrote research coding agent ingestion. Okay, um"
+    },
+    {
+      "start": 2435.86,
+      "end": 2437.86,
+      "text": "So let's cancel out of this"
+    },
+    {
+      "start": 2438.26,
+      "end": 2442.58,
+      "text": "Um, it's going to cancel out of this. We're going to code up repose AI slop watch"
+    },
+    {
+      "start": 2443.38,
+      "end": 2445.38,
+      "text": "I'll push it to git hub as well. So we get it"
+    },
+    {
+      "start": 2447.06,
+      "end": 2451.62,
+      "text": "Did I get any update from anthropic around the terms of use question you've been waiting over a month for I did not"
+    },
+    {
+      "start": 2452.1,
+      "end": 2454.1,
+      "text": "No, anthropic is still ghosting me on that one"
+    },
+    {
+      "start": 2455.14,
+      "end": 2457.14,
+      "text": "Um, okay doki"
+    },
+    {
+      "start": 2457.86,
+      "end": 2459.86,
+      "text": "So we've got to read me"
+    },
+    {
+      "start": 2459.94,
+      "end": 2462.9,
+      "text": "Slot watch. I like that extremely low effort"
+    },
+    {
+      "start": 2463.7,
+      "end": 2466.82,
+      "text": "It's really you see coding agents put that little effort into a read me"
+    },
+    {
+      "start": 2468.58,
+      "end": 2470.58,
+      "text": "That really makes it funny"
+    },
+    {
+      "start": 2470.58,
+      "end": 2472.58,
+      "text": "Uh, okay headline finding"
+    },
+    {
+      "start": 2473.38,
+      "end": 2479.06,
+      "text": "I I generally don't read these research documents. The important thing for me is that the um"
+    },
+    {
+      "start": 2480.82,
+      "end": 2485.06,
+      "text": "Uh conclusions that we came to I'm going to"
+    },
+    {
+      "start": 2485.62,
+      "end": 2488.9,
+      "text": "Commit this I think I'm just going to use um get a co-pilot set up"
+    },
+    {
+      "start": 2491.06,
+      "end": 2494.98,
+      "text": "And let's publish so slop watch heading to github public"
+    },
+    {
+      "start": 2498.1,
+      "end": 2500.1,
+      "text": "Exactly help the AI help you"
+    },
+    {
+      "start": 2500.66,
+      "end": 2506.5,
+      "text": "Okay, so I don't want to do too much on this stream because this is a great idea. I'm really glad I came on stream"
+    },
+    {
+      "start": 2507.14,
+      "end": 2510.82,
+      "text": "Slot watch is a really really funny name first of all and it just"
+    },
+    {
+      "start": 2511.68,
+      "end": 2513.68,
+      "text": "crystallizes the the idea"
+    },
+    {
+      "start": 2515.22,
+      "end": 2517.22,
+      "text": "And that's awesome"
+    },
+    {
+      "start": 2519.54,
+      "end": 2521.78,
+      "text": "What I want to do is I think set up the repo"
+    },
+    {
+      "start": 2524.02,
+      "end": 2526.02,
+      "text": "I want to set up the repo"
+    },
+    {
+      "start": 2526.42,
+      "end": 2527.86,
+      "text": "and"
+    },
+    {
+      "start": 2527.86,
+      "end": 2530.42,
+      "text": "For that we're going to enter a new grilling session"
+    },
+    {
+      "start": 2532.82,
+      "end": 2535.7,
+      "text": "For long-term agent memory, I'm thinking that I"
+    },
+    {
+      "start": 2537.62,
+      "end": 2542.02,
+      "text": "I think long-term agent memory is a is sort of a bad idea. You want something that's super"
+    },
+    {
+      "start": 2542.74,
+      "end": 2545.94,
+      "text": "Observable that's super concrete that you can edit immediately"
+    },
+    {
+      "start": 2546.66,
+      "end": 2549.38,
+      "text": "And that you can fit into context window. I think"
+    },
+    {
+      "start": 2551.38,
+      "end": 2552.5,
+      "text": "So"
+    },
+    {
+      "start": 2552.5,
+      "end": 2557.78,
+      "text": "My current idea for this which is really only germinating this week and that I will be testing on this project"
+    },
+    {
+      "start": 2558.26,
+      "end": 2564.34,
+      "text": "Is using adr's architectural decision records and using um a sort of minimal version of ddd"
+    },
+    {
+      "start": 2567.3,
+      "end": 2569.3,
+      "text": "domain-driven design"
+    },
+    {
+      "start": 2571.14,
+      "end": 2572.9,
+      "text": "So"
+    },
+    {
+      "start": 2572.9,
+      "end": 2576.42,
+      "text": "Yeah, let's set up the repo because that's going to be boring to watch on a video and"
+    },
+    {
+      "start": 2577.06,
+      "end": 2580.82,
+      "text": "We've got nearly 300 of you guys here. We're going to use a fresh context window here"
+    },
+    {
+      "start": 2581.38,
+      "end": 2584.74,
+      "text": "And we're going to do another grilling session. I think I'm going to go for a um"
+    },
+    {
+      "start": 2585.3,
+      "end": 2591.7,
+      "text": "This is my new version of grill me. It's not got a very good name. It's just called domain model. Um, but it's essentially grilling an orbit name"
+    },
+    {
+      "start": 2594.1,
+      "end": 2596.1,
+      "text": "I want to set up this repo to"
+    },
+    {
+      "start": 2598.1,
+      "end": 2602.42,
+      "text": "Be a typescript repo"
+    },
+    {
+      "start": 2606.34,
+      "end": 2613.06,
+      "text": "Actually, no, we're not there yet we can we can't figure out the stack yet because we haven't figured out the shape of the thing that we're building"
+    },
+    {
+      "start": 2615.38,
+      "end": 2619.14,
+      "text": "So what I need to do is I'm going to do some domain modeling here"
+    },
+    {
+      "start": 2620.1,
+      "end": 2622.1,
+      "text": "uh with"
+    },
+    {
+      "start": 2622.66,
+      "end": 2629.06,
+      "text": "I'm just going to pass in research uh conic agent ingestion. So I'm just going to what I've done is I've taken all of the stuff"
+    },
+    {
+      "start": 2629.06,
+      "end": 2635.38,
+      "text": "That was in our previous context window and I've moved it essentially summarized it compacted it into a research document"
+    },
+    {
+      "start": 2635.62,
+      "end": 2639.22,
+      "text": "That's going to persist in my system and then we're going to move on from there"
+    },
+    {
+      "start": 2640.18,
+      "end": 2642.34,
+      "text": "It's obviously going to be typescript, but"
+    },
+    {
+      "start": 2643.54,
+      "end": 2645.54,
+      "text": "The shape of it is up for question"
+    },
+    {
+      "start": 2649.78,
+      "end": 2653.54,
+      "text": "I'd like to talk about the potential architecture of this thing that I'm trying to build"
+    },
+    {
+      "start": 2654.26,
+      "end": 2656.66,
+      "text": "I don't have a strong idea in terms of"
+    },
+    {
+      "start": 2660.98,
+      "end": 2662.98,
+      "text": "Um"
+    },
+    {
+      "start": 2663.38,
+      "end": 2665.38,
+      "text": "What the different deployable units are"
+    },
+    {
+      "start": 2666.66,
+      "end": 2670.58,
+      "text": "And I know that I'll need some kind of front end. I know that I want it to be"
+    },
+    {
+      "start": 2670.98,
+      "end": 2674.26,
+      "text": "Pluggable so that people can host their own version of this"
+    },
+    {
+      "start": 2674.74,
+      "end": 2678.18,
+      "text": "I'm not really that interested in producing kind of centralized service"
+    },
+    {
+      "start": 2678.66,
+      "end": 2681.22,
+      "text": "Unless it produces a really good dx for people"
+    },
+    {
+      "start": 2681.86,
+      "end": 2684.66,
+      "text": "I'm not interested in being in handling people's data"
+    },
+    {
+      "start": 2685.22,
+      "end": 2689.46,
+      "text": "I want people to own their own data and own their own storage mechanisms for this"
+    },
+    {
+      "start": 2689.94,
+      "end": 2693.94,
+      "text": "I'm imagining there will be some kind of cli component to this that you run locally"
+    },
+    {
+      "start": 2695.22,
+      "end": 2700.1,
+      "text": "Or perhaps a desktop application. I'm really uh totally open to the idea"
+    },
+    {
+      "start": 2703.7,
+      "end": 2707.54,
+      "text": "I mean this is wide open we can choose many potential different things here"
+    },
+    {
+      "start": 2708.26,
+      "end": 2710.5,
+      "text": "Maybe a desktop app is like the most sensible idea"
+    },
+    {
+      "start": 2711.62,
+      "end": 2713.62,
+      "text": "Because we obviously need some kind of persistent"
+    },
+    {
+      "start": 2714.58,
+      "end": 2719.46,
+      "text": "API some some sort of port running locally that's going to capture all of the data"
+    },
+    {
+      "start": 2720.02,
+      "end": 2722.02,
+      "text": "Then we need something to sort of"
+    },
+    {
+      "start": 2723.54,
+      "end": 2725.54,
+      "text": "Okay, well, let's see what it says"
+    },
+    {
+      "start": 2726.66,
+      "end": 2731.78,
+      "text": "Who is the primary user of slop watch a solo developer watching their own agents or a team org watching many developers agents?"
+    },
+    {
+      "start": 2731.78,
+      "end": 2733.78,
+      "text": "How we sort of have this, didn't we?"
+    },
+    {
+      "start": 2738.9,
+      "end": 2740.9,
+      "text": "Hmm"
+    },
+    {
+      "start": 2749.14,
+      "end": 2751.14,
+      "text": "Yeah, we sort of had this"
+    },
+    {
+      "start": 2751.86,
+      "end": 2756.5,
+      "text": "Business wise Matt, have you found more people follow your funnels and become customers today as compared to the types of courses days"
+    },
+    {
+      "start": 2757.06,
+      "end": 2759.62,
+      "text": "Are they more inclined to learn on their own using a lens?"
+    },
+    {
+      "start": 2760.18,
+      "end": 2764.66,
+      "text": "um, my claw code course was the most successful course of overrun. So, um, I'm"
+    },
+    {
+      "start": 2765.38,
+      "end": 2768.5,
+      "text": "Happy in terms of where I am where I'm positioned in this market"
+    },
+    {
+      "start": 2770.1,
+      "end": 2773.94,
+      "text": "Um, and I feel like there's a lot of good stuff for teachers to do here"
+    },
+    {
+      "start": 2776.5,
+      "end": 2778.5,
+      "text": "Because people are using these tools wrong"
+    },
+    {
+      "start": 2779.78,
+      "end": 2782.58,
+      "text": "Um, right we already we already, um"
+    },
+    {
+      "start": 2783.78,
+      "end": 2785.78,
+      "text": "Answered this right"
+    },
+    {
+      "start": 2786.34,
+      "end": 2790.74,
+      "text": "I'm actually gonna you know what I'm gonna do. Haha. I've done this before but I think this is funny"
+    },
+    {
+      "start": 2791.14,
+      "end": 2797.62,
+      "text": "I'm going to run clawed back in my previous setup here. I'm going to re resume the conversation"
+    },
+    {
+      "start": 2798.02,
+      "end": 2800.74,
+      "text": "That we had here and then I'm going to say to it"
+    },
+    {
+      "start": 2801.46,
+      "end": 2805.78,
+      "text": "I just got asked this by another clawed code session. How would you answer this based on my"
+    },
+    {
+      "start": 2806.5,
+      "end": 2808.82,
+      "text": "Answers before in this conversation?"
+    },
+    {
+      "start": 2811.38,
+      "end": 2815.38,
+      "text": "So I'm basically going to get one clawed code to answer another"
+    },
+    {
+      "start": 2817.78,
+      "end": 2819.78,
+      "text": "That's funny"
+    },
+    {
+      "start": 2820.18,
+      "end": 2823.14,
+      "text": "This is the reason I have to do this is because I um"
+    },
+    {
+      "start": 2824.1,
+      "end": 2828.02,
+      "text": "This conversation was outside of the repo where I'm now working"
+    },
+    {
+      "start": 2831.38,
+      "end": 2836.82,
+      "text": "A peanut gallery, that's a great one. I don't have access to auto mode. Here we go"
+    },
+    {
+      "start": 2840.26,
+      "end": 2843.54,
+      "text": "So that's good. I'm not going to read it. I'm just going to assume it got it right"
+    },
+    {
+      "start": 2844.34,
+      "end": 2848.1,
+      "text": "I already answered this in another chat. I asked that agent and this is what that agent said"
+    },
+    {
+      "start": 2850.9,
+      "end": 2855.86,
+      "text": "There we go. Bye Colin. Have a good night"
+    },
+    {
+      "start": 2860.82,
+      "end": 2863.06,
+      "text": "Okay, it's uh, it's figured it out"
+    },
+    {
+      "start": 2869.7,
+      "end": 2871.94,
+      "text": "Uh, oh yes, okay"
+    },
+    {
+      "start": 2881.14,
+      "end": 2886.42,
+      "text": "No, I don't think this is right. No, don't be so eager to create a context dot md file"
+    },
+    {
+      "start": 2888.9,
+      "end": 2890.9,
+      "text": "Yeah, I'm experimenting with effort"
+    },
+    {
+      "start": 2891.7,
+      "end": 2895.46,
+      "text": "um clawed released x high mode and"
+    },
+    {
+      "start": 2897.06,
+      "end": 2900.9,
+      "text": "And it defaulted it created the new default claw code is x high"
+    },
+    {
+      "start": 2904.74,
+      "end": 2907.38,
+      "text": "I can reference another session so the agent can get its context"
+    },
+    {
+      "start": 2908.5,
+      "end": 2911.06,
+      "text": "But that only works if they're in the same directory"
+    },
+    {
+      "start": 2912.66,
+      "end": 2916.5,
+      "text": "We are building a uh coding agent observability tool"
+    },
+    {
+      "start": 2918.82,
+      "end": 2923.54,
+      "text": "Really dreading AI coding until recently in your content helped me get that cool. I'm really happy to hear that"
+    },
+    {
+      "start": 2926.5,
+      "end": 2928.5,
+      "text": "Okay"
+    },
+    {
+      "start": 2930.42,
+      "end": 2933.7,
+      "text": "Given teamwork self-hosted with mandatory on-prem backend live spectate"
+    },
+    {
+      "start": 2936.34,
+      "end": 2944.9,
+      "text": "The next fork is about the capture side what runs on each developer's machine. Whoopsy. Whoa. Hello, Claude. Come on update your blumen"
+    },
+    {
+      "start": 2947.46,
+      "end": 2950.5,
+      "text": "Ugh, uh claw codes ui is terrible"
+    },
+    {
+      "start": 2952.1,
+      "end": 2954.1,
+      "text": "It is terrible"
+    },
+    {
+      "start": 2954.66,
+      "end": 2956.26,
+      "text": "Okay, okay"
+    },
+    {
+      "start": 2956.26,
+      "end": 2959.86,
+      "text": "Is the on-machine capture component a long running background demon or a per process"
+    },
+    {
+      "start": 2960.42,
+      "end": 2963.22,
+      "text": "Purification process that starts next is with each agent session"
+    },
+    {
+      "start": 2964.34,
+      "end": 2966.1,
+      "text": "um"
+    },
+    {
+      "start": 2966.1,
+      "end": 2968.1,
+      "text": "That's a good question"
+    },
+    {
+      "start": 2970.26,
+      "end": 2975.7,
+      "text": "A long running demon that watches all configured agents continuously maintains fs watches on jason. Yeah"
+    },
+    {
+      "start": 2977.54,
+      "end": 2983.38,
+      "text": "Yeah, right because in our research we found that just using hooks was not enough"
+    },
+    {
+      "start": 2990.18,
+      "end": 2991.46,
+      "text": "um"
+    },
+    {
+      "start": 2991.46,
+      "end": 2997.78,
+      "text": "Because okay, I'm going to explain this deal in the research. We found that hooks was not enough"
+    },
+    {
+      "start": 2998.9,
+      "end": 3005.22,
+      "text": "The cool thing about the hooks model is that you get to totally delegate the process running down to the agent that's downstream"
+    },
+    {
+      "start": 3005.62,
+      "end": 3011.3,
+      "text": "And the agent that's downstream just gets to ping network requests off and we don't need to run a separate process"
+    },
+    {
+      "start": 3012.74,
+      "end": 3014.74,
+      "text": "This potentially means that"
+    },
+    {
+      "start": 3015.14,
+      "end": 3020.74,
+      "text": "You could have a process running on a remote server that captures the or ingests the information and stores it"
+    },
+    {
+      "start": 3021.7,
+      "end": 3027.3,
+      "text": "What I'm worried about is that people will forget to run this demon somehow and then they"
+    },
+    {
+      "start": 3031.06,
+      "end": 3033.06,
+      "text": "Hmm"
+    },
+    {
+      "start": 3033.7,
+      "end": 3036.1,
+      "text": "Although maybe we could start the demon via hooks"
+    },
+    {
+      "start": 3040.34,
+      "end": 3048.82,
+      "text": "How much am I spending for a while I was on um max 5x which is 90 pounds a month 100 a month uh now i'm on um 20x"
+    },
+    {
+      "start": 3048.9,
+      "end": 3050.9,
+      "text": "Which is 200 a month"
+    },
+    {
+      "start": 3051.7,
+      "end": 3056.82,
+      "text": "4.7 x high should burn tokens or prox as 4.6 high. That's interesting"
+    },
+    {
+      "start": 3058.18,
+      "end": 3061.7,
+      "text": "4.7 seems like a junior with a dangerous amount of technical knowledge"
+    },
+    {
+      "start": 3062.66,
+      "end": 3068.5,
+      "text": "Guessing it a fix until the build succeeds and assuming that that means the program is correct. I think people over characterize llms"
+    },
+    {
+      "start": 3068.5,
+      "end": 3072.66,
+      "text": "Um, and anthropomorphize llms too much. You know people say"
+    },
+    {
+      "start": 3072.9,
+      "end": 3078.18,
+      "text": "I think people over characterize llms. Um, and anthropomorphize llms too much"
+    },
+    {
+      "start": 3078.18,
+      "end": 3080.18,
+      "text": "You know people say, uh, that's"
+    },
+    {
+      "start": 3081.22,
+      "end": 3087.14,
+      "text": "Oh, yeah, 4.6 feels different to 4.7 that kind of thing. I always think that we can't really get a representative sample"
+    },
+    {
+      "start": 3087.14,
+      "end": 3093.54,
+      "text": "You know, um, everything that we do is sort of tainted by our own process and tainted by our own experience with these llms"
+    },
+    {
+      "start": 3093.7,
+      "end": 3095.7,
+      "text": "So I think people put too much stock in that"
+    },
+    {
+      "start": 3097.38,
+      "end": 3099.38,
+      "text": "Okay, here we go"
+    },
+    {
+      "start": 3103.06,
+      "end": 3105.86,
+      "text": "So you're right, I think my recommendation was wrong"
+    },
+    {
+      "start": 3105.86,
+      "end": 3111.78,
+      "text": "Let me refactor the insight you're pointing out. The hook is the trigger that starts a processor. We don't need a pre-existing always-on demon"
+    },
+    {
+      "start": 3112.34,
+      "end": 3115.14,
+      "text": "Yes, that dissolves so people forget to run it problem"
+    },
+    {
+      "start": 3115.62,
+      "end": 3118.02,
+      "text": "Because the hook configuration is the in store"
+    },
+    {
+      "start": 3118.66,
+      "end": 3124.74,
+      "text": "But the pure hook fires curls back end exits isn't enough. The research already established that hooks don't carry full message content"
+    },
+    {
+      "start": 3125.3,
+      "end": 3127.3,
+      "text": "and live spectate"
+    },
+    {
+      "start": 3127.46,
+      "end": 3132.74,
+      "text": "Is a per session capture process spawned by a hook not a machine-wide demon. Yes, that sounds right"
+    },
+    {
+      "start": 3133.54,
+      "end": 3136.26,
+      "text": "Session start hook fires slot watch capture"
+    },
+    {
+      "start": 3136.9,
+      "end": 3138.9,
+      "text": "Uh-huh"
+    },
+    {
+      "start": 3139.94,
+      "end": 3141.94,
+      "text": "Only for the lifetime of one session. Yes"
+    },
+    {
+      "start": 3145.22,
+      "end": 3147.22,
+      "text": "Cool"
+    },
+    {
+      "start": 3147.22,
+      "end": 3154.26,
+      "text": "From the user's perspective, this is demon ls. They configure hooks extensions once. Yes, that's good. Yes, that's good"
+    },
+    {
+      "start": 3155.3,
+      "end": 3157.3,
+      "text": "Yes, that's good"
+    },
+    {
+      "start": 3157.3,
+      "end": 3159.3,
+      "text": "Yes, that's good"
+    },
+    {
+      "start": 3159.3,
+      "end": 3166.18,
+      "text": "The one thing that gets slightly awkward, if you have two claw code sessions running concurrently you have two different sub processes"
+    },
+    {
+      "start": 3166.26,
+      "end": 3169.54,
+      "text": "They're cheap and independent. Yes, this is good. This is good"
+    },
+    {
+      "start": 3173.38,
+      "end": 3177.46,
+      "text": "Yeah, I like this does this per session sub process spawned by homo and match your instinct"
+    },
+    {
+      "start": 3177.46,
+      "end": 3182.66,
+      "text": "Yes, it does and iK for claw codex. There is a short live stopwatch process. Yes, that's fine"
+    },
+    {
+      "start": 3185.54,
+      "end": 3187.54,
+      "text": "I really like this you've done a good job here"
+    },
+    {
+      "start": 3188.74,
+      "end": 3191.3,
+      "text": "Having essentially a sidecar process"
+    },
+    {
+      "start": 3192.74,
+      "end": 3194.74,
+      "text": "Is a really nice model"
+    },
+    {
+      "start": 3197.54,
+      "end": 3199.54,
+      "text": "I like that phrase too sidecar process"
+    },
+    {
+      "start": 3202.02,
+      "end": 3204.02,
+      "text": "I'm using i'm testing out medium"
+    },
+    {
+      "start": 3209.46,
+      "end": 3211.46,
+      "text": "Yeah extra highs only for opus, that's right"
+    },
+    {
+      "start": 3216.18,
+      "end": 3219.14,
+      "text": "Demonic plugins, what you talking about?"
+    },
+    {
+      "start": 3221.94,
+      "end": 3225.86,
+      "text": "Hmm slob slob slob in a way. All right"
+    },
+    {
+      "start": 3228.1,
+      "end": 3232.74,
+      "text": "How does a session get attached to a developer's identity and how does the sidecar authenticate to the back end?"
+    },
+    {
+      "start": 3235.46,
+      "end": 3241.62,
+      "text": "I so okay one thing to notice when you start doing grilling sessions is when language starts to calcify"
+    },
+    {
+      "start": 3242.02,
+      "end": 3248.34,
+      "text": "When you start seeing different terms, um be used here. So the sidecar is now"
+    },
+    {
+      "start": 3248.98,
+      "end": 3256.26,
+      "text": "Our terminology for this process that's running inside the claw not running inside but running next to the claw code process"
+    },
+    {
+      "start": 3256.82,
+      "end": 3262.26,
+      "text": "So it's just something to bear in mind and something I like to capture as part of my development process"
+    },
+    {
+      "start": 3263.94,
+      "end": 3266.58,
+      "text": "Have I got the little context window always displayed if you search for"
+    },
+    {
+      "start": 3268.5,
+      "end": 3274.18,
+      "text": "Whereas an ai hero clawed code status line, then you will find it"
+    },
+    {
+      "start": 3274.5,
+      "end": 3280.1,
+      "text": "So this is uh some this is an article you can pass into lm to get this beautiful status line down the bottom"
+    },
+    {
+      "start": 3280.98,
+      "end": 3284.66,
+      "text": "Which is really nice. Look at me in my nice shirt with no beard"
+    },
+    {
+      "start": 3288.9,
+      "end": 3290.9,
+      "text": "Okie dokie"
+    },
+    {
+      "start": 3294.02,
+      "end": 3297.3,
+      "text": "Ha ha this is smart. So it's asking me"
+    },
+    {
+      "start": 3297.94,
+      "end": 3304.42,
+      "text": "Um, how should we attach a session to a developer's identity and it's given me some smart ideas here"
+    },
+    {
+      "start": 3305.06,
+      "end": 3310.26,
+      "text": "So it's going for first of all git config. So it's zero setup. It just reads the user email at spawn"
+    },
+    {
+      "start": 3310.9,
+      "end": 3312.9,
+      "text": "and"
+    },
+    {
+      "start": 3313.14,
+      "end": 3317.54,
+      "text": "It's trivially spoofable doesn't match the org's identity system. Yeah, that's interesting"
+    },
+    {
+      "start": 3318.5,
+      "end": 3322.34,
+      "text": "Explicit login during npx slot watch install. Yes"
+    },
+    {
+      "start": 3323.14,
+      "end": 3326.02,
+      "text": "And again, we have a kind of install thing calcifying here"
+    },
+    {
+      "start": 3328.9,
+      "end": 3330.9,
+      "text": "Mmm"
+    },
+    {
+      "start": 3333.86,
+      "end": 3335.86,
+      "text": "Let's see"
+    },
+    {
+      "start": 3337.3,
+      "end": 3342.1,
+      "text": "Yeah, so cycle reads a token from here token is minted by the back end when the dev authenticates once"
+    },
+    {
+      "start": 3345.7,
+      "end": 3347.7,
+      "text": "Yeah, yeah, so I guess"
+    },
+    {
+      "start": 3349.54,
+      "end": 3350.9,
+      "text": "We're starting to get somewhere"
+    },
+    {
+      "start": 3350.9,
+      "end": 3355.94,
+      "text": "We're starting to see something kind of come out of the mist here because all they need to run locally"
+    },
+    {
+      "start": 3355.94,
+      "end": 3358.42,
+      "text": "They just need to run npx slot watch install"
+    },
+    {
+      "start": 3360.18,
+      "end": 3362.66,
+      "text": "And then somewhere in some other process"
+    },
+    {
+      "start": 3363.3,
+      "end": 3365.3,
+      "text": "um"
+    },
+    {
+      "start": 3365.38,
+      "end": 3368.02,
+      "text": "There's probably something deployed somewhere that they can do"
+    },
+    {
+      "start": 3370.02,
+      "end": 3372.5,
+      "text": "What do you call it um aworth with"
+    },
+    {
+      "start": 3374.34,
+      "end": 3377.14,
+      "text": "Yeah aworth device flow against the org's configured idp"
+    },
+    {
+      "start": 3378.66,
+      "end": 3381.3,
+      "text": "With a long live refresh token stored in the os keychain"
+    },
+    {
+      "start": 3382.26,
+      "end": 3383.62,
+      "text": "Yeah, cool"
+    },
+    {
+      "start": 3383.62,
+      "end": 3385.62,
+      "text": "cool"
+    },
+    {
+      "start": 3385.62,
+      "end": 3387.62,
+      "text": "The back end becomes an oidc"
+    },
+    {
+      "start": 3388.1,
+      "end": 3396.02,
+      "text": "Okay, now I'm starting to be a little bit freaked out by the language it's using so I don't know what an oidc is"
+    },
+    {
+      "start": 3396.34,
+      "end": 3398.18,
+      "text": "You may do I don't"
+    },
+    {
+      "start": 3398.18,
+      "end": 3399.46,
+      "text": "so"
+    },
+    {
+      "start": 3399.46,
+      "end": 3402.82,
+      "text": "I'm just going to do a little zoom out, which is one of my skills"
+    },
+    {
+      "start": 3404.34,
+      "end": 3409.94,
+      "text": "Tell me a bit more about what oidc is and what an idp is. I'm a little bit out of my depth here"
+    },
+    {
+      "start": 3414.82,
+      "end": 3421.06,
+      "text": "Zoom out. It's just a teeny tiny skill kind of like grill me that just gets it to kind of like an explain luck. I'm five"
+    },
+    {
+      "start": 3428.1,
+      "end": 3430.1,
+      "text": "So what's it gonna say"
+    },
+    {
+      "start": 3434.66,
+      "end": 3436.66,
+      "text": "It's taking it's done"
+    },
+    {
+      "start": 3441.14,
+      "end": 3443.14,
+      "text": "All right, so"
+    },
+    {
+      "start": 3445.78,
+      "end": 3448.26,
+      "text": "Org's idp I suppose identity provider"
+    },
+    {
+      "start": 3451.14,
+      "end": 3458.26,
+      "text": "It speaks oidc the oidc protocol links to the slop watch cli and the side car on dev's machine"
+    },
+    {
+      "start": 3459.14,
+      "end": 3461.14,
+      "text": "And the slop watch"
+    },
+    {
+      "start": 3467.06,
+      "end": 3469.06,
+      "text": "Oh, I see here we go"
+    },
+    {
+      "start": 3469.46,
+      "end": 3472.58,
+      "text": "So it's giving us all this. Ah, I see nice. I only saw the thing at the bottom"
+    },
+    {
+      "start": 3473.3,
+      "end": 3475.62,
+      "text": "So yeah idp is the identity provider"
+    },
+    {
+      "start": 3476.1,
+      "end": 3481.46,
+      "text": "The service that actually stores who works at your company who authenticates them in a typical org one idp is the source of truth"
+    },
+    {
+      "start": 3481.46,
+      "end": 3483.46,
+      "text": "For does this person exist? Yes, cool"
+    },
+    {
+      "start": 3484.42,
+      "end": 3485.38,
+      "text": "um"
+    },
+    {
+      "start": 3485.38,
+      "end": 3487.38,
+      "text": "github"
+    },
+    {
+      "start": 3487.38,
+      "end": 3489.38,
+      "text": "Auth0"
+    },
+    {
+      "start": 3490.66,
+      "end": 3492.26,
+      "text": "Yeah, cool"
+    },
+    {
+      "start": 3492.26,
+      "end": 3496.18,
+      "text": "Yeah, I don't know if we want to like I mean this is big this is a big feature"
+    },
+    {
+      "start": 3497.14,
+      "end": 3499.14,
+      "text": "Don't know if we want to do something simpler than this"
+    },
+    {
+      "start": 3502.34,
+      "end": 3504.34,
+      "text": "Authentication"
+    },
+    {
+      "start": 3504.9,
+      "end": 3508.5,
+      "text": "And this is open id connect. I see I've heard of that"
+    },
+    {
+      "start": 3509.86,
+      "end": 3515.46,
+      "text": "So the flow stripped jargon user open slop watch slop watch redirects them to this login user logs in there"
+    },
+    {
+      "start": 3515.94,
+      "end": 3519.94,
+      "text": "Octa redirects them back to slop watch carrying a sign token. Yes, that makes sense"
+    },
+    {
+      "start": 3520.42,
+      "end": 3524.26,
+      "text": "Slop watch verifies the signature against octa's public key and trust the claim cool"
+    },
+    {
+      "start": 3525.06,
+      "end": 3527.06,
+      "text": "very cool"
+    },
+    {
+      "start": 3528.58,
+      "end": 3531.7,
+      "text": "Yep, oh idc is built on top of walls 2.0 cool"
+    },
+    {
+      "start": 3533.14,
+      "end": 3538.98,
+      "text": "More standardized way, okay. I've used a ortho a bunch of times. I just didn't know what oh idc did"
+    },
+    {
+      "start": 3543.22,
+      "end": 3545.22,
+      "text": "Got you"
+    },
+    {
+      "start": 3546.02,
+      "end": 3550.58,
+      "text": "Normal oh idc assumes there's a browser clis don't have one reliably. Yeah, cool. Here we go"
+    },
+    {
+      "start": 3550.58,
+      "end": 3552.9,
+      "text": "This is what you got to do to log in like github ortho and stuff"
+    },
+    {
+      "start": 3553.38,
+      "end": 3556.18,
+      "text": "Slop watch login calls the idp gets it back a short code"
+    },
+    {
+      "start": 3556.74,
+      "end": 3561.22,
+      "text": "CLI prints go to this thing enter this code user does that in their laptop browser"
+    },
+    {
+      "start": 3561.78,
+      "end": 3564.02,
+      "text": "CLI pulls the idp over a few seconds done yet"
+    },
+    {
+      "start": 3564.74,
+      "end": 3568.66,
+      "text": "Until the user completes the browser step beautiful beautiful beautiful. Yeah, there you go get our board login"
+    },
+    {
+      "start": 3571.14,
+      "end": 3573.14,
+      "text": "Nice see you again"
+    },
+    {
+      "start": 3574.02,
+      "end": 3576.02,
+      "text": "Relying party"
+    },
+    {
+      "start": 3576.82,
+      "end": 3578.82,
+      "text": "Got you"
+    },
+    {
+      "start": 3580.26,
+      "end": 3582.66,
+      "text": "Okay, so I suppose the question I have is"
+    },
+    {
+      "start": 3583.22,
+      "end": 3585.22,
+      "text": "Get out of here"
+    },
+    {
+      "start": 3588.9,
+      "end": 3592.02,
+      "text": "Do I need ortho just to get something up and running locally? Yeah"
+    },
+    {
+      "start": 3595.54,
+      "end": 3601.22,
+      "text": "My question here is that this seems pretty heavy and I wonder if there's a kind of"
+    },
+    {
+      "start": 3602.42,
+      "end": 3607.46,
+      "text": "Crappier version of or that I can ship for version one just so we validate the idea early"
+    },
+    {
+      "start": 3607.46,
+      "end": 3610.02,
+      "text": "I don't want to have to go through the whole rigmarole of"
+    },
+    {
+      "start": 3612.5,
+      "end": 3618.1,
+      "text": "Doing this orth protocol if we can get something working for v1 a little bit simpler"
+    },
+    {
+      "start": 3619.3,
+      "end": 3626.58,
+      "text": "The important part of this is that we validate the idea early right this is a classic software engineering principle"
+    },
+    {
+      "start": 3626.74,
+      "end": 3631.06,
+      "text": "We could spec all of this stuff out, but we actually need to validate whether this is a decent idea"
+    },
+    {
+      "start": 3631.06,
+      "end": 3634.66,
+      "text": "We just see it working with we're in the abstract bit right now"
+    },
+    {
+      "start": 3642.18,
+      "end": 3644.18,
+      "text": "Hmm"
+    },
+    {
+      "start": 3644.5,
+      "end": 3646.5,
+      "text": "Work OS, I don't know what work"
+    },
+    {
+      "start": 3646.5,
+      "end": 3648.74,
+      "text": "I've got some friends who work at work OS, but I don't know what it is"
+    },
+    {
+      "start": 3650.18,
+      "end": 3652.18,
+      "text": "Oh, here we go"
+    },
+    {
+      "start": 3653.06,
+      "end": 3656.82,
+      "text": "Okey-dokey, I forgot say Claude called"
+    },
+    {
+      "start": 3659.94,
+      "end": 3665.3,
+      "text": "Okay, I can push oidc to version two two genuinely light options"
+    },
+    {
+      "start": 3665.86,
+      "end": 3674.58,
+      "text": "A per user admin minted token the admin runs the self-hosted backend opens up a little admin page clicks add user types a name and email gets back a one time"
+    },
+    {
+      "start": 3675.46,
+      "end": 3678.74,
+      "text": "Token string hands that token to the dev over slack or whatever"
+    },
+    {
+      "start": 3679.38,
+      "end": 3682.26,
+      "text": "Yes, dev run slot watch login and paste it"
+    },
+    {
+      "start": 3682.66,
+      "end": 3688.74,
+      "text": "Psycar stores it sends it as a bearer token every request the identity is trustworthy each token is bound to a user record cool"
+    },
+    {
+      "start": 3689.14,
+      "end": 3695.54,
+      "text": "Yeah, so the admin creates the user that has a user record that owns the user and then that just pings down to slot watch"
+    },
+    {
+      "start": 3697.62,
+      "end": 3699.62,
+      "text": "No idp integration"
+    },
+    {
+      "start": 3699.7,
+      "end": 3707.14,
+      "text": "Yep deprovisioning works because the admin just revoked the token. Yep upgrade bath is clean. Yeah. Yep. Yep. Yep"
+    },
+    {
+      "start": 3709.38,
+      "end": 3712.42,
+      "text": "One admin crud screen perfect. Yeah, that's nice"
+    },
+    {
+      "start": 3713.3,
+      "end": 3718.26,
+      "text": "A day or two. I like that. It gives me a that's like five minutes of work with AI"
+    },
+    {
+      "start": 3719.14,
+      "end": 3723.14,
+      "text": "I love that AI doesn't really understand how long AI takes to code something"
+    },
+    {
+      "start": 3724.34,
+      "end": 3726.34,
+      "text": "fascinating"
+    },
+    {
+      "start": 3726.5,
+      "end": 3728.5,
+      "text": "Uh, yeah, this is the one this is the one"
+    },
+    {
+      "start": 3729.22,
+      "end": 3731.22,
+      "text": "Option A is great"
+    },
+    {
+      "start": 3734.98,
+      "end": 3736.98,
+      "text": "Is it one of the other sponsors?"
+    },
+    {
+      "start": 3740.74,
+      "end": 3743.54,
+      "text": "Yeah, yeah, yeah, this this will um stairs video for sure"
+    },
+    {
+      "start": 3755.78,
+      "end": 3760.1,
+      "text": "Now it's tricky because I don't want to go too far here because I want to this whole idea of this stream"
+    },
+    {
+      "start": 3760.58,
+      "end": 3763.38,
+      "text": "And the reason I came on stream is I want to turn this into a"
+    },
+    {
+      "start": 3764.1,
+      "end": 3767.06,
+      "text": "Proper video where I actually go through and walk through this stuff"
+    },
+    {
+      "start": 3770.34,
+      "end": 3772.1,
+      "text": "Ha here we go"
+    },
+    {
+      "start": 3772.1,
+      "end": 3777.7,
+      "text": "What does deploy a slot watch back end look like for the org admin one binary with everything embedded a docker compose bundle"
+    },
+    {
+      "start": 3778.58,
+      "end": 3781.78,
+      "text": "Or a kubernetes kubernetes shaped set of services"
+    },
+    {
+      "start": 3783.3,
+      "end": 3789.78,
+      "text": "Hmm, this is the question that shapes what back end actually is one process or several what storage how the front end is stored"
+    },
+    {
+      "start": 3790.82,
+      "end": 3792.82,
+      "text": "A single binary batteries included"
+    },
+    {
+      "start": 3796.66,
+      "end": 3798.66,
+      "text": "Hmm"
+    },
+    {
+      "start": 3799.22,
+      "end": 3806.02,
+      "text": "So one go or rust executable whoof we might be heading into a rust build. How about that?"
+    },
+    {
+      "start": 3808.42,
+      "end": 3814.02,
+      "text": "Did a major migration last night it estimates we take four weeks. That's funny"
+    },
+    {
+      "start": 3816.18,
+      "end": 3818.18,
+      "text": "Um"
+    },
+    {
+      "start": 3819.22,
+      "end": 3822.74,
+      "text": "Upgrades swap the binary storage a db file on disk"
+    },
+    {
+      "start": 3826.26,
+      "end": 3829.54,
+      "text": "Plausible self-hosted grafana lowkey single binary"
+    },
+    {
+      "start": 3831.06,
+      "end": 3833.06,
+      "text": "Ha"
+    },
+    {
+      "start": 3834.34,
+      "end": 3836.34,
+      "text": "Could be"
+    },
+    {
+      "start": 3837.38,
+      "end": 3841.46,
+      "text": "Yeah, I think I prefer a postgres back end than an sqlite back end"
+    },
+    {
+      "start": 3846.42,
+      "end": 3848.42,
+      "text": "I don't want to do kubernetes"
+    },
+    {
+      "start": 3854.5,
+      "end": 3857.62,
+      "text": "Hmm, I think probably"
+    },
+    {
+      "start": 3860.18,
+      "end": 3862.18,
+      "text": "This is tricky, right"
+    },
+    {
+      "start": 3862.18,
+      "end": 3866.66,
+      "text": "You can make single binary typescripts executables with bun too. This could be a bun build"
+    },
+    {
+      "start": 3867.62,
+      "end": 3869.62,
+      "text": "This could be a bun build"
+    },
+    {
+      "start": 3870.9,
+      "end": 3876.18,
+      "text": "When um, what is it when paw for is finished then we can use paw for instead"
+    },
+    {
+      "start": 3877.06,
+      "end": 3882.66,
+      "text": "Paw for is crazy. Have you seen paw for and it's a terrible name. I don't know why they chose that name"
+    },
+    {
+      "start": 3884.82,
+      "end": 3887.62,
+      "text": "Yeah, so hybrid single binary by default"
+    },
+    {
+      "start": 3890.18,
+      "end": 3892.18,
+      "text": "Mm-hmm"
+    },
+    {
+      "start": 3893.94,
+      "end": 3895.94,
+      "text": "Yes hybrid single binary makes sense"
+    },
+    {
+      "start": 3897.78,
+      "end": 3899.78,
+      "text": "I"
+    },
+    {
+      "start": 3900.34,
+      "end": 3902.34,
+      "text": "Think pointing to a"
+    },
+    {
+      "start": 3904.34,
+      "end": 3910.74,
+      "text": "Postgres database also makes sense. I think that the database needs to outlive the"
+    },
+    {
+      "start": 3921.06,
+      "end": 3924.82,
+      "text": "Changes to the application and I want it to be in a different deployable unit"
+    },
+    {
+      "start": 3925.78,
+      "end": 3928.02,
+      "text": "To wherever the binary is running"
+    },
+    {
+      "start": 3931.62,
+      "end": 3936.5,
+      "text": "This I mean, this is hard course, you know, this is this is watch me work, right? That's the theory behind this stream"
+    },
+    {
+      "start": 3936.98,
+      "end": 3939.54,
+      "text": "And this is what I'm doing. This is how I work"
+    },
+    {
+      "start": 3940.82,
+      "end": 3945.22,
+      "text": "I'm using 4.7. Yeah, it's doing good so far. I mean, I'm not really noticing a difference"
+    },
+    {
+      "start": 3949.94,
+      "end": 3951.94,
+      "text": "It could be bun could be bun"
+    },
+    {
+      "start": 3956.34,
+      "end": 3958.34,
+      "text": "Could be bun"
+    },
+    {
+      "start": 3959.78,
+      "end": 3962.58,
+      "text": "Because I mean it would need to be some kind of executable"
+    },
+    {
+      "start": 3963.46,
+      "end": 3966.66,
+      "text": "Plus an application, right?"
+    },
+    {
+      "start": 3967.7,
+      "end": 3970.5,
+      "text": "But then the application. Yeah, this is a question I have"
+    },
+    {
+      "start": 3971.46,
+      "end": 3977.86,
+      "text": "Um, how does live spectate work server side has an event from a side car reach a manager's browser tab in 100 milliseconds"
+    },
+    {
+      "start": 3985.62,
+      "end": 3993.94,
+      "text": "The side car analysis machine posts events at the back end a manager watching Alice's session has a browser tab open"
+    },
+    {
+      "start": 3994.26,
+      "end": 3997.06,
+      "text": "Something has to found those events out from the ingest part of the watching tab"
+    },
+    {
+      "start": 3998.9,
+      "end": 4000.9,
+      "text": "Now I think it's going overkill here"
+    },
+    {
+      "start": 4002.82,
+      "end": 4006.34,
+      "text": "Let's take a simpler approach here. I want to focus on"
+    },
+    {
+      "start": 4011.38,
+      "end": 4013.38,
+      "text": "I think we can do this with polling, right?"
+    },
+    {
+      "start": 4016.5,
+      "end": 4019.3,
+      "text": "It being as live as possible is really needed"
+    },
+    {
+      "start": 4020.26,
+      "end": 4027.14,
+      "text": "Polling every five seconds or so or whenever the user focuses back on the tab is probably good enough"
+    },
+    {
+      "start": 4033.06,
+      "end": 4038.74,
+      "text": "This is interesting like we are really in blue sky territory here, so it's sort of going into funny implementation details"
+    },
+    {
+      "start": 4039.86,
+      "end": 4041.86,
+      "text": "I'm on medium because I'm just testing it out"
+    },
+    {
+      "start": 4043.22,
+      "end": 4046.02,
+      "text": "Yeah, exactly trpc or something. I mean or"
+    },
+    {
+      "start": 4049.06,
+      "end": 4051.06,
+      "text": "Yeah"
+    },
+    {
+      "start": 4052.02,
+      "end": 4054.58,
+      "text": "So it's interesting. We could build like a rust back end. Can we"
+    },
+    {
+      "start": 4055.38,
+      "end": 4058.26,
+      "text": "I'm proper binary. I've never done a rust project before. It might be fun"
+    },
+    {
+      "start": 4058.74,
+      "end": 4060.1,
+      "text": "It might be really fun"
+    },
+    {
+      "start": 4060.1,
+      "end": 4063.38,
+      "text": "Because we definitely need like an element of typescript in a front end here"
+    },
+    {
+      "start": 4064.82,
+      "end": 4067.38,
+      "text": "But having an actual, you know rust project will be really fun"
+    },
+    {
+      "start": 4069.62,
+      "end": 4071.62,
+      "text": "I don't know. Maybe I should stick to what I know"
+    },
+    {
+      "start": 4073.7,
+      "end": 4081.38,
+      "text": "What does the dri review inbox actually contain and what's the sessions lifecycle, okay, so at this point I feel like"
+    },
+    {
+      "start": 4083.14,
+      "end": 4088.5,
+      "text": "I'm sort of sick of like talking about the app now because we're in like I'm starting to get a bit of brain burn"
+    },
+    {
+      "start": 4089.38,
+      "end": 4091.38,
+      "text": "what I need to do is actually"
+    },
+    {
+      "start": 4092.5,
+      "end": 4098.74,
+      "text": "I think I want to exit out of this and create a new research document based on what we found so I want to compact this session"
+    },
+    {
+      "start": 4099.54,
+      "end": 4102.9,
+      "text": "Um, because we're sort of going all over the place"
+    },
+    {
+      "start": 4103.86,
+      "end": 4109.14,
+      "text": "And then I want to start talking about the language because the language how we talk about the application"
+    },
+    {
+      "start": 4109.7,
+      "end": 4113.7,
+      "text": "is really important because the AI and I need to be"
+    },
+    {
+      "start": 4114.28,
+      "end": 4119.3,
+      "text": "Synchronized in terms of the way we talk about it and there has been some really key terminology that's come out of this"
+    },
+    {
+      "start": 4119.38,
+      "end": 4126.02,
+      "text": "Like the sidecar process like the um admin like the user, you know that all that stuff"
+    },
+    {
+      "start": 4126.66,
+      "end": 4128.66,
+      "text": "so"
+    },
+    {
+      "start": 4129.3,
+      "end": 4134.42,
+      "text": "I think I want to exit the grilling session here and create another research document in this repo"
+    },
+    {
+      "start": 4134.9,
+      "end": 4137.3,
+      "text": "That captures all of the main decisions that we've made"
+    },
+    {
+      "start": 4138.1,
+      "end": 4144.42,
+      "text": "This obviously will be um a partial one. It will it will have unresolved questions that I want to be able to pick up later"
+    },
+    {
+      "start": 4146.1,
+      "end": 4148.1,
+      "text": "Let's do that first"
+    },
+    {
+      "start": 4150.42,
+      "end": 4152.42,
+      "text": "Opus is good at rust"
+    },
+    {
+      "start": 4153.7,
+      "end": 4155.7,
+      "text": "Yeah, I'm pressing a key on my keyboard"
+    },
+    {
+      "start": 4156.66,
+      "end": 4158.66,
+      "text": "to trigger whisper flow"
+    },
+    {
+      "start": 4158.66,
+      "end": 4163.3,
+      "text": "The grill me show the grill me skill is crazy. We're doing a grilling right now. We're inside a grill me skill"
+    },
+    {
+      "start": 4163.94,
+      "end": 4165.94,
+      "text": "I saw someone, uh"
+    },
+    {
+      "start": 4166.9,
+      "end": 4171.06,
+      "text": "The said the grill me skill had asked them like 200 questions the other day"
+    },
+    {
+      "start": 4172.58,
+      "end": 4175.46,
+      "text": "It's such a game. It's crazy good. It's crazy good"
+    },
+    {
+      "start": 4177.62,
+      "end": 4181.14,
+      "text": "I'm just gonna have a little sort of brain break and I'm just gonna check what's out for a second"
+    },
+    {
+      "start": 4182.9,
+      "end": 4184.9,
+      "text": "My son's with his parents and so uh"
+    },
+    {
+      "start": 4185.78,
+      "end": 4187.22,
+      "text": "um"
+    },
+    {
+      "start": 4187.22,
+      "end": 4189.22,
+      "text": "Oh, he's having a good time"
+    },
+    {
+      "start": 4189.38,
+      "end": 4191.38,
+      "text": "Oh, sweetie"
+    },
+    {
+      "start": 4193.46,
+      "end": 4195.46,
+      "text": "Done"
+    },
+    {
+      "start": 4196.74,
+      "end": 4201.14,
+      "text": "Yeah, I mean like there's there's only so much so much deciding you can do right"
+    },
+    {
+      "start": 4202.74,
+      "end": 4203.94,
+      "text": "Yeah"
+    },
+    {
+      "start": 4203.94,
+      "end": 4206.74,
+      "text": "What what what I notice here is that we don't have like"
+    },
+    {
+      "start": 4207.78,
+      "end": 4209.3,
+      "text": "um"
+    },
+    {
+      "start": 4209.3,
+      "end": 4211.3,
+      "text": "natural"
+    },
+    {
+      "start": 4212.1,
+      "end": 4214.5,
+      "text": "Breaks coding was kind of like a break"
+    },
+    {
+      "start": 4215.14,
+      "end": 4217.78,
+      "text": "From making decisions. It feels like"
+    },
+    {
+      "start": 4219.22,
+      "end": 4222.18,
+      "text": "What because when I do this solo when I'm not streaming"
+    },
+    {
+      "start": 4222.66,
+      "end": 4226.9,
+      "text": "I will tend to have two grilling sessions happening at the same time, you know one in either terminal"
+    },
+    {
+      "start": 4227.46,
+      "end": 4232.18,
+      "text": "And it's just, you know, you're constantly making decisions making calls. Um"
+    },
+    {
+      "start": 4233.54,
+      "end": 4235.54,
+      "text": "And it's you know, it's exhausting really"
+    },
+    {
+      "start": 4241.38,
+      "end": 4247.54,
+      "text": "I'm bored of talking how get on with it. Yeah, I mean you sort of need to uh, at some point just call it on the deciding"
+    },
+    {
+      "start": 4247.94,
+      "end": 4252.42,
+      "text": "Because really you can only make meaningful decisions when you're working with an actual asset"
+    },
+    {
+      "start": 4253.06,
+      "end": 4255.62,
+      "text": "Um, just working in this kind of abstract space"
+    },
+    {
+      "start": 4256.58,
+      "end": 4258.58,
+      "text": "is not good"
+    },
+    {
+      "start": 4259.14,
+      "end": 4264.74,
+      "text": "So eight resolved decisions team org self-hosted org wide visibility. DRI first class. Yeah. Cool. Cool. Cool. Cool. Cool"
+    },
+    {
+      "start": 4265.94,
+      "end": 4268.66,
+      "text": "Again, I'm not going to review this research document. I'm just going to trust it"
+    },
+    {
+      "start": 4270.58,
+      "end": 4272.58,
+      "text": "Because I'm gonna like"
+    },
+    {
+      "start": 4274.1,
+      "end": 4275.7,
+      "text": "I think of um"
+    },
+    {
+      "start": 4275.7,
+      "end": 4281.62,
+      "text": "The prd as like a decision documents basically. Um, oh, sorry a destination document"
+    },
+    {
+      "start": 4282.1,
+      "end": 4285.86,
+      "text": "The product requirements document kind of describes where we're going. This is not a prd"
+    },
+    {
+      "start": 4286.26,
+      "end": 4289.3,
+      "text": "This is just like research that I'm doing into the idea that I have"
+    },
+    {
+      "start": 4292.5,
+      "end": 4294.5,
+      "text": "But what I want to do now is sharpen up the language"
+    },
+    {
+      "start": 4296.26,
+      "end": 4301.3,
+      "text": "Two week break to refactor all the slop. I mean, you'll see. I mean, there's there's not a ton of slop that comes out of here"
+    },
+    {
+      "start": 4305.3,
+      "end": 4310.9,
+      "text": "Would it make sense to do different grilling sessions for back end of another front end and take each side one at a time? No"
+    },
+    {
+      "start": 4311.78,
+      "end": 4313.78,
+      "text": "absolutely not"
+    },
+    {
+      "start": 4314.26,
+      "end": 4320.9,
+      "text": "Uh back end and front end is an artificial decision. The domain the problem space is the entire thing"
+    },
+    {
+      "start": 4321.46,
+      "end": 4323.46,
+      "text": "back end and front end are just two, um"
+    },
+    {
+      "start": 4324.34,
+      "end": 4327.06,
+      "text": "deployable units. Um, and if they are"
+    },
+    {
+      "start": 4328.02,
+      "end": 4330.58,
+      "text": "Like we separate them because traditionally"
+    },
+    {
+      "start": 4331.3,
+      "end": 4332.42,
+      "text": "we've"
+    },
+    {
+      "start": 4332.42,
+      "end": 4336.5,
+      "text": "organized companies around hiring front end teams and hiring back end teams"
+    },
+    {
+      "start": 4337.3,
+      "end": 4343.86,
+      "text": "That has always been a bad decision because it means that you get too focused on your domain and you don't think about the entire problem space"
+    },
+    {
+      "start": 4346.98,
+      "end": 4351.78,
+      "text": "Um, it's not so much a roadmap document. I'll show you what I mean. Um, I just want to firm up the language"
+    },
+    {
+      "start": 4351.86,
+      "end": 4357.54,
+      "text": "So I want to firm up the language a little bit and take some of the terms that we've got so far and put them inside a"
+    },
+    {
+      "start": 4357.78,
+      "end": 4359.78,
+      "text": "context.md file"
+    },
+    {
+      "start": 4360.5,
+      "end": 4364.26,
+      "text": "Let's do that now, but grill me about each decision. I want to have a lot of control over this"
+    },
+    {
+      "start": 4368.58,
+      "end": 4371.14,
+      "text": "So you'll see what I mean in a second"
+    },
+    {
+      "start": 4376.42,
+      "end": 4380.58,
+      "text": "You have to answer all the nuanced details about every single thing that might not be a value on initial ideation"
+    },
+    {
+      "start": 4382.26,
+      "end": 4388.82,
+      "text": "It depends it depends basically because you want a lot of questions from the lm so that you can tell if you're aligned or not"
+    },
+    {
+      "start": 4392.02,
+      "end": 4396.26,
+      "text": "I mean I can feel from this grilling session that I have a much clearer idea of what slop watch is going to be"
+    },
+    {
+      "start": 4401.14,
+      "end": 4404.1,
+      "text": "Eddie what great name what great name slop watch"
+    },
+    {
+      "start": 4404.82,
+      "end": 4406.82,
+      "text": "Absolutely killer"
+    },
+    {
+      "start": 4407.38,
+      "end": 4409.38,
+      "text": "Okay, um"
+    },
+    {
+      "start": 4412.5,
+      "end": 4414.1,
+      "text": "So"
+    },
+    {
+      "start": 4414.1,
+      "end": 4416.1,
+      "text": "session ha ha there we go"
+    },
+    {
+      "start": 4418.1,
+      "end": 4419.86,
+      "text": "Starting with the low most okay"
+    },
+    {
+      "start": 4419.86,
+      "end": 4423.38,
+      "text": "So the point of this the point of this exercise that we're about to go on"
+    },
+    {
+      "start": 4423.86,
+      "end": 4429.14,
+      "text": "Is that when we firm up the language now or start thinking about language ideas"
+    },
+    {
+      "start": 4429.38,
+      "end": 4431.78,
+      "text": "We can be so much more precise going forward"
+    },
+    {
+      "start": 4435.54,
+      "end": 4436.58,
+      "text": "So"
+    },
+    {
+      "start": 4436.58,
+      "end": 4441.94,
+      "text": "The first term it's it's proposing to me is session a single continuous run of one coding agent from launch to exit"
+    },
+    {
+      "start": 4442.42,
+      "end": 4443.7,
+      "text": "attached to one"
+    },
+    {
+      "start": 4443.7,
+      "end": 4448.02,
+      "text": "Uh developer one current working directory one agent version. I love it. Yes"
+    },
+    {
+      "start": 4449.3,
+      "end": 4451.3,
+      "text": "Yes, it captures, uh"
+    },
+    {
+      "start": 4451.78,
+      "end": 4457.7,
+      "text": "You're capturing data from a session. Yes. I love it. Love it. Love it and it directly maps to a sessions table"
+    },
+    {
+      "start": 4458.74,
+      "end": 4462.5,
+      "text": "Notice how the language the way we talk about the application is so important here"
+    },
+    {
+      "start": 4462.98,
+      "end": 4465.54,
+      "text": "If session is fuzzy the whole data model is fuzzy fuzzy"
+    },
+    {
+      "start": 4466.1,
+      "end": 4468.1,
+      "text": "Um, yes"
+    },
+    {
+      "start": 4468.34,
+      "end": 4470.58,
+      "text": "Okay, right right. So there's some edge cases here"
+    },
+    {
+      "start": 4472.18,
+      "end": 4474.18,
+      "text": "Oh, so good"
+    },
+    {
+      "start": 4474.66,
+      "end": 4476.34,
+      "text": "so"
+    },
+    {
+      "start": 4476.34,
+      "end": 4478.34,
+      "text": "resumes"
+    },
+    {
+      "start": 4478.5,
+      "end": 4483.46,
+      "text": "Is a resumed session the same session is the original or a new one that points back to the parent"
+    },
+    {
+      "start": 4485.62,
+      "end": 4487.62,
+      "text": "So good"
+    },
+    {
+      "start": 4487.62,
+      "end": 4490.74,
+      "text": "Such a good edge case because you're right a session"
+    },
+    {
+      "start": 4491.54,
+      "end": 4497.62,
+      "text": "Is like it's it can have, you know, you can branch, right? So yeah, again, we have forks here"
+    },
+    {
+      "start": 4500.5,
+      "end": 4505.78,
+      "text": "Oh, how do you track that in a ui, right? Dilly tally"
+    },
+    {
+      "start": 4509.06,
+      "end": 4513.94,
+      "text": "Are you actually gonna build something or is this pure vibe coding? Yeah, I'm gonna build something. This is how I build stuff"
+    },
+    {
+      "start": 4517.46,
+      "end": 4520.58,
+      "text": "No, no, this is ubiquitous language. This is ubiquitous language 100%"
+    },
+    {
+      "start": 4522.34,
+      "end": 4525.3,
+      "text": "I think ddd is a fantastic match for"
+    },
+    {
+      "start": 4526.1,
+      "end": 4528.1,
+      "text": "uh, ai coding 100%"
+    },
+    {
+      "start": 4529.86,
+      "end": 4534.34,
+      "text": "So, oh claw codes tasks spawn sub agents that write their own jsnl files"
+    },
+    {
+      "start": 4535.7,
+      "end": 4539.7,
+      "text": "Is each sub agents run a child session or part of the parent? Wow"
+    },
+    {
+      "start": 4543.46,
+      "end": 4545.62,
+      "text": "Here's a little typescript wizard what you're saying"
+    },
+    {
+      "start": 4548.18,
+      "end": 4550.18,
+      "text": "Agent version"
+    },
+    {
+      "start": 4552.1,
+      "end": 4556.18,
+      "text": "Wow, brilliant. So all of these are questions that are really hard to answer"
+    },
+    {
+      "start": 4558.58,
+      "end": 4563.62,
+      "text": "Yeah fork the the issue is forks right and branching inside the session"
+    },
+    {
+      "start": 4565.54,
+      "end": 4567.54,
+      "text": "Because"
+    },
+    {
+      "start": 4567.94,
+      "end": 4569.94,
+      "text": "Yeah, we're really going to track that in the ui"
+    },
+    {
+      "start": 4572.34,
+      "end": 4576.58,
+      "text": "Because when we think of a session we're thinking of like a big list of sessions that attach to the user"
+    },
+    {
+      "start": 4577.22,
+      "end": 4579.22,
+      "text": "I feel like I might need to do a diagram here"
+    },
+    {
+      "start": 4582.5,
+      "end": 4584.5,
+      "text": "Mmm"
+    },
+    {
+      "start": 4588.58,
+      "end": 4590.58,
+      "text": "Gosh, it's this is a hard call"
+    },
+    {
+      "start": 4593.46,
+      "end": 4595.46,
+      "text": "New session with parents I do yeah"
+    },
+    {
+      "start": 4598.58,
+      "end": 4601.14,
+      "text": "Yeah, because the language we took use here is so important"
+    },
+    {
+      "start": 4604.1,
+      "end": 4607.62,
+      "text": "The forks one is really tricky and"
+    },
+    {
+      "start": 4609.46,
+      "end": 4611.46,
+      "text": "It's really hard for me to"
+    },
+    {
+      "start": 4612.98,
+      "end": 4618.58,
+      "text": "Work that out. Can you throw some scenarios at me so that we can road test that language more?"
+    },
+    {
+      "start": 4623.86,
+      "end": 4625.62,
+      "text": "Hmm"
+    },
+    {
+      "start": 4625.62,
+      "end": 4627.62,
+      "text": "So this is what ddd does they um"
+    },
+    {
+      "start": 4628.18,
+      "end": 4632.1,
+      "text": "Domain driven design the theory behind it is you take a bunch of"
+    },
+    {
+      "start": 4632.74,
+      "end": 4634.9,
+      "text": "If you have a sort of disagreement about language"
+    },
+    {
+      "start": 4635.7,
+      "end": 4640.82,
+      "text": "Um, then you take some concrete scenarios and you sort of see which ones are easy to describe"
+    },
+    {
+      "start": 4641.46,
+      "end": 4644.82,
+      "text": "With the language that you're using and that we usually map on to"
+    },
+    {
+      "start": 4647.54,
+      "end": 4649.54,
+      "text": "Whether it's easy to code or not"
+    },
+    {
+      "start": 4651.7,
+      "end": 4656.5,
+      "text": "Yeah, and I love patterns go so well with ddd dependency injection. Yeah totally. Okay, so"
+    },
+    {
+      "start": 4658.02,
+      "end": 4660.02,
+      "text": "Scenario a the explorer"
+    },
+    {
+      "start": 4662.26,
+      "end": 4666.74,
+      "text": "Here we go Alice is refactoring auth module in pi after 10 turns"
+    },
+    {
+      "start": 4666.74,
+      "end": 4670.5,
+      "text": "She's at a decision point rewrite with middleware or refactor in place"
+    },
+    {
+      "start": 4670.74,
+      "end": 4676.74,
+      "text": "She branches tries middleware for eight turns doesn't like it branches back to the decision point tries in place for 12 turns ships"
+    },
+    {
+      "start": 4676.74,
+      "end": 4681.06,
+      "text": "It the middleware branch is abandoned. So is that three sessions?"
+    },
+    {
+      "start": 4682.02,
+      "end": 4684.34,
+      "text": "Or one session with a directed acyclic graph"
+    },
+    {
+      "start": 4685.46,
+      "end": 4691.54,
+      "text": "Because yeah, there's a concept of sessions here and then turns within that session and maybe the turns"
+    },
+    {
+      "start": 4692.1,
+      "end": 4694.1,
+      "text": "Are sort of branching points, right?"
+    },
+    {
+      "start": 4696.26,
+      "end": 4699.06,
+      "text": "Yeah, we are um saving live streams on the channel"
+    },
+    {
+      "start": 4702.18,
+      "end": 4706.9,
+      "text": "The middleware branch costs real tokens and produce real artifacts files were written then rewound"
+    },
+    {
+      "start": 4707.14,
+      "end": 4713.86,
+      "text": "Does the dri inbox show all three does Alice's session count this week show plus three or plus one brilliant"
+    },
+    {
+      "start": 4715.46,
+      "end": 4719.86,
+      "text": "Okay scenario b bob is using pi 40 turns in he rewinds two turns to rephrase a prompt"
+    },
+    {
+      "start": 4720.5,
+      "end": 4726.42,
+      "text": "Pi treats this as a branch your two turns still exist on that. By the way, if you don't know what dag is a directed acyclic graph"
+    },
+    {
+      "start": 4730.1,
+      "end": 4735.7,
+      "text": "How to claw get detailed info we did a research phase earlier where we looked at coding agent ingestion"
+    },
+    {
+      "start": 4736.18,
+      "end": 4737.78,
+      "text": "and we looked at"
+    },
+    {
+      "start": 4737.78,
+      "end": 4741.06,
+      "text": "basically did a bunch of research went into some documents and then"
+    },
+    {
+      "start": 4742.02,
+      "end": 4745.62,
+      "text": "It has all this stuff in its context. You're right. I am a little bit suspicious about"
+    },
+    {
+      "start": 4746.5,
+      "end": 4750.5,
+      "text": "Understanding it's understanding that it does this, but I'm willing to just sort of take it on faith here"
+    },
+    {
+      "start": 4752.9,
+      "end": 4755.78,
+      "text": "Yeah, so I think we need a concept of a turn inside a session"
+    },
+    {
+      "start": 4758.02,
+      "end": 4759.54,
+      "text": "Carol is dri"
+    },
+    {
+      "start": 4759.54,
+      "end": 4761.06,
+      "text": "Dave is in pi"
+    },
+    {
+      "start": 4761.06,
+      "end": 4767.06,
+      "text": "Carol opens Dave's live spectator view Dave branches now Dave is on branch b branch a still exists in the tree"
+    },
+    {
+      "start": 4768.66,
+      "end": 4770.66,
+      "text": "Carol's tab is polling"
+    },
+    {
+      "start": 4770.98,
+      "end": 4773.14,
+      "text": "Yeah, which session is I d? Yes. Yes. Yes. Yes. Yes. Yes"
+    },
+    {
+      "start": 4774.74,
+      "end": 4776.74,
+      "text": "Okay"
+    },
+    {
+      "start": 4776.74,
+      "end": 4778.74,
+      "text": "so"
+    },
+    {
+      "start": 4779.7,
+      "end": 4782.5,
+      "text": "Let's think about there being"
+    },
+    {
+      "start": 4784.02,
+      "end": 4788.9,
+      "text": "Sessions and then within sessions there are turns since turns maps on to"
+    },
+    {
+      "start": 4791.94,
+      "end": 4794.58,
+      "text": "API calls that agents make to"
+    },
+    {
+      "start": 4796.5,
+      "end": 4802.74,
+      "text": "The back end or maybe I mean we can argue about terms there might be I don't know there might be some other term there that we use"
+    },
+    {
+      "start": 4804.42,
+      "end": 4809.38,
+      "text": "But so a session can contain the directed acyclic graph"
+    },
+    {
+      "start": 4810.02,
+      "end": 4811.62,
+      "text": "of all of the"
+    },
+    {
+      "start": 4811.62,
+      "end": 4813.62,
+      "text": "branches that were created in the tree"
+    },
+    {
+      "start": 4815.46,
+      "end": 4817.46,
+      "text": "Does that make sense"
+    },
+    {
+      "start": 4821.22,
+      "end": 4825.62,
+      "text": "I mean this is 4.7 so I assume its knowledge cutoff is fairly up to date"
+    },
+    {
+      "start": 4827.22,
+      "end": 4829.22,
+      "text": "But yeah, I don't know"
+    },
+    {
+      "start": 4829.54,
+      "end": 4831.54,
+      "text": "I mean pies existed for a little while"
+    },
+    {
+      "start": 4834.5,
+      "end": 4836.5,
+      "text": "I was actually um at a conference recently"
+    },
+    {
+      "start": 4836.82,
+      "end": 4841.86,
+      "text": "I was sat across from mario the guy who created pie. I didn't realize who he was actually um"
+    },
+    {
+      "start": 4842.34,
+      "end": 4851.3,
+      "text": "Didn't talk to him for the entire time. The only time we uh chatted was um, this was at the speaker's dinner for ai engineer london and"
+    },
+    {
+      "start": 4852.18,
+      "end": 4854.18,
+      "text": "he said um"
+    },
+    {
+      "start": 4855.14,
+      "end": 4857.14,
+      "text": "What is that and pointed to a plate of food"
+    },
+    {
+      "start": 4857.86,
+      "end": 4860.42,
+      "text": "And is that for everybody or just you?"
+    },
+    {
+      "start": 4861.14,
+      "end": 4863.54,
+      "text": "Obviously, I was being very covetous over the butter chicken"
+    },
+    {
+      "start": 4864.66,
+      "end": 4866.66,
+      "text": "Okay"
+    },
+    {
+      "start": 4870.02,
+      "end": 4872.02,
+      "text": "Here we go"
+    },
+    {
+      "start": 4872.1,
+      "end": 4877.14,
+      "text": "Good move. Let me lock in the dag inside session model and probe to residual fuzziness points"
+    },
+    {
+      "start": 4877.62,
+      "end": 4882.1,
+      "text": "The new shape session is logical turn one row contains a dag of turns"
+    },
+    {
+      "start": 4882.74,
+      "end": 4884.74,
+      "text": "Turn is a node in that dag"
+    },
+    {
+      "start": 4884.98,
+      "end": 4886.98,
+      "text": "Yeah, yeah, yeah"
+    },
+    {
+      "start": 4887.46,
+      "end": 4889.46,
+      "text": "Has a parent turn id"
+    },
+    {
+      "start": 4890.42,
+      "end": 4893.22,
+      "text": "Most agents producer to generate dag a straight line"
+    },
+    {
+      "start": 4894.02,
+      "end": 4896.02,
+      "text": "Only pie produces real branches"
+    },
+    {
+      "start": 4896.5,
+      "end": 4898.5,
+      "text": "Don't know about that"
+    },
+    {
+      "start": 4899.14,
+      "end": 4902.98,
+      "text": "Two things are still fuzzy turn terminology. You said turn to map onto api calls"
+    },
+    {
+      "start": 4902.98,
+      "end": 4907.62,
+      "text": "That's not right in standard agent parlance and the gap matters in most agents own docks"
+    },
+    {
+      "start": 4908.5,
+      "end": 4913.22,
+      "text": "A turn means one user message plus the full assistant response. Yes, that makes sense"
+    },
+    {
+      "start": 4915.14,
+      "end": 4917.54,
+      "text": "What if called api call"
+    },
+    {
+      "start": 4919.62,
+      "end": 4925.94,
+      "text": "A model request I see I see here we go a turn versus a model request"
+    },
+    {
+      "start": 4930.34,
+      "end": 4932.5,
+      "text": "Yes, yes"
+    },
+    {
+      "start": 4935.7,
+      "end": 4937.54,
+      "text": "That makes sense"
+    },
+    {
+      "start": 4937.54,
+      "end": 4942.34,
+      "text": "What about resumes and sub agents now that we have the dag model the dag resolves forks, but not these"
+    },
+    {
+      "start": 4944.26,
+      "end": 4951.86,
+      "text": "Okay context codex resume context was compacted and reconstructed. Is it the same session just to resume market turn in the dag"
+    },
+    {
+      "start": 4952.34,
+      "end": 4954.34,
+      "text": "Or a new session with a parent session id?"
+    },
+    {
+      "start": 4961.62,
+      "end": 4964.9,
+      "text": "This is really hard man. What are your picks?"
+    },
+    {
+      "start": 4969.54,
+      "end": 4972.02,
+      "text": "Sub agents should be child sessions with a parent session id"
+    },
+    {
+      "start": 4974.74,
+      "end": 4976.74,
+      "text": "That's for sure"
+    },
+    {
+      "start": 4981.7,
+      "end": 4983.7,
+      "text": "Yeah, I don't know about compaction because"
+    },
+    {
+      "start": 4985.14,
+      "end": 4987.14,
+      "text": "We are building a um"
+    },
+    {
+      "start": 4988.18,
+      "end": 4990.18,
+      "text": "A coding agent observability tool"
+    },
+    {
+      "start": 4990.98,
+      "end": 4992.98,
+      "text": "And the thing we're working on here"
+    },
+    {
+      "start": 4993.86,
+      "end": 4995.14,
+      "text": "is"
+    },
+    {
+      "start": 4995.14,
+      "end": 4996.82,
+      "text": "when you"
+    },
+    {
+      "start": 4996.82,
+      "end": 4998.66,
+      "text": "finish a session"
+    },
+    {
+      "start": 4998.66,
+      "end": 5003.3,
+      "text": "And you or rather you're in a coding agent session and you compact"
+    },
+    {
+      "start": 5003.86,
+      "end": 5005.86,
+      "text": "How should that show in the imaginary ui?"
+    },
+    {
+      "start": 5007.06,
+      "end": 5009.06,
+      "text": "Uh, I imagine"
+    },
+    {
+      "start": 5011.3,
+      "end": 5013.3,
+      "text": "It's memories not the same artifacts"
+    },
+    {
+      "start": 5021.22,
+      "end": 5025.3,
+      "text": "I mean, this is this is something that's so hard to answer because we're in such an abstract space"
+    },
+    {
+      "start": 5025.7,
+      "end": 5030.02,
+      "text": "I think we're going to need to figure that out in implementation. So I'll just say that I'll see what it says"
+    },
+    {
+      "start": 5030.74,
+      "end": 5034.18,
+      "text": "The resume one is really hard for me to figure out while we're still in this abstract mode"
+    },
+    {
+      "start": 5034.26,
+      "end": 5040.02,
+      "text": "I feel like i'm going to need to see a basic version of this working first before I can make any reasonable calls here"
+    },
+    {
+      "start": 5046.18,
+      "end": 5051.22,
+      "text": "This is we're building slop watch we're building an agent observability platform for either individuals or teams"
+    },
+    {
+      "start": 5054.74,
+      "end": 5056.74,
+      "text": "Genius name genius name"
+    },
+    {
+      "start": 5059.3,
+      "end": 5062.82,
+      "text": "Hmm resumes stays open until you've seen real data. Yep"
+    },
+    {
+      "start": 5065.7,
+      "end": 5071.14,
+      "text": "Okay, so it's now writing a file to disk which is going to basically be um, here we go"
+    },
+    {
+      "start": 5072.98,
+      "end": 5075.54,
+      "text": "Uh, let's make this edit to context and let's just review it then"
+    },
+    {
+      "start": 5077.3,
+      "end": 5079.3,
+      "text": "So"
+    },
+    {
+      "start": 5080.58,
+      "end": 5084.74,
+      "text": "This is a file that i'm now using in most of my projects and"
+    },
+    {
+      "start": 5088.02,
+      "end": 5090.74,
+      "text": "I don't oh I don't like this this it's really like"
+    },
+    {
+      "start": 5094.5,
+      "end": 5097.78,
+      "text": "Okay, let's slightly update the"
+    },
+    {
+      "start": 5100.34,
+      "end": 5105.06,
+      "text": "Okay, essentially what it's got here is a glossary which in ddd terms will be a ubiquitous language"
+    },
+    {
+      "start": 5105.3,
+      "end": 5110.5,
+      "text": "So we have a session which is the logical run of one coding agent attached to one developer on one current working directory"
+    },
+    {
+      "start": 5111.14,
+      "end": 5115.7,
+      "text": "A session contains a directed acyclic graph of turns. It's not done a good job in"
+    },
+    {
+      "start": 5116.58,
+      "end": 5120.82,
+      "text": "Formatting this actually you're not using the formatting that's specified in the skill. Can you go back to it?"
+    },
+    {
+      "start": 5123.7,
+      "end": 5125.7,
+      "text": "Uh not skill.md just skill"
+    },
+    {
+      "start": 5128.98,
+      "end": 5132.42,
+      "text": "All the coding agents model things differently get to rediscover all their opinions. Yeah"
+    },
+    {
+      "start": 5134.5,
+      "end": 5136.5,
+      "text": "How do you manage ai not doing crap code"
+    },
+    {
+      "start": 5137.22,
+      "end": 5140.34,
+      "text": "Like 500 lines file bad separation of concerns junior code sometimes"
+    },
+    {
+      "start": 5140.9,
+      "end": 5142.66,
+      "text": "um"
+    },
+    {
+      "start": 5142.66,
+      "end": 5143.94,
+      "text": "Well, I mean"
+    },
+    {
+      "start": 5143.94,
+      "end": 5145.94,
+      "text": "That's a pretty big question"
+    },
+    {
+      "start": 5146.1,
+      "end": 5148.1,
+      "text": "The answer is that you bake in"
+    },
+    {
+      "start": 5148.34,
+      "end": 5150.02,
+      "text": "What I'd say is number one"
+    },
+    {
+      "start": 5150.02,
+      "end": 5156.42,
+      "text": "You first um, you've got to align yourself with the ai, right? You've got to make sure that you and the ai are aligned in what you're building"
+    },
+    {
+      "start": 5157.14,
+      "end": 5159.14,
+      "text": "second is you"
+    },
+    {
+      "start": 5159.62,
+      "end": 5165.7,
+      "text": "Um building architectural awareness from day one you get it to specifically tell you all the modules it's going to build"
+    },
+    {
+      "start": 5166.5,
+      "end": 5168.9,
+      "text": "Uh, and you have some control over the modules"
+    },
+    {
+      "start": 5171.14,
+      "end": 5173.14,
+      "text": "And then you"
+    },
+    {
+      "start": 5173.78,
+      "end": 5175.78,
+      "text": "Uh, you add automated review"
+    },
+    {
+      "start": 5176.74,
+      "end": 5182.02,
+      "text": "And then periodically you review the code base with an ai next to you using my improve your code base skill"
+    },
+    {
+      "start": 5182.5,
+      "end": 5186.82,
+      "text": "Which not only improves the architecture of your code base makes it easier to change"
+    },
+    {
+      "start": 5187.22,
+      "end": 5193.3,
+      "text": "But makes the feedback loops better for the ai so that it's not producing crap code or code that doesn't work"
+    },
+    {
+      "start": 5195.22,
+      "end": 5197.22,
+      "text": "Yeah, a dag is for branching sessions"
+    },
+    {
+      "start": 5198.42,
+      "end": 5202.02,
+      "text": "Here we go. This is better. So it's actually using the the right format now"
+    },
+    {
+      "start": 5202.5,
+      "end": 5206.9,
+      "text": "So, okay, we've got a language which is a coding agent. We've then got a"
+    },
+    {
+      "start": 5207.7,
+      "end": 5210.26,
+      "text": "Session which is one logical run of any coding agent"
+    },
+    {
+      "start": 5211.14,
+      "end": 5214.42,
+      "text": "We've then got a turn one user message plus the full assistant response"
+    },
+    {
+      "start": 5214.98,
+      "end": 5216.98,
+      "text": "We've then got a model request"
+    },
+    {
+      "start": 5217.54,
+      "end": 5221.14,
+      "text": "One htb called the agent makes the model provided during a turn. Okay, cool"
+    },
+    {
+      "start": 5221.7,
+      "end": 5224.82,
+      "text": "So these are starting to be sort of entities within our database"
+    },
+    {
+      "start": 5227.06,
+      "end": 5230.18,
+      "text": "I still sort of use roundflops. Um, I'm using sandcastle now"
+    },
+    {
+      "start": 5232.5,
+      "end": 5234.5,
+      "text": "Yep, this model will be available afterwards"
+    },
+    {
+      "start": 5235.46,
+      "end": 5237.46,
+      "text": "Cool, this is good"
+    },
+    {
+      "start": 5238.34,
+      "end": 5240.26,
+      "text": "I'd like to"
+    },
+    {
+      "start": 5240.26,
+      "end": 5244.9,
+      "text": "discuss some of the architectural stuff here such as the sidecar the"
+    },
+    {
+      "start": 5249.3,
+      "end": 5251.3,
+      "text": "The binary if we want to call it that"
+    },
+    {
+      "start": 5255.7,
+      "end": 5260.02,
+      "text": "Yeah, when we get to building stuff, I'll show you um my automated review step"
+    },
+    {
+      "start": 5261.86,
+      "end": 5264.58,
+      "text": "You would need an agent observability platform so that you"
+    },
+    {
+      "start": 5265.3,
+      "end": 5267.86,
+      "text": "Can get insights as to what your agents are doing"
+    },
+    {
+      "start": 5268.18,
+      "end": 5273.78,
+      "text": "So if you're, you know, how many tokens you're spending how much context window your afk agents, especially are using"
+    },
+    {
+      "start": 5274.26,
+      "end": 5281.86,
+      "text": "This is most and also if you're a team leader, you want to know how your team is using agents and you want to maybe um"
+    },
+    {
+      "start": 5282.58,
+      "end": 5287.3,
+      "text": "You might want to compare the sessions using one model or compare the sessions using another model"
+    },
+    {
+      "start": 5290.02,
+      "end": 5292.02,
+      "text": "Yeah, we're grilling about slop watch"
+    },
+    {
+      "start": 5294.02,
+      "end": 5296.02,
+      "text": "You got vendor locked inside lovable cloud"
+    },
+    {
+      "start": 5297.7,
+      "end": 5300.42,
+      "text": "Some reason that's just a strange image in my head"
+    },
+    {
+      "start": 5301.14,
+      "end": 5305.54,
+      "text": "Uh, how to migrate from lovable cloud to super bass without losing data. Um, no"
+    },
+    {
+      "start": 5306.42,
+      "end": 5308.58,
+      "text": "I would ask claude uh using grill me"
+    },
+    {
+      "start": 5309.54,
+      "end": 5311.7,
+      "text": "If they're both post postgres you might be fine"
+    },
+    {
+      "start": 5314.1,
+      "end": 5316.1,
+      "text": "Okay, so"
+    },
+    {
+      "start": 5319.94,
+      "end": 5324.66,
+      "text": "Grilling the on machine capture thing the naming is harder than it looks because there are two physical forms brilliant"
+    },
+    {
+      "start": 5325.62,
+      "end": 5327.3,
+      "text": "The naming trap"
+    },
+    {
+      "start": 5327.3,
+      "end": 5331.86,
+      "text": "The thing has two forms based on the project. It's either a sub process"
+    },
+    {
+      "start": 5333.38,
+      "end": 5336.66,
+      "text": "Or in process code a typescript extension or a js plugin cool"
+    },
+    {
+      "start": 5337.14,
+      "end": 5340.98,
+      "text": "We need one umbrella term for the thing that captures the events on the devs machine. Yeah"
+    },
+    {
+      "start": 5342.74,
+      "end": 5344.74,
+      "text": "So"
+    },
+    {
+      "start": 5344.74,
+      "end": 5347.24,
+      "text": "Yeah, this is cool. So we've either got a sidecar"
+    },
+    {
+      "start": 5349.94,
+      "end": 5352.68,
+      "text": "Or an adapter a collector"
+    },
+    {
+      "start": 5354.98,
+      "end": 5358.66,
+      "text": "Yep, it's a bit too hotel flavored"
+    },
+    {
+      "start": 5361.94,
+      "end": 5366.74,
+      "text": "The capture capture is that all right the capture runs on the developers machine"
+    },
+    {
+      "start": 5372.02,
+      "end": 5377.54,
+      "text": "Okay, interesting. So it doesn't the ai doesn't like sidecar as the process this um, if you're tuning in late"
+    },
+    {
+      "start": 5377.62,
+      "end": 5380.02,
+      "text": "This is the process that um"
+    },
+    {
+      "start": 5381.78,
+      "end": 5389.38,
+      "text": "Essentially runs next to the coding agent captures the data that the coding agent is putting out and sends it to the"
+    },
+    {
+      "start": 5390.18,
+      "end": 5392.18,
+      "text": "um"
+    },
+    {
+      "start": 5393.14,
+      "end": 5395.22,
+      "text": "The deployed back end which we also need to name"
+    },
+    {
+      "start": 5396.98,
+      "end": 5398.98,
+      "text": "Capture"
+    },
+    {
+      "start": 5399.46,
+      "end": 5401.46,
+      "text": "Capture uh surely"
+    },
+    {
+      "start": 5407.7,
+      "end": 5410.18,
+      "text": "Can you use capture like that? Is it not captura?"
+    },
+    {
+      "start": 5414.74,
+      "end": 5419.94,
+      "text": "Listener, yeah, I suppose listener is good listener is probably good. I like listener"
+    },
+    {
+      "start": 5423.3,
+      "end": 5425.3,
+      "text": "Hmm, I like listener"
+    },
+    {
+      "start": 5426.18,
+      "end": 5428.18,
+      "text": "Using sandcastle sweet"
+    },
+    {
+      "start": 5430.34,
+      "end": 5432.34,
+      "text": "We like Matt Pocock. That's nice"
+    },
+    {
+      "start": 5437.22,
+      "end": 5443.94,
+      "text": "I don't like capture on its own ingestion pipeline that sort of refers to the entire thing. This is like a one small part of the"
+    },
+    {
+      "start": 5444.5,
+      "end": 5445.3,
+      "text": "um"
+    },
+    {
+      "start": 5445.3,
+      "end": 5447.3,
+      "text": "Ingestor, I suppose is good"
+    },
+    {
+      "start": 5449.06,
+      "end": 5451.38,
+      "text": "Captura adapter tap"
+    },
+    {
+      "start": 5453.54,
+      "end": 5458.5,
+      "text": "Claude code tap sits on the pipe and siphons off a copy. That's quite nice. Um"
+    },
+    {
+      "start": 5460.1,
+      "end": 5463.06,
+      "text": "Capture is a count noun is grammatically iffy. I don't like that"
+    },
+    {
+      "start": 5464.9,
+      "end": 5467.3,
+      "text": "Agent that's not doesn't not going to work for us"
+    },
+    {
+      "start": 5468.02,
+      "end": 5470.02,
+      "text": "capturer"
+    },
+    {
+      "start": 5471.54,
+      "end": 5473.54,
+      "text": "What about listener?"
+    },
+    {
+      "start": 5477.54,
+      "end": 5479.54,
+      "text": "Watcher"
+    },
+    {
+      "start": 5479.54,
+      "end": 5481.54,
+      "text": "Make sense"
+    },
+    {
+      "start": 5482.26,
+      "end": 5485.94,
+      "text": "Watcher makes sense watcher listener seer oracle"
+    },
+    {
+      "start": 5493.3,
+      "end": 5499.38,
+      "text": "Listener collector maybe collector. I feel like it said collected isn't it if it might call I'd order them"
+    },
+    {
+      "start": 5502.98,
+      "end": 5504.98,
+      "text": "And that's a look"
+    },
+    {
+      "start": 5506.02,
+      "end": 5509.14,
+      "text": "Listener is already a term of art inside the engines themselves pies"
+    },
+    {
+      "start": 5510.18,
+      "end": 5512.18,
+      "text": "extension api is already this"
+    },
+    {
+      "start": 5512.82,
+      "end": 5517.38,
+      "text": "Okay, so it's it's worried about collision between our terminology and the"
+    },
+    {
+      "start": 5518.66,
+      "end": 5520.98,
+      "text": "Other terminology who watches the watcher"
+    },
+    {
+      "start": 5522.1,
+      "end": 5524.1,
+      "text": "Who watches the watcher?"
+    },
+    {
+      "start": 5527.38,
+      "end": 5529.38,
+      "text": "Hmm"
+    },
+    {
+      "start": 5531.62,
+      "end": 5536.5,
+      "text": "Blandness yeah, it is too bland isn't it voyeur snitch peeper"
+    },
+    {
+      "start": 5539.78,
+      "end": 5547.14,
+      "text": "The in-process peeper the dirty little in-process peeper I feel like because we uh, that would be funny actually just to have"
+    },
+    {
+      "start": 5548.9,
+      "end": 5551.38,
+      "text": "I think maybe people should name like"
+    },
+    {
+      "start": 5552.18,
+      "end": 5554.5,
+      "text": "They should have funny language to talk about there"
+    },
+    {
+      "start": 5558.42,
+      "end": 5565.3,
+      "text": "Uh, yeah, I like it too. AI sister dev is actually really fun for streams spy spy"
+    },
+    {
+      "start": 5568.5,
+      "end": 5573.06,
+      "text": "What about peeper a dirty little one"
+    },
+    {
+      "start": 5577.7,
+      "end": 5586.5,
+      "text": "Taylor. Hmm Taylor Dury little peeper. Yeah, I'm still thinking that 100k tokens are still the smart zone"
+    },
+    {
+      "start": 5589.86,
+      "end": 5595.3,
+      "text": "Producer it's not quite right stalker stalker two stalkers immediately"
+    },
+    {
+      "start": 5597.62,
+      "end": 5600.18,
+      "text": "Gradually it works. It's vivid no collision. But here's the honest problem"
+    },
+    {
+      "start": 5601.46,
+      "end": 5606.02,
+      "text": "Uh asking dev. Oh god. It's giving me such a serious answer. I'm gonna have to go back"
+    },
+    {
+      "start": 5608.66,
+      "end": 5610.66,
+      "text": "Oh"
+    },
+    {
+      "start": 5614.18,
+      "end": 5616.18,
+      "text": "Um, I think probably tap"
+    },
+    {
+      "start": 5620.66,
+      "end": 5626.02,
+      "text": "Actually, I'm jit. No, no, I'm just gonna say listener listener is fine for now. We can fix this later"
+    },
+    {
+      "start": 5628.02,
+      "end": 5633.22,
+      "text": "Like it's we just need to get to good enough here, right? We don't want to just like bike shed about this bloody language all day"
+    },
+    {
+      "start": 5638.42,
+      "end": 5640.42,
+      "text": "Yeah"
+    },
+    {
+      "start": 5645.94,
+      "end": 5652.98,
+      "text": "Yeah, I undid it by um pressing escape twice and went um went back to an earlier turn"
+    },
+    {
+      "start": 5668.02,
+      "end": 5671.14,
+      "text": "I mean, I enjoy my usual coding sessions too"
+    },
+    {
+      "start": 5673.06,
+      "end": 5676.02,
+      "text": "Um, what's different is that I usually run two of these at the same time"
+    },
+    {
+      "start": 5677.46,
+      "end": 5680.58,
+      "text": "So I just try to burn myself out properly. Yeah, here we go"
+    },
+    {
+      "start": 5681.22,
+      "end": 5685.7,
+      "text": "Number four is the server side binary. We call it the binary in your last message. Um"
+    },
+    {
+      "start": 5686.74,
+      "end": 5689.78,
+      "text": "Proposed candidates the server the back end the hub the collector"
+    },
+    {
+      "start": 5690.42,
+      "end": 5692.42,
+      "text": "The collector is pretty good. I like that"
+    },
+    {
+      "start": 5692.98,
+      "end": 5694.74,
+      "text": "um"
+    },
+    {
+      "start": 5694.74,
+      "end": 5696.74,
+      "text": "I mean the server, you know, that's it"
+    },
+    {
+      "start": 5697.7,
+      "end": 5699.7,
+      "text": "It's the slot watch server"
+    },
+    {
+      "start": 5700.66,
+      "end": 5702.66,
+      "text": "The white"
+    },
+    {
+      "start": 5703.38,
+      "end": 5709.38,
+      "text": "Let's get on with the implementation. We are so far away from implementation. Believe me. We are so far away"
+    },
+    {
+      "start": 5714.18,
+      "end": 5716.66,
+      "text": "Uh, we need to figure out where we're going first"
+    },
+    {
+      "start": 5718.74,
+      "end": 5722.18,
+      "text": "So slot watch. Yeah, I think the server I think server's great"
+    },
+    {
+      "start": 5726.66,
+      "end": 5729.7,
+      "text": "Observer the sensor the wiretapper"
+    },
+    {
+      "start": 5731.06,
+      "end": 5733.06,
+      "text": "Server's great"
+    },
+    {
+      "start": 5733.3,
+      "end": 5735.3,
+      "text": "I'm using opus opus 4.7"
+    },
+    {
+      "start": 5736.66,
+      "end": 5742.02,
+      "text": "Mm-hmm. Mm-hmm. Mm-hmm. Mm-hmm. Great"
+    },
+    {
+      "start": 5743.7,
+      "end": 5745.7,
+      "text": "Um"
+    },
+    {
+      "start": 5746.9,
+      "end": 5752.42,
+      "text": "I think that is good for now. So we've got the coding agent. So let's let's try this out"
+    },
+    {
+      "start": 5753.06,
+      "end": 5756.34,
+      "text": "We're now talking about this imaginary system that we've not created yet"
+    },
+    {
+      "start": 5757.62,
+      "end": 5759.62,
+      "text": "Let me try to explain it to you using this language"
+    },
+    {
+      "start": 5760.42,
+      "end": 5761.62,
+      "text": "so"
+    },
+    {
+      "start": 5761.62,
+      "end": 5763.62,
+      "text": "slot watch is"
+    },
+    {
+      "start": 5764.02,
+      "end": 5766.02,
+      "text": "A self-hosted"
+    },
+    {
+      "start": 5766.02,
+      "end": 5769.06,
+      "text": "On-premises observability platform for coding agents. That's good"
+    },
+    {
+      "start": 5770.58,
+      "end": 5772.58,
+      "text": "You take your coding agent and"
+    },
+    {
+      "start": 5773.7,
+      "end": 5776.5,
+      "text": "The user runs a listener next to the coding agent"
+    },
+    {
+      "start": 5777.22,
+      "end": 5779.22,
+      "text": "That listener reports"
+    },
+    {
+      "start": 5779.54,
+      "end": 5781.54,
+      "text": "information about sessions"
+    },
+    {
+      "start": 5782.98,
+      "end": 5784.98,
+      "text": "To the server"
+    },
+    {
+      "start": 5785.7,
+      "end": 5790.98,
+      "text": "And the server is a self-hosted process that receives events from the listeners stores them in postgres"
+    },
+    {
+      "start": 5791.3,
+      "end": 5794.26,
+      "text": "And serves a dashboard and hosts the admin plan one per organization"
+    },
+    {
+      "start": 5796.58,
+      "end": 5798.74,
+      "text": "That's what we're building. So those are the relationships"
+    },
+    {
+      "start": 5799.38,
+      "end": 5803.78,
+      "text": "I like these example dialogues as well. This session cost $14. Where did it go?"
+    },
+    {
+      "start": 5804.34,
+      "end": 5807.54,
+      "text": "Most of it is on one turn where the agent did 22 tool calls"
+    },
+    {
+      "start": 5807.78,
+      "end": 5811.94,
+      "text": "Each was a model request charged separately. The rest is a sub agent. I spawned with a task tool"
+    },
+    {
+      "start": 5812.18,
+      "end": 5814.66,
+      "text": "It's a child session with its own cost. Cool. I love that"
+    },
+    {
+      "start": 5815.86,
+      "end": 5817.14,
+      "text": "So"
+    },
+    {
+      "start": 5817.14,
+      "end": 5823.3,
+      "text": "That's feeling pretty good. We've now got a shape here. We've got a local binary and we've got a"
+    },
+    {
+      "start": 5824.26,
+      "end": 5825.46,
+      "text": "Hey kiran"
+    },
+    {
+      "start": 5825.46,
+      "end": 5826.66,
+      "text": "um"
+    },
+    {
+      "start": 5826.66,
+      "end": 5828.66,
+      "text": "We've got a back end server"
+    },
+    {
+      "start": 5832.26,
+      "end": 5834.26,
+      "text": "Um, did we"
+    },
+    {
+      "start": 5834.26,
+      "end": 5836.58,
+      "text": "Yeah, we did some v1 architectural decisions. Okay"
+    },
+    {
+      "start": 5837.62,
+      "end": 5840.9,
+      "text": "Okay, I want to wind up this session because we're nearly heading to the dumb zone"
+    },
+    {
+      "start": 5841.22,
+      "end": 5846.58,
+      "text": "I want you to take a look at the research in v1 architectural decisions and check if there's anything that"
+    },
+    {
+      "start": 5847.14,
+      "end": 5849.14,
+      "text": "we need to add"
+    },
+    {
+      "start": 5849.38,
+      "end": 5851.38,
+      "text": "from"
+    },
+    {
+      "start": 5851.46,
+      "end": 5853.46,
+      "text": "This conversation"
+    },
+    {
+      "start": 5856.5,
+      "end": 5860.34,
+      "text": "I mean we are we're getting close to building we're getting close to something that we can build here"
+    },
+    {
+      "start": 5860.42,
+      "end": 5863.06,
+      "text": "We've got the language is starting to shape up"
+    },
+    {
+      "start": 5863.7,
+      "end": 5866.66,
+      "text": "We're understanding all of the different deployable units"
+    },
+    {
+      "start": 5869.78,
+      "end": 5871.94,
+      "text": "Um, the theory valera is that you would"
+    },
+    {
+      "start": 5872.58,
+      "end": 5876.18,
+      "text": "Um, install a plugin. I suppose we need to add that to the docs as well"
+    },
+    {
+      "start": 5877.78,
+      "end": 5881.86,
+      "text": "That would run the listener for you on in a hook"
+    },
+    {
+      "start": 5889.94,
+      "end": 5891.94,
+      "text": "Yeah, that's the theory"
+    },
+    {
+      "start": 5896.02,
+      "end": 5902.58,
+      "text": "So there's a couple of absolutely beastie grilling sessions here and this is very like"
+    },
+    {
+      "start": 5903.54,
+      "end": 5905.54,
+      "text": "That's very reminiscent of the way I code"
+    },
+    {
+      "start": 5908.5,
+      "end": 5914.5,
+      "text": "Any advice for graduating computer science students, um, I don't think so. I never graduated computer science"
+    },
+    {
+      "start": 5914.5,
+      "end": 5916.5,
+      "text": "So you're doing better than I did"
+    },
+    {
+      "start": 5918.18,
+      "end": 5922.02,
+      "text": "I graduated drama degree and a master's in voice and singing"
+    },
+    {
+      "start": 5924.74,
+      "end": 5927.22,
+      "text": "Okay, cool. That's looking good. So let's commit this"
+    },
+    {
+      "start": 5928.5,
+      "end": 5930.98,
+      "text": "Again, I don't read the research files. It's just waste of time"
+    },
+    {
+      "start": 5934.02,
+      "end": 5940.42,
+      "text": "But I do like to read the context omd file now we're getting somewhere we're getting towards something real"
+    },
+    {
+      "start": 5940.98,
+      "end": 5942.74,
+      "text": "um"
+    },
+    {
+      "start": 5942.74,
+      "end": 5945.7,
+      "text": "And we're also getting towards um the end of my time"
+    },
+    {
+      "start": 5946.9,
+      "end": 5948.9,
+      "text": "so"
+    },
+    {
+      "start": 5949.54,
+      "end": 5954.74,
+      "text": "Thank you for helping me choose a project. This is a really cool idea. I think"
+    },
+    {
+      "start": 5955.78,
+      "end": 5959.94,
+      "text": "It's gotta. I mean, it's got a great name. We've gotten a basic architecture"
+    },
+    {
+      "start": 5960.9,
+      "end": 5962.9,
+      "text": "and"
+    },
+    {
+      "start": 5962.9,
+      "end": 5964.18,
+      "text": "We've"
+    },
+    {
+      "start": 5964.18,
+      "end": 5966.18,
+      "text": "grilled our way towards"
+    },
+    {
+      "start": 5966.74,
+      "end": 5968.74,
+      "text": "Something that feels pretty good"
+    },
+    {
+      "start": 5968.9,
+      "end": 5971.38,
+      "text": "All we've done here is we've basically created a"
+    },
+    {
+      "start": 5972.18,
+      "end": 5978.98,
+      "text": "two research documents sort of one looking at how different coding agents work in terms of ingestion and the second looking at"
+    },
+    {
+      "start": 5980.26,
+      "end": 5983.3,
+      "text": "Sort of creating some architectural decisions understand the basic architecture"
+    },
+    {
+      "start": 5983.62,
+      "end": 5988.34,
+      "text": "The main one is that we've hammered out some language here and we're now this is kind of like a"
+    },
+    {
+      "start": 5989.62,
+      "end": 5991.86,
+      "text": "Domain modeling session really that we've done"
+    },
+    {
+      "start": 5993.14,
+      "end": 5994.98,
+      "text": "uh"
+    },
+    {
+      "start": 5994.98,
+      "end": 5997.94,
+      "text": "I think what I'll do is I'll probably post a recap on this"
+    },
+    {
+      "start": 5998.66,
+      "end": 6000.18,
+      "text": "um"
+    },
+    {
+      "start": 6000.18,
+      "end": 6004.74,
+      "text": "Recapping what we've created and then going from there. I don't want you know"
+    },
+    {
+      "start": 6005.46,
+      "end": 6007.46,
+      "text": "Hey rafael nice to see you"
+    },
+    {
+      "start": 6008.1,
+      "end": 6010.1,
+      "text": "I don't want to"
+    },
+    {
+      "start": 6010.1,
+      "end": 6012.1,
+      "text": "We really are just wrapping up rafael. Sorry"
+    },
+    {
+      "start": 6013.94,
+      "end": 6015.94,
+      "text": "um"
+    },
+    {
+      "start": 6018.98,
+      "end": 6023.22,
+      "text": "Yeah, I uh, I want to mostly do this on videos"
+    },
+    {
+      "start": 6025.7,
+      "end": 6032.74,
+      "text": "I don't know how long this project will take um all I want is a project that I can work on that"
+    },
+    {
+      "start": 6033.46,
+      "end": 6035.46,
+      "text": "um"
+    },
+    {
+      "start": 6036.5,
+      "end": 6038.5,
+      "text": "Is something I can make content out of"
+    },
+    {
+      "start": 6039.38,
+      "end": 6041.38,
+      "text": "essentially"
+    },
+    {
+      "start": 6041.54,
+      "end": 6047.38,
+      "text": "So, I mean, I've got a few minutes left. Has anyone got any questions about my general process in terms of what I've been doing recently"
+    },
+    {
+      "start": 6047.62,
+      "end": 6051.86,
+      "text": "And anything like that. I'll probably finish on the hour. So we've got about seven minutes left"
+    },
+    {
+      "start": 6054.5,
+      "end": 6058.74,
+      "text": "It's only just hit you feed watching silicon valley for the twelfth time. I've never seen silicon valley"
+    },
+    {
+      "start": 6059.22,
+      "end": 6061.3,
+      "text": "Never seen it. I need to watch it. I know I do"
+    },
+    {
+      "start": 6062.42,
+      "end": 6064.42,
+      "text": "Everyone tells me to watch it"
+    },
+    {
+      "start": 6066.58,
+      "end": 6070.66,
+      "text": "85 k tokens is nine percent the daily limit. No, that's um the amounts"
+    },
+    {
+      "start": 6071.22,
+      "end": 6076.9,
+      "text": "Uh, I have left in the context or sorry the amount um the amount of context I've used up. I'm on one million"
+    },
+    {
+      "start": 6077.46,
+      "end": 6079.46,
+      "text": "opus"
+    },
+    {
+      "start": 6080.18,
+      "end": 6084.9,
+      "text": "Did I just use claw to create these empty files? Yeah, we've you go back in the stream. We've just been basically grilling"
+    },
+    {
+      "start": 6085.46,
+      "end": 6089.14,
+      "text": "Um, only grilling for the last two hours really or however long I've been on"
+    },
+    {
+      "start": 6089.94,
+      "end": 6091.94,
+      "text": "hour 43"
+    },
+    {
+      "start": 6091.94,
+      "end": 6094.34,
+      "text": "Which is very you know, that's what I do and when I code"
+    },
+    {
+      "start": 6095.14,
+      "end": 6099.94,
+      "text": "So, um these research files are basically just compacted versions of the conversations that I've had"
+    },
+    {
+      "start": 6101.86,
+      "end": 6105.38,
+      "text": "Anyone know how to turn on auto or bypass in claw code desktop. I don't know"
+    },
+    {
+      "start": 6108.5,
+      "end": 6113.46,
+      "text": "Since you're using speech to text, I'm surprised you don't clean up the prompts much to reduce token usage. Is it not really worth it?"
+    },
+    {
+      "start": 6113.78,
+      "end": 6115.78,
+      "text": "Absolutely not worth it. Now"
+    },
+    {
+      "start": 6116.1,
+      "end": 6118.34,
+      "text": "people are way too anal about um"
+    },
+    {
+      "start": 6119.46,
+      "end": 6124.5,
+      "text": "About token usage in my opinion, especially input token usage input tokens are incredibly cheaper"
+    },
+    {
+      "start": 6125.06,
+      "end": 6127.06,
+      "text": "extraordinarily cheap"
+    },
+    {
+      "start": 6127.3,
+      "end": 6129.3,
+      "text": "Output tokens are more expensive"
+    },
+    {
+      "start": 6130.66,
+      "end": 6132.66,
+      "text": "I'm using whisper flow"
+    },
+    {
+      "start": 6132.98,
+      "end": 6133.78,
+      "text": "to"
+    },
+    {
+      "start": 6133.78,
+      "end": 6135.78,
+      "text": "dictate"
+    },
+    {
+      "start": 6137.06,
+      "end": 6141.7,
+      "text": "How do 250 people know about the stream? Um, I post it on twitter, I think"
+    },
+    {
+      "start": 6144.74,
+      "end": 6148.1,
+      "text": "When you show that sandcastle run when we got something to build we got nothing to build yet"
+    },
+    {
+      "start": 6152.18,
+      "end": 6155.46,
+      "text": "Thank you. Thank you Raphael. I'm glad you're enjoying using my workflow. I appreciate it"
+    },
+    {
+      "start": 6156.58,
+      "end": 6159.06,
+      "text": "What tools am I using to avoid the agents from not listening?"
+    },
+    {
+      "start": 6159.78,
+      "end": 6163.22,
+      "text": "Committing with no verify despite me telling it 10 times not to um"
+    },
+    {
+      "start": 6164.18,
+      "end": 6166.18,
+      "text": "I didn't tend to get those issues"
+    },
+    {
+      "start": 6168.34,
+      "end": 6170.34,
+      "text": "Um, you might need to be more specific"
+    },
+    {
+      "start": 6173.3,
+      "end": 6178.82,
+      "text": "Uh, you'll focus on terminology is a step I often skip but you've made me reconsider that it's important to streamline communication"
+    },
+    {
+      "start": 6179.06,
+      "end": 6184.02,
+      "text": "It's not only that it's sort of bringing the language is how you bring a program into life"
+    },
+    {
+      "start": 6184.5,
+      "end": 6191.94,
+      "text": "I now feel like most of this is on rails because we figured out exactly what we're building and we've given them each term names"
+    },
+    {
+      "start": 6192.42,
+      "end": 6195.78,
+      "text": "Obviously you can bike shed names to death and we've done a fair bit of that on this stream"
+    },
+    {
+      "start": 6196.26,
+      "end": 6200.82,
+      "text": "um, I probably should have cut some of it short and got a bit more efficient with it and"
+    },
+    {
+      "start": 6203.46,
+      "end": 6205.7,
+      "text": "But yeah, but we've landed on something that works, right?"
+    },
+    {
+      "start": 6209.62,
+      "end": 6213.06,
+      "text": "Use co-pilot so you don't have to worry about tokens not yet"
+    },
+    {
+      "start": 6214.66,
+      "end": 6220.58,
+      "text": "Can you elaborate on token usage and how to maximize it? How do you mean what like use more tokens?"
+    },
+    {
+      "start": 6221.54,
+      "end": 6223.54,
+      "text": "Just run load of stuff in parallel"
+    },
+    {
+      "start": 6224.74,
+      "end": 6227.94,
+      "text": "Is open code go models able to produce decent code? I'm not sure not checked"
+    },
+    {
+      "start": 6230.58,
+      "end": 6232.58,
+      "text": "How do I make Claude more submissive?"
+    },
+    {
+      "start": 6233.3,
+      "end": 6235.3,
+      "text": "um"
+    },
+    {
+      "start": 6236.02,
+      "end": 6239.94,
+      "text": "I don't know man. It seems a bit of fetish going on there, maybe"
+    },
+    {
+      "start": 6243.06,
+      "end": 6246.98,
+      "text": "When's the next stream um, I think probably I will probably not stream the next one"
+    },
+    {
+      "start": 6247.3,
+      "end": 6252.02,
+      "text": "I think I'll probably make it into a proper video because that's what people like videos tend to do better than streams"
+    },
+    {
+      "start": 6252.5,
+      "end": 6254.9,
+      "text": "It's nice to chat to you guys and nice to sort of"
+    },
+    {
+      "start": 6255.54,
+      "end": 6258.98,
+      "text": "You know, I wouldn't wouldn't have got the name slot watch if I wasn't on stream. So thank you for that"
+    },
+    {
+      "start": 6262.9,
+      "end": 6270.9,
+      "text": "How much should you be willing to spend on AI? I mean, it's totally up to you. Oh, sorry. Um, let me go out here"
+    },
+    {
+      "start": 6276.34,
+      "end": 6278.9,
+      "text": "Gamify element to it with leaderboard of the devs totally"
+    },
+    {
+      "start": 6279.62,
+      "end": 6286.58,
+      "text": "Totally we've got to figure out the architecture first. But yeah, like having some kind of metrics or maybe the ability to calculate your own metrics"
+    },
+    {
+      "start": 6286.74,
+      "end": 6288.74,
+      "text": "That would be fun"
+    },
+    {
+      "start": 6288.74,
+      "end": 6293.62,
+      "text": "We've got to decide between rust and typescript for the binary too because it could be a genuine rust binary"
+    },
+    {
+      "start": 6294.26,
+      "end": 6296.66,
+      "text": "Obviously need some kind of front end which would need to be built in"
+    },
+    {
+      "start": 6297.54,
+      "end": 6299.7,
+      "text": "You know javascript, but I've got experience there"
+    },
+    {
+      "start": 6303.94,
+      "end": 6305.94,
+      "text": "Gone hit me we've got a few minutes left"
+    },
+    {
+      "start": 6308.02,
+      "end": 6310.02,
+      "text": "Let me check twitter"
+    },
+    {
+      "start": 6311.62,
+      "end": 6315.94,
+      "text": "Eddie Eddie came up with the idea slot watch genius idea"
+    },
+    {
+      "start": 6317.3,
+      "end": 6319.3,
+      "text": "So"
+    },
+    {
+      "start": 6321.38,
+      "end": 6324.98,
+      "text": "Girl me skill is legit. That's right. All right friends"
+    },
+    {
+      "start": 6326.9,
+      "end": 6328.9,
+      "text": "Let's call it there"
+    },
+    {
+      "start": 6329.14,
+      "end": 6334.02,
+      "text": "I don't know rust no, so I would need to um, I'm interested in building something that"
+    },
+    {
+      "start": 6334.82,
+      "end": 6336.82,
+      "text": "Like I don't really know how it works"
+    },
+    {
+      "start": 6336.98,
+      "end": 6342.98,
+      "text": "Like that's that seems fun to me because it's that is a problem that people will have they'll need to contribute to"
+    },
+    {
+      "start": 6343.78,
+      "end": 6345.78,
+      "text": "repose where they don't know the language"
+    },
+    {
+      "start": 6346.58,
+      "end": 6348.26,
+      "text": "um"
+    },
+    {
+      "start": 6348.26,
+      "end": 6350.74,
+      "text": "I've never written rust before. I'm really intrigued by it"
+    },
+    {
+      "start": 6351.86,
+      "end": 6356.18,
+      "text": "Uh, and I like the idea. I've wanted to try a rust project for a while"
+    },
+    {
+      "start": 6356.98,
+      "end": 6358.98,
+      "text": "It would be fun. I think"
+    },
+    {
+      "start": 6360.26,
+      "end": 6365.14,
+      "text": "Um svelte versus react I use react you can use svelte. It doesn't matter too much"
+    },
+    {
+      "start": 6366.9,
+      "end": 6368.9,
+      "text": "Both are extremely mature projects"
+    },
+    {
+      "start": 6373.7,
+      "end": 6375.7,
+      "text": "One more question then I'll go"
+    },
+    {
+      "start": 6376.42,
+      "end": 6380.1,
+      "text": "Hmm slot watch what a good idea"
+    },
+    {
+      "start": 6384.9,
+      "end": 6389.7,
+      "text": "Oh, I'm going out for um for a turkish dinner tonight"
+    },
+    {
+      "start": 6392.18,
+      "end": 6394.18,
+      "text": "Swift to wasm"
+    },
+    {
+      "start": 6394.26,
+      "end": 6397.06,
+      "text": "I've heard swift is nice, but rustlings"
+    },
+    {
+      "start": 6398.34,
+      "end": 6400.34,
+      "text": "Thanks raffle"
+    },
+    {
+      "start": 6403.14,
+      "end": 6405.78,
+      "text": "Yeah, it should be fun going out with some friends and their kids"
+    },
+    {
+      "start": 6406.66,
+      "end": 6408.66,
+      "text": "I"
+    },
+    {
+      "start": 6410.18,
+      "end": 6414.1,
+      "text": "Well, I demo the new domain model skill, um, yeah, I can do"
+    },
+    {
+      "start": 6414.98,
+      "end": 6421.06,
+      "text": "I'll do another video. Have I used pie agent? Um, not yet, but I desperately want to I keep mean like every morning"
+    },
+    {
+      "start": 6421.06,
+      "end": 6425.46,
+      "text": "I'll wake up and I think maybe today is the last day. I'm going to use claw code and um"
+    },
+    {
+      "start": 6428.02,
+      "end": 6433.14,
+      "text": "It never is I just haven't you know, I've just got a bit of inertia. I need to move off it"
+    },
+    {
+      "start": 6433.62,
+      "end": 6435.62,
+      "text": "Is this engineering now? Yeah, I think so"
+    },
+    {
+      "start": 6436.58,
+      "end": 6442.02,
+      "text": "I think so. Um, just a ton of grilling a ton of um figuring out what you're trying to build"
+    },
+    {
+      "start": 6442.42,
+      "end": 6447.7,
+      "text": "A ton of alignments getting all the pieces in a row and once you've got it in a row, um, you just let it rip"
+    }
+  ],
+  "artifacts": {
+    "note": "Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+    "frames": [
+      "assets/bilibili-BV1FENq6WEdZ-frame-0001.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0002.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0003.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0004.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0005.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0006.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0007.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0008.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0009.webp",
+      "assets/bilibili-BV1FENq6WEdZ-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-08-04T05:27:10.295064+00:00"
+}

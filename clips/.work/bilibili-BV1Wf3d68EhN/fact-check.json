@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "mode": "auto",
+  "checked_at": "2026-08-04",
+  "claims": [
+    {
+      "timestamp": "08:09-08:35",
+      "classification": "objective_fact",
+      "statement": "当 n 为奇数时，n^11 为奇数，n^11+5 为偶数，因此所有奇数 n 对应的项都是合数，可以整体排除（前 2 亿项直接去掉一半）。",
+      "verification": "数学验证成立：奇数幂仍为奇数，奇数加 5（奇数+奇数）为偶数；偶数且大于 2 必为合数。用前 100 个奇数逐一验证均满足。",
+      "status": "confirmed",
+      "sources": ["https://en.wikipedia.org/wiki/Composite_number", "https://en.wikipedia.org/wiki/Parity_(mathematics)"]
+    },
+    {
+      "timestamp": "10:06-10:10",
+      "classification": "objective_fact",
+      "statement": "当 n 在 1 亿（10^8）量级时，n^11 达到 10^88 量级，远超普通 64 位整数可表示范围。",
+      "verification": "数学验证成立：(10^8)^11 = 10^88（89 位十进制数），超过 64 位（约 1.8×10^19）乃至 128 位整数范围，需要大整数或模运算处理。",
+      "status": "confirmed",
+      "sources": ["https://en.wikipedia.org/wiki/Exponentiation", "https://en.wikipedia.org/wiki/Integer_overflow"]
+    },
+    {
+      "timestamp": "16:10-16:17",
+      "classification": "objective_fact",
+      "statement": "n=2 时，f(2)=2^11+5=2053，2053 是一个素数；无技能组在预筛阶段错误地把它当作合数删除。",
+      "verification": "直接计算并试除验证：2053 = 2^11 + 5，且不能被任何不超过 √2053≈45.3 的素数整除，确为素数。",
+      "status": "confirmed",
+      "sources": ["https://www.wolframalpha.com/input?i=is+2053+prime", "https://en.wikipedia.org/wiki/Prime_number"]
+    }
+  ]
+}

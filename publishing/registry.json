@@ -389,6 +389,69 @@
       "status": "active",
       "assignedAt": "2026-08-04T04:45:06.165Z",
       "everPublished": false
+    },
+    "3bbd41c0-2c65-4d9a-b484-027cdc59aaee": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:44.657Z",
+      "everPublished": false
+    },
+    "0a4fb376-c368-4bfa-80cd-cdcda44e012f": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:46.709Z",
+      "everPublished": false
+    },
+    "59890b49-10af-494c-a10f-65ab88176ebd": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:47.537Z",
+      "everPublished": false
+    },
+    "7abdc33e-1cfb-4728-a176-159f89b4ab85": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:48.062Z",
+      "everPublished": false
+    },
+    "3bc2298a-9067-445d-8944-95622ab51505": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:48.946Z",
+      "everPublished": false
+    },
+    "0c17b62d-9b12-4544-92c4-b996bcfd5730": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:51.382Z",
+      "everPublished": false
+    },
+    "1ec6a92a-66f3-4513-b2d3-e0d9861f6c2d": {
+      "firstAssignedPath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:53.329Z",
+      "everPublished": false
+    },
+    "f00d65d8-a135-4ca2-aada-c58c8b9dda64": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:55.765Z",
+      "everPublished": false
+    },
+    "4ae99eac-59be-4d28-ba27-ecfe0cb97e09": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:57.306Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1537,6 +1600,60 @@
       "rid": "5bc8ebaa-f5d7-4f11-b10c-bf92a702ce04",
       "at": "2026-08-04T04:45:06.165Z",
       "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3bbd41c0-2c65-4d9a-b484-027cdc59aaee",
+      "at": "2026-08-04T05:42:44.657Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0a4fb376-c368-4bfa-80cd-cdcda44e012f",
+      "at": "2026-08-04T05:42:46.709Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "59890b49-10af-494c-a10f-65ab88176ebd",
+      "at": "2026-08-04T05:42:47.537Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7abdc33e-1cfb-4728-a176-159f89b4ab85",
+      "at": "2026-08-04T05:42:48.062Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3bc2298a-9067-445d-8944-95622ab51505",
+      "at": "2026-08-04T05:42:48.946Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0c17b62d-9b12-4544-92c4-b996bcfd5730",
+      "at": "2026-08-04T05:42:51.382Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1ec6a92a-66f3-4513-b2d3-e0d9861f6c2d",
+      "at": "2026-08-04T05:42:53.329Z",
+      "sourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "f00d65d8-a135-4ca2-aada-c58c8b9dda64",
+      "at": "2026-08-04T05:42:55.765Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "4ae99eac-59be-4d28-ba27-ecfe0cb97e09",
+      "at": "2026-08-04T05:42:57.306Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
     }
   ]
 }

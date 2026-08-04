@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "domain": "AI 编程 / Agent Skills（Matt Pocock 的 grill 系列技能使用指南）",
+  "glossary": [
+    {"term": "grill me / grill with docs", "definition": "Matt Pocock 发布的追问式 skill：不断向用户提问，直到双方对要构建的东西达成共识，用于替代 Plan Mode"},
+    {"term": "handoff", "definition": "在不同会话之间交接上下文的 skill（如交接给原型会话再交回）"},
+    {"term": "to prd", "definition": "把追问会话中的设计决策沉淀成工程向交接文档（PRD）的 skill"},
+    {"term": "high fidelity / low fidelity question", "definition": "高保真问题需要看到高保真的原型/实物才能回答（如 UI 手感）；低保真问题直接问答即可（如 URL 放哪）"},
+    {"term": "dumb zone", "definition": "作者估计的模型上下文变笨区：约 12 万 token 之后注意力与推理开始退化"},
+    {"term": "parametric knowledge", "definition": "模型训练时习得的参数化知识（对系统/应用的先天理解），可靠性较低但追问主要依赖它"},
+    {"term": "contextual knowledge", "definition": "上下文知识：当前会话中由文件、提示词、工具结果提供的具体信息，实现阶段主要靠它"},
+    {"term": "Shape Up", "definition": "Ryan Singer 关于产品开发节奏的书；高保真/低保真问题的概念来源于此"}
+  ],
+  "corrections": [
+    {"start_seconds": 142, "timestamp": "02:22", "original": "what should what URL should this root live on", "corrected": "what URL should this root live on", "reason": "口吃重复"},
+    {"start_seconds": 452, "timestamp": "07:32", "original": "My two PRD skill", "corrected": "My to PRD skill", "reason": "skill 名 to PRD 被误听为 two PRD"},
+    {"start_seconds": 472, "timestamp": "07:52", "original": "just run two PRD in there", "corrected": "just run to PRD in there", "reason": "skill 名 to PRD 被误听为 two PRD"},
+    {"start_seconds": 597, "timestamp": "09:57", "original": "using two-dumber model", "corrected": "using a dumber model", "reason": "ASR 拼写错误"}
+  ]
+}
