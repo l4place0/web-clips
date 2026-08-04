@@ -6,6 +6,9 @@ video_id: "BV1Wf3d68EhN"
 uploader: "PiKaChu345"
 duration_seconds: 1181
 tags: ["人工智能", "数学", "AI", "学习", "工作", "经验分享", "优化", "案例分析", "数论", "mathematica"]
+rid: "fd8780af-f3be-4dc0-9495-acf4e63d575c"
+permalink: "/r/fd8780af-f3be-4dc0-9495-acf4e63d575c"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/fd8780af-f3be-4dc0-9495-acf4e63d575c"
 ---
 
 # 总结稿

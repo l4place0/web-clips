@@ -466,6 +466,27 @@
       "status": "active",
       "assignedAt": "2026-08-04T05:54:55.582Z",
       "everPublished": false
+    },
+    "e9e6bb17-6ddd-4c06-9446-309361ea48d5": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:36:58.971Z",
+      "everPublished": false
+    },
+    "fd8780af-f3be-4dc0-9495-acf4e63d575c": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:37:01.635Z",
+      "everPublished": false
+    },
+    "8e07de95-467c-4575-879e-1433f9ecc857": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:37:04.237Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1680,6 +1701,24 @@
       "rid": "6c359796-7879-438a-a2a9-a36ddf0f3550",
       "at": "2026-08-04T05:54:55.582Z",
       "sourcePath": "clips/.work/bilibili-BV1FENq6WEdZ/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e9e6bb17-6ddd-4c06-9446-309361ea48d5",
+      "at": "2026-08-04T09:36:58.971Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "fd8780af-f3be-4dc0-9495-acf4e63d575c",
+      "at": "2026-08-04T09:37:01.635Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8e07de95-467c-4575-879e-1433f9ecc857",
+      "at": "2026-08-04T09:37:04.237Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
     }
   ]
 }

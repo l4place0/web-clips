@@ -6,6 +6,9 @@ video_id: "BV1zn396mEfz"
 uploader: "ChHsich"
 duration_seconds: 1498
 tags: ["AI", "开发", "编程", "教程", "Matt Pocock", "双语", "实战", "Agent", "Skills", "AI创作者"]
+rid: "e9e6bb17-6ddd-4c06-9446-309361ea48d5"
+permalink: "/r/e9e6bb17-6ddd-4c06-9446-309361ea48d5"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/e9e6bb17-6ddd-4c06-9446-309361ea48d5"
 ---
 
 # 总结稿

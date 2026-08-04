@@ -6,6 +6,9 @@ video_id: "BV1HgNd6rEEJ"
 uploader: "高维实验室"
 duration_seconds: 2243
 tags: ["觉醒", "极简主义", "多巴胺", "专注力", "个人成长", "延迟满足", "平庸", "强者思维", "信息茧房", "万物研究所"]
+rid: "8e07de95-467c-4575-879e-1433f9ecc857"
+permalink: "/r/8e07de95-467c-4575-879e-1433f9ecc857"
+webClipUrl: "https://l4p-web-clips.pages.dev/r/8e07de95-467c-4575-879e-1433f9ecc857"
 ---
 
 # 总结稿
