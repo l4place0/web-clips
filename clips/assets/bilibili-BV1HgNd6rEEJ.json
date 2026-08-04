@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -7197,5 +7197,271 @@
       "assets/bilibili-BV1HgNd6rEEJ-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-04T13:26:46.016164+00:00"
+  "updated_at": "2026-08-04T14:48:18.200792+00:00",
+  "corrections": [
+    {
+      "timestamp": "00:00",
+      "original": "Hello and welcome to this video",
+      "corrected": "All right, hello and welcome to this video",
+      "reason": "原始 ASR 漏掉开场语。"
+    },
+    {
+      "timestamp": "01:20",
+      "original": "the people who actually change the world",
+      "corrected": "the people who actually changed the world",
+      "reason": "时态误识别。"
+    },
+    {
+      "timestamp": "02:05",
+      "original": "real growthlives",
+      "corrected": "real growth lives",
+      "reason": "漏掉词间空格。"
+    },
+    {
+      "timestamp": "02:19-02:21",
+      "original": "intucidation by Netflix / corn",
+      "corrected": "into sedation by Netflix / porn",
+      "reason": "连续词组的语音误识别。"
+    },
+    {
+      "timestamp": "02:27",
+      "original": "stereolized",
+      "corrected": "sterilized",
+      "reason": "单词拼写误识别。"
+    },
+    {
+      "timestamp": "05:20",
+      "original": "you don't get focus by adding more",
+      "corrected": "you don't get focused by adding more",
+      "reason": "词形缺失。"
+    },
+    {
+      "timestamp": "05:49-05:50",
+      "original": "in the moment ... eliminating you something",
+      "corrected": "and the moment ... eliminating something",
+      "reason": "连词与冗余代词误识别。"
+    },
+    {
+      "timestamp": "07:13",
+      "original": "they're weight around your ankles",
+      "corrected": "their weight around your ankles",
+      "reason": "同音词误识别。"
+    },
+    {
+      "timestamp": "07:20",
+      "original": "they're most likely guilt trip you",
+      "corrected": "they'll most likely guilt-trip you",
+      "reason": "代词及动词结构误识别。"
+    },
+    {
+      "timestamp": "09:49",
+      "original": "cut / burn and don't apologize",
+      "corrected": "cut, slash, burn and don't apologize",
+      "reason": "斜杠实际被读作 slash。"
+    },
+    {
+      "timestamp": "10:13-10:14",
+      "original": "that a standard so high / extra ordinary",
+      "corrected": "set a standard so high / extraordinary",
+      "reason": "动词及复合词误识别。"
+    },
+    {
+      "timestamp": "11:48",
+      "original": "focus in a strange kind of joy",
+      "corrected": "focus, and a strange kind of joy",
+      "reason": "连词 and 被误识别为 in。"
+    },
+    {
+      "timestamp": "12:04",
+      "original": "why is the greatest addiction",
+      "corrected": "why it's the greatest addiction",
+      "reason": "缩略形式漏词。"
+    },
+    {
+      "timestamp": "12:09",
+      "original": "bandaid",
+      "corrected": "Band-Aid",
+      "reason": "专有拼写规范化。"
+    },
+    {
+      "timestamp": "14:10",
+      "original": "higher level of risk",
+      "corrected": "a higher level of risk",
+      "reason": "冠词漏识别。"
+    },
+    {
+      "timestamp": "15:35",
+      "original": "subscribers views comments and mics",
+      "corrected": "subscribers, views, comments, and likes",
+      "reason": "likes 被误识别为 mics。"
+    },
+    {
+      "timestamp": "17:31",
+      "original": "if you can get addicted to anything",
+      "corrected": "you can get addicted to anything",
+      "reason": "重复 if 的 ASR 幻觉。"
+    },
+    {
+      "timestamp": "18:45",
+      "original": "until your brain revolves",
+      "corrected": "until your brain revolts",
+      "reason": "revolts 被误识别为 revolves。"
+    },
+    {
+      "timestamp": "19:02-19:03",
+      "original": "their not quirks / their weapons",
+      "corrected": "they're not quirks / they're weapons",
+      "reason": "同音缩略词误识别。"
+    },
+    {
+      "timestamp": "19:29",
+      "original": "no becomes a shield",
+      "corrected": "your no becomes a shield",
+      "reason": "漏掉所属限定词。"
+    },
+    {
+      "timestamp": "19:56",
+      "original": "the hill gets a little less deep",
+      "corrected": "the hill gets a little less steep",
+      "reason": "形容词误识别。"
+    },
+    {
+      "timestamp": "20:07",
+      "original": "that once fix one",
+      "corrected": "at once. Fix one",
+      "reason": "短语与断句误识别。"
+    },
+    {
+      "timestamp": "20:36",
+      "original": "lateryou'll",
+      "corrected": "later you'll",
+      "reason": "漏掉词间空格。"
+    },
+    {
+      "timestamp": "20:46",
+      "original": "usually 30sometimes 45 minutes in",
+      "corrected": "usually 30, sometimes 45 minutes in",
+      "reason": "连接词及标点漏识别。"
+    },
+    {
+      "timestamp": "21:22",
+      "original": "the night beforeget everything ready",
+      "corrected": "the night before, get everything ready",
+      "reason": "词间空格与断句错误。"
+    },
+    {
+      "timestamp": "24:01",
+      "original": "but let's talk about",
+      "corrected": "so let's talk about",
+      "reason": "转场连词误识别。"
+    },
+    {
+      "timestamp": "24:11",
+      "original": "the price isn't paid and more effort",
+      "corrected": "the price isn't paid in more effort",
+      "reason": "介词 in 漏识别。"
+    },
+    {
+      "timestamp": "25:17",
+      "original": "a path most want to choose",
+      "corrected": "a path most won't choose",
+      "reason": "否定词 won't 漏识别。"
+    },
+    {
+      "timestamp": "25:50",
+      "original": "a version of yourself or something unknown",
+      "corrected": "a version of yourself for something unknown",
+      "reason": "介词误识别。"
+    },
+    {
+      "timestamp": "26:12",
+      "original": "think it for getting you here",
+      "corrected": "thank it for getting you here",
+      "reason": "thank 被误识别为 think。"
+    },
+    {
+      "timestamp": "26:19",
+      "original": "beginnings end",
+      "corrected": "beginning's end",
+      "reason": "所有格撇号缺失。"
+    },
+    {
+      "timestamp": "28:01",
+      "original": "is the difference between floating",
+      "corrected": "it's the difference between floating",
+      "reason": "句首缩略形式漏识别。"
+    },
+    {
+      "timestamp": "29:21",
+      "original": "everyday",
+      "corrected": "every day",
+      "reason": "时间副词应为两个词。"
+    },
+    {
+      "timestamp": "29:37",
+      "original": "you stop craving what other people think",
+      "corrected": "you stop craving what others have",
+      "reason": "名词短语误识别。"
+    },
+    {
+      "timestamp": "29:39-29:44",
+      "original": "and you stop thinking / and you stop thinking / and you stop thinking / what others have",
+      "corrected": "[ASR duplicate removed; no separate utterance.]",
+      "reason": "连续重复的 ASR 幻觉；29:45 的实际句尾保留。"
+    },
+    {
+      "timestamp": "30:04",
+      "original": "everyday you show up",
+      "corrected": "every day you show up",
+      "reason": "时间副词应分写。"
+    },
+    {
+      "timestamp": "30:08",
+      "original": "was you're willing to burn to keep going",
+      "corrected": "what you're willing to burn to keep going",
+      "reason": "what 被误识别为 was。"
+    },
+    {
+      "timestamp": "30:31",
+      "original": "most people never even bothered to look at",
+      "corrected": "most people never even bother to look at",
+      "reason": "泛指陈述的时态误识别。"
+    },
+    {
+      "timestamp": "31:21",
+      "original": "social,email,browser tab",
+      "corrected": "social, email, browser tabs",
+      "reason": "复数词尾漏识别及标点修正。"
+    },
+    {
+      "timestamp": "31:31",
+      "original": "pull enough times in your broke before lunch",
+      "corrected": "pull enough times and you're broke before lunch",
+      "reason": "连接词及代词误识别。"
+    },
+    {
+      "timestamp": "31:48",
+      "original": "auditory relationships with the same cold eye",
+      "corrected": "audit your relationships with the same cold eye",
+      "reason": "动词短语的语音误识别。"
+    },
+    {
+      "timestamp": "33:40",
+      "original": "shuts and maybes",
+      "corrected": "shoulds and maybes",
+      "reason": "shoulds 被误识别为 shuts。"
+    },
+    {
+      "timestamp": "35:32",
+      "original": "it's gorgeous your excuses",
+      "corrected": "it scorches your excuses",
+      "reason": "谓词短语误识别。"
+    },
+    {
+      "timestamp": "37:07",
+      "original": "sit with a discomfort",
+      "corrected": "sit with the discomfort",
+      "reason": "冠词误识别。"
+    }
+  ]
 }

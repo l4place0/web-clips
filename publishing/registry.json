@@ -494,6 +494,34 @@
       "status": "active",
       "assignedAt": "2026-08-04T13:39:59.611Z",
       "everPublished": false
+    },
+    "d9467977-462e-427a-b3f3-0b5969fbe74e": {
+      "firstAssignedPath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:15.012Z",
+      "everPublished": false
+    },
+    "57ec7a52-5ae6-4237-b929-b762f71e0ff6": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:15.505Z",
+      "everPublished": false
+    },
+    "d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:45.002Z",
+      "everPublished": false
+    },
+    "ac0e2da4-88eb-43a2-91f1-0bc028810842": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:53.515Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1731,6 +1759,30 @@
       "type": "assigned",
       "rid": "1644e8a3-6512-46ea-a26f-fc90700636ac",
       "at": "2026-08-04T13:39:59.611Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d9467977-462e-427a-b3f3-0b5969fbe74e",
+      "at": "2026-08-04T15:14:15.012Z",
+      "sourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "57ec7a52-5ae6-4237-b929-b762f71e0ff6",
+      "at": "2026-08-04T15:14:15.505Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2",
+      "at": "2026-08-04T15:14:45.002Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ac0e2da4-88eb-43a2-91f1-0bc028810842",
+      "at": "2026-08-04T15:14:53.515Z",
       "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
     }
   ]
