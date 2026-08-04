@@ -1,0 +1,2746 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1zn396mEfz",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1zn396mEfz/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1zn396mEfz"
+  },
+  "title": "Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】",
+  "metadata": {
+    "title": "Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】",
+    "duration": 1498,
+    "thumbnail": "http://i0.hdslb.com/bfs/archive/2a29f8f70d77bea11addcc0056f4e3a6a97a35af.jpg",
+    "uploader": "ChHsich",
+    "video_id": "BV1zn396mEfz",
+    "description": "Matt Pocock（mattpocock/skills）在这期视频里拆解了他的 grill me 和 grill with docs 两个 skill 发布以来，使用者最常踩的九个坑。\n\n这两个 skill 用不断追问的方式替代 agent 里的 Plan Mode——它会毫不留情地对你提问，直到双方对要构建的东西达成共识。但能不能发挥价值，取决于回答问题的人（也就是你）是否擅长规划：懂不懂判断问题的保真度、会不会把握范围、能不能在追问中主动把控节奏。\n\n视频先给出理解这些失败模式的几个视角——高保真问题 vs 低保真问题、范围把控、主动 vs 被动、模型选择，然后逐一拆解九个误区。\n\n看点：\n1. 高保真问题别在追问会话里硬答——用 handoff 交接给一个原型会话，看完再回来\n2. 范围太大会撞上模型的变笨区——大约从 12 万 token 开始，注意力会变得吃力\n3. 太被动和太主动都是坑——别让 agent 问你 540 个问题，也别在低保真问题上死磕\n4. 追问会话里的每个设计决策都极有价值——别清空上下文再跑 to prd，那等于扔掉十万 token\n5. 追问要用聪明的模型（依赖参数化知识），实现阶段反而可以用笨一点的（多为上下文知识）\n6. 并行追问两个会话，吞吐量直接翻倍\n\n关键内容：\n- grill me / grill with docs：替代 Plan Mode 的追问式 skill\n- handoff：在不同会话间交接上下文\n- to prd：把追问成果沉淀成工程向交接文档\n- 高保真 / 低保真问题：区分哪些能在追问中答、哪些得做原型\n- 变笨区 / 聪明区：模型在上下文窗口约 12 万 token 后开始变蠢\n- 参数化知识 vs 上下文知识：为什么追问要聪明模型，实现可以用笨模型\n- The Cohort（面向真实工程师的 AI coding 训练营）\n\n来源：\n- 作者：Matt Pocock（@mattpocockuk）\n- 原视频：https://www.youtube.com/watch?v=UzMNBN6xLLA\n\n中英双语字幕，AI 辅助转录 + 翻译并经人工校对，技术术语已对齐。\n如有不准确之处，欢迎在弹幕或评论指出。",
+    "tags": [
+      "AI",
+      "开发",
+      "编程",
+      "教程",
+      "Matt Pocock",
+      "双语",
+      "实战",
+      "Agent",
+      "Skills",
+      "AI创作者"
+    ],
+    "view_count": 1638,
+    "like_count": 51,
+    "upload_date": 1785675355,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "off"
+  },
+  "cache_keys": {
+    "media": "f7d424b482f5396c577424c9977f445a18b256be7107f190d17077e8c21754cf",
+    "audio": "b677caf7254c9ebc8f0ab1ad82764dcdfb9f4e8299d80f0848cc3ef1780fcfc3",
+    "transcript": "9a17809a6d047ea690f52f6f9564473d8af1bd52d4a2f4a8840d32a23581f3c6",
+    "frames": "6936729072da42a67065934f2e6f4907f5d297e64760b9f84b5375b5d0739d74"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 3.78,
+      "text": "mygrilmi skills and grilward docs have been out there for a while now"
+    },
+    {
+      "start": 3.78,
+      "end": 8.9,
+      "text": "and people all around the world are using them as a replacement for plan mode in agents"
+    },
+    {
+      "start": 8.9,
+      "end": 10.98,
+      "text": "however I sometimes hear from people using them"
+    },
+    {
+      "start": 10.98,
+      "end": 14.86,
+      "text": "like codecs just ask me 200 questions this issue here"
+    },
+    {
+      "start": 14.86,
+      "end": 17.42,
+      "text": "and I kind of wince a little bit"
+    },
+    {
+      "start": 17.42,
+      "end": 20.66,
+      "text": "the idea of these skills is that they relentlessly question you"
+    },
+    {
+      "start": 20.66,
+      "end": 23.18,
+      "text": "is that they continually ask you questions"
+    },
+    {
+      "start": 23.18,
+      "end": 25.46,
+      "text": "until you reach a shared understanding about something"
+    },
+    {
+      "start": 25.46,
+      "end": 29.98,
+      "text": "and what that does is it relies on the skill of the person answering the questions"
+    },
+    {
+      "start": 29.98,
+      "end": 35.66,
+      "text": "in other words you using the grilmi skill need to be good at planning"
+    },
+    {
+      "start": 35.66,
+      "end": 37.66,
+      "text": "you need to understand things like scope"
+    },
+    {
+      "start": 37.66,
+      "end": 42.98,
+      "text": "you need to have a sense of what questions require what level of fidelity to answer"
+    },
+    {
+      "start": 42.98,
+      "end": 44.98,
+      "text": "and this is why I want to make this video"
+    },
+    {
+      "start": 44.98,
+      "end": 48.1,
+      "text": "I want to make you really good at using these skills"
+    },
+    {
+      "start": 48.1,
+      "end": 50.86,
+      "text": "because these skills themselves are really not super long"
+    },
+    {
+      "start": 50.86,
+      "end": 53.46,
+      "text": "and they're designed to aid you as an engineer"
+    },
+    {
+      "start": 53.46,
+      "end": 55.58,
+      "text": "not replace you as an engineer"
+    },
+    {
+      "start": 55.58,
+      "end": 59.5,
+      "text": "so I've got a list of nine things that people get wrong with these skills"
+    },
+    {
+      "start": 59.5,
+      "end": 62.62,
+      "text": "but before we do that we're going to look at a few lenses"
+    },
+    {
+      "start": 62.62,
+      "end": 65.06,
+      "text": "for how to understand those failure modes"
+    },
+    {
+      "start": 65.06,
+      "end": 67.18,
+      "text": "because if we don't understand them in the correct way"
+    },
+    {
+      "start": 67.18,
+      "end": 68.66,
+      "text": "we're not going to be able to change them"
+    },
+    {
+      "start": 68.66,
+      "end": 71.54,
+      "text": "now if you like the way I teach and you like the thing I'm teaching about"
+    },
+    {
+      "start": 71.54,
+      "end": 75.78,
+      "text": "then you are going to really enjoy my AI coding for real engineers cohort"
+    },
+    {
+      "start": 75.78,
+      "end": 78.34,
+      "text": "which the next one starts on June 1st"
+    },
+    {
+      "start": 78.34,
+      "end": 82.46,
+      "text": "it has only one day and 11 hours left for 30% off"
+    },
+    {
+      "start": 82.46,
+      "end": 84.86,
+      "text": "so definitely you want to get on that"
+    },
+    {
+      "start": 84.86,
+      "end": 86.3,
+      "text": "hopefully I can post this video today"
+    },
+    {
+      "start": 86.3,
+      "end": 87.82,
+      "text": "so you have time to actually purchase it"
+    },
+    {
+      "start": 87.82,
+      "end": 88.9,
+      "text": "so let's get started"
+    },
+    {
+      "start": 88.9,
+      "end": 91.7,
+      "text": "the first thing to consider here is that when we go into a grilling session"
+    },
+    {
+      "start": 91.7,
+      "end": 95.06,
+      "text": "what we're really trying to do is answer questions"
+    },
+    {
+      "start": 95.06,
+      "end": 99.14,
+      "text": "there are probably some things that we don't know about the thing that we're going to build"
+    },
+    {
+      "start": 99.14,
+      "end": 102.18,
+      "text": "now these questions come at different levels of fidelity"
+    },
+    {
+      "start": 102.18,
+      "end": 104.06,
+      "text": "that are required to answer"
+    },
+    {
+      "start": 104.06,
+      "end": 107.7,
+      "text": "I'm taking this language from Ryan Singer's amazing book \"Shape Up\""
+    },
+    {
+      "start": 107.7,
+      "end": 112.34,
+      "text": "high fidelity questions are questions where you need a really zoomed in"
+    },
+    {
+      "start": 112.34,
+      "end": 116.7,
+      "text": "really detailed high fidelity image in order to understand it"
+    },
+    {
+      "start": 116.7,
+      "end": 121.18,
+      "text": "and that might mean for instance how will this piece of UI feel"
+    },
+    {
+      "start": 121.18,
+      "end": 122.46,
+      "text": "when we're using it"
+    },
+    {
+      "start": 122.46,
+      "end": 125.66,
+      "text": "should we split all of these form fields into multiple different pages"
+    },
+    {
+      "start": 125.66,
+      "end": 128.98,
+      "text": "or should we have one enormous form where we fill them in"
+    },
+    {
+      "start": 128.98,
+      "end": 133.22,
+      "text": "the only real way you're going to get kind of understanding of that"
+    },
+    {
+      "start": 133.22,
+      "end": 137.18,
+      "text": "is a high fidelity prototype or actually building the whole thing"
+    },
+    {
+      "start": 137.18,
+      "end": 140.38,
+      "text": "whereas low fidelity questions are questions that you don't need"
+    },
+    {
+      "start": 140.38,
+      "end": 143.86,
+      "text": "a high fidelity kind of prototype or image to answer"
+    },
+    {
+      "start": 143.86,
+      "end": 147.22,
+      "text": "things like what should what URL should this root live on"
+    },
+    {
+      "start": 147.22,
+      "end": 148.22,
+      "text": "or things like that"
+    },
+    {
+      "start": 148.22,
+      "end": 150.3,
+      "text": "you really just need to answer the question"
+    },
+    {
+      "start": 150.3,
+      "end": 152.82,
+      "text": "and the first failure mode I see with the grill me skills"
+    },
+    {
+      "start": 152.82,
+      "end": 156.06,
+      "text": "is trying to answer high fidelity questions"
+    },
+    {
+      "start": 156.06,
+      "end": 157.46,
+      "text": "during a grilling session"
+    },
+    {
+      "start": 157.46,
+      "end": 160.1,
+      "text": "in other words there are questions that are grillable"
+    },
+    {
+      "start": 160.1,
+      "end": 162.58,
+      "text": "in other words answerable in a grilling session"
+    },
+    {
+      "start": 162.58,
+      "end": 164.58,
+      "text": "and questions that are ungrillable"
+    },
+    {
+      "start": 164.58,
+      "end": 167.18,
+      "text": "questions that are not answerable in a grilling session"
+    },
+    {
+      "start": 167.18,
+      "end": 170.7,
+      "text": "so then what do you do when you encounter an ungrillable question"
+    },
+    {
+      "start": 170.7,
+      "end": 172.78,
+      "text": "when the question is about feel"
+    },
+    {
+      "start": 172.78,
+      "end": 175.98,
+      "text": "when you need to actually see something higher fidelity"
+    },
+    {
+      "start": 175.98,
+      "end": 177.1,
+      "text": "in order to answer it"
+    },
+    {
+      "start": 177.1,
+      "end": 179.62,
+      "text": "well the thing I tend to do is I tend to have"
+    },
+    {
+      "start": 179.62,
+      "end": 181.94,
+      "text": "a prototyping handoff"
+    },
+    {
+      "start": 181.94,
+      "end": 185.18,
+      "text": "so let's imagine that in my first session here in the blue"
+    },
+    {
+      "start": 185.18,
+      "end": 188.42,
+      "text": "I've done some grilling and I reach an ungrillable question"
+    },
+    {
+      "start": 188.42,
+      "end": 191.38,
+      "text": "a question that I need to see in a higher fidelity"
+    },
+    {
+      "start": 191.38,
+      "end": 193.82,
+      "text": "what I do is I use the handoff skill"
+    },
+    {
+      "start": 193.82,
+      "end": 195.62,
+      "text": "which I will link to below"
+    },
+    {
+      "start": 195.62,
+      "end": 198.1,
+      "text": "to handoff to a prototyping session"
+    },
+    {
+      "start": 198.1,
+      "end": 200.3,
+      "text": "where I will then spend another session"
+    },
+    {
+      "start": 200.3,
+      "end": 202.26,
+      "text": "kind of just prototyping on that question"
+    },
+    {
+      "start": 202.26,
+      "end": 204.26,
+      "text": "seeing it in a higher fidelity"
+    },
+    {
+      "start": 204.26,
+      "end": 206.54,
+      "text": "and then whatever I learn from that"
+    },
+    {
+      "start": 206.54,
+      "end": 209.34,
+      "text": "I will handoff back to the original grilling session"
+    },
+    {
+      "start": 209.34,
+      "end": 212.26,
+      "text": "so that I can continue with the grillable questions"
+    },
+    {
+      "start": 212.26,
+      "end": 214.14,
+      "text": "so that's what a lot of my sessions look like"
+    },
+    {
+      "start": 214.14,
+      "end": 215.46,
+      "text": "where you have a grill with docs"
+    },
+    {
+      "start": 215.46,
+      "end": 218.22,
+      "text": "you then handoff to a prototype session"
+    },
+    {
+      "start": 218.22,
+      "end": 220.58,
+      "text": "and you handoff back to the original grill"
+    },
+    {
+      "start": 220.58,
+      "end": 221.74,
+      "text": "with doc session"
+    },
+    {
+      "start": 221.74,
+      "end": 224.42,
+      "text": "that's how I answer those more higher fidelity questions"
+    },
+    {
+      "start": 224.42,
+      "end": 227.1,
+      "text": "the next concept we need to understand here is scope"
+    },
+    {
+      "start": 227.1,
+      "end": 230.42,
+      "text": "how large a thing you are grilling"
+    },
+    {
+      "start": 230.42,
+      "end": 232.42,
+      "text": "if the thing you are grilling is too big"
+    },
+    {
+      "start": 232.42,
+      "end": 234.94,
+      "text": "then you are going to end up hitting two problems"
+    },
+    {
+      "start": 234.94,
+      "end": 236.42,
+      "text": "most of all if the scope is too large"
+    },
+    {
+      "start": 236.42,
+      "end": 237.74,
+      "text": "then you are probably going to have"
+    },
+    {
+      "start": 237.74,
+      "end": 239.02,
+      "text": "high fidelity questions"
+    },
+    {
+      "start": 239.02,
+      "end": 241.14,
+      "text": "that are kind of hidden in there"
+    },
+    {
+      "start": 241.14,
+      "end": 243.5,
+      "text": "that is quite hard to answer"
+    },
+    {
+      "start": 243.5,
+      "end": 245.78,
+      "text": "without actually seeing the full thing"
+    },
+    {
+      "start": 245.78,
+      "end": 248.58,
+      "text": "it's always easier to build off of something"
+    },
+    {
+      "start": 248.58,
+      "end": 249.74,
+      "text": "that you know works"
+    },
+    {
+      "start": 249.74,
+      "end": 251.5,
+      "text": "and that you've done a good job on"
+    },
+    {
+      "start": 251.5,
+      "end": 254.38,
+      "text": "rather than trying to endlessly plan scope out"
+    },
+    {
+      "start": 254.38,
+      "end": 255.74,
+      "text": "into the future"
+    },
+    {
+      "start": 255.74,
+      "end": 257.06,
+      "text": "this is what a lot of people hit"
+    },
+    {
+      "start": 257.06,
+      "end": 258.74,
+      "text": "when they try to schedule"
+    },
+    {
+      "start": 258.74,
+      "end": 260.58,
+      "text": "you know days and days of tasks"
+    },
+    {
+      "start": 260.58,
+      "end": 262.3,
+      "text": "for their AI to work on"
+    },
+    {
+      "start": 262.3,
+      "end": 264.34,
+      "text": "is that they end up with crap"
+    },
+    {
+      "start": 264.34,
+      "end": 267.14,
+      "text": "because they aren't building on a foundation"
+    },
+    {
+      "start": 267.14,
+      "end": 268.9,
+      "text": "that they are aligned with"
+    },
+    {
+      "start": 268.9,
+      "end": 270.98,
+      "text": "in other words they've tried to sort of"
+    },
+    {
+      "start": 270.98,
+      "end": 273.14,
+      "text": "push out too far into the future"
+    },
+    {
+      "start": 273.14,
+      "end": 274.9,
+      "text": "without building on something solid"
+    },
+    {
+      "start": 274.9,
+      "end": 276.7,
+      "text": "there's also a practical constraint here"
+    },
+    {
+      "start": 276.7,
+      "end": 280.06,
+      "text": "if you end up grilling on too large a thing"
+    },
+    {
+      "start": 280.06,
+      "end": 282.66,
+      "text": "you're going to end up hitting the dumb zone of the model"
+    },
+    {
+      "start": 282.66,
+      "end": 284.26,
+      "text": "sure you might start your grilling session"
+    },
+    {
+      "start": 284.26,
+      "end": 286.3,
+      "text": "with a you know nearly empty context window"
+    },
+    {
+      "start": 286.3,
+      "end": 288.38,
+      "text": "but as you keep going and going and going"
+    },
+    {
+      "start": 288.38,
+      "end": 290.18,
+      "text": "ok you've hardly got to the thing"
+    },
+    {
+      "start": 290.18,
+      "end": 291.06,
+      "text": "that you're"
+    },
+    {
+      "start": 291.06,
+      "end": 293.1,
+      "text": "not even answered half the questions yet"
+    },
+    {
+      "start": 293.1,
+      "end": 295.78,
+      "text": "and we're still hitting the dumb zone up here"
+    },
+    {
+      "start": 295.78,
+      "end": 297.66,
+      "text": "at which point you might need to hand off"
+    },
+    {
+      "start": 297.66,
+      "end": 300.22,
+      "text": "or compact or do something a little bit awkward"
+    },
+    {
+      "start": 300.22,
+      "end": 301.66,
+      "text": "all of which could have been avoided"
+    },
+    {
+      "start": 301.66,
+      "end": 304.7,
+      "text": "if you've just picked a smaller scope to start with"
+    },
+    {
+      "start": 304.7,
+      "end": 306.7,
+      "text": "and then you'd be able to comfortably grill"
+    },
+    {
+      "start": 306.7,
+      "end": 307.86,
+      "text": "within the smart zone"
+    },
+    {
+      "start": 307.86,
+      "end": 308.66,
+      "text": "for those who don't know"
+    },
+    {
+      "start": 308.66,
+      "end": 311.26,
+      "text": "about 120k is where I estimate"
+    },
+    {
+      "start": 311.26,
+      "end": 312.78,
+      "text": "most state-of-the-art models"
+    },
+    {
+      "start": 312.78,
+      "end": 314.74,
+      "text": "that's where their dumb zone begins"
+    },
+    {
+      "start": 314.74,
+      "end": 316.42,
+      "text": "and so you've got to keep a really keen eye"
+    },
+    {
+      "start": 316.42,
+      "end": 317.62,
+      "text": "on your context window"
+    },
+    {
+      "start": 317.62,
+      "end": 319.62,
+      "text": "in order to make sure you don't push past that"
+    },
+    {
+      "start": 319.62,
+      "end": 321.9,
+      "text": "because the model will start getting too strained"
+    },
+    {
+      "start": 321.9,
+      "end": 323.7,
+      "text": "kind of in its attention relationships"
+    },
+    {
+      "start": 323.7,
+      "end": 325.5,
+      "text": "and start making stupider decisions"
+    },
+    {
+      "start": 325.5,
+      "end": 327.54,
+      "text": "what this basically means is if you start out"
+    },
+    {
+      "start": 327.54,
+      "end": 329.3,
+      "text": "with a large scope like this"
+    },
+    {
+      "start": 329.3,
+      "end": 331.98,
+      "text": "which is probably too big for the agent to handle"
+    },
+    {
+      "start": 331.98,
+      "end": 334.02,
+      "text": "instead it might be better to ahead of time"
+    },
+    {
+      "start": 334.02,
+      "end": 336.26,
+      "text": "ask the agent to break down this scope"
+    },
+    {
+      "start": 336.26,
+      "end": 337.5,
+      "text": "into smaller scopes"
+    },
+    {
+      "start": 337.5,
+      "end": 339.58,
+      "text": "which you can then grill on individually"
+    },
+    {
+      "start": 339.58,
+      "end": 341.14,
+      "text": "and answer all of those questions"
+    },
+    {
+      "start": 341.14,
+      "end": 343.58,
+      "text": "the next lens I want you to look at here is"
+    },
+    {
+      "start": 343.58,
+      "end": 345.1,
+      "text": "whether you're being passive"
+    },
+    {
+      "start": 345.1,
+      "end": 348.34,
+      "text": "or whether you're being active with the agent"
+    },
+    {
+      "start": 348.34,
+      "end": 350.66,
+      "text": "and specifically in your grilling sessions"
+    },
+    {
+      "start": 350.66,
+      "end": 352.1,
+      "text": "many of these huge grilling sessions"
+    },
+    {
+      "start": 352.1,
+      "end": 353.22,
+      "text": "that I see people having"
+    },
+    {
+      "start": 353.22,
+      "end": 355.86,
+      "text": "I worry that they're being too passive"
+    },
+    {
+      "start": 355.86,
+      "end": 356.94,
+      "text": "with the agent"
+    },
+    {
+      "start": 356.94,
+      "end": 357.86,
+      "text": "when I'm doing grilling"
+    },
+    {
+      "start": 357.86,
+      "end": 359.58,
+      "text": "I'm always quite active"
+    },
+    {
+      "start": 359.58,
+      "end": 361.58,
+      "text": "always trying to lead the conversation"
+    },
+    {
+      "start": 361.58,
+      "end": 363.38,
+      "text": "and remember it's a conversation"
+    },
+    {
+      "start": 363.38,
+      "end": 364.58,
+      "text": "not an interview"
+    },
+    {
+      "start": 364.58,
+      "end": 366.7,
+      "text": "the agent is asking you these questions"
+    },
+    {
+      "start": 366.7,
+      "end": 368.1,
+      "text": "but you know it is your job"
+    },
+    {
+      "start": 368.1,
+      "end": 369.62,
+      "text": "to figure out where you're going"
+    },
+    {
+      "start": 369.62,
+      "end": 370.66,
+      "text": "and figure out the scope"
+    },
+    {
+      "start": 370.66,
+      "end": 372.5,
+      "text": "and keep things on track"
+    },
+    {
+      "start": 372.5,
+      "end": 374.02,
+      "text": "and so if you're being too passive"
+    },
+    {
+      "start": 374.02,
+      "end": 375.62,
+      "text": "then it's very easy for the agent"
+    },
+    {
+      "start": 375.62,
+      "end": 376.94,
+      "text": "to just do stupid things"
+    },
+    {
+      "start": 376.94,
+      "end": 377.82,
+      "text": "with the interview"
+    },
+    {
+      "start": 377.82,
+      "end": 380.42,
+      "text": "like ask you 540 questions"
+    },
+    {
+      "start": 380.42,
+      "end": 382.3,
+      "text": "explode the scope"
+    },
+    {
+      "start": 382.3,
+      "end": 383.42,
+      "text": "ask questions about stuff"
+    },
+    {
+      "start": 383.42,
+      "end": 385.02,
+      "text": "that are way too low fidelity"
+    },
+    {
+      "start": 385.02,
+      "end": 387.02,
+      "text": "you have to take an active hand"
+    },
+    {
+      "start": 387.02,
+      "end": 389.58,
+      "text": "but it's also possible to be too active"
+    },
+    {
+      "start": 389.58,
+      "end": 391.9,
+      "text": "to just keep grilling on something"
+    },
+    {
+      "start": 391.9,
+      "end": 393.78,
+      "text": "that is just too low fidelity"
+    },
+    {
+      "start": 393.78,
+      "end": 395.66,
+      "text": "when you need to actually build something"
+    },
+    {
+      "start": 395.66,
+      "end": 397.26,
+      "text": "to see the thing in action"
+    },
+    {
+      "start": 397.26,
+      "end": 398.98,
+      "text": "and so there are two failure modes hidden here"
+    },
+    {
+      "start": 398.98,
+      "end": 400.54,
+      "text": "being too passive in other words"
+    },
+    {
+      "start": 400.54,
+      "end": 401.82,
+      "text": "sitting back too much"
+    },
+    {
+      "start": 401.82,
+      "end": 404.54,
+      "text": "and actually being a bit too pigheaded"
+    },
+    {
+      "start": 404.54,
+      "end": 407.14,
+      "text": "and not getting to code fast enough"
+    },
+    {
+      "start": 407.14,
+      "end": 408.18,
+      "text": "so it's important to consider"
+    },
+    {
+      "start": 408.18,
+      "end": 409.3,
+      "text": "when you're using these skills"
+    },
+    {
+      "start": 409.3,
+      "end": 411.02,
+      "text": "where you fall on this axis"
+    },
+    {
+      "start": 411.02,
+      "end": 412.1,
+      "text": "whether you're too passive"
+    },
+    {
+      "start": 412.1,
+      "end": 412.86,
+      "text": "or whether you're actually"
+    },
+    {
+      "start": 412.86,
+      "end": 414.7,
+      "text": "just a bit too pushy and active"
+    },
+    {
+      "start": 414.7,
+      "end": 415.66,
+      "text": "another failure mode here"
+    },
+    {
+      "start": 415.66,
+      "end": 417.46,
+      "text": "is that people don't value"
+    },
+    {
+      "start": 417.46,
+      "end": 418.94,
+      "text": "the thing that they're creating"
+    },
+    {
+      "start": 418.94,
+      "end": 420.38,
+      "text": "during the grilling session"
+    },
+    {
+      "start": 420.38,
+      "end": 421.7,
+      "text": "which is that when you're answering"
+    },
+    {
+      "start": 421.7,
+      "end": 422.3,
+      "text": "these questions"
+    },
+    {
+      "start": 422.3,
+      "end": 424.54,
+      "text": "when you're growing this context window"
+    },
+    {
+      "start": 424.54,
+      "end": 426.22,
+      "text": "with really valuable"
+    },
+    {
+      "start": 426.22,
+      "end": 428.14,
+      "text": "you know, answers that you've given"
+    },
+    {
+      "start": 428.14,
+      "end": 430.22,
+      "text": "designed decisions that you've taken"
+    },
+    {
+      "start": 430.22,
+      "end": 432.34,
+      "text": "this little blue bit of context window here"
+    },
+    {
+      "start": 432.34,
+      "end": 433.98,
+      "text": "is incredibly valuable"
+    },
+    {
+      "start": 433.98,
+      "end": 435.26,
+      "text": "now usually your goal here"
+    },
+    {
+      "start": 435.26,
+      "end": 436.86,
+      "text": "is that if you've got enough budget left"
+    },
+    {
+      "start": 436.86,
+      "end": 438.02,
+      "text": "then you can immediately"
+    },
+    {
+      "start": 438.02,
+      "end": 439.54,
+      "text": "start going ahead and implementing"
+    },
+    {
+      "start": 439.54,
+      "end": 440.98,
+      "text": "in other words, you plan for a little while"
+    },
+    {
+      "start": 440.98,
+      "end": 441.82,
+      "text": "and then you go"
+    },
+    {
+      "start": 441.82,
+      "end": 443.06,
+      "text": "ok, let's just implement this"
+    },
+    {
+      "start": 443.06,
+      "end": 443.98,
+      "text": "we don't need to hand off"
+    },
+    {
+      "start": 443.98,
+      "end": 446.1,
+      "text": "we've got enough space left in the context window"
+    },
+    {
+      "start": 446.1,
+      "end": 447.02,
+      "text": "to just implement it"
+    },
+    {
+      "start": 447.02,
+      "end": 448.26,
+      "text": "based on the design decisions"
+    },
+    {
+      "start": 448.26,
+      "end": 449.06,
+      "text": "I've already taken"
+    },
+    {
+      "start": 449.06,
+      "end": 450.42,
+      "text": "however, if you're already at the point"
+    },
+    {
+      "start": 450.42,
+      "end": 451.42,
+      "text": "where you need to"
+    },
+    {
+      "start": 451.42,
+      "end": 452.98,
+      "text": "you know, quit out of this"
+    },
+    {
+      "start": 452.98,
+      "end": 454.9,
+      "text": "you need to basically hand off"
+    },
+    {
+      "start": 454.9,
+      "end": 457.1,
+      "text": "then it's probably time to make a PRD"
+    },
+    {
+      "start": 457.1,
+      "end": 459.46,
+      "text": "my 2prd skill is a nice way"
+    },
+    {
+      "start": 459.46,
+      "end": 461.02,
+      "text": "of creating a hand-off document"
+    },
+    {
+      "start": 461.02,
+      "end": 463.42,
+      "text": "that's kind of more tailored to engineering"
+    },
+    {
+      "start": 463.42,
+      "end": 465.18,
+      "text": "which can be useful on a multi-session"
+    },
+    {
+      "start": 465.18,
+      "end": 466.42,
+      "text": "or just a single session"
+    },
+    {
+      "start": 466.42,
+      "end": 467.5,
+      "text": "but one crazy thing"
+    },
+    {
+      "start": 467.5,
+      "end": 468.54,
+      "text": "I've seen people getting wrong"
+    },
+    {
+      "start": 468.54,
+      "end": 469.46,
+      "text": "is they actually"
+    },
+    {
+      "start": 469.46,
+      "end": 471.86,
+      "text": "clear the context first"
+    },
+    {
+      "start": 471.86,
+      "end": 473.94,
+      "text": "and they create a new context window"
+    },
+    {
+      "start": 473.94,
+      "end": 475.94,
+      "text": "and just run 2prd in there"
+    },
+    {
+      "start": 475.94,
+      "end": 477.1,
+      "text": "this is totally crazy to me"
+    },
+    {
+      "start": 477.1,
+      "end": 477.86,
+      "text": "what are you doing"
+    },
+    {
+      "start": 477.86,
+      "end": 480.58,
+      "text": "you've created this incredible session here"
+    },
+    {
+      "start": 480.58,
+      "end": 481.62,
+      "text": "where you've got this"
+    },
+    {
+      "start": 481.62,
+      "end": 483.34,
+      "text": "you know, 100,000 tokens"
+    },
+    {
+      "start": 483.34,
+      "end": 485.18,
+      "text": "of really good design decisions"
+    },
+    {
+      "start": 485.18,
+      "end": 486.74,
+      "text": "and you're just going to chuck it away"
+    },
+    {
+      "start": 486.74,
+      "end": 487.66,
+      "text": "every grilling session"
+    },
+    {
+      "start": 487.66,
+      "end": 489.7,
+      "text": "every decision that you make in that session"
+    },
+    {
+      "start": 489.7,
+      "end": 491.22,
+      "text": "is so valuable"
+    },
+    {
+      "start": 491.22,
+      "end": 493.38,
+      "text": "you know, that should be recorded somewhere"
+    },
+    {
+      "start": 493.38,
+      "end": 495.18,
+      "text": "and either turned into code"
+    },
+    {
+      "start": 495.18,
+      "end": 497.02,
+      "text": "or put into like a hand-off document"
+    },
+    {
+      "start": 497.02,
+      "end": 499.02,
+      "text": "that you can kind of refer to later"
+    },
+    {
+      "start": 499.02,
+      "end": 500.1,
+      "text": "it is really important"
+    },
+    {
+      "start": 500.1,
+      "end": 501.42,
+      "text": "that you don't just chuck away"
+    },
+    {
+      "start": 501.42,
+      "end": 503.02,
+      "text": "the stuff inside the grilling session"
+    },
+    {
+      "start": 503.02,
+      "end": 504.78,
+      "text": "I think probably this is just a skill issue"
+    },
+    {
+      "start": 504.78,
+      "end": 506.38,
+      "text": "people need to be a lot more aware"
+    },
+    {
+      "start": 506.38,
+      "end": 507.74,
+      "text": "of context management"
+    },
+    {
+      "start": 507.74,
+      "end": 509.98,
+      "text": "about kind of the decisions they're making"
+    },
+    {
+      "start": 509.98,
+      "end": 511.06,
+      "text": "in terms of clearing"
+    },
+    {
+      "start": 511.06,
+      "end": 512.1,
+      "text": "compacting"
+    },
+    {
+      "start": 512.1,
+      "end": 512.74,
+      "text": "handing off"
+    },
+    {
+      "start": 512.74,
+      "end": 514.02,
+      "text": "so yeah, that was a crazy one for me"
+    },
+    {
+      "start": 514.02,
+      "end": 515.62,
+      "text": "make sure you preserve"
+    },
+    {
+      "start": 515.62,
+      "end": 517.22,
+      "text": "the decisions that you've made"
+    },
+    {
+      "start": 517.22,
+      "end": 518.42,
+      "text": "in your grilling session"
+    },
+    {
+      "start": 518.42,
+      "end": 520.34,
+      "text": "and create some kind of hand-off artifact"
+    },
+    {
+      "start": 520.34,
+      "end": 520.74,
+      "text": "about them"
+    },
+    {
+      "start": 520.74,
+      "end": 521.94,
+      "text": "another thing people get wrong"
+    },
+    {
+      "start": 521.94,
+      "end": 522.86,
+      "text": "is that they use"
+    },
+    {
+      "start": 522.86,
+      "end": 524.46,
+      "text": "too dumb a model"
+    },
+    {
+      "start": 524.46,
+      "end": 525.66,
+      "text": "for grilling"
+    },
+    {
+      "start": 525.66,
+      "end": 526.9,
+      "text": "understanding which questions"
+    },
+    {
+      "start": 526.9,
+      "end": 527.78,
+      "text": "are low fidelity"
+    },
+    {
+      "start": 527.78,
+      "end": 528.7,
+      "text": "understanding which questions"
+    },
+    {
+      "start": 528.7,
+      "end": 529.78,
+      "text": "are high fidelity"
+    },
+    {
+      "start": 529.78,
+      "end": 531.58,
+      "text": "figuring out what the right questions"
+    },
+    {
+      "start": 531.58,
+      "end": 532.34,
+      "text": "to ask"
+    },
+    {
+      "start": 532.34,
+      "end": 534.58,
+      "text": "to prompt you to make a stronger design"
+    },
+    {
+      "start": 534.58,
+      "end": 536.1,
+      "text": "that is something you need"
+    },
+    {
+      "start": 536.1,
+      "end": 537.02,
+      "text": "a good model for"
+    },
+    {
+      "start": 537.02,
+      "end": 538.26,
+      "text": "if we think about where models"
+    },
+    {
+      "start": 538.26,
+      "end": 539.86,
+      "text": "draw their knowledge from"
+    },
+    {
+      "start": 539.86,
+      "end": 541.78,
+      "text": "there are kind of two sources"
+    },
+    {
+      "start": 541.78,
+      "end": 543.74,
+      "text": "the first one is their contextual knowledge"
+    },
+    {
+      "start": 543.74,
+      "end": 544.7,
+      "text": "the stuff that you have"
+    },
+    {
+      "start": 544.7,
+      "end": 546.3,
+      "text": "passed them specifically"
+    },
+    {
+      "start": 546.3,
+      "end": 547.42,
+      "text": "in their context"
+    },
+    {
+      "start": 547.42,
+      "end": 548.74,
+      "text": "this might be from reading files"
+    },
+    {
+      "start": 548.74,
+      "end": 549.78,
+      "text": "or from user prompts"
+    },
+    {
+      "start": 549.78,
+      "end": 550.94,
+      "text": "or from research they do"
+    },
+    {
+      "start": 550.94,
+      "end": 552.34,
+      "text": "by calling tools"
+    },
+    {
+      "start": 552.34,
+      "end": 553.98,
+      "text": "and bringingthe tool results back"
+    },
+    {
+      "start": 553.98,
+      "end": 555.54,
+      "text": "but there's also their parametric knowledge"
+    },
+    {
+      "start": 555.54,
+      "end": 556.98,
+      "text": "the things that they were trained"
+    },
+    {
+      "start": 556.98,
+      "end": 558.58,
+      "text": "to see and understand"
+    },
+    {
+      "start": 558.58,
+      "end": 560.02,
+      "text": "this is much less reliable"
+    },
+    {
+      "start": 560.02,
+      "end": 561.66,
+      "text": "but it is kind of what"
+    },
+    {
+      "start": 561.66,
+      "end": 563.46,
+      "text": "we're relying on here"
+    },
+    {
+      "start": 563.46,
+      "end": 564.74,
+      "text": "we're relying on"
+    },
+    {
+      "start": 564.74,
+      "end": 567.1,
+      "text": "the model's innate understanding"
+    },
+    {
+      "start": 567.1,
+      "end": 569.34,
+      "text": "ofsystems and applications"
+    },
+    {
+      "start": 569.34,
+      "end": 570.42,
+      "text": "to prompt us"
+    },
+    {
+      "start": 570.42,
+      "end": 571.78,
+      "text": "with good ideas of things"
+    },
+    {
+      "start": 571.78,
+      "end": 573.66,
+      "text": "we might not have considered yet"
+    },
+    {
+      "start": 573.66,
+      "end": 575.14,
+      "text": "because if we had considered them"
+    },
+    {
+      "start": 575.14,
+      "end": 575.66,
+      "text": "then we'd have"
+    },
+    {
+      "start": 575.66,
+      "end": 577.66,
+      "text": "passed them in as contextual knowledge"
+    },
+    {
+      "start": 577.66,
+      "end": 579.1,
+      "text": "but we're relying on"
+    },
+    {
+      "start": 579.1,
+      "end": 581.34,
+      "text": "its kind of innate understanding"
+    },
+    {
+      "start": 581.34,
+      "end": 582.46,
+      "text": "in order to provide us"
+    },
+    {
+      "start": 582.46,
+      "end": 584.02,
+      "text": "with off-the-wall suggestions"
+    },
+    {
+      "start": 584.02,
+      "end": 585.22,
+      "text": "strange ideas"
+    },
+    {
+      "start": 585.22,
+      "end": 586.1,
+      "text": "now when you're relying on"
+    },
+    {
+      "start": 586.1,
+      "end": 587.18,
+      "text": "parametric knowledge"
+    },
+    {
+      "start": 587.18,
+      "end": 587.74,
+      "text": "like this"
+    },
+    {
+      "start": 587.74,
+      "end": 588.9,
+      "text": "you need a model"
+    },
+    {
+      "start": 588.9,
+      "end": 590.7,
+      "text": "with lots of parameters"
+    },
+    {
+      "start": 590.7,
+      "end": 591.62,
+      "text": "and that is usually"
+    },
+    {
+      "start": 591.62,
+      "end": 593.82,
+      "text": "what the big frontier models have"
+    },
+    {
+      "start": 593.82,
+      "end": 594.62,
+      "text": "and not only that"
+    },
+    {
+      "start": 594.62,
+      "end": 595.74,
+      "text": "but they're also"
+    },
+    {
+      "start": 595.74,
+      "end": 596.98,
+      "text": "top of the line trained"
+    },
+    {
+      "start": 596.98,
+      "end": 598.9,
+      "text": "they are also just more capable"
+    },
+    {
+      "start": 598.9,
+      "end": 600.06,
+      "text": "than smaller models"
+    },
+    {
+      "start": 600.06,
+      "end": 601.5,
+      "text": "and so using two-dumber model"
+    },
+    {
+      "start": 601.5,
+      "end": 602.7,
+      "text": "is a really common"
+    },
+    {
+      "start": 602.7,
+      "end": 604.14,
+      "text": "failure mode I see during grilling"
+    },
+    {
+      "start": 604.14,
+      "end": 605.58,
+      "text": "because we're so reliant"
+    },
+    {
+      "start": 605.58,
+      "end": 606.66,
+      "text": "on parametric knowledge"
+    },
+    {
+      "start": 606.66,
+      "end": 607.58,
+      "text": "what most people don't know is"
+    },
+    {
+      "start": 607.58,
+      "end": 608.58,
+      "text": "you can actually use"
+    },
+    {
+      "start": 608.58,
+      "end": 609.46,
+      "text": "a kind of"
+    },
+    {
+      "start": 609.46,
+      "end": 611.38,
+      "text": "dumber model for implementation"
+    },
+    {
+      "start": 611.38,
+      "end": 612.54,
+      "text": "because most of the information"
+    },
+    {
+      "start": 612.54,
+      "end": 613.34,
+      "text": "you're passing there"
+    },
+    {
+      "start": 613.34,
+      "end": 614.54,
+      "text": "is contextual"
+    },
+    {
+      "start": 614.54,
+      "end": 615.46,
+      "text": "you know by the time you get to"
+    },
+    {
+      "start": 615.46,
+      "end": 616.06,
+      "text": "implementation"
+    },
+    {
+      "start": 616.06,
+      "end": 617.18,
+      "text": "you've usually got a detailed"
+    },
+    {
+      "start": 617.18,
+      "end": 618.38,
+      "text": "implementation plan"
+    },
+    {
+      "start": 618.38,
+      "end": 619.18,
+      "text": "you're passing in"
+    },
+    {
+      "start": 619.18,
+      "end": 620.06,
+      "text": "the relevant files"
+    },
+    {
+      "start": 620.06,
+      "end": 620.66,
+      "text": "and the codebase"
+    },
+    {
+      "start": 620.66,
+      "end": 621.26,
+      "text": "so it's got"
+    },
+    {
+      "start": 621.26,
+      "end": 622.42,
+      "text": "some things to copy"
+    },
+    {
+      "start": 622.42,
+      "end": 622.74,
+      "text": "you know"
+    },
+    {
+      "start": 622.74,
+      "end": 623.46,
+      "text": "not a lot of that"
+    },
+    {
+      "start": 623.46,
+      "end": 624.06,
+      "text": "is parametric"
+    },
+    {
+      "start": 624.06,
+      "end": 625.02,
+      "text": "it's mostly contextual"
+    },
+    {
+      "start": 625.02,
+      "end": 626.18,
+      "text": "finally and this is a"
+    },
+    {
+      "start": 626.18,
+      "end": 626.86,
+      "text": "dead simple one"
+    },
+    {
+      "start": 626.86,
+      "end": 628.38,
+      "text": "but so many people don't do this"
+    },
+    {
+      "start": 628.38,
+      "end": 628.98,
+      "text": "you should grill"
+    },
+    {
+      "start": 628.98,
+      "end": 630.34,
+      "text": "multiple sessions in parallel"
+    },
+    {
+      "start": 630.34,
+      "end": 631.22,
+      "text": "usually the way it works"
+    },
+    {
+      "start": 631.22,
+      "end": 631.9,
+      "text": "is I'm grilling"
+    },
+    {
+      "start": 631.9,
+      "end": 632.78,
+      "text": "one session"
+    },
+    {
+      "start": 632.78,
+      "end": 634.62,
+      "text": "and then I type something to it"
+    },
+    {
+      "start": 634.62,
+      "end": 636.3,
+      "text": "or usually I'm dictating to it"
+    },
+    {
+      "start": 636.3,
+      "end": 637.38,
+      "text": "I answer its question"
+    },
+    {
+      "start": 637.38,
+      "end": 638.38,
+      "text": "and then I go over into"
+    },
+    {
+      "start": 638.38,
+      "end": 639.54,
+      "text": "the other session"
+    },
+    {
+      "start": 639.54,
+      "end": 640.66,
+      "text": "that's usually finished"
+    },
+    {
+      "start": 640.66,
+      "end": 641.5,
+      "text": "by that point"
+    },
+    {
+      "start": 641.5,
+      "end": 642.54,
+      "text": "I answer its question"
+    },
+    {
+      "start": 642.54,
+      "end": 643.34,
+      "text": "and then I go back"
+    },
+    {
+      "start": 643.34,
+      "end": 644.38,
+      "text": "to the original session"
+    },
+    {
+      "start": 644.38,
+      "end": 645.42,
+      "text": "and I just bounce around"
+    },
+    {
+      "start": 645.42,
+      "end": 646.26,
+      "text": "like this"
+    },
+    {
+      "start": 646.26,
+      "end": 647.42,
+      "text": "people say this is"
+    },
+    {
+      "start": 647.42,
+      "end": 648.5,
+      "text": "context switching"
+    },
+    {
+      "start": 648.5,
+      "end": 649.34,
+      "text": "but really it's just"
+    },
+    {
+      "start": 649.34,
+      "end": 650.7,
+      "text": "managing two separate"
+    },
+    {
+      "start": 650.7,
+      "end": 651.42,
+      "text": "slack threads"
+    },
+    {
+      "start": 651.42,
+      "end": 652.3,
+      "text": "at the same time"
+    },
+    {
+      "start": 652.3,
+      "end": 653.22,
+      "text": "you know it's really"
+    },
+    {
+      "start": 653.22,
+      "end": 654.38,
+      "text": "not that hard"
+    },
+    {
+      "start": 654.38,
+      "end": 655.42,
+      "text": "and sure you're making"
+    },
+    {
+      "start": 655.42,
+      "end": 656.7,
+      "text": "a lot of high-level"
+    },
+    {
+      "start": 656.7,
+      "end": 657.78,
+      "text": "decisions here"
+    },
+    {
+      "start": 657.78,
+      "end": 658.54,
+      "text": "but this is really"
+    },
+    {
+      "start": 658.54,
+      "end": 659.42,
+      "text": "the only way I've found"
+    },
+    {
+      "start": 659.42,
+      "end": 660.82,
+      "text": "of increasing throughput"
+    },
+    {
+      "start": 660.82,
+      "end": 661.62,
+      "text": "and getting more"
+    },
+    {
+      "start": 661.62,
+      "end": 663.02,
+      "text": "planning done in less time"
+    },
+    {
+      "start": 663.02,
+      "end": 664.02,
+      "text": "usually I max out at"
+    },
+    {
+      "start": 664.02,
+      "end": 665.18,
+      "text": "two sessions here"
+    },
+    {
+      "start": 665.18,
+      "end": 666.06,
+      "text": "unless one of them is"
+    },
+    {
+      "start": 666.06,
+      "end": 666.74,
+      "text": "doing a particularly"
+    },
+    {
+      "start": 666.74,
+      "end": 667.66,
+      "text": "long running task"
+    },
+    {
+      "start": 667.66,
+      "end": 668.62,
+      "text": "like some research"
+    },
+    {
+      "start": 668.62,
+      "end": 669.02,
+      "text": "in which case"
+    },
+    {
+      "start": 669.02,
+      "end": 670.66,
+      "text": "I will try three"
+    },
+    {
+      "start": 670.66,
+      "end": 671.58,
+      "text": "if I'm feeling spicy"
+    },
+    {
+      "start": 671.58,
+      "end": 672.42,
+      "text": "and feeling high energy"
+    },
+    {
+      "start": 672.42,
+      "end": 673.74,
+      "text": "but mostly two is my limit"
+    },
+    {
+      "start": 673.74,
+      "end": 674.3,
+      "text": "but either way"
+    },
+    {
+      "start": 674.3,
+      "end": 675.54,
+      "text": "I'm doubling my throughput"
+    },
+    {
+      "start": 675.54,
+      "end": 676.46,
+      "text": "and it feels"
+    },
+    {
+      "start": 676.46,
+      "end": 677.34,
+      "text": "pretty nice to do"
+    },
+    {
+      "start": 677.34,
+      "end": 678.02,
+      "text": "and you should definitely"
+    },
+    {
+      "start": 678.02,
+      "end": 678.62,
+      "text": "be doing this"
+    },
+    {
+      "start": 678.62,
+      "end": 679.42,
+      "text": "if you have the mental"
+    },
+    {
+      "start": 679.42,
+      "end": 680.1,
+      "text": "capacity for it"
+    },
+    {
+      "start": 680.1,
+      "end": 681.06,
+      "text": "I also think that grilling"
+    },
+    {
+      "start": 681.06,
+      "end": 681.62,
+      "text": "is something that"
+    },
+    {
+      "start": 681.62,
+      "end": 683.02,
+      "text": "you do get better at"
+    },
+    {
+      "start": 683.02,
+      "end": 683.9,
+      "text": "and as you get better"
+    },
+    {
+      "start": 683.9,
+      "end": 684.26,
+      "text": "at it"
+    },
+    {
+      "start": 684.26,
+      "end": 685.14,
+      "text": "you can add more"
+    },
+    {
+      "start": 685.14,
+      "end": 685.62,
+      "text": "throughput"
+    },
+    {
+      "start": 685.62,
+      "end": 686.58,
+      "text": "and more parallelism"
+    },
+    {
+      "start": 686.58,
+      "end": 687.26,
+      "text": "so let's summarise"
+    },
+    {
+      "start": 687.26,
+      "end": 688.1,
+      "text": "all the things we learned"
+    },
+    {
+      "start": 688.1,
+      "end": 688.58,
+      "text": "we learned"
+    },
+    {
+      "start": 688.58,
+      "end": 689.7,
+      "text": "that grilling is primarily"
+    },
+    {
+      "start": 689.7,
+      "end": 691.02,
+      "text": "about questions"
+    },
+    {
+      "start": 691.02,
+      "end": 692.18,
+      "text": "we have low-fidelity"
+    },
+    {
+      "start": 692.18,
+      "end": 692.74,
+      "text": "questions"
+    },
+    {
+      "start": 692.74,
+      "end": 693.78,
+      "text": "and high-fidelity"
+    },
+    {
+      "start": 693.78,
+      "end": 693.98,
+      "text": "questions"
+    },
+    {
+      "start": 693.98,
+      "end": 695.06,
+      "text": "low-fidelity"
+    },
+    {
+      "start": 695.06,
+      "end": 696.06,
+      "text": "can be answered"
+    },
+    {
+      "start": 696.06,
+      "end": 696.66,
+      "text": "just by a"
+    },
+    {
+      "start": 696.66,
+      "end": 697.46,
+      "text": "question and answer"
+    },
+    {
+      "start": 697.46,
+      "end": 697.86,
+      "text": "in other words"
+    },
+    {
+      "start": 697.86,
+      "end": 698.14,
+      "text": "it's a"
+    },
+    {
+      "start": 698.14,
+      "end": 699.38,
+      "text": "grillable question"
+    },
+    {
+      "start": 699.38,
+      "end": 700.22,
+      "text": "but high-fidelity"
+    },
+    {
+      "start": 700.22,
+      "end": 700.54,
+      "text": "ones"
+    },
+    {
+      "start": 700.54,
+      "end": 701.5,
+      "text": "are ungrillable"
+    },
+    {
+      "start": 701.5,
+      "end": 702.14,
+      "text": "you may need to"
+    },
+    {
+      "start": 702.14,
+      "end": 702.78,
+      "text": "go into a"
+    },
+    {
+      "start": 702.78,
+      "end": 703.78,
+      "text": "prototype mode"
+    },
+    {
+      "start": 703.78,
+      "end": 704.38,
+      "text": "by using"
+    },
+    {
+      "start": 704.38,
+      "end": 705.06,
+      "text": "handoff"
+    },
+    {
+      "start": 705.06,
+      "end": 705.74,
+      "text": "to handoff"
+    },
+    {
+      "start": 705.74,
+      "end": 705.94,
+      "text": "to a"
+    },
+    {
+      "start": 705.94,
+      "end": 707.14,
+      "text": "prototyping session"
+    },
+    {
+      "start": 707.14,
+      "end": 707.78,
+      "text": "to just"
+    },
+    {
+      "start": 707.78,
+      "end": 708.3,
+      "text": "figure out"
+    },
+    {
+      "start": 708.3,
+      "end": 709.14,
+      "text": "that question"
+    },
+    {
+      "start": 709.14,
+      "end": 709.7,
+      "text": "or maybe"
+    },
+    {
+      "start": 709.7,
+      "end": 710.42,
+      "text": "that question"
+    },
+    {
+      "start": 710.42,
+      "end": 711.42,
+      "text": "and a bunch of others"
+    },
+    {
+      "start": 711.42,
+      "end": 712.06,
+      "text": "and then go back"
+    },
+    {
+      "start": 712.06,
+      "end": 712.58,
+      "text": "to the original"
+    },
+    {
+      "start": 712.58,
+      "end": 712.98,
+      "text": "grilling"
+    },
+    {
+      "start": 712.98,
+      "end": 713.82,
+      "text": "to continue"
+    },
+    {
+      "start": 713.82,
+      "end": 714.3,
+      "text": "figuring out"
+    },
+    {
+      "start": 714.3,
+      "end": 714.74,
+      "text": "the correct"
+    },
+    {
+      "start": 714.74,
+      "end": 715.66,
+      "text": "scope of the work"
+    },
+    {
+      "start": 715.66,
+      "end": 716.5,
+      "text": "is essential"
+    },
+    {
+      "start": 716.5,
+      "end": 717.22,
+      "text": "if you try"
+    },
+    {
+      "start": 717.22,
+      "end": 718.74,
+      "text": "to grill too much"
+    },
+    {
+      "start": 718.74,
+      "end": 719.82,
+      "text": "then you will end up"
+    },
+    {
+      "start": 719.82,
+      "end": 720.58,
+      "text": "just kind of"
+    },
+    {
+      "start": 720.58,
+      "end": 721.14,
+      "text": "blowing through"
+    },
+    {
+      "start": 721.14,
+      "end": 721.98,
+      "text": "your context window"
+    },
+    {
+      "start": 721.98,
+      "end": 722.82,
+      "text": "burning your own"
+    },
+    {
+      "start": 722.82,
+      "end": 723.58,
+      "text": "stamina"
+    },
+    {
+      "start": 723.58,
+      "end": 723.94,
+      "text": "and"
+    },
+    {
+      "start": 723.94,
+      "end": 724.58,
+      "text": "you won't have anything"
+    },
+    {
+      "start": 724.58,
+      "end": 725.14,
+      "text": "to show for it"
+    },
+    {
+      "start": 725.14,
+      "end": 725.62,
+      "text": "if you're too"
+    },
+    {
+      "start": 725.62,
+      "end": 726.22,
+      "text": "passive"
+    },
+    {
+      "start": 726.22,
+      "end": 726.82,
+      "text": "in your grilling"
+    },
+    {
+      "start": 726.82,
+      "end": 727.3,
+      "text": "sessions"
+    },
+    {
+      "start": 727.3,
+      "end": 727.58,
+      "text": "then you're"
+    },
+    {
+      "start": 727.58,
+      "end": 727.9,
+      "text": "just gonna"
+    },
+    {
+      "start": 727.9,
+      "end": 728.46,
+      "text": "sit there"
+    },
+    {
+      "start": 728.46,
+      "end": 729.22,
+      "text": "while the computer"
+    },
+    {
+      "start": 729.22,
+      "end": 729.7,
+      "text": "just says"
+    },
+    {
+      "start": 729.7,
+      "end": 730.26,
+      "text": "you know"
+    },
+    {
+      "start": 730.26,
+      "end": 731.26,
+      "text": "bombards you"
+    },
+    {
+      "start": 731.26,
+      "end": 731.62,
+      "text": "with more"
+    },
+    {
+      "start": 731.62,
+      "end": 732.7,
+      "text": "and more questions"
+    },
+    {
+      "start": 732.7,
+      "end": 733.26,
+      "text": "but if you're too"
+    },
+    {
+      "start": 733.26,
+      "end": 733.86,
+      "text": "active"
+    },
+    {
+      "start": 733.86,
+      "end": 734.42,
+      "text": "then you might"
+    },
+    {
+      "start": 734.42,
+      "end": 735.06,
+      "text": "end up just"
+    },
+    {
+      "start": 735.06,
+      "end": 736.54,
+      "text": "grilling endlessly"
+    },
+    {
+      "start": 736.54,
+      "end": 736.86,
+      "text": "on"
+    },
+    {
+      "start": 736.86,
+      "end": 737.5,
+      "text": "low-fidelity"
+    },
+    {
+      "start": 737.5,
+      "end": 738.02,
+      "text": "questions"
+    },
+    {
+      "start": 738.02,
+      "end": 738.26,
+      "text": "when"
+    },
+    {
+      "start": 738.26,
+      "end": 738.62,
+      "text": "what you"
+    },
+    {
+      "start": 738.62,
+      "end": 739.18,
+      "text": "really need"
+    },
+    {
+      "start": 739.18,
+      "end": 739.46,
+      "text": "is just"
+    },
+    {
+      "start": 739.46,
+      "end": 740.26,
+      "text": "to get to code"
+    },
+    {
+      "start": 740.26,
+      "end": 740.58,
+      "text": "you need a"
+    },
+    {
+      "start": 740.58,
+      "end": 741.14,
+      "text": "smart model"
+    },
+    {
+      "start": 741.14,
+      "end": 741.54,
+      "text": "so that you"
+    },
+    {
+      "start": 741.54,
+      "end": 742.18,
+      "text": "can rely"
+    },
+    {
+      "start": 742.18,
+      "end": 742.5,
+      "text": "on its"
+    },
+    {
+      "start": 742.5,
+      "end": 743.1,
+      "text": "parametric"
+    },
+    {
+      "start": 743.1,
+      "end": 743.62,
+      "text": "information"
+    },
+    {
+      "start": 743.62,
+      "end": 744.38,
+      "text": "to give"
+    },
+    {
+      "start": 744.38,
+      "end": 744.94,
+      "text": "you"
+    },
+    {
+      "start": 744.94,
+      "end": 745.38,
+      "text": "better"
+    },
+    {
+      "start": 745.38,
+      "end": 746.3,
+      "text": "sugestions"
+    },
+    {
+      "start": 746.3,
+      "end": 746.82,
+      "text": "and give"
+    },
+    {
+      "start": 746.82,
+      "end": 746.98,
+      "text": "you"
+    },
+    {
+      "start": 746.98,
+      "end": 747.3,
+      "text": "better"
+    },
+    {
+      "start": 747.3,
+      "end": 747.86,
+      "text": "questions"
+    },
+    {
+      "start": 747.86,
+      "end": 748.42,
+      "text": "to answer"
+    },
+    {
+      "start": 748.42,
+      "end": 748.9,
+      "text": "and finally"
+    },
+    {
+      "start": 748.9,
+      "end": 749.42,
+      "text": "I would recommend"
+    },
+    {
+      "start": 749.42,
+      "end": 749.78,
+      "text": "grilling"
+    },
+    {
+      "start": 749.78,
+      "end": 750.54,
+      "text": "two sessions"
+    },
+    {
+      "start": 750.54,
+      "end": 754.82,
+      "text": "at once,once you've mastered these basics and you understand what each session is doing"
+    },
+    {
+      "start": 754.82,
+      "end": 756.78,
+      "text": "you should be able to flip between them really nicely"
+    },
+    {
+      "start": 756.78,
+      "end": 757.5,
+      "text": "and probably"
+    },
+    {
+      "start": 757.5,
+      "end": 760.54,
+      "text": "you could even go up to four if you have a more plastic brain than I do"
+    },
+    {
+      "start": 760.54,
+      "end": 761.78,
+      "text": "overall thanks for watching pals"
+    },
+    {
+      "start": 761.78,
+      "end": 763.5,
+      "text": "and if you enjoyed this then you'll"
+    },
+    {
+      "start": 763.5,
+      "end": 765.86,
+      "text": "really enjoy my air-coding cohort"
+    },
+    {
+      "start": 765.86,
+      "end": 767.26,
+      "text": "for real engineers"
+    },
+    {
+      "start": 767.26,
+      "end": 767.78,
+      "text": "which is"
+    },
+    {
+      "start": 767.78,
+      "end": 768.26,
+      "text": "whoa"
+    },
+    {
+      "start": 768.26,
+      "end": 770.94,
+      "text": "one day ten hours left to get it at a discount"
+    },
+    {
+      "start": 770.94,
+      "end": 772.58,
+      "text": "you get a bunch of video content"
+    },
+    {
+      "start": 772.58,
+      "end": 773.94,
+      "text": "and interactive exercises"
+    },
+    {
+      "start": 773.94,
+      "end": 776.14,
+      "text": "organised in a way for maximum speed"
+    },
+    {
+      "start": 776.14,
+      "end": 777.82,
+      "text": "and maximum efficiency of learning"
+    },
+    {
+      "start": 777.82,
+      "end": 778.54,
+      "text": "you get"
+    },
+    {
+      "start": 778.54,
+      "end": 779.98,
+      "text": "me to answer your questions"
+    },
+    {
+      "start": 779.98,
+      "end": 780.74,
+      "text": "in office hours"
+    },
+    {
+      "start": 780.74,
+      "end": 782.1,
+      "text": "and in the discord chat"
+    },
+    {
+      "start": 782.1,
+      "end": 782.38,
+      "text": "you know"
+    },
+    {
+      "start": 782.38,
+      "end": 782.82,
+      "text": "it's great"
+    },
+    {
+      "start": 782.82,
+      "end": 783.18,
+      "text": "by the way"
+    },
+    {
+      "start": 783.18,
+      "end": 784.3,
+      "text": "if you dug this video"
+    },
+    {
+      "start": 784.3,
+      "end": 785.94,
+      "text": "my youtube is exploding recently"
+    },
+    {
+      "start": 785.94,
+      "end": 786.94,
+      "text": "so thank you all for that"
+    },
+    {
+      "start": 786.94,
+      "end": 788.66,
+      "text": "so massively appreciate it"
+    },
+    {
+      "start": 788.66,
+      "end": 790.54,
+      "text": "I really enjoy making these videos"
+    },
+    {
+      "start": 790.54,
+      "end": 791.86,
+      "text": "I'm loving making the skills"
+    },
+    {
+      "start": 791.86,
+      "end": 792.86,
+      "text": "I think we're up to"
+    },
+    {
+      "start": 792.86,
+      "end": 794.02,
+      "text": "we just beat"
+    },
+    {
+      "start": 794.02,
+      "end": 795.34,
+      "text": "Gary Tan's G-stack"
+    },
+    {
+      "start": 795.34,
+      "end": 796.5,
+      "text": "in terms of number of stars"
+    },
+    {
+      "start": 796.5,
+      "end": 797.78,
+      "text": "which is wild to me"
+    },
+    {
+      "start": 797.78,
+      "end": 799.02,
+      "text": "and if you have an idea for a video"
+    },
+    {
+      "start": 799.02,
+      "end": 800.1,
+      "text": "you want me to make next"
+    },
+    {
+      "start": 800.1,
+      "end": 801.46,
+      "text": "then let me know about it"
+    },
+    {
+      "start": 801.46,
+      "end": 802.58,
+      "text": "cause I thrive"
+    },
+    {
+      "start": 802.58,
+      "end": 804.18,
+      "text": "off your suggestions"
+    },
+    {
+      "start": 804.18,
+      "end": 805.1,
+      "text": "and your ideas"
+    },
+    {
+      "start": 805.1,
+      "end": 805.94,
+      "text": "so thanks for watching"
+    },
+    {
+      "start": 805.94,
+      "end": 807.18,
+      "text": "and I will see you very soon"
+    }
+  ],
+  "artifacts": {
+    "note": "Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+    "frames": [
+      "assets/bilibili-BV1zn396mEfz-frame-0001.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0002.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0003.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0004.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0005.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0006.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0007.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0008.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0009.webp",
+      "assets/bilibili-BV1zn396mEfz-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-08-04T08:44:13.485014+00:00"
+}
