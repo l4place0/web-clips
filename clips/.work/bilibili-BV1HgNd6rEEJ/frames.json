@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "selected": [
+    {"frame": 1, "reason": "章节标题卡 The Lie Of Balance（平衡的谎言），配中文字幕，适合放在“平衡的谎言”章节旁帮助定位。", "chapter_hint": "The Lie Of Balance"},
+    {"frame": 3, "reason": "章节标题卡 The Reality Of Elimination（消除的现实），配字幕“点火烧掉枯木并站在烟雾之中”，直观传达本章的激烈语气。", "chapter_hint": "The Reality Of Elimination"},
+    {"frame": 6, "reason": "章节标题卡 The Addiction Switch（成瘾开关），配字幕“你是庄家也是瘾君子”，点出核心比喻。", "chapter_hint": "The Addiction Switch"},
+    {"frame": 7, "reason": "章节标题卡 The Mechanics Of Focus（专注机制），配字幕“像农夫在坚硬土地上播种一样反复做手头工作”，对应“重复与仪式”方法论。", "chapter_hint": "The Mechanics Of Focus"},
+    {"frame": 9, "reason": "章节标题卡 Eliminate Everything（消除一切），是行动清单前最长的实操章节标题。", "chapter_hint": "Eliminating Everything"},
+    {"frame": 10, "reason": "“微承诺”章节字幕（现在下一个是微承诺），对应消除一切中的具体清理项。", "chapter_hint": "Eliminating Everything (micro commitments)"}
+  ]
+}

@@ -354,6 +354,34 @@
       "assignedAt": "2026-08-01T05:56:53.503Z",
       "everPublished": true,
       "firstPublishedAt": "2026-08-01T06:53:33.235Z"
+    },
+    "2c267c78-b4c9-4492-b2f1-b0191bf961f7": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:37.045Z",
+      "everPublished": false
+    },
+    "ec123725-a482-4c03-86f4-cc086925ed1d": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:39.124Z",
+      "everPublished": false
+    },
+    "13e03286-c5a6-4c99-a876-8954707476c3": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:40.901Z",
+      "everPublished": false
+    },
+    "db763353-4bb2-41f2-ae14-daff23c44692": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:45.381Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1472,6 +1500,30 @@
       "rid": "3a566b9f-f530-4b50-8de1-fd7339758124",
       "at": "2026-08-01T06:53:33.235Z",
       "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2c267c78-b4c9-4492-b2f1-b0191bf961f7",
+      "at": "2026-08-04T04:41:37.045Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ec123725-a482-4c03-86f4-cc086925ed1d",
+      "at": "2026-08-04T04:41:39.124Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "13e03286-c5a6-4c99-a876-8954707476c3",
+      "at": "2026-08-04T04:41:40.901Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "db763353-4bb2-41f2-ae14-daff23c44692",
+      "at": "2026-08-04T04:41:45.381Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
     }
   ]
 }

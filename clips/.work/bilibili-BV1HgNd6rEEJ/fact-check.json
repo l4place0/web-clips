@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "mode": "auto",
+  "checked_at": "2026-08-04",
+  "claims": [
+    {
+      "timestamp": "26:16-26:19",
+      "classification": "objective_fact",
+      "statement": "视频声称 \"Every new beginning comes from some other beginning's end\" 出自罗马哲学家塞涅卡（Seneca）。",
+      "verification": "现有考证表明塞涅卡现存著作中并无此句；该句出自 Semisonic 1998 年单曲《Closing Time》，之后被广泛误归于塞涅卡。",
+      "status": "disputed",
+      "sources": [
+        "https://latin.stackexchange.com/questions/15086",
+        "https://en.wikipedia.org/wiki/Closing_Time_(Semisonic_song)"
+      ]
+    }
+  ]
+}
