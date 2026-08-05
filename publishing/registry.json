@@ -585,6 +585,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T09:39:08.082Z",
       "everPublished": false
+    },
+    "1935ec51-3590-4a21-aadb-70a0c27dfb79": {
+      "firstAssignedPath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "lastKnownSourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:47:03.911Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1901,6 +1908,12 @@
       "rid": "d4b4590b-0f32-4c45-8de2-c2785a9ce2cb",
       "at": "2026-08-05T09:39:08.082Z",
       "sourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1935ec51-3590-4a21-aadb-70a0c27dfb79",
+      "at": "2026-08-05T09:47:03.911Z",
+      "sourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md"
     }
   ]
 }

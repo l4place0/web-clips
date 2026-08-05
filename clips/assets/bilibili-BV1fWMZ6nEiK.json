@@ -30,7 +30,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -656,5 +656,203 @@
       "assets/bilibili-BV1fWMZ6nEiK-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-05T09:08:57.955490+00:00"
+  "updated_at": "2026-08-05T09:45:57.783825+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1fWMZ6nEiK",
+    "status": "completed",
+    "mode": "conservative_same_timestamp",
+    "created_at": "2026-08-05",
+    "source_baseline": {
+      "raw_note": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\聊聊带计算机实习生的一些感受和心得.md",
+      "manifest": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\assets\\bilibili-BV1fWMZ6nEiK.json",
+      "raw_note_segments": 120,
+      "manifest_segments": 120,
+      "raw_to_manifest_exact_mismatches": 0
+    },
+    "transcript_segments": 120,
+    "corrections_count": 15,
+    "glossary": [
+      {
+        "term": "预研",
+        "normalized_form": "预先研究 / pre-research",
+        "note": "项目研发前的探索、验证工作；校正 00:10 的同音误识。"
+      },
+      {
+        "term": "AI 编程",
+        "normalized_form": "AI-assisted programming",
+        "note": "讲者描述的工作方式；不据此推出对所有项目的生产率结论。"
+      },
+      {
+        "term": "数据中台",
+        "normalized_form": "data middle platform",
+        "note": "组织内部的数据能力/治理平台；视频只描述讲者所在团队的产品与任务。"
+      },
+      {
+        "term": "数据源、数据连接",
+        "normalized_form": "data source / data connection",
+        "note": "数据采集集成的配置对象；校正 02:25。"
+      },
+      {
+        "term": "数据元数据",
+        "normalized_form": "data metadata",
+        "note": "用于描述数据结构、来源等的信息；原转写已有正确用法。"
+      },
+      {
+        "term": "数据映射",
+        "normalized_form": "data mapping",
+        "note": "将源字段/结构映射到目标字段/结构的过程；校正 02:29。"
+      },
+      {
+        "term": "贴源层",
+        "normalized_form": "source-aligned layer",
+        "note": "紧贴原始数据源的数仓分层表述；因原文可读，未改写。"
+      },
+      {
+        "term": "宽表 / 维度表 / 数仓维度建模",
+        "normalized_form": "wide table / dimension table / dimensional modeling",
+        "note": "数据仓库建模相关概念；原文保留。"
+      },
+      {
+        "term": "自定义报表",
+        "normalized_form": "custom report",
+        "note": "可配置的数据分析报表；校正 03:04、03:12、04:41、05:15、05:47。"
+      },
+      {
+        "term": "业务建模",
+        "normalized_form": "business modeling",
+        "note": "讲者提及的能力重点；属于其经验观点，不作外推。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:10",
+        "type": "software engineering term",
+        "original_segment": "[00:10] 做一些关键的一些项目的一些预言",
+        "corrected_segment": "[00:10] 做一些关键的一些项目的一些预研",
+        "reason": "在项目研发语境中，“预研”指前期预先研究；“预言”不合技术语义。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "01:18",
+        "type": "internship learning-mode correction",
+        "original_segment": "[01:18] 然后后面每周基本上都是边时间边学习的这么一种模式",
+        "corrected_segment": "[01:18] 然后后面每周基本上都是边实践边学习的这么一种模式",
+        "reason": "与前后“基础知识学习后在任务中学习”的实习安排一致；“边实践边学习”为完整工作学习模式。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "02:20",
+        "type": "engineering colloquial term",
+        "original_segment": "[02:20] 我又让小朋友自己手出了一个简单的",
+        "corrected_segment": "[02:20] 我又让小朋友自己手搓了一个简单的",
+        "reason": "“手搓”指不依赖现成产品、亲自实现；“手出了”不成通顺的软件工程表达。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "02:23",
+        "type": "data integration term",
+        "original_segment": "[02:23] 一提二采集的功能",
+        "corrected_segment": "[02:23] 一体化采集的功能",
+        "reason": "结合紧随其后的采集、元数据、建模与调度功能列表，“一体化采集”是完整的数据集成术语；原串为同音/分词混淆。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "02:25",
+        "type": "data platform terminology",
+        "original_segment": "[02:25] 整个采集功能里面就包括了数据元数据联系的定义",
+        "corrected_segment": "[02:25] 整个采集功能里面就包括了数据源、数据连接的定义",
+        "reason": "数据采集功能的标准前置对象为数据源与数据连接；原串把“数据源、数据连接”连读误识为“数据元数据联系”。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "02:29",
+        "type": "data integration term",
+        "original_segment": "[02:29] 数据元数据的管理数据建模数据硬设数据调度任务",
+        "corrected_segment": "[02:29] 数据元数据的管理数据建模数据映射数据调度任务",
+        "reason": "与数据建模、调度任务并列时，“数据映射”是标准数据集成步骤；“硬设”不构成对应技术术语。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "03:04",
+        "type": "reporting term",
+        "original_segment": "[03:04] 做一个制定义的分析报表功能",
+        "corrected_segment": "[03:04] 做一个自定义的分析报表功能",
+        "reason": "“自定义分析报表”是与后文数据表、维度表和报表定义一致的术语。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "03:12",
+        "type": "reporting term",
+        "original_segment": "[03:12] 你怎么样灵活的一个定义一个制定义的数据分析报表",
+        "corrected_segment": "[03:12] 你怎么样灵活的一个定义一个自定义的数据分析报表",
+        "reason": "“自定义的数据分析报表”是同段可辨识的标准软件功能名称。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "03:29",
+        "type": "internship education correction",
+        "original_segment": "[03:29] 我也带过一个实习生大师的",
+        "corrected_segment": "[03:29] 我也带过一个实习生大四的",
+        "reason": "句子在对比当前大一实习生与此前一位实习生；“大四的”符合学历年级表达，“大师的”不合语义。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "04:08",
+        "type": "web engineering term",
+        "original_segment": "[04:08] 你怎么样通过查看相关的网约元代码",
+        "corrected_segment": "[04:08] 你怎么样通过查看相关的网页源代码",
+        "reason": "反爬场景中查看的是“网页源代码”；原串为网页/源代码的同音误识。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "04:41",
+        "type": "reporting term",
+        "original_segment": "[04:41] 包括这个小朋友最终类似于制定义报表这个功能",
+        "corrected_segment": "[04:41] 包括这个小朋友最终类似于自定义报表这个功能",
+        "reason": "“自定义报表功能”与该段的功能交付语境一致。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "05:15",
+        "type": "reporting term",
+        "original_segment": "[05:15] 虽然说你通过AI把这个制定义报表做出来了",
+        "corrected_segment": "[05:15] 虽然说你通过AI把这个自定义报表做出来了",
+        "reason": "“自定义报表”是此前已建立的同一功能名称；仅在本时间戳内替换误识字。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "05:38",
+        "type": "software engineering term",
+        "original_segment": "[05:38] 不是让你自己去手工写代吗",
+        "corrected_segment": "[05:38] 不是让你自己去手工写代码",
+        "reason": "“手工写代码”是完整的软件工程表达；“代吗”是代码的同音误识。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "05:44",
+        "type": "meaning-preserving phrase correction",
+        "original_segment": "[05:44] 过程的重要性远远终于结果",
+        "corrected_segment": "[05:44] 过程的重要性远远重于结果",
+        "reason": "在“过程的重要性”语境中，固定表达为“过程的重要性远远重于结果”；“终于”改变句义且不合句法。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      },
+      {
+        "timestamp": "05:47",
+        "type": "reporting term",
+        "original_segment": "[05:47] 你可以通过几句话让AI帮你做一个制定义报表",
+        "corrected_segment": "[05:47] 你可以通过几句话让AI帮你做一个自定义报表",
+        "reason": "“自定义报表”是讲者反复使用的同一功能名；仅作本段术语校正。",
+        "evidence_scope": "仅依据同一时间戳的局部技术语境、句法及相邻同一任务描述进行最小修正；未从其它时间戳搬运内容，也未把讲者个人经历泛化为行业结论。"
+      }
+    ],
+    "validation": {
+      "timestamp_order_preserved": true,
+      "raw_segment_count": 120,
+      "corrected_segment_count": 120,
+      "cross_timestamp_sentence_substitutions": 0,
+      "corrected_duplicate_full_segment_groups": 0,
+      "unsupported_corrections": 0
+    }
+  }
 }
