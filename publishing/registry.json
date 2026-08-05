@@ -550,6 +550,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T07:48:36.080Z",
       "everPublished": false
+    },
+    "e6ba0b25-7023-47ce-aa81-8596f1834a7b": {
+      "firstAssignedPath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "lastKnownSourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T08:25:14.033Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1836,6 +1843,12 @@
       "rid": "b31a80fc-ca9b-4e5a-ab10-0373beac0f80",
       "at": "2026-08-05T07:48:36.080Z",
       "sourcePath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e6ba0b25-7023-47ce-aa81-8596f1834a7b",
+      "at": "2026-08-05T08:25:14.033Z",
+      "sourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md"
     }
   ]
 }

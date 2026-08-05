@@ -35,7 +35,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1996,5 +1996,17 @@
       "assets/bilibili-BV1i7Kx6EEEt-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-05T07:01:01.873633+00:00"
+  "updated_at": "2026-08-05T07:54:13.268104+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1i7Kx6EEEt",
+    "status": "completed",
+    "mode": "conservative_repair",
+    "created_at": "2026-08-05",
+    "scope": "Emergency semantic-fidelity repair: all prior speculative and cross-timestamp substitutions removed.",
+    "repair_note": "Restored exactly to manifest raw segment text pending audio-backed review; no correction retained without same-timestamp proof.",
+    "transcript_segments": 387,
+    "corrections_count": 0,
+    "corrections": []
+  }
 }
