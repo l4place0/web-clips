@@ -578,6 +578,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T09:22:17.775Z",
       "everPublished": false
+    },
+    "d4b4590b-0f32-4c45-8de2-c2785a9ce2cb": {
+      "firstAssignedPath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "lastKnownSourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:39:08.082Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1888,6 +1895,12 @@
       "rid": "1aaf18aa-ea4c-4aec-9dab-57112bef6627",
       "at": "2026-08-05T09:22:17.775Z",
       "sourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d4b4590b-0f32-4c45-8de2-c2785a9ce2cb",
+      "at": "2026-08-05T09:39:08.082Z",
+      "sourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
     }
   ]
 }
