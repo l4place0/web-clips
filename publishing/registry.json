@@ -522,6 +522,13 @@
       "status": "active",
       "assignedAt": "2026-08-04T15:14:53.515Z",
       "everPublished": false
+    },
+    "69608cb0-9a86-4242-9a99-a6a8c845bd33": {
+      "firstAssignedPath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "lastKnownSourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T05:30:59.358Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1784,6 +1791,12 @@
       "rid": "ac0e2da4-88eb-43a2-91f1-0bc028810842",
       "at": "2026-08-04T15:14:53.515Z",
       "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "69608cb0-9a86-4242-9a99-a6a8c845bd33",
+      "at": "2026-08-05T05:30:59.358Z",
+      "sourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md"
     }
   ]
 }
