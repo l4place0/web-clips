@@ -32,7 +32,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -3358,5 +3358,111 @@
       "assets/bilibili-BV1fyMR6gETf-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-05T09:21:03.495014+00:00"
+  "updated_at": "2026-08-05T10:33:35.943803+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1fyMR6gETf",
+    "status": "completed",
+    "mode": "conservative_same_timestamp",
+    "created_at": "2026-08-05",
+    "source_baseline": {
+      "raw_note": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "manifest": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\assets\\bilibili-BV1fyMR6gETf.json",
+      "raw_note_segments": 660,
+      "manifest_segments": 660,
+      "raw_to_manifest_exact_mismatches": 0
+    },
+    "transcript_segments": 660,
+    "corrections_count": 6,
+    "glossary": [
+      {
+        "term": "drafting / first draft",
+        "normalized_form": "起草 / 初稿",
+        "note": "视频将 drafting 与后续 editing 区分；原转写相关术语本已正确，未改写其方法论。"
+      },
+      {
+        "term": "editing / refining",
+        "normalized_form": "编辑 / 打磨",
+        "note": "讲者用“raw material / facility”比喻从起草到编辑的流程；含混口语保留，未作猜测性补全。"
+      },
+      {
+        "term": "Moleskine",
+        "normalized_form": "笔记本品牌",
+        "note": "06:23 的 moleskin 恢复为品牌专名 Moleskine。"
+      },
+      {
+        "term": "Chuck Palahniuk",
+        "normalized_form": "美国小说家",
+        "note": "04:40 与 05:27 的音近误识 Pollanek 校正为 Palahniuk。"
+      },
+      {
+        "term": "ooey-gooey woo-woo",
+        "normalized_form": "带有“玄乎/黏腻感”的自嘲式口语",
+        "note": "05:52 的口语表达只规范拼写，不翻译或改变语气。"
+      },
+      {
+        "term": "creative athlete",
+        "normalized_form": "创意运动员",
+        "note": "视频把创作练习类比为训练；属于讲者个人框架，本校正不将其泛化为事实结论。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "03:25",
+        "type": "ASR word-boundary correction",
+        "original_segment": "[03:25] Not likeOh, you're so bad at this",
+        "corrected_segment": "[03:25] Not like, Oh, you're so bad at this",
+        "reason": "“like”与后续引语起始词“oh”被粘连；仅恢复词界和停顿，不改变讲者的自我对话内容。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      },
+      {
+        "timestamp": "04:38",
+        "type": "literary title normalization",
+        "original_segment": "[04:38] The graveyard book, Coraline",
+        "corrected_segment": "[04:38] The Graveyard Book, Coraline",
+        "reason": "在 Neil Gaiman 及其作品的连续列举语境中，将书名 The Graveyard Book 恢复为规范写法；不改变原意。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      },
+      {
+        "timestamp": "04:40",
+        "type": "author-name correction",
+        "original_segment": "[04:40] As well as Chuck Pollanek",
+        "corrected_segment": "[04:40] As well as Chuck Palahniuk",
+        "reason": "紧邻的 Fight Club、Choke、Survivor 作品列举可明确指向 Chuck Palahniuk；原文为音近 ASR 误识。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      },
+      {
+        "timestamp": "05:27",
+        "type": "author-name correction",
+        "original_segment": "[05:27] And then Chuck Pollanek",
+        "corrected_segment": "[05:27] And then Chuck Palahniuk",
+        "reason": "同一写作建议段再次提到 Fight Club 作者；与 04:40 的同名专名校正一致。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      },
+      {
+        "timestamp": "05:52",
+        "type": "colloquial English normalization",
+        "original_segment": "[05:52] Ooie gooie woo woo",
+        "corrected_segment": "[05:52] Ooey-gooey woo-woo",
+        "reason": "该英语口语惯用表达被 ASR 按音拆写；仅规范拼写与连字符，保留其自嘲语气。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      },
+      {
+        "timestamp": "06:23",
+        "type": "product-name correction",
+        "original_segment": "[06:23] And I write in these big moleskin notebooks",
+        "corrected_segment": "[06:23] And I write in these big Moleskine notebooks",
+        "reason": "后文紧接“我喜欢他们的产品”，指向笔记本品牌 Moleskine；仅恢复专名拼写和大小写。",
+        "evidence_scope": "仅依据同一时间戳段的可辨识语音、紧邻的写作语境和同段作品/品牌指向作最小修正；未移动、合并或补写任何其它时间戳内容。"
+      }
+    ],
+    "validation": {
+      "timestamp_order_preserved": true,
+      "raw_segment_count": 660,
+      "corrected_segment_count": 660,
+      "cross_timestamp_sentence_substitutions": 0,
+      "corrected_duplicate_full_segment_groups": 0,
+      "unsupported_corrections": 0
+    }
+  }
 }
