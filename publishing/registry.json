@@ -564,6 +564,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T09:03:05.908Z",
       "everPublished": false
+    },
+    "8fc32ba1-d283-459e-9c68-343535ddc7fb": {
+      "firstAssignedPath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "lastKnownSourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:10:09.589Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1862,6 +1869,12 @@
       "rid": "1f4cc888-4ccc-4e35-9845-8f0fdb7ba377",
       "at": "2026-08-05T09:03:05.908Z",
       "sourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fc32ba1-d283-459e-9c68-343535ddc7fb",
+      "at": "2026-08-05T09:10:09.589Z",
+      "sourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md"
     }
   ]
 }
