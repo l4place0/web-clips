@@ -557,6 +557,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T08:25:14.033Z",
       "everPublished": false
+    },
+    "1f4cc888-4ccc-4e35-9845-8f0fdb7ba377": {
+      "firstAssignedPath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:03:05.908Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1849,6 +1856,12 @@
       "rid": "e6ba0b25-7023-47ce-aa81-8596f1834a7b",
       "at": "2026-08-05T08:25:14.033Z",
       "sourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1f4cc888-4ccc-4e35-9845-8f0fdb7ba377",
+      "at": "2026-08-05T09:03:05.908Z",
+      "sourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md"
     }
   ]
 }
