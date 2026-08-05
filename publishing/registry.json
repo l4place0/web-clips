@@ -571,6 +571,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T09:10:09.589Z",
       "everPublished": false
+    },
+    "1aaf18aa-ea4c-4aec-9dab-57112bef6627": {
+      "firstAssignedPath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "lastKnownSourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:22:17.775Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1875,6 +1882,12 @@
       "rid": "8fc32ba1-d283-459e-9c68-343535ddc7fb",
       "at": "2026-08-05T09:10:09.589Z",
       "sourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1aaf18aa-ea4c-4aec-9dab-57112bef6627",
+      "at": "2026-08-05T09:22:17.775Z",
+      "sourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md"
     }
   ]
 }

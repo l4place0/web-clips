@@ -1,0 +1,3362 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1fyMR6gETf",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1fyMR6gETf/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1fyMR6gETf"
+  },
+  "title": "[双语/写作] 我如何每天无干扰写作4小时以上",
+  "metadata": {
+    "title": "[双语/写作] 我如何每天无干扰写作4小时以上",
+    "duration": 1163,
+    "thumbnail": "http://i1.hdslb.com/bfs/archive/3f359117769f07b50201bc4545576d0b1c3bffbf.jpg",
+    "uploader": "青青画室",
+    "video_id": "BV1fyMR6gETf",
+    "description": "识别模型：whisperx\n翻译模型：deepseek-v4-flash\n\n原标题：How I write for 4+ hours a day with no distractions\n作者：Josh Czuba\n原视频链接：https://www.youtube.com/watch?v=5UcLxikFH2E\n原视频投稿时间：2026-01-29\n\n这是我当前创作短篇小说的写作流程，这些方法适用于任何形式的创意写作。希望你在深入自己的写作过程中能从中获益，为你感到骄傲，也祝你享受这些故事。",
+    "tags": [
+      "学习",
+      "英语",
+      "创作",
+      "经验分享",
+      "专注",
+      "写作"
+    ],
+    "view_count": 7430,
+    "like_count": 649,
+    "upload_date": 1785765755,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "8dab7391fdc8dd6dc21de25f5961c6730273778c0e229bbd4cc5e9f47960e04a",
+    "audio": "4eb0514b408db839ec56d9b2c55a4f7450943bffbfb7c646d625acbe435f8f0b",
+    "transcript": "b3ba241add4e3532dc9e4188530b67d3b2aafc86334b294c98a2b99c6ab028a1",
+    "frames": "928d7dd8e5a66f4b683939a1b381276f23b54922998a43531aa8ca4bf162008f"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 1.08,
+      "text": "Hello my friend"
+    },
+    {
+      "start": 1.08,
+      "end": 3.24,
+      "text": "Today we're going to talk about the writing process"
+    },
+    {
+      "start": 3.24,
+      "end": 6.84,
+      "text": "Today I spent about so many hours"
+    },
+    {
+      "start": 6.84,
+      "end": 9.64,
+      "text": "5 or 6 hours writing without any distractions"
+    },
+    {
+      "start": 9.64,
+      "end": 11.2,
+      "text": "Without wanting to go on my phone"
+    },
+    {
+      "start": 11.2,
+      "end": 13.6,
+      "text": "Without wanting to do something else"
+    },
+    {
+      "start": 13.6,
+      "end": 16.28,
+      "text": "Just totally immersed in the page"
+    },
+    {
+      "start": 16.28,
+      "end": 18.52,
+      "text": "I got 12 pages handwritten"
+    },
+    {
+      "start": 18.52,
+      "end": 20.28,
+      "text": "And that was a pretty good day for me"
+    },
+    {
+      "start": 20.28,
+      "end": 23.12,
+      "text": "I write and perform short stories on the internet"
+    },
+    {
+      "start": 23.12,
+      "end": 26.4,
+      "text": "I have been writing consistently for a number of years now"
+    },
+    {
+      "start": 26.4,
+      "end": 27.64,
+      "text": "I think 3 years"
+    },
+    {
+      "start": 27.64,
+      "end": 31.0,
+      "text": "And that all started with a very basic journaling practice"
+    },
+    {
+      "start": 31.0,
+      "end": 34.2,
+      "text": "What I want to share with you today is how to start writing"
+    },
+    {
+      "start": 34.2,
+      "end": 35.96,
+      "text": "Why you should"
+    },
+    {
+      "start": 35.96,
+      "end": 39.36,
+      "text": "And yeah, let's start with that"
+    },
+    {
+      "start": 39.36,
+      "end": 42.2,
+      "text": "My writing practice started as just journaling"
+    },
+    {
+      "start": 42.2,
+      "end": 44.36,
+      "text": "I bought a physical journal from the store"
+    },
+    {
+      "start": 44.36,
+      "end": 47.52,
+      "text": "I bought a pen and I started just recording my thoughts"
+    },
+    {
+      "start": 47.52,
+      "end": 50.2,
+      "text": "My goal was to write stories"
+    },
+    {
+      "start": 50.2,
+      "end": 51.48,
+      "text": "But that was really hard"
+    },
+    {
+      "start": 51.48,
+      "end": 54.36,
+      "text": "Like it was just difficult to take an idea in my head"
+    },
+    {
+      "start": 54.36,
+      "end": 56.0,
+      "text": "And make it exist on the page"
+    },
+    {
+      "start": 56.0,
+      "end": 58.16,
+      "text": "I really overestimated"
+    },
+    {
+      "start": 58.16,
+      "end": 59.72,
+      "text": "Or I'm sorry, underestimated"
+    },
+    {
+      "start": 59.72,
+      "end": 62.88,
+      "text": "The gap between idea and execution"
+    },
+    {
+      "start": 62.88,
+      "end": 64.6,
+      "text": "Very different things"
+    },
+    {
+      "start": 64.6,
+      "end": 67.48,
+      "text": "And so the only thing I was capable of writing"
+    },
+    {
+      "start": 67.48,
+      "end": 69.28,
+      "text": "In the beginning was just my thoughts"
+    },
+    {
+      "start": 69.28,
+      "end": 70.56,
+      "text": "What was going on in my world"
+    },
+    {
+      "start": 70.56,
+      "end": 71.52,
+      "text": "My feelings"
+    },
+    {
+      "start": 71.52,
+      "end": 72.72,
+      "text": "What happened to me that day"
+    },
+    {
+      "start": 72.72,
+      "end": 73.64,
+      "text": "What I was thinking about"
+    },
+    {
+      "start": 73.64,
+      "end": 75.48,
+      "text": "What my goals were for the next day"
+    },
+    {
+      "start": 75.48,
+      "end": 76.52,
+      "text": "I just started writing it down"
+    },
+    {
+      "start": 76.52,
+      "end": 77.64,
+      "text": "It wasn't anything fancy"
+    },
+    {
+      "start": 77.64,
+      "end": 80.48,
+      "text": "It wasn't anything that I thought I would publish anywhere"
+    },
+    {
+      "start": 80.48,
+      "end": 83.16,
+      "text": "I just got used to the feeling of putting pen to paper"
+    },
+    {
+      "start": 83.16,
+      "end": 85.96,
+      "text": "The actual sensation of writing"
+    },
+    {
+      "start": 85.96,
+      "end": 86.8,
+      "text": "And over time"
+    },
+    {
+      "start": 86.8,
+      "end": 88.2,
+      "text": "Just by continuing to do that"
+    },
+    {
+      "start": 88.2,
+      "end": 89.88,
+      "text": "Having a little ritual of journaling"
+    },
+    {
+      "start": 89.88,
+      "end": 92.0,
+      "text": "In the morning and sometimes at night"
+    },
+    {
+      "start": 92.0,
+      "end": 92.88,
+      "text": "I fell in love with it"
+    },
+    {
+      "start": 92.88,
+      "end": 95.52,
+      "text": "Like I started to crave it"
+    },
+    {
+      "start": 95.52,
+      "end": 96.44,
+      "text": "I would be on the train"
+    },
+    {
+      "start": 96.44,
+      "end": 97.76,
+      "text": "And I wanted to take out my journal"
+    },
+    {
+      "start": 97.76,
+      "end": 99.2,
+      "text": "And write what was going on"
+    },
+    {
+      "start": 99.2,
+      "end": 99.92,
+      "text": "Nothing crazy"
+    },
+    {
+      "start": 99.92,
+      "end": 103.24,
+      "text": "Just like what sounds was I hearing on the train"
+    },
+    {
+      "start": 103.24,
+      "end": 104.68,
+      "text": "What did I see around me"
+    },
+    {
+      "start": 104.68,
+      "end": 105.68,
+      "text": "You know, what day was it"
+    },
+    {
+      "start": 105.68,
+      "end": 109.12,
+      "text": "What period of my life was I in"
+    },
+    {
+      "start": 109.12,
+      "end": 111.0,
+      "text": "And I think it's really important to touch on this"
+    },
+    {
+      "start": 111.0,
+      "end": 113.32,
+      "text": "Because most people stop writing"
+    },
+    {
+      "start": 113.32,
+      "end": 114.2,
+      "text": "Or stop journaling"
+    },
+    {
+      "start": 114.2,
+      "end": 116.28,
+      "text": "Because they have a really high expectation"
+    },
+    {
+      "start": 116.28,
+      "end": 118.32,
+      "text": "Of creating something"
+    },
+    {
+      "start": 118.32,
+      "end": 120.04,
+      "text": "Right, they want it to be a thing"
+    },
+    {
+      "start": 120.04,
+      "end": 120.84,
+      "text": "That they can share"
+    },
+    {
+      "start": 120.84,
+      "end": 122.12,
+      "text": "Or they want it to be good"
+    },
+    {
+      "start": 122.12,
+      "end": 123.68,
+      "text": "And it's like, no, that's not what it is"
+    },
+    {
+      "start": 123.68,
+      "end": 126.16,
+      "text": "It's a digestive process of your brain"
+    },
+    {
+      "start": 126.16,
+      "end": 126.6,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 126.6,
+      "end": 127.08,
+      "text": "It's the same"
+    },
+    {
+      "start": 127.08,
+      "end": 129.84,
+      "text": "Like, you know, you take in information"
+    },
+    {
+      "start": 129.84,
+      "end": 131.52,
+      "text": "And then you expel it"
+    },
+    {
+      "start": 131.52,
+      "end": 132.84,
+      "text": "And that's really what writing is"
+    },
+    {
+      "start": 132.84,
+      "end": 134.52,
+      "text": "In the beginning, what journaling is"
+    },
+    {
+      "start": 134.52,
+      "end": 136.04,
+      "text": "You're just getting stuff out of your body"
+    },
+    {
+      "start": 136.04,
+      "end": 137.56,
+      "text": "What needs to come out"
+    },
+    {
+      "start": 137.56,
+      "end": 139.76,
+      "text": "You are slowly training your ability"
+    },
+    {
+      "start": 139.76,
+      "end": 142.48,
+      "text": "To observe the world around you"
+    },
+    {
+      "start": 142.48,
+      "end": 144.04,
+      "text": "And that's a really important skill"
+    },
+    {
+      "start": 144.04,
+      "end": 145.68,
+      "text": "Especially in today's day and age"
+    },
+    {
+      "start": 145.68,
+      "end": 147.24,
+      "text": "Where people are really distracted"
+    },
+    {
+      "start": 147.24,
+      "end": 149.04,
+      "text": "Right, the norm nowadays"
+    },
+    {
+      "start": 149.04,
+      "end": 150.56,
+      "text": "Is to be caught up in your phone"
+    },
+    {
+      "start": 150.56,
+      "end": 154.56,
+      "text": "Or to be caught up in some, you know"
+    },
+    {
+      "start": 154.56,
+      "end": 155.72,
+      "text": "Something that doesn't matter"
+    },
+    {
+      "start": 155.72,
+      "end": 157.6,
+      "text": "Most people are not going about their lives"
+    },
+    {
+      "start": 157.6,
+      "end": 159.04,
+      "text": "Actually paying attention"
+    },
+    {
+      "start": 159.04,
+      "end": 160.68,
+      "text": "Trying to pay attention to what's happening"
+    },
+    {
+      "start": 160.68,
+      "end": 162.28,
+      "text": "Training your ability to pay attention"
+    },
+    {
+      "start": 162.28,
+      "end": 163.92,
+      "text": "Is a very important skill"
+    },
+    {
+      "start": 163.92,
+      "end": 165.0,
+      "text": "And journaling"
+    },
+    {
+      "start": 165.0,
+      "end": 166.16,
+      "text": "In the morning and at night"
+    },
+    {
+      "start": 166.16,
+      "end": 167.48,
+      "text": "Is a great way to do that"
+    },
+    {
+      "start": 167.48,
+      "end": 168.68,
+      "text": "It's hard to give advice on it"
+    },
+    {
+      "start": 168.68,
+      "end": 170.92,
+      "text": "Because you really don't want to be"
+    },
+    {
+      "start": 170.92,
+      "end": 173.12,
+      "text": "Thinking about tactics"
+    },
+    {
+      "start": 173.12,
+      "end": 175.04,
+      "text": "You really just want to get"
+    },
+    {
+      "start": 175.04,
+      "end": 176.4,
+      "text": "The feeling in your body"
+    },
+    {
+      "start": 176.4,
+      "end": 177.76,
+      "text": "So I wake up in the morning"
+    },
+    {
+      "start": 177.76,
+      "end": 179.24,
+      "text": "I go to the gym, I come back"
+    },
+    {
+      "start": 179.24,
+      "end": 180.92,
+      "text": "And I sit down and I fill pages"
+    },
+    {
+      "start": 180.92,
+      "end": 182.84,
+      "text": "For the first half of the day"
+    },
+    {
+      "start": 182.84,
+      "end": 184.16,
+      "text": "It's not perfect right away"
+    },
+    {
+      "start": 184.16,
+      "end": 186.64,
+      "text": "But then I kind of settle into it"
+    },
+    {
+      "start": 186.64,
+      "end": 188.36,
+      "text": "And I just stay patient with myself"
+    },
+    {
+      "start": 188.36,
+      "end": 190.48,
+      "text": "I notice my attention drifting"
+    },
+    {
+      "start": 190.48,
+      "end": 191.44,
+      "text": "Thinking about something else"
+    },
+    {
+      "start": 191.44,
+      "end": 192.96,
+      "text": "Thinking about what the finished product"
+    },
+    {
+      "start": 192.96,
+      "end": 193.84,
+      "text": "Is going to be like"
+    },
+    {
+      "start": 193.84,
+      "end": 195.32,
+      "text": "Oh, how many views is this going to get"
+    },
+    {
+      "start": 195.32,
+      "end": 197.04,
+      "text": "Oh, are people going to like it"
+    },
+    {
+      "start": 197.04,
+      "end": 198.48,
+      "text": "What are my grandparents going to say"
+    },
+    {
+      "start": 198.48,
+      "end": 201.08,
+      "text": "When I become successful"
+    },
+    {
+      "start": 201.08,
+      "end": 202.88,
+      "text": "I just catch that train of thought"
+    },
+    {
+      "start": 202.88,
+      "end": 204.48,
+      "text": "I bring myself back to the page"
+    },
+    {
+      "start": 204.48,
+      "end": 205.52,
+      "text": "Not with punishment"
+    },
+    {
+      "start": 205.52,
+      "end": 207.36,
+      "text": "Not likeOh, you're so bad at this"
+    },
+    {
+      "start": 207.36,
+      "end": 210.4,
+      "text": "You're so, you know, brain-rotted"
+    },
+    {
+      "start": 210.4,
+      "end": 212.56,
+      "text": "No, just bringing myself right back here"
+    },
+    {
+      "start": 212.56,
+      "end": 213.96,
+      "text": "I'm going to keep writing"
+    },
+    {
+      "start": 213.96,
+      "end": 216.6,
+      "text": "It's very calm, very loving self-talk"
+    },
+    {
+      "start": 216.6,
+      "end": 218.48,
+      "text": "Took some time to practice that"
+    },
+    {
+      "start": 218.48,
+      "end": 220.72,
+      "text": "But I, you know, I"
+    },
+    {
+      "start": 220.72,
+      "end": 222.12,
+      "text": "I wrote like two stories today"
+    },
+    {
+      "start": 222.12,
+      "end": 224.28,
+      "text": "I drafted two stories"
+    },
+    {
+      "start": 224.28,
+      "end": 225.0,
+      "text": "That feels great"
+    },
+    {
+      "start": 225.0,
+      "end": 227.16,
+      "text": "It's very important for me to share this"
+    },
+    {
+      "start": 227.16,
+      "end": 228.76,
+      "text": "Because I've talked about"
+    },
+    {
+      "start": 228.76,
+      "end": 230.04,
+      "text": "I've talked very generally"
+    },
+    {
+      "start": 230.04,
+      "end": 232.04,
+      "text": "About this practice for the last couple of years"
+    },
+    {
+      "start": 232.04,
+      "end": 234.4,
+      "text": "Replacing consumption with creativity"
+    },
+    {
+      "start": 234.4,
+      "end": 236.88,
+      "text": "Becoming a creator as an antidote"
+    },
+    {
+      "start": 236.88,
+      "end": 238.28,
+      "text": "To the consumption"
+    },
+    {
+      "start": 238.28,
+      "end": 240.32,
+      "text": "Cheap dopamine lifestyle"
+    },
+    {
+      "start": 240.32,
+      "end": 241.56,
+      "text": "I am in it right now"
+    },
+    {
+      "start": 241.56,
+      "end": 242.84,
+      "text": "Like, proper"
+    },
+    {
+      "start": 242.84,
+      "end": 243.92,
+      "text": "I am kind of"
+    },
+    {
+      "start": 243.92,
+      "end": 244.92,
+      "text": "I am exercising"
+    },
+    {
+      "start": 244.92,
+      "end": 246.72,
+      "text": "I am doing the thing"
+    },
+    {
+      "start": 246.72,
+      "end": 248.76,
+      "text": "That I've spent so much time talking about"
+    },
+    {
+      "start": 248.76,
+      "end": 250.48,
+      "text": "I am practicing what I've preached"
+    },
+    {
+      "start": 250.48,
+      "end": 251.08,
+      "text": "And that feels great"
+    },
+    {
+      "start": 251.08,
+      "end": 251.92,
+      "text": "And I just want to share that"
+    },
+    {
+      "start": 251.92,
+      "end": 253.24,
+      "text": "So I know this might be"
+    },
+    {
+      "start": 253.24,
+      "end": 255.16,
+      "text": "A little bit all over the place"
+    },
+    {
+      "start": 255.16,
+      "end": 257.16,
+      "text": "Bear with me, okay"
+    },
+    {
+      "start": 257.16,
+      "end": 259.0,
+      "text": "Let's talk about the writing process itself"
+    },
+    {
+      "start": 259.0,
+      "end": 260.92,
+      "text": "I've gotten some questions on this"
+    },
+    {
+      "start": 260.92,
+      "end": 262.16,
+      "text": "Like what, you know"
+    },
+    {
+      "start": 262.16,
+      "end": 263.08,
+      "text": "I write by hand"
+    },
+    {
+      "start": 263.08,
+      "end": 265.12,
+      "text": "And I have some reasons I do that"
+    },
+    {
+      "start": 265.12,
+      "end": 266.56,
+      "text": "I want to talk to you about how I do it"
+    },
+    {
+      "start": 266.56,
+      "end": 268.04,
+      "text": "So I write by hand"
+    },
+    {
+      "start": 268.04,
+      "end": 268.8,
+      "text": "First and foremost"
+    },
+    {
+      "start": 268.8,
+      "end": 270.4,
+      "text": "When I'm drafting a story"
+    },
+    {
+      "start": 270.4,
+      "end": 272.56,
+      "text": "Specifically fiction"
+    },
+    {
+      "start": 272.56,
+      "end": 273.88,
+      "text": "I want to write by hand"
+    },
+    {
+      "start": 273.88,
+      "end": 276.2,
+      "text": "This is a practice I first learned from"
+    },
+    {
+      "start": 276.2,
+      "end": 277.04,
+      "text": "Neal Gaiman"
+    },
+    {
+      "start": 277.04,
+      "end": 278.72,
+      "text": "Is the author of American Gods"
+    },
+    {
+      "start": 278.72,
+      "end": 280.56,
+      "text": "The graveyard book, Coraline"
+    },
+    {
+      "start": 280.56,
+      "end": 281.84,
+      "text": "As well as Chuck Pollanek"
+    },
+    {
+      "start": 281.84,
+      "end": 283.24,
+      "text": "Author of Fight Club, Choke"
+    },
+    {
+      "start": 283.24,
+      "end": 285.56,
+      "text": "Survivor, number of other great books"
+    },
+    {
+      "start": 285.56,
+      "end": 287.44,
+      "text": "Those are two big inspirations for me"
+    },
+    {
+      "start": 287.44,
+      "end": 290.64,
+      "text": "And I discovered their advice"
+    },
+    {
+      "start": 290.64,
+      "end": 293.52,
+      "text": "A few years ago when I first started journaling"
+    },
+    {
+      "start": 293.52,
+      "end": 295.48,
+      "text": "They talk about writing by hand"
+    },
+    {
+      "start": 295.48,
+      "end": 296.44,
+      "text": "For a number of reasons"
+    },
+    {
+      "start": 296.44,
+      "end": 297.64,
+      "text": "Neal Gaiman writes by hand"
+    },
+    {
+      "start": 297.64,
+      "end": 299.12,
+      "text": "Because there's no distractions"
+    },
+    {
+      "start": 299.12,
+      "end": 301.4,
+      "text": "He can go with a notebook into a cafe"
+    },
+    {
+      "start": 301.4,
+      "end": 302.56,
+      "text": "Or a public place"
+    },
+    {
+      "start": 302.56,
+      "end": 304.24,
+      "text": "And just sit and write"
+    },
+    {
+      "start": 304.24,
+      "end": 306.36,
+      "text": "And on days where he doesn't feel like writing"
+    },
+    {
+      "start": 306.36,
+      "end": 307.88,
+      "text": "He doesn't have email to check"
+    },
+    {
+      "start": 307.88,
+      "end": 309.12,
+      "text": "He doesn't have YouTube to watch"
+    },
+    {
+      "start": 309.12,
+      "end": 310.68,
+      "text": "He doesn't have music to listen to"
+    },
+    {
+      "start": 310.68,
+      "end": 313.48,
+      "text": "He is able to get himself bored"
+    },
+    {
+      "start": 313.48,
+      "end": 314.68,
+      "text": "Bored to the point"
+    },
+    {
+      "start": 314.68,
+      "end": 316.36,
+      "text": "That writing is more interesting than sitting"
+    },
+    {
+      "start": 316.36,
+      "end": 317.36,
+      "text": "And doing nothing"
+    },
+    {
+      "start": 317.36,
+      "end": 319.6,
+      "text": "The rule he gives himself is that"
+    },
+    {
+      "start": 319.6,
+      "end": 320.72,
+      "text": "You don't have to write"
+    },
+    {
+      "start": 320.72,
+      "end": 322.04,
+      "text": "You don't have to do anything"
+    },
+    {
+      "start": 322.04,
+      "end": 325.4,
+      "text": "But you can't do anything except for write"
+    },
+    {
+      "start": 325.4,
+      "end": 327.56,
+      "text": "And so that's how that goes"
+    },
+    {
+      "start": 327.56,
+      "end": 328.6,
+      "text": "And then Chuck Pollanek"
+    },
+    {
+      "start": 328.6,
+      "end": 330.32,
+      "text": "I haven't heard him talk extensively about it"
+    },
+    {
+      "start": 330.32,
+      "end": 334.08,
+      "text": "But he was on the Joe Rogan podcast famously"
+    },
+    {
+      "start": 334.08,
+      "end": 336.24,
+      "text": "And he was like"
+    },
+    {
+      "start": 336.24,
+      "end": 338.6,
+      "text": "Talking about the writing process with Joe"
+    },
+    {
+      "start": 338.6,
+      "end": 341.76,
+      "text": "And Joe was talking about writing by keyboard"
+    },
+    {
+      "start": 341.76,
+      "end": 343.2,
+      "text": "And he was like, oh, that's not writing"
+    },
+    {
+      "start": 343.2,
+      "end": 344.12,
+      "text": "That's typing"
+    },
+    {
+      "start": 344.12,
+      "end": 345.92,
+      "text": "Typing is a thing you do in airports"
+    },
+    {
+      "start": 345.92,
+      "end": 347.72,
+      "text": "Or when you can't do anything else"
+    },
+    {
+      "start": 347.72,
+      "end": 348.6,
+      "text": "Writing is by hand"
+    },
+    {
+      "start": 348.6,
+      "end": 349.48,
+      "text": "And there was something about that"
+    },
+    {
+      "start": 349.48,
+      "end": 350.68,
+      "text": "And it resonated with me"
+    },
+    {
+      "start": 350.68,
+      "end": 352.16,
+      "text": "Because this is a little bit"
+    },
+    {
+      "start": 352.16,
+      "end": 353.96,
+      "text": "Ooie gooie woo woo"
+    },
+    {
+      "start": 353.96,
+      "end": 356.04,
+      "text": "But there's something magical"
+    },
+    {
+      "start": 356.04,
+      "end": 358.16,
+      "text": "Kind of sacred about writing by hand"
+    },
+    {
+      "start": 358.16,
+      "end": 361.24,
+      "text": "It's just a very human thing"
+    },
+    {
+      "start": 361.24,
+      "end": 363.6,
+      "text": "I think there's magic that happens when you do that"
+    },
+    {
+      "start": 363.6,
+      "end": 366.08,
+      "text": "There's something about the tactile sensation"
+    },
+    {
+      "start": 366.08,
+      "end": 367.76,
+      "text": "Right, a feeling, an actual pen"
+    },
+    {
+      "start": 367.76,
+      "end": 370.68,
+      "text": "The instrument in your hands as you're writing"
+    },
+    {
+      "start": 370.68,
+      "end": 374.44,
+      "text": "Feeling the words make themselves"
+    },
+    {
+      "start": 374.44,
+      "end": 375.64,
+      "text": "I like it a lot"
+    },
+    {
+      "start": 375.64,
+      "end": 379.44,
+      "text": "And right now I'm using a fountain pen"
+    },
+    {
+      "start": 379.44,
+      "end": 380.04,
+      "text": "That I really like"
+    },
+    {
+      "start": 380.04,
+      "end": 383.64,
+      "text": "I fill it up with a little ink bottle"
+    },
+    {
+      "start": 383.64,
+      "end": 386.92,
+      "text": "And I write in these big moleskin notebooks"
+    },
+    {
+      "start": 386.92,
+      "end": 387.92,
+      "text": "None of this is sponsored"
+    },
+    {
+      "start": 387.92,
+      "end": 390.16,
+      "text": "Although I would love to partner with that"
+    },
+    {
+      "start": 390.16,
+      "end": 391.92,
+      "text": "Because I love their products"
+    },
+    {
+      "start": 391.92,
+      "end": 396.12,
+      "text": "But yeah, there's just"
+    },
+    {
+      "start": 396.12,
+      "end": 398.56,
+      "text": "It just feels like magic when you're doing it"
+    },
+    {
+      "start": 398.56,
+      "end": 401.04,
+      "text": "That's a good reason"
+    },
+    {
+      "start": 401.04,
+      "end": 402.6,
+      "text": "When I was a child"
+    },
+    {
+      "start": 402.6,
+      "end": 405.44,
+      "text": "Hang on, let me grab my pencil"
+    },
+    {
+      "start": 405.44,
+      "end": 406.44,
+      "text": "So when I was a kid"
+    },
+    {
+      "start": 406.44,
+      "end": 409.56,
+      "text": "I would spend hours in my room"
+    },
+    {
+      "start": 409.56,
+      "end": 412.08,
+      "text": "Thinking up stories and twiddling"
+    },
+    {
+      "start": 412.08,
+      "end": 414.12,
+      "text": "With like a little pencil"
+    },
+    {
+      "start": 414.12,
+      "end": 415.64,
+      "text": "At first it was like a wand"
+    },
+    {
+      "start": 415.64,
+      "end": 417.12,
+      "text": "Like a magician's wand"
+    },
+    {
+      "start": 417.12,
+      "end": 418.84,
+      "text": "But then it became a pencil like this"
+    },
+    {
+      "start": 418.84,
+      "end": 421.28,
+      "text": "And I would like make little figure eight motions"
+    },
+    {
+      "start": 421.28,
+      "end": 424.04,
+      "text": "And become hypnotized by the images"
+    },
+    {
+      "start": 424.04,
+      "end": 424.96,
+      "text": "By the vision"
+    },
+    {
+      "start": 424.96,
+      "end": 428.16,
+      "text": "The sight of the pencil waving"
+    },
+    {
+      "start": 428.16,
+      "end": 429.56,
+      "text": "Anyway"
+    },
+    {
+      "start": 429.56,
+      "end": 430.76,
+      "text": "I think it's a form of stimming"
+    },
+    {
+      "start": 430.76,
+      "end": 431.84,
+      "text": "I don't I don't know"
+    },
+    {
+      "start": 431.84,
+      "end": 434.96,
+      "text": "But I would do that"
+    },
+    {
+      "start": 434.96,
+      "end": 436.04,
+      "text": "And I would imagine stories"
+    },
+    {
+      "start": 436.04,
+      "end": 437.52,
+      "text": "And I would go deep into my imagination"
+    },
+    {
+      "start": 437.52,
+      "end": 439.56,
+      "text": "And I would spend hours doing this as a child"
+    },
+    {
+      "start": 439.56,
+      "end": 442.6,
+      "text": "This is what I did instead of playing video games"
+    },
+    {
+      "start": 442.6,
+      "end": 444.84,
+      "text": "Like I just genuinely wanted to be doing that"
+    },
+    {
+      "start": 444.84,
+      "end": 446.28,
+      "text": "By writing by hand"
+    },
+    {
+      "start": 446.28,
+      "end": 447.08,
+      "text": "By using this pen"
+    },
+    {
+      "start": 447.08,
+      "end": 448.2,
+      "text": "I tap into that a little bit"
+    },
+    {
+      "start": 448.2,
+      "end": 450.04,
+      "text": "So I get sucked into the story"
+    },
+    {
+      "start": 450.04,
+      "end": 451.68,
+      "text": "Sucked into what I'm writing"
+    },
+    {
+      "start": 451.68,
+      "end": 454.88,
+      "text": "Through the combination of the sensation of writing"
+    },
+    {
+      "start": 454.88,
+      "end": 456.32,
+      "text": "And then the actual"
+    },
+    {
+      "start": 456.32,
+      "end": 459.12,
+      "text": "The visual stimuli of the words appearing on the page"
+    },
+    {
+      "start": 459.12,
+      "end": 460.2,
+      "text": "This is so in the weeds"
+    },
+    {
+      "start": 460.2,
+      "end": 461.52,
+      "text": "I don't know how relevant this is for you"
+    },
+    {
+      "start": 461.52,
+      "end": 463.8,
+      "text": "But like that's how I start"
+    },
+    {
+      "start": 463.8,
+      "end": 466.08,
+      "text": "I crave the feeling of pen on paper"
+    },
+    {
+      "start": 466.08,
+      "end": 467.96,
+      "text": "Because I've spent so much time doing it"
+    },
+    {
+      "start": 467.96,
+      "end": 469.84,
+      "text": "There is an emotional release that happens"
+    },
+    {
+      "start": 469.84,
+      "end": 470.76,
+      "text": "There's like"
+    },
+    {
+      "start": 470.76,
+      "end": 473.56,
+      "text": "There's satisfaction that comes from bringing your ideas"
+    },
+    {
+      "start": 473.56,
+      "end": 475.4,
+      "text": "Out of your brain and onto the page"
+    },
+    {
+      "start": 475.4,
+      "end": 477.8,
+      "text": "And then you combine that with the tactile sensation"
+    },
+    {
+      "start": 477.8,
+      "end": 479.8,
+      "text": "And your brain creates an association"
+    },
+    {
+      "start": 479.8,
+      "end": 482.12,
+      "text": "So you associate the writing sensation"
+    },
+    {
+      "start": 482.12,
+      "end": 483.8,
+      "text": "With the thinking and the"
+    },
+    {
+      "start": 483.8,
+      "end": 485.68,
+      "text": "And literally bringing your ideas to life"
+    },
+    {
+      "start": 485.68,
+      "end": 487.96,
+      "text": "Which is magic, right"
+    },
+    {
+      "start": 487.96,
+      "end": 490.96,
+      "text": "And then you become addicted to doing magic"
+    },
+    {
+      "start": 490.96,
+      "end": 493.04,
+      "text": "Okay, so that's the drafting process"
+    },
+    {
+      "start": 493.04,
+      "end": 495.68,
+      "text": "When I'm drafting it's a fast, furious thing"
+    },
+    {
+      "start": 495.68,
+      "end": 498.16,
+      "text": "I want to get the idea out of me as quickly as possible"
+    },
+    {
+      "start": 498.16,
+      "end": 501.44,
+      "text": "I try to do it without editing, without"
+    },
+    {
+      "start": 501.44,
+      "end": 502.8,
+      "text": "You know, I'm not thinking"
+    },
+    {
+      "start": 502.8,
+      "end": 504.16,
+      "text": "I'm not working backwards at all"
+    },
+    {
+      "start": 504.16,
+      "end": 504.96,
+      "text": "I just keep moving"
+    },
+    {
+      "start": 504.96,
+      "end": 507.56,
+      "text": "I take the idea and I try to take it to its natural end"
+    },
+    {
+      "start": 507.56,
+      "end": 509.28,
+      "text": "As quickly as possible"
+    },
+    {
+      "start": 509.28,
+      "end": 511.2,
+      "text": "That's an idea I got from Joyce Carol Oates"
+    },
+    {
+      "start": 511.2,
+      "end": 513.92,
+      "text": "Who's one of the most accomplished story writers of all time"
+    },
+    {
+      "start": 513.92,
+      "end": 516.36,
+      "text": "And really I'm so inspired by"
+    },
+    {
+      "start": 516.36,
+      "end": 517.84,
+      "text": "How prolific her career has been"
+    },
+    {
+      "start": 517.84,
+      "end": 520.56,
+      "text": "She just writes with a blue-collar work ethic"
+    },
+    {
+      "start": 520.56,
+      "end": 522.12,
+      "text": "Like constantly writes"
+    },
+    {
+      "start": 522.12,
+      "end": 525.32,
+      "text": "8 to 10 hours a day, every day"
+    },
+    {
+      "start": 525.32,
+      "end": 527.56,
+      "text": "Doesn't talk about it, just does it"
+    },
+    {
+      "start": 527.56,
+      "end": 530.04,
+      "text": "And she talks about finishing your first draft"
+    },
+    {
+      "start": 530.04,
+      "end": 530.76,
+      "text": "Very quickly"
+    },
+    {
+      "start": 530.76,
+      "end": 534.44,
+      "text": "I recommend this for anyone who's writing"
+    },
+    {
+      "start": 534.44,
+      "end": 535.24,
+      "text": "No matter what it is"
+    },
+    {
+      "start": 535.24,
+      "end": 536.52,
+      "text": "Whether it is a short story"
+    },
+    {
+      "start": 536.52,
+      "end": 538.28,
+      "text": "Or an essay you're doing for school"
+    },
+    {
+      "start": 538.28,
+      "end": 540.08,
+      "text": "Get the first draft done quickly"
+    },
+    {
+      "start": 540.08,
+      "end": 541.32,
+      "text": "Don't try to get it perfect"
+    },
+    {
+      "start": 541.32,
+      "end": 544.84,
+      "text": "Don't try to perfect the first paragraph"
+    },
+    {
+      "start": 544.84,
+      "end": 546.68,
+      "text": "Right away, just get the rough draft"
+    },
+    {
+      "start": 546.68,
+      "end": 548.24,
+      "text": "And then go back and edit it"
+    },
+    {
+      "start": 548.24,
+      "end": 549.08,
+      "text": "It just really helps"
+    },
+    {
+      "start": 549.08,
+      "end": 550.64,
+      "text": "Because once you start editing"
+    },
+    {
+      "start": 550.64,
+      "end": 552.08,
+      "text": "You start second guessing yourself"
+    },
+    {
+      "start": 552.08,
+      "end": 554.36,
+      "text": "You get too much in your head"
+    },
+    {
+      "start": 554.36,
+      "end": 556.72,
+      "text": "And it's"
+    },
+    {
+      "start": 556.72,
+      "end": 558.6,
+      "text": "You can't really"
+    },
+    {
+      "start": 558.6,
+      "end": 560.36,
+      "text": "You lose the magic a little bit"
+    },
+    {
+      "start": 560.36,
+      "end": 561.16,
+      "text": "Because you're trying to"
+    },
+    {
+      "start": 561.16,
+      "end": 562.16,
+      "text": "You're in editing mode"
+    },
+    {
+      "start": 562.16,
+      "end": 563.36,
+      "text": "You're in architect mode"
+    },
+    {
+      "start": 563.36,
+      "end": 565.24,
+      "text": "As opposed to magician mode"
+    },
+    {
+      "start": 565.24,
+      "end": 567.16,
+      "text": "I'm hoping this makes sense to you"
+    },
+    {
+      "start": 567.16,
+      "end": 569.72,
+      "text": "Ray Bradbury, author of"
+    },
+    {
+      "start": 569.72,
+      "end": 571.32,
+      "text": "What did he write?"
+    },
+    {
+      "start": 571.32,
+      "end": 572.4,
+      "text": "Bunch of things"
+    },
+    {
+      "start": 572.4,
+      "end": 574.48,
+      "text": "He wrote"
+    },
+    {
+      "start": 574.48,
+      "end": 576.4,
+      "text": "Fahrenheit 451, Good Lord"
+    },
+    {
+      "start": 576.4,
+      "end": 577.56,
+      "text": "And a number of other things"
+    },
+    {
+      "start": 577.56,
+      "end": 578.64,
+      "text": "That I'm blanking on right now"
+    },
+    {
+      "start": 578.64,
+      "end": 580.4,
+      "text": "Number of short stories"
+    },
+    {
+      "start": 580.4,
+      "end": 582.52,
+      "text": "Part of his advice is don't think"
+    },
+    {
+      "start": 582.52,
+      "end": 583.36,
+      "text": "Right when you're drafting"
+    },
+    {
+      "start": 583.36,
+      "end": 584.44,
+      "text": "When you're writing the first draft"
+    },
+    {
+      "start": 584.44,
+      "end": 585.72,
+      "text": "Don't think"
+    },
+    {
+      "start": 585.72,
+      "end": 587.52,
+      "text": "Sit down and feel"
+    },
+    {
+      "start": 587.52,
+      "end": 588.36,
+      "text": "That's what writing is"
+    },
+    {
+      "start": 588.36,
+      "end": 590.4,
+      "text": "Is it's honest feeling"
+    },
+    {
+      "start": 590.4,
+      "end": 591.44,
+      "text": "Now this obviously is different"
+    },
+    {
+      "start": 591.44,
+      "end": 592.56,
+      "text": "If you're a technical writer"
+    },
+    {
+      "start": 592.56,
+      "end": 594.56,
+      "text": "If you're writing a technical document"
+    },
+    {
+      "start": 594.56,
+      "end": 595.64,
+      "text": "With a series of steps"
+    },
+    {
+      "start": 595.64,
+      "end": 597.08,
+      "text": "You're not going to feel your way through that"
+    },
+    {
+      "start": 597.08,
+      "end": 599.4,
+      "text": "But for a personal essay"
+    },
+    {
+      "start": 599.4,
+      "end": 601.04,
+      "text": "Or something that requires your perspective"
+    },
+    {
+      "start": 601.04,
+      "end": 602.28,
+      "text": "Your humanity"
+    },
+    {
+      "start": 602.28,
+      "end": 604.28,
+      "text": "Which is super important to write"
+    },
+    {
+      "start": 604.28,
+      "end": 606.84,
+      "text": "You need that in the age of AI"
+    },
+    {
+      "start": 606.84,
+      "end": 608.16,
+      "text": "You got to just feel it out first"
+    },
+    {
+      "start": 608.16,
+      "end": 609.8,
+      "text": "And then you can make it make sense later"
+    },
+    {
+      "start": 609.8,
+      "end": 611.48,
+      "text": "That's the drafting process"
+    },
+    {
+      "start": 611.48,
+      "end": 613.0,
+      "text": "I feel"
+    },
+    {
+      "start": 613.0,
+      "end": 614.84,
+      "text": "I feel"
+    },
+    {
+      "start": 614.84,
+      "end": 616.28,
+      "text": "And then I take that draft"
+    },
+    {
+      "start": 616.28,
+      "end": 617.84,
+      "text": "And I transcribe it"
+    },
+    {
+      "start": 617.84,
+      "end": 619.28,
+      "text": "Into my computer"
+    },
+    {
+      "start": 619.28,
+      "end": 620.04,
+      "text": "Without thinking"
+    },
+    {
+      "start": 620.04,
+      "end": 621.28,
+      "text": "So I'm still not editing it"
+    },
+    {
+      "start": 621.28,
+      "end": 622.8,
+      "text": "I literally just write word for word"
+    },
+    {
+      "start": 622.8,
+      "end": 624.0,
+      "text": "Everything that I wrote"
+    },
+    {
+      "start": 624.0,
+      "end": 625.68,
+      "text": "This is between seven and ten pages"
+    },
+    {
+      "start": 625.68,
+      "end": 626.64,
+      "text": "Of drafted material"
+    },
+    {
+      "start": 626.64,
+      "end": 628.28,
+      "text": "So I get some good typing practice"
+    },
+    {
+      "start": 628.28,
+      "end": 629.12,
+      "text": "I'm not thinking at all"
+    },
+    {
+      "start": 629.12,
+      "end": 630.4,
+      "text": "I'm thinking about other stuff"
+    },
+    {
+      "start": 630.4,
+      "end": 631.24,
+      "text": "As I'm doing this"
+    },
+    {
+      "start": 631.24,
+      "end": 632.36,
+      "text": "Or sometimes"
+    },
+    {
+      "start": 632.36,
+      "end": 633.48,
+      "text": "Actually no, that's not true"
+    },
+    {
+      "start": 633.48,
+      "end": 635.28,
+      "text": "As I'm typing it out"
+    },
+    {
+      "start": 635.28,
+      "end": 636.16,
+      "text": "Into my computer"
+    },
+    {
+      "start": 636.16,
+      "end": 637.08,
+      "text": "That's the first time"
+    },
+    {
+      "start": 637.08,
+      "end": 638.64,
+      "text": "That I read back"
+    },
+    {
+      "start": 638.64,
+      "end": 640.08,
+      "text": "Through what I just wrote"
+    },
+    {
+      "start": 640.08,
+      "end": 641.88,
+      "text": "So I'm slowing down now"
+    },
+    {
+      "start": 641.88,
+      "end": 643.96,
+      "text": "I'm reading the sentences"
+    },
+    {
+      "start": 643.96,
+      "end": 645.24,
+      "text": "And noticing"
+    },
+    {
+      "start": 645.24,
+      "end": 646.48,
+      "text": "What's going to have to change"
+    },
+    {
+      "start": 646.48,
+      "end": 648.0,
+      "text": "And what my feeling is"
+    },
+    {
+      "start": 648.0,
+      "end": 649.24,
+      "text": "On the second pass through it"
+    },
+    {
+      "start": 649.24,
+      "end": 651.12,
+      "text": "And I don't change anything yet"
+    },
+    {
+      "start": 651.12,
+      "end": 652.52,
+      "text": "Except for a period here"
+    },
+    {
+      "start": 652.52,
+      "end": 653.68,
+      "text": "Maybe a word change here and there"
+    },
+    {
+      "start": 653.68,
+      "end": 655.12,
+      "text": "But the bulk of it"
+    },
+    {
+      "start": 655.12,
+      "end": 656.04,
+      "text": "I'm just typing it out"
+    },
+    {
+      "start": 656.04,
+      "end": 657.56,
+      "text": "Getting the material loaded in"
+    },
+    {
+      "start": 657.56,
+      "end": 659.84,
+      "text": "So I've mined the raw material"
+    },
+    {
+      "start": 659.84,
+      "end": 661.08,
+      "text": "The raw or"
+    },
+    {
+      "start": 661.08,
+      "end": 662.68,
+      "text": "And now I'm going to"
+    },
+    {
+      "start": 662.68,
+      "end": 663.92,
+      "text": "I'm going to carry it over"
+    },
+    {
+      "start": 663.92,
+      "end": 665.76,
+      "text": "Into the facility"
+    },
+    {
+      "start": 665.76,
+      "end": 666.92,
+      "text": "This is a metaphor"
+    },
+    {
+      "start": 666.92,
+      "end": 668.4,
+      "text": "And then I'm going to refine it"
+    },
+    {
+      "start": 668.4,
+      "end": 670.16,
+      "text": "That's the editing process"
+    },
+    {
+      "start": 670.16,
+      "end": 672.08,
+      "text": "The refining process"
+    },
+    {
+      "start": 672.08,
+      "end": 673.76,
+      "text": "And that's where I am editing"
+    },
+    {
+      "start": 673.76,
+      "end": 676.16,
+      "text": "And this part is currently"
+    },
+    {
+      "start": 676.16,
+      "end": 677.4,
+      "text": "I want to say least favorite"
+    },
+    {
+      "start": 677.4,
+      "end": 679.44,
+      "text": "It's just it's not"
+    },
+    {
+      "start": 679.44,
+      "end": 680.12,
+      "text": "It's harder"
+    },
+    {
+      "start": 680.12,
+      "end": 681.64,
+      "text": "It's probably the hardest part"
+    },
+    {
+      "start": 681.64,
+      "end": 683.84,
+      "text": "Is taking this raw material"
+    },
+    {
+      "start": 683.84,
+      "end": 687.4,
+      "text": "That I've felt and intuited"
+    },
+    {
+      "start": 687.4,
+      "end": 689.12,
+      "text": "Out of my subconscious"
+    },
+    {
+      "start": 689.12,
+      "end": 691.24,
+      "text": "And working it"
+    },
+    {
+      "start": 691.24,
+      "end": 692.12,
+      "text": "Reworking it"
+    },
+    {
+      "start": 692.12,
+      "end": 693.36,
+      "text": "Performing surgery on it"
+    },
+    {
+      "start": 693.36,
+      "end": 694.96,
+      "text": "Moving this piece over here"
+    },
+    {
+      "start": 694.96,
+      "end": 696.0,
+      "text": "Expanding this part"
+    },
+    {
+      "start": 696.0,
+      "end": 697.2,
+      "text": "Shortening this"
+    },
+    {
+      "start": 697.2,
+      "end": 698.68,
+      "text": "And you just read it"
+    },
+    {
+      "start": 698.68,
+      "end": 699.76,
+      "text": "Over and over"
+    },
+    {
+      "start": 699.76,
+      "end": 700.52,
+      "text": "And over again"
+    },
+    {
+      "start": 700.52,
+      "end": 702.4,
+      "text": "From the perspective of a reader"
+    },
+    {
+      "start": 702.4,
+      "end": 704.6,
+      "text": "Trying to hold the reader's hand"
+    },
+    {
+      "start": 704.6,
+      "end": 708.36,
+      "text": "As you go through the draft"
+    },
+    {
+      "start": 708.36,
+      "end": 710.84,
+      "text": "You know, making it fun"
+    },
+    {
+      "start": 710.84,
+      "end": 712.16,
+      "text": "Making it not boring"
+    },
+    {
+      "start": 712.16,
+      "end": 714.96,
+      "text": "Making it exciting"
+    },
+    {
+      "start": 714.96,
+      "end": 716.4,
+      "text": "Taking people on a journey"
+    },
+    {
+      "start": 716.4,
+      "end": 717.36,
+      "text": "There's so much of that"
+    },
+    {
+      "start": 717.36,
+      "end": 719.04,
+      "text": "Like it's a very"
+    },
+    {
+      "start": 719.04,
+      "end": 721.0,
+      "text": "It's a pretty tedious process"
+    },
+    {
+      "start": 721.0,
+      "end": 722.84,
+      "text": "And it requires a great deal of focus"
+    },
+    {
+      "start": 722.84,
+      "end": 724.68,
+      "text": "If the drafting process is like"
+    },
+    {
+      "start": 724.68,
+      "end": 725.92,
+      "text": "Fast and kind of in the moment"
+    },
+    {
+      "start": 725.92,
+      "end": 727.72,
+      "text": "And breathless almost"
+    },
+    {
+      "start": 727.72,
+      "end": 728.92,
+      "text": "The drafting is like"
+    },
+    {
+      "start": 728.92,
+      "end": 730.72,
+      "text": "It's like"
+    },
+    {
+      "start": 730.72,
+      "end": 732.72,
+      "text": "It's more like"
+    },
+    {
+      "start": 732.72,
+      "end": 734.64,
+      "text": "I don't even know what to compare it to"
+    },
+    {
+      "start": 734.64,
+      "end": 738.52,
+      "text": "I don't do many other things"
+    },
+    {
+      "start": 738.52,
+      "end": 740.16,
+      "text": "It's just tedious"
+    },
+    {
+      "start": 740.16,
+      "end": 741.44,
+      "text": "It's like coding probably"
+    },
+    {
+      "start": 741.44,
+      "end": 743.44,
+      "text": "You have to just get it right"
+    },
+    {
+      "start": 743.44,
+      "end": 744.64,
+      "text": "And there's still some feeling in that"
+    },
+    {
+      "start": 744.64,
+      "end": 745.64,
+      "text": "There's still rewriting"
+    },
+    {
+      "start": 745.64,
+      "end": 748.4,
+      "text": "And sometimes you're expanding sections out"
+    },
+    {
+      "start": 748.4,
+      "end": 751.08,
+      "text": "And you really see what the story wants to be"
+    },
+    {
+      "start": 751.08,
+      "end": 752.52,
+      "text": "This is an idea from George Saunders"
+    },
+    {
+      "start": 752.52,
+      "end": 754.48,
+      "text": "He's been a phenomenal inspiration for me"
+    },
+    {
+      "start": 754.48,
+      "end": 755.88,
+      "text": "One of the great short story writers"
+    },
+    {
+      "start": 755.88,
+      "end": 756.88,
+      "text": "Of our time"
+    },
+    {
+      "start": 756.88,
+      "end": 758.76,
+      "text": "Is that you can't really control"
+    },
+    {
+      "start": 758.76,
+      "end": 759.56,
+      "text": "What a story is"
+    },
+    {
+      "start": 759.56,
+      "end": 760.72,
+      "text": "You know, you might have an idea"
+    },
+    {
+      "start": 760.72,
+      "end": 762.92,
+      "text": "For what it needs to be"
+    },
+    {
+      "start": 762.92,
+      "end": 763.72,
+      "text": "Or what I'm sorry"
+    },
+    {
+      "start": 763.72,
+      "end": 765.08,
+      "text": "What you want it to be in the beginning"
+    },
+    {
+      "start": 765.08,
+      "end": 767.68,
+      "text": "But you have to accept that it"
+    },
+    {
+      "start": 767.68,
+      "end": 769.24,
+      "text": "Might be something completely different"
+    },
+    {
+      "start": 769.24,
+      "end": 770.72,
+      "text": "Right, the story that you're bringing"
+    },
+    {
+      "start": 770.72,
+      "end": 772.48,
+      "text": "Out of your subconscious mind"
+    },
+    {
+      "start": 772.48,
+      "end": 773.76,
+      "text": "Might have a life of its own"
+    },
+    {
+      "start": 773.76,
+      "end": 775.24,
+      "text": "It might be something completely different"
+    },
+    {
+      "start": 775.24,
+      "end": 776.48,
+      "text": "And it's your job as the writer"
+    },
+    {
+      "start": 776.48,
+      "end": 777.72,
+      "text": "To get out of the way"
+    },
+    {
+      "start": 777.72,
+      "end": 779.44,
+      "text": "And let it become what it needs to be"
+    },
+    {
+      "start": 779.44,
+      "end": 781.92,
+      "text": "You have to kind of hold its hand"
+    },
+    {
+      "start": 781.92,
+      "end": 783.08,
+      "text": "As it grows up"
+    },
+    {
+      "start": 783.08,
+      "end": 784.68,
+      "text": "And becomes this living breathing thing"
+    },
+    {
+      "start": 784.68,
+      "end": 785.6,
+      "text": "That might be very different"
+    },
+    {
+      "start": 785.6,
+      "end": 786.8,
+      "text": "So you might have an idea"
+    },
+    {
+      "start": 786.8,
+      "end": 787.76,
+      "text": "Of how you want it to end"
+    },
+    {
+      "start": 787.76,
+      "end": 789.52,
+      "text": "Or what a certain way"
+    },
+    {
+      "start": 789.52,
+      "end": 790.32,
+      "text": "You want it to go"
+    },
+    {
+      "start": 790.32,
+      "end": 793.24,
+      "text": "Or the specific moment you're building to"
+    },
+    {
+      "start": 793.24,
+      "end": 794.64,
+      "text": "And it might not"
+    },
+    {
+      "start": 794.64,
+      "end": 796.52,
+      "text": "It might feel forced to do that"
+    },
+    {
+      "start": 796.52,
+      "end": 797.44,
+      "text": "And when you notice that"
+    },
+    {
+      "start": 797.44,
+      "end": 798.32,
+      "text": "When you notice"
+    },
+    {
+      "start": 798.32,
+      "end": 800.08,
+      "text": "That you're trying to force it into a box"
+    },
+    {
+      "start": 800.08,
+      "end": 801.48,
+      "text": "That doesn't work for it"
+    },
+    {
+      "start": 801.48,
+      "end": 802.76,
+      "text": "You have to take a step back"
+    },
+    {
+      "start": 802.76,
+      "end": 805.08,
+      "text": "And ask yourself what the story wants to be"
+    },
+    {
+      "start": 805.08,
+      "end": 807.2,
+      "text": "You'll notice when you're trying to"
+    },
+    {
+      "start": 807.2,
+      "end": 808.68,
+      "text": "Force a story or an essay"
+    },
+    {
+      "start": 808.68,
+      "end": 811.28,
+      "text": "Or something to be something it's not"
+    },
+    {
+      "start": 811.28,
+      "end": 812.52,
+      "text": "It's no longer fun"
+    },
+    {
+      "start": 812.52,
+      "end": 814.32,
+      "text": "You feel all of this pressure"
+    },
+    {
+      "start": 814.32,
+      "end": 816.08,
+      "text": "And you don't feel any magic"
+    },
+    {
+      "start": 816.08,
+      "end": 817.68,
+      "text": "And I think this is a really important point"
+    },
+    {
+      "start": 817.68,
+      "end": 819.24,
+      "text": "When you feel yourself distanced"
+    },
+    {
+      "start": 819.24,
+      "end": 820.12,
+      "text": "From the magic"
+    },
+    {
+      "start": 820.12,
+      "end": 822.16,
+      "text": "The magic that you felt when you were drafting"
+    },
+    {
+      "start": 822.16,
+      "end": 824.0,
+      "text": "It's this very childlike excitement"
+    },
+    {
+      "start": 824.0,
+      "end": 827.4,
+      "text": "Of getting this idea out of you"
+    },
+    {
+      "start": 827.4,
+      "end": 828.96,
+      "text": "When you start losing that"
+    },
+    {
+      "start": 828.96,
+      "end": 830.04,
+      "text": "You need to pause"
+    },
+    {
+      "start": 830.04,
+      "end": 833.08,
+      "text": "Because if you're losing it"
+    },
+    {
+      "start": 833.08,
+      "end": 834.52,
+      "text": "The audience is going to lose it"
+    },
+    {
+      "start": 834.52,
+      "end": 835.92,
+      "text": "The reader is going to lose it"
+    },
+    {
+      "start": 835.92,
+      "end": 837.4,
+      "text": "For sure"
+    },
+    {
+      "start": 837.4,
+      "end": 838.92,
+      "text": "So pause"
+    },
+    {
+      "start": 838.92,
+      "end": 840.12,
+      "text": "Look at the story again"
+    },
+    {
+      "start": 840.12,
+      "end": 842.28,
+      "text": "What does it want to be"
+    },
+    {
+      "start": 842.28,
+      "end": 844.28,
+      "text": "So I do that in the editing process as well"
+    },
+    {
+      "start": 844.28,
+      "end": 846.28,
+      "text": "The editing process lasts from"
+    },
+    {
+      "start": 846.28,
+      "end": 848.28,
+      "text": "Anywhere from a day to a few days"
+    },
+    {
+      "start": 848.28,
+      "end": 850.28,
+      "text": "I typically work very fast"
+    },
+    {
+      "start": 850.28,
+      "end": 852.28,
+      "text": "And that's because I know that"
+    },
+    {
+      "start": 852.28,
+      "end": 854.28,
+      "text": "I just want to get stories out quickly"
+    },
+    {
+      "start": 854.28,
+      "end": 857.28,
+      "text": "I don't think that a long editing timeline"
+    },
+    {
+      "start": 857.28,
+      "end": 859.28,
+      "text": "Will make them that much better"
+    },
+    {
+      "start": 859.28,
+      "end": 860.28,
+      "text": "At the skill level I'm at right now"
+    },
+    {
+      "start": 860.28,
+      "end": 862.28,
+      "text": "I think I will learn a lot more"
+    },
+    {
+      "start": 862.28,
+      "end": 864.28,
+      "text": "By producing a lot of stories very quickly"
+    },
+    {
+      "start": 864.28,
+      "end": 866.28,
+      "text": "And improving with each one"
+    },
+    {
+      "start": 866.28,
+      "end": 868.28,
+      "text": "So as opposed to raising my ceiling"
+    },
+    {
+      "start": 868.28,
+      "end": 870.28,
+      "text": "And becoming as making a story"
+    },
+    {
+      "start": 870.28,
+      "end": 872.28,
+      "text": "As good as it possibly can be"
+    },
+    {
+      "start": 872.28,
+      "end": 874.28,
+      "text": "I'd rather raise my floor"
+    },
+    {
+      "start": 874.28,
+      "end": 876.28,
+      "text": "By producing as many stories as I can"
+    },
+    {
+      "start": 876.28,
+      "end": 877.28,
+      "text": "Within reason"
+    },
+    {
+      "start": 877.28,
+      "end": 880.28,
+      "text": "While still making them pretty good"
+    },
+    {
+      "start": 880.28,
+      "end": 882.28,
+      "text": "And the raw material"
+    },
+    {
+      "start": 882.28,
+      "end": 883.28,
+      "text": "Getting better over time"
+    },
+    {
+      "start": 883.28,
+      "end": 885.28,
+      "text": "That's the working theory"
+    },
+    {
+      "start": 885.28,
+      "end": 886.28,
+      "text": "So I edit pretty quickly"
+    },
+    {
+      "start": 886.28,
+      "end": 888.28,
+      "text": "And then also there's a comfort in that"
+    },
+    {
+      "start": 888.28,
+      "end": 889.28,
+      "text": "Which is that even though"
+    },
+    {
+      "start": 889.28,
+      "end": 891.28,
+      "text": "The deadlines can be pretty stressful"
+    },
+    {
+      "start": 891.28,
+      "end": 893.28,
+      "text": "Wanting to put a story out over the course"
+    },
+    {
+      "start": 893.28,
+      "end": 898.28,
+      "text": "Of three days or a week"
+    },
+    {
+      "start": 898.28,
+      "end": 900.28,
+      "text": "Like it's stressful because the deadline"
+    },
+    {
+      "start": 900.28,
+      "end": 901.28,
+      "text": "Is looming"
+    },
+    {
+      "start": 901.28,
+      "end": 903.28,
+      "text": "But it's nice because you know"
+    },
+    {
+      "start": 903.28,
+      "end": 904.28,
+      "text": "That once the deadline's over"
+    },
+    {
+      "start": 904.28,
+      "end": 905.28,
+      "text": "It's done"
+    },
+    {
+      "start": 905.28,
+      "end": 906.28,
+      "text": "You can move on"
+    },
+    {
+      "start": 906.28,
+      "end": 907.28,
+      "text": "So sometimes you're chasing"
+    },
+    {
+      "start": 907.28,
+      "end": 908.28,
+      "text": "The excitement of a story"
+    },
+    {
+      "start": 908.28,
+      "end": 909.28,
+      "text": "Being something really special"
+    },
+    {
+      "start": 909.28,
+      "end": 910.28,
+      "text": "And sometimes you're just chasing"
+    },
+    {
+      "start": 910.28,
+      "end": 912.28,
+      "text": "The relief of it being over"
+    },
+    {
+      "start": 912.28,
+      "end": 913.28,
+      "text": "And that's fine"
+    },
+    {
+      "start": 913.28,
+      "end": 916.28,
+      "text": "Because your feelings are a very"
+    },
+    {
+      "start": 916.28,
+      "end": 918.28,
+      "text": "They're a shifting thing"
+    },
+    {
+      "start": 918.28,
+      "end": 919.28,
+      "text": "In the moment sometimes you're like"
+    },
+    {
+      "start": 919.28,
+      "end": 920.28,
+      "text": "I don't like this"
+    },
+    {
+      "start": 920.28,
+      "end": 921.28,
+      "text": "I think this is really bad"
+    },
+    {
+      "start": 921.28,
+      "end": 922.28,
+      "text": "But if you just stick with it"
+    },
+    {
+      "start": 922.28,
+      "end": 924.28,
+      "text": "And just kind of get the story"
+    },
+    {
+      "start": 924.28,
+      "end": 925.28,
+      "text": "Over the hump"
+    },
+    {
+      "start": 925.28,
+      "end": 926.28,
+      "text": "Get it done"
+    },
+    {
+      "start": 926.28,
+      "end": 927.28,
+      "text": "Get it finished"
+    },
+    {
+      "start": 927.28,
+      "end": 928.28,
+      "text": "Get it out to the world"
+    },
+    {
+      "start": 928.28,
+      "end": 929.28,
+      "text": "So that you can move on to the next one"
+    },
+    {
+      "start": 929.28,
+      "end": 930.28,
+      "text": "You find that it actually turns out really well"
+    },
+    {
+      "start": 930.28,
+      "end": 931.28,
+      "text": "People really like it"
+    },
+    {
+      "start": 931.28,
+      "end": 933.28,
+      "text": "I've had that experience a number of times"
+    },
+    {
+      "start": 933.28,
+      "end": 935.28,
+      "text": "Over the last twenty-something stories"
+    },
+    {
+      "start": 935.28,
+      "end": 937.28,
+      "text": "I've written and performed and published"
+    },
+    {
+      "start": 937.28,
+      "end": 941.28,
+      "text": "Sometimes the work you think is horrible"
+    },
+    {
+      "start": 941.28,
+      "end": 942.28,
+      "text": "Performs really well"
+    },
+    {
+      "start": 942.28,
+      "end": 943.28,
+      "text": "Which is interesting"
+    },
+    {
+      "start": 943.28,
+      "end": 944.28,
+      "text": "Or people resonate with it"
+    },
+    {
+      "start": 944.28,
+      "end": 945.28,
+      "text": "So you never really know"
+    },
+    {
+      "start": 945.28,
+      "end": 947.28,
+      "text": "That's why where I'm at"
+    },
+    {
+      "start": 947.28,
+      "end": 948.28,
+      "text": "In the process now"
+    },
+    {
+      "start": 948.28,
+      "end": 949.28,
+      "text": "I'm just trying to finish"
+    },
+    {
+      "start": 949.28,
+      "end": 950.28,
+      "text": "As much as I can and get it out"
+    },
+    {
+      "start": 950.28,
+      "end": 952.28,
+      "text": "And that's my process right now"
+    },
+    {
+      "start": 952.28,
+      "end": 954.28,
+      "text": "I thought I would share that"
+    },
+    {
+      "start": 954.28,
+      "end": 955.28,
+      "text": "In case it's helpful"
+    },
+    {
+      "start": 955.28,
+      "end": 956.28,
+      "text": "If you have any other questions"
+    },
+    {
+      "start": 956.28,
+      "end": 958.28,
+      "text": "About my current process"
+    },
+    {
+      "start": 958.28,
+      "end": 960.28,
+      "text": "Specifically let me know"
+    },
+    {
+      "start": 960.28,
+      "end": 962.28,
+      "text": "I think the last point"
+    },
+    {
+      "start": 962.28,
+      "end": 964.28,
+      "text": "For today's little video journal"
+    },
+    {
+      "start": 964.28,
+      "end": 966.28,
+      "text": "Is just talking about the concept"
+    },
+    {
+      "start": 966.28,
+      "end": 967.28,
+      "text": "Of the creative athlete"
+    },
+    {
+      "start": 967.28,
+      "end": 969.28,
+      "text": "Which I talk about all the time now"
+    },
+    {
+      "start": 969.28,
+      "end": 970.28,
+      "text": "No I don't"
+    },
+    {
+      "start": 970.28,
+      "end": 972.28,
+      "text": "I've talked about it a few times"
+    },
+    {
+      "start": 972.28,
+      "end": 974.28,
+      "text": "And we're going to talk about it today"
+    },
+    {
+      "start": 974.28,
+      "end": 976.28,
+      "text": "Becoming a creative athlete"
+    },
+    {
+      "start": 976.28,
+      "end": 978.28,
+      "text": "This is what we're aiming at"
+    },
+    {
+      "start": 978.28,
+      "end": 980.28,
+      "text": "For those of us who are tired"
+    },
+    {
+      "start": 980.28,
+      "end": 982.28,
+      "text": "Of consuming mindlessly"
+    },
+    {
+      "start": 982.28,
+      "end": 983.28,
+      "text": "Who are tired of being consumers"
+    },
+    {
+      "start": 983.28,
+      "end": 984.28,
+      "text": "In the age of cheap dopamine"
+    },
+    {
+      "start": 984.28,
+      "end": 986.28,
+      "text": "And endless content"
+    },
+    {
+      "start": 986.28,
+      "end": 987.28,
+      "text": "That's only going to get worse"
+    },
+    {
+      "start": 987.28,
+      "end": 990.28,
+      "text": "We need an alternative"
+    },
+    {
+      "start": 990.28,
+      "end": 992.28,
+      "text": "We need something to give our attention to"
+    },
+    {
+      "start": 992.28,
+      "end": 993.28,
+      "text": "And for a long time"
+    },
+    {
+      "start": 993.28,
+      "end": 994.28,
+      "text": "I didn't know exactly what that was"
+    },
+    {
+      "start": 994.28,
+      "end": 996.28,
+      "text": "Until like I've laid out in this video"
+    },
+    {
+      "start": 996.28,
+      "end": 997.28,
+      "text": "I found a process"
+    },
+    {
+      "start": 997.28,
+      "end": 999.28,
+      "text": "I discovered painstakingly"
+    },
+    {
+      "start": 999.28,
+      "end": 1000.28,
+      "text": "Built over time"
+    },
+    {
+      "start": 1000.28,
+      "end": 1002.28,
+      "text": "A process that works for me"
+    },
+    {
+      "start": 1002.28,
+      "end": 1004.28,
+      "text": "Being a creative athlete"
+    },
+    {
+      "start": 1004.28,
+      "end": 1005.28,
+      "text": "Is the option"
+    },
+    {
+      "start": 1005.28,
+      "end": 1006.28,
+      "text": "You find a creative practice"
+    },
+    {
+      "start": 1006.28,
+      "end": 1007.28,
+      "text": "That fires you up"
+    },
+    {
+      "start": 1007.28,
+      "end": 1008.28,
+      "text": "That you enjoy"
+    },
+    {
+      "start": 1008.28,
+      "end": 1010.28,
+      "text": "That channels your soul"
+    },
+    {
+      "start": 1010.28,
+      "end": 1011.28,
+      "text": "And then you practice it"
+    },
+    {
+      "start": 1011.28,
+      "end": 1013.28,
+      "text": "The way an athlete practices their sport"
+    },
+    {
+      "start": 1013.28,
+      "end": 1015.28,
+      "text": "You show up and you train"
+    },
+    {
+      "start": 1015.28,
+      "end": 1016.28,
+      "text": "You understand that there is"
+    },
+    {
+      "start": 1016.28,
+      "end": 1018.28,
+      "text": "A great deal of challenge"
+    },
+    {
+      "start": 1018.28,
+      "end": 1019.28,
+      "text": "And rigor"
+    },
+    {
+      "start": 1019.28,
+      "end": 1020.28,
+      "text": "That goes into this"
+    },
+    {
+      "start": 1020.28,
+      "end": 1022.28,
+      "text": "It's not just playtime"
+    },
+    {
+      "start": 1022.28,
+      "end": 1023.28,
+      "text": "All the time"
+    },
+    {
+      "start": 1023.28,
+      "end": 1025.28,
+      "text": "It's like you have to show up"
+    },
+    {
+      "start": 1025.28,
+      "end": 1026.28,
+      "text": "And work out"
+    },
+    {
+      "start": 1026.28,
+      "end": 1028.28,
+      "text": "There is a very direct parallel"
+    },
+    {
+      "start": 1028.28,
+      "end": 1030.28,
+      "text": "Between creative work"
+    },
+    {
+      "start": 1030.28,
+      "end": 1034.28,
+      "text": "And physical training"
+    },
+    {
+      "start": 1034.28,
+      "end": 1036.28,
+      "text": "And getting in good shape"
+    },
+    {
+      "start": 1036.28,
+      "end": 1037.28,
+      "text": "Both practices"
+    },
+    {
+      "start": 1037.28,
+      "end": 1038.28,
+      "text": "Are very important to my life"
+    },
+    {
+      "start": 1038.28,
+      "end": 1039.28,
+      "text": "And I think as a creative athlete"
+    },
+    {
+      "start": 1039.28,
+      "end": 1040.28,
+      "text": "You should have both"
+    },
+    {
+      "start": 1040.28,
+      "end": 1042.28,
+      "text": "So training"
+    },
+    {
+      "start": 1042.28,
+      "end": 1043.28,
+      "text": "For me resistance training"
+    },
+    {
+      "start": 1043.28,
+      "end": 1044.28,
+      "text": "Calisthenics bodyweight training"
+    },
+    {
+      "start": 1044.28,
+      "end": 1045.28,
+      "text": "I love that"
+    },
+    {
+      "start": 1045.28,
+      "end": 1046.28,
+      "text": "That's a big part of my life"
+    },
+    {
+      "start": 1046.28,
+      "end": 1047.28,
+      "text": "That's how I feel"
+    },
+    {
+      "start": 1047.28,
+      "end": 1049.28,
+      "text": "Like a healthy and strong"
+    },
+    {
+      "start": 1049.28,
+      "end": 1050.28,
+      "text": "And it plays right into"
+    },
+    {
+      "start": 1050.28,
+      "end": 1052.28,
+      "text": "The creative stuff as well"
+    },
+    {
+      "start": 1052.28,
+      "end": 1053.28,
+      "text": "When I sit down to write"
+    },
+    {
+      "start": 1053.28,
+      "end": 1054.28,
+      "text": "That's like my creative work out"
+    },
+    {
+      "start": 1054.28,
+      "end": 1056.28,
+      "text": "For the day"
+    },
+    {
+      "start": 1056.28,
+      "end": 1058.28,
+      "text": "And I really give myself to that"
+    },
+    {
+      "start": 1058.28,
+      "end": 1059.28,
+      "text": "And not every work out is perfect"
+    },
+    {
+      "start": 1059.28,
+      "end": 1061.28,
+      "text": "Some days are stronger than others"
+    },
+    {
+      "start": 1061.28,
+      "end": 1063.28,
+      "text": "Some days I break personal records"
+    },
+    {
+      "start": 1063.28,
+      "end": 1065.28,
+      "text": "I would say today was like a PR day"
+    },
+    {
+      "start": 1065.28,
+      "end": 1066.28,
+      "text": "In terms of writing"
+    },
+    {
+      "start": 1066.28,
+      "end": 1068.28,
+      "text": "This is all over the place"
+    },
+    {
+      "start": 1068.28,
+      "end": 1069.28,
+      "text": "Good lord"
+    },
+    {
+      "start": 1069.28,
+      "end": 1073.28,
+      "text": "Yeah, so everything I've talked about today"
+    },
+    {
+      "start": 1073.28,
+      "end": 1075.28,
+      "text": "Is part of being a creative athlete"
+    },
+    {
+      "start": 1075.28,
+      "end": 1076.28,
+      "text": "If you're here for the journey"
+    },
+    {
+      "start": 1076.28,
+      "end": 1078.28,
+      "text": "I just am inviting you to join me"
+    },
+    {
+      "start": 1078.28,
+      "end": 1080.28,
+      "text": "This is what we're aiming at"
+    },
+    {
+      "start": 1080.28,
+      "end": 1081.28,
+      "text": "This is what we're going to give"
+    },
+    {
+      "start": 1081.28,
+      "end": 1085.28,
+      "text": "The next 10, 20, 30, 40, 50, 60 years of our life to"
+    },
+    {
+      "start": 1085.28,
+      "end": 1089.28,
+      "text": "Is finding a replacement to consumption"
+    },
+    {
+      "start": 1089.28,
+      "end": 1091.28,
+      "text": "To endless consumption"
+    },
+    {
+      "start": 1091.28,
+      "end": 1092.28,
+      "text": "And entertainment"
+    },
+    {
+      "start": 1092.28,
+      "end": 1095.28,
+      "text": "And external satisfaction"
+    },
+    {
+      "start": 1095.28,
+      "end": 1096.28,
+      "text": "Short term gratification"
+    },
+    {
+      "start": 1096.28,
+      "end": 1098.28,
+      "text": "An alternative that is better than that"
+    },
+    {
+      "start": 1098.28,
+      "end": 1102.28,
+      "text": "Which in my view is creative work"
+    },
+    {
+      "start": 1102.28,
+      "end": 1104.28,
+      "text": "And then sharing that creative work"
+    },
+    {
+      "start": 1104.28,
+      "end": 1105.28,
+      "text": "And then eventually getting to the point"
+    },
+    {
+      "start": 1105.28,
+      "end": 1106.28,
+      "text": "That we're doing this in person"
+    },
+    {
+      "start": 1106.28,
+      "end": 1107.28,
+      "text": "Around a fire"
+    },
+    {
+      "start": 1107.28,
+      "end": 1109.28,
+      "text": "Or in a room"
+    },
+    {
+      "start": 1109.28,
+      "end": 1110.28,
+      "text": "In a physical space"
+    },
+    {
+      "start": 1110.28,
+      "end": 1113.28,
+      "text": "Where we can perform and share stories"
+    },
+    {
+      "start": 1113.28,
+      "end": 1115.28,
+      "text": "That's what humanity is all about"
+    },
+    {
+      "start": 1115.28,
+      "end": 1117.28,
+      "text": "I think that's deep down what we want"
+    },
+    {
+      "start": 1117.28,
+      "end": 1120.28,
+      "text": "We want to share this human experience"
+    },
+    {
+      "start": 1120.28,
+      "end": 1121.28,
+      "text": "With each other"
+    },
+    {
+      "start": 1121.28,
+      "end": 1123.28,
+      "text": "And we've become so distanced from that"
+    },
+    {
+      "start": 1123.28,
+      "end": 1125.28,
+      "text": "In the last decade or so with this technology"
+    },
+    {
+      "start": 1125.28,
+      "end": 1128.28,
+      "text": "That we haven't been psychologically prepared for"
+    },
+    {
+      "start": 1128.28,
+      "end": 1130.28,
+      "text": "So a lot of it isn't our fault"
+    },
+    {
+      "start": 1130.28,
+      "end": 1131.28,
+      "text": "But it is our responsibility"
+    },
+    {
+      "start": 1131.28,
+      "end": 1132.28,
+      "text": "You and me"
+    },
+    {
+      "start": 1132.28,
+      "end": 1134.28,
+      "text": "To figure it out now in the modern age"
+    },
+    {
+      "start": 1134.28,
+      "end": 1136.28,
+      "text": "So that our kids"
+    },
+    {
+      "start": 1136.28,
+      "end": 1138.28,
+      "text": "Have something better to live for"
+    },
+    {
+      "start": 1138.28,
+      "end": 1140.28,
+      "text": "So that we have something better to live for"
+    },
+    {
+      "start": 1140.28,
+      "end": 1142.28,
+      "text": "I can tell you confidently from the front lines"
+    },
+    {
+      "start": 1142.28,
+      "end": 1144.28,
+      "text": "I am getting closer to it every day"
+    },
+    {
+      "start": 1144.28,
+      "end": 1145.28,
+      "text": "I love what I'm doing"
+    },
+    {
+      "start": 1145.28,
+      "end": 1146.28,
+      "text": "I'm grateful for it"
+    },
+    {
+      "start": 1146.28,
+      "end": 1148.28,
+      "text": "I'm grateful to have you here for the journey"
+    },
+    {
+      "start": 1148.28,
+      "end": 1151.28,
+      "text": "And I am cordially, warmly, ecstatically"
+    },
+    {
+      "start": 1151.28,
+      "end": 1153.28,
+      "text": "Inviting you to join me"
+    },
+    {
+      "start": 1153.28,
+      "end": 1155.28,
+      "text": "I'll see you on the front lines"
+    },
+    {
+      "start": 1155.28,
+      "end": 1156.28,
+      "text": "Have a great day"
+    }
+  ],
+  "artifacts": {
+    "note": "[双语_写作] 我如何每天无干扰写作4小时以上.md",
+    "frames": [
+      "assets/bilibili-BV1fyMR6gETf-frame-0001.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0002.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0003.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0004.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0005.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0006.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0007.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0008.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0009.webp",
+      "assets/bilibili-BV1fyMR6gETf-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-08-05T09:21:03.495014+00:00"
+}
