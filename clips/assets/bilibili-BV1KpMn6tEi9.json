@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1267,5 +1267,193 @@
       "assets/bilibili-BV1KpMn6tEi9-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-05T09:01:51.592165+00:00"
+  "updated_at": "2026-08-05T09:50:17.824647+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1KpMn6tEi9",
+    "status": "completed",
+    "mode": "conservative_same_timestamp",
+    "created_at": "2026-08-05",
+    "source_baseline": {
+      "raw_note": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "manifest": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\assets\\bilibili-BV1KpMn6tEi9.json",
+      "raw_note_segments": 241,
+      "manifest_segments": 241,
+      "raw_to_manifest_exact_mismatches": 0
+    },
+    "transcript_segments": 241,
+    "corrections_count": 15,
+    "glossary": [
+      {
+        "term": "overthinking",
+        "normalized_form": "overthinking",
+        "note": "视频中的非诊断性自助标签；不等同于任何精神障碍诊断。"
+      },
+      {
+        "term": "rumination",
+        "normalized_form": "rumination",
+        "note": "描述性心理学术语，指反复、循环的思考；本视频中的使用不单独构成临床诊断。"
+      },
+      {
+        "term": "anxiety / baseline anxiety",
+        "normalized_form": "anxiety / baseline anxiety",
+        "note": "症状/体验性术语；不据此推断焦虑障碍。"
+      },
+      {
+        "term": "compulsive habit",
+        "normalized_form": "compulsive habit",
+        "note": "视频的日常表达；不自动等同于强迫症或物质使用障碍。"
+      },
+      {
+        "term": "withdrawal",
+        "normalized_form": "withdrawal",
+        "note": "本视频用吸烟/饮酒作类比；此处不代表对观众的戒断或成瘾诊断。"
+      },
+      {
+        "term": "Lao Tzu",
+        "normalized_form": "Lao Tzu",
+        "note": "15:16 人名校正。"
+      },
+      {
+        "term": "Viktor Frankl",
+        "normalized_form": "Viktor Frankl",
+        "note": "22:14 人名校正；与同段《Man's Search for Meaning》书名对应。"
+      },
+      {
+        "term": "Man's Search for Meaning",
+        "normalized_form": "Man's Search for Meaning",
+        "note": "22:14 书名标准大小写。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:28",
+        "type": "ASR repetition / sentence repair",
+        "original_segment": "[00:28] Alright so if you're watching you watching or listening to this, then you probably already know what it feels like to be stuck in your own head.",
+        "corrected_segment": "[00:28] Alright, so if you're watching or listening to this, then you probably already know what it feels like to be stuck in your own head.",
+        "reason": "同段出现重复的 “watching”；删去重复词后恢复完整的 watching-or-listening 并列结构，未引入其它段内容。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "01:49",
+        "type": "ASR lexical correction",
+        "original_segment": "[01:49] What most people do when they're stuck in their hands and probably what you're doing at 2am when you can sleep is just replaying, recycling or rearranging the same fears and doubts over and over again, which feels like you're working on something important, but you're really just running in place, right?",
+        "corrected_segment": "[01:49] What most people do when they're stuck in their heads and probably what you're doing at 2am when you can't sleep is just replaying, recycling or rearranging the same fears and doubts over and over again, which feels like you're working on something important, but you're really just running in place, right?",
+        "reason": "“stuck in their heads”与“when you can't sleep”由同句的 overthinking/夜间反刍语境直接支持；hands/can 为语义相反或不合语法的 ASR 误识。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "06:09",
+        "type": "ASR repetition / lexical correction",
+        "original_segment": "[06:09] It's exactly how an alcohol,how alcohol relieves the stress that alcohol caused in the first place.",
+        "corrected_segment": "[06:09] It's exactly how alcohol relieves the stress that alcohol caused in the first place.",
+        "reason": "“an alcohol,how”是同段重复/断裂识别；保留原有 alcohol 比喻与因果语义。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "09:22",
+        "type": "ASR false start removal",
+        "original_segment": "[09:22] Something sometimes planning is useful,but it got twisted into something pathological where you can't even stop when it's clearly hurting you.",
+        "corrected_segment": "[09:22] Sometimes planning is useful,but it got twisted into something pathological where you can't even stop when it's clearly hurting you.",
+        "reason": "同句中 “Something sometimes”造成无谓重复和语法断裂；修为完整的让步句，未扩写病理化含义。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "11:50",
+        "type": "clinical term correction",
+        "original_segment": "[11:50] when they go without alcohol or any drug added when they go without their drug of choice.",
+        "corrected_segment": "[11:50] when they go without alcohol or any drug addict when they go without their drug of choice.",
+        "reason": "与前一段的 smoker/alcoholic 平行，且 “drug added”不成英语术语；校正为同段可辨识的 “drug addict”。该处仍是视频的类比，并非诊断。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "12:33",
+        "type": "ASR phrase repair",
+        "original_segment": "[12:33] But that's just more thinking,right?That's the addiction finding a way to a new way to basically justify itself.",
+        "corrected_segment": "[12:33] But that's just more thinking,right?That's the addiction finding a new way to basically justify itself.",
+        "reason": "删除同段重复的 “a way to”，恢复语法完整的 “finding a new way”。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "13:16",
+        "type": "ASR phrase correction",
+        "original_segment": "[13:16] And that life just works itself fine.",
+        "corrected_segment": "[13:16] And that life just works itself out fine.",
+        "reason": "“works itself out fine”为固定短语；原句缺少 out 而不成完整表达。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "14:20",
+        "type": "psychology concept correction",
+        "original_segment": "[14:20] So let's talk about the end of Everett.",
+        "corrected_segment": "[14:20] So let's talk about the end of effort.",
+        "reason": "视频开场概览明确列出本节为 “the end of effort”，且后续段落持续讨论 effort；Everett 为同段同音误识。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "15:16",
+        "type": "person name correction",
+        "original_segment": "[15:16] Lautzer put it really well when he said,and I'm paraphrasing here,",
+        "corrected_segment": "[15:16] Lao Tzu put it really well when he said,and I'm paraphrasing here,",
+        "reason": "“Lautzer”与句中引述归属的发音和语境对应 Lao Tzu；仅校正人名拼写/分词。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "19:57",
+        "type": "psychology concept correction",
+        "original_segment": "[19:57] Overthinking thrives in a vacuum on purpose,of purpose.",
+        "corrected_segment": "[19:57] Overthinking thrives in a vacuum of purpose.",
+        "reason": "“vacuum of purpose”是与前后“purpose / nothing better to do”一致的完整概念短语；原文为重复/错分词。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "22:14",
+        "type": "person and work title correction",
+        "original_segment": "[22:14] And Richard Frankel,who wrote man's search for meaning,observed that people with a strong sense of purpose tend to suffer less psychologically,even in objectively terrible circumstances because the meaning gives them something to orient towards that transcends their immediate discomfort.",
+        "corrected_segment": "[22:14] And Viktor Frankl,who wrote Man's Search for Meaning,observed that people with a strong sense of purpose tend to suffer less psychologically,even in objectively terrible circumstances because the meaning gives them something to orient towards that transcends their immediate discomfort.",
+        "reason": "《Man's Search for Meaning》的作者身份可由同段书名唯一确定为 Viktor Frankl；仅校正人名与书名大小写，不将其观点扩展为临床结论。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "23:02",
+        "type": "ASR lexical correction",
+        "original_segment": "[23:02] It can be something simple and small,a project you want to start,a skill you want to develop,a hobby you want to start,a bunch of books you want to read,a problem you want to solve,something that genuinely interests you and pulls your attention forward into action rather than backwards into work.",
+        "corrected_segment": "[23:02] It can be something simple and small,a project you want to start,a skill you want to develop,a hobby you want to start,a bunch of books you want to read,a problem you want to solve,something that genuinely interests you and pulls your attention forward into action rather than backwards into worry.",
+        "reason": "本段对比“forward into action”与过度思考；“backwards into worry”语义、搭配和前后文一致，work 为同段误识。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "23:47",
+        "type": "psychology term correction",
+        "original_segment": "[23:47] idolness is where overthinking lives,movement,action is where it dies,right?And the beautiful thing is that when you're actually engaged in purposeful work,the mental state you're trying to achieve through all this effort just shows up naturally.",
+        "corrected_segment": "[23:47] Idleness is where overthinking lives; movement and action are where it dies,right?And the beautiful thing is that when you're actually engaged in purposeful work,the mental state you're trying to achieve through all this effort just shows up naturally.",
+        "reason": "“idolness”校正为心理学/行为语境中的 idleness；同时只修复该同段并列结构的大小写、连接词和一致性。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "24:55",
+        "type": "ASR lexical correction",
+        "original_segment": "[24:55] And you suddenly say that you don't have to do it anymore because there's generally nothing in it for you.That moment is the beginning of the end.",
+        "corrected_segment": "[24:55] And you suddenly see that you don't have to do it anymore because there's generally nothing in it for you.That moment is the beginning of the end.",
+        "reason": "后接“that moment”与视频反复强调的 “see it clearly”一致；say 为同段近音误识。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      },
+      {
+        "timestamp": "29:25",
+        "type": "ASR lexical correction",
+        "original_segment": "[29:25] And you want to want to,because why would you return to something that gives you absolutely nothing.So,well,that said,let's go over the review.We talked about the illusion of thinking,the addiction to control,the end of effort,the power of purpose,the natural end of overthinking,the review,and your action items for the day or the next few days.",
+        "corrected_segment": "[29:25] And you won't want to,because why would you return to something that gives you absolutely nothing.So,well,that said,let's go over the review.We talked about the illusion of thinking,the addiction to control,the end of effort,the power of purpose,the natural end of overthinking,the review,and your action items for the day or the next few days.",
+        "reason": "“won't want to”与紧随其后的反问构成完整否定句；原始 “want to want to”是重复/近音误识。",
+        "evidence_scope": "仅比对同一时间戳 raw ASR 的局部句法、前后短语和本视频明确列出的章节/书名；未把任何其它段的句子移入本段。"
+      }
+    ],
+    "validation": {
+      "timestamp_order_preserved": true,
+      "raw_segment_count": 241,
+      "corrected_segment_count": 241,
+      "cross_timestamp_sentence_substitutions": 0,
+      "corrected_duplicate_full_segment_groups": 0,
+      "unsupported_corrections": 0
+    }
+  }
 }
