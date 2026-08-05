@@ -529,6 +529,27 @@
       "status": "active",
       "assignedAt": "2026-08-05T05:30:59.358Z",
       "everPublished": false
+    },
+    "f6af42d2-4d3e-4979-ade7-d32d901035ab": {
+      "firstAssignedPath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "lastKnownSourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:15.207Z",
+      "everPublished": false
+    },
+    "6a339282-048c-4922-b885-275f22dc3be7": {
+      "firstAssignedPath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "lastKnownSourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:30.855Z",
+      "everPublished": false
+    },
+    "b31a80fc-ca9b-4e5a-ab10-0373beac0f80": {
+      "firstAssignedPath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md",
+      "lastKnownSourcePath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:36.080Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1797,6 +1818,24 @@
       "rid": "69608cb0-9a86-4242-9a99-a6a8c845bd33",
       "at": "2026-08-05T05:30:59.358Z",
       "sourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "f6af42d2-4d3e-4979-ade7-d32d901035ab",
+      "at": "2026-08-05T07:48:15.207Z",
+      "sourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6a339282-048c-4922-b885-275f22dc3be7",
+      "at": "2026-08-05T07:48:30.855Z",
+      "sourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b31a80fc-ca9b-4e5a-ab10-0373beac0f80",
+      "at": "2026-08-05T07:48:36.080Z",
+      "sourcePath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md"
     }
   ]
 }
