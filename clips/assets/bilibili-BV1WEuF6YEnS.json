@@ -35,7 +35,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1891,5 +1891,663 @@
       "assets/bilibili-BV1WEuF6YEnS-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-05T09:38:02.813968+00:00"
+  "updated_at": "2026-08-05T10:30:04.443580+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1WEuF6YEnS",
+    "status": "completed",
+    "mode": "conservative_same_timestamp",
+    "created_at": "2026-08-05",
+    "source_baseline": {
+      "raw_note": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "manifest": "C:\\Users\\19065\\OneDrive\\me\\docs\\web-clips\\clips\\assets\\bilibili-BV1WEuF6YEnS.json",
+      "raw_note_segments": 366,
+      "manifest_segments": 366,
+      "raw_to_manifest_exact_mismatches": 0,
+      "duplicate_timestamp_occurrences": [
+        {
+          "timestamp": "14:29",
+          "segment_indices": [
+            215,
+            216
+          ],
+          "preserved": true
+        }
+      ]
+    },
+    "transcript_segments": 366,
+    "corrections_count": 62,
+    "glossary": [
+      {
+        "term": "Agentic Engineering",
+        "normalized_form": "Agentic Engineering / 智能体工程",
+        "note": "以智能体、确定性代码、工作流和人工判断共同完成工程任务的实践框架；视频将其与单纯 Vibe Coding 对照。"
+      },
+      {
+        "term": "SDLC",
+        "normalized_form": "Software Development Life Cycle / 软件开发生命周期",
+        "note": "视频中的端到端开发流程概念；不是“Loop Engineering”的通用替代名称。"
+      },
+      {
+        "term": "ADW",
+        "normalized_form": "AI Developer Workflow (ADW)",
+        "note": "视频用于表示可执行的 AI 开发工作流单元；可组合侦察、规划、构建、测试与审查等阶段。"
+      },
+      {
+        "term": "SSSF",
+        "normalized_form": "Super Simple Software Factory (SSSF)",
+        "note": "视频中讲者给其软件工厂命名的缩写。"
+      },
+      {
+        "term": "Agent Harness / Harness Engineering",
+        "normalized_form": "Agent Harness / Harness Engineering",
+        "note": "把上下文、模型、提示词、工具、输出结构与校验规则组合为可运行智能体的工程层。"
+      },
+      {
+        "term": "Observability",
+        "normalized_form": "可观测性",
+        "note": "记录/查看提示词、事件、工具调用、成本、输出与工作流状态，以便理解和改进运行。"
+      },
+      {
+        "term": "Scout → Plan → Build → Review",
+        "normalized_form": "侦察 → 规划 → 构建 → 复盘/审查",
+        "note": "本视频的工作流阶段词表；实际流程可额外含测试、修复和提交。"
+      },
+      {
+        "term": "Pi Coding Agent",
+        "normalized_form": "Pi Coding Agent",
+        "note": "视频中用于运行工作流的 Coding Agent 名称；不与 Claude Code 或 Codex 混写。"
+      },
+      {
+        "term": "Claude Code",
+        "normalized_form": "Claude Code",
+        "note": "独立的 Coding Agent 产品名。本转写没有足够清晰的同段证据，因此未把其他词强行改成 Claude Code。"
+      },
+      {
+        "term": "Codex",
+        "normalized_form": "Codex",
+        "note": "独立的 OpenAI Coding Agent/产品名。本转写没有足够清晰的同段证据，因此未插入该名称。"
+      },
+      {
+        "term": "Vibe Coding",
+        "normalized_form": "Vibe Coding",
+        "note": "视频用来指代不深入理解系统、主要依赖提示词和表面结果的做法；这是讲者的定义/对比框架。"
+      },
+      {
+        "term": "DSL / YAML / JSON",
+        "normalized_form": "Domain-Specific Language / YAML / JSON",
+        "note": "分别指领域专用语言、配置文件格式、结构化数据格式；均保留为技术术语，不扩写为跨段内容。"
+      },
+      {
+        "term": "Sandbox / main branch / Session ID",
+        "normalized_form": "沙箱 / 主分支 / Session ID",
+        "note": "分别涉及隔离运行、Git 分支策略和可恢复的工作流会话标识。"
+      }
+    ],
+    "corrections": [
+      {
+        "segment_index": 0,
+        "timestamp": "00:00",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[00:00] 工程师们,我是indie devdian,如果你在构建替你工作的智能体系统,请继续看",
+        "corrected_segment": "[00:00] 工程师们,我是 Indie Dev Dan,如果你在构建替你工作的智能体系统,请继续看",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 6,
+        "timestamp": "00:22",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[00:22] 在基础层级,传练几个智能体,简单配置,即可替你多做些事",
+        "corrected_segment": "[00:22] 在基础层级,串联几个智能体,简单配置,即可替你多做些事",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 10,
+        "timestamp": "00:40",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[00:40] 这个工厂融合了我们在频道和Tactical Agented Coding TAC中讨论的核心理念",
+        "corrected_segment": "[00:40] 这个工厂融合了我们在频道和 Tactical Agentic Coding (TAC) 中讨论的核心理念",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 14,
+        "timestamp": "00:57",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[00:57] 我在这个简易软件工厂中,融入了三个关键的设计原则,可观测,可定制,可附用",
+        "corrected_segment": "[00:57] 我在这个简易软件工厂中,融入了三个关键的设计原则,可观测,可定制,可复用",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 18,
+        "timestamp": "01:14",
+        "type": "可辨 ASR 术语",
+        "original_segment": "[01:14] 在用到试图中准确查看整个过程发生了什么",
+        "corrected_segment": "[01:14] 在一个视图中准确查看整个过程发生了什么",
+        "reason": "仅修复同段内无意义的同音/形近误识，未补写其他时间戳的信息。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 41,
+        "timestamp": "02:50",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[02:50] 我启动PyCoding Agent,我们将在这里运行全新的Opus五模型",
+        "corrected_segment": "[02:50] 我启动 Pi Coding Agent,我们将在这里运行全新的 Opus 五模型",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 67,
+        "timestamp": "04:35",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[04:35] 一次ADW AI Developer Workflow运行,制作了应用侦查",
+        "corrected_segment": "[04:35] 一次ADW AI Developer Workflow运行,制作了应用侦察",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 71,
+        "timestamp": "04:50",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[04:50] 日能题正是这样做的,这里有三项建议功能",
+        "corrected_segment": "[04:50] 智能体正是这样做的,这里有三项建议功能",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 78,
+        "timestamp": "05:16",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[05:16] 可见预期的各项流程,简单提示词,侦查,规划,构建,制简",
+        "corrected_segment": "[05:16] 可见预期的各项流程,简单提示词,侦察,规划,构建,复盘",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 82,
+        "timestamp": "05:35",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[05:35] 先运行中间步骤,Mactical Agented Coding的会员对此应当很熟悉",
+        "corrected_segment": "[05:35] 先运行中间步骤,Tactical Agentic Coding 的会员对此应当很熟悉",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 84,
+        "timestamp": "05:43",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[05:43] 我想用经典前色模式,粘贴提示后运行ADW的PLAN, BUILD, TEST与默认深色模式做对比",
+        "corrected_segment": "[05:43] 我想用经典浅色模式,粘贴提示后运行ADW的 PLAN、BUILD、TEST 与默认深色模式做对比",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 90,
+        "timestamp": "06:10",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[06:10] 但它是首个达到前沿水平的开放全中模型,这是一个重要进展",
+        "corrected_segment": "[06:10] 但它是首个达到前沿水平的开放权重模型,这是一个重要进展",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 95,
+        "timestamp": "06:30",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[06:30] 上周我们讨论过,付费使用anthropic时,它是否会获取你的数据",
+        "corrected_segment": "[06:30] 上周我们讨论过,付费使用 Anthropic 时,它是否会获取你的数据",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 106,
+        "timestamp": "07:14",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[07:14] 穿连一些智能体,同时明白,并非所有工作都必须由智能体完成",
+        "corrected_segment": "[07:14] 串联一些智能体,同时明白,并非所有工作都必须由智能体完成",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 112,
+        "timestamp": "07:36",
+        "type": "可辨 ASR 术语",
+        "original_segment": "[07:36] 我们只是足用他们,代码至关重要,我将其纳入工作流,在软件工厂中视为一等公民",
+        "corrected_segment": "[07:36] 我们只是租用它们,代码至关重要,我将其纳入工作流,在软件工厂中视为一等公民",
+        "reason": "仅修复同段内无意义的同音/形近误识，未补写其他时间戳的信息。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 121,
+        "timestamp": "08:16",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[08:16] 这样我能在应用中反复复线期待的成果",
+        "corrected_segment": "[08:16] 这样我能在应用中反复复现期待的成果",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 128,
+        "timestamp": "08:37",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[08:37] 关键是通过添加确定性规检查,确保工作确实完成",
+        "corrected_segment": "[08:37] 关键是通过添加确定性规则检查,确保工作确实完成",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 130,
+        "timestamp": "08:44",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[08:44] 此外还有该智能体阶段执行的成本名系",
+        "corrected_segment": "[08:44] 此外还有该智能体阶段执行的成本明细",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 132,
+        "timestamp": "08:51",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[08:51] 可查看ADW绘画,感兴趣再看代码",
+        "corrected_segment": "[08:51] 可查看ADW规划,感兴趣再看代码",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 146,
+        "timestamp": "09:48",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[09:48] 关注本频道的话,你很熟悉这种提示词格式,指令,辨量,工作流,报告",
+        "corrected_segment": "[09:48] 关注本频道的话,你很熟悉这种提示词格式,指令,变量,工作流,报告",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 147,
+        "timestamp": "09:53",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[09:53] 随后它会把输出传给下一个智能体,辨更文件以及构建智能体需要跟踪的内容",
+        "corrected_segment": "[09:53] 随后它会把输出传给下一个智能体,变更文件以及构建智能体需要跟踪的内容",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 152,
+        "timestamp": "10:13",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[10:13] 代码加智能体,胜过担用智能体,许多工程师会把一切塞进技能和一堆智能体",
+        "corrected_segment": "[10:13] 代码加智能体,胜过单用智能体,许多工程师会把一切塞进技能和一堆智能体",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 168,
+        "timestamp": "11:26",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[11:26] 现在回到可观测试系统,就能看到它正在运行",
+        "corrected_segment": "[11:26] 现在回到可观测系统,就能看到它正在运行",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 169,
+        "timestamp": "11:29",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[11:29] 简单SDLC、规划器用Cautopus 5",
+        "corrected_segment": "[11:29] 简单SDLC、规划器用 Claude Opus 5",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 178,
+        "timestamp": "12:03",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[12:03] 我们用前沿流程给Inquil加Markdown双栏试图",
+        "corrected_segment": "[12:03] 我们用前沿流程给 Inquil 加 Markdown 双栏视图",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 181,
+        "timestamp": "12:15",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[12:15] 我用VSCO查看代码,目前没理由用其他工具,主要只是查看代码",
+        "corrected_segment": "[12:15] 我用 VS Code 查看代码,目前没理由用其他工具,主要只是查看代码",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 182,
+        "timestamp": "12:20",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[12:20] 我在VSCO里写提示词时,也会输入整个流程围绕SSSF Super Simple Software Factory",
+        "corrected_segment": "[12:20] 我在 VS Code 里写提示词时,也会输入整个流程围绕 SSSF（Super Simple Software Factory）",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 185,
+        "timestamp": "12:34",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[12:34] 参加过Tactical Agent Decoding就会很熟悉",
+        "corrected_segment": "[12:34] 参加过 Tactical Agentic Coding 就会很熟悉",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 190,
+        "timestamp": "12:53",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[12:53] 我与智能体协作构建流程分阶段,我们用Python的Width与G表示代码块的进入和退出",
+        "corrected_segment": "[12:53] 我与智能体协作构建流程分阶段,我们用 Python 的 with 与 yield 表示代码块的进入和退出",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 194,
+        "timestamp": "13:13",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[13:13] 智能体与代码分开,用看判断,可以看到如何划分",
+        "corrected_segment": "[13:13] 智能体与代码分开,用代码判断,可以看到如何划分",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 196,
+        "timestamp": "13:20",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[13:20] 我们为自己和智能体化清边界,每项都是对常用Agentic Coding工具的智能体调用",
+        "corrected_segment": "[13:20] 我们为自己和智能体划清边界,每项都是对常用 Agentic Coding 工具的智能体调用",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 197,
+        "timestamp": "13:25",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[13:25] 进入ADW Modules,我运行的是PI Coding Agent,已在这里完成配置",
+        "corrected_segment": "[13:25] 进入 ADW Modules,我运行的是 Pi Coding Agent,已在这里完成配置",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 198,
+        "timestamp": "13:30",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[13:30] 最后,只会运行已定制的PyCoding Agent",
+        "corrected_segment": "[13:30] 最后,只会运行已定制的 Pi Coding Agent",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 202,
+        "timestamp": "13:43",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[13:43] 在基础配置中,我们通过FireCore运行Kimi K3并设为高推理级别",
+        "corrected_segment": "[13:43] 在基础配置中,我们通过 Fireworks 运行 Kimi K3 并设为高推理级别",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 204,
+        "timestamp": "13:51",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[13:51] 在频道里,我们一直在拆解不同类型的PI Coding Agent定制Agent Harness",
+        "corrected_segment": "[13:51] 在频道里,我们一直在拆解不同类型的 Pi Coding Agent 定制 Agent Harness",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 206,
+        "timestamp": "13:58",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[13:58] 也有一部分只面向Tactical Agents Coding或Agent Horizon会员",
+        "corrected_segment": "[13:58] 也有一部分只面向 Tactical Agentic Coding 或 Agent Horizon 会员",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 207,
+        "timestamp": "14:02",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[14:02] 微根结底是为SDLC中每个腰运行的智能体整理核心思要素",
+        "corrected_segment": "[14:02] 归根结底是为 SDLC 中每个要运行的智能体整理核心四要素",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 212,
+        "timestamp": "14:18",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[14:18] 如你所见,我为Planer和Scouter Agent添加了辞智能体支持",
+        "corrected_segment": "[14:18] 如你所见,我为 Planner 和 Scouter Agent 添加了子智能体支持",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 213,
+        "timestamp": "14:22",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[14:22] 需要时它可以启动自己的辞智能体",
+        "corrected_segment": "[14:22] 需要时它可以启动自己的子智能体",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 225,
+        "timestamp": "14:53",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[14:53] 它会直接进入Pycoding Agent运行Round Workflow",
+        "corrected_segment": "[14:53] 它会直接进入 Pi Coding Agent 运行 Round Workflow",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 228,
+        "timestamp": "15:00",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[15:00] 和Jason Provider配置Pycoding Agent",
+        "corrected_segment": "[15:00] 和 JSON Provider 配置 Pi Coding Agent",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 230,
+        "timestamp": "15:05",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[15:05] 我们遵循模型熟悉的模式 不发明DSO",
+        "corrected_segment": "[15:05] 我们遵循模型熟悉的模式,不发明 DSL",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 231,
+        "timestamp": "15:07",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[15:07] 唯一自定义的是YML配置文件",
+        "corrected_segment": "[15:07] 唯一自定义的是 YAML 配置文件",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 247,
+        "timestamp": "15:47",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[15:47] 例如 我直接在注分支运行 实际应使用分支",
+        "corrected_segment": "[15:47] 例如,我直接在主分支运行,实际应使用分支",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 250,
+        "timestamp": "15:56",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[15:56] 这是一个可观测 可定制 可附用的系统",
+        "corrected_segment": "[15:56] 这是一个可观测、可定制、可复用的系统",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 269,
+        "timestamp": "16:50",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[16:50] 为了下一阶段的智能体工程 我需要重建一个可服用系统",
+        "corrected_segment": "[16:50] 为了下一阶段的智能体工程,我需要重建一个可复用系统",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 300,
+        "timestamp": "18:09",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[18:09] 这个工具为何易扩展可附用",
+        "corrected_segment": "[18:09] 这个工具为何易扩展、可复用",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 306,
+        "timestamp": "18:28",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[18:28] 这是可附用的系统 可部署到各个代码库",
+        "corrected_segment": "[18:28] 这是可复用的系统,可部署到各个代码库",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 308,
+        "timestamp": "18:33",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[18:33] 我需要一套可附用 可扩展 可定制的adw系统",
+        "corrected_segment": "[18:33] 我需要一套可复用、可扩展、可定制的 ADW 系统",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 311,
+        "timestamp": "18:41",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[18:41] 因为它可观测 可定制 可附用 开箱挤用",
+        "corrected_segment": "[18:41] 因为它可观测、可定制、可复用、开箱即用",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 313,
+        "timestamp": "18:47",
+        "type": "可辨 ASR 术语",
+        "original_segment": "[18:47] 我喜欢把习议设计为围绕一个核心",
+        "corrected_segment": "[18:47] 我喜欢把 Skill 设计为围绕一个核心",
+        "reason": "仅修复同段内无意义的同音/形近误识，未补写其他时间戳的信息。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 318,
+        "timestamp": "19:01",
+        "type": "可辨 ASR 术语",
+        "original_segment": "[19:01] 进入渲染试图 查看请求路由",
+        "corrected_segment": "[19:01] 进入渲染视图,查看请求路由",
+        "reason": "仅修复同段内无意义的同音/形近误识，未补写其他时间戳的信息。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 336,
+        "timestamp": "19:59",
+        "type": "代码、配置或版本控制术语",
+        "original_segment": "[19:59] 将它部署到云端 大建沙箱 把工程中80%的杂务可靠",
+        "corrected_segment": "[19:59] 将它部署到云端,搭建沙箱,把工程中80%的杂务可靠",
+        "reason": "同段是代码、配置、交接或版本控制语境；只修正可辨的术语或缩写。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 337,
+        "timestamp": "20:03",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[20:03] 可重复地交给智能体战 让你专注于智能体无法独立完成的真正创新难题",
+        "corrected_segment": "[20:03] 可重复地交给智能体,让你专注于智能体无法独立完成的真正创新难题",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 348,
+        "timestamp": "20:47",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[20:47] 记住 Vibecoding就是不理解系统的运作 也不去查看",
+        "corrected_segment": "[20:47] 记住,Vibe Coding 就是不理解系统的运作,也不去查看",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 350,
+        "timestamp": "20:55",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[20:55] 要追求智能体工程的上线 而非 Vibecoding的下线",
+        "corrected_segment": "[20:55] 要追求智能体工程的上线,而非 Vibe Coding 的下线",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 351,
+        "timestamp": "20:58",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[20:58] 想了解软件工厂的AI开发工作流 请看 Tactical Agent Coding",
+        "corrected_segment": "[20:58] 想了解软件工厂的 AI 开发工作流,请看 Tactical Agentic Coding",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 352,
+        "timestamp": "21:02",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[21:02] 连接件说明 高级智能体工程的范围 超出AI Coding和 Vibecoding",
+        "corrected_segment": "[21:02] 连接件说明 高级智能体工程的范围 超出AI Coding和 Vibe Coding",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 355,
+        "timestamp": "21:14",
+        "type": "Agentic Engineering / 工作流术语",
+        "original_segment": "[21:14] 如果你是新手 或只做 Vibecoding 这可能不适合你",
+        "corrected_segment": "[21:14] 如果你是新手 或只做 Vibe Coding 这可能不适合你",
+        "reason": "同段是软件工厂、智能体角色、可观测性或 SDLC 阶段说明；只修正可由本段术语搭配支持的词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 358,
+        "timestamp": "21:22",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[21:22] 已有数千名工程师参加过 Tactical Agent Coding",
+        "corrected_segment": "[21:22] 已有数千名工程师参加过 Tactical Agentic Coding",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 361,
+        "timestamp": "21:31",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[21:31] 想知道我为何在这期视频中 一次也没提露 Engineering",
+        "corrected_segment": "[21:31] 想知道我为何在这期视频中一次也没提 Loop Engineering",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      },
+      {
+        "segment_index": 363,
+        "timestamp": "21:36",
+        "type": "人名、产品名或课程专名",
+        "original_segment": "[21:36] 你真正需要的是 SCDLC 不是 Loop Engineering",
+        "corrected_segment": "[21:36] 你真正需要的是 SDLC,不是 Loop Engineering",
+        "reason": "同段呈现专名/产品配置结构；只规范可辨的英文名称和分词。",
+        "evidence_scope": "仅依据该时间戳内的局部术语搭配、专名结构、数字/代码语境或直接上下文作最小校正；未从其他时间戳搬运或补写整句内容。"
+      }
+    ],
+    "preservation_notes": [
+      "模型版本与名称中无法在同一时间戳内确证的部分（如 Gemini 3.6 Flash、GPT 5.6 Terra/Senna、Harder/Tamax、SOLE、LUNA、Gemini Sunflower、飞泼物）均保留原文。",
+      "不把含混 ASR 片段强行替换为 Claude Code 或 Codex；两者只作为术语表中的独立产品名。",
+      "未使用相邻或后续时间戳来补写、合并或移动任何句子。"
+    ]
+  }
 }

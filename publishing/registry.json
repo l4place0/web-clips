@@ -599,6 +599,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T09:51:30.649Z",
       "everPublished": false
+    },
+    "8c3c3bdd-2dea-431d-b889-42f021e7941e": {
+      "firstAssignedPath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "lastKnownSourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T10:31:13.458Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1927,6 +1934,12 @@
       "rid": "7b77c047-8d46-45e4-a123-86e01a7a464c",
       "at": "2026-08-05T09:51:30.649Z",
       "sourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8c3c3bdd-2dea-431d-b889-42f021e7941e",
+      "at": "2026-08-05T10:31:13.458Z",
+      "sourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
     }
   ]
 }
