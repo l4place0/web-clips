@@ -36,13 +36,13 @@ webClipUrl: "https://l4p-web-clips.pages.dev/r/7b77c047-8d46-45e4-a123-86e01a7a4
 
 ## 事实核验结论
 
-| 视频中的表述 | 核验结果 | 应如何理解 |
-| --- | --- | --- |
-| 把长期重复、无解的思考称为 “rumination（反刍）” | **部分成立** | [APA 的定义](https://dictionary.apa.org/rumination)支持“过度、重复的观念性思考”这一描述，但不能据一次视频或自我感受判断临床问题，更不能据此诊断焦虑障碍或 OCD。 |
-| 过度思考等于成瘾；不适就是与烟、酒、药物相同的戒断 | **矛盾/不成立** | [NIDA 对物质成瘾的说明](https://nida.nih.gov/sites/default/files/mediaguide_11_16.pdf)并不能把一般“过度思考”直接等同为成瘾；焦虑、不适或短暂缓解本身都不足以证明“成瘾”。 |
-| 不需要治疗、冥想或自我改善；治疗会维持问题 | **与证据相矛盾** | [NIMH：心理治疗](https://www.nimh.nih.gov/health/topics/psychotherapies)与现行的[NIMH：广泛性焦虑障碍](https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad)资料都说明，心理治疗（包括 CBT）和其他个体化支持可为合适的选择。并非每个人都需要治疗，但视频不应一概否定它。 |
-| 只要不参与循环，不适会自行过去并永久消失；这是唯一方法 | **部分成立但严重过度泛化** | 针对某些强迫症状，循证的 ERP 会在安全、渐进、通常有专业支持的条件下练习面对触发物并减少仪式行为；这不能推出“任何人只靠一次看清就永久解决”。参见 [NIMH：OCD](https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over)。 |
-| 明确人生目的/写下目标是最有效的终结方式 | **未核实** | 有意义的目标和行动可能对部分人的专注与生活组织有帮助，但视频没有给出可支持“最有效”“自然消除”或适用于所有人的比较证据。 |
+| 视频中的表述                         | 核验结果            | 应如何理解                                                                                                                                                                                                                        |
+| ------------------------------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 把长期重复、无解的思考称为 “rumination（反刍）” | **部分成立**        | [APA 的定义](https://dictionary.apa.org/rumination)支持“过度、重复的观念性思考”这一描述，但不能据一次视频或自我感受判断临床问题，更不能据此诊断焦虑障碍或 OCD。                                                                                                                    |
+| 过度思考等于成瘾；不适就是与烟、酒、药物相同的戒断      | **矛盾/不成立**      | [NIDA 对物质成瘾的说明](https://nida.nih.gov/sites/default/files/mediaguide_11_16.pdf)并不能把一般“过度思考”直接等同为成瘾；焦虑、不适或短暂缓解本身都不足以证明“成瘾”。                                                                                                    |
+| 不需要治疗、冥想或自我改善；治疗会维持问题          | **与证据相矛盾**      | [NIMH：心理治疗](https://www.nimh.nih.gov/health/topics/psychotherapies)与现行的[NIMH：广泛性焦虑障碍](https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad)资料都说明，心理治疗（包括 CBT）和其他个体化支持可为合适的选择。并非每个人都需要治疗，但视频不应一概否定它。 |
+| 只要不参与循环，不适会自行过去并永久消失；这是唯一方法    | **部分成立但严重过度泛化** | 针对某些强迫症状，循证的 ERP 会在安全、渐进、通常有专业支持的条件下练习面对触发物并减少仪式行为；这不能推出“任何人只靠一次看清就永久解决”。参见 [NIMH：OCD](https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over)。 |
+| 明确人生目的/写下目标是最有效的终结方式           | **未核实**         | 有意义的目标和行动可能对部分人的专注与生活组织有帮助，但视频没有给出可支持“最有效”“自然消除”或适用于所有人的比较证据。                                                                                                                                                                |
 
 ## 使用边界
 
