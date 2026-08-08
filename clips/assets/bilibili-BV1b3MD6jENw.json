@@ -1,0 +1,384 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1b3MD6jENw",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1b3MD6jENw/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1b3MD6jENw"
+  },
+  "title": "从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络",
+  "metadata": {
+    "title": "从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络",
+    "duration": 270,
+    "thumbnail": "http://i1.hdslb.com/bfs/archive/ef8ebed6a34acd0c0fd157012403b651096ebbdf.jpg",
+    "uploader": "人月聊IT",
+    "video_id": "BV1b3MD6jENw",
+    "description": "从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络",
+    "tags": [
+      "AI",
+      "人工智能",
+      "本体论"
+    ],
+    "view_count": 1477,
+    "like_count": 41,
+    "upload_date": 1785974357,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "df3750051eeea53fd4df87915e1a9b22ce3b03f234c7ec077b998989736ef22d",
+    "audio": "8fb732896623f471ed30a12d10aa8f1cdc4e4062f32b80c3d80c7448d72cab58",
+    "transcript": "743f027ef17c0b7e5a3eb683489d6abc08e3c50a7c56f714d12afb079c2f8240",
+    "frames": "43cd32f772a176516b9fda6e4ed2598cc1b1c7571d5b0292aab79d6f3ba3e7fc"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 2.82,
+      "text": "Hello 大家好 我是任月聊一題"
+    },
+    {
+      "start": 3.08,
+      "end": 7.42,
+      "text": "今天簡單的跟大家聊一下Graph engineering圖工程"
+    },
+    {
+      "start": 7.68,
+      "end": 13.32,
+      "text": "所以大家如果第一次接觸這個概念的話就感覺跟我們前面談過的Graphreg"
+    },
+    {
+      "start": 13.56,
+      "end": 17.16,
+      "text": "或者說loop engineering循環工程相當的類似"
+    },
+    {
+      "start": 17.92,
+      "end": 19.2,
+      "text": "難道這個概念"
+    },
+    {
+      "start": 19.46,
+      "end": 23.56,
+      "text": "僅僅就是前面已有的概念的簡單的柔和或者是雜交嗎"
+    },
+    {
+      "start": 23.82,
+      "end": 25.08,
+      "text": "實際上不是"
+    },
+    {
+      "start": 25.34,
+      "end": 27.4,
+      "text": "就是說對於圖工程"
+    },
+    {
+      "start": 27.64,
+      "end": 29.7,
+      "text": "大家一定要理解清楚"
+    },
+    {
+      "start": 29.96,
+      "end": 34.32,
+      "text": "它往往更多的是在多任務多智能體協同下面"
+    },
+    {
+      "start": 34.58,
+      "end": 40.72,
+      "text": "才會出現的一種面向任務面線解決方案的工程化解決思路"
+    },
+    {
+      "start": 42.0,
+      "end": 44.3,
+      "text": "我們先拿loop engineering來說"
+    },
+    {
+      "start": 44.56,
+      "end": 48.64,
+      "text": "如果你讓AI去解決一個事情"
+    },
+    {
+      "start": 49.42,
+      "end": 53.0,
+      "text": "它就是單個任務線條雖然說它中間分了相當多的步驟"
+    },
+    {
+      "start": 53.52,
+      "end": 57.6,
+      "text": "但是它仍然適合計劃執行反思"
+    },
+    {
+      "start": 57.86,
+      "end": 59.66,
+      "text": "循環迭代的這種方式"
+    },
+    {
+      "start": 60.42,
+      "end": 63.24,
+      "text": "那麼它走循環工程完全就可以解決"
+    },
+    {
+      "start": 64.0,
+      "end": 68.62,
+      "text": "但是對於很多複雜的任務往往它是涉及到多任務協同"
+    },
+    {
+      "start": 68.88,
+      "end": 72.2,
+      "text": "而且多個任務之間有相互制約和影響"
+    },
+    {
+      "start": 73.48,
+      "end": 79.62,
+      "text": "也就是說當有一個任務執行到流水線的中間的時候它可能會觸發一些事件出來"
+    },
+    {
+      "start": 79.88,
+      "end": 82.7,
+      "text": "然後去制約和影響其他任務的執行"
+    },
+    {
+      "start": 83.72,
+      "end": 91.16,
+      "text": "那麼在這種情況下面你就可以看得到多個任務之間形成了一個相互之間關聯依賴制約的"
+    },
+    {
+      "start": 91.4,
+      "end": 92.68,
+      "text": "複雜的任務網絡"
+    },
+    {
+      "start": 93.44,
+      "end": 94.98,
+      "text": "如果滿足這個特點"
+    },
+    {
+      "start": 95.24,
+      "end": 97.8,
+      "text": "那一般就會涉及到graph engineering圖工程"
+    },
+    {
+      "start": 98.32,
+      "end": 102.92,
+      "text": "所以我一直在強調圖工程它一定是面向任務面向解決方案的"
+    },
+    {
+      "start": 103.94,
+      "end": 106.5,
+      "text": "當你出現對於複雜問題的解決"
+    },
+    {
+      "start": 106.76,
+      "end": 108.8,
+      "text": "只要符合多任務的拆解"
+    },
+    {
+      "start": 109.06,
+      "end": 111.88,
+      "text": "符合任務之間存在相互制約和影響"
+    },
+    {
+      "start": 112.14,
+      "end": 114.96,
+      "text": "那麼它往往就適合圖工程的解決方案"
+    },
+    {
+      "start": 116.74,
+      "end": 121.36,
+      "text": "然後從圖工程我又聯想回我原來一直在講本體論和本體建模"
+    },
+    {
+      "start": 122.12,
+      "end": 126.48,
+      "text": "因為在本體建模的底層也是相關的抽象的模型和抽象的知識網絡"
+    },
+    {
+      "start": 127.76,
+      "end": 132.36,
+      "text": "那麼在本體論裡面是不是也應該引入圖工程相關的一些思路呢"
+    },
+    {
+      "start": 132.62,
+      "end": 133.9,
+      "text": "我覺得是完全可行的"
+    },
+    {
+      "start": 134.66,
+      "end": 139.54,
+      "text": "因為我們原來在本體建模裡面進行建模它更多的是面向"
+    },
+    {
+      "start": 140.04,
+      "end": 143.36,
+      "text": "底層的知識素材或者叫知識點的建模"
+    },
+    {
+      "start": 144.4,
+      "end": 148.48,
+      "text": "我們整個的本體建模並沒有面向場景面向解決方案"
+    },
+    {
+      "start": 150.02,
+      "end": 155.14,
+      "text": "而對於具體面向場景這一塊的事情我們完完全全交給了AI"
+    },
+    {
+      "start": 155.4,
+      "end": 158.72,
+      "text": "它自己去進行相應的一些複雜意圖的識別"
+    },
+    {
+      "start": 159.24,
+      "end": 163.08,
+      "text": "但是對於複雜任務的處理我剛才已經講到了"
+    },
+    {
+      "start": 163.34,
+      "end": 169.48,
+      "text": "它往往涉及到多任務的協同涉及到多任務之間本身就有相負的制約依賴關係"
+    },
+    {
+      "start": 170.24,
+      "end": 174.34,
+      "text": "你對於一個複雜的場景你究竟應該分成幾步幾個步驟來做"
+    },
+    {
+      "start": 174.6,
+      "end": 177.68,
+      "text": "每個步驟之間有什麼約束規則你都要提前定義"
+    },
+    {
+      "start": 178.7,
+      "end": 182.54,
+      "text": "類似於我經常講過的一個場景類似於關鍵物料的供應鏈中段"
+    },
+    {
+      "start": 182.8,
+      "end": 183.76,
+      "text": "你怎麼樣去分析"
+    },
+    {
+      "start": 184.02,
+      "end": 192.02,
+      "text": "你實際上整個解決方案的分析思路你是可以並行開始相關的庫存分析計劃分析和相關的成本開支分析的"
+    },
+    {
+      "start": 192.78,
+      "end": 197.9,
+      "text": "但是這三個並行的任務分析鏈條中間它本身又存在相負制約影響"
+    },
+    {
+      "start": 198.16,
+      "end": 201.24,
+      "text": "比如說庫存本身已經下到預警的損位"
+    },
+    {
+      "start": 201.48,
+      "end": 205.32,
+      "text": "你可能要實時觸發相應的成本分析或者是計劃分析"
+    },
+    {
+      "start": 205.84,
+      "end": 209.68,
+      "text": "這樣的話多任務鏈條之間就形成了一個完整的任務網絡"
+    },
+    {
+      "start": 210.44,
+      "end": 211.72,
+      "text": "那麼在這種情況下面"
+    },
+    {
+      "start": 212.24,
+      "end": 216.34,
+      "text": "如果我皮錢不去定義任務解決方案的圖工程"
+    },
+    {
+      "start": 217.1,
+      "end": 222.22,
+      "text": "我把只這麼複雜的一個事情全部交給AI自己進行意圖識別去跑"
+    },
+    {
+      "start": 222.48,
+      "end": 225.3,
+      "text": "那它很有可能跑出來的結果跟我期望的天差半別"
+    },
+    {
+      "start": 226.84,
+      "end": 232.48,
+      "text": "所以基於剛才我講的一個總結簡單來講就是實際上在我們的本體建模裡面"
+    },
+    {
+      "start": 233.24,
+      "end": 234.52,
+      "text": "是有必要引入"
+    },
+    {
+      "start": 235.28,
+      "end": 236.32,
+      "text": "Graph Engineer人的"
+    },
+    {
+      "start": 237.34,
+      "end": 242.46,
+      "text": "也就是說引入了以後我們的整個的抽象建模知識網絡分成了兩成"
+    },
+    {
+      "start": 242.96,
+      "end": 247.32,
+      "text": "原來的一層的知識網絡更多的是面向知識點和知識素材的"
+    },
+    {
+      "start": 247.58,
+      "end": 251.16,
+      "text": "新構建的這一層知識網絡是面向任務和解決方案的"
+    },
+    {
+      "start": 251.42,
+      "end": 256.28,
+      "text": "同時這兩層知識網絡之間又形成了相負調用和依賴的基層關係"
+    },
+    {
+      "start": 257.04,
+      "end": 261.4,
+      "text": "這樣我們構建出來的完整的本體模型它才是真正的面向場景"
+    },
+    {
+      "start": 261.66,
+      "end": 264.74,
+      "text": "能夠解決我們業務問題帶來業務價值的本體模型"
+    },
+    {
+      "start": 265.5,
+      "end": 268.06,
+      "text": "好了今天關於圖工程簡單的分享就到這裡"
+    },
+    {
+      "start": 268.58,
+      "end": 269.08,
+      "text": "再見"
+    }
+  ],
+  "artifacts": {
+    "note": "从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+    "frames": [
+      "assets/bilibili-BV1b3MD6jENw-frame-0001.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0002.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0003.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0004.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0005.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0006.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0007.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0008.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0009.webp",
+      "assets/bilibili-BV1b3MD6jENw-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-08-08T11:46:49.741447+00:00"
+}
