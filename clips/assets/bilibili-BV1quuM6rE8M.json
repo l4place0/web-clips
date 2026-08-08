@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1232,5 +1232,508 @@
       "assets/bilibili-BV1quuM6rE8M-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:51:10.939026+00:00"
+  "updated_at": "2026-08-08T12:44:40.315656+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1quuM6rE8M",
+    "domain": "Agent Skills for Vercel, React/React Native engineering, web review, documentation, and deployment",
+    "glossary": [
+      {
+        "term": "Agent Skills",
+        "note": "Packaged instructions, scripts, and references that an agent can select for specialized work."
+      },
+      {
+        "term": "Vercel Optimization",
+        "note": "Skill described as analyzing performance and cost optimization opportunities."
+      },
+      {
+        "term": "React Best Practices",
+        "note": "Skill containing Vercel engineering guidance for React performance."
+      },
+      {
+        "term": "Web Design Guidelines",
+        "note": "Web-quality review skill covering accessibility and other design checks."
+      },
+      {
+        "term": "ARIA",
+        "note": "Accessible Rich Internet Applications attributes used by assistive technology."
+      },
+      {
+        "term": "Vercel Deploy Claimable",
+        "note": "Skill described as creating a deployment that can later be claimed by a Vercel account."
+      },
+      {
+        "term": "Boolean props",
+        "note": "Boolean component inputs; many such props can create hard-to-manage combinations."
+      }
+    ],
+    "note": "Timestamps and meaning are preserved; uncertain identifier reconstruction is marked.",
+    "corrections": [
+      {
+        "timestamp": "00:10",
+        "from": "Verso",
+        "to": "Vercel",
+        "reason": "Correct recurring company-name ASR error.",
+        "confidence": 1.0,
+        "occurrences": 3
+      },
+      {
+        "timestamp": "00:59",
+        "from": "Versal",
+        "to": "Vercel",
+        "reason": "Correct recurring company-name ASR error.",
+        "confidence": 1.0,
+        "occurrences": 4
+      },
+      {
+        "timestamp": "05:07",
+        "from": "Verse Odeplot Claimable",
+        "to": "Vercel Deploy Claimable",
+        "reason": "Normalize named deployment skill.",
+        "confidence": 0.96,
+        "occurrences": 3
+      },
+      {
+        "timestamp": "06:29",
+        "from": "Verse Optimize",
+        "to": "Vercel Optimization",
+        "reason": "Normalize the optimization skill name.",
+        "confidence": 0.94,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "00:28",
+        "from": "通财",
+        "to": "通才",
+        "reason": "Correct homophone.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "00:31",
+        "from": "什么都会一点蛋都不惊",
+        "to": "什么都会一点，但都不精",
+        "reason": "Restore the idiomatic contrast.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "00:43",
+        "from": "AI加在后",
+        "to": "AI加载后",
+        "reason": "Correct word boundary.",
+        "confidence": 0.97,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "01:05",
+        "from": "心头意景",
+        "to": "心头一紧",
+        "reason": "Restore idiom.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "01:53",
+        "from": "架效教练坐在副架",
+        "to": "驾校教练坐在副驾",
+        "reason": "Correct multiple homophones in the driving analogy.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:06",
+        "from": "WAPDesign Guidelines",
+        "to": "Web Design Guidelines",
+        "reason": "Normalize the named skill.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:08",
+        "from": "网页设计制检员",
+        "to": "网页设计质检员",
+        "reason": "Correct homophone.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:11",
+        "from": "市账用户",
+        "to": "视障用户",
+        "reason": "Accessibility context.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:14",
+        "from": "屏幕越独气",
+        "to": "屏幕阅读器",
+        "reason": "Accessibility technology term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:16",
+        "from": "Orea标签",
+        "to": "ARIA 标签",
+        "reason": "Web accessibility term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:07",
+        "from": "代码快",
+        "to": "代码块",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:12",
+        "from": "指引号",
+        "to": "直引号",
+        "reason": "Typography term contrasted with curly quotes.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:14",
+        "from": "AI写作轮理",
+        "to": "AI 写作伦理",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:26",
+        "from": "一动端",
+        "to": "移动端",
+        "reason": "Correct missing syllable.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:30",
+        "from": "性能坑俱多",
+        "to": "性能坑巨多",
+        "reason": "Correct character substitution.",
+        "confidence": 0.95,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:32",
+        "from": "幸充充",
+        "to": "兴冲冲",
+        "reason": "Restore idiom.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:37",
+        "from": "动画调真",
+        "to": "动画掉帧",
+        "reason": "Mobile performance context.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "03:45",
+        "from": "Flashlist",
+        "to": "FlashList",
+        "reason": "Normalize library name.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:22",
+        "from": "PPT10+切换效果",
+        "to": "PPT 添加切换效果",
+        "reason": "Correct malformed phrase.",
+        "confidence": 0.94,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:31",
+        "from": "AppRotter",
+        "to": "App Router",
+        "reason": "Next.js term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:34",
+        "from": "组建设计模式",
+        "to": "组件设计模式",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:38",
+        "from": "probes",
+        "to": "props",
+        "reason": "React component property term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:41",
+        "from": "List Large,List Disabled,List Loading,List Active",
+        "to": "isLarge, isDisabled, isLoading, isActive",
+        "reason": "Likely Boolean prop examples; exact identifiers are inferred from context.",
+        "confidence": 0.84,
+        "occurrences": 1,
+        "uncertain": true
+      },
+      {
+        "timestamp": "04:45",
+        "from": "布尔值地域",
+        "to": "布尔值地狱",
+        "reason": "Standard “boolean prop hell” phrase.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:51",
+        "from": "玩乐膏",
+        "to": "玩乐高",
+        "reason": "Restore LEGO analogy.",
+        "confidence": 0.99,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:02",
+        "from": "Bullion Props",
+        "to": "Boolean props",
+        "reason": "React terminology.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:11",
+        "from": "不属上线",
+        "to": "部署上线",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:17",
+        "from": "Wit",
+        "to": "Vite",
+        "reason": "Frontend build tool.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:23",
+        "from": "部属",
+        "to": "部署",
+        "reason": "Correct recurring homophone.",
+        "confidence": 1.0,
+        "occurrences": 2
+      },
+      {
+        "timestamp": "05:31",
+        "from": "四不搞定",
+        "to": "四步搞定",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:43",
+        "from": "三不搞定",
+        "to": "三步搞定",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:45",
+        "from": "中端",
+        "to": "终端",
+        "reason": "Command-line context.",
+        "confidence": 1.0,
+        "occurrences": 2
+      },
+      {
+        "timestamp": "06:02",
+        "from": "按一亮加",
+        "to": "按音量加",
+        "reason": "Remote-control analogy.",
+        "confidence": 0.96,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:10",
+        "from": "说不属到线上",
+        "to": "说部署到线上",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:40",
+        "from": "主行审查",
+        "to": "逐行审查",
+        "reason": "Document-review context.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:48",
+        "from": "太声硬",
+        "to": "太生硬",
+        "reason": "Correct homophone.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:22",
+        "from": "人工复合",
+        "to": "人工复核",
+        "reason": "Review context.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:58",
+        "from": "全战专家",
+        "to": "全栈专家",
+        "reason": "Software-engineering term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:19",
+        "from": "上传到Verse Odeplot",
+        "to": "上传到Vercel Deploy",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:28",
+        "from": "Verse Odeplot账号",
+        "to": "Vercel Deploy账号",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:27",
+        "from": "Verse O 帐单飙升",
+        "to": "Vercel 帐单飙升",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:14",
+        "from": "部署技能依赖Verse O 平台",
+        "to": "部署技能依赖Vercel 平台",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:16",
+        "from": "非Verse O 项目",
+        "to": "非Vercel 项目",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:27",
+        "from": "上传到Verse O 服务器",
+        "to": "上传到Vercel 服务器",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:32",
+        "from": "跟随Verse O 实践更新",
+        "to": "跟随Vercel 实践更新",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:44",
+        "from": "Verse O 把内部",
+        "to": "Vercel 把内部",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:58",
+        "from": "Verse O",
+        "to": "Vercel",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "01:35",
+        "from": "React组建",
+        "to": "React 组件",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:34",
+        "from": "组建设计模式",
+        "to": "组件设计模式",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:38",
+        "from": "React组建",
+        "to": "React 组件",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "04:49",
+        "from": "拥种组建",
+        "to": "拥种组件",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:04",
+        "from": "React 组建",
+        "to": "React 组件",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:22",
+        "from": "React 组建",
+        "to": "React 组件",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "06:52",
+        "from": "组建 Props",
+        "to": "组件 Props",
+        "reason": "Timestamp-specific ASR normalization; avoids overlapping replacement counts.",
+        "confidence": 1.0,
+        "occurrences": 1
+      }
+    ]
+  }
 }

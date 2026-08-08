@@ -31,7 +31,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -4042,5 +4042,775 @@
       "assets/bilibili-BV1qDuJ6GEnc-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:42:26.886139+00:00"
+  "updated_at": "2026-08-08T12:43:39.673734+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1qDuJ6GEnc",
+    "domain": "Unity 游戏代码架构、模块解耦、依赖注入、事件总线与 AI 代码复审",
+    "glossary": [
+      {
+        "term": "Framework",
+        "meaning": "复用的程序基础设施与架构约束。"
+      },
+      {
+        "term": "Luban",
+        "meaning": "游戏配置数据解决方案/数据管线工具。"
+      },
+      {
+        "term": "asmdef",
+        "meaning": "Unity Assembly Definition，用于划分程序集并约束依赖。"
+      },
+      {
+        "term": "3C",
+        "meaning": "游戏开发常指 Character、Camera、Control（具体边界依项目而定）。"
+      },
+      {
+        "term": "Event Bus",
+        "meaning": "用发布/订阅间接通信，减少模块之间的直接引用。"
+      },
+      {
+        "term": "DI / 依赖倒置",
+        "meaning": "让高层逻辑依赖抽象，并通过注入提供具体实现。"
+      },
+      {
+        "term": "Service Locator",
+        "meaning": "从统一注册表按类型/键获取服务的模式，视频也指出其调用链不透明。"
+      },
+      {
+        "term": "Code Review",
+        "meaning": "依据架构、性能、可维护性等规则检查代码。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:11",
+        "original": "代码的这个股价约束",
+        "corrected": "代码的这个骨架约束",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "01:49",
+        "original": "代码的这个股价",
+        "corrected": "代码的这个骨架",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "00:31",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "00:35",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "01:06",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "01:10",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "01:27",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "03:19",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "06:06",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "06:13",
+        "original": "farmwork",
+        "corrected": "framework",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "01:00",
+        "original": "tour",
+        "corrected": "tool",
+        "confidence": "high",
+        "note": "Speaker spells t-o-o-l."
+      },
+      {
+        "timestamp": "06:15",
+        "original": "tour",
+        "corrected": "tool",
+        "confidence": "high",
+        "note": "Speaker spells t-o-o-l."
+      },
+      {
+        "timestamp": "06:23",
+        "original": "tour",
+        "corrected": "tool",
+        "confidence": "high",
+        "note": "Speaker spells t-o-o-l."
+      },
+      {
+        "timestamp": "01:42",
+        "original": "毛块",
+        "corrected": "模块",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "01:46",
+        "original": "毛块",
+        "corrected": "模块",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "01:53",
+        "original": "毛块",
+        "corrected": "模块",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "01:57",
+        "original": "互相吼和",
+        "corrected": "互相耦合",
+        "confidence": "high",
+        "note": "Software architecture term."
+      },
+      {
+        "timestamp": "00:21",
+        "original": "更加的清洗可维护",
+        "corrected": "更加的清晰、可维护",
+        "confidence": "high",
+        "note": "Contextual homophone error."
+      },
+      {
+        "timestamp": "00:50",
+        "original": "很多都是附用的",
+        "corrected": "很多都是复用的",
+        "confidence": "high",
+        "note": "Software reuse context."
+      },
+      {
+        "timestamp": "02:01",
+        "original": "代码又清洗",
+        "corrected": "代码又清晰",
+        "confidence": "high",
+        "note": "Contextual homophone error."
+      },
+      {
+        "timestamp": "02:14",
+        "original": "代码超差不会超过1000毫",
+        "corrected": "代码总长不会超过1000行",
+        "confidence": "high",
+        "note": "Context and unit restoration."
+      },
+      {
+        "timestamp": "05:20",
+        "original": "数据广线",
+        "corrected": "数据管线",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "03:02",
+        "original": "卢班",
+        "corrected": "Luban",
+        "confidence": "high",
+        "note": "Game configuration/data framework name."
+      },
+      {
+        "timestamp": "03:12",
+        "original": "卢班",
+        "corrected": "Luban",
+        "confidence": "high",
+        "note": "Game configuration/data framework name."
+      },
+      {
+        "timestamp": "03:54",
+        "original": "预知体",
+        "corrected": "预制体",
+        "confidence": "high",
+        "note": "Unity term prefab/预制体."
+      },
+      {
+        "timestamp": "04:32",
+        "original": "拖债",
+        "corrected": "拖拽",
+        "confidence": "high",
+        "note": "UI interaction term."
+      },
+      {
+        "timestamp": "04:44",
+        "original": "换皮小一些",
+        "corrected": "换皮小游戏",
+        "confidence": "high",
+        "note": "Context restoration."
+      },
+      {
+        "timestamp": "04:57",
+        "original": "换皮小一些",
+        "corrected": "换皮小游戏",
+        "confidence": "high",
+        "note": "Context restoration."
+      },
+      {
+        "timestamp": "05:36",
+        "original": "区体的这种代码",
+        "corrected": "具体的这种代码",
+        "confidence": "high",
+        "note": "Recognition error."
+      },
+      {
+        "timestamp": "05:41",
+        "original": "sminify",
+        "corrected": "asmdef",
+        "confidence": "medium",
+        "note": "Likely Unity Assembly Definition file; pronunciation is ambiguous."
+      },
+      {
+        "timestamp": "05:41",
+        "original": "程序级定义",
+        "corrected": "程序集定义",
+        "confidence": "high",
+        "note": "Unity/.NET term."
+      },
+      {
+        "timestamp": "05:44",
+        "original": "程序级定义",
+        "corrected": "程序集定义",
+        "confidence": "high",
+        "note": "Unity/.NET term."
+      },
+      {
+        "timestamp": "06:20",
+        "original": "法国来",
+        "corrected": "反过来",
+        "confidence": "high",
+        "note": "Recognition error."
+      },
+      {
+        "timestamp": "06:41",
+        "original": "鸿和",
+        "corrected": "耦合",
+        "confidence": "high",
+        "note": "Architecture term."
+      },
+      {
+        "timestamp": "07:54",
+        "original": "invinterbars",
+        "corrected": "Event Bus",
+        "confidence": "medium",
+        "note": "Likely English term from context; uncertain original pronunciation."
+      },
+      {
+        "timestamp": "07:57",
+        "original": "事件走线",
+        "corrected": "事件总线",
+        "confidence": "high",
+        "note": "Standard architecture term."
+      },
+      {
+        "timestamp": "08:24",
+        "original": "戴板里面",
+        "corrected": "代码里面",
+        "confidence": "medium",
+        "note": "Context suggests opening code; uncertain."
+      },
+      {
+        "timestamp": "13:55",
+        "original": "文件甲",
+        "corrected": "文件夹",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "11:00",
+        "original": "依赖道志",
+        "corrected": "依赖倒置",
+        "confidence": "high",
+        "note": "SOLID dependency inversion principle."
+      },
+      {
+        "timestamp": "11:09",
+        "original": "zagent",
+        "corrected": "Zenject",
+        "confidence": "medium",
+        "note": "Likely Unity dependency injection framework; uncertain."
+      },
+      {
+        "timestamp": "11:11",
+        "original": "di的是容器",
+        "corrected": "DI 容器",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "11:30",
+        "original": "服务器定位",
+        "corrected": "服务定位器",
+        "confidence": "high",
+        "note": "Service Locator pattern."
+      },
+      {
+        "timestamp": "12:03",
+        "original": "购杂函数",
+        "corrected": "构造函数",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "12:11",
+        "original": "购杂函数",
+        "corrected": "构造函数",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "12:28",
+        "original": "购杂函数",
+        "corrected": "构造函数",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "09:08",
+        "original": "iplayerinterhost",
+        "corrected": "IPlayerInteractorHost",
+        "confidence": "medium",
+        "note": "Likely interface identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "10:07",
+        "original": "iplayerinterhost",
+        "corrected": "IPlayerInteractorHost",
+        "confidence": "medium",
+        "note": "Likely interface identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "09:22",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "09:31",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "10:07",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "10:17",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "10:29",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "10:31",
+        "original": "placontroller",
+        "corrected": "PlayerController",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "09:50",
+        "original": "playerinterrector",
+        "corrected": "PlayerInteractor",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "09:59",
+        "original": "playerinterrector",
+        "corrected": "PlayerInteractor",
+        "confidence": "medium",
+        "note": "Likely class identifier from the code shown; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "11:34",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "11:38",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "11:51",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "11:53",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "15:22",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "15:23",
+        "original": "字点",
+        "corrected": "字典",
+        "confidence": "high",
+        "note": "Key/value container context."
+      },
+      {
+        "timestamp": "11:45",
+        "original": "s讨论对应的这个接口",
+        "corrected": "cast 成对应的这个接口",
+        "confidence": "medium",
+        "note": "Likely English “cast”; uncertain."
+      },
+      {
+        "timestamp": "12:19",
+        "original": "雕像链",
+        "corrected": "调用链",
+        "confidence": "high",
+        "note": "Standard debugging term."
+      },
+      {
+        "timestamp": "12:23",
+        "original": "雕像链",
+        "corrected": "调用链",
+        "confidence": "high",
+        "note": "Standard debugging term."
+      },
+      {
+        "timestamp": "13:52",
+        "original": "eventverse",
+        "corrected": "Event Bus",
+        "confidence": "medium",
+        "note": "Standard term from context; uncertain pronunciation."
+      },
+      {
+        "timestamp": "13:55",
+        "original": "eventverse",
+        "corrected": "Event Bus",
+        "confidence": "medium",
+        "note": "Standard term from context; uncertain pronunciation."
+      },
+      {
+        "timestamp": "14:07",
+        "original": "comunication",
+        "corrected": "communication",
+        "confidence": "high",
+        "note": "English spelling."
+      },
+      {
+        "timestamp": "14:33",
+        "original": "comunication",
+        "corrected": "communication",
+        "confidence": "high",
+        "note": "English spelling."
+      },
+      {
+        "timestamp": "14:18",
+        "original": "子魔块",
+        "corrected": "子模块",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "10:53",
+        "original": "世界总线",
+        "corrected": "事件总线",
+        "confidence": "high",
+        "note": "Context repeatedly discusses Event Bus."
+      },
+      {
+        "timestamp": "15:46",
+        "original": "世界总线",
+        "corrected": "事件总线",
+        "confidence": "high",
+        "note": "Context repeatedly discusses Event Bus."
+      },
+      {
+        "timestamp": "15:49",
+        "original": "世界总线",
+        "corrected": "事件总线",
+        "confidence": "high",
+        "note": "Context repeatedly discusses Event Bus."
+      },
+      {
+        "timestamp": "15:52",
+        "original": "世界总线",
+        "corrected": "事件总线",
+        "confidence": "high",
+        "note": "Context repeatedly discusses Event Bus."
+      },
+      {
+        "timestamp": "15:08",
+        "original": "权聚和局部总线",
+        "corrected": "全局和局部总线",
+        "confidence": "high",
+        "note": "Homophone recognition error."
+      },
+      {
+        "timestamp": "15:56",
+        "original": "实力",
+        "corrected": "实例",
+        "confidence": "high",
+        "note": "Programming term."
+      },
+      {
+        "timestamp": "16:02",
+        "original": "纯charm cool",
+        "corrected": "纯 C# code",
+        "confidence": "medium",
+        "note": "Likely spoken “pure C-sharp code”; uncertain."
+      },
+      {
+        "timestamp": "16:23",
+        "original": "Idias portable",
+        "corrected": "IDisposable",
+        "confidence": "medium",
+        "note": "Likely .NET disposal interface; uncertain pronunciation."
+      },
+      {
+        "timestamp": "16:42",
+        "original": "attack a model",
+        "corrected": "AttackModel",
+        "confidence": "medium",
+        "note": "Likely code identifier; exact spelling/casing uncertain."
+      },
+      {
+        "timestamp": "17:00",
+        "original": "伤害调子",
+        "corrected": "伤害数字",
+        "confidence": "medium",
+        "note": "Likely UI damage-number event; uncertain."
+      },
+      {
+        "timestamp": "17:05",
+        "original": "伤害调子",
+        "corrected": "伤害数字",
+        "confidence": "medium",
+        "note": "Likely UI damage-number event; uncertain."
+      },
+      {
+        "timestamp": "17:07",
+        "original": "想应",
+        "corrected": "响应",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "17:09",
+        "original": "想应",
+        "corrected": "响应",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "17:44",
+        "original": "Evans的Bus",
+        "corrected": "Event Bus",
+        "confidence": "medium",
+        "note": "English term from context."
+      },
+      {
+        "timestamp": "17:51",
+        "original": "Evans的Bus",
+        "corrected": "Event Bus",
+        "confidence": "medium",
+        "note": "English term from context."
+      },
+      {
+        "timestamp": "17:50",
+        "original": "Innerface",
+        "corrected": "Interface",
+        "confidence": "high",
+        "note": "English term."
+      },
+      {
+        "timestamp": "18:40",
+        "original": "coded review",
+        "corrected": "code review",
+        "confidence": "high",
+        "note": "English term."
+      },
+      {
+        "timestamp": "18:46",
+        "original": "coded review",
+        "corrected": "code review",
+        "confidence": "high",
+        "note": "English term."
+      },
+      {
+        "timestamp": "19:03",
+        "original": "coded review",
+        "corrected": "code review",
+        "confidence": "high",
+        "note": "English term."
+      },
+      {
+        "timestamp": "19:23",
+        "original": "性能的预算",
+        "corrected": "性能预算",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "19:28",
+        "original": "每天都去update",
+        "corrected": "每帧都在 Update",
+        "confidence": "high",
+        "note": "Unity frame loop context."
+      },
+      {
+        "timestamp": "19:29",
+        "original": "去扭一个这个堆",
+        "corrected": "去 new 一个堆",
+        "confidence": "high",
+        "note": "English new / heap allocation context."
+      },
+      {
+        "timestamp": "19:44",
+        "original": "每一针",
+        "corrected": "每一帧",
+        "confidence": "high",
+        "note": "Unity frame term."
+      },
+      {
+        "timestamp": "19:45",
+        "original": "战内",
+        "corrected": "栈内",
+        "confidence": "high",
+        "note": "Memory term."
+      },
+      {
+        "timestamp": "20:46",
+        "original": "样率测试",
+        "corrected": "压力测试",
+        "confidence": "medium",
+        "note": "Likely performance/stress testing; uncertain."
+      },
+      {
+        "timestamp": "21:10",
+        "original": "英文的bus",
+        "corrected": "Event Bus",
+        "confidence": "high",
+        "note": "Architecture term."
+      },
+      {
+        "timestamp": "21:11",
+        "original": "中间筹检",
+        "corrected": "中间层",
+        "confidence": "medium",
+        "note": "Context restoration; uncertain exact wording."
+      },
+      {
+        "timestamp": "22:11",
+        "original": "远离一下",
+        "corrected": "Review 一下",
+        "confidence": "medium",
+        "note": "Code-review context; uncertain."
+      },
+      {
+        "timestamp": "23:14",
+        "original": "运气天然",
+        "corrected": "Unity",
+        "confidence": "high",
+        "note": "Game engine name."
+      },
+      {
+        "timestamp": "23:11",
+        "original": "tess",
+        "corrected": "Test",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "23:17",
+        "original": "tess",
+        "corrected": "Test",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "23:25",
+        "original": "tess",
+        "corrected": "Test",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "23:38",
+        "original": "tess",
+        "corrected": "Test",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "23:39",
+        "original": "tess",
+        "corrected": "Test",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "23:53",
+        "original": "安全面界",
+        "corrected": "安全边界",
+        "confidence": "high",
+        "note": "Standard term."
+      }
+    ],
+    "uncertainty_policy": "Only high/medium-confidence terminology and clear homophone errors were changed. Unresolved identifiers or unclear speech remain as transcribed; uncertain changes are explicitly marked."
+  }
 }

@@ -30,7 +30,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1741,5 +1741,329 @@
       "assets/bilibili-BV1FMgr6LEUo-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:45:33.907599+00:00"
+  "updated_at": "2026-08-08T12:43:55.031743+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1FMgr6LEUo",
+    "domain": "AI 辅助编程、认知负荷、软件工程教育与代码审查",
+    "glossary": [
+      {
+        "term": "认知负荷",
+        "meaning": "工作记忆在完成任务时承担的心理处理负担。"
+      },
+      {
+        "term": "心智模型",
+        "meaning": "开发者对系统结构、状态和执行路径的内部表征。"
+      },
+      {
+        "term": "认知卸载",
+        "meaning": "把记忆或处理任务交给外部工具；视频称 AI 为外部记忆系统。"
+      },
+      {
+        "term": "Orchestrating agent",
+        "meaning": "视频中的“编排者”：利用 AI 生成能力，同时由人保持系统级判断。"
+      },
+      {
+        "term": "接口契约",
+        "meaning": "模块之间对输入、输出、状态与错误行为的明确约定。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:17",
+        "original": "你畫在閱讀",
+        "corrected": "你花在閱讀",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "00:40",
+        "original": "非常悉意的觀點",
+        "corrected": "非常新穎的觀點",
+        "confidence": "medium",
+        "note": "Likely intended adjective; uncertain."
+      },
+      {
+        "timestamp": "00:42",
+        "original": "AI 並沒有讓變成變簡單",
+        "corrected": "AI 並沒有讓編程變簡單",
+        "confidence": "high",
+        "note": "Title thesis restores 編程."
+      },
+      {
+        "timestamp": "00:44",
+        "original": "它只是讓變成變難得更不一樣了",
+        "corrected": "它只是讓編程變難得更不一樣了",
+        "confidence": "high",
+        "note": "Title thesis restores 編程."
+      },
+      {
+        "timestamp": "00:47",
+        "original": "仔細評慰一下",
+        "corrected": "仔細品味一下",
+        "confidence": "medium",
+        "note": "Contextual correction; exact verb uncertain."
+      },
+      {
+        "timestamp": "01:16",
+        "original": "抽箱概念",
+        "corrected": "抽象概念",
+        "confidence": "high",
+        "note": "Standard term."
+      },
+      {
+        "timestamp": "01:24",
+        "original": "記憶和回憶能力 計施編程的核心能力",
+        "corrected": "記憶和回憶能力即是編程的核心能力",
+        "confidence": "high",
+        "note": "Grammar/context restoration."
+      },
+      {
+        "timestamp": "01:34",
+        "original": "返回之類型",
+        "corrected": "返回值類型",
+        "confidence": "high",
+        "note": "Standard API term."
+      },
+      {
+        "timestamp": "01:37",
+        "original": "各種編界情況",
+        "corrected": "各種邊界情況",
+        "confidence": "high",
+        "note": "Standard software term."
+      },
+      {
+        "timestamp": "02:34",
+        "original": "70% 的經歷",
+        "corrected": "70% 的精力",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "03:02",
+        "original": "會變成這件事正在被重新定義",
+        "corrected": "會編程這件事正在被重新定義",
+        "confidence": "high",
+        "note": "Context restoration."
+      },
+      {
+        "timestamp": "03:15",
+        "original": "主意展開來說",
+        "corrected": "逐一展開來說",
+        "confidence": "high",
+        "note": "Context restoration."
+      },
+      {
+        "timestamp": "03:57",
+        "original": "是否意欲維護",
+        "corrected": "是否易於維護",
+        "confidence": "high",
+        "note": "Standard phrase."
+      },
+      {
+        "timestamp": "04:14",
+        "original": "會在高頻發下全面崩潰",
+        "corrected": "會在高併發下全面崩潰",
+        "confidence": "high",
+        "note": "Standard software term."
+      },
+      {
+        "timestamp": "04:43",
+        "original": "某個喊出的簽名",
+        "corrected": "某個函數的簽名",
+        "confidence": "high",
+        "note": "Standard programming term."
+      },
+      {
+        "timestamp": "04:50",
+        "original": "這些卡點雖然凡人",
+        "corrected": "這些卡點雖然煩人",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "05:29",
+        "original": "花1個小時驗證和修證",
+        "corrected": "花1個小時驗證和修正",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "06:19",
+        "original": "架構設計 接口契約 狀態管理",
+        "corrected": "架構設計、接口契約、狀態管理",
+        "confidence": "high",
+        "note": "Punctuation only."
+      },
+      {
+        "timestamp": "06:22",
+        "original": "故障模式分析 約束協商 測試構建",
+        "corrected": "故障模式分析、約束協商、測試構建",
+        "confidence": "high",
+        "note": "Punctuation only."
+      },
+      {
+        "timestamp": "06:25",
+        "original": "安全性思維 長期可為互信",
+        "corrected": "安全性思維、長期可維護性",
+        "confidence": "medium",
+        "note": "Last phrase is inferred from software-engineering context; uncertain."
+      },
+      {
+        "timestamp": "05:58",
+        "original": "去教學審",
+        "corrected": "去教學生",
+        "confidence": "medium",
+        "note": "Sentence continues with language/framework details; exact wording uncertain."
+      },
+      {
+        "timestamp": "06:28",
+        "original": "靠實際應變的學會",
+        "corrected": "靠實踐一遍就學會",
+        "confidence": "medium",
+        "note": "Contextual restoration; exact wording uncertain."
+      },
+      {
+        "timestamp": "07:22",
+        "original": "完整性和意志性",
+        "corrected": "完整性和一致性",
+        "confidence": "high",
+        "note": "Standard system-quality phrase."
+      },
+      {
+        "timestamp": "07:40",
+        "original": "不是大字最快的人",
+        "corrected": "不是打字最快的人",
+        "confidence": "high",
+        "note": "Homophone error."
+      },
+      {
+        "timestamp": "07:43",
+        "original": "保持深度思維模型",
+        "corrected": "保持深度心智模型",
+        "confidence": "high",
+        "note": "Standard cognitive term."
+      },
+      {
+        "timestamp": "07:50",
+        "original": "一種認知假知",
+        "corrected": "一種認知假肢",
+        "confidence": "medium",
+        "note": "Likely metaphor “cognitive prosthesis”; uncertain."
+      },
+      {
+        "timestamp": "08:20",
+        "original": "多個遲度",
+        "corrected": "多個維度",
+        "confidence": "high",
+        "note": "Homophone/recognition error."
+      },
+      {
+        "timestamp": "08:40",
+        "original": "傳統變成中",
+        "corrected": "傳統編程中",
+        "confidence": "high",
+        "note": "Repeated 編程 recognition error."
+      },
+      {
+        "timestamp": "09:06",
+        "original": "這是變成這個行業",
+        "corrected": "這是編程這個行業",
+        "confidence": "high",
+        "note": "Repeated 編程 recognition error."
+      },
+      {
+        "timestamp": "09:11",
+        "original": "從監所遷移到了推理",
+        "corrected": "從記憶遷移到了推理",
+        "confidence": "high",
+        "note": "Thesis/context restoration."
+      },
+      {
+        "timestamp": "09:39",
+        "original": "不可豁缺",
+        "corrected": "不可或缺",
+        "confidence": "high",
+        "note": "Fixed phrase."
+      },
+      {
+        "timestamp": "11:29",
+        "original": "想架構決策質量",
+        "corrected": "像架構決策質量",
+        "confidence": "medium",
+        "note": "Likely list-introducing “像”; uncertain."
+      },
+      {
+        "timestamp": "11:31",
+        "original": "系統及思維能力",
+        "corrected": "系統級思維能力",
+        "confidence": "high",
+        "note": "Standard phrase."
+      },
+      {
+        "timestamp": "11:53",
+        "original": "既沒有茂木吹捧",
+        "corrected": "既沒有盲目吹捧",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "12:16",
+        "original": "過去平緊在",
+        "corrected": "過去瓶頸在",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "12:19",
+        "original": "現在平緊在",
+        "corrected": "現在瓶頸在",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "12:26",
+        "original": "重複和備送",
+        "corrected": "重複和背誦",
+        "confidence": "high",
+        "note": "Education/training context."
+      },
+      {
+        "timestamp": "12:55",
+        "original": "在心範時下",
+        "corrected": "在新範式下",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "07:34",
+        "original": "Orchestrating agent 也就是編排者",
+        "corrected": "Orchestrating agent，也就是編排者",
+        "confidence": "high",
+        "note": "Punctuation only."
+      },
+      {
+        "timestamp": "09:01",
+        "original": "從基於回憶的變成",
+        "corrected": "從基於回憶的編程",
+        "confidence": "medium",
+        "note": "Context restoration; exact ending uncertain."
+      },
+      {
+        "timestamp": "09:03",
+        "original": "轉向基於判斷的變成",
+        "corrected": "轉向基於判斷的編程",
+        "confidence": "medium",
+        "note": "Context restoration; exact ending uncertain."
+      },
+      {
+        "timestamp": "12:03",
+        "original": "從會邊語言到高級語言",
+        "corrected": "從彙編語言到高級語言",
+        "confidence": "high",
+        "note": "Historical programming-language transition."
+      }
+    ],
+    "uncertainty_policy": "Only high/medium-confidence terminology and clear homophone errors were changed. Unresolved identifiers or unclear speech remain as transcribed; uncertain changes are explicitly marked."
+  }
 }

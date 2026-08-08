@@ -35,7 +35,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -2921,5 +2921,158 @@
       "assets/bilibili-BV1P93h6oEta-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:54:50.395215+00:00"
+  "updated_at": "2026-08-08T12:44:55.521271+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1P93h6oEta",
+    "domain": "AI-agent planning for large, multi-session projects and issue-tracker-based decision management",
+    "glossary": [
+      {
+        "term": "Wayfinder",
+        "note": "The single skill demonstrated for mapping uncertain multi-session work."
+      },
+      {
+        "term": "map",
+        "note": "The parent representation of a destination, decision tickets, dependencies, and resolved decisions."
+      },
+      {
+        "term": "frontier",
+        "note": "Tickets or decisions currently actionable given resolved dependencies."
+      },
+      {
+        "term": "fog",
+        "note": "Questions that cannot yet be decided because evidence, research, prototypes, or discussion are missing."
+      },
+      {
+        "term": "decision ticket",
+        "note": "A research, prototype, grilling, or task ticket used to resolve planning uncertainty."
+      },
+      {
+        "term": "implementation ticket",
+        "note": "A later unit of implementation work derived from the completed map/spec."
+      },
+      {
+        "term": "grilling session",
+        "note": "An agent-led interview used to clarify requirements and decisions."
+      }
+    ],
+    "note": "The captured transcript from 00:00 through 01:09 is unusable ASR output (Chinese repetitions over English speech). Each timestamp is preserved and explicitly marked unreliable rather than guessed.",
+    "corrections": [
+      {
+        "timestamp": "00:00–01:09",
+        "from": "Chinese repetition artifacts produced over English speech",
+        "to": "[ASR unreliable; wording not recoverable from the captured transcript]",
+        "reason": "The source transcript is semantically unusable; guessing would invent content.",
+        "confidence": 1.0,
+        "occurrences": 30,
+        "uncertain": true
+      },
+      {
+        "timestamp": "03:35",
+        "from": "frontierof",
+        "to": "frontier of",
+        "reason": "Repair merged ASR token.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:34",
+        "from": "set up mappokal skills",
+        "to": "setup-matt-pocock-skills",
+        "reason": "The official Wayfinder documentation names setup-matt-pocock-skills as the tracker-configuration prerequisite.",
+        "confidence": 0.95,
+        "occurrences": 1,
+        "uncertain": true
+      },
+      {
+        "timestamp": "05:47",
+        "from": "command pallet",
+        "to": "command palette",
+        "reason": "UI term.",
+        "confidence": 1.0,
+        "occurrences": 2
+      },
+      {
+        "timestamp": "06:48",
+        "from": "pallet information architecture",
+        "to": "palette information architecture",
+        "reason": "UI term.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:06",
+        "from": "clawed sub agent",
+        "to": "Claude subagent",
+        "reason": "Coding-agent name from context.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:18",
+        "from": "transpile lucid SVG",
+        "to": "transpile Lucide SVG",
+        "reason": "Likely icon-library name in an icon-picker task.",
+        "confidence": 0.92,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "09:49",
+        "from": "its detonation was a spec",
+        "to": "its destination was a spec",
+        "reason": "Wayfinder destination terminology.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "10:18",
+        "from": "github",
+        "to": "GitHub",
+        "reason": "Normalize product name.",
+        "confidence": 1.0,
+        "occurrences": 2
+      },
+      {
+        "timestamp": "10:34",
+        "from": "Gryll with Docs",
+        "to": "Grill with Docs",
+        "reason": "Normalize likely workflow/skill name; exact styling uncertain.",
+        "confidence": 0.82,
+        "occurrences": 3,
+        "uncertain": true
+      },
+      {
+        "timestamp": "10:41",
+        "from": "spendinga lot more timein",
+        "to": "spending a lot more time in",
+        "reason": "Repair merged words.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "11:40",
+        "from": "offrequently asked questions",
+        "to": "of frequently asked questions",
+        "reason": "Repair merged words.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "12:25",
+        "from": "it'scommissioning",
+        "to": "it's commissioning",
+        "reason": "Repair merged words.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "14:07",
+        "from": "I have foundWayfinder",
+        "to": "I have found Wayfinder",
+        "reason": "Repair merged words.",
+        "confidence": 1.0,
+        "occurrences": 1
+      }
+    ]
+  }
 }

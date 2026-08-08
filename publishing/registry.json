@@ -669,6 +669,48 @@
       "status": "active",
       "assignedAt": "2026-08-08T11:55:54.364Z",
       "everPublished": false
+    },
+    "5f59bd5e-640c-4ea5-a69b-6cbba80a93fd": {
+      "firstAssignedPath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "lastKnownSourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:57.471Z",
+      "everPublished": false
+    },
+    "88cddc7c-bac1-450a-907b-1248f664e180": {
+      "firstAssignedPath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:57.683Z",
+      "everPublished": false
+    },
+    "2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6": {
+      "firstAssignedPath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.258Z",
+      "everPublished": false
+    },
+    "9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05": {
+      "firstAssignedPath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "lastKnownSourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.608Z",
+      "everPublished": false
+    },
+    "90fdf633-f46c-4c4c-93bf-d5439262cfbb": {
+      "firstAssignedPath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "lastKnownSourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.885Z",
+      "everPublished": false
+    },
+    "7e20be39-c970-4823-b097-af7df0e5b5c2": {
+      "firstAssignedPath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "lastKnownSourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:59.230Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2057,6 +2099,42 @@
       "rid": "1e657d34-faeb-4dfc-9494-5896f0521efe",
       "at": "2026-08-08T11:55:54.364Z",
       "sourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "5f59bd5e-640c-4ea5-a69b-6cbba80a93fd",
+      "at": "2026-08-08T12:45:57.471Z",
+      "sourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "88cddc7c-bac1-450a-907b-1248f664e180",
+      "at": "2026-08-08T12:45:57.683Z",
+      "sourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6",
+      "at": "2026-08-08T12:45:58.258Z",
+      "sourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05",
+      "at": "2026-08-08T12:45:58.608Z",
+      "sourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "90fdf633-f46c-4c4c-93bf-d5439262cfbb",
+      "at": "2026-08-08T12:45:58.885Z",
+      "sourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7e20be39-c970-4823-b097-af7df0e5b5c2",
+      "at": "2026-08-08T12:45:59.230Z",
+      "sourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md"
     }
   ]
 }

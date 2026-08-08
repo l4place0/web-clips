@@ -29,7 +29,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -380,5 +380,136 @@
       "assets/bilibili-BV1b3MD6jENw-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:46:49.741447+00:00"
+  "updated_at": "2026-08-08T12:44:11.190517+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1b3MD6jENw",
+    "domain": "多智能体任务编排、图工程、知识图谱与本体建模",
+    "glossary": [
+      {
+        "term": "Loop Engineering",
+        "meaning": "以计划—执行—反思的循环迭代解决单一任务链。"
+      },
+      {
+        "term": "Graph Engineering",
+        "meaning": "把多任务及其依赖、约束、触发关系组织成面向解决方案的任务网络。"
+      },
+      {
+        "term": "GraphRAG",
+        "meaning": "用图结构增强检索与生成的技术范式；视频仅作概念类比。"
+      },
+      {
+        "term": "本体建模",
+        "meaning": "对领域概念、关系与规则进行抽象建模。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:00",
+        "original": "任月聊一題",
+        "corrected": "人月聊IT",
+        "confidence": "high",
+        "note": "Uploader metadata and frame watermark confirm the channel name."
+      },
+      {
+        "timestamp": "00:07",
+        "original": "Graphreg",
+        "corrected": "GraphRAG",
+        "confidence": "high",
+        "note": "Standard graph-based RAG term."
+      },
+      {
+        "timestamp": "00:19",
+        "original": "簡單的柔和",
+        "corrected": "簡單的糅合",
+        "confidence": "high",
+        "note": "Contextual homophone correction."
+      },
+      {
+        "timestamp": "00:34",
+        "original": "面向任務面線解決方案",
+        "corrected": "面向任務、面向解決方案",
+        "confidence": "high",
+        "note": "Parallel phrase restored."
+      },
+      {
+        "timestamp": "02:43",
+        "original": "有相負的制約",
+        "corrected": "有相互的制約",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "02:58",
+        "original": "供應鏈中段",
+        "corrected": "供應鏈中斷",
+        "confidence": "high",
+        "note": "Example concerns disruption analysis."
+      },
+      {
+        "timestamp": "03:18",
+        "original": "預警的損位",
+        "corrected": "預警的水位",
+        "confidence": "medium",
+        "note": "Likely inventory warning threshold; wording uncertain."
+      },
+      {
+        "timestamp": "03:55",
+        "original": "Graph Engineer人的",
+        "corrected": "Graph Engineering",
+        "confidence": "high",
+        "note": "English technical term."
+      },
+      {
+        "timestamp": "04:11",
+        "original": "相負調用",
+        "corrected": "相互調用",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "04:11",
+        "original": "基層關係",
+        "corrected": "基礎關係",
+        "confidence": "high",
+        "note": "Contextual recognition error."
+      },
+      {
+        "timestamp": "03:12",
+        "original": "相負制約影響",
+        "corrected": "相互制約影響",
+        "confidence": "high",
+        "note": "Same contextual ASR error as at 02:43."
+      },
+      {
+        "timestamp": "03:42",
+        "original": "天差半別",
+        "corrected": "天差地別",
+        "confidence": "high",
+        "note": "Standard idiom."
+      },
+      {
+        "timestamp": "03:57",
+        "original": "分成了兩成",
+        "corrected": "分成了兩層",
+        "confidence": "high",
+        "note": "Context describes a two-layer knowledge network."
+      },
+      {
+        "timestamp": "03:32",
+        "original": "如果我皮錢不去定義",
+        "corrected": "如果我提前不去定義",
+        "confidence": "medium",
+        "note": "Context indicates defining the task-solution graph in advance; audio wording is somewhat uncertain."
+      },
+      {
+        "timestamp": "03:37",
+        "original": "我把只這麼複雜的一個事情",
+        "corrected": "我把這麼複雜的一個事情",
+        "confidence": "high",
+        "note": "Remove spurious ASR particle."
+      }
+    ],
+    "uncertainty_policy": "Only high/medium-confidence terminology and clear homophone errors were changed. Unresolved identifiers or unclear speech remain as transcribed; uncertain changes are explicitly marked."
+  }
 }

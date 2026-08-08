@@ -30,7 +30,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1776,5 +1776,134 @@
       "assets/bilibili-BV1HnM269EV7-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T11:48:55.294845+00:00"
+  "updated_at": "2026-08-08T12:44:26.222864+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1HnM269EV7",
+    "domain": "AI-assisted software engineering and modular codebase architecture",
+    "glossary": [
+      {
+        "term": "deep module",
+        "note": "A module with substantial implementation hidden behind a small, simple interface."
+      },
+      {
+        "term": "gray-box module",
+        "note": "The implementation may be inspected, but normal use and verification rely on its interface and tests."
+      },
+      {
+        "term": "progressive disclosure of complexity",
+        "note": "Expose the public interface first and reveal implementation detail only when needed."
+      },
+      {
+        "term": "module boundary / seam",
+        "note": "A controlled interface separating one part of the system from another."
+      },
+      {
+        "term": "Effect",
+        "note": "The TypeScript library mentioned by the speaker in connection with modularization."
+      }
+    ],
+    "note": "Timestamps and sequence are preserved. Low-confidence changes are explicitly marked uncertain.",
+    "corrections": [
+      {
+        "timestamp": "00:12",
+        "from": "agents.md",
+        "to": "AGENTS.md",
+        "reason": "Normalize the agent-instruction filename.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:22",
+        "from": "what it seesis",
+        "to": "what it sees is",
+        "reason": "Repair a merged ASR token.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:24",
+        "from": "eachother",
+        "to": "each other",
+        "reason": "Repair a merged ASR token.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "02:59",
+        "from": "eachother",
+        "to": "each other",
+        "reason": "Repair a merged ASR token.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "01:51",
+        "from": "all of the located modules",
+        "to": "all of the related modules",
+        "reason": "Context is a conceptual map of related modules; likely ASR substitution.",
+        "confidence": 0.86,
+        "occurrences": 1,
+        "uncertain": true
+      },
+      {
+        "timestamp": "03:16",
+        "from": "control by a simple interface",
+        "to": "controlled by a simple interface",
+        "reason": "Restore the standard deep-module formulation.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:19",
+        "from": "understand\n[05:19] it's behavior",
+        "to": "understand\n[05:19] its behavior",
+        "reason": "Correct possessive form.",
+        "confidence": 1.0,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "05:44",
+        "from": "and gook\n[05:44] the AI",
+        "to": "and go, okay,\n[05:44] the AI",
+        "reason": "Likely phrase boundary from context; wording remains somewhat uncertain.",
+        "confidence": 0.78,
+        "occurrences": 1,
+        "uncertain": true
+      },
+      {
+        "timestamp": "07:11",
+        "from": "sort of boundaryed",
+        "to": "sort of bounded",
+        "reason": "Correct malformed ASR word.",
+        "confidence": 0.93,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:27",
+        "from": "seeming modularizing",
+        "to": "seaming and modularizing",
+        "reason": "The speaker is discussing architectural seams and modularization; uncertain exact wording.",
+        "confidence": 0.76,
+        "occurrences": 1,
+        "uncertain": true
+      },
+      {
+        "timestamp": "07:33",
+        "from": "how you're effecting them",
+        "to": "how you're affecting them",
+        "reason": "Correct homophone in the context of changed modules.",
+        "confidence": 0.98,
+        "occurrences": 1
+      },
+      {
+        "timestamp": "07:48",
+        "from": "modules that you're effecting",
+        "to": "modules that you're affecting",
+        "reason": "Correct homophone in the context of changed modules.",
+        "confidence": 0.98,
+        "occurrences": 1
+      }
+    ]
+  }
 }
