@@ -634,6 +634,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T11:43:31.154Z",
       "everPublished": false
+    },
+    "ccb5a9a8-b2b7-4916-b54e-48a3e08b5c8d": {
+      "firstAssignedPath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "lastKnownSourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:46:38.835Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1992,6 +1999,12 @@
       "rid": "02d95bbf-439c-4cc1-84e5-19b202c8a34f",
       "at": "2026-08-08T11:43:31.154Z",
       "sourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ccb5a9a8-b2b7-4916-b54e-48a3e08b5c8d",
+      "at": "2026-08-08T11:46:38.835Z",
+      "sourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md"
     }
   ]
 }
