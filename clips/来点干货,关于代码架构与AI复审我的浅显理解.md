@@ -75,11 +75,11 @@ flowchart TD
     E --> LOG[统计或日志]
 ```
 
-**AI 辅助推断：**选择标准不是“接口和事件总线谁更高级”，而是依赖是否应该可导航、响应者是否可能为多个，以及发布方是否应知道处理方。显式构造注入提高可追踪性；全局服务定位虽减少参数传递，却可能把真实依赖藏进运行期查找。
+**AI 辅助推断：** 选择标准不是“接口和事件总线谁更高级”，而是依赖是否应该可导航、响应者是否可能为多个，以及发布方是否应知道处理方。显式构造注入提高可追踪性；全局服务定位虽减少参数传递，却可能把真实依赖藏进运行期查找。
 
 ### 3. AI 复审应当是“规则执行器”，不是第二个拍脑袋的人
 
-**视频内容：**作者在 `SKILL.md` 中沉淀可读性、可维护性、可靠性证据、架构、依赖边界、Unity 约束等检查项。AI 先按照清单定位具体风险并给出修复建议，人工随后审查业务含义、补充测试并作最终判断。
+**视频内容：** 作者在 `SKILL.md` 中沉淀可读性、可维护性、可靠性证据、架构、依赖边界、Unity 约束等检查项。AI 先按照清单定位具体风险并给出修复建议，人工随后审查业务含义、补充测试并作最终判断。
 
 ![关键帧 3](assets/bilibili-BV1qDuJ6GEnc-frame-0003.webp)
 
@@ -106,13 +106,13 @@ AI 复审最适合先拦截以下问题：
 
 ### 4. 外部核验如何修正视频中的绝对表述
 
-**外部核验补充：**Unity 官方文档确认，Assembly Definition 可把脚本组织成独立程序集，并通过显式引用控制程序集依赖：[Unity Manual: Assembly definitions](https://docs.unity3d.com/2021.1/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html)。这支持视频“用 `asmdef` 固化模块边界”的做法。
+**外部核验补充：** Unity 官方文档确认，Assembly Definition 可把脚本组织成独立程序集，并通过显式引用控制程序集依赖：[Unity Manual: Assembly definitions](https://docs.unity3d.com/2021.1/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html)。这支持视频“用 `asmdef` 固化模块边界”的做法。
 
 视频把“在每帧 `Update` 中进行堆分配”说成完全不可行。更准确的表述是：持续的每帧临时分配会累积垃圾并增加 GC 成本，应尽量减少；是否造成不可接受的性能问题取决于分配量、平台、帧预算与运行时。[Unity Manual: Garbage collection best practices](https://docs.unity3d.com/2022.3/Documentation/Manual/performance-garbage-collection-best-practices.html)
 
 ### 5. 可复用的落地清单
 
-**AI 辅助推断：**把视频方法迁移到其他代码库时，可以依次检查：
+**AI 辅助推断：** 把视频方法迁移到其他代码库时，可以依次检查：
 
 1. 每个目录或包负责什么，边界能否用一句话说明？
 2. 依赖方向是否单向，能否由构建系统或包管理器检查？
