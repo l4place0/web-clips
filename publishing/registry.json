@@ -613,6 +613,13 @@
       "status": "active",
       "assignedAt": "2026-08-05T10:34:48.623Z",
       "everPublished": false
+    },
+    "7f38ffcf-ff84-41ba-a897-a42a44201559": {
+      "firstAssignedPath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "lastKnownSourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T09:40:44.183Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1953,6 +1960,12 @@
       "rid": "93edd8df-7936-4905-bcb2-8bcf0eb10159",
       "at": "2026-08-05T10:34:48.623Z",
       "sourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7f38ffcf-ff84-41ba-a897-a42a44201559",
+      "at": "2026-08-08T09:40:44.183Z",
+      "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
     }
   ]
 }

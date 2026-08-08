@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1786181496416-s24yi5u27",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786181496575-53zmaom",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1786181496404-574mbzi",
+      "timestamp": 1786181496404,
+      "rawDisplayText": "排队任务：【多Agent系统从Loop到Graph，从循环走向分权。】 https://www.bilibili.com/video/BV1gHuJ6AEnk/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "canonicalText": "排队任务：【多Agent系统从Loop到Graph，从循环走向分权。】 https://www.bilibili.com/video/BV1gHuJ6AEnk/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "context": {
+        "currentNote": {
+          "path": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "394b720669f4d6b211ef0578c41650c0ae7ca5b2f8abebb5d2054b935f7bf24b",
+      "providerUserMessageId": "019fe0b6-fdd3-7311-9ef5-1a237e83bc39"
+    }
+  ]
+}
