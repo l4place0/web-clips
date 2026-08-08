@@ -648,6 +648,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T11:47:54.472Z",
       "everPublished": false
+    },
+    "6bb9a372-9a0f-4c34-b325-66ef747cce29": {
+      "firstAssignedPath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:49:17.386Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2018,6 +2025,12 @@
       "rid": "66a74a03-3fd8-4a34-8436-edb68c6cca14",
       "at": "2026-08-08T11:47:54.472Z",
       "sourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6bb9a372-9a0f-4c34-b325-66ef747cce29",
+      "at": "2026-08-08T11:49:17.386Z",
+      "sourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md"
     }
   ]
 }
