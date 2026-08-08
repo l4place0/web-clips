@@ -31,7 +31,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -452,5 +452,301 @@
       "assets/bilibili-BV1gHuJ6AEnk-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-08T09:39:38.348091+00:00"
+  "updated_at": "2026-08-08T10:03:45.626431+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "domain": "AI Agent 系统架构与多 Agent 图式编排",
+    "corrections": [
+      {
+        "timestamp": "00:00",
+        "original": "冲现 / 喘云 / 套出",
+        "corrected": "冲线 / 喘匀 / 掏出",
+        "type": "ASR同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:05",
+        "original": "再亲自宣布,",
+        "corrected": "再亲自宣布通过",
+        "type": "ASR漏词及断句",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "00:12",
+        "original": "通过问题不止在他可能跑错",
+        "corrected": "问题不只在它可能跑错",
+        "type": "ASR插词及代词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:17",
+        "original": "再赛进几个agent / 不会久偏",
+        "corrected": "再塞进几个 Agent / 不会纠偏",
+        "type": "ASR同音词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:22",
+        "original": "是,冠军要做的",
+        "corrected": "系统真正要做的",
+        "type": "上下文恢复",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "00:31",
+        "original": "Open Cloud",
+        "corrected": "OpenClaw",
+        "type": "专有名词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:40",
+        "original": "Hammelsson",
+        "corrected": "Hamel Husain",
+        "type": "人名",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "00:40",
+        "original": "loop engineering 以死graph engineering 登场",
+        "corrected": "Loop Engineering 已死，Graph Engineering 登场",
+        "type": "同音字及断句",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:07",
+        "original": "唱下文",
+        "corrected": "上下文",
+        "type": "ASR词语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:11",
+        "original": "compact engineering",
+        "corrected": "Context Engineering",
+        "type": "技术术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:56",
+        "original": "都有同一个loop 完成",
+        "corrected": "都由同一个 Loop 完成",
+        "type": "语法词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:02",
+        "original": "演用",
+        "corrected": "沿用",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:09",
+        "original": "没弹拢",
+        "corrected": "没谈拢",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:14",
+        "original": "互相较准",
+        "corrected": "互相校准",
+        "type": "技术表达",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:27",
+        "original": "graph engineer",
+        "corrected": "Graph Engineering",
+        "type": "术语形态",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:27",
+        "original": "节点,状态,分支和宠事",
+        "corrected": "节点、状态、分支和重试",
+        "type": "ASR术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:35",
+        "original": "成熟时间 / landgraph",
+        "corrected": "成熟实践 / LangGraph",
+        "type": "ASR词语及专有名词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:42",
+        "original": "心意",
+        "corrected": "新意",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:58",
+        "original": "这当然是写作",
+        "corrected": "这当然是协作",
+        "type": "上下文恢复",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:06",
+        "original": "揪篇能力",
+        "corrected": "纠偏能力",
+        "type": "核心术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:06",
+        "original": "让一个agent实现另一个独立评审",
+        "corrected": "让一个 Agent 实现，另一个独立评审",
+        "type": "断句修复",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "04:51",
+        "original": "对约束",
+        "corrected": "核对约束",
+        "type": "ASR漏字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:00",
+        "original": "重视几次 / 全线也要跟着角色收紧",
+        "corrected": "重试几次 / 权限也要跟着角色收紧",
+        "type": "同音字及上下文恢复",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:18",
+        "original": "人工扎口",
+        "corrected": "人工闸口",
+        "type": "工程术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:32",
+        "original": "提前化死 / 拆几分 / 哪条之路",
+        "corrected": "提前画死 / 拆几份 / 哪条支路",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:58",
+        "original": "有奇异 / assana",
+        "corrected": "有歧义 / Asana",
+        "type": "同音字及专有名词",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:06",
+        "original": "只另一套",
+        "corrected": "指另一套",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:06",
+        "original": "向单参数含述",
+        "corrected": "像单参数函数",
+        "type": "编程术语",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "06:15",
+        "original": "向拿到多组上下文的含述",
+        "corrected": "像拿到多组上下文的函数",
+        "type": "编程术语",
+        "confidence": "medium"
+      },
+      {
+        "timestamp": "06:33",
+        "original": "就会出现还",
+        "corrected": "就会出现环",
+        "type": "图论术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:22",
+        "original": "也只想重做局部",
+        "corrected": "也只需重做局部",
+        "type": "语义修复",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:31",
+        "original": "走一路失败 / 推导全部结果",
+        "corrected": "某一路失败 / 推倒全部结果",
+        "type": "同音及上下文恢复",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:41",
+        "original": "在会总 / 受益",
+        "corrected": "再汇总 / 收益",
+        "type": "同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:50",
+        "original": "一个清楚的路负",
+        "corrected": "一个清楚的 Loop",
+        "type": "技术术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:00",
+        "original": "EnterPublic",
+        "corrected": "Anthropic",
+        "type": "机构名",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:39",
+        "original": "架构图便复杂了 / 进手意",
+        "corrected": "架构图变复杂了 / 净收益",
+        "type": "同音字及术语",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:52",
+        "original": "揪篇 / 分拳 / 划graph",
+        "corrected": "纠偏 / 分权 / 画 Graph",
+        "type": "核心术语及同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:03",
+        "original": "揪篇 / 走篇",
+        "corrected": "纠偏 / 走偏",
+        "type": "核心术语及同音字",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:00",
+        "original": "更常等待",
+        "corrected": "更长等待",
+        "type": "语义与搭配修复",
+        "confidence": "medium"
+      }
+    ],
+    "uncertain_items": [
+      {
+        "timestamp": "00:40",
+        "item": "Hamel Husain",
+        "note": "依据 Agent 工程领域人名和发音推定；如关键帧或原始页面显示账号名称，应以画面拼写为准。"
+      },
+      {
+        "timestamp": "01:11-01:15",
+        "item": "Context Engineering 的断句",
+        "note": "原 ASR 把该术语识别为 compact engineering；已按后续“模型该看到哪些信息”恢复。"
+      },
+      {
+        "timestamp": "06:06-06:15",
+        "item": "像单参数函数 / 像拿到多组上下文的函数",
+        "note": "依据连续程序结构类比恢复，原音频若可复听，建议二次确认“单参数函数”的精确措辞。"
+      }
+    ]
+  }
 }

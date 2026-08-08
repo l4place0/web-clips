@@ -620,6 +620,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T09:40:44.183Z",
       "everPublished": false
+    },
+    "69b30ff5-9b35-445f-b2b9-283556d04d28": {
+      "firstAssignedPath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "lastKnownSourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T10:04:47.780Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1965,6 +1972,12 @@
       "type": "assigned",
       "rid": "7f38ffcf-ff84-41ba-a897-a42a44201559",
       "at": "2026-08-08T09:40:44.183Z",
+      "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "69b30ff5-9b35-445f-b2b9-283556d04d28",
+      "at": "2026-08-08T10:04:47.780Z",
       "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
     }
   ]
