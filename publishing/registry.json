@@ -662,6 +662,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T11:52:18.305Z",
       "everPublished": false
+    },
+    "1e657d34-faeb-4dfc-9494-5896f0521efe": {
+      "firstAssignedPath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:55:54.364Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2044,6 +2051,12 @@
       "rid": "8fc9ef16-74f7-40e3-b32f-29ae8643c4a8",
       "at": "2026-08-08T11:52:18.305Z",
       "sourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1e657d34-faeb-4dfc-9494-5896f0521efe",
+      "at": "2026-08-08T11:55:54.364Z",
+      "sourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md"
     }
   ]
 }

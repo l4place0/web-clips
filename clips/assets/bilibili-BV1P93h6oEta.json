@@ -1,0 +1,2925 @@
+{
+  "schema_version": 2,
+  "resource_id": "bilibili-BV1P93h6oEta",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1P93h6oEta/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1P93h6oEta"
+  },
+  "title": "Matt Skills | 突破AI单次会话局限！用智能体规划超大型任务的寻路神器",
+  "metadata": {
+    "title": "Matt Skills | 突破AI单次会话局限！用智能体规划超大型任务的寻路神器",
+    "duration": 909,
+    "thumbnail": "http://i0.hdslb.com/bfs/archive/5b452c49bc42b0ad7bd3fa76024d698615d88529.jpg",
+    "uploader": "知识搬运工-Coding",
+    "video_id": "BV1P93h6oEta",
+    "description": "本视频详细解析了智能体规划技能Wayfinder。它能打破单次会话限制，像星图一样将超大工作任务拆解为多个独立会话工单，帮你消除未知迷雾，实现复杂工作的全局规划。",
+    "tags": [
+      "学习",
+      "人工智能",
+      "AI",
+      "编程",
+      "AI Agent",
+      "Vibe Coding",
+      "神器",
+      "任务",
+      "大模型"
+    ],
+    "view_count": 1991,
+    "like_count": 42,
+    "upload_date": 1785459151,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "cache_keys": {
+    "media": "689079e486f1e2d9c35995472b7198a8d79fe552c656dabb1571f5245682d1b5",
+    "audio": "3aca619653e2ea4be59fdd497fc0316eb1eae32b1c4d27710e7baeae9069ade0",
+    "transcript": "95219a8c2bcbe49c4adedd3075b4b81134a9b89aaf442ab4b6575274396ca4c7",
+    "frames": "2d3a3db4f3e3ffdfd6f4edf7c4f0d10a4ab1c4fe556b84b62a85837d3fb3cea0"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "text": "我认为能够处理任何工作的方式"
+    },
+    {
+      "start": 5.0,
+      "end": 8.96,
+      "text": "我使用的设备和设计的设计"
+    },
+    {
+      "start": 8.96,
+      "end": 11.72,
+      "text": "也设计了两个设计"
+    },
+    {
+      "start": 11.72,
+      "end": 13.56,
+      "text": "两个设计与一个设计"
+    },
+    {
+      "start": 13.56,
+      "end": 16.68,
+      "text": "我还没有能够作为免费"
+    },
+    {
+      "start": 16.68,
+      "end": 17.96,
+      "text": "因为这些设计"
+    },
+    {
+      "start": 17.96,
+      "end": 21.4,
+      "text": "我建议了一个适合的设计"
+    },
+    {
+      "start": 21.4,
+      "end": 22.84,
+      "text": "这些设计不正确"
+    },
+    {
+      "start": 22.84,
+      "end": 24.92,
+      "text": "这一个设计不正确"
+    },
+    {
+      "start": 24.92,
+      "end": 27.64,
+      "text": "你能够设计更多的设计"
+    },
+    {
+      "start": 27.64,
+      "end": 31.68,
+      "text": "和设计过设计的设计"
+    },
+    {
+      "start": 31.68,
+      "end": 33.86,
+      "text": "它知道你不能把设计的方式"
+    },
+    {
+      "start": 33.86,
+      "end": 35.32,
+      "text": "清理到目标"
+    },
+    {
+      "start": 35.32,
+      "end": 37.4,
+      "text": "你必须把户子清理"
+    },
+    {
+      "start": 37.4,
+      "end": 39.68,
+      "text": "它明白的设计"
+    },
+    {
+      "start": 39.68,
+      "end": 42.16,
+      "text": "甚至让你设计的设计"
+    },
+    {
+      "start": 42.16,
+      "end": 43.2,
+      "text": "最棒的是"
+    },
+    {
+      "start": 43.2,
+      "end": 45.68,
+      "text": "这些设计基础的设计"
+    },
+    {
+      "start": 45.68,
+      "end": 47.92,
+      "text": "这些设计基础的设计"
+    },
+    {
+      "start": 47.92,
+      "end": 50.92,
+      "text": "我设计过设计的设计"
+    },
+    {
+      "start": 50.92,
+      "end": 53.0,
+      "text": "这些设计的设计"
+    },
+    {
+      "start": 53.0,
+      "end": 55.28,
+      "text": "在我设计的设计中"
+    },
+    {
+      "start": 55.28,
+      "end": 56.44,
+      "text": "叫做\"维吾尔\""
+    },
+    {
+      "start": 56.44,
+      "end": 58.48,
+      "text": "所以我设计过设计的设计"
+    },
+    {
+      "start": 58.48,
+      "end": 60.24,
+      "text": "和设计的设计"
+    },
+    {
+      "start": 60.24,
+      "end": 63.32,
+      "text": "是跟\"维吾尔\"和\"狼\"设计的设计"
+    },
+    {
+      "start": 63.32,
+      "end": 64.72,
+      "text": "我设计的设计"
+    },
+    {
+      "start": 64.72,
+      "end": 67.36,
+      "text": "是非常重要的设计"
+    },
+    {
+      "start": 67.36,
+      "end": 69.96,
+      "text": "但是它真的只有设计的设计"
+    },
+    {
+      "start": 69.96,
+      "end": 71.68,
+      "text": "设计的设计比较大"
+    },
+    {
+      "start": 71.68,
+      "end": 74.44,
+      "text": "than what you can fit into the context window"
+    },
+    {
+      "start": 74.44,
+      "end": 77.0,
+      "text": "and especially the smart zone of the context window"
+    },
+    {
+      "start": 77.0,
+      "end": 78.44,
+      "text": "of the agent"
+    },
+    {
+      "start": 78.44,
+      "end": 79.84,
+      "text": "and you know that going in"
+    },
+    {
+      "start": 79.84,
+      "end": 84.12,
+      "text": "so you'll often take time ahead of these AI agent sessions"
+    },
+    {
+      "start": 84.12,
+      "end": 85.84,
+      "text": "to break it down into smaller chunks"
+    },
+    {
+      "start": 85.84,
+      "end": 87.88,
+      "text": "say well I'll just bite off this little bit"
+    },
+    {
+      "start": 87.88,
+      "end": 89.28,
+      "text": "I'll just bite off this little bit"
+    },
+    {
+      "start": 89.28,
+      "end": 90.84,
+      "text": "but then what you'll find is okay"
+    },
+    {
+      "start": 90.84,
+      "end": 92.44,
+      "text": "I'm working towards planning"
+    },
+    {
+      "start": 92.44,
+      "end": 93.68,
+      "text": "and this bit of grilling"
+    },
+    {
+      "start": 93.68,
+      "end": 95.28,
+      "text": "and then you reach a question"
+    },
+    {
+      "start": 95.28,
+      "end": 96.6,
+      "text": "that you can't answer"
+    },
+    {
+      "start": 96.6,
+      "end": 99.28,
+      "text": "or you just find yourself lost in fog"
+    },
+    {
+      "start": 99.28,
+      "end": 101.72,
+      "text": "and all the time you're managing the smart zone"
+    },
+    {
+      "start": 101.72,
+      "end": 103.44,
+      "text": "you're trying not to spend too many tokens"
+    },
+    {
+      "start": 103.44,
+      "end": 104.4,
+      "text": "this has been out there for a while"
+    },
+    {
+      "start": 104.4,
+      "end": 106.12,
+      "text": "and people are freaking loving this thing"
+    },
+    {
+      "start": 106.12,
+      "end": 107.64,
+      "text": "one shot at a prototype"
+    },
+    {
+      "start": 107.64,
+      "end": 109.8,
+      "text": "it gets starting again and again for months"
+    },
+    {
+      "start": 109.8,
+      "end": 111.48,
+      "text": "I really hate the phrase one shotting"
+    },
+    {
+      "start": 111.48,
+      "end": 112.68,
+      "text": "but I think what he means"
+    },
+    {
+      "start": 112.68,
+      "end": 113.96,
+      "text": "is it really helped him out"
+    },
+    {
+      "start": 113.96,
+      "end": 117.2,
+      "text": "John here even built his own freaking harness"
+    },
+    {
+      "start": 117.2,
+      "end": 119.48,
+      "text": "because he liked the Wayfinder approach so much"
+    },
+    {
+      "start": 119.48,
+      "end": 121.68,
+      "text": "it's got this gorgeous little star map on it"
+    },
+    {
+      "start": 121.68,
+      "end": 124.08,
+      "text": "that kind of lets you take tasks as you go"
+    },
+    {
+      "start": 124.08,
+      "end": 125.44,
+      "text": "so it's been out there for a little while"
+    },
+    {
+      "start": 125.44,
+      "end": 127.0,
+      "text": "and I'm finally making the video"
+    },
+    {
+      "start": 127.0,
+      "end": 128.12,
+      "text": "that people want me to make"
+    },
+    {
+      "start": 128.12,
+      "end": 129.2,
+      "text": "what is Wayfinder"
+    },
+    {
+      "start": 129.2,
+      "end": 130.36,
+      "text": "how do you best use it"
+    },
+    {
+      "start": 130.36,
+      "end": 131.96,
+      "text": "well let's start by looking at how"
+    },
+    {
+      "start": 131.96,
+      "end": 134.32,
+      "text": "big work typically gets planned"
+    },
+    {
+      "start": 134.32,
+      "end": 136.08,
+      "text": "you have a start point"
+    },
+    {
+      "start": 136.08,
+      "end": 138.28,
+      "text": "a point where you need to start from"
+    },
+    {
+      "start": 138.28,
+      "end": 139.64,
+      "text": "sort of vague idea"
+    },
+    {
+      "start": 139.64,
+      "end": 141.8,
+      "text": "not really how to get there"
+    },
+    {
+      "start": 141.8,
+      "end": 143.48,
+      "text": "and you're trying to get to some"
+    },
+    {
+      "start": 143.48,
+      "end": 144.6,
+      "text": "kind of destination"
+    },
+    {
+      "start": 144.6,
+      "end": 146.68,
+      "text": "you know vaguely where you want to end up"
+    },
+    {
+      "start": 146.68,
+      "end": 149.48,
+      "text": "but the steps between are super"
+    },
+    {
+      "start": 149.48,
+      "end": 150.0,
+      "text": "foggy"
+    },
+    {
+      "start": 150.0,
+      "end": 151.16,
+      "text": "you have no idea how to get"
+    },
+    {
+      "start": 151.16,
+      "end": 152.96,
+      "text": "this is true by the way in engineering"
+    },
+    {
+      "start": 152.96,
+      "end": 155.2,
+      "text": "but it's also true in many walks of life"
+    },
+    {
+      "start": 155.2,
+      "end": 156.8,
+      "text": "where you're planning something ambitious"
+    },
+    {
+      "start": 156.8,
+      "end": 158.32,
+      "text": "and so the first thing you should probably do"
+    },
+    {
+      "start": 158.32,
+      "end": 160.92,
+      "text": "is have a grilling session about it"
+    },
+    {
+      "start": 160.92,
+      "end": 162.64,
+      "text": "get the AI to interview you"
+    },
+    {
+      "start": 162.64,
+      "end": 165.08,
+      "text": "and figure out the sort of basic premise"
+    },
+    {
+      "start": 165.08,
+      "end": 165.84,
+      "text": "of where you're going"
+    },
+    {
+      "start": 165.84,
+      "end": 167.32,
+      "text": "now for some work that's sufficient"
+    },
+    {
+      "start": 167.32,
+      "end": 169.44,
+      "text": "and you'll be able to get straight to your destination"
+    },
+    {
+      "start": 169.44,
+      "end": 170.28,
+      "text": "but for a lot of work"
+    },
+    {
+      "start": 170.28,
+      "end": 172.16,
+      "text": "that will still leave you in a lot of fog"
+    },
+    {
+      "start": 172.16,
+      "end": 174.04,
+      "text": "what you might find is based on that initial"
+    },
+    {
+      "start": 174.04,
+      "end": 174.72,
+      "text": "grilling session"
+    },
+    {
+      "start": 174.72,
+      "end": 176.64,
+      "text": "you need to do more sessions"
+    },
+    {
+      "start": 176.64,
+      "end": 179.04,
+      "text": "so you might have a prototyping session"
+    },
+    {
+      "start": 179.04,
+      "end": 181.16,
+      "text": "or you might have another grilling session"
+    },
+    {
+      "start": 181.16,
+      "end": 183.76,
+      "text": "or it might need to go off and do some research as well"
+    },
+    {
+      "start": 183.76,
+      "end": 186.32,
+      "text": "conceptually what we're looking at here is a map"
+    },
+    {
+      "start": 186.32,
+      "end": 187.8,
+      "text": "we are creating a map"
+    },
+    {
+      "start": 187.8,
+      "end": 189.76,
+      "text": "of how we're getting to our destination"
+    },
+    {
+      "start": 189.76,
+      "end": 191.24,
+      "text": "this is why it's called Wayfinder"
+    },
+    {
+      "start": 191.24,
+      "end": 193.88,
+      "text": "we are finding our way to the destination"
+    },
+    {
+      "start": 193.88,
+      "end": 195.64,
+      "text": "and each of these things on the map"
+    },
+    {
+      "start": 195.64,
+      "end": 196.72,
+      "text": "they are tickets"
+    },
+    {
+      "start": 196.72,
+      "end": 198.68,
+      "text": "each ticket requires its own"
+    },
+    {
+      "start": 198.68,
+      "end": 200.92,
+      "text": "individual session with the agent"
+    },
+    {
+      "start": 200.92,
+      "end": 203.0,
+      "text": "so you might have a prototyping session"
+    },
+    {
+      "start": 203.0,
+      "end": 204.2,
+      "text": "a grilling session"
+    },
+    {
+      "start": 204.2,
+      "end": 205.84,
+      "text": "and a research session"
+    },
+    {
+      "start": 205.84,
+      "end": 208.0,
+      "text": "and all of those things are created"
+    },
+    {
+      "start": 208.0,
+      "end": 209.4,
+      "text": "and managed by Wayfinder"
+    },
+    {
+      "start": 209.4,
+      "end": 210.2,
+      "text": "and just a note here"
+    },
+    {
+      "start": 210.2,
+      "end": 211.76,
+      "text": "yeah this is just a single skill"
+    },
+    {
+      "start": 211.76,
+      "end": 212.36,
+      "text": "doing all this"
+    },
+    {
+      "start": 212.36,
+      "end": 214.36,
+      "text": "and it works with any coding agent"
+    },
+    {
+      "start": 214.36,
+      "end": 215.16,
+      "text": "on its map"
+    },
+    {
+      "start": 215.16,
+      "end": 218.52,
+      "text": "Wayfinder gives you a frontierof tickets here"
+    },
+    {
+      "start": 218.52,
+      "end": 219.08,
+      "text": "in other words"
+    },
+    {
+      "start": 219.08,
+      "end": 222.04,
+      "text": "the decisions that it knows about so far"
+    },
+    {
+      "start": 222.04,
+      "end": 223.52,
+      "text": "and it also keeps track"
+    },
+    {
+      "start": 223.52,
+      "end": 225.24,
+      "text": "of everything that's in fog"
+    },
+    {
+      "start": 225.24,
+      "end": 227.0,
+      "text": "so things that are not quite able"
+    },
+    {
+      "start": 227.0,
+      "end": 228.48,
+      "text": "to be decided upon yet"
+    },
+    {
+      "start": 228.48,
+      "end": 230.28,
+      "text": "because we haven't done the research"
+    },
+    {
+      "start": 230.28,
+      "end": 232.2,
+      "text": "or we don't have a prototype to look at"
+    },
+    {
+      "start": 232.2,
+      "end": 234.04,
+      "text": "or we haven't done enough conversation"
+    },
+    {
+      "start": 234.04,
+      "end": 234.64,
+      "text": "enough grilling"
+    },
+    {
+      "start": 234.64,
+      "end": 235.68,
+      "text": "at some point"
+    },
+    {
+      "start": 235.68,
+      "end": 237.68,
+      "text": "all of the fog will be resolved"
+    },
+    {
+      "start": 237.68,
+      "end": 240.24,
+      "text": "and then you'll have finally made enough decisions"
+    },
+    {
+      "start": 240.24,
+      "end": 242.04,
+      "text": "to finally get to your destination"
+    },
+    {
+      "start": 242.04,
+      "end": 244.12,
+      "text": "Wayfinder can not only manage the research"
+    },
+    {
+      "start": 244.12,
+      "end": 246.44,
+      "text": "but it could also do tasks here too"
+    },
+    {
+      "start": 246.44,
+      "end": 248.88,
+      "text": "so if you need to set up some configuration"
+    },
+    {
+      "start": 248.88,
+      "end": 250.92,
+      "text": "or you need to go out and talk to someone"
+    },
+    {
+      "start": 250.92,
+      "end": 252.76,
+      "text": "and actually go and run an errand"
+    },
+    {
+      "start": 252.76,
+      "end": 254.92,
+      "text": "then Wayfinder can figure that out for you as well"
+    },
+    {
+      "start": 254.92,
+      "end": 255.48,
+      "text": "in other words"
+    },
+    {
+      "start": 255.48,
+      "end": 256.84,
+      "text": "all of the complicated stuff"
+    },
+    {
+      "start": 256.84,
+      "end": 257.88,
+      "text": "that you might need to do"
+    },
+    {
+      "start": 257.88,
+      "end": 259.56,
+      "text": "while you're planning something big"
+    },
+    {
+      "start": 259.56,
+      "end": 261.8,
+      "text": "Wayfinder orchestrates it all for you"
+    },
+    {
+      "start": 261.8,
+      "end": 263.08,
+      "text": "it keeps track"
+    },
+    {
+      "start": 263.08,
+      "end": 264.92,
+      "text": "of everything that's been done"
+    },
+    {
+      "start": 264.92,
+      "end": 267.12,
+      "text": "and it measures the fog of war for you"
+    },
+    {
+      "start": 267.12,
+      "end": 268.68,
+      "text": "keeps track of all the frontier"
+    },
+    {
+      "start": 268.68,
+      "end": 270.16,
+      "text": "of things you can decide right now"
+    },
+    {
+      "start": 270.16,
+      "end": 271.32,
+      "text": "how does it keep track of it"
+    },
+    {
+      "start": 271.32,
+      "end": 273.64,
+      "text": "well it does it in your issue tracker"
+    },
+    {
+      "start": 273.64,
+      "end": 276.24,
+      "text": "in my public course video manager repo"
+    },
+    {
+      "start": 276.24,
+      "end": 277.68,
+      "text": "here are all of the Wayfinder maps"
+    },
+    {
+      "start": 277.68,
+      "end": 279.08,
+      "text": "that I've done recently"
+    },
+    {
+      "start": 279.08,
+      "end": 282.24,
+      "text": "and you notice that if we look at this one"
+    },
+    {
+      "start": 282.24,
+      "end": 282.96,
+      "text": "there are"
+    },
+    {
+      "start": 282.96,
+      "end": 285.12,
+      "text": "this is the big old map here"
+    },
+    {
+      "start": 285.12,
+      "end": 288.04,
+      "text": "and underneath it are twelve subtasks"
+    },
+    {
+      "start": 288.04,
+      "end": 289.2,
+      "text": "or sub-issues"
+    },
+    {
+      "start": 289.2,
+      "end": 291.36,
+      "text": "and these are the decision tickets"
+    },
+    {
+      "start": 291.36,
+      "end": 292.64,
+      "text": "so we can zoom down here"
+    },
+    {
+      "start": 292.64,
+      "end": 293.72,
+      "text": "and we can understand"
+    },
+    {
+      "start": 293.72,
+      "end": 295.72,
+      "text": "all of the decisions that have been made"
+    },
+    {
+      "start": 295.72,
+      "end": 297.16,
+      "text": "as decisions get made"
+    },
+    {
+      "start": 297.16,
+      "end": 298.08,
+      "text": "then obviously"
+    },
+    {
+      "start": 298.08,
+      "end": 301.36,
+      "text": "they get resolved inside the ticket"
+    },
+    {
+      "start": 301.36,
+      "end": 302.0,
+      "text": "so in this one"
+    },
+    {
+      "start": 302.0,
+      "end": 303.0,
+      "text": "this is a sub-issue"
+    },
+    {
+      "start": 303.0,
+      "end": 305.56,
+      "text": "close the clips during publish race"
+    },
+    {
+      "start": 305.56,
+      "end": 307.36,
+      "text": "and we resolved it"
+    },
+    {
+      "start": 307.36,
+      "end": 309.12,
+      "text": "with a discussion a couple of weeks ago"
+    },
+    {
+      "start": 309.12,
+      "end": 311.48,
+      "text": "that resolution also gets written back"
+    },
+    {
+      "start": 311.48,
+      "end": 312.88,
+      "text": "up to the parent map"
+    },
+    {
+      "start": 312.88,
+      "end": 314.8,
+      "text": "so if we look back up here"
+    },
+    {
+      "start": 314.8,
+      "end": 316.96,
+      "text": "we can see that a small version of that"
+    },
+    {
+      "start": 316.96,
+      "end": 318.48,
+      "text": "also gets written in the map"
+    },
+    {
+      "start": 318.48,
+      "end": 320.48,
+      "text": "and so Wayfinder is keeping track"
+    },
+    {
+      "start": 320.48,
+      "end": 321.52,
+      "text": "of all the decisions"
+    },
+    {
+      "start": 321.52,
+      "end": 322.32,
+      "text": "that have been made"
+    },
+    {
+      "start": 322.32,
+      "end": 323.32,
+      "text": "all the prototypes"
+    },
+    {
+      "start": 323.32,
+      "end": 324.08,
+      "text": "that have been created"
+    },
+    {
+      "start": 324.08,
+      "end": 324.88,
+      "text": "all the tasks"
+    },
+    {
+      "start": 324.88,
+      "end": 325.48,
+      "text": "that have been done"
+    },
+    {
+      "start": 325.48,
+      "end": 325.96,
+      "text": "and by the way"
+    },
+    {
+      "start": 325.96,
+      "end": 327.64,
+      "text": "even though I'm using GitHub for this"
+    },
+    {
+      "start": 327.64,
+      "end": 330.2,
+      "text": "my skills are issue tracker agnostic"
+    },
+    {
+      "start": 330.2,
+      "end": 331.52,
+      "text": "so you can use it with"
+    },
+    {
+      "start": 331.52,
+      "end": 332.92,
+      "text": "any issue tracker you like"
+    },
+    {
+      "start": 332.92,
+      "end": 333.96,
+      "text": "you just need to do a little bit"
+    },
+    {
+      "start": 333.96,
+      "end": 334.88,
+      "text": "of configuration"
+    },
+    {
+      "start": 334.88,
+      "end": 336.56,
+      "text": "via set up mappokal skills"
+    },
+    {
+      "start": 336.56,
+      "end": 337.24,
+      "text": "use it with linear"
+    },
+    {
+      "start": 337.24,
+      "end": 338.0,
+      "text": "use it with Jira"
+    },
+    {
+      "start": 338.0,
+      "end": 339.32,
+      "text": "use it with literally"
+    },
+    {
+      "start": 339.32,
+      "end": 340.16,
+      "text": "whatever you like"
+    },
+    {
+      "start": 340.16,
+      "end": 340.84,
+      "text": "the very first thing"
+    },
+    {
+      "start": 340.84,
+      "end": 341.76,
+      "text": "you'll need to decide"
+    },
+    {
+      "start": 341.76,
+      "end": 343.64,
+      "text": "when you kick off a new Wayfinder session"
+    },
+    {
+      "start": 343.64,
+      "end": 345.04,
+      "text": "is the destination"
+    },
+    {
+      "start": 345.04,
+      "end": 346.0,
+      "text": "for instance in this one"
+    },
+    {
+      "start": 346.0,
+      "end": 347.08,
+      "text": "I was adding a"
+    },
+    {
+      "start": 347.08,
+      "end": 350.08,
+      "text": "command pallet with a bunch of new actions"
+    },
+    {
+      "start": 350.08,
+      "end": 351.36,
+      "text": "into my application"
+    },
+    {
+      "start": 351.36,
+      "end": 352.68,
+      "text": "and what I ended up wanting"
+    },
+    {
+      "start": 352.68,
+      "end": 354.76,
+      "text": "was a buildable spec"
+    },
+    {
+      "start": 354.76,
+      "end": 357.08,
+      "text": "so I wanted a specification"
+    },
+    {
+      "start": 357.08,
+      "end": 358.32,
+      "text": "for this command K"
+    },
+    {
+      "start": 358.32,
+      "end": 360.76,
+      "text": "command pallet in the CVM diagram window"
+    },
+    {
+      "start": 360.76,
+      "end": 362.52,
+      "text": "so I started it off like this"
+    },
+    {
+      "start": 362.52,
+      "end": 364.08,
+      "text": "I invoked the Wayfinder skill"
+    },
+    {
+      "start": 364.08,
+      "end": 365.52,
+      "text": "and then I gave it a description"
+    },
+    {
+      "start": 365.52,
+      "end": 366.44,
+      "text": "of what I wanted"
+    },
+    {
+      "start": 366.44,
+      "end": 367.84,
+      "text": "I would like the ability in the CVM"
+    },
+    {
+      "start": 367.84,
+      "end": 369.16,
+      "text": "to add an icon picker"
+    },
+    {
+      "start": 369.16,
+      "end": 369.8,
+      "text": "not only that"
+    },
+    {
+      "start": 369.8,
+      "end": 371.88,
+      "text": "I want the ability to search other diagrams"
+    },
+    {
+      "start": 371.88,
+      "end": 373.04,
+      "text": "I want the ability to copy things"
+    },
+    {
+      "start": 373.04,
+      "end": 373.8,
+      "text": "from the diagram"
+    },
+    {
+      "start": 373.8,
+      "end": 374.76,
+      "text": "and save them as you know"
+    },
+    {
+      "start": 374.76,
+      "end": 375.84,
+      "text": "big old chunk of work"
+    },
+    {
+      "start": 375.84,
+      "end": 379.4,
+      "text": "it went through and explored the repo"
+    },
+    {
+      "start": 379.4,
+      "end": 381.44,
+      "text": "and it invoked the grilling skill"
+    },
+    {
+      "start": 381.44,
+      "end": 384.08,
+      "text": "and it grilled me about what I wanted"
+    },
+    {
+      "start": 384.08,
+      "end": 386.44,
+      "text": "it first asked me what done looks like"
+    },
+    {
+      "start": 386.44,
+      "end": 387.44,
+      "text": "whether I wanted a spec"
+    },
+    {
+      "start": 387.44,
+      "end": 388.6,
+      "text": "and it recommended a spec"
+    },
+    {
+      "start": 388.6,
+      "end": 389.08,
+      "text": "that's good"
+    },
+    {
+      "start": 389.08,
+      "end": 391.44,
+      "text": "and then it asked me a few initial questions"
+    },
+    {
+      "start": 391.44,
+      "end": 392.8,
+      "text": "before then going"
+    },
+    {
+      "start": 392.8,
+      "end": 394.24,
+      "text": "and creating some tickets"
+    },
+    {
+      "start": 394.24,
+      "end": 395.28,
+      "text": "and the first map"
+    },
+    {
+      "start": 395.28,
+      "end": 397.4,
+      "text": "and it created the other tickets as sub-issues"
+    },
+    {
+      "start": 397.4,
+      "end": 398.68,
+      "text": "so we kicked off"
+    },
+    {
+      "start": 398.68,
+      "end": 400.76,
+      "text": "with seven tickets immediately"
+    },
+    {
+      "start": 400.76,
+      "end": 402.76,
+      "text": "however only three of those tickets"
+    },
+    {
+      "start": 402.76,
+      "end": 404.56,
+      "text": "were takeable right now"
+    },
+    {
+      "start": 404.56,
+      "end": 405.24,
+      "text": "so figure out"
+    },
+    {
+      "start": 405.24,
+      "end": 406.84,
+      "text": "where icon names come from"
+    },
+    {
+      "start": 406.84,
+      "end": 408.68,
+      "text": "component storage schema"
+    },
+    {
+      "start": 408.68,
+      "end": 410.64,
+      "text": "and pallet information architecture"
+    },
+    {
+      "start": 410.64,
+      "end": 411.28,
+      "text": "and grid keyboard"
+    },
+    {
+      "start": 411.28,
+      "end": 412.2,
+      "text": "and I don't remember that one"
+    },
+    {
+      "start": 412.2,
+      "end": 412.92,
+      "text": "and so what I did"
+    },
+    {
+      "start": 412.92,
+      "end": 414.28,
+      "text": "was I then worked through"
+    },
+    {
+      "start": 414.28,
+      "end": 415.84,
+      "text": "each of those tickets"
+    },
+    {
+      "start": 415.84,
+      "end": 417.04,
+      "text": "in a new session"
+    },
+    {
+      "start": 417.04,
+      "end": 417.8,
+      "text": "the way I did that"
+    },
+    {
+      "start": 417.8,
+      "end": 419.64,
+      "text": "was I just called Wayfinder"
+    },
+    {
+      "start": 419.64,
+      "end": 421.12,
+      "text": "on that ticket name"
+    },
+    {
+      "start": 421.12,
+      "end": 422.68,
+      "text": "I did it in a slightly fancier way"
+    },
+    {
+      "start": 422.68,
+      "end": 425.04,
+      "text": "where I actually have a handoff skill"
+    },
+    {
+      "start": 425.04,
+      "end": 426.68,
+      "text": "that automatically wrote me a prompt"
+    },
+    {
+      "start": 426.68,
+      "end": 428.32,
+      "text": "and spawned a clawed sub agent"
+    },
+    {
+      "start": 428.32,
+      "end": 429.52,
+      "text": "but what it was essentially doing"
+    },
+    {
+      "start": 429.52,
+      "end": 432.04,
+      "text": "is just calling the Wayfinder skill"
+    },
+    {
+      "start": 432.04,
+      "end": 433.56,
+      "text": "on this map"
+    },
+    {
+      "start": 433.56,
+      "end": 435.6,
+      "text": "and on the specific ticket"
+    },
+    {
+      "start": 435.6,
+      "end": 436.44,
+      "text": "wherever it was"
+    },
+    {
+      "start": 436.44,
+      "end": 436.96,
+      "text": "yeah here it is"
+    },
+    {
+      "start": 436.96,
+      "end": 438.0,
+      "text": "here's your ticket"
+    },
+    {
+      "start": 438.0,
+      "end": 439.64,
+      "text": "transpile lucid SVG"
+    },
+    {
+      "start": 439.64,
+      "end": 440.96,
+      "text": "geometry to path builder"
+    },
+    {
+      "start": 440.96,
+      "end": 442.04,
+      "text": "and it just mentions"
+    },
+    {
+      "start": 442.04,
+      "end": 443.44,
+      "text": "the full ticket name"
+    },
+    {
+      "start": 443.44,
+      "end": 444.68,
+      "text": "so this is how you work"
+    },
+    {
+      "start": 444.68,
+      "end": 446.0,
+      "text": "through a Wayfinder map"
+    },
+    {
+      "start": 446.0,
+      "end": 447.8,
+      "text": "you do an initial Wayfinder prompt"
+    },
+    {
+      "start": 447.8,
+      "end": 449.24,
+      "text": "just to chart the map"
+    },
+    {
+      "start": 449.24,
+      "end": 450.8,
+      "text": "and figure out the next tickets"
+    },
+    {
+      "start": 450.8,
+      "end": 452.28,
+      "text": "and then for each ticket"
+    },
+    {
+      "start": 452.28,
+      "end": 453.48,
+      "text": "you say Wayfinder"
+    },
+    {
+      "start": 453.48,
+      "end": 454.92,
+      "text": "with the ticket URL"
+    },
+    {
+      "start": 454.92,
+      "end": 456.44,
+      "text": "so you use Wayfinder for both"
+    },
+    {
+      "start": 456.44,
+      "end": 458.6,
+      "text": "both for charting the map initially"
+    },
+    {
+      "start": 458.6,
+      "end": 460.44,
+      "text": "and then walking through each ticket"
+    },
+    {
+      "start": 460.44,
+      "end": 461.36,
+      "text": "as you can probably see"
+    },
+    {
+      "start": 461.36,
+      "end": 462.28,
+      "text": "from this diagram"
+    },
+    {
+      "start": 462.28,
+      "end": 464.28,
+      "text": "tickets can have different types"
+    },
+    {
+      "start": 464.28,
+      "end": 465.56,
+      "text": "and there are four types"
+    },
+    {
+      "start": 465.56,
+      "end": 466.32,
+      "text": "and these ticket types"
+    },
+    {
+      "start": 466.32,
+      "end": 467.76,
+      "text": "are actually brought into"
+    },
+    {
+      "start": 467.76,
+      "end": 469.0,
+      "text": "the issue tracker themselves"
+    },
+    {
+      "start": 469.0,
+      "end": 470.72,
+      "text": "so we actually have Wayfinder"
+    },
+    {
+      "start": 470.72,
+      "end": 471.52,
+      "text": "research"
+    },
+    {
+      "start": 471.52,
+      "end": 472.84,
+      "text": "which is a ticket type"
+    },
+    {
+      "start": 472.84,
+      "end": 473.88,
+      "text": "research tickets are where"
+    },
+    {
+      "start": 473.88,
+      "end": 475.2,
+      "text": "the agent needs to go off"
+    },
+    {
+      "start": 475.2,
+      "end": 476.52,
+      "text": "and find some information"
+    },
+    {
+      "start": 476.52,
+      "end": 477.44,
+      "text": "and bring it back"
+    },
+    {
+      "start": 477.44,
+      "end": 478.76,
+      "text": "and it usually kicks it off"
+    },
+    {
+      "start": 478.76,
+      "end": 479.36,
+      "text": "immediately"
+    },
+    {
+      "start": 479.36,
+      "end": 481.04,
+      "text": "so you don't actually need to watch it"
+    },
+    {
+      "start": 481.04,
+      "end": 482.2,
+      "text": "it does it in a sub agent"
+    },
+    {
+      "start": 482.2,
+      "end": 483.4,
+      "text": "and then reports back"
+    },
+    {
+      "start": 483.4,
+      "end": 484.48,
+      "text": "prototype tickets"
+    },
+    {
+      "start": 484.48,
+      "end": 485.92,
+      "text": "which are the next type here"
+    },
+    {
+      "start": 485.92,
+      "end": 487.8,
+      "text": "create a prototype"
+    },
+    {
+      "start": 487.8,
+      "end": 490.88,
+      "text": "which is so unbelievably invaluable"
+    },
+    {
+      "start": 490.88,
+      "end": 493.24,
+      "text": "for really seeing things come to life"
+    },
+    {
+      "start": 493.24,
+      "end": 493.96,
+      "text": "as you're planning"
+    },
+    {
+      "start": 493.96,
+      "end": 495.8,
+      "text": "I've done a whole extra video on this"
+    },
+    {
+      "start": 495.8,
+      "end": 497.72,
+      "text": "on how important prototypes are"
+    },
+    {
+      "start": 497.72,
+      "end": 499.76,
+      "text": "and it reuses the prototype skill"
+    },
+    {
+      "start": 499.76,
+      "end": 500.64,
+      "text": "from that video"
+    },
+    {
+      "start": 500.64,
+      "end": 502.0,
+      "text": "some folks look at Wayfinder"
+    },
+    {
+      "start": 502.0,
+      "end": 502.52,
+      "text": "and they think"
+    },
+    {
+      "start": 502.52,
+      "end": 503.8,
+      "text": "god that's a lot of planning"
+    },
+    {
+      "start": 503.8,
+      "end": 505.52,
+      "text": "doesn't that look like waterfall"
+    },
+    {
+      "start": 505.52,
+      "end": 506.68,
+      "text": "and the prototypes"
+    },
+    {
+      "start": 506.68,
+      "end": 508.16,
+      "text": "are the way that you prevent it"
+    },
+    {
+      "start": 508.16,
+      "end": 509.68,
+      "text": "from becoming waterfall"
+    },
+    {
+      "start": 509.68,
+      "end": 512.72,
+      "text": "huge amounts of low fidelity up front planning"
+    },
+    {
+      "start": 512.72,
+      "end": 514.76,
+      "text": "a prototype is a high fidelity way"
+    },
+    {
+      "start": 514.76,
+      "end": 516.96,
+      "text": "to get feedback on what you're actually building"
+    },
+    {
+      "start": 516.96,
+      "end": 518.2,
+      "text": "and the fact that Wayfinder"
+    },
+    {
+      "start": 518.2,
+      "end": 520.8,
+      "text": "encourages you to build so many prototypes"
+    },
+    {
+      "start": 520.8,
+      "end": 523.04,
+      "text": "means that the output is unbelievably good"
+    },
+    {
+      "start": 523.04,
+      "end": 524.88,
+      "text": "so far we've got research prototype"
+    },
+    {
+      "start": 524.88,
+      "end": 526.76,
+      "text": "obviously there are grilling"
+    },
+    {
+      "start": 526.76,
+      "end": 527.52,
+      "text": "ones as well"
+    },
+    {
+      "start": 527.52,
+      "end": 528.8,
+      "text": "so grilling sessions"
+    },
+    {
+      "start": 528.8,
+      "end": 530.96,
+      "text": "and this is just where you need a discussion"
+    },
+    {
+      "start": 530.96,
+      "end": 532.88,
+      "text": "over maybe an implementation detail"
+    },
+    {
+      "start": 532.88,
+      "end": 535.0,
+      "text": "over a particular aspect of the plan"
+    },
+    {
+      "start": 535.0,
+      "end": 536.28,
+      "text": "and the final type of ticket"
+    },
+    {
+      "start": 536.28,
+      "end": 537.2,
+      "text": "are tasks"
+    },
+    {
+      "start": 537.2,
+      "end": 538.96,
+      "text": "these are things that need to be done"
+    },
+    {
+      "start": 538.96,
+      "end": 540.12,
+      "text": "in the real world"
+    },
+    {
+      "start": 540.12,
+      "end": 542.84,
+      "text": "stuff that the agent can't quite do itself"
+    },
+    {
+      "start": 542.84,
+      "end": 544.92,
+      "text": "or possibly sometimes the stuff agent"
+    },
+    {
+      "start": 544.92,
+      "end": 546.04,
+      "text": "can do itself"
+    },
+    {
+      "start": 546.04,
+      "end": 548.0,
+      "text": "but is scheduled behind other work"
+    },
+    {
+      "start": 548.0,
+      "end": 549.52,
+      "text": "one really cool thing about Wayfinder"
+    },
+    {
+      "start": 549.52,
+      "end": 550.92,
+      "text": "is the way that it establishes"
+    },
+    {
+      "start": 550.92,
+      "end": 553.0,
+      "text": "blocking relationships between tickets"
+    },
+    {
+      "start": 553.0,
+      "end": 554.76,
+      "text": "because some decisions can only be made"
+    },
+    {
+      "start": 554.76,
+      "end": 556.96,
+      "text": "once other decisions are made"
+    },
+    {
+      "start": 556.96,
+      "end": 558.44,
+      "text": "and so what you end up with"
+    },
+    {
+      "start": 558.44,
+      "end": 560.92,
+      "text": "is here we've got 14 out of 17"
+    },
+    {
+      "start": 560.92,
+      "end": 561.84,
+      "text": "done on this map"
+    },
+    {
+      "start": 561.84,
+      "end": 563.88,
+      "text": "so a lot of work done"
+    },
+    {
+      "start": 563.88,
+      "end": 565.76,
+      "text": "but we've still not built the skill"
+    },
+    {
+      "start": 565.76,
+      "end": 567.68,
+      "text": "that this whole map is built around"
+    },
+    {
+      "start": 567.68,
+      "end": 568.84,
+      "text": "and once we built the skill"
+    },
+    {
+      "start": 568.84,
+      "end": 570.56,
+      "text": "then we actually need to revisit"
+    },
+    {
+      "start": 570.56,
+      "end": 571.56,
+      "text": "some other stuff"
+    },
+    {
+      "start": 571.56,
+      "end": 573.28,
+      "text": "based on how the skill works"
+    },
+    {
+      "start": 573.28,
+      "end": 575.0,
+      "text": "and how it actually improves things"
+    },
+    {
+      "start": 575.0,
+      "end": 576.4,
+      "text": "and so what you're doing a lot of the time"
+    },
+    {
+      "start": 576.4,
+      "end": 578.2,
+      "text": "when you're working through a Wayfinder map"
+    },
+    {
+      "start": 578.2,
+      "end": 580.24,
+      "text": "is going ok I've resolved that ticket"
+    },
+    {
+      "start": 580.24,
+      "end": 582.8,
+      "text": "let's see how this opens up new tickets"
+    },
+    {
+      "start": 582.8,
+      "end": 584.44,
+      "text": "what has the frontier moved to"
+    },
+    {
+      "start": 584.44,
+      "end": 586.36,
+      "text": "so then once the map is complete"
+    },
+    {
+      "start": 586.36,
+      "end": 588.76,
+      "text": "what do you then go and do with it"
+    },
+    {
+      "start": 588.76,
+      "end": 589.56,
+      "text": "well this one"
+    },
+    {
+      "start": 589.56,
+      "end": 592.2,
+      "text": "because its detonation was a spec"
+    },
+    {
+      "start": 592.2,
+      "end": 594.92,
+      "text": "the Wayfinder map is probably a little bit too dense"
+    },
+    {
+      "start": 594.92,
+      "end": 596.0,
+      "text": "to create a spec"
+    },
+    {
+      "start": 596.0,
+      "end": 597.44,
+      "text": "so what I like to do"
+    },
+    {
+      "start": 597.44,
+      "end": 599.52,
+      "text": "is create a spec from the map"
+    },
+    {
+      "start": 599.52,
+      "end": 602.24,
+      "text": "this was the spec that I created from it"
+    },
+    {
+      "start": 602.24,
+      "end": 603.16,
+      "text": "and you can see"
+    },
+    {
+      "start": 603.16,
+      "end": 604.96,
+      "text": "it's basically the same setup"
+    },
+    {
+      "start": 604.96,
+      "end": 606.48,
+      "text": "as I've had before"
+    },
+    {
+      "start": 606.48,
+      "end": 608.2,
+      "text": "I literally just called to spec"
+    },
+    {
+      "start": 608.2,
+      "end": 609.56,
+      "text": "on the Wayfinder map"
+    },
+    {
+      "start": 609.56,
+      "end": 610.64,
+      "text": "and it pulled in this"
+    },
+    {
+      "start": 610.64,
+      "end": 613.84,
+      "text": "enormous document"
+    },
+    {
+      "start": 613.84,
+      "end": 615.56,
+      "text": "with basically all of the decisions"
+    },
+    {
+      "start": 615.56,
+      "end": 617.56,
+      "text": "that have been pulled from the Wayfinder map"
+    },
+    {
+      "start": 617.56,
+      "end": 618.88,
+      "text": "into this"
+    },
+    {
+      "start": 618.88,
+      "end": 619.64,
+      "text": "github issue"
+    },
+    {
+      "start": 619.64,
+      "end": 621.64,
+      "text": "the initial draft was actually too large"
+    },
+    {
+      "start": 621.64,
+      "end": 623.08,
+      "text": "for github's character limit"
+    },
+    {
+      "start": 623.08,
+      "end": 624.12,
+      "text": "so"
+    },
+    {
+      "start": 624.12,
+      "end": 625.88,
+      "text": "that kind of tells you how big it was"
+    },
+    {
+      "start": 625.88,
+      "end": 628.08,
+      "text": "and from there I turned it into tickets"
+    },
+    {
+      "start": 628.08,
+      "end": 629.6,
+      "text": "using my usual approach"
+    },
+    {
+      "start": 629.6,
+      "end": 631.36,
+      "text": "which is to spec and then to tickets"
+    },
+    {
+      "start": 631.36,
+      "end": 633.4,
+      "text": "in other words Wayfinder fits in"
+    },
+    {
+      "start": 633.4,
+      "end": 634.92,
+      "text": "just in exactly the same place"
+    },
+    {
+      "start": 634.92,
+      "end": 636.44,
+      "text": "that Gryll with Docs does"
+    },
+    {
+      "start": 636.44,
+      "end": 638.16,
+      "text": "in my usual approach"
+    },
+    {
+      "start": 638.16,
+      "end": 639.8,
+      "text": "so instead of doing Gryll with Docs"
+    },
+    {
+      "start": 639.8,
+      "end": 641.72,
+      "text": "and then doing to spec into tickets"
+    },
+    {
+      "start": 641.72,
+      "end": 644.56,
+      "text": "you're spendinga lot more timein Wayfinder"
+    },
+    {
+      "start": 644.56,
+      "end": 646.36,
+      "text": "creating this enormous map"
+    },
+    {
+      "start": 646.36,
+      "end": 647.84,
+      "text": "and then taking that map"
+    },
+    {
+      "start": 647.84,
+      "end": 648.76,
+      "text": "turning it to spec"
+    },
+    {
+      "start": 648.76,
+      "end": 649.84,
+      "text": "turning it to tickets"
+    },
+    {
+      "start": 649.84,
+      "end": 651.8,
+      "text": "and then implementing each ticket"
+    },
+    {
+      "start": 651.8,
+      "end": 653.4,
+      "text": "and then running code review at the end"
+    },
+    {
+      "start": 653.4,
+      "end": 655.96,
+      "text": "the really cool thing about the Wayfinder setup"
+    },
+    {
+      "start": 655.96,
+      "end": 657.88,
+      "text": "is that the specs that it creates"
+    },
+    {
+      "start": 657.88,
+      "end": 659.2,
+      "text": "are so dense"
+    },
+    {
+      "start": 659.2,
+      "end": 660.32,
+      "text": "and they all"
+    },
+    {
+      "start": 660.32,
+      "end": 663.28,
+      "text": "link back to the original decision tickets"
+    },
+    {
+      "start": 663.28,
+      "end": 664.72,
+      "text": "so you can actually go and"
+    },
+    {
+      "start": 664.72,
+      "end": 667.28,
+      "text": "the agent can go and view the primary source"
+    },
+    {
+      "start": 667.28,
+      "end": 668.68,
+      "text": "if it's confused about anything"
+    },
+    {
+      "start": 668.68,
+      "end": 670.16,
+      "text": "that was always a kind of"
+    },
+    {
+      "start": 670.16,
+      "end": 671.96,
+      "text": "weakness with Gryll with Docs"
+    },
+    {
+      "start": 671.96,
+      "end": 673.76,
+      "text": "which is that you were really relying"
+    },
+    {
+      "start": 673.76,
+      "end": 676.0,
+      "text": "on the spec to be the source of truth"
+    },
+    {
+      "start": 676.0,
+      "end": 678.24,
+      "text": "but the spec is always just a summary"
+    },
+    {
+      "start": 678.24,
+      "end": 680.56,
+      "text": "of what was actually said in the meeting"
+    },
+    {
+      "start": 680.56,
+      "end": 681.92,
+      "text": "whereas now with Wayfinder"
+    },
+    {
+      "start": 681.92,
+      "end": 684.16,
+      "text": "you've actually got access to that primary source"
+    },
+    {
+      "start": 684.16,
+      "end": 684.96,
+      "text": "which is amazing"
+    },
+    {
+      "start": 684.96,
+      "end": 686.24,
+      "text": "so that is Wayfinder"
+    },
+    {
+      "start": 686.24,
+      "end": 689.88,
+      "text": "it's a way of mapping huge chunks of work"
+    },
+    {
+      "start": 689.88,
+      "end": 691.6,
+      "text": "by planning things out"
+    },
+    {
+      "start": 691.6,
+      "end": 693.52,
+      "text": "really in detail ahead of time"
+    },
+    {
+      "start": 693.52,
+      "end": 694.84,
+      "text": "it can handle prototyping"
+    },
+    {
+      "start": 694.84,
+      "end": 695.92,
+      "text": "can handle research"
+    },
+    {
+      "start": 695.92,
+      "end": 697.32,
+      "text": "can handle arbitrary tasks"
+    },
+    {
+      "start": 697.32,
+      "end": 698.64,
+      "text": "can handle discussions too"
+    },
+    {
+      "start": 698.64,
+      "end": 700.24,
+      "text": "let's jump into an FAQ now"
+    },
+    {
+      "start": 700.24,
+      "end": 702.0,
+      "text": "offrequently asked questions"
+    },
+    {
+      "start": 702.0,
+      "end": 704.16,
+      "text": "that I get when people ask me about Wayfinder"
+    },
+    {
+      "start": 704.16,
+      "end": 705.12,
+      "text": "the first one is"
+    },
+    {
+      "start": 705.76,
+      "end": 708.56,
+      "text": "this is way too much process"
+    },
+    {
+      "start": 708.56,
+      "end": 709.68,
+      "text": "this way too heavy"
+    },
+    {
+      "start": 709.68,
+      "end": 711.04,
+      "text": "for the kind of work that I do"
+    },
+    {
+      "start": 711.04,
+      "end": 712.48,
+      "text": "when should I actually use it"
+    },
+    {
+      "start": 712.48,
+      "end": 713.36,
+      "text": "well the answer to this"
+    },
+    {
+      "start": 713.36,
+      "end": 715.2,
+      "text": "is if you think the work that you're doing"
+    },
+    {
+      "start": 715.2,
+      "end": 716.36,
+      "text": "can be completable"
+    },
+    {
+      "start": 716.36,
+      "end": 718.08,
+      "text": "and planable in a single session"
+    },
+    {
+      "start": 718.08,
+      "end": 719.32,
+      "text": "then plan it in a single session"
+    },
+    {
+      "start": 719.32,
+      "end": 720.8,
+      "text": "if you kind of already know"
+    },
+    {
+      "start": 720.8,
+      "end": 722.12,
+      "text": "the way to your destination"
+    },
+    {
+      "start": 722.12,
+      "end": 724.28,
+      "text": "then there's no need to use Wayfinder"
+    },
+    {
+      "start": 724.28,
+      "end": 725.96,
+      "text": "because you can just path your way there"
+    },
+    {
+      "start": 725.96,
+      "end": 727.16,
+      "text": "in a single session"
+    },
+    {
+      "start": 727.16,
+      "end": 728.24,
+      "text": "and just figure it out"
+    },
+    {
+      "start": 728.24,
+      "end": 729.76,
+      "text": "Wayfinder is for the cases"
+    },
+    {
+      "start": 729.76,
+      "end": 731.6,
+      "text": "where you have the fog of war"
+    },
+    {
+      "start": 731.6,
+      "end": 734.16,
+      "text": "you're no idea quite where to go"
+    },
+    {
+      "start": 734.16,
+      "end": 735.68,
+      "text": "and you just need to start"
+    },
+    {
+      "start": 735.68,
+      "end": 736.92,
+      "text": "and then see where you get to"
+    },
+    {
+      "start": 736.92,
+      "end": 737.28,
+      "text": "by the way"
+    },
+    {
+      "start": 737.28,
+      "end": 738.52,
+      "text": "I've actually been using Wayfinder"
+    },
+    {
+      "start": 738.52,
+      "end": 739.76,
+      "text": "for non-coding tasks"
+    },
+    {
+      "start": 739.76,
+      "end": 741.68,
+      "text": "so I've been meaning to put up a garden office"
+    },
+    {
+      "start": 741.68,
+      "end": 742.8,
+      "text": "in my garden"
+    },
+    {
+      "start": 742.8,
+      "end": 745.16,
+      "text": "and I've been using Wayfinder for that"
+    },
+    {
+      "start": 745.16,
+      "end": 747.8,
+      "text": "so it'scommissioning a site survey"
+    },
+    {
+      "start": 747.8,
+      "end": 748.92,
+      "text": "figuring out all that stuff"
+    },
+    {
+      "start": 748.92,
+      "end": 750.0,
+      "text": "figuring out who to contact"
+    },
+    {
+      "start": 750.0,
+      "end": 750.92,
+      "text": "doing all the research"
+    },
+    {
+      "start": 750.92,
+      "end": 752.64,
+      "text": "figuring out the different firms that could build it"
+    },
+    {
+      "start": 752.64,
+      "end": 753.16,
+      "text": "it's awesome"
+    },
+    {
+      "start": 753.16,
+      "end": 754.76,
+      "text": "another response people have to Wayfinder"
+    },
+    {
+      "start": 754.76,
+      "end": 756.0,
+      "text": "is this is S.D.D."
+    },
+    {
+      "start": 756.0,
+      "end": 757.32,
+      "text": "this is spec driven development"
+    },
+    {
+      "start": 757.32,
+      "end": 758.2,
+      "text": "and I don't want to do"
+    },
+    {
+      "start": 758.2,
+      "end": 759.12,
+      "text": "spec driven development"
+    },
+    {
+      "start": 759.12,
+      "end": 759.92,
+      "text": "I don't want to spend"
+    },
+    {
+      "start": 759.92,
+      "end": 761.04,
+      "text": "all this time"
+    },
+    {
+      "start": 761.04,
+      "end": 762.4,
+      "text": "putting together a spec"
+    },
+    {
+      "start": 762.4,
+      "end": 763.6,
+      "text": "this seems bananas"
+    },
+    {
+      "start": 763.6,
+      "end": 765.16,
+      "text": "well the way I think of specs"
+    },
+    {
+      "start": 765.16,
+      "end": 767.56,
+      "text": "is really just a destination"
+    },
+    {
+      "start": 767.56,
+      "end": 769.96,
+      "text": "for a multi-session piece of work"
+    },
+    {
+      "start": 769.96,
+      "end": 770.52,
+      "text": "in other words"
+    },
+    {
+      "start": 770.52,
+      "end": 772.2,
+      "text": "we have a huge task down here"
+    },
+    {
+      "start": 772.2,
+      "end": 773.56,
+      "text": "let's say task number four"
+    },
+    {
+      "start": 773.56,
+      "end": 775.12,
+      "text": "that we're trying to schedule"
+    },
+    {
+      "start": 775.12,
+      "end": 777.2,
+      "text": "over multiple agent sessions"
+    },
+    {
+      "start": 777.2,
+      "end": 778.8,
+      "text": "because it's just too big"
+    },
+    {
+      "start": 778.8,
+      "end": 779.96,
+      "text": "and what we want to do"
+    },
+    {
+      "start": 779.96,
+      "end": 781.12,
+      "text": "is we need a spec"
+    },
+    {
+      "start": 781.12,
+      "end": 782.12,
+      "text": "so that we can"
+    },
+    {
+      "start": 782.12,
+      "end": 783.44,
+      "text": "when we get to the end"
+    },
+    {
+      "start": 783.44,
+      "end": 784.88,
+      "text": "figure out where we were going"
+    },
+    {
+      "start": 784.88,
+      "end": 786.12,
+      "text": "that's all a spec is"
+    },
+    {
+      "start": 786.12,
+      "end": 786.8,
+      "text": "in this context"
+    },
+    {
+      "start": 786.8,
+      "end": 788.6,
+      "text": "it's just a destination document"
+    },
+    {
+      "start": 788.6,
+      "end": 790.88,
+      "text": "to handle this multi-session work"
+    },
+    {
+      "start": 790.88,
+      "end": 791.88,
+      "text": "and then each session"
+    },
+    {
+      "start": 791.88,
+      "end": 793.68,
+      "text": "is done in an implementation ticket"
+    },
+    {
+      "start": 793.68,
+      "end": 794.6,
+      "text": "also this is"
+    },
+    {
+      "start": 794.6,
+      "end": 795.4,
+      "text": "people get confused"
+    },
+    {
+      "start": 795.4,
+      "end": 796.68,
+      "text": "when they first use Wayfinder"
+    },
+    {
+      "start": 796.68,
+      "end": 797.16,
+      "text": "because they go"
+    },
+    {
+      "start": 797.16,
+      "end": 798.96,
+      "text": "right it's creating some tickets"
+    },
+    {
+      "start": 798.96,
+      "end": 799.6,
+      "text": "aren't we supposed"
+    },
+    {
+      "start": 799.6,
+      "end": 800.8,
+      "text": "to do the tickets later"
+    },
+    {
+      "start": 800.8,
+      "end": 801.68,
+      "text": "these are kind of"
+    },
+    {
+      "start": 801.68,
+      "end": 803.12,
+      "text": "implementation tickets"
+    },
+    {
+      "start": 803.12,
+      "end": 804.68,
+      "text": "versus decision tickets"
+    },
+    {
+      "start": 804.68,
+      "end": 805.44,
+      "text": "so in Wayfinder"
+    },
+    {
+      "start": 805.44,
+      "end": 806.8,
+      "text": "you have decision tickets"
+    },
+    {
+      "start": 806.8,
+      "end": 808.04,
+      "text": "these are implementation tickets"
+    },
+    {
+      "start": 808.04,
+      "end": 808.96,
+      "text": "so the difference between"
+    },
+    {
+      "start": 808.96,
+      "end": 810.8,
+      "text": "my approach and most other approaches"
+    },
+    {
+      "start": 810.8,
+      "end": 811.68,
+      "text": "is that people"
+    },
+    {
+      "start": 811.68,
+      "end": 813.6,
+      "text": "when they get to the end of this"
+    },
+    {
+      "start": 813.6,
+      "end": 815.56,
+      "text": "they will keep that spec around"
+    },
+    {
+      "start": 815.56,
+      "end": 816.32,
+      "text": "somewhere"
+    },
+    {
+      "start": 816.32,
+      "end": 817.04,
+      "text": "for me"
+    },
+    {
+      "start": 817.04,
+      "end": 818.32,
+      "text": "I close the issue"
+    },
+    {
+      "start": 818.32,
+      "end": 819.28,
+      "text": "containing the spec"
+    },
+    {
+      "start": 819.28,
+      "end": 820.64,
+      "text": "and the spec is gone"
+    },
+    {
+      "start": 820.64,
+      "end": 822.2,
+      "text": "it's gone from my repository"
+    },
+    {
+      "start": 822.2,
+      "end": 823.36,
+      "text": "I rarely if ever"
+    },
+    {
+      "start": 823.36,
+      "end": 824.6,
+      "text": "refer to it again"
+    },
+    {
+      "start": 824.6,
+      "end": 826.28,
+      "text": "once the spec is present"
+    },
+    {
+      "start": 826.28,
+      "end": 827.2,
+      "text": "in the code"
+    },
+    {
+      "start": 827.2,
+      "end": 828.96,
+      "text": "then you can just delete the spec"
+    },
+    {
+      "start": 828.96,
+      "end": 829.76,
+      "text": "whereas people who do"
+    },
+    {
+      "start": 829.76,
+      "end": 830.92,
+      "text": "spec-driven development"
+    },
+    {
+      "start": 830.92,
+      "end": 832.4,
+      "text": "go back to the spec"
+    },
+    {
+      "start": 832.4,
+      "end": 834.08,
+      "text": "and edit it and modify it"
+    },
+    {
+      "start": 834.08,
+      "end": 834.92,
+      "text": "there are lots of approaches"
+    },
+    {
+      "start": 834.92,
+      "end": 835.92,
+      "text": "to spec-driven development"
+    },
+    {
+      "start": 835.92,
+      "end": 836.56,
+      "text": "so I'm probably"
+    },
+    {
+      "start": 836.56,
+      "end": 837.8,
+      "text": "annoying someone with that"
+    },
+    {
+      "start": 837.8,
+      "end": 838.52,
+      "text": "but"
+    },
+    {
+      "start": 838.52,
+      "end": 839.76,
+      "text": "what I'm essentially trying to say"
+    },
+    {
+      "start": 839.76,
+      "end": 841.0,
+      "text": "is that these specs"
+    },
+    {
+      "start": 841.0,
+      "end": 842.48,
+      "text": "are non-persistent"
+    },
+    {
+      "start": 842.48,
+      "end": 843.28,
+      "text": "with that folks"
+    },
+    {
+      "start": 843.28,
+      "end": 844.12,
+      "text": "I recommend you go off"
+    },
+    {
+      "start": 844.12,
+      "end": 845.64,
+      "text": "and you chart your own"
+    },
+    {
+      "start": 845.64,
+      "end": 846.36,
+      "text": "awesome"
+    },
+    {
+      "start": 846.36,
+      "end": 847.92,
+      "text": "foggy idea"
+    },
+    {
+      "start": 847.92,
+      "end": 849.64,
+      "text": "I have foundWayfinder"
+    },
+    {
+      "start": 849.64,
+      "end": 851.08,
+      "text": "just so liberating"
+    },
+    {
+      "start": 851.08,
+      "end": 852.36,
+      "text": "in that it just lets me"
+    },
+    {
+      "start": 852.36,
+      "end": 853.52,
+      "text": "get started"
+    },
+    {
+      "start": 853.52,
+      "end": 854.88,
+      "text": "and it handles all of that"
+    },
+    {
+      "start": 854.88,
+      "end": 856.36,
+      "text": "difficult decision for me"
+    },
+    {
+      "start": 856.36,
+      "end": 858.12,
+      "text": "I've been using it to plan courses"
+    },
+    {
+      "start": 858.12,
+      "end": 859.52,
+      "text": "been using it to do engineering work"
+    },
+    {
+      "start": 859.52,
+      "end": 861.12,
+      "text": "been using it to build a garden office"
+    },
+    {
+      "start": 861.12,
+      "end": 862.12,
+      "text": "it is just awesome"
+    },
+    {
+      "start": 862.12,
+      "end": 862.92,
+      "text": "the cool thing about it"
+    },
+    {
+      "start": 862.92,
+      "end": 863.92,
+      "text": "is that the destination"
+    },
+    {
+      "start": 863.92,
+      "end": 865.12,
+      "text": "is totally up to you"
+    },
+    {
+      "start": 865.12,
+      "end": 866.24,
+      "text": "whether you want it to"
+    },
+    {
+      "start": 866.24,
+      "end": 867.32,
+      "text": "create a spec"
+    },
+    {
+      "start": 867.32,
+      "end": 869.36,
+      "text": "that you then run through an AFK agent"
+    },
+    {
+      "start": 869.36,
+      "end": 870.44,
+      "text": "which is what I do"
+    },
+    {
+      "start": 870.44,
+      "end": 871.64,
+      "text": "or if you just want to"
+    },
+    {
+      "start": 871.64,
+      "end": 872.84,
+      "text": "it to implement the work"
+    },
+    {
+      "start": 872.84,
+      "end": 874.56,
+      "text": "for you in tasks"
+    },
+    {
+      "start": 874.56,
+      "end": 875.6,
+      "text": "then it totally can"
+    },
+    {
+      "start": 875.6,
+      "end": 877.56,
+      "text": "there is no more fun feeling"
+    },
+    {
+      "start": 877.56,
+      "end": 878.48,
+      "text": "than starting a new"
+    },
+    {
+      "start": 878.48,
+      "end": 879.32,
+      "text": "Wayfinder session"
+    },
+    {
+      "start": 879.32,
+      "end": 880.2,
+      "text": "and knowing"
+    },
+    {
+      "start": 880.2,
+      "end": 881.68,
+      "text": "that you're going to see something awesome"
+    },
+    {
+      "start": 881.68,
+      "end": 882.56,
+      "text": "but not quite knowing"
+    },
+    {
+      "start": 882.56,
+      "end": 883.28,
+      "text": "how you're going to get there"
+    },
+    {
+      "start": 883.28,
+      "end": 884.16,
+      "text": "if you're into this stuff"
+    },
+    {
+      "start": 884.16,
+      "end": 885.12,
+      "text": "and if you want to keep up"
+    },
+    {
+      "start": 885.12,
+      "end": 886.08,
+      "text": "with my skills"
+    },
+    {
+      "start": 886.08,
+      "end": 886.92,
+      "text": "then you should check out"
+    },
+    {
+      "start": 886.92,
+      "end": 888.8,
+      "text": "this seven lesson free course"
+    },
+    {
+      "start": 888.8,
+      "end": 889.88,
+      "text": "that I've put out"
+    },
+    {
+      "start": 889.88,
+      "end": 891.52,
+      "text": "on AI skills for real engineers"
+    },
+    {
+      "start": 891.52,
+      "end": 893.36,
+      "text": "which is on my AI hero site"
+    },
+    {
+      "start": 893.36,
+      "end": 894.44,
+      "text": "I'll add the link below"
+    },
+    {
+      "start": 894.44,
+      "end": 895.36,
+      "text": "this lets you build up"
+    },
+    {
+      "start": 895.36,
+      "end": 896.4,
+      "text": "a repeatable workflow"
+    },
+    {
+      "start": 896.4,
+      "end": 898.0,
+      "text": "that you can ship great work"
+    },
+    {
+      "start": 898.0,
+      "end": 898.72,
+      "text": "and it's all built"
+    },
+    {
+      "start": 898.72,
+      "end": 900.28,
+      "text": "on solid software fundamentals"
+    },
+    {
+      "start": 900.28,
+      "end": 901.4,
+      "text": "thanks so much for hanging out"
+    },
+    {
+      "start": 901.4,
+      "end": 902.44,
+      "text": "it is always fun"
+    },
+    {
+      "start": 902.44,
+      "end": 903.4,
+      "text": "filming these sessions"
+    },
+    {
+      "start": 903.4,
+      "end": 904.44,
+      "text": "and I'm so glad"
+    },
+    {
+      "start": 904.44,
+      "end": 905.16,
+      "text": "that people are enjoying"
+    },
+    {
+      "start": 905.16,
+      "end": 906.12,
+      "text": "Wayfinder so much"
+    },
+    {
+      "start": 906.12,
+      "end": 906.8,
+      "text": "cheers pals"
+    },
+    {
+      "start": 906.8,
+      "end": 908.24,
+      "text": "I will see you in the next one"
+    }
+  ],
+  "artifacts": {
+    "note": "Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+    "frames": [
+      "assets/bilibili-BV1P93h6oEta-frame-0001.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0002.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0003.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0004.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0005.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0006.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0007.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0008.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0009.webp",
+      "assets/bilibili-BV1P93h6oEta-frame-0010.webp"
+    ]
+  },
+  "updated_at": "2026-08-08T11:54:50.395215+00:00"
+}
