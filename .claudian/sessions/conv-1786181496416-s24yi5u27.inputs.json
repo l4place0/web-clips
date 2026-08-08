@@ -57,6 +57,19 @@
       "contentDigest": "8c0237e27003c5744fbd02ec4d9774b5dcbe8e7456c26d43314bceb7284f0f93",
       "providerUserMessageId": "019fe0dd-4989-7e02-8b13-c5b0bbdcb00d",
       "providerAssistantMessageId": "msg_0baa6bf92e86d23b016a77017a45a4819aa208ecd5faf2ffcd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786188822523-6t2qvpx",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1786188822481-g0vk39g",
+      "timestamp": 1786188822481,
+      "rawDisplayText": "排队【来点干货,关于代码架构与AI复审我的浅显理解】 https://www.bilibili.com/video/BV1qDuJ6GEnc/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式】 https://www.bilibili.com/video/BV1FMgr6LEUo/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络】 https://www.bilibili.com/video/BV1b3MD6jENw/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Skills | 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作】 https://www.bilibili.com/video/BV1HnM269EV7/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【vercel-labs/agent-skills开源项目深度解析】 https://www.bilibili.com/video/BV1quuM6rE8M/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Skills | 突破AI单次会话局限！用智能体规划超大型任务的寻路神器】 https://www.bilibili.com/video/BV1P93h6oEta/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "canonicalText": "排队【来点干货,关于代码架构与AI复审我的浅显理解】 https://www.bilibili.com/video/BV1qDuJ6GEnc/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式】 https://www.bilibili.com/video/BV1FMgr6LEUo/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络】 https://www.bilibili.com/video/BV1b3MD6jENw/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Skills | 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作】 https://www.bilibili.com/video/BV1HnM269EV7/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【vercel-labs/agent-skills开源项目深度解析】 https://www.bilibili.com/video/BV1quuM6rE8M/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Skills | 突破AI单次会话局限！用智能体规划超大型任务的寻路神器】 https://www.bilibili.com/video/BV1P93h6oEta/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "images": [],
+      "contentDigest": "6c12be78579ddcb9288eb01e294ebe90c9c0e1738dca7f820628a1906f05ac15",
+      "providerUserMessageId": "019fe126-7933-7602-b86d-eab2a57e7799"
     }
   ]
 }

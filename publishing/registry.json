@@ -627,6 +627,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T10:04:47.780Z",
       "everPublished": false
+    },
+    "02d95bbf-439c-4cc1-84e5-19b202c8a34f": {
+      "firstAssignedPath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "lastKnownSourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:43:31.154Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -1979,6 +1986,12 @@
       "rid": "69b30ff5-9b35-445f-b2b9-283556d04d28",
       "at": "2026-08-08T10:04:47.780Z",
       "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "02d95bbf-439c-4cc1-84e5-19b202c8a34f",
+      "at": "2026-08-08T11:43:31.154Z",
+      "sourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md"
     }
   ]
 }
