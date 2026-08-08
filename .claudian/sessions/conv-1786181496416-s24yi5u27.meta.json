@@ -4,7 +4,7 @@
   "title": "整理多Agent系统从Loop到Graph演进",
   "titleGenerationStatus": "success",
   "createdAt": 1786181496444,
-  "lastActivityAt": 1786188822481,
+  "lastActivityAt": 1786193205586,
   "sessionId": "019fe0b6-b1a3-77b0-9a0f-9f6ccb3e22dc",
   "selectedModel": "gpt-5.6-sol",
   "providerState": {
@@ -16,13 +16,13 @@
   },
   "currentNote": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
   "usage": {
-    "inputTokens": 103878,
+    "inputTokens": 232800,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 103168,
+    "cacheReadInputTokens": 231168,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 103878,
-    "percentage": 40,
+    "contextTokens": 232800,
+    "percentage": 90,
     "model": "gpt-5.6-sol"
   }
 }
