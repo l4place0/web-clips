@@ -655,6 +655,13 @@
       "status": "active",
       "assignedAt": "2026-08-08T11:49:17.386Z",
       "everPublished": false
+    },
+    "8fc9ef16-74f7-40e3-b32f-29ae8643c4a8": {
+      "firstAssignedPath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "lastKnownSourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:52:18.305Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2031,6 +2038,12 @@
       "rid": "6bb9a372-9a0f-4c34-b325-66ef747cce29",
       "at": "2026-08-08T11:49:17.386Z",
       "sourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fc9ef16-74f7-40e3-b32f-29ae8643c4a8",
+      "at": "2026-08-08T11:52:18.305Z",
+      "sourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md"
     }
   ]
 }
