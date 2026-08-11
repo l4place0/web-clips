@@ -124,6 +124,20 @@
       "images": [],
       "contentDigest": "d770c1525397973012300da99a1bf208992385d1aa637dca82552a9215f3a21a",
       "providerUserMessageId": "019feefe-5c08-7793-9df7-69616e5b65f6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786458562980-z5n7x5i",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1786458562952-kz7cszd",
+      "timestamp": 1786458562952,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7",
+      "providerUserMessageId": "019ff13a-abbc-71a0-ba42-0b37da0156f4",
+      "providerAssistantMessageId": "msg_0baa6bf92e86d23b016a7b367dce2c819abc9b56d50b3ba6d8"
     }
   ]
 }

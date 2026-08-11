@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -622,5 +622,111 @@
       "assets/bilibili-BV1xK3h6fE7a-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-11T05:02:57.552145+00:00"
+  "updated_at": "2026-08-11T14:46:54.459426+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1xK3h6fE7a",
+    "source_note": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+    "domain": "AI teaching skills and stateful learning workspaces",
+    "glossary": [
+      {
+        "term": "stateful skill",
+        "meaning": "A skill that persists files or remote state across runs."
+      },
+      {
+        "term": "stateless skill",
+        "meaning": "A skill that retains no state from prior runs."
+      },
+      {
+        "term": "mission.md",
+        "meaning": "The learner-specific outcome and motivation."
+      },
+      {
+        "term": "learning record",
+        "meaning": "A persisted record of learner-reported progress."
+      },
+      {
+        "term": "zone of proximal development",
+        "meaning": "The region where a learner is challenged without being overwhelmed."
+      },
+      {
+        "term": "ADR",
+        "meaning": "Architectural Decision Record."
+      },
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic coding agent."
+      },
+      {
+        "term": "Codex",
+        "meaning": "OpenAI coding agent."
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "01:58",
+        "from": "It saves some other staff,some glossaries to the repo as well.",
+        "to": "It saves some other stuff, some glossaries to the repo as well.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:20",
+        "from": "The way you install this skill is you go to my skills repo map,you go down to this quick start here",
+        "to": "The way you install this skill is you go to my skills repo, you go down to this quick start here",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:02",
+        "from": "The goal is the achievement itself,not speed,not theory.",
+        "to": "The goal is the achievement itself, not speed, not theory.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:00",
+        "from": "I was sort of working on the skill as I was building this too,and so I added this little bottom,or thing at the bottom.",
+        "to": "I was sort of working on the skill as I was building this too, and so I added this little button, or thing at the bottom.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:54",
+        "from": "So we've turned the agent basically into a teacher,and you've got to work with it in the same way that you would any one-to-one teacher.",
+        "to": "So we have turned the agent basically into a teacher, and you have got to work with it in the same way that you would any one-to-one teacher.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:06",
+        "from": "Using here is opus 4.8 with medium effort,by the way.It's also using a key teaching term here,the zone of proximal development,one algorithm,pure muscle memory work.",
+        "to": "Using here is Opus 4.8 with medium effort, by the way. It is also using a key teaching term here: the zone of proximal development; one algorithm, pure muscle-memory work.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:56",
+        "from": "So it's actually given me an interactive tap thing,I can do it.Okay,so it's U,R,U',L',U,R',U',L.Oh my god,look at this.So it's got guided mode,so I can turn off that.Oh,that's unreasonably cool.",
+        "to": "So it has actually given me an interactive tap thing. I can do it. Okay, so it is U, R, U', L', U, R', U', L. Oh my God, look at this. So it has got guided mode, so I can turn off that. Oh, that's unreasonably cool.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:58",
+        "from": "So when you're working with claw code or codex,and you're struggling with it,and you're losing motivation,you think God,this sucks,just think that you'll be able to take the skills that you are learning now,the instincts that you're building,working with AI,and take them outside of coding domains.",
+        "to": "So when you are working with Claude Code or Codex, and you are struggling with it, and you are losing motivation, you think, God, this sucks—just think that you will be able to take the skills that you are learning now, the instincts that you are building working with AI, and take them outside of coding domains.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:24",
+        "from": "Now,if you're digging my skills,then you should go to AI hero/skills,and sign up for my newsletter,that lets you know whenever I release a new skill,whenever I have any changes,because I do change the skills all the time.",
+        "to": "Now, if you are digging my skills, then you should go to AI Hero Skills and sign up for my newsletter; that lets you know whenever I release a new skill, whenever I have any changes, because I do change the skills all the time.",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": []
+  }
 }

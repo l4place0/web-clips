@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -3752,5 +3752,167 @@
       "assets/bilibili-BV16Tud6EEtj-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-11T13:54:13.790215+00:00"
+  "updated_at": "2026-08-11T14:46:53.587776+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV16Tud6EEtj",
+    "source_note": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+    "domain": "LLM hallucinations, evaluation, and source-grounded use",
+    "glossary": [
+      {
+        "term": "hallucination",
+        "meaning": "LLM 生成貌似合理但错误或无依据内容。"
+      },
+      {
+        "term": "intrinsic hallucination",
+        "meaning": "与当前上下文中已提供信息不一致。"
+      },
+      {
+        "term": "extrinsic hallucination",
+        "meaning": "涉及当前上下文外部知识的无依据生成。"
+      },
+      {
+        "term": "contextual inconsistency",
+        "meaning": "忽略或违背显式提供的上下文。"
+      },
+      {
+        "term": "fabricated entity",
+        "meaning": "捏造不存在的包、机构、法律等实体。"
+      },
+      {
+        "term": "LaMDA",
+        "meaning": "Google 对话语言模型，Bard 发布演示所使用的名称。"
+      },
+      {
+        "term": "LiveBench",
+        "meaning": "视频展示的模型能力排行榜。"
+      },
+      {
+        "term": "agent harness",
+        "meaning": "为模型提供工具和运行控制的宿主。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "02:00",
+        "from": "powered by Lambda",
+        "to": "powered by LaMDA",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:13",
+        "from": "they didn't even try torotest this",
+        "to": "they didn't even try to fact-check this",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:53",
+        "from": "that use chattypity",
+        "to": "that use ChatGPT",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:38",
+        "from": "kindly do so within 90 days of the ticket",
+        "to": "kindly do so within 90 days of the date",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:40",
+        "from": "you're was issued",
+        "to": "your ticket was issued",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:26",
+        "from": "about why this is firstofall",
+        "to": "about why this is. First of all,",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:39",
+        "from": "we arguethat the language models",
+        "to": "we argue that language models",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:51",
+        "from": "in fact there's",
+        "to": "in fact, there's",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:51",
+        "from": "kind of attention",
+        "to": "kind of a tension",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:51",
+        "from": "peg grade",
+        "to": "pay grade",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:15",
+        "from": "inclawed here",
+        "to": "in Claude here",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:20",
+        "from": "websurge thing",
+        "to": "web search thing",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:34",
+        "from": "astral injury picture",
+        "to": "Arsenal injury picture",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:58",
+        "from": "humber enough",
+        "to": "humble enough",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:21",
+        "from": "halucinations",
+        "to": "hallucinations",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:13",
+        "from": "of LLLMs are",
+        "to": "of LLMs are",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:34",
+        "from": "clawed code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": []
+  }
 }

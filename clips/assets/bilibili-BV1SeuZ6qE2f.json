@@ -30,7 +30,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1301,5 +1301,582 @@
       "assets/bilibili-BV1SeuZ6qE2f-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-11T13:53:18.197977+00:00"
+  "updated_at": "2026-08-11T14:46:53.537977+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1SeuZ6qE2f",
+    "source_note": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+    "domain": "middleware SDK architecture and API design",
+    "glossary": [
+      {
+        "term": "SDK",
+        "meaning": "Software Development Kit，视频讨论的中间件封装层。"
+      },
+      {
+        "term": "Redisson",
+        "meaning": "Java 的 Redis 客户端。"
+      },
+      {
+        "term": "安全默认值",
+        "meaning": "故障情况下仍保持风险可控的默认配置。"
+      },
+      {
+        "term": "显式优于隐式",
+        "meaning": "重要行为应通过明确配置表达。"
+      },
+      {
+        "term": "SPI",
+        "meaning": "Service Provider Interface，可插拔扩展机制。"
+      },
+      {
+        "term": "try-catch",
+        "meaning": "异常捕获结构；视频反对静默吞掉异常。"
+      },
+      {
+        "term": "Semantic Versioning",
+        "meaning": "用主、次、修订三段版本号表达兼容性。"
+      },
+      {
+        "term": "破坏性变更",
+        "meaning": "会破坏既有调用方兼容性的修改。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:22",
+        "from": "大家经常来进行关于中间线或者是各种组建的SVK封装",
+        "to": "大家经常进行关于中间件或者各种组件的 SDK 封装",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:34",
+        "from": "老会计我们回到笔记来进行讲解",
+        "to": "好，我们回到笔记来进行讲解",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:38",
+        "from": "为什么要对组建能力提升的封装",
+        "to": "为什么要对组件能力进行封装",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:46",
+        "from": "自己应用开发中比如说有Redis或者各种各样的Redis客户端",
+        "to": "实际应用开发中，比如说有 Redisson 或者各种各样的 Redis 客户端",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:05",
+        "from": "比如说内部的这个组建发生了变化",
+        "to": "比如说内部的这个组件发生了变化",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:10",
+        "from": "我们可以尽快的切换到其他的开发上做开发的组建上",
+        "to": "我们可以尽快地切换到其他的开源组件上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:18",
+        "from": "比如说关于重视 关于命名 关于命名空间的切割",
+        "to": "比如说关于重试、关于命名、关于命名空间的切割",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:27",
+        "from": "我们都可以把它封装到了SVK的规则中",
+        "to": "我们都可以把它封装到 SDK 的规则中",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:34",
+        "from": "直接带用接口以后",
+        "to": "直接调用接口以后",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:35",
+        "from": "好 按照公司的纷纷别类的特性和业务规则",
+        "to": "按照公司的分门别类的特性和业务规则",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:43",
+        "from": "针对于SVK的封装是非常有讲究的",
+        "to": "针对于 SDK 的封装是非常有讲究的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:54",
+        "from": "第一个 核心原则是称为叫安全默认值",
+        "to": "第一个核心原则称为安全默认值",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:00",
+        "from": "当业务不派它时出了事谁偷敌的情况",
+        "to": "当业务不配置它时，出了事谁兜底",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:12",
+        "from": "比如说咱们现在一个数据户",
+        "to": "比如说咱们现在有一个数据库",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:15",
+        "from": "那这个数据户呢",
+        "to": "那这个数据库呢",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:16",
+        "from": "比如说它最多可以支持100个联系",
+        "to": "比如说它最多可以支持 100 个连接",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:19",
+        "from": "那如果你在这使用SVK的时候",
+        "to": "那如果你在使用 SDK 的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:22",
+        "from": "好 我派一致的这个联系是100个",
+        "to": "配置的这个连接是 100 个",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:29",
+        "from": "比如说真的要跑到100个联系的时候",
+        "to": "比如说真的要跑到 100 个连接的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:31",
+        "from": "像咱们的应用程序出现了高I/O的情况",
+        "to": "像咱们的应用程序出现了高 I/O 的情况",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:35",
+        "from": "那实际经过压侧的时候",
+        "to": "那实际经过压测的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:48",
+        "from": "不是应该取这个上线100而是取50",
+        "to": "不应该取这个上限 100，而是取 50",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:57",
+        "from": "那第二个叫做显示优于隐视",
+        "to": "那第二个叫做显式优于隐式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:00",
+        "from": "配置优于模法",
+        "to": "配置优于魔法",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:05",
+        "from": "约定俗成大于配置",
+        "to": "约定优于配置",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:10",
+        "from": "但是针对于我们封装的祖先",
+        "to": "但是针对于我们封装的组件",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:15",
+        "from": "因为有很多的隐视规范",
+        "to": "因为有很多的隐式规范",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:18",
+        "from": "要么让使用它的程序员去读温党去",
+        "to": "要么让使用它的程序员去读文档",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:31",
+        "from": "本地都会有一个配置零件",
+        "to": "本地都会有一个配置文件",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:35",
+        "from": "比如说原本上面是10个数据互联阶配置的",
+        "to": "比如说原本上面是 10 个数据库连接配置的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:41",
+        "from": "我们的sdk的话",
+        "to": "我们的SDK的话",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:51",
+        "from": "那在sdk封装的时候",
+        "to": "那在SDK封装的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:04",
+        "from": "你在这个sdk的层面上",
+        "to": "你在这个SDK的层面上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:08",
+        "from": "比如说可以来自于咱们公司内部的配中心",
+        "to": "比如说可以来自于咱们公司内部的配置中心",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:14",
+        "from": "但你要这么风扇的话",
+        "to": "但你要这么封装的话",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:19",
+        "from": "有一些隐适的配置",
+        "to": "有一些隐式的配置",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:25",
+        "from": "所以在这sdk封装来说",
+        "to": "所以在 SDK 封装来说",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:27",
+        "from": "显示优于配置",
+        "to": "显式优于隐式，配置",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:34",
+        "from": "扩展电要多",
+        "to": "扩展点要多",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:36",
+        "from": "你不能说在我们进行sdk封装的时候",
+        "to": "你不能说在我们进行SDK封装的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:38",
+        "from": "一次性把所有可能出现的烂锡八道的功能",
+        "to": "一次性把所有可能出现的乱七八糟的功能",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:49",
+        "from": "外围的是我们的sdk",
+        "to": "外围的是我们的SDK",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:51",
+        "from": "内部是我们redition的客户端",
+        "to": "内部是我们 Redisson 的客户端",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:53",
+        "from": "外部通过咱们sdk调用redition",
+        "to": "外部通过咱们 SDK 调用 Redisson",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:59",
+        "from": "那设计到比如说",
+        "to": "那涉及到比如说",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:00",
+        "from": "从事还有关于日治的封装",
+        "to": "重试，还有关于日志的封装",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:05",
+        "from": "原本其实都是需要在sdk层面上",
+        "to": "原本其实都是需要在SDK层面上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:14",
+        "from": "序列化件",
+        "to": "序列化",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:15",
+        "from": "t这些东西来",
+        "to": "这些东西来",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:16",
+        "from": "关于重视的",
+        "to": "关于重试的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:25",
+        "from": "java的spig或者类似这种扩展机制",
+        "to": "Java 的 SPI 或者类似这种扩展机制",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:31",
+        "from": "比如名为仓库中",
+        "to": "比如 Maven 仓库中",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:38",
+        "from": "所以功能这样要小",
+        "to": "所以功能面要小",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:01",
+        "from": "一个sdk开发的时候",
+        "to": "一个SDK开发的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:05",
+        "from": "这个组件用了一个tritest",
+        "to": "这个组件用了一个 try-catch",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:12",
+        "from": "用开始打印到日质里边去",
+        "to": "又开始打印到日志里边去",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:22",
+        "from": "然后来进行比如说重视啊",
+        "to": "然后来进行比如说重试啊",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:24",
+        "from": "返回各种的古旧的错误",
+        "to": "返回各种故障的错误",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:26",
+        "from": "现在你给它直接揣一揣里边去了",
+        "to": "现在你给它直接 catch 在里边去了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:28",
+        "from": "那人家在从外侧充用的时候",
+        "to": "那人家再从外侧调用的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:30",
+        "from": "那跟充用成功是一模一样的",
+        "to": "那跟调用成功是一模一样的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:39",
+        "from": "到底要可控的逻辑是",
+        "to": "兜底要可控的逻辑是",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:44",
+        "from": "你可以说捕捉一下日质",
+        "to": "你可以说捕捉一下日志",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:53",
+        "from": "而第五个是版本要语异化",
+        "to": "而第五个是版本要语义化",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:56",
+        "from": "作为sd开发包的时候",
+        "to": "作为 SDK 开发包的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:11",
+        "from": "针对svk每一个版本",
+        "to": "针对 SDK 每一个版本",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:44",
+        "from": "z的调整是不会产生对于前功能的或坏性的",
+        "to": "Z 的调整是不会对原功能产生破坏性的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:04",
+        "from": "近时一个破坏性变工",
+        "to": "这是一个破坏性变更",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:14",
+        "from": "它不是一个万件油",
+        "to": "它不是一个万金油",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:16",
+        "from": "我们经常提到的一个就是软件解偶的过程中",
+        "to": "我们经常提到的一个就是软件解耦的过程中",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:41",
+        "from": "如果我们把刚才说到的包一层的这个sdk",
+        "to": "如果我们把刚才说到的包一层的这个SDK",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:51",
+        "from": "必须每一次都要手动输血还是怎么样的",
+        "to": "必须每一次都要手动书写还是怎么样的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:10",
+        "from": "对于sdk的一个核心的处理指标",
+        "to": "对于 SDK 的一个核心的处理指标",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:21",
+        "from": "以上就是我们现在说针对sdk封装的时候的一些",
+        "to": "以上就是我们现在说针对SDK封装的时候的一些",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:25",
+        "from": "最佳的考量點希望我今天的分享能對你有一些企劃",
+        "to": "最佳的考量点，希望我今天的分享能对你有一些启发。",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp": "00:00-00:16",
+        "note": "Promotional opening contains severe ASR corruption; left unchanged because wording cannot be reconstructed reliably."
+      },
+      {
+        "timestamp": "07:24-07:37",
+        "note": "Speaker’s minor-version numerical example appears internally inconsistent; preserved as spoken rather than silently corrected."
+      }
+    ]
+  }
 }

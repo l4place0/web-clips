@@ -739,6 +739,34 @@
       "status": "active",
       "assignedAt": "2026-08-11T13:57:22.473Z",
       "everPublished": false
+    },
+    "37665f2a-4573-4e55-952c-0faa25b04f7a": {
+      "firstAssignedPath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "lastKnownSourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:14.188Z",
+      "everPublished": false
+    },
+    "808d0915-08c3-4867-9570-660500ac6d53": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:16.323Z",
+      "everPublished": false
+    },
+    "d7bc1aa2-cc54-4f08-9358-d111a84a1a54": {
+      "firstAssignedPath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:17.695Z",
+      "everPublished": false
+    },
+    "6291538c-c226-45ba-ba25-93a95e7e35d5": {
+      "firstAssignedPath": "clips/不要再用对话管理Codex了.md",
+      "lastKnownSourcePath": "clips/不要再用对话管理Codex了.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:19.611Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2187,6 +2215,30 @@
       "rid": "69b7e70e-649c-43ce-8c87-8b6bc494b4fa",
       "at": "2026-08-11T13:57:22.473Z",
       "sourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "37665f2a-4573-4e55-952c-0faa25b04f7a",
+      "at": "2026-08-11T14:51:14.188Z",
+      "sourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "808d0915-08c3-4867-9570-660500ac6d53",
+      "at": "2026-08-11T14:51:16.323Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d7bc1aa2-cc54-4f08-9358-d111a84a1a54",
+      "at": "2026-08-11T14:51:17.695Z",
+      "sourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6291538c-c226-45ba-ba25-93a95e7e35d5",
+      "at": "2026-08-11T14:51:19.611Z",
+      "sourcePath": "clips/不要再用对话管理Codex了.md"
     }
   ]
 }

@@ -32,7 +32,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "cache_keys": {
@@ -1948,5 +1948,358 @@
       "assets/bilibili-BV1YWud6qEPj-frame-0010.webp"
     ]
   },
-  "updated_at": "2026-08-11T05:03:30.899148+00:00"
+  "updated_at": "2026-08-11T14:46:54.899305+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1YWud6qEPj",
+    "source_note": "clips/不要再用对话管理Codex了.md",
+    "domain": "Codex task orchestration and asynchronous work management",
+    "glossary": [
+      {
+        "term": "任务面板",
+        "meaning": "以任务/功能为主键组织 Codex 工作的界面。"
+      },
+      {
+        "term": "积压事项",
+        "meaning": "尚未成熟或尚未排期的想法池。"
+      },
+      {
+        "term": "待办事项",
+        "meaning": "可被 Codex 领取执行的任务池。"
+      },
+      {
+        "term": "审核",
+        "meaning": "任务完成后保留人的判断关口。"
+      },
+      {
+        "term": "loop",
+        "meaning": "可持续领取、执行、反馈和再处理任务的循环。"
+      },
+      {
+        "term": "多 Agent",
+        "meaning": "由多个执行单元分工处理的工作流。"
+      },
+      {
+        "term": "飞书多维表格",
+        "meaning": "视频所举的团队内容偏好库载体。"
+      },
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic 的编码 Agent。"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:51",
+        "from": "就是本来我是想通过PVT来讲解",
+        "to": "本来我是想通过 PPT 来讲解",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:00",
+        "from": "然后和PVT结合起来来去讲解这个内容",
+        "to": "然后和 PPT 结合起来去讲解这个内容",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:36",
+        "from": "而是在代办事项里面去添加一个新的任务",
+        "to": "而是在待办事项里面去添加一个新的任务",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:51",
+        "from": "从这个代办事项里面去捞任务去做",
+        "to": "从这个待办事项里面去捞任务去做",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:50",
+        "from": "就是coDEX自从更新了",
+        "to": "就是Codex自从更新了",
+        "reason": "Systematic terminology normalization: coDEX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:24",
+        "from": "然后coDEX会去认领",
+        "to": "然后Codex会去认领",
+        "reason": "Systematic terminology normalization: coDEX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:37",
+        "from": "会在最左侧有一个羈押事项",
+        "to": "会在最左侧有一个积压事项",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:40",
+        "from": "也就是说你可以再不是直接让Codex去制作",
+        "to": "也就是说，你可以在还不是直接让 Codex 去执行的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:49",
+        "from": "当有一天你发行的想法成熟了",
+        "to": "当有一天你发现想法成熟了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:51",
+        "from": "你再把它拉到带办事项里面",
+        "to": "你再把它拉到待办事项里面",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:54",
+        "from": "那么Codex才会在这个尺子里面去捞取你的需求",
+        "to": "那么Codex才会在这个池子里面去捞取你的需求",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:03",
+        "from": "就是我在webcoding的时候",
+        "to": "就是我在 vibe coding 的时候",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:01",
+        "from": "和代办事项这样的一个内容",
+        "to": "和待办事项这样的一个内容",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:52",
+        "from": "我放到这个机压事项里面",
+        "to": "我放到这个积压事项里面",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:07",
+        "from": "叫做这个机压事项其实就是我对于我的一些选题",
+        "to": "这个积压事项其实就是我对于一些选题",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:21",
+        "from": "比如说有一个关于Cloud Code这样的一个选题",
+        "to": "比如说有一个关于 Claude Code 的选题",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:26",
+        "from": "它才会去拉全网Cloud Code相关的教程",
+        "to": "它才会去拉全网 Claude Code 相关的教程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:49",
+        "from": "最好的承载形式其实还是飞出文档",
+        "to": "最好的承载形式其实还是飞书文档",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:03",
+        "from": "如果说你觉得它电源的不好",
+        "to": "如果说你觉得它调研得不好",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:09",
+        "from": "然后你说你的电源方向歪了",
+        "to": "然后你说它的调研方向歪了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:19",
+        "from": "CodeX就会定时的从这里面去抓",
+        "to": "Codex就会定时的从这里面去抓",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:09",
+        "from": "就是我让CodeX设置了一个自动化",
+        "to": "就是我让Codex设置了一个自动化",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:27",
+        "from": "你每周要花时间去给CodeX去布置任务",
+        "to": "你每周要花时间去给Codex去布置任务",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:48",
+        "from": "那么CodeX就可以自己去调研",
+        "to": "那么Codex就可以自己去调研",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:08",
+        "from": "就是你给同事的CodeX设置一个自动化",
+        "to": "就是你给同事的Codex设置一个自动化",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:16",
+        "from": "放到一个非说的多位表格里面",
+        "to": "放到一个飞书多维表格里面",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:18",
+        "from": "然后让你的CodeX从那个非说的多位表格里面",
+        "to": "然后让你的 Codex 从那个飞书多维表格里面",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:55",
+        "from": "就是比如说你有一个webcoding项目放在github上",
+        "to": "比如说你有一个 vibe coding 项目放在 GitHub 中",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:57",
+        "from": "那你可以让你的CodeX定期从github上去摘取那个意识",
+        "to": "那你可以让你的 Codex 定期从 GitHub 上去摘取那些 issues",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:01",
+        "from": "然后放到整个的这个加示项里面",
+        "to": "然后放到整个积压事项里面",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:11",
+        "from": "把它挪到代办事项里",
+        "to": "把它挪到待办事项里",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:13",
+        "from": "然后CodeX就从这个尺子里面去摘取相关的东西",
+        "to": "然后Codex就从这个池子里面去摘取相关的东西",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:18",
+        "from": "不过有些有些小项目我建议就不要放在这个计压事项里面了",
+        "to": "不过有些小项目，我建议就不要放在这个积压事项里面了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:23",
+        "from": "直接让CodeX拉到这个代办里面",
+        "to": "直接让Codex拉到这个待办里面",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:34",
+        "from": "所以说这个也是这个计压事项的一个重要的一个用法",
+        "to": "所以这也是这个积压事项的一个重要用法",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:40",
+        "from": "否则的话CodeX自己运行",
+        "to": "否则的话Codex自己运行",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:49",
+        "from": "它可能我们在CodeX里面还能再做一些其他形式的东西吗",
+        "to": "它可能我们在Codex里面还能再做一些其他形式的东西吗",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:14",
+        "from": "那我刚才那一套叫做代办事项进行中和最后的一个完成",
+        "to": "那我刚才那一套叫做待办事项、进行中和最后的一个完成",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:32",
+        "from": "让CodeX可以调用这个接口",
+        "to": "让Codex可以调用这个接口",
+        "reason": "Systematic terminology normalization: CodeX → Codex.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:34",
+        "from": "然后去直接想用那个吉梦去生图",
+        "to": "然后直接调用即梦去生图",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:37",
+        "from": "或者说吉梦去生视频都是可以做到的",
+        "to": "或者说用即梦去生视频，都是可以做到的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:42",
+        "from": "像我们之前提到过的多一阵的这个东西",
+        "to": "像我们之前提到过的多 Agent 这个东西，其实早就存在了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:47",
+        "from": "是因为多一阵的一直运行在一个总控A阵",
+        "to": "是因为多 Agent 一直运行在一个总控 Agent 下",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp": "00:20-00:27",
+        "note": "Referenced third-party Codex skin/product name is unclear in ASR and was left unchanged."
+      },
+      {
+        "timestamp": "01:30",
+        "note": "Project name transcribed as PVTScale is uncertain and was left unchanged."
+      }
+    ]
+  }
 }
