@@ -83,6 +83,47 @@
       "canonicalText": "【[双语/写作] 写随笔如何彻底改变你的学习效率】 https://www.bilibili.com/video/BV17ag46aENk/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【[中配] 后端架构基础：如何设计可扩展软件】 https://www.bilibili.com/video/BV1MEgy6NEeB/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Pocock 实战教程：用 Claude Code 开发一个真实功能 —— 从零开始完整流程拆解【中英字幕】】 https://www.bilibili.com/video/BV1GPuw6DEGN/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【远离那些长期游离在实践之外-对你指点江山的人】 https://www.bilibili.com/video/BV1UcA4z7Eaa/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【【认知升级】为什么坚持这么难？一张图给你答案】 https://www.bilibili.com/video/BV1SJMC6oE4g/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【提示词工程——注意力引导工程（Attention Steering）讲解】 https://www.bilibili.com/video/BV1dNMC6TEvt/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Pocock｜新技能！v1.2 带来 /wait-what、/writing-for-agents 和 /grill-me 修复】 https://www.bilibili.com/video/BV1WvM16xEUo/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Pocock 科普：大多数人根本没搞懂 Agent 到底是什么【中英字幕】】 https://www.bilibili.com/video/BV1N9M26wEso/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
       "images": [],
       "contentDigest": "20ad5b244a05e80595d68359a60fa59e9cbf0bf588b4e9bb158494a69849ceca"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786420618209-kqlgbyx",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1786420618134-l6rsjqr",
+      "timestamp": 1786420618134,
+      "rawDisplayText": "当前的视频下载的缓存是缓存到哪里的？",
+      "canonicalText": "当前的视频下载的缓存是缓存到哪里的？",
+      "images": [],
+      "contentDigest": "c2a4414f54bb0f91a36cb3b34039b16fabcd70e23ec48c0c4662b62a645ba9cd",
+      "providerUserMessageId": "019feef7-b3c0-7312-b8ed-76bba79e8ac9",
+      "providerAssistantMessageId": "msg_0baa6bf92e86d23b016a7a9e0fce68819ab24736a9bc8cdbed"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786420976984-be06ylg",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1786420976952-pi6yq0m",
+      "timestamp": 1786420976952,
+      "rawDisplayText": "另外，假设我一次给你多条任务，你一般是怎么处理的？即能不能并行或者部分并行？",
+      "canonicalText": "另外，假设我一次给你多条任务，你一般是怎么处理的？即能不能并行或者部分并行？",
+      "images": [],
+      "contentDigest": "6c35ea6a90225e7df9775a5b3f7d63b839ed7c8cc93afd8a92d9417499efc6a4",
+      "providerUserMessageId": "019feefc-e0d8-79b0-822c-07ce646928fd",
+      "providerAssistantMessageId": "msg_0baa6bf92e86d23b016a7a9ee8d8c8819aa1b993f1f5937726"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786421073924-4cqlr4i",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1786421073864-bb1adls",
+      "timestamp": 1786421073864,
+      "rawDisplayText": "排队任务：\n【Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】】 https://www.bilibili.com/video/BV1xK3h6fE7a/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【不要再用对话管理Codex了】 https://www.bilibili.com/video/BV1YWud6qEPj/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【【IT老齐899.74】中间件SDK封装六个核心原则】 https://www.bilibili.com/video/BV1SeuZ6qE2f/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】】 https://www.bilibili.com/video/BV16Tud6EEtj/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "canonicalText": "排队任务：\n【Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】】 https://www.bilibili.com/video/BV1xK3h6fE7a/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【不要再用对话管理Codex了】 https://www.bilibili.com/video/BV1YWud6qEPj/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【【IT老齐899.74】中间件SDK封装六个核心原则】 https://www.bilibili.com/video/BV1SeuZ6qE2f/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6\n【Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】】 https://www.bilibili.com/video/BV16Tud6EEtj/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+      "images": [],
+      "contentDigest": "d770c1525397973012300da99a1bf208992385d1aa637dca82552a9215f3a21a",
+      "providerUserMessageId": "019feefe-5c08-7793-9df7-69616e5b65f6"
     }
   ]
 }
