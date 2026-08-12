@@ -40,7 +40,7 @@ Matt Pocock 的立场不是拒绝 LLM，而是拒绝**未经验证地信任**它
 
 ### 1. “幻觉”不只是不知道事实
 
-**视频内容：**讲者从三种常见失效切入：事实错误、虚构实体，以及忽略或反驳已经提供的上下文。画面将 “Contextual Inconsistency” 定义为忽略或违背显式上下文，这提醒我们：给模型材料并不等于它一定会忠实使用材料。
+**视频内容：** 讲者从三种常见失效切入：事实错误、虚构实体，以及忽略或反驳已经提供的上下文。画面将 “Contextual Inconsistency” 定义为忽略或违背显式上下文，这提醒我们：给模型材料并不等于它一定会忠实使用材料。
 
 ![关键帧 4](assets/bilibili-BV16Tud6EEtj-frame-0004.webp)
 
@@ -55,15 +55,15 @@ flowchart TD
     D --> D2[与材料矛盾]
 ```
 
-**AI 辅助推断：**因此，“检索到了资料”和“回答被资料支持”是两个检查点。前者检查来源是否进入上下文，后者检查每项结论能否回指到具体证据。
+**AI 辅助推断：** 因此，“检索到了资料”和“回答被资料支持”是两个检查点。前者检查来源是否进入上下文，后者检查每项结论能否回指到具体证据。
 
 ### 2. 流畅表达会掩盖真实世界的风险
 
-**视频内容：**开发者若直接采用模型虚构的软件包名，攻击者可能注册同名恶意包，把一次幻觉转化为供应链入口。视频用相关文章页面呈现这个风险，而不是把它停留在“答案可能有小错误”。
+**视频内容：** 开发者若直接采用模型虚构的软件包名，攻击者可能注册同名恶意包，把一次幻觉转化为供应链入口。视频用相关文章页面呈现这个风险，而不是把它停留在“答案可能有小错误”。
 
 ![关键帧 3](assets/bilibili-BV16Tud6EEtj-frame-0003.webp)
 
-**外部核验补充：**一项经 USENIX Security 2025 收录的研究在大规模生成代码样本中发现，软件包幻觉具有持续性，并可能为 package-confusion 攻击提供机会；这证明攻击面可信，但不能推导出每个虚构包都已经被利用。[USENIX Security 2025：We Have a Package for You!](https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen)
+**外部核验补充：** 一项经 USENIX Security 2025 收录的研究在大规模生成代码样本中发现，软件包幻觉具有持续性，并可能为 package-confusion 攻击提供机会；这证明攻击面可信，但不能推导出每个虚构包都已经被利用。[USENIX Security 2025：We Have a Package for You!](https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen)
 
 视频举出的另外两个现实案例也应精确理解：
 
