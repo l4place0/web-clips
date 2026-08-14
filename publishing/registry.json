@@ -802,6 +802,13 @@
       "status": "active",
       "assignedAt": "2026-08-14T04:16:27.238Z",
       "everPublished": false
+    },
+    "af9aafb1-8c5d-4f00-aa58-11ae00e6849a": {
+      "firstAssignedPath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "lastKnownSourcePath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:17:54.330Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2304,6 +2311,12 @@
       "rid": "c4422f95-d0cb-420c-80e2-0d7cd0ae29d4",
       "at": "2026-08-14T04:16:27.238Z",
       "sourcePath": "clips/我是如何用AI高速学习陌生代码的.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "af9aafb1-8c5d-4f00-aa58-11ae00e6849a",
+      "at": "2026-08-14T04:17:54.330Z",
+      "sourcePath": "clips/【中文字幕】如何在人工智能时代生存.md"
     }
   ]
 }
