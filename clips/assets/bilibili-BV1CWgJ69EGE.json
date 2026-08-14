@@ -1,0 +1,2915 @@
+{
+  "schema_version": 3,
+  "resource_id": "bilibili-BV1CWgJ69EGE",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1CWgJ69EGE/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1CWgJ69EGE"
+  },
+  "title": "Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】",
+  "metadata": {
+    "title": "Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】",
+    "duration": 1395,
+    "thumbnail": "http://i2.hdslb.com/bfs/archive/14b51e209c66f49a5dcf539de41f445db7a35745.jpg",
+    "uploader": "ChHsich",
+    "video_id": "BV1CWgJ69EGE",
+    "description": "TypeScript 教育者 Matt Pocock 开源了 Sandcastle——一个 TypeScript 库，把 Claude Code、Codex 等 AI 编码 agent 编排进隔离的 Docker 沙箱，让它们自动认领 GitHub issue、实现功能、review 代码、合并回 main，全程 AFK（无人值守）运行。\n\n看点：\n1. 为什么开 YOLO 模式会让 Claude 删掉你的 home 目录——以及沙箱怎么根治这个问题\n2. 一个 sandcastle.run 函数，怎么搭出「planner→implementer→reviewer→merger」的并行 agent 流水线\n3. 从 Docker 沙箱到对抗式 code review：让你真正拥有自己的 agent 编排流程，而不是被第三方服务绑架\n\n关键内容：\n· 问题根源：AFK agent 会不断发起权限请求；YOLO 模式有删目录、数据外泄等风险，沙箱是刚需\n· Sandcastle：用 TypeScript 在隔离沙箱里编排 AI 编码 agent 的库\n· 核心原语：sandcastle.run(agent, sandbox, prompt)，简单但能搭出复杂并行系统\n· backlog 管理：用 GitHub issues + sandcastle 标签给 agent 派活\n· 四种 agent 角色：planner（规划）、implementer（实现）、reviewer（审查）、merger（合并）\n· 开箱模板：带 review 步骤的并行 planner\n· 沙箱 provider：默认 Docker，也支持自定义实现\n· 配置结构：.sandcastle 目录、Dockerfile、.env（Anthropic API key + GitHub token）\n· Claude Skills 语法彩蛋：反引号前加感叹号，解析 prompt 时执行命令（如 git diff）\n· 实战结果：agent 自动 scaffold 出一个 TypeScript 项目（Vitest + Commander + 类型检查 + CI）\n\n来源：\n· 原视频：https://www.youtube.com/watch?v=E5-QK3CDVQM\n· 仓库：https://github.com/mattpocock/sandcastle\n· npm 包：@ai-hero/sandcastle\n\n字幕：AI 辅助转录 + 翻译并经人工校对。如有不准确之处，欢迎指出。",
+    "tags": [
+      "开发",
+      "AI",
+      "Claude Code",
+      "命令行",
+      "CLI",
+      "实战教程",
+      "skills",
+      "Codex",
+      "Skills",
+      "AI编程"
+    ],
+    "view_count": 2138,
+    "like_count": 51,
+    "upload_date": 1786581261,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "fact_check_request": {
+    "mode": "auto"
+  },
+  "cache_keys": {
+    "media": "163945c51122f1c4f76f3d5e69824b89025a864579b12995b530fd098a066f07",
+    "audio": "ab65f45bf01c4aba49cf737d17da7aa42212363784f3aaca92bbb168da4142cc",
+    "transcript": "f42a34dba0d213c9fcb3ac8df768fcc9d7412640d8bdc50329efea2b38b7fb0e",
+    "frames": "4dac47b8dc1bfbcebd2a8181155f54eb9161e04047de3004ce4996d28d7a6398"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 3.86,
+      "text": "我的目標是,在過去6個月,我試過找我的執行者"
+    },
+    {
+      "start": 3.86,
+      "end": 6.34,
+      "text": "我的執行者們,為全AFK延續"
+    },
+    {
+      "start": 6.34,
+      "end": 7.62,
+      "text": "這些AFK執行者們,為全AFK延續"
+    },
+    {
+      "start": 7.62,
+      "end": 8.92,
+      "text": "為全AFK延續,為全AFK延續"
+    },
+    {
+      "start": 8.92,
+      "end": 10.42,
+      "text": "為全AFK延續,為全AFK延續"
+    },
+    {
+      "start": 10.42,
+      "end": 11.82,
+      "text": "為全AFK延續,為全AFK延續"
+    },
+    {
+      "start": 11.82,
+      "end": 13.48,
+      "text": "正常地,他們正在延續"
+    },
+    {
+      "start": 13.48,
+      "end": 15.86,
+      "text": "正常地,他們正在延續"
+    },
+    {
+      "start": 15.86,
+      "end": 16.86,
+      "text": "正常地,他們正在延續"
+    },
+    {
+      "start": 16.86,
+      "end": 18.72,
+      "text": "不過,為了能夠讓他們延續"
+    },
+    {
+      "start": 18.72,
+      "end": 19.38,
+      "text": "正常地,他們正在延續"
+    },
+    {
+      "start": 19.38,
+      "end": 20.36,
+      "text": "他們需要延續"
+    },
+    {
+      "start": 20.36,
+      "end": 21.6,
+      "text": "他們需要延續"
+    },
+    {
+      "start": 21.6,
+      "end": 23.42,
+      "text": "還有一個問題,你應該有的"
+    },
+    {
+      "start": 23.42,
+      "end": 25.08,
+      "text": "是,我能夠讓我的執行者"
+    },
+    {
+      "start": 25.08,
+      "end": 27.44,
+      "text": "不然你就可以去YOLO模式"
+    },
+    {
+      "start": 27.44,
+      "end": 30.0,
+      "text": "和完全供應任何供應項目"
+    },
+    {
+      "start": 30.0,
+      "end": 31.1,
+      "text": "但如果你做到的話"
+    },
+    {
+      "start": 31.1,
+      "end": 33.6,
+      "text": "Claude會做很大的事情在你系統上"
+    },
+    {
+      "start": 33.6,
+      "end": 38.44,
+      "text": "例如打開家庭領事領事項目"
+    },
+    {
+      "start": 38.44,
+      "end": 40.0,
+      "text": "如果你在一個領事領事項目"
+    },
+    {
+      "start": 40.0,
+      "end": 43.04,
+      "text": "就可能會有關你擔任的資料"
+    },
+    {
+      "start": 43.04,
+      "end": 45.92,
+      "text": "或把你的領事項目送到一間第三個派對"
+    },
+    {
+      "start": 45.92,
+      "end": 48.56,
+      "text": "所以在想要讓AFC領事領事領事領事領事項目"
+    },
+    {
+      "start": 48.56,
+      "end": 50.56,
+      "text": "你必須要成為SANBOXED"
+    },
+    {
+      "start": 50.56,
+      "end": 53.04,
+      "text": "還有很多方式的方式"
+    },
+    {
+      "start": 53.04,
+      "end": 57.32,
+      "text": "但我並沒有特別高興過任何領事項目"
+    },
+    {
+      "start": 57.32,
+      "end": 60.04,
+      "text": "我真的用的項目"
+    },
+    {
+      "start": 60.04,
+      "end": 62.64,
+      "text": "並嘗試製作Docker sandboxes"
+    },
+    {
+      "start": 62.64,
+      "end": 64.44,
+      "text": "雖然有很多問題"
+    },
+    {
+      "start": 64.44,
+      "end": 65.64,
+      "text": "但在AFC領事項目上"
+    },
+    {
+      "start": 65.64,
+      "end": 67.04,
+      "text": "我不會揭曉你現在"
+    },
+    {
+      "start": 67.04,
+      "end": 67.88,
+      "text": "我想要的就是"
+    },
+    {
+      "start": 67.88,
+      "end": 69.16,
+      "text": "一個簡單的領事項目"
+    },
+    {
+      "start": 69.16,
+      "end": 70.32,
+      "text": "讓我能領事項目"
+    },
+    {
+      "start": 70.32,
+      "end": 71.32,
+      "text": "然後就說"
+    },
+    {
+      "start": 71.32,
+      "end": 72.64,
+      "text": "領事項目"
+    },
+    {
+      "start": 72.64,
+      "end": 74.12,
+      "text": "在這個SANBOX領事項目"
+    },
+    {
+      "start": 74.12,
+      "end": 75.48,
+      "text": "使用這個領事項目"
+    },
+    {
+      "start": 75.48,
+      "end": 76.76,
+      "text": "所有的領事項目"
+    },
+    {
+      "start": 76.76,
+      "end": 79.4,
+      "text": "都在想要送給我第三個派對"
+    },
+    {
+      "start": 79.4,
+      "end": 80.04,
+      "text": "所以我發現"
+    },
+    {
+      "start": 80.04,
+      "end": 81.72,
+      "text": "我必須要建立一個領事項目"
+    },
+    {
+      "start": 81.72,
+      "end": 83.92,
+      "text": "那個領事項目是SANcastle"
+    },
+    {
+      "start": 83.92,
+      "end": 84.72,
+      "text": "一個領事項目"
+    },
+    {
+      "start": 84.72,
+      "end": 86.48,
+      "text": "用AICoding的領事項目"
+    },
+    {
+      "start": 86.48,
+      "end": 87.88,
+      "text": "進行解鎖"
+    },
+    {
+      "start": 87.88,
+      "end": 91.04,
+      "text": "你可以使用這個領事項目"
+    },
+    {
+      "start": 91.04,
+      "end": 92.96,
+      "text": "讓你領事項目"
+    },
+    {
+      "start": 92.96,
+      "end": 94.24,
+      "text": "把領事項目"
+    },
+    {
+      "start": 94.24,
+      "end": 95.36,
+      "text": "把SANBOX領事項目"
+    },
+    {
+      "start": 95.36,
+      "end": 96.72,
+      "text": "把領事項目領事項目"
+    },
+    {
+      "start": 96.72,
+      "end": 99.16,
+      "text": "如果你有任何的領事項目"
+    },
+    {
+      "start": 99.16,
+      "end": 101.12,
+      "text": "你會看到這個領事項目"
+    },
+    {
+      "start": 101.12,
+      "end": 103.24,
+      "text": "或Docker sandboxle的領事項目"
+    },
+    {
+      "start": 103.24,
+      "end": 105.24,
+      "text": "有一個主領事項目"
+    },
+    {
+      "start": 105.24,
+      "end": 106.32,
+      "text": "這個領事項目"
+    },
+    {
+      "start": 106.32,
+      "end": 109.68,
+      "text": "是Docker sandboxle.run的領事項目"
+    },
+    {
+      "start": 109.68,
+      "end": 110.8,
+      "text": "這個領事項目"
+    },
+    {
+      "start": 110.8,
+      "end": 113.64,
+      "text": "你可以建立一個領事項目"
+    },
+    {
+      "start": 113.64,
+      "end": 114.44,
+      "text": "你可以建立項目"
+    },
+    {
+      "start": 114.44,
+      "end": 116.08,
+      "text": "把領事項目的項目"
+    },
+    {
+      "start": 116.08,
+      "end": 117.48,
+      "text": "將領事項目擺在一旁"
+    },
+    {
+      "start": 117.48,
+      "end": 118.84,
+      "text": "你可以建立項目"
+    },
+    {
+      "start": 118.84,
+      "end": 120.8,
+      "text": "把領事項目的項目"
+    },
+    {
+      "start": 120.8,
+      "end": 121.96,
+      "text": "將領事項目擺在一旁"
+    },
+    {
+      "start": 121.96,
+      "end": 125.08,
+      "text": "我真的很喜歡使用這個項目"
+    },
+    {
+      "start": 125.08,
+      "end": 126.24,
+      "text": "現在我覺得是時間"
+    },
+    {
+      "start": 126.24,
+      "end": 127.0,
+      "text": "拍攝一段影片"
+    },
+    {
+      "start": 127.0,
+      "end": 127.68,
+      "text": "讓我示範一下"
+    },
+    {
+      "start": 127.68,
+      "end": 129.2,
+      "text": "這個領事項目的領事項目"
+    },
+    {
+      "start": 129.2,
+      "end": 131.28,
+      "text": "我們先用NPM install AI Hero"
+    },
+    {
+      "start": 131.28,
+      "end": 132.0,
+      "text": "SANcastle"
+    },
+    {
+      "start": 132.0,
+      "end": 132.64,
+      "text": "當做了這個領事項目"
+    },
+    {
+      "start": 132.64,
+      "end": 133.72,
+      "text": "我們可以用NPX"
+    },
+    {
+      "start": 133.72,
+      "end": 135.24,
+      "text": "SANcastleinit"
+    },
+    {
+      "start": 135.24,
+      "end": 136.96,
+      "text": "你會想要選擇領事項目"
+    },
+    {
+      "start": 136.96,
+      "end": 138.04,
+      "text": "先選擇Claw Code"
+    },
+    {
+      "start": 138.04,
+      "end": 138.52,
+      "text": "為何不"
+    },
+    {
+      "start": 138.52,
+      "end": 139.2,
+      "text": "你可以選擇"
+    },
+    {
+      "start": 139.2,
+      "end": 140.96,
+      "text": "我們先選擇SANbox的領事項目"
+    },
+    {
+      "start": 140.96,
+      "end": 142.04,
+      "text": "讓我們選擇領事項目"
+    },
+    {
+      "start": 142.04,
+      "end": 142.88,
+      "text": "我的計劃在未來"
+    },
+    {
+      "start": 142.88,
+      "end": 145.16,
+      "text": "是更多更多領事項目"
+    },
+    {
+      "start": 145.16,
+      "end": 146.48,
+      "text": "而且你也可以選擇"
+    },
+    {
+      "start": 146.48,
+      "end": 147.8,
+      "text": "自己的領事項目"
+    },
+    {
+      "start": 147.8,
+      "end": 149.2,
+      "text": "現在我們先選擇Docker"
+    },
+    {
+      "start": 149.2,
+      "end": 150.72,
+      "text": "SANcastle也會使用"
+    },
+    {
+      "start": 150.72,
+      "end": 151.68,
+      "text": "Backlog Manager"
+    },
+    {
+      "start": 151.68,
+      "end": 152.96,
+      "text": "因為AFK agents"
+    },
+    {
+      "start": 152.96,
+      "end": 154.04,
+      "text": "需要某些方式"
+    },
+    {
+      "start": 154.04,
+      "end": 155.08,
+      "text": "選擇領事項目"
+    },
+    {
+      "start": 155.08,
+      "end": 156.8,
+      "text": "然後知道什麼要做"
+    },
+    {
+      "start": 156.8,
+      "end": 157.88,
+      "text": "我最擔心的方式"
+    },
+    {
+      "start": 157.88,
+      "end": 159.16,
+      "text": "是GitHub issues"
+    },
+    {
+      "start": 159.16,
+      "end": 161.24,
+      "text": "我們現在也有5個領事項目"
+    },
+    {
+      "start": 161.24,
+      "end": 161.96,
+      "text": "我們現在有5個領事項目"
+    },
+    {
+      "start": 161.96,
+      "end": 163.08,
+      "text": "可能有更多領事項目"
+    },
+    {
+      "start": 163.08,
+      "end": 164.12,
+      "text": "在時間你做這個領事項目"
+    },
+    {
+      "start": 164.12,
+      "end": 165.68,
+      "text": "我們其實來採訪"
+    },
+    {
+      "start": 165.68,
+      "end": 166.36,
+      "text": "我們來採訪"
+    },
+    {
+      "start": 166.36,
+      "end": 169.2,
+      "text": "我們來採訪的領事項目"
+    },
+    {
+      "start": 169.2,
+      "end": 170.76,
+      "text": "然後我們選擇GitHub issues"
+    },
+    {
+      "start": 170.76,
+      "end": 171.56,
+      "text": "我們會創造"
+    },
+    {
+      "start": 171.56,
+      "end": 173.12,
+      "text": "SANcastle Github Label"
+    },
+    {
+      "start": 173.12,
+      "end": 174.4,
+      "text": "領事項目會設定"
+    },
+    {
+      "start": 174.4,
+      "end": 175.32,
+      "text": "領事項目這項目"
+    },
+    {
+      "start": 175.32,
+      "end": 176.52,
+      "text": "這項目的主要是"
+    },
+    {
+      "start": 176.52,
+      "end": 177.72,
+      "text": "SANcastle Label"
+    },
+    {
+      "start": 177.72,
+      "end": 179.52,
+      "text": "在領事項目的領事項目"
+    },
+    {
+      "start": 179.52,
+      "end": 180.92,
+      "text": "會選擇領事項目"
+    },
+    {
+      "start": 180.92,
+      "end": 182.08,
+      "text": "我們可以看到"
+    },
+    {
+      "start": 182.08,
+      "end": 183.12,
+      "text": "某些領事項目"
+    },
+    {
+      "start": 183.12,
+      "end": 186.56,
+      "text": "在SANcastle的領事項目"
+    },
+    {
+      "start": 186.56,
+      "end": 187.4,
+      "text": "就在這個領事項目上"
+    },
+    {
+      "start": 187.4,
+      "end": 188.6,
+      "text": "現在要知道的問題"
+    },
+    {
+      "start": 188.6,
+      "end": 190.16,
+      "text": "是這個Docker file"
+    },
+    {
+      "start": 190.16,
+      "end": 191.4,
+      "text": "這個領事項目"
+    },
+    {
+      "start": 191.4,
+      "end": 192.76,
+      "text": "是Docker container"
+    },
+    {
+      "start": 192.76,
+      "end": 193.6,
+      "text": "或是領事項目"
+    },
+    {
+      "start": 193.6,
+      "end": 195.24,
+      "text": "來設定Docker container"
+    },
+    {
+      "start": 195.24,
+      "end": 196.2,
+      "text": "我們會使用的"
+    },
+    {
+      "start": 196.2,
+      "end": 197.28,
+      "text": "SANcastle的領事項目"
+    },
+    {
+      "start": 197.28,
+      "end": 199.0,
+      "text": "在這個Docker container"
+    },
+    {
+      "start": 199.0,
+      "end": 199.6,
+      "text": "這項目的主要是"
+    },
+    {
+      "start": 199.6,
+      "end": 200.72,
+      "text": "我們可以設定"
+    },
+    {
+      "start": 200.72,
+      "end": 201.96,
+      "text": "任何領事項目"
+    },
+    {
+      "start": 201.96,
+      "end": 202.56,
+      "text": "我們設定了"
+    },
+    {
+      "start": 202.56,
+      "end": 203.96,
+      "text": "一些重要的領事項目"
+    },
+    {
+      "start": 203.96,
+      "end": 205.88,
+      "text": "我們設定了GitHub CLI"
+    },
+    {
+      "start": 205.88,
+      "end": 207.68,
+      "text": "我們做了一些設定"
+    },
+    {
+      "start": 207.68,
+      "end": 210.68,
+      "text": "來承認領事項目的領事項目"
+    },
+    {
+      "start": 210.68,
+      "end": 211.12,
+      "text": "我們設定了"
+    },
+    {
+      "start": 211.12,
+      "end": 211.92,
+      "text": "領事項目的領事項目"
+    },
+    {
+      "start": 211.92,
+      "end": 213.84,
+      "text": "然後我們就準備好了"
+    },
+    {
+      "start": 213.84,
+      "end": 215.12,
+      "text": "所以我們來建立"
+    },
+    {
+      "start": 215.12,
+      "end": 216.96,
+      "text": "這個領事項目的領事項目"
+    },
+    {
+      "start": 216.96,
+      "end": 217.72,
+      "text": "那領事項目很快"
+    },
+    {
+      "start": 217.72,
+      "end": 219.4,
+      "text": "然後它現在完成了"
+    },
+    {
+      "start": 219.4,
+      "end": 220.76,
+      "text": "接下來我們要設定"
+    },
+    {
+      "start": 220.76,
+      "end": 222.48,
+      "text": "領事項目的領事項目"
+    },
+    {
+      "start": 222.48,
+      "end": 224.52,
+      "text": "領事項目/.env"
+    },
+    {
+      "start": 224.52,
+      "end": 226.56,
+      "text": "我們設定了領事項目的項目"
+    },
+    {
+      "start": 226.56,
+      "end": 228.8,
+      "text": "我們設定了領事項目的項目"
+    },
+    {
+      "start": 228.8,
+      "end": 230.56,
+      "text": "領事項目/.env"
+    },
+    {
+      "start": 230.56,
+      "end": 231.36,
+      "text": "我們可以看到"
+    },
+    {
+      "start": 231.36,
+      "end": 232.96,
+      "text": "領事項目的領事項目"
+    },
+    {
+      "start": 232.96,
+      "end": 234.68,
+      "text": "還有領事項目的項目"
+    },
+    {
+      "start": 234.68,
+      "end": 235.28,
+      "text": "如果你想使用"
+    },
+    {
+      "start": 235.28,
+      "end": 236.0,
+      "text": "Claude的領事項目"
+    },
+    {
+      "start": 236.0,
+      "end": 237.2,
+      "text": "不論領事項目"
+    },
+    {
+      "start": 237.2,
+      "end": 238.88,
+      "text": "你可以去這個領事項目"
+    },
+    {
+      "start": 238.88,
+      "end": 240.68,
+      "text": "那會告訴你 more about it"
+    },
+    {
+      "start": 240.68,
+      "end": 241.28,
+      "text": "如果你不知道"
+    },
+    {
+      "start": 241.28,
+      "end": 241.8,
+      "text": "領事項目"
+    },
+    {
+      "start": 241.8,
+      "end": 243.32,
+      "text": "是有點噁心"
+    },
+    {
+      "start": 243.32,
+      "end": 244.76,
+      "text": "使用領事項目的項目"
+    },
+    {
+      "start": 244.76,
+      "end": 245.96,
+      "text": "這些項目的項目"
+    },
+    {
+      "start": 245.96,
+      "end": 247.88,
+      "text": "所以有些領事項目的領事項目"
+    },
+    {
+      "start": 247.88,
+      "end": 249.28,
+      "text": "我對這些領事項目"
+    },
+    {
+      "start": 249.28,
+      "end": 251.32,
+      "text": "和一些領事項目的領事項目"
+    },
+    {
+      "start": 251.32,
+      "end": 254.48,
+      "text": "once that's done I'm going to go into my source control"
+    },
+    {
+      "start": 254.48,
+      "end": 255.72,
+      "text": "I'm going to commit this code"
+    },
+    {
+      "start": 255.72,
+      "end": 256.92,
+      "text": "and I'm going to push it up"
+    },
+    {
+      "start": 256.92,
+      "end": 259.92,
+      "text": "because I'm going to show you how we can use"
+    },
+    {
+      "start": 259.92,
+      "end": 262.12,
+      "text": "get hub issues to schedule some work"
+    },
+    {
+      "start": 262.12,
+      "end": 263.56,
+      "text": "for this agent that we've created"
+    },
+    {
+      "start": 263.56,
+      "end": 266.2,
+      "text": "so let's go to our repo and create a new issue"
+    },
+    {
+      "start": 266.2,
+      "end": 267.12,
+      "text": "let's say"
+    },
+    {
+      "start": 267.12,
+      "end": 269.8,
+      "text": "scaffled me a basic typescript template in the repo"
+    },
+    {
+      "start": 269.8,
+      "end": 271.8,
+      "text": "give me a basic typescript application"
+    },
+    {
+      "start": 271.8,
+      "end": 273.24,
+      "text": "that uses vtest"
+    },
+    {
+      "start": 273.24,
+      "end": 274.92,
+      "text": "that uses type checking"
+    },
+    {
+      "start": 274.92,
+      "end": 277.8,
+      "text": "that has a very very simple CLI"
+    },
+    {
+      "start": 277.8,
+      "end": 278.52,
+      "text": "that I can call"
+    },
+    {
+      "start": 278.52,
+      "end": 280.16,
+      "text": "use commander for the CLI"
+    },
+    {
+      "start": 280.16,
+      "end": 281.88,
+      "text": "scrypt that does type checking"
+    },
+    {
+      "start": 281.88,
+      "end": 282.76,
+      "text": "and runs the tests"
+    },
+    {
+      "start": 282.76,
+      "end": 284.92,
+      "text": "so now I'm going to create that issue"
+    },
+    {
+      "start": 284.92,
+      "end": 287.72,
+      "text": "and we can now run our agent to see what happens"
+    },
+    {
+      "start": 287.72,
+      "end": 289.88,
+      "text": "so after that it should be ready to be picked up"
+    },
+    {
+      "start": 289.88,
+      "end": 292.16,
+      "text": "first I'm going to add this little piece of code"
+    },
+    {
+      "start": 292.16,
+      "end": 294.4,
+      "text": "to my package.json here"
+    },
+    {
+      "start": 294.4,
+      "end": 297.16,
+      "text": "which is just going to allow me to run a script here"
+    },
+    {
+      "start": 297.16,
+      "end": 298.76,
+      "text": "so let's say scripts"
+    },
+    {
+      "start": 298.76,
+      "end": 300.96,
+      "text": "and then add this sankastle script here"
+    },
+    {
+      "start": 300.96,
+      "end": 303.44,
+      "text": "this is just going to run npxtsx"
+    },
+    {
+      "start": 303.44,
+      "end": 304.8,
+      "text": "and tsx is just a way"
+    },
+    {
+      "start": 304.8,
+      "end": 307.0,
+      "text": "that you can run typescript as a script"
+    },
+    {
+      "start": 307.0,
+      "end": 308.52,
+      "text": "and it's going to run this file"
+    },
+    {
+      "start": 308.52,
+      "end": 310.96,
+      "text": ".sankastle/main.mts"
+    },
+    {
+      "start": 310.96,
+      "end": 311.96,
+      "text": "so let's actually go ahead"
+    },
+    {
+      "start": 311.96,
+      "end": 312.8,
+      "text": "and run this"
+    },
+    {
+      "start": 312.8,
+      "end": 314.24,
+      "text": "and see what happens"
+    },
+    {
+      "start": 314.24,
+      "end": 315.0,
+      "text": "we can see immediately"
+    },
+    {
+      "start": 315.0,
+      "end": 317.08,
+      "text": "that it's kicked off a planner agent here"
+    },
+    {
+      "start": 317.08,
+      "end": 318.88,
+      "text": "and we can control click these logs"
+    },
+    {
+      "start": 318.88,
+      "end": 320.12,
+      "text": "to see what it's up to"
+    },
+    {
+      "start": 320.12,
+      "end": 322.88,
+      "text": "we can see that it's successfully set up the sandbox"
+    },
+    {
+      "start": 322.88,
+      "end": 325.32,
+      "text": "it's the planner agent running on docker"
+    },
+    {
+      "start": 325.32,
+      "end": 327.28,
+      "text": "and it's looking at the open issues here"
+    },
+    {
+      "start": 327.28,
+      "end": 329.4,
+      "text": "and it sees that there's only one open issue"
+    },
+    {
+      "start": 329.4,
+      "end": 331.6,
+      "text": "it then spits out this plan here"
+    },
+    {
+      "start": 331.6,
+      "end": 333.36,
+      "text": "which is a set of issues"
+    },
+    {
+      "start": 333.36,
+      "end": 334.44,
+      "text": "which are going to be worked on"
+    },
+    {
+      "start": 334.44,
+      "end": 335.28,
+      "text": "finally at the bottom here"
+    },
+    {
+      "start": 335.28,
+      "end": 336.92,
+      "text": "it shows the amount of context window"
+    },
+    {
+      "start": 336.92,
+      "end": 337.88,
+      "text": "that it used"
+    },
+    {
+      "start": 337.88,
+      "end": 339.4,
+      "text": "if we zoom back to our terminal here"
+    },
+    {
+      "start": 339.4,
+      "end": 341.12,
+      "text": "we can see that an implementer agent"
+    },
+    {
+      "start": 341.12,
+      "end": 342.24,
+      "text": "was kicked off too"
+    },
+    {
+      "start": 342.24,
+      "end": 343.76,
+      "text": "let's control click these logs"
+    },
+    {
+      "start": 343.76,
+      "end": 345.16,
+      "text": "and take a look at them"
+    },
+    {
+      "start": 345.16,
+      "end": 346.28,
+      "text": "and we can see that it called"
+    },
+    {
+      "start": 346.28,
+      "end": 348.28,
+      "text": "githubissuevue1"
+    },
+    {
+      "start": 348.28,
+      "end": 349.72,
+      "text": "it has a clear picture"
+    },
+    {
+      "start": 349.72,
+      "end": 351.8,
+      "text": "and it asked for a basic typescript script"
+    },
+    {
+      "start": 351.8,
+      "end": 353.76,
+      "text": "outvtest for testing type checking"
+    },
+    {
+      "start": 353.76,
+      "end": 355.08,
+      "text": "simple cli using commander"
+    },
+    {
+      "start": 355.08,
+      "end": 355.44,
+      "text": "great"
+    },
+    {
+      "start": 355.44,
+      "end": 357.4,
+      "text": "we can see that it's running bash commands"
+    },
+    {
+      "start": 357.4,
+      "end": 358.36,
+      "text": "inside here"
+    },
+    {
+      "start": 358.36,
+      "end": 361.08,
+      "text": "it's doing good dependencies installed"
+    },
+    {
+      "start": 361.08,
+      "end": 362.12,
+      "text": "and I've even got it prompted"
+    },
+    {
+      "start": 362.12,
+      "end": 363.16,
+      "text": "so it's doing a little bit of"
+    },
+    {
+      "start": 363.16,
+      "end": 364.72,
+      "text": "redgreen refactor here"
+    },
+    {
+      "start": 364.72,
+      "end": 366.44,
+      "text": "where it's writing the test first"
+    },
+    {
+      "start": 366.44,
+      "end": 367.84,
+      "text": "vtest run etc"
+    },
+    {
+      "start": 367.84,
+      "end": 368.92,
+      "text": "we can see it all happening"
+    },
+    {
+      "start": 368.92,
+      "end": 370.4,
+      "text": "it's now moved on a little bit further"
+    },
+    {
+      "start": 370.4,
+      "end": 371.68,
+      "text": "and we can sit and watch this"
+    },
+    {
+      "start": 371.68,
+      "end": 372.36,
+      "text": "if we want to"
+    },
+    {
+      "start": 372.36,
+      "end": 374.08,
+      "text": "or we can go and have a cup of tea"
+    },
+    {
+      "start": 374.08,
+      "end": 375.08,
+      "text": "we can relax"
+    },
+    {
+      "start": 375.08,
+      "end": 378.24,
+      "text": "and this will just do its work without us"
+    },
+    {
+      "start": 378.24,
+      "end": 379.08,
+      "text": "so while this is running"
+    },
+    {
+      "start": 379.08,
+      "end": 380.24,
+      "text": "why don't we go and have a look"
+    },
+    {
+      "start": 380.24,
+      "end": 382.32,
+      "text": "at the main.mts file here"
+    },
+    {
+      "start": 382.32,
+      "end": 383.24,
+      "text": "we can see the planner"
+    },
+    {
+      "start": 383.24,
+      "end": 384.24,
+      "text": "that we saw earlier"
+    },
+    {
+      "start": 384.24,
+      "end": 385.36,
+      "text": "is just down here"
+    },
+    {
+      "start": 385.36,
+      "end": 385.84,
+      "text": "where we have a"
+    },
+    {
+      "start": 385.84,
+      "end": 387.76,
+      "text": "sangcastle.run command"
+    },
+    {
+      "start": 387.76,
+      "end": 389.64,
+      "text": "that takes in a name of planner"
+    },
+    {
+      "start": 389.64,
+      "end": 391.16,
+      "text": "it takes in an agent here"
+    },
+    {
+      "start": 391.16,
+      "end": 392.52,
+      "text": "so we can just change this"
+    },
+    {
+      "start": 392.52,
+      "end": 393.04,
+      "text": "if we want to"
+    },
+    {
+      "start": 393.04,
+      "end": 393.6,
+      "text": "if we want to do"
+    },
+    {
+      "start": 393.6,
+      "end": 395.08,
+      "text": "planning with codex"
+    },
+    {
+      "start": 395.08,
+      "end": 397.0,
+      "text": "let's say instead of cloud code"
+    },
+    {
+      "start": 397.0,
+      "end": 397.96,
+      "text": "we totally can"
+    },
+    {
+      "start": 397.96,
+      "end": 399.0,
+      "text": "and it's also using this"
+    },
+    {
+      "start": 399.0,
+      "end": 400.12,
+      "text": "prompt file here"
+    },
+    {
+      "start": 400.12,
+      "end": 402.12,
+      "text": "so plan prompt in here"
+    },
+    {
+      "start": 402.12,
+      "end": 403.4,
+      "text": "this is scaffolded by the template"
+    },
+    {
+      "start": 403.4,
+      "end": 404.92,
+      "text": "and you can totally edit this"
+    },
+    {
+      "start": 404.92,
+      "end": 406.04,
+      "text": "as much as you want to"
+    },
+    {
+      "start": 406.04,
+      "end": 408.6,
+      "text": "to run anything inside a sandbox"
+    },
+    {
+      "start": 408.6,
+      "end": 410.76,
+      "text": "this one is taking all of the open issues"
+    },
+    {
+      "start": 410.76,
+      "end": 411.56,
+      "text": "from the repo"
+    },
+    {
+      "start": 411.56,
+      "end": 413.32,
+      "text": "that have the label sandcastle"
+    },
+    {
+      "start": 413.32,
+      "end": 414.52,
+      "text": "it's grabbing all of the labels"
+    },
+    {
+      "start": 414.52,
+      "end": 415.28,
+      "text": "all the comments"
+    },
+    {
+      "start": 415.28,
+      "end": 417.2,
+      "text": "grabbing all of the comments body as well"
+    },
+    {
+      "start": 417.2,
+      "end": 417.96,
+      "text": "and then it's working out"
+    },
+    {
+      "start": 417.96,
+      "end": 420.4,
+      "text": "which ones can be done right now"
+    },
+    {
+      "start": 420.4,
+      "end": 421.52,
+      "text": "so it's only looking for"
+    },
+    {
+      "start": 421.52,
+      "end": 423.28,
+      "text": "unblocked issues here"
+    },
+    {
+      "start": 423.28,
+      "end": 425.12,
+      "text": "and finally we tell it to output its plan"
+    },
+    {
+      "start": 425.12,
+      "end": 426.0,
+      "text": "in adjacent object"
+    },
+    {
+      "start": 426.0,
+      "end": 427.36,
+      "text": "wrapped in plan tags"
+    },
+    {
+      "start": 427.36,
+      "end": 428.88,
+      "text": "if we go back to main.mts"
+    },
+    {
+      "start": 428.88,
+      "end": 429.84,
+      "text": "we can see that this"
+    },
+    {
+      "start": 429.84,
+      "end": 431.24,
+      "text": "then gets picked up here"
+    },
+    {
+      "start": 431.24,
+      "end": 432.64,
+      "text": "we then grab the JSON"
+    },
+    {
+      "start": 432.64,
+      "end": 433.52,
+      "text": "out of the plan here"
+    },
+    {
+      "start": 433.52,
+      "end": 434.84,
+      "text": "and figure out the issues"
+    },
+    {
+      "start": 434.84,
+      "end": 436.92,
+      "text": "and then for each of the issues"
+    },
+    {
+      "start": 436.92,
+      "end": 438.6,
+      "text": "we run a"
+    },
+    {
+      "start": 438.6,
+      "end": 439.64,
+      "text": "separate sandbox here"
+    },
+    {
+      "start": 439.64,
+      "end": 440.72,
+      "text": "we run an implementer"
+    },
+    {
+      "start": 440.72,
+      "end": 442.36,
+      "text": "and this one has an implement prompt"
+    },
+    {
+      "start": 442.36,
+      "end": 443.56,
+      "text": "that's just inside here"
+    },
+    {
+      "start": 443.56,
+      "end": 445.32,
+      "text": "so implement prompt"
+    },
+    {
+      "start": 445.32,
+      "end": 447.44,
+      "text": "this one takes in some prompt arguments here"
+    },
+    {
+      "start": 447.44,
+      "end": 449.12,
+      "text": "so it takes in an issue title"
+    },
+    {
+      "start": 449.12,
+      "end": 450.48,
+      "text": "it takes in the task ID"
+    },
+    {
+      "start": 450.48,
+      "end": 451.72,
+      "text": "which is the issue ID"
+    },
+    {
+      "start": 451.72,
+      "end": 452.92,
+      "text": "then it says you're going to be working"
+    },
+    {
+      "start": 452.92,
+      "end": 454.76,
+      "text": "on a specific branch"
+    },
+    {
+      "start": 454.76,
+      "end": 457.04,
+      "text": "again all of this is just a setup"
+    },
+    {
+      "start": 457.04,
+      "end": 458.4,
+      "text": "that I cooked up"
+    },
+    {
+      "start": 458.4,
+      "end": 459.24,
+      "text": "really this is not"
+    },
+    {
+      "start": 459.24,
+      "end": 460.48,
+      "text": "sancastle giving you"
+    },
+    {
+      "start": 460.48,
+      "end": 461.96,
+      "text": "any kind of prescription"
+    },
+    {
+      "start": 461.96,
+      "end": 463.32,
+      "text": "on how you want to run it"
+    },
+    {
+      "start": 463.32,
+      "end": 464.96,
+      "text": "this is just a really cool workflow"
+    },
+    {
+      "start": 464.96,
+      "end": 466.92,
+      "text": "that I tend to use in my repos"
+    },
+    {
+      "start": 466.92,
+      "end": 468.4,
+      "text": "so I figured it belonged in a template"
+    },
+    {
+      "start": 468.4,
+      "end": 469.96,
+      "text": "if we zoom back to main.mts"
+    },
+    {
+      "start": 469.96,
+      "end": 471.64,
+      "text": "we can see that the result"
+    },
+    {
+      "start": 471.64,
+      "end": 473.2,
+      "text": "here is captured in a variable"
+    },
+    {
+      "start": 473.2,
+      "end": 474.92,
+      "text": "and if there are more than one"
+    },
+    {
+      "start": 474.92,
+      "end": 475.84,
+      "text": "commits here"
+    },
+    {
+      "start": 475.84,
+      "end": 477.4,
+      "text": "we then run a reviewer"
+    },
+    {
+      "start": 477.4,
+      "end": 478.48,
+      "text": "this pattern has been"
+    },
+    {
+      "start": 478.48,
+      "end": 480.32,
+      "text": "incredibly powerful"
+    },
+    {
+      "start": 480.32,
+      "end": 481.16,
+      "text": "because the implementer"
+    },
+    {
+      "start": 481.16,
+      "end": 481.92,
+      "text": "can make mistakes"
+    },
+    {
+      "start": 481.92,
+      "end": 482.6,
+      "text": "but the reviewer"
+    },
+    {
+      "start": 482.6,
+      "end": 483.72,
+      "text": "generally picks it up"
+    },
+    {
+      "start": 483.72,
+      "end": 484.2,
+      "text": "and of course"
+    },
+    {
+      "start": 484.2,
+      "end": 486.04,
+      "text": "if you want to do an adversarial review"
+    },
+    {
+      "start": 486.04,
+      "end": 487.92,
+      "text": "where you have one agent"
+    },
+    {
+      "start": 487.92,
+      "end": 488.84,
+      "text": "run another"
+    },
+    {
+      "start": 488.84,
+      "end": 490.68,
+      "text": "or review another agent's code"
+    },
+    {
+      "start": 490.68,
+      "end": 491.88,
+      "text": "then you can just do"
+    },
+    {
+      "start": 491.88,
+      "end": 492.96,
+      "text": "sancastle.codex"
+    },
+    {
+      "start": 492.96,
+      "end": 495.0,
+      "text": "if you want to have multiple different agents"
+    },
+    {
+      "start": 495.0,
+      "end": 496.48,
+      "text": "spawn at the same time"
+    },
+    {
+      "start": 496.48,
+      "end": 497.68,
+      "text": "come up with an implementation"
+    },
+    {
+      "start": 497.68,
+      "end": 498.92,
+      "text": "and then some other reviewer"
+    },
+    {
+      "start": 498.92,
+      "end": 500.4,
+      "text": "takes all of those branches"
+    },
+    {
+      "start": 500.4,
+      "end": 501.36,
+      "text": "chooses the best one"
+    },
+    {
+      "start": 501.36,
+      "end": 502.08,
+      "text": "or makes a"
+    },
+    {
+      "start": 502.08,
+      "end": 503.0,
+      "text": "like a mix of them"
+    },
+    {
+      "start": 503.0,
+      "end": 503.48,
+      "text": "you can"
+    },
+    {
+      "start": 503.48,
+      "end": 504.52,
+      "text": "that's the power of having"
+    },
+    {
+      "start": 504.52,
+      "end": 506.32,
+      "text": "a totally agnostic setup"
+    },
+    {
+      "start": 506.32,
+      "end": 507.44,
+      "text": "to what agent you're running"
+    },
+    {
+      "start": 507.44,
+      "end": 509.24,
+      "text": "that's the power of using your"
+    },
+    {
+      "start": 509.24,
+      "end": 510.88,
+      "text": "or owning your own process"
+    },
+    {
+      "start": 510.88,
+      "end": 511.68,
+      "text": "anyway let's take a look"
+    },
+    {
+      "start": 511.68,
+      "end": 513.48,
+      "text": "at the review prompt here"
+    },
+    {
+      "start": 513.48,
+      "end": 514.64,
+      "text": "it's worth noting this little"
+    },
+    {
+      "start": 514.64,
+      "end": 515.32,
+      "text": "syntax here"
+    },
+    {
+      "start": 515.32,
+      "end": 516.4,
+      "text": "because this is really nice"
+    },
+    {
+      "start": 516.4,
+      "end": 517.36,
+      "text": "this is something I copied"
+    },
+    {
+      "start": 517.36,
+      "end": 519.28,
+      "text": "fromclawedskills"
+    },
+    {
+      "start": 519.28,
+      "end": 520.32,
+      "text": "where if you specify"
+    },
+    {
+      "start": 520.32,
+      "end": 521.32,
+      "text": "an exclamation mark"
+    },
+    {
+      "start": 521.32,
+      "end": 522.32,
+      "text": "before a bunch of"
+    },
+    {
+      "start": 522.32,
+      "end": 523.4,
+      "text": "backticks here"
+    },
+    {
+      "start": 523.4,
+      "end": 524.64,
+      "text": "it will run this"
+    },
+    {
+      "start": 524.64,
+      "end": 525.88,
+      "text": "when it's resolving"
+    },
+    {
+      "start": 525.88,
+      "end": 526.48,
+      "text": "the prompt"
+    },
+    {
+      "start": 526.48,
+      "end": 527.2,
+      "text": "and so it will actually"
+    },
+    {
+      "start": 527.2,
+      "end": 527.8,
+      "text": "execute"
+    },
+    {
+      "start": 527.8,
+      "end": 529.2,
+      "text": "git diff source branch"
+    },
+    {
+      "start": 529.2,
+      "end": 529.92,
+      "text": "branch here"
+    },
+    {
+      "start": 529.92,
+      "end": 530.56,
+      "text": "this review prompt"
+    },
+    {
+      "start": 530.56,
+      "end": 532.2,
+      "text": "just uses a very basic process"
+    },
+    {
+      "start": 532.2,
+      "end": 533.16,
+      "text": "understands the change"
+    },
+    {
+      "start": 533.16,
+      "end": 534.64,
+      "text": "analyse it for improvements"
+    },
+    {
+      "start": 534.64,
+      "end": 535.72,
+      "text": "check correctness"
+    },
+    {
+      "start": 535.72,
+      "end": 536.8,
+      "text": "maintain balance"
+    },
+    {
+      "start": 536.8,
+      "end": 538.48,
+      "text": "and crucially it's a great step"
+    },
+    {
+      "start": 538.48,
+      "end": 539.56,
+      "text": "for like adding"
+    },
+    {
+      "start": 539.56,
+      "end": 540.72,
+      "text": "your own project standards"
+    },
+    {
+      "start": 540.72,
+      "end": 541.56,
+      "text": "so for instance I've added"
+    },
+    {
+      "start": 541.56,
+      "end": 542.64,
+      "text": "this coding standards"
+    },
+    {
+      "start": 542.64,
+      "end": 543.44,
+      "text": "in here"
+    },
+    {
+      "start": 543.44,
+      "end": 544.24,
+      "text": "that you can fill in"
+    },
+    {
+      "start": 544.24,
+      "end": 545.36,
+      "text": "with any project standards"
+    },
+    {
+      "start": 545.36,
+      "end": 546.56,
+      "text": "that you want to be added"
+    },
+    {
+      "start": 546.56,
+      "end": 547.2,
+      "text": "let's look back"
+    },
+    {
+      "start": 547.2,
+      "end": 548.56,
+      "text": "at main.mts"
+    },
+    {
+      "start": 548.56,
+      "end": 549.64,
+      "text": "and we can see what happens"
+    },
+    {
+      "start": 549.64,
+      "end": 550.6,
+      "text": "after all of these"
+    },
+    {
+      "start": 550.6,
+      "end": 551.84,
+      "text": "branches get created"
+    },
+    {
+      "start": 551.84,
+      "end": 552.92,
+      "text": "we can see that they then"
+    },
+    {
+      "start": 552.92,
+      "end": 554.16,
+      "text": "get passed into"
+    },
+    {
+      "start": 554.16,
+      "end": 555.36,
+      "text": "a merger agent"
+    },
+    {
+      "start": 555.36,
+      "end": 556.0,
+      "text": "down the bottom"
+    },
+    {
+      "start": 556.0,
+      "end": 556.72,
+      "text": "and this one takes"
+    },
+    {
+      "start": 556.72,
+      "end": 557.44,
+      "text": "all of the branches"
+    },
+    {
+      "start": 557.44,
+      "end": 558.48,
+      "text": "takes all of the resulting"
+    },
+    {
+      "start": 558.48,
+      "end": 558.92,
+      "text": "issues"
+    },
+    {
+      "start": 558.92,
+      "end": 559.6,
+      "text": "so it understands"
+    },
+    {
+      "start": 559.6,
+      "end": 560.08,
+      "text": "the changes"
+    },
+    {
+      "start": 560.08,
+      "end": 560.84,
+      "text": "that were made"
+    },
+    {
+      "start": 560.84,
+      "end": 561.84,
+      "text": "and then merges them"
+    },
+    {
+      "start": 561.84,
+      "end": 563.08,
+      "text": "back to the main branch"
+    },
+    {
+      "start": 563.08,
+      "end": 563.72,
+      "text": "the reason we use"
+    },
+    {
+      "start": 563.72,
+      "end": 564.48,
+      "text": "an agent for this"
+    },
+    {
+      "start": 564.48,
+      "end": 565.48,
+      "text": "is that there might be"
+    },
+    {
+      "start": 565.48,
+      "end": 566.44,
+      "text": "merge conflict"
+    },
+    {
+      "start": 566.44,
+      "end": 566.96,
+      "text": "between them"
+    },
+    {
+      "start": 566.96,
+      "end": 567.84,
+      "text": "and I usually like to have"
+    },
+    {
+      "start": 567.84,
+      "end": 569.32,
+      "text": "a really powerful agent"
+    },
+    {
+      "start": 569.32,
+      "end": 570.52,
+      "text": "handling those merge conflicts"
+    },
+    {
+      "start": 570.52,
+      "end": 571.04,
+      "text": "for me"
+    },
+    {
+      "start": 571.04,
+      "end": 571.84,
+      "text": "because they can sometimes"
+    },
+    {
+      "start": 571.84,
+      "end": 572.76,
+      "text": "be pretty gnarly"
+    },
+    {
+      "start": 572.76,
+      "end": 573.4,
+      "text": "and so at the end of"
+    },
+    {
+      "start": 573.4,
+      "end": 574.32,
+      "text": "this we have had"
+    },
+    {
+      "start": 574.32,
+      "end": 575.16,
+      "text": "multiple agents"
+    },
+    {
+      "start": 575.16,
+      "end": 576.76,
+      "text": "running at the same time"
+    },
+    {
+      "start": 576.76,
+      "end": 577.6,
+      "text": "all committing to"
+    },
+    {
+      "start": 577.6,
+      "end": 578.56,
+      "text": "their branches"
+    },
+    {
+      "start": 578.56,
+      "end": 579.48,
+      "text": "and then we get"
+    },
+    {
+      "start": 579.48,
+      "end": 580.4,
+      "text": "a like a senior"
+    },
+    {
+      "start": 580.4,
+      "end": 581.56,
+      "text": "merger developer"
+    },
+    {
+      "start": 581.56,
+      "end": 582.2,
+      "text": "to pull them back"
+    },
+    {
+      "start": 582.2,
+      "end": 582.68,
+      "text": "into main"
+    },
+    {
+      "start": 582.68,
+      "end": 583.4,
+      "text": "just this setup"
+    },
+    {
+      "start": 583.4,
+      "end": 584.16,
+      "text": "has massively"
+    },
+    {
+      "start": 584.16,
+      "end": 585.28,
+      "text": "increased my velocity"
+    },
+    {
+      "start": 585.28,
+      "end": 585.96,
+      "text": "and it works"
+    },
+    {
+      "start": 585.96,
+      "end": 586.72,
+      "text": "superduper well"
+    },
+    {
+      "start": 586.72,
+      "end": 587.12,
+      "text": "and again"
+    },
+    {
+      "start": 587.12,
+      "end": 588.04,
+      "text": "san castle is not"
+    },
+    {
+      "start": 588.04,
+      "end": 588.76,
+      "text": "opinionated here"
+    },
+    {
+      "start": 588.76,
+      "end": 589.6,
+      "text": "if you wanted to"
+    },
+    {
+      "start": 589.6,
+      "end": 590.12,
+      "text": "make these"
+    },
+    {
+      "start": 590.12,
+      "end": 591.36,
+      "text": "into PR branches"
+    },
+    {
+      "start": 591.36,
+      "end": 592.2,
+      "text": "you totally could"
+    },
+    {
+      "start": 592.2,
+      "end": 593.0,
+      "text": "ok let's go and check"
+    },
+    {
+      "start": 593.0,
+      "end": 593.72,
+      "text": "in with our"
+    },
+    {
+      "start": 593.72,
+      "end": 594.44,
+      "text": "running process"
+    },
+    {
+      "start": 594.44,
+      "end": 594.88,
+      "text": "and let's see"
+    },
+    {
+      "start": 594.88,
+      "end": 595.44,
+      "text": "what happened"
+    },
+    {
+      "start": 595.44,
+      "end": 596.08,
+      "text": "all right"
+    },
+    {
+      "start": 596.08,
+      "end": 597.16,
+      "text": "we can see"
+    },
+    {
+      "start": 597.16,
+      "end": 597.76,
+      "text": "that we had"
+    },
+    {
+      "start": 597.76,
+      "end": 598.56,
+      "text": "an implementer"
+    },
+    {
+      "start": 598.56,
+      "end": 599.48,
+      "text": "kickoff here"
+    },
+    {
+      "start": 599.48,
+      "end": 600.4,
+      "text": "then a reviewer"
+    },
+    {
+      "start": 600.4,
+      "end": 601.12,
+      "text": "let's check the logs"
+    },
+    {
+      "start": 601.12,
+      "end": 602.16,
+      "text": "for the reviewer"
+    },
+    {
+      "start": 602.16,
+      "end": 602.96,
+      "text": "we can see that it found"
+    },
+    {
+      "start": 602.96,
+      "end": 603.56,
+      "text": "that the code was"
+    },
+    {
+      "start": 603.56,
+      "end": 604.36,
+      "text": "already clean"
+    },
+    {
+      "start": 604.36,
+      "end": 605.24,
+      "text": "and well structured"
+    },
+    {
+      "start": 605.24,
+      "end": 605.56,
+      "text": "minimal"
+    },
+    {
+      "start": 605.56,
+      "end": 606.4,
+      "text": "scaffle template"
+    },
+    {
+      "start": 606.4,
+      "end": 607.24,
+      "text": "naming is clear"
+    },
+    {
+      "start": 607.24,
+      "end": 607.96,
+      "text": "then let's see"
+    },
+    {
+      "start": 607.96,
+      "end": 608.48,
+      "text": "what happened"
+    },
+    {
+      "start": 608.48,
+      "end": 609.6,
+      "text": "in the merge"
+    },
+    {
+      "start": 609.6,
+      "end": 610.16,
+      "text": "so we can just"
+    },
+    {
+      "start": 610.16,
+      "end": 610.72,
+      "text": "pull up the"
+    },
+    {
+      "start": 610.72,
+      "end": 611.76,
+      "text": "merger here"
+    },
+    {
+      "start": 611.76,
+      "end": 612.72,
+      "text": "and the merger"
+    },
+    {
+      "start": 612.72,
+      "end": 614.12,
+      "text": "ran the type checks"
+    },
+    {
+      "start": 614.12,
+      "end": 614.84,
+      "text": "it merged"
+    },
+    {
+      "start": 614.84,
+      "end": 616.08,
+      "text": "in the branch"
+    },
+    {
+      "start": 616.08,
+      "end": 616.8,
+      "text": "and it also"
+    },
+    {
+      "start": 616.8,
+      "end": 617.72,
+      "text": "closed the issue"
+    },
+    {
+      "start": 617.72,
+      "end": 618.6,
+      "text": "with a comment"
+    },
+    {
+      "start": 618.6,
+      "end": 619.16,
+      "text": "beautiful"
+    },
+    {
+      "start": 619.16,
+      "end": 619.8,
+      "text": "we can see too"
+    },
+    {
+      "start": 619.8,
+      "end": 620.36,
+      "text": "that if we go"
+    },
+    {
+      "start": 620.36,
+      "end": 620.88,
+      "text": "and have a look"
+    },
+    {
+      "start": 620.88,
+      "end": 621.28,
+      "text": "at the rest"
+    },
+    {
+      "start": 621.28,
+      "end": 622.6,
+      "text": "of our code base here"
+    },
+    {
+      "start": 622.6,
+      "end": 623.12,
+      "text": "whoa"
+    },
+    {
+      "start": 623.12,
+      "end": 623.6,
+      "text": "we now have"
+    },
+    {
+      "start": 623.6,
+      "end": 624.28,
+      "text": "a bit more code"
+    },
+    {
+      "start": 624.28,
+      "end": 624.72,
+      "text": "going on"
+    },
+    {
+      "start": 624.72,
+      "end": 625.24,
+      "text": "we have"
+    },
+    {
+      "start": 625.24,
+      "end": 626.48,
+      "text": "a tsconfig.json"
+    },
+    {
+      "start": 626.48,
+      "end": 628.28,
+      "text": "we have a vtest.config.ts"
+    },
+    {
+      "start": 628.28,
+      "end": 628.72,
+      "text": "and we have"
+    },
+    {
+      "start": 628.72,
+      "end": 629.48,
+      "text": "a few files"
+    },
+    {
+      "start": 629.48,
+      "end": 629.92,
+      "text": "not going about"
+    },
+    {
+      "start": 629.92,
+      "end": 631.12,
+      "text": "inside the CLI here"
+    },
+    {
+      "start": 631.12,
+      "end": 631.8,
+      "text": "so you can start"
+    },
+    {
+      "start": 631.8,
+      "end": 632.08,
+      "text": "to see"
+    },
+    {
+      "start": 632.08,
+      "end": 632.36,
+      "text": "how"
+    },
+    {
+      "start": 632.36,
+      "end": 633.28,
+      "text": "sandcastle"
+    },
+    {
+      "start": 633.28,
+      "end": 634.12,
+      "text": "is working here"
+    },
+    {
+      "start": 634.12,
+      "end": 634.64,
+      "text": "you can build"
+    },
+    {
+      "start": 634.64,
+      "end": 635.28,
+      "text": "these relatively"
+    },
+    {
+      "start": 635.28,
+      "end": 636.28,
+      "text": "complicated flows"
+    },
+    {
+      "start": 636.28,
+      "end": 636.64,
+      "text": "using a"
+    },
+    {
+      "start": 636.64,
+      "end": 637.56,
+      "text": "simple primitive"
+    },
+    {
+      "start": 637.56,
+      "end": 638.32,
+      "text": "using really"
+    },
+    {
+      "start": 638.32,
+      "end": 638.64,
+      "text": "nice"
+    },
+    {
+      "start": 638.64,
+      "end": 639.2,
+      "text": "ergonomic"
+    },
+    {
+      "start": 639.2,
+      "end": 640.36,
+      "text": "markdown prompts"
+    },
+    {
+      "start": 640.36,
+      "end": 640.68,
+      "text": "you can get"
+    },
+    {
+      "start": 640.68,
+      "end": 641.16,
+      "text": "it to run"
+    },
+    {
+      "start": 641.16,
+      "end": 642.4,
+      "text": "on different branches"
+    },
+    {
+      "start": 642.4,
+      "end": 642.76,
+      "text": "and just"
+    },
+    {
+      "start": 642.76,
+      "end": 643.2,
+      "text": "merge"
+    },
+    {
+      "start": 643.2,
+      "end": 644.12,
+      "text": "that back into main"
+    },
+    {
+      "start": 644.12,
+      "end": 644.4,
+      "text": "or you can"
+    },
+    {
+      "start": 644.4,
+      "end": 645.04,
+      "text": "get it to do"
+    },
+    {
+      "start": 645.04,
+      "end": 645.76,
+      "text": "really nice"
+    },
+    {
+      "start": 645.76,
+      "end": 646.72,
+      "text": "pr flows"
+    },
+    {
+      "start": 646.72,
+      "end": 647.08,
+      "text": "as well"
+    },
+    {
+      "start": 647.08,
+      "end": 647.32,
+      "text": "you know"
+    },
+    {
+      "start": 647.32,
+      "end": 648.12,
+      "text": "it's just"
+    },
+    {
+      "start": 648.12,
+      "end": 648.6,
+      "text": "code"
+    },
+    {
+      "start": 648.6,
+      "end": 648.88,
+      "text": "it is a"
+    },
+    {
+      "start": 648.88,
+      "end": 650.24,
+      "text": "programmatic way"
+    },
+    {
+      "start": 650.24,
+      "end": 650.96,
+      "text": "to run"
+    },
+    {
+      "start": 650.96,
+      "end": 651.6,
+      "text": "clord code"
+    },
+    {
+      "start": 651.6,
+      "end": 652.04,
+      "text": "to run"
+    },
+    {
+      "start": 652.04,
+      "end": 652.76,
+      "text": "codex"
+    },
+    {
+      "start": 652.76,
+      "end": 653.28,
+      "text": "and to build"
+    },
+    {
+      "start": 653.28,
+      "end": 654.36,
+      "text": "these workflows"
+    },
+    {
+      "start": 654.36,
+      "end": 654.92,
+      "text": "that turn"
+    },
+    {
+      "start": 654.92,
+      "end": 655.44,
+      "text": "into these"
+    },
+    {
+      "start": 655.44,
+      "end": 655.76,
+      "text": "mini"
+    },
+    {
+      "start": 655.76,
+      "end": 656.24,
+      "text": "software"
+    },
+    {
+      "start": 656.24,
+      "end": 657.0,
+      "text": "factories"
+    },
+    {
+      "start": 657.0,
+      "end": 657.4,
+      "text": "I've been"
+    },
+    {
+      "start": 657.4,
+      "end": 658.2,
+      "text": "incredibly"
+    },
+    {
+      "start": 658.2,
+      "end": 659.04,
+      "text": "happy with it"
+    },
+    {
+      "start": 659.04,
+      "end": 659.28,
+      "text": "and I'm"
+    },
+    {
+      "start": 659.28,
+      "end": 659.8,
+      "text": "really excited"
+    },
+    {
+      "start": 659.8,
+      "end": 660.16,
+      "text": "to see"
+    },
+    {
+      "start": 660.16,
+      "end": 660.64,
+      "text": "what you build"
+    },
+    {
+      "start": 660.64,
+      "end": 661.12,
+      "text": "with it too"
+    },
+    {
+      "start": 661.12,
+      "end": 661.76,
+      "text": "if you're thinking"
+    },
+    {
+      "start": 661.76,
+      "end": 661.96,
+      "text": "about"
+    },
+    {
+      "start": 661.96,
+      "end": 662.4,
+      "text": "these hard"
+    },
+    {
+      "start": 662.4,
+      "end": 662.76,
+      "text": "problems"
+    },
+    {
+      "start": 662.76,
+      "end": 663.04,
+      "text": "too"
+    },
+    {
+      "start": 663.04,
+      "end": 663.36,
+      "text": "then you should"
+    },
+    {
+      "start": 663.36,
+      "end": 663.8,
+      "text": "check out"
+    },
+    {
+      "start": 663.8,
+      "end": 664.76,
+      "text": "my newsletter"
+    },
+    {
+      "start": 664.76,
+      "end": 665.16,
+      "text": "for AI"
+    },
+    {
+      "start": 665.16,
+      "end": 665.48,
+      "text": "skills"
+    },
+    {
+      "start": 665.48,
+      "end": 665.8,
+      "text": "for real"
+    },
+    {
+      "start": 665.8,
+      "end": 666.4,
+      "text": "engineers"
+    },
+    {
+      "start": 666.4,
+      "end": 666.96,
+      "text": "these follow"
+    },
+    {
+      "start": 666.96,
+      "end": 667.4,
+      "text": "the skills"
+    },
+    {
+      "start": 667.4,
+      "end": 667.72,
+      "text": "repo"
+    },
+    {
+      "start": 667.72,
+      "end": 668.2,
+      "text": "that went"
+    },
+    {
+      "start": 668.2,
+      "end": 668.96,
+      "text": "absolutely"
+    },
+    {
+      "start": 668.96,
+      "end": 669.36,
+      "text": "viral"
+    },
+    {
+      "start": 669.36,
+      "end": 669.72,
+      "text": "a few days"
+    },
+    {
+      "start": 669.72,
+      "end": 670.0,
+      "text": "go"
+    },
+    {
+      "start": 670.0,
+      "end": 670.44,
+      "text": "and I also"
+    },
+    {
+      "start": 670.44,
+      "end": 670.92,
+      "text": "post tips"
+    },
+    {
+      "start": 670.92,
+      "end": 671.24,
+      "text": "and tricks"
+    },
+    {
+      "start": 671.24,
+      "end": 671.4,
+      "text": "there"
+    },
+    {
+      "start": 671.4,
+      "end": 671.76,
+      "text": "for getting"
+    },
+    {
+      "start": 671.76,
+      "end": 672.4,
+      "text": "the most"
+    },
+    {
+      "start": 672.4,
+      "end": 672.8,
+      "text": "out"
+    },
+    {
+      "start": 672.8,
+      "end": 673.6,
+      "text": "of agents"
+    },
+    {
+      "start": 673.6,
+      "end": 674.0,
+      "text": "using"
+    },
+    {
+      "start": 674.0,
+      "end": 674.32,
+      "text": "good old"
+    },
+    {
+      "start": 674.32,
+      "end": 674.68,
+      "text": "software"
+    },
+    {
+      "start": 674.68,
+      "end": 675.28,
+      "text": "fundamentals"
+    },
+    {
+      "start": 675.28,
+      "end": 675.6,
+      "text": "so thanks"
+    },
+    {
+      "start": 675.6,
+      "end": 675.96,
+      "text": "for watching"
+    },
+    {
+      "start": 675.96,
+      "end": 676.24,
+      "text": "folks"
+    },
+    {
+      "start": 676.24,
+      "end": 676.6,
+      "text": "I'm really"
+    },
+    {
+      "start": 676.6,
+      "end": 676.92,
+      "text": "excited"
+    },
+    {
+      "start": 676.92,
+      "end": 677.6,
+      "text": "about this tool"
+    },
+    {
+      "start": 677.6,
+      "end": 677.96,
+      "text": "I think"
+    },
+    {
+      "start": 677.96,
+      "end": 678.28,
+      "text": "it's gonna"
+    },
+    {
+      "start": 678.28,
+      "end": 678.48,
+      "text": "be"
+    },
+    {
+      "start": 678.48,
+      "end": 678.6,
+      "text": "a"
+    },
+    {
+      "start": 678.6,
+      "end": 679.0,
+      "text": "really"
+    },
+    {
+      "start": 679.0,
+      "end": 679.84,
+      "text": "nice contribution"
+    },
+    {
+      "start": 679.84,
+      "end": 680.84,
+      "text": "to the ecosystem"
+    },
+    {
+      "start": 680.84,
+      "end": 681.12,
+      "text": "and I've"
+    },
+    {
+      "start": 681.12,
+      "end": 681.52,
+      "text": "been loving"
+    },
+    {
+      "start": 681.52,
+      "end": 682.08,
+      "text": "using it"
+    },
+    {
+      "start": 682.08,
+      "end": 682.64,
+      "text": "so"
+    },
+    {
+      "start": 682.64,
+      "end": 683.16,
+      "text": "nice work"
+    },
+    {
+      "start": 683.16,
+      "end": 683.44,
+      "text": "and I'll"
+    },
+    {
+      "start": 683.44,
+      "end": 683.8,
+      "text": "see you"
+    },
+    {
+      "start": 683.8,
+      "end": 684.44,
+      "text": "in the next one."
+    }
+  ],
+  "artifacts": {
+    "note": "Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+    "frames": [
+      "assets/bilibili-BV1CWgJ69EGE-frame-0001.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0002.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0003.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0004.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0005.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0006.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0007.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0008.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0009.webp",
+      "assets/bilibili-BV1CWgJ69EGE-frame-0010.webp"
+    ],
+    "data": []
+  },
+  "updated_at": "2026-08-14T04:04:06.637625+00:00"
+}

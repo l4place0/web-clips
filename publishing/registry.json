@@ -767,6 +767,20 @@
       "status": "active",
       "assignedAt": "2026-08-11T14:51:19.611Z",
       "everPublished": false
+    },
+    "bb9af336-964d-4c72-bb5b-1f8d6d94bea6": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:09:02.736Z",
+      "everPublished": false
+    },
+    "9d807cbb-27cc-4c50-9ec3-0e9e8be359eb": {
+      "firstAssignedPath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:09:03.562Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2239,6 +2253,18 @@
       "rid": "6291538c-c226-45ba-ba25-93a95e7e35d5",
       "at": "2026-08-11T14:51:19.611Z",
       "sourcePath": "clips/不要再用对话管理Codex了.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "bb9af336-964d-4c72-bb5b-1f8d6d94bea6",
+      "at": "2026-08-14T04:09:02.736Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9d807cbb-27cc-4c50-9ec3-0e9e8be359eb",
+      "at": "2026-08-14T04:09:03.562Z",
+      "sourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md"
     }
   ]
 }
