@@ -781,6 +781,27 @@
       "status": "active",
       "assignedAt": "2026-08-14T04:09:03.562Z",
       "everPublished": false
+    },
+    "ec76fbd3-bc54-4284-a62d-dca5704e2a03": {
+      "firstAssignedPath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "lastKnownSourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:25.954Z",
+      "everPublished": false
+    },
+    "fc50ce0d-5924-4614-a5c4-d04ad5f4e8a5": {
+      "firstAssignedPath": "clips/一口气了解杠杆（两融）.md",
+      "lastKnownSourcePath": "clips/一口气了解杠杆（两融）.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:26.397Z",
+      "everPublished": false
+    },
+    "c4422f95-d0cb-420c-80e2-0d7cd0ae29d4": {
+      "firstAssignedPath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "lastKnownSourcePath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:27.238Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2265,6 +2286,24 @@
       "rid": "9d807cbb-27cc-4c50-9ec3-0e9e8be359eb",
       "at": "2026-08-14T04:09:03.562Z",
       "sourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ec76fbd3-bc54-4284-a62d-dca5704e2a03",
+      "at": "2026-08-14T04:16:25.954Z",
+      "sourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "fc50ce0d-5924-4614-a5c4-d04ad5f4e8a5",
+      "at": "2026-08-14T04:16:26.397Z",
+      "sourcePath": "clips/一口气了解杠杆（两融）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "c4422f95-d0cb-420c-80e2-0d7cd0ae29d4",
+      "at": "2026-08-14T04:16:27.238Z",
+      "sourcePath": "clips/我是如何用AI高速学习陌生代码的.md"
     }
   ]
 }

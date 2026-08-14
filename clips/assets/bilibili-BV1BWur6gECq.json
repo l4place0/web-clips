@@ -1,0 +1,223 @@
+{
+  "schema_version": 3,
+  "resource_id": "bilibili-BV1BWur6gECq",
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1BWur6gECq/?share_source=copy_web&vd_source=b235e9c478ba07e2678b1ac01bb439c6",
+    "platform": "bilibili",
+    "video_id": "BV1BWur6gECq"
+  },
+  "title": "我是如何用AI高速学习陌生代码的",
+  "metadata": {
+    "title": "我是如何用AI高速学习陌生代码的",
+    "duration": 105,
+    "thumbnail": "http://i2.hdslb.com/bfs/archive/8c6d19a6cd9910d85ce4dce315d2cf61ec466d43.jpg",
+    "uploader": "Traceur千千",
+    "video_id": "BV1BWur6gECq",
+    "description": "-",
+    "tags": [
+      "程序员",
+      "人工智能",
+      "编程"
+    ],
+    "view_count": 9077,
+    "like_count": 455,
+    "upload_date": 1786464384,
+    "content_type": "unclassified",
+    "language": "zh"
+  },
+  "providers": {
+    "asr": "whisper-cpp",
+    "asr_profile": "balanced",
+    "asr_model": "ggml-small-q5_1.bin",
+    "llm": "host-pending",
+    "cache": "reuse"
+  },
+  "fact_check_request": {
+    "mode": "auto"
+  },
+  "cache_keys": {
+    "media": "89bd053a5b0c35f7430746d162f54f0ae514988b5559bff6c1eec41f09ef2226",
+    "audio": "59f557acd845418adabb8ec2cd303a21d1f2b22d30cf1af7d75e0191cb520e93",
+    "transcript": "aae8da0a8ee8f2d6fa8a59e6857502556e6c9ae7a715953341a1bbd77e601002",
+    "frames": "c7acfa8e7f415d37e558aa4ed5c2df7590b8022612dc8ce1894e2a6af0c88940"
+  },
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 5.24,
+      "text": "哈嘍 大家好啊 这里是千千我用Laqsala加Cloud Code开发了一个skill"
+    },
+    {
+      "start": 5.24,
+      "end": 9.36,
+      "text": "然后来帮助我快速高校的去学习一个陌生的弹码丧"
+    },
+    {
+      "start": 9.36,
+      "end": 11.56,
+      "text": "然后今天想跟大家做一个分享"
+    },
+    {
+      "start": 11.56,
+      "end": 15.68,
+      "text": "OK 那首先你可以看到我的这个文档全部都是由AI生成的"
+    },
+    {
+      "start": 15.68,
+      "end": 18.24,
+      "text": "不管你用的是Cloud Code还是Codex"
+    },
+    {
+      "start": 18.24,
+      "end": 21.76,
+      "text": "你只要介绍Laqsala你就可以生成这样子的文档"
+    },
+    {
+      "start": 21.76,
+      "end": 27.48,
+      "text": "不管说是这种流程图还是说这种结构化的表达以及这种表格"
+    },
+    {
+      "start": 27.48,
+      "end": 29.84,
+      "text": "那它都可以给你生成的非常完美"
+    },
+    {
+      "start": 29.84,
+      "end": 34.0,
+      "text": "不管你是一个在学习的学生还是说一个在工作的成员"
+    },
+    {
+      "start": 34.0,
+      "end": 36.16,
+      "text": "我觉得都可以去试一下这种思路"
+    },
+    {
+      "start": 36.16,
+      "end": 39.44,
+      "text": "就是我们在学习一个陌生的项目的时候"
+    },
+    {
+      "start": 39.44,
+      "end": 43.04,
+      "text": "最大的痛点就是拿到这个项目不知道它是做什么的"
+    },
+    {
+      "start": 43.04,
+      "end": 44.4,
+      "text": "是为了解决什么需求的"
+    },
+    {
+      "start": 44.4,
+      "end": 48.16,
+      "text": "以及第二就是它有哪些核心的链路 核心的接口"
+    },
+    {
+      "start": 48.16,
+      "end": 54.96,
+      "text": "以及我们选择了怎么样的技术站或者说中间间去解决某些特定场景下的问题"
+    },
+    {
+      "start": 54.96,
+      "end": 61.12,
+      "text": "你可以看到这种再构图 然后这些持续图 然后包括这样子结构化的表格"
+    },
+    {
+      "start": 61.12,
+      "end": 62.4,
+      "text": "都是有AI生成的"
+    },
+    {
+      "start": 62.4,
+      "end": 66.24,
+      "text": "然后这种可实化的学习是要比你单纯的去看待"
+    },
+    {
+      "start": 66.24,
+      "end": 68.08,
+      "text": "和文字是要高效很多的"
+    },
+    {
+      "start": 68.08,
+      "end": 70.0,
+      "text": "OK 以及最重要的一点"
+    },
+    {
+      "start": 70.0,
+      "end": 72.08,
+      "text": "我知道大多数人还是想走接近的"
+    },
+    {
+      "start": 72.08,
+      "end": 74.32,
+      "text": "拿到一个项目其实更多的不想去看待"
+    },
+    {
+      "start": 74.32,
+      "end": 76.48,
+      "text": "其实想看那种职业生成好的文档"
+    },
+    {
+      "start": 76.48,
+      "end": 78.0,
+      "text": "告诉你简历怎么写"
+    },
+    {
+      "start": 78.0,
+      "end": 80.8,
+      "text": "以及在面试的时候会有哪些问题以及怎么回答"
+    },
+    {
+      "start": 80.8,
+      "end": 85.28,
+      "text": "那我的skill也考虑到这个情况 它会告诉你简历怎么写"
+    },
+    {
+      "start": 85.28,
+      "end": 87.6,
+      "text": "以及怎么跟面试官展示"
+    },
+    {
+      "start": 87.6,
+      "end": 91.92,
+      "text": "以及面试官它可能会有哪些问题是你需要去好好准备的"
+    },
+    {
+      "start": 91.92,
+      "end": 96.48,
+      "text": "你可以看到我这里已经跑了很多个方向一些比较知名的项目了"
+    },
+    {
+      "start": 96.48,
+      "end": 99.2,
+      "text": "然后丢到我的社区文档里面供大家去学习了"
+    },
+    {
+      "start": 99.2,
+      "end": 101.84,
+      "text": "然后这个skill我会免费分享给大家"
+    },
+    {
+      "start": 101.84,
+      "end": 104.24,
+      "text": "不过还是希望大家可以点一下关注"
+    }
+  ],
+  "artifacts": {
+    "note": "我是如何用AI高速学习陌生代码的.md",
+    "frames": [
+      "assets/bilibili-BV1BWur6gECq-frame-0001.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0002.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0003.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0004.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0005.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0006.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0007.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0008.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0009.webp",
+      "assets/bilibili-BV1BWur6gECq-frame-0010.webp"
+    ],
+    "data": []
+  },
+  "updated_at": "2026-08-14T04:14:14.728737+00:00"
+}
