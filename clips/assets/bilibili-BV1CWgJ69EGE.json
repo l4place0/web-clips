@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -2909,7 +2909,295 @@
       "assets/bilibili-BV1CWgJ69EGE-frame-0009.webp",
       "assets/bilibili-BV1CWgJ69EGE-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV1CWgJ69EGE-comments.jsonl",
+      "assets/bilibili-BV1CWgJ69EGE-comment-candidates.json",
+      "assets/bilibili-BV1CWgJ69EGE-danmaku.jsonl",
+      "assets/bilibili-BV1CWgJ69EGE-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:04:06.637625+00:00"
+  "updated_at": "2026-08-14T05:01:20.110748+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1CWgJ69EGE",
+    "source_manifest": "clips/assets/bilibili-BV1CWgJ69EGE.json",
+    "domain": "AI coding agents, sandboxing, Sandcastle orchestration, GitHub Issues and multi-agent code workflows",
+    "glossary": [
+      {
+        "term": "Sandcastle",
+        "meaning": "用于编排隔离式 AI coding agents 的工具"
+      },
+      {
+        "term": "AFK agent",
+        "meaning": "无需用户持续在场的后台执行 Agent"
+      },
+      {
+        "term": "sandbox",
+        "meaning": "限制 Agent 对主机系统与凭据访问的隔离环境"
+      },
+      {
+        "term": "planner/implementer/reviewer/merger",
+        "meaning": "规划、实施、复审与合并四类 Agent 角色"
+      },
+      {
+        "term": "Vitest",
+        "meaning": "JavaScript/TypeScript 测试框架"
+      },
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic 的 coding agent"
+      },
+      {
+        "term": "Codex",
+        "meaning": "OpenAI coding agent"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "04:19",
+        "from": "get hub issues",
+        "to": "GitHub Issues",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:27",
+        "from": "scaffled",
+        "to": "scaffold",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:31",
+        "from": "vtest",
+        "to": "Vitest",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:40",
+        "from": "scrypt",
+        "to": "script",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:58",
+        "from": "sankastle",
+        "to": "Sandcastle",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:00",
+        "from": "npxtsx",
+        "to": "npx tsx",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:08",
+        "from": ".sankastle/main.mts",
+        "to": ".sandcastle/main.mts",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:46",
+        "from": "githubissuevue1",
+        "to": "GitHub issue #1",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:51",
+        "from": "outvtest",
+        "to": "with Vitest",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:06",
+        "from": "vtest run",
+        "to": "Vitest run",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:25",
+        "from": "sangcastle.run",
+        "to": "sandcastle.run",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:35",
+        "from": "cloud code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:05",
+        "from": "adjacent object",
+        "to": "JSON object",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:39",
+        "from": "sancastle",
+        "to": "Sandcastle",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:11",
+        "from": "sancastle.codex",
+        "to": "sandcastle.codex",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:37",
+        "from": "fromclawedskills",
+        "to": "from Claude Skills",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:47",
+        "from": "san castle",
+        "to": "Sandcastle",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:05",
+        "from": "scaffle template",
+        "to": "scaffold template",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:32",
+        "from": "sandcastle",
+        "to": "Sandcastle",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:50",
+        "from": "clord code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "00:00-04:10",
+        "text": "前半段中文字幕存在大量“領事項目”等重复错译，缺少足够语音/画面证据逐句还原，故未擅自改写。",
+        "confidence": "low"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": [
+      {
+        "claim": "Sandcastle can use GitHub Issues as a backlog manager for AFK agents.",
+        "timestamp": "02:29",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "Sandcastle can use GitHub Issues as a backlog manager for AFK agents.",
+        "verified_result": "Confirmed. Sandcastle's official documentation lists GitHub Issues as one of the issue trackers selectable during initialization, and its planner examples read open issues through the GitHub CLI. This verifies supported task intake, not that every unattended run will complete those issues correctly.",
+        "sources": [
+          {
+            "title": "mattpocock/sandcastle — official README: templates and issue trackers",
+            "url": "https://github.com/mattpocock/sandcastle#templates",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The generated setup uses a Dockerfile and Docker container to isolate the agent workflow.",
+        "timestamp": "03:08",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The generated setup uses a Dockerfile and Docker container to isolate the agent workflow.",
+        "verified_result": "Confirmed for the Docker option shown in the video. The official init documentation says choosing Docker scaffolds `.sandcastle/Dockerfile`, and the orchestration template uses the Docker sandbox provider. Sandcastle also supports Podman, so Docker is an available generated setup rather than the only possible backend.",
+        "sources": [
+          {
+            "title": "mattpocock/sandcastle — official README: sandcastle init",
+            "url": "https://github.com/mattpocock/sandcastle#sandcastle-init",
+            "source_type": "primary"
+          },
+          {
+            "title": "Sandcastle parallel-planner-with-review main.mts template",
+            "url": "https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/main.mts",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The generated main.mts workflow defines separate planner, implementer, reviewer, and merger stages.",
+        "timestamp": "06:18",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The generated main.mts workflow defines separate planner, implementer, reviewer, and merger stages.",
+        "verified_result": "Confirmed. The official `parallel-planner-with-review` template names a planner, starts an implementer for each planned issue, conditionally starts a reviewer in the same sandbox, and then runs a merger over completed branches. The source comments describe this as plan, execute-and-review, and merge phases.",
+        "sources": [
+          {
+            "title": "Sandcastle parallel-planner-with-review main.mts template",
+            "url": "https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/main.mts",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The planner fetches open issues carrying the Sandcastle label, including labels, comments, and bodies, then selects unblocked work.",
+        "timestamp": "06:46",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The planner fetches open issues carrying the Sandcastle label, including labels, comments, and bodies, then selects unblocked work.",
+        "verified_result": "Partially confirmed. The official documentation gives a GitHub CLI command that fetches open `Sandcastle`-labelled issues with number, title, body, comments, and labels, while the official planner prompt constructs a dependency graph and emits unblocked issues. The current template abstracts issue retrieval behind `LIST_TASKS_COMMAND`, so the exact filter and fields depend on the selected tracker adapter and generated version.",
+        "sources": [
+          {
+            "title": "mattpocock/sandcastle — official README: dynamic GitHub issue context",
+            "url": "https://github.com/mattpocock/sandcastle#dynamic-context-with-command",
+            "source_type": "primary"
+          },
+          {
+            "title": "Sandcastle planner prompt template",
+            "url": "https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/plan-prompt.md",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "After branch work completes, a merger agent receives the branches and associated issues and merges changes into main.",
+        "timestamp": "09:08",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "After branch work completes, a merger agent receives the branches and associated issues and merges changes into main.",
+        "verified_result": "Partially confirmed. The official template passes completed branches and issue metadata to a merger agent, whose prompt merges each branch, runs type checking and tests, and closes the corresponding issues. It merges into the host's current target branch; that branch is commonly `main` but is not hard-coded to `main`.",
+        "sources": [
+          {
+            "title": "Sandcastle parallel-planner-with-review main.mts template",
+            "url": "https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/main.mts",
+            "source_type": "primary"
+          },
+          {
+            "title": "Sandcastle merge prompt template",
+            "url": "https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/merge-prompt.md",
+            "source_type": "primary"
+          }
+        ]
+      }
+    ]
+  }
 }

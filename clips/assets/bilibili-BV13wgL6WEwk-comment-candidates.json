@@ -1,0 +1,319 @@
+{
+  "candidate_count": 14,
+  "candidates": [
+    {
+      "author": "汉堡王老吉",
+      "author_id": "22764664",
+      "comment_id": "309969018817",
+      "created_at": 1786532969,
+      "likes": 5,
+      "quality_candidate_score": 10.4342,
+      "record_type": "comment",
+      "reply_count": 7,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 5,
+        "normalized_length": 72,
+        "reply_count": 7,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "令老师没有女朋友，那缺男朋友吗[脱单doge]顺便说下最近用了下期权，卖call和卖put还能赚权利金，非常不错，杠杆产品也能低风险使用，可惜A股没这种好东西。",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "黑潮斋",
+      "author_id": "33844432",
+      "comment_id": "313322289232",
+      "created_at": 1786533612,
+      "likes": 5,
+      "quality_candidate_score": 9.9572,
+      "record_type": "comment",
+      "reply_count": 8,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 5,
+        "normalized_length": 15,
+        "reply_count": 8,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "今天第一次使用了两融，买入五粮液",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "123l321",
+      "author_id": "96767918",
+      "comment_id": "313334472336",
+      "created_at": 1786538969,
+      "likes": 4,
+      "quality_candidate_score": 9.4472,
+      "record_type": "comment",
+      "reply_count": 4,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 4,
+        "normalized_length": 112,
+        "reply_count": 4,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "永远不使用杠杆也太滑坡到另外一个极端了，毕竟公司上市不就是为了拿股票换钱来发展，不也相当于加了杠杆，那难道所有上市公司甚至是股份制公司都不能碰了？重点是杠杆的目的，不是也有桥水全天候投资，通过杠杆来配平风险，以此获得比简单四等分更多的价值。",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "浅雪色的爱恋",
+      "author_id": "241613479",
+      "comment_id": "309976101073",
+      "created_at": 1786536116,
+      "likes": 5,
+      "quality_candidate_score": 5.8878,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 5,
+        "normalized_length": 41,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "其实很简单 大部分人不配上杠杆 肯定包括我 动不动就回撤几十个点 都不能稳定盈利 想送就送了",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "云海玉箫",
+      "author_id": "160234868",
+      "comment_id": "309972707169",
+      "created_at": 1786534596,
+      "likes": 4,
+      "quality_candidate_score": 4.9283,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 4,
+        "normalized_length": 8,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "科普区真诚up主！",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "夜雪孤枪",
+      "author_id": "384990862",
+      "comment_id": "309976314929",
+      "created_at": 1786536265,
+      "likes": 0,
+      "quality_candidate_score": 3.3847,
+      "record_type": "comment",
+      "reply_count": 2,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 95,
+        "reply_count": 2,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "[笑哭]都讲了融资融券了，不能讲一讲融资融券进阶更好的替代品吗？比如永续合约，持仓成本就是中信的资金费，相当于低成本的杠杆。在某些行情下，你还能赚对手盘的资金费。 相当于不仅不用钱就能撬动杠杆，还赚对手方的资金费",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "苦苦的菊花茶",
+      "author_id": "300045080",
+      "comment_id": "310040249937",
+      "created_at": 1786586123,
+      "likes": 1,
+      "quality_candidate_score": 2.2419,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 1,
+        "normalized_length": 13,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "[doge]不近女色怎么解决的",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "其实自己很牛逼",
+      "author_id": "1624647311",
+      "comment_id": "313377145472",
+      "created_at": 1786565368,
+      "likes": 0,
+      "quality_candidate_score": 1.6363,
+      "record_type": "comment",
+      "reply_count": 1,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 20,
+        "reply_count": 1,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "为啥融资买入的很多，融券的一般来说都比较少？",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "塞巴多拉贡zzzZ",
+      "author_id": "11721061",
+      "comment_id": "309970898257",
+      "created_at": 1786533763,
+      "likes": 0,
+      "quality_candidate_score": 0.2875,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 23,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "[doge]前段时间就我知道的就有几个融资买银行的",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "肥皂大人",
+      "author_id": "605180",
+      "comment_id": "309969162337",
+      "created_at": 1786533031,
+      "likes": 0,
+      "quality_candidate_score": 0.2125,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 17,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "现在是24个月交易经验了，淦[doge]",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "不爱国很可耻",
+      "author_id": "498968147",
+      "comment_id": "313328058848",
+      "created_at": 1786536113,
+      "likes": 0,
+      "quality_candidate_score": 0.1375,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 11,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "主播，你让我陷入疯狂[喜欢]",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "qqtang007",
+      "author_id": "16666744",
+      "comment_id": "313488404608",
+      "created_at": 1786630180,
+      "likes": 0,
+      "quality_candidate_score": 0.125,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 10,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "谢谢提醒，终生不碰杠杆。",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "失忆的国王",
+      "author_id": "358252343",
+      "comment_id": "313323004976",
+      "created_at": 1786533914,
+      "likes": 0,
+      "quality_candidate_score": -2.9125,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 7,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "好内容，学习到了",
+      "uploader_liked": false,
+      "uploader_replied": false
+    },
+    {
+      "author": "OscarChueng",
+      "author_id": "587825684",
+      "comment_id": "309968696161",
+      "created_at": 1786532839,
+      "likes": 0,
+      "quality_candidate_score": -2.9125,
+      "record_type": "comment",
+      "reply_count": 0,
+      "schema_version": 1,
+      "score_signals": {
+        "likes": 0,
+        "normalized_length": 7,
+        "reply_count": 0,
+        "uploader_liked": false,
+        "uploader_replied": false
+      },
+      "text": "[doge]英伟达",
+      "uploader_liked": false,
+      "uploader_replied": false
+    }
+  ],
+  "host_ai_review_required": true,
+  "kind": "comment_quality_candidates",
+  "method": "engagement_information_heuristic",
+  "schema_version": 1,
+  "source_metadata": {
+    "aid": 117082133962650,
+    "api_available_count": 36,
+    "authenticated": false,
+    "bvid": "BV13wgL6WEwk",
+    "fetched_count": 14,
+    "kind": "comments",
+    "nested_replies_included": false,
+    "record_type": "metadata",
+    "reported_comment_count": 36,
+    "schema_version": 1,
+    "scope": "top_level_hot",
+    "source": "bilibili_reply_wbi_api",
+    "title": "一口气了解杠杆（两融）"
+  },
+  "warning": "Popularity is not evidence of factual correctness."
+}

@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -709,7 +709,291 @@
       "assets/bilibili-BV1KpuB65E7w-frame-0009.webp",
       "assets/bilibili-BV1KpuB65E7w-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV1KpuB65E7w-comments.jsonl",
+      "assets/bilibili-BV1KpuB65E7w-comment-candidates.json",
+      "assets/bilibili-BV1KpuB65E7w-danmaku.jsonl",
+      "assets/bilibili-BV1KpuB65E7w-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:17:14.414496+00:00"
+  "updated_at": "2026-08-14T05:02:14.366176+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1KpuB65E7w",
+    "source_manifest": "clips/assets/bilibili-BV1KpuB65E7w.json",
+    "domain": "life and career adaptation in the AI era, emotional intelligence, books, goal setting and digital well-being",
+    "glossary": [
+      {
+        "term": "How to Stop Worrying and Start Living",
+        "meaning": "Dale Carnegie 自助类著作"
+      },
+      {
+        "term": "How to Win Friends and Influence People",
+        "meaning": "Dale Carnegie 人际沟通著作"
+      },
+      {
+        "term": "Peter Principle",
+        "meaning": "组织成员倾向被晋升到不胜任层级的管理学命题"
+      },
+      {
+        "term": "Raymond Hull",
+        "meaning": "与 Laurence J. Peter 合著《The Peter Principle》的作者"
+      },
+      {
+        "term": "doomscrolling",
+        "meaning": "持续刷取消极或令人焦虑的网络内容"
+      },
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic coding agent"
+      },
+      {
+        "term": "ChatGPT",
+        "meaning": "OpenAI 对话式 AI 产品"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:00",
+        "from": "hand code see projects",
+        "to": "hand-code C projects",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:00",
+        "from": "and almost I can do better",
+        "to": "and an AI can do better",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:34",
+        "from": "something in an AI can answer upon",
+        "to": "something an AI can answer upon",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:02",
+        "from": "Dale Carnegie how to stop",
+        "to": "Dale Carnegie, How to Stop",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:20",
+        "from": "Dale Carnegie how to influence people and make friends how to make friends how to win friends",
+        "to": "Dale Carnegie, How to Win Friends",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:43",
+        "from": "Five Fox about",
+        "to": "Firefox, about",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:06",
+        "from": "Saha got the sounds",
+        "to": "That sounds",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:47",
+        "from": "threat that is suspended",
+        "to": "thread that is suspended",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:10",
+        "from": "do step worrying",
+        "to": "stop worrying",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:34",
+        "from": "conceptionalized",
+        "to": "conceptualized",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:51",
+        "from": "professional environments and their job",
+        "to": "professional environments in their job",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "15:29",
+        "from": "that lich that that list",
+        "to": "that list",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "16:44",
+        "from": "Russian sea one",
+        "to": "Russian C1",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "19:18",
+        "from": "708090 years old",
+        "to": "70, 80, 90 years old",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "19:40",
+        "from": "a eyes harm",
+        "to": "AIs harm",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "23:39",
+        "from": "in is an incredible eight",
+        "to": "is an incredible aid",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "24:01",
+        "from": "cloud code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "24:14",
+        "from": "chat GPT",
+        "to": "ChatGPT",
+        "occurrences": 3,
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "25:14",
+        "from": "I'm stop trying",
+        "to": "stop trying",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "27:18",
+        "from": "Continue or.Reignite",
+        "to": "Continue or reignite",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "13:12-14:26",
+        "text": "视频将 How to Get What You Want 与 Raymond Hull 相联系；书名与作者听写关系需外部核验，未改写为其他作者。",
+        "confidence": "medium"
+      },
+      {
+        "timestamp_range": "25:14-25:43",
+        "text": "原始听写在已修正的第一处 ‘I'm stop trying’ 之后仍含 ‘as I am stop trying to worry’，语法明显残缺，但缺少可可靠回听或字幕证据，故保留原听写而不猜改。",
+        "confidence": "low"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": [
+      {
+        "claim": "The speaker attributes a book titled How to Get What You Want to Raymond Hull.",
+        "timestamp": "13:12",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The speaker attributes a book titled How to Get What You Want to Raymond Hull.",
+        "verified_result": "确认。书目记录显示《How to Get What You Want》的作者为Raymond Hull；可检索到1969年版以及Hawthorn于1973年出版的版本。",
+        "sources": [
+          {
+            "title": "Google Books: How to Get What You Want — Raymond Hull",
+            "url": "https://books.google.com/books/about/How_to_Get_what_You_Want.html?id=LoaozwEACAAJ",
+            "source_type": "secondary"
+          },
+          {
+            "title": "Open Library: How to Get What You Want — Raymond Hull",
+            "url": "https://openlibrary.org/works/OL15801288W/How_to_get_what_you_want",
+            "source_type": "secondary"
+          }
+        ]
+      },
+      {
+        "claim": "The video describes the Peter Principle as the tendency to keep promoting capable employees until they reach a role in which they are no longer capable.",
+        "timestamp": "13:34",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The video describes the Peter Principle as the tendency to keep promoting capable employees until they reach a role in which they are no longer capable.",
+        "verified_result": "基本确认。这是Laurence J. Peter与Raymond Hull在《The Peter Principle》中提出的讽刺性组织理论：层级组织成员倾向于被晋升到其不胜任的层级。视频的口语概括抓住了核心，但它是管理学命题而非适用于每位经理的经验定律。",
+        "sources": [
+          {
+            "title": "Profile Books: The Peter Principle（publisher preview）",
+            "url": "https://www.profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781788166058_preview.pdf",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The speaker claims the books he recommends are roughly 70 to 90 years old.",
+        "timestamp": "19:18",
+        "classification": "objective_fact",
+        "status": "contradicted",
+        "video_statement": "The speaker claims the books he recommends are roughly 70 to 90 years old.",
+        "verified_result": "不完全正确。Dale Carnegie的《How to Win Friends and Influence People》首版于1936年，到2026年约90年；《How to Stop Worrying and Start Living》首版于1948年，约78年。但Raymond Hull的《How to Get What You Want》可检索到1969年版，到2026年约57年。因此若该说法涵盖视频刚推荐的全部书籍，“都已有70—90年”不成立。",
+        "sources": [
+          {
+            "title": "Simon & Schuster: How to Stop Worrying and Start Living",
+            "url": "https://www.simonandschuster.net/books/How-to-Stop-Worrying-and-Start-Living/Dale-Carnegie/Dale-Carnegie-Books/9780671035976",
+            "source_type": "primary"
+          },
+          {
+            "title": "WorldCat: How to Stop Worrying and Start Living（1948 edition）",
+            "url": "https://search.worldcat.org/title/How-to-stop-worrying-and-start-living/oclc/203759",
+            "source_type": "secondary"
+          },
+          {
+            "title": "Google Books: How to Get What You Want — Raymond Hull",
+            "url": "https://books.google.com/books/about/How_to_Get_what_You_Want.html?id=LoaozwEACAAJ",
+            "source_type": "secondary"
+          }
+        ]
+      },
+      {
+        "claim": "The video identifies Claude Code as a tool that can directly access local files, contrasting it with copy-pasting context into ChatGPT.",
+        "timestamp": "24:01",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The video identifies Claude Code as a tool that can directly access local files, contrasting it with copy-pasting context into ChatGPT.",
+        "verified_result": "部分确认。Anthropic官方文档说明Claude Code本地会话绑定当前工作目录，能够读取项目文件并在修改前创建文件快照，因此“可直接处理本地项目文件”成立。视频进一步暗示不懂终端就只能在ChatGPT里手工复制粘贴，这不是普遍事实，取决于用户所用产品、IDE集成、连接器和权限配置。",
+        "sources": [
+          {
+            "title": "Anthropic: How Claude Code works",
+            "url": "https://code.claude.com/docs/en/how-claude-code-works",
+            "source_type": "primary"
+          },
+          {
+            "title": "Anthropic: Explore the .claude directory",
+            "url": "https://code.claude.com/docs/en/claude-directory",
+            "source_type": "primary"
+          }
+        ]
+      }
+    ]
+  }
 }

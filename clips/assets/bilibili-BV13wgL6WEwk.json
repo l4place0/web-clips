@@ -33,7 +33,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -1476,7 +1476,953 @@
       "assets/bilibili-BV13wgL6WEwk-frame-0009.webp",
       "assets/bilibili-BV13wgL6WEwk-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV13wgL6WEwk-comments.jsonl",
+      "assets/bilibili-BV13wgL6WEwk-comment-candidates.json",
+      "assets/bilibili-BV13wgL6WEwk-danmaku.jsonl",
+      "assets/bilibili-BV13wgL6WEwk-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:10:45.535407+00:00"
+  "updated_at": "2026-08-14T05:02:03.104485+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV13wgL6WEwk",
+    "source_manifest": "clips/assets/bilibili-BV13wgL6WEwk.json",
+    "domain": "A-share margin financing and securities lending, leverage, collateral, maintenance margin and liquidation risk",
+    "glossary": [
+      {
+        "term": "两融",
+        "meaning": "融资融券"
+      },
+      {
+        "term": "融资",
+        "meaning": "向券商借入资金买入证券"
+      },
+      {
+        "term": "融券",
+        "meaning": "向券商借入证券卖出"
+      },
+      {
+        "term": "担保品",
+        "meaning": "融资融券账户中的现金或证券抵押"
+      },
+      {
+        "term": "维持担保比例",
+        "meaning": "信用账户总资产与总负债的比率"
+      },
+      {
+        "term": "追保",
+        "meaning": "追加保证金或担保物"
+      },
+      {
+        "term": "强制平仓",
+        "meaning": "券商依约卖出或买回证券以降低负债"
+      },
+      {
+        "term": "爆仓",
+        "meaning": "资产缩水触发强平并导致本金大幅损失"
+      },
+      {
+        "term": "穿仓",
+        "meaning": "平仓后仍不足以覆盖负债"
+      },
+      {
+        "term": "两融余额",
+        "meaning": "全市场融资余额与融券余额的合计"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:05",
+        "from": "道歉",
+        "to": "撬起",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:07",
+        "from": "芒哥",
+        "to": "芒格",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:12",
+        "from": "芒哥",
+        "to": "芒格",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:25",
+        "from": "弹虎色变",
+        "to": "谈虎色变",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:25",
+        "from": "这两个情况下",
+        "to": "这两种情况下",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:28",
+        "from": "无数不在",
+        "to": "无处不在",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:30",
+        "from": "首富二十万 每一个一百万",
+        "to": "首付二十万，买一个一百万",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:00",
+        "from": "卫视上",
+        "to": "国际上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:05",
+        "from": "两拢",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:24",
+        "from": "股本",
+        "to": "股票",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:30",
+        "from": "从小外年跌到两块",
+        "to": "从五块钱跌到两块",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:31",
+        "from": "股本",
+        "to": "股票",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:45",
+        "from": "50万资金6个月",
+        "to": "50 万资金、6 个月",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:51",
+        "from": "创业版",
+        "to": "创业板",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:00",
+        "from": "刮一些",
+        "to": "保护一些",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:22",
+        "from": "券上的",
+        "to": "券商",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:29",
+        "from": "单保品",
+        "to": "担保品",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:40",
+        "from": "单保比例",
+        "to": "担保比例",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:43",
+        "from": "出于",
+        "to": "除以",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:17",
+        "from": "本金将直接关联并且额外亏的钱和利息",
+        "to": "本金将直接归零，并且额外亏的钱和利息",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:25",
+        "from": "搜刮的议文不深",
+        "to": "收割得一文不剩",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:30",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:38",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:43",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:48",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:52",
+        "from": "股民借出的",
+        "to": "股民借入的",
+        "reason": "Adjacent lines define debt owed back to brokers, making the direction of borrowing unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:56",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:01",
+        "from": "重要准备",
+        "to": "重要指标",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:04",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:08",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:18",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:21",
+        "from": "区方",
+        "to": "去杠杆",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:26",
+        "from": "两容预额",
+        "to": "两融余额",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:30",
+        "from": "历史最高视频",
+        "to": "历史最高水平",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:30",
+        "from": "绝对之上",
+        "to": "绝对值上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:33",
+        "from": "流动市值",
+        "to": "流通市值",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:33",
+        "from": "相对之上",
+        "to": "相对值上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:36",
+        "from": "中等天下的市值",
+        "to": "中等偏下的水平",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:40",
+        "from": "半段",
+        "to": "判断",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:42",
+        "from": "两容预预",
+        "to": "两融利率",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:44",
+        "from": "两容预预",
+        "to": "两融利率",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:48",
+        "from": "历史",
+        "to": "利息",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:03",
+        "from": "抄出",
+        "to": "超出",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:07",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:07",
+        "from": "随便随环",
+        "to": "随借随还",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:09",
+        "from": "历史",
+        "to": "利息",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:13",
+        "from": "受历史",
+        "to": "收利息",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:22",
+        "from": "历史",
+        "to": "利息",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:22",
+        "from": "白负几天",
+        "to": "白付几天",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:26",
+        "from": "持倉",
+        "to": "持仓",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:31",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:32",
+        "from": "局大部分",
+        "to": "绝大部分",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:32",
+        "from": "融刺",
+        "to": "融资",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:34",
+        "from": "融刺",
+        "to": "融券",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:36",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:39",
+        "from": "融刺",
+        "to": "融券",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:48",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:50",
+        "from": "两容",
+        "to": "两融",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:50",
+        "from": "广一上",
+        "to": "广义上",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:53",
+        "from": "常外的配置",
+        "to": "场外的配资",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:55",
+        "from": "配置公司",
+        "to": "配资公司",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:15",
+        "from": "攀多了磨合",
+        "to": "碰都不要碰",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:16",
+        "from": "千万不要打开",
+        "to": "千万不要加杠杆",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:27",
+        "from": "波夺",
+        "to": "剥夺",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:30",
+        "from": "选择圈",
+        "to": "选择权",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:38",
+        "from": "股票大作者不一路",
+        "to": "《股票大作手回忆录》",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:49",
+        "from": "做朵",
+        "to": "做多",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:49",
+        "from": "电风时期",
+        "to": "巅峰时期",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:51",
+        "from": "二三十辈",
+        "to": "二三十倍",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:52",
+        "from": "刀尖填写",
+        "to": "刀尖舔血",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:00",
+        "from": "近乡",
+        "to": "竞相",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:04",
+        "from": "承设",
+        "to": "承受",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:08",
+        "from": "暴丧",
+        "to": "爆仓",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:12",
+        "from": "比组格雷厄模",
+        "to": "鼻祖格雷厄姆",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:16",
+        "from": "大压调",
+        "to": "大萧条",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:17",
+        "from": "格雷厄模",
+        "to": "格雷厄姆",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:23",
+        "from": "现代的影响剧",
+        "to": "现代的眼光去",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:24",
+        "from": "格雷厄模",
+        "to": "格雷厄姆",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:30",
+        "from": "大削削",
+        "to": "大萧条",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:31",
+        "from": "收费",
+        "to": "收益",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:50",
+        "from": "负利",
+        "to": "复利",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:52",
+        "from": "慢慢蝙蝠",
+        "to": "慢慢变富",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:54",
+        "from": "巴特",
+        "to": "巴菲特",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:54",
+        "from": "最壮",
+        "to": "最重要",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:57",
+        "from": "加工",
+        "to": "一家公司",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:05",
+        "from": "伏克",
+        "to": "浮亏",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:16",
+        "from": "韩国",
+        "to": "个股",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:19",
+        "from": "今天第二十几个点",
+        "to": "今天跌二十几个点",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:19",
+        "from": "长了",
+        "to": "涨了",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:26",
+        "from": "长100个点",
+        "to": "涨 100 个点",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:41",
+        "from": "崩击",
+        "to": "暴击",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:01",
+        "from": "何来而不为",
+        "to": "何乐而不为",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:11",
+        "from": "统计说辞",
+        "to": "统计数字",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:17",
+        "from": "说辞",
+        "to": "数字",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:20",
+        "from": "穿越板和扣上板",
+        "to": "创业板和科创板",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:30",
+        "from": "一辈子杠杆",
+        "to": "一倍杠杆",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:34",
+        "from": "刚刚考可以让你清理",
+        "to": "杠杆刚好可以让你清零",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:37",
+        "from": "拜托特",
+        "to": "巴菲特",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:45",
+        "from": "上车公司",
+        "to": "上市公司",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:45",
+        "from": "看着",
+        "to": "看作",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:47",
+        "from": "你为投资",
+        "to": "你会投资",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:58",
+        "from": "这些视频",
+        "to": "这期视频",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:01",
+        "from": "点外",
+        "to": "点赞",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "04:17-04:40",
+        "text": "涉及“过去 7 月”“最近历史分位”等缺少年份的时效性数据，保留原话并列为待核验。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "09:11-09:34",
+        "text": "“主板 40%、创业板和科创板 50%”的波动统计口径未在视频中说明，未扩写。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "00:16",
+        "text": "“不介意女色”疑似“不近女色”，但仅凭文字无法确认实际口述，保留原文待回听。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "04:14-04:16",
+        "text": "“反向的这个 / 两个说句”疑似残缺口语，无法确定是否为“反向指标 / 两个数据”，保留原文待回听。",
+        "confidence": "low"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": [
+      {
+        "claim": "The speaker says margin-financing rates can commonly be around 3% to 4% at recording time.",
+        "timestamp": "00:38",
+        "classification": "time_sensitive_fact",
+        "status": "unverified",
+        "video_statement": "The speaker says margin-financing rates can commonly be around 3% to 4% at recording time.",
+        "verified_result": "未验证，且不应把该区间当作统一市场利率。证监会现行规则规定融资利率由证券公司与客户自主商定；证券公司公开基准也可能明显高于视频所称区间，例如国投证券页面在核验时公示的融资利率为8.35%。优惠利率可能因券商、客户、资金规模和合同而异，未找到权威全市场统计证明3%—4%属于普遍水平。",
+        "sources": [
+          {
+            "title": "中国证监会：证券公司融资融券业务管理办法",
+            "url": "https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml",
+            "source_type": "primary"
+          },
+          {
+            "title": "国投证券：融资融券业务信息公示",
+            "url": "https://www.essence.com.cn/business/security/rzrq",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video states that opening margin-financing and securities-lending eligibility requires 500,000 yuan and six months of trading experience.",
+        "timestamp": "01:40",
+        "classification": "time_sensitive_fact",
+        "status": "confirmed",
+        "video_statement": "The video states that opening margin-financing and securities-lending eligibility requires 500,000 yuan and six months of trading experience.",
+        "verified_result": "基本确认，但“50万元”有精确定义：证券公司不得为从事证券交易不足半年，或最近20个交易日日均证券类资产低于50万元的客户开立信用账户；此外还要通过风险承受能力、征信与券商适当性审查，因此并非满足两个数字即可当然开通。",
+        "sources": [
+          {
+            "title": "中国证监会：证券公司融资融券业务管理办法",
+            "url": "https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video says financing 1 million yuan requires at least 1 million yuan of market-value collateral, and that in practice 1 million yuan of collateral may commonly support only about 600,000 to 700,000 yuan of financing.",
+        "timestamp": "02:29",
+        "classification": "time_sensitive_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The video says financing 1 million yuan requires at least 1 million yuan of market-value collateral, and that in practice 1 million yuan of collateral may commonly support only about 600,000 to 700,000 yuan of financing.",
+        "verified_result": "Partially confirmed as an illustration, not a universal quota. Effective 2026-01-19, the Shanghai Stock Exchange requires the financing margin ratio for new financing purchases to be no lower than 100%; financing contracts opened before implementation, including their extensions, continue under the former rule. When securities rather than cash are used as collateral, their market value is converted using applicable collateral conversion rates, and brokers may impose stricter, differentiated controls. Thus 1 million yuan of securities by market value may support materially less than 1 million yuan of financing, and 600,000?700,000 yuan can be a plausible example, but the exact amount depends on the security, conversion rate, broker rules, concentration controls, and contract; it is not a market-wide fixed range.",
+        "sources": [
+          {
+            "title": "???????????????????????????2026?5??",
+            "url": "https://www.sse.com.cn/lawandrules/sselawsrules2025/trade/specific/margin/c/c_20260114_10805174.shtml",
+            "source_type": "primary"
+          },
+          {
+            "title": "??????????????????2023????",
+            "url": "https://www.sse.com.cn/lawandrules/sselawsrules2025/trade/specific/margin/c/c_20250616_10782015.shtml",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video states a 150% warning level and discusses 130% as the level at which a broker may require additional collateral or liquidate positions.",
+        "timestamp": "02:43",
+        "classification": "time_sensitive_fact",
+        "status": "outdated",
+        "video_statement": "The video states a 150% warning level and discusses 130% as the level at which a broker may require additional collateral or liquidate positions.",
+        "verified_result": "作为全国统一规则的表述已经过时。证监会和沪深交易所自2019年起取消统一的最低维持担保比例130%限制，改由证券公司结合客户资信、担保物质量和自身风险承受能力在合同中约定最低比例、追保期限及处置方式。150%警戒线、130%平仓线仍可见于部分券商当前风控参数，但属于具体券商合同规则，且低于平仓线通常先触发通知和约定期限内补仓；是否及何时强平应以客户合同和券商最新公示为准。",
+        "sources": [
+          {
+            "title": "中国证监会：融资融券交易机制优化实现落地",
+            "url": "https://www.csrc.gov.cn/csrc/c100028/c1000931/content.shtml",
+            "source_type": "primary"
+          },
+          {
+            "title": "中国证监会：证券公司融资融券业务管理办法",
+            "url": "https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml",
+            "source_type": "primary"
+          },
+          {
+            "title": "国投证券：融资融券业务信息公示",
+            "url": "https://www.essence.com.cn/business/security/rzrq",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video says a single margin contract has a maximum term of six months and may be extended on application.",
+        "timestamp": "03:30",
+        "classification": "time_sensitive_fact",
+        "status": "confirmed",
+        "video_statement": "The video says a single margin contract has a maximum term of six months and may be extended on application.",
+        "verified_result": "确认。上交所现行有效的2023年修订细则规定，融资、融券期限最长不超过6个月；到期前会员可根据客户申请办理展期，每次展期不得超过6个月，并须事先评估客户信用、负债和维持担保比例。展期不是自动权利，仍取决于券商评估和合同约定。",
+        "sources": [
+          {
+            "title": "上海证券交易所融资融券交易实施细则（2023年修订）",
+            "url": "https://www.sse.com.cn/lawandrules/sselawsrules2025/trade/specific/margin/c/c_20250616_10782015.shtml",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The speaker says financing rates had fallen from above 8% historically to roughly 4%–5%, with lower negotiated rates for larger accounts.",
+        "timestamp": "04:43",
+        "classification": "time_sensitive_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The speaker says financing rates had fallen from above 8% historically to roughly 4%–5%, with lower negotiated rates for larger accounts.",
+        "verified_result": "历史上公开基准超过8%可由券商公告佐证，且规则确实允许券商与客户协商利率；但“现在一般4%—5%”及大额账户可谈到更低水平缺少权威全市场统计，不能概括为普遍行情。核验时不同券商公开基准仍可能为8.35%，实际执行应以具体券商、具体客户和合同为准。",
+        "sources": [
+          {
+            "title": "中国证监会：证券公司融资融券业务管理办法",
+            "url": "https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml",
+            "source_type": "primary"
+          },
+          {
+            "title": "广发证券：融资利率与融券费率",
+            "url": "https://www.gf.com.cn/business/finance/news/rate",
+            "source_type": "primary"
+          },
+          {
+            "title": "国投证券：融资融券业务信息公示",
+            "url": "https://www.essence.com.cn/business/security/rzrq",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video says margin interest accrues daily, including non-trading holidays.",
+        "timestamp": "05:07",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The video says margin interest accrues daily, including non-trading holidays.",
+        "verified_result": "基本确认。券商合同示例按实际使用资金天数逐日计息，并以每日融资余额乘年利率除以360计算；只要融资负债在节假日期间继续存在，实际使用天数并不会因休市停止，因此会继续产生利息。具体计息口径、分母、结息和调整方式仍以客户合同及券商通知为准。",
+        "sources": [
+          {
+            "title": "华泰证券：《融资融券业务合同》修订对照表",
+            "url": "https://crm.htsc.com.cn/doc/2023/304102/3dc3cf33-9a40-46a2-9813-aed846487263.pdf",
+            "source_type": "primary"
+          },
+          {
+            "title": "中国证监会：证券公司融资融券业务管理办法",
+            "url": "https://www.csrc.gov.cn/csrc/c106256/c1654005/content.shtml",
+            "source_type": "primary"
+          }
+        ]
+      }
+    ]
+  }
 }

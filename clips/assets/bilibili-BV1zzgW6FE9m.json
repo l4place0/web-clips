@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -2269,7 +2269,316 @@
       "assets/bilibili-BV1zzgW6FE9m-frame-0009.webp",
       "assets/bilibili-BV1zzgW6FE9m-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV1zzgW6FE9m-comments.jsonl",
+      "assets/bilibili-BV1zzgW6FE9m-comment-candidates.json",
+      "assets/bilibili-BV1zzgW6FE9m-danmaku.jsonl",
+      "assets/bilibili-BV1zzgW6FE9m-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:03:14.336423+00:00"
+  "updated_at": "2026-08-14T05:01:26.932618+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1zzgW6FE9m",
+    "source_manifest": "clips/assets/bilibili-BV1zzgW6FE9m.json",
+    "domain": "software architecture, deep modules, seams, adapters, locality, leverage, legacy codebases and AI-assisted refactoring",
+    "glossary": [
+      {
+        "term": "deep module",
+        "meaning": "以简单接口隐藏大量实现复杂度的模块"
+      },
+      {
+        "term": "shallow module",
+        "meaning": "接口复杂但隐藏的实现较少的模块"
+      },
+      {
+        "term": "seam",
+        "meaning": "模块接口在应用中的连接位置"
+      },
+      {
+        "term": "adapter",
+        "meaning": "在 seam 处满足接口的具体实现"
+      },
+      {
+        "term": "locality",
+        "meaning": "相关变化与缺陷集中在同一位置的程度"
+      },
+      {
+        "term": "leverage",
+        "meaning": "调用者每学习一单位接口可获得的能力"
+      },
+      {
+        "term": "hexagonal architecture",
+        "meaning": "以端口与适配器隔离应用核心和外部依赖的架构方式"
+      },
+      {
+        "term": "TanStack Query",
+        "meaning": "前端异步状态管理库"
+      },
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic coding agent"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:54",
+        "from": "myimprove",
+        "to": "my improve",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:54",
+        "from": "forauthentication",
+        "to": "for authentication",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:59",
+        "from": "alogging",
+        "to": "logging",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:01",
+        "from": "orlogging",
+        "to": "or logging",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:23",
+        "from": "can a nebulous",
+        "to": "kind of nebulous",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:57",
+        "from": "John Austerhout",
+        "to": "John Ousterhout",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:22",
+        "from": "liketanstackquery",
+        "to": "like TanStack Query",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:51",
+        "from": "seamsare",
+        "to": "seams are",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:56",
+        "from": "concentratein",
+        "to": "concentrate in",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:42",
+        "from": "rooter application",
+        "to": "router application",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:47",
+        "from": "clored session",
+        "to": "Claude session",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:54",
+        "from": "automode",
+        "to": "auto mode",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:55",
+        "from": "human and the loop",
+        "to": "human-in-the-loop",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:21",
+        "from": "clored code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:27",
+        "from": "clored code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:35",
+        "from": "demain knowledge",
+        "to": "domain knowledge",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:38",
+        "from": "single scene",
+        "to": "single seam",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:45",
+        "from": "the scene",
+        "to": "the seam",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:50",
+        "from": "github issue",
+        "to": "GitHub issue",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:52",
+        "from": "afk agent",
+        "to": "AFK agent",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:55",
+        "from": "sangcastle",
+        "to": "Sandcastle",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:56",
+        "from": "two prd",
+        "to": "to PRD",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:58",
+        "from": "two issues",
+        "to": "to issues",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:13",
+        "from": "tricksand",
+        "to": "tricks and",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "06:33-06:41",
+        "text": "“demain knowledge”“single scene”疑为 domain knowledge / single seam，但原句混杂且语义可由上下文推断；仅改术语明确处。",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": [
+      {
+        "claim": "The speaker says his GitHub skills repository had about 41.5 thousand stars at recording time.",
+        "timestamp": "01:07",
+        "classification": "time_sensitive_fact",
+        "status": "unverified",
+        "video_statement": "The speaker says his GitHub skills repository had about 41.5 thousand stars at recording time.",
+        "verified_result": "Unverified as a historical point-in-time count. The official repository exists and its live GitHub page exposes the current star count, but that changing value does not establish the count on the unknown recording date. No authoritative archived snapshot tied to the recording was available in this check.",
+        "sources": [
+          {
+            "title": "mattpocock/skills — official GitHub repository",
+            "url": "https://github.com/mattpocock/skills",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The deep-module and shallow-module concepts are attributed to John Ousterhout’s book A Philosophy of Software Design.",
+        "timestamp": "02:56",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The deep-module and shallow-module concepts are attributed to John Ousterhout’s book A Philosophy of Software Design.",
+        "verified_result": "Partially confirmed. John Ousterhout's official Stanford page confirms that *A Philosophy of Software Design* is his book, and Matt Pocock's official codebase-design material uses the deep-versus-shallow module vocabulary. However, the sources reviewed here do not directly locate a passage in Ousterhout's book establishing that provenance, so the video's attribution remains plausible but was not independently confirmed from the book text.",
+        "sources": [
+          {
+            "title": "John Ousterhout — A Philosophy of Software Design",
+            "url": "https://web.stanford.edu/~ouster/cgi-bin/aposd.php",
+            "source_type": "primary"
+          },
+          {
+            "title": "Matt Pocock skills — codebase-design glossary",
+            "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video calls the locations where modules interface with one another seams.",
+        "timestamp": "03:43",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The video calls the locations where modules interface with one another seams.",
+        "verified_result": "Partially confirmed as the video's adopted design vocabulary, not as a universal definition. Matt Pocock's official glossary defines a seam as the location at which a module's interface lives and attributes the underlying term to Michael Feathers. Feathers' own published definition is broader: a place where behavior can be altered without editing that place.",
+        "sources": [
+          {
+            "title": "Matt Pocock skills — codebase-design glossary",
+            "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md",
+            "source_type": "primary"
+          },
+          {
+            "title": "Michael Feathers — Seams (Working Effectively with Legacy Code excerpt)",
+            "url": "https://www.informit.com/articles/article.aspx?p=359417&seqNum=2",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video uses adapter for a concrete module satisfying the interface at a seam, drawing the term from hexagonal architecture.",
+        "timestamp": "04:14",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The video uses adapter for a concrete module satisfying the interface at a seam, drawing the term from hexagonal architecture.",
+        "verified_result": "Confirmed with a terminology caveat. Matt Pocock's official glossary defines an adapter as a concrete thing satisfying an interface at a seam. Alistair Cockburn's original Hexagonal Architecture article is explicitly titled Ports and Adapters and describes technology-specific adapters converting between a port's protocol and external devices. Cockburn also notes that the generic Adapter pattern predates his ports-and-adapters pattern, so the word itself did not originate with hexagonal architecture.",
+        "sources": [
+          {
+            "title": "Matt Pocock skills — codebase-design glossary",
+            "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md",
+            "source_type": "primary"
+          },
+          {
+            "title": "Alistair Cockburn — Hexagonal Architecture: the original 2005 article",
+            "url": "https://alistair.cockburn.us/hexagonal-architecture",
+            "source_type": "primary"
+          }
+        ]
+      }
+    ]
+  }
 }

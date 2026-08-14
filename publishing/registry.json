@@ -809,6 +809,48 @@
       "status": "active",
       "assignedAt": "2026-08-14T04:17:54.330Z",
       "everPublished": false
+    },
+    "11ce3982-c4ce-462c-b4ee-fa43cae6c2ba": {
+      "firstAssignedPath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "lastKnownSourcePath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:27.962Z",
+      "everPublished": false
+    },
+    "8fa25ac1-9d61-4dad-af8d-ec248e8f09c5": {
+      "firstAssignedPath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "lastKnownSourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.105Z",
+      "everPublished": false
+    },
+    "07bae895-f568-4007-8c45-aa822a523df7": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.300Z",
+      "everPublished": false
+    },
+    "7b11cf38-354b-4a72-a049-111a2987d904": {
+      "firstAssignedPath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.460Z",
+      "everPublished": false
+    },
+    "a0e6be8d-70a5-4c92-bacd-45ac01b24845": {
+      "firstAssignedPath": "clips/一口气了解杠杆（两融）.md",
+      "lastKnownSourcePath": "clips/一口气了解杠杆（两融）.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.609Z",
+      "everPublished": false
+    },
+    "b67bb34e-8b82-4db6-897b-95b4a92f02a6": {
+      "firstAssignedPath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "lastKnownSourcePath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.740Z",
+      "everPublished": false
     }
   },
   "events": [
@@ -2317,6 +2359,42 @@
       "rid": "af9aafb1-8c5d-4f00-aa58-11ae00e6849a",
       "at": "2026-08-14T04:17:54.330Z",
       "sourcePath": "clips/【中文字幕】如何在人工智能时代生存.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "11ce3982-c4ce-462c-b4ee-fa43cae6c2ba",
+      "at": "2026-08-14T05:03:27.962Z",
+      "sourcePath": "clips/【中文字幕】如何在人工智能时代生存.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fa25ac1-9d61-4dad-af8d-ec248e8f09c5",
+      "at": "2026-08-14T05:03:28.105Z",
+      "sourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "07bae895-f568-4007-8c45-aa822a523df7",
+      "at": "2026-08-14T05:03:28.300Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7b11cf38-354b-4a72-a049-111a2987d904",
+      "at": "2026-08-14T05:03:28.460Z",
+      "sourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "a0e6be8d-70a5-4c92-bacd-45ac01b24845",
+      "at": "2026-08-14T05:03:28.609Z",
+      "sourcePath": "clips/一口气了解杠杆（两融）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b67bb34e-8b82-4db6-897b-95b4a92f02a6",
+      "at": "2026-08-14T05:03:28.740Z",
+      "sourcePath": "clips/我是如何用AI高速学习陌生代码的.md"
     }
   ]
 }

@@ -29,7 +29,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -217,7 +217,172 @@
       "assets/bilibili-BV1BWur6gECq-frame-0009.webp",
       "assets/bilibili-BV1BWur6gECq-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV1BWur6gECq-comments.jsonl",
+      "assets/bilibili-BV1BWur6gECq-comment-candidates.json",
+      "assets/bilibili-BV1BWur6gECq-danmaku.jsonl",
+      "assets/bilibili-BV1BWur6gECq-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:14:14.728737+00:00"
+  "updated_at": "2026-08-14T05:02:26.054762+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1BWur6gECq",
+    "source_manifest": "clips/assets/bilibili-BV1BWur6gECq.json",
+    "domain": "AI-assisted learning of unfamiliar codebases, architecture diagrams, documentation and interview preparation",
+    "glossary": [
+      {
+        "term": "Claude Code",
+        "meaning": "Anthropic coding agent"
+      },
+      {
+        "term": "Codex",
+        "meaning": "OpenAI coding agent"
+      },
+      {
+        "term": "skill",
+        "meaning": "向 coding agent 提供专项工作流与指令的技能包"
+      },
+      {
+        "term": "架构图",
+        "meaning": "展示系统组件及其关系的图"
+      },
+      {
+        "term": "时序图",
+        "meaning": "按时间顺序呈现参与者交互的图"
+      },
+      {
+        "term": "技术栈",
+        "meaning": "项目采用的语言、框架、中间件与工具集合"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:00",
+        "from": "用Laqsala加",
+        "to": "用 Lark CLI 加",
+        "reason": "Frame 1 visibly subtitles the phrase as ‘我用 Lark cli 加 Claude code 开发了一个 skill’.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:00",
+        "from": "Cloud Code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:05",
+        "from": "快速高校",
+        "to": "快速高效",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:05",
+        "from": "弹码丧",
+        "to": "代码仓",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:15",
+        "from": "Cloud Code",
+        "to": "Claude Code",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:48",
+        "from": "技术站",
+        "to": "技术栈",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:48",
+        "from": "中间间",
+        "to": "中间件",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:54",
+        "from": "再构图",
+        "to": "架构图",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:54",
+        "from": "持续图",
+        "to": "时序图",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:01",
+        "from": "都是有AI生成的",
+        "to": "都是由 AI 生成的",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:02",
+        "from": "可实化",
+        "to": "可视化",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:02",
+        "from": "看待",
+        "to": "看代码",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:06",
+        "from": "和文字",
+        "to": "和看文字",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:10",
+        "from": "走接近",
+        "to": "走捷径",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:12",
+        "from": "去看待",
+        "to": "去看代码",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:14",
+        "from": "职业生成好的文档",
+        "to": "直接生成好的文档",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "00:18-00:21",
+        "text": "00:18 的“介绍Laqsala”仍疑似 ASR 错误；帧 1 只能证明 00:00 说的是 Lark CLI，不能外推此处原话，故保留并等待回听或对应字幕证据。",
+        "confidence": "low"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": []
+  }
 }

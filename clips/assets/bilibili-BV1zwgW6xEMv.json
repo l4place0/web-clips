@@ -36,7 +36,7 @@
     "asr": "whisper-cpp",
     "asr_profile": "balanced",
     "asr_model": "ggml-small-q5_1.bin",
-    "llm": "host-pending",
+    "llm": "host",
     "cache": "reuse"
   },
   "fact_check_request": {
@@ -2174,7 +2174,1243 @@
       "assets/bilibili-BV1zwgW6xEMv-frame-0009.webp",
       "assets/bilibili-BV1zwgW6xEMv-frame-0010.webp"
     ],
-    "data": []
+    "data": [
+      "assets/bilibili-BV1zwgW6xEMv-comments.jsonl",
+      "assets/bilibili-BV1zwgW6xEMv-comment-candidates.json",
+      "assets/bilibili-BV1zwgW6xEMv-danmaku.jsonl",
+      "assets/bilibili-BV1zwgW6xEMv-danmaku-analysis.json"
+    ]
   },
-  "updated_at": "2026-08-14T04:11:22.521697+00:00"
+  "updated_at": "2026-08-14T05:01:39.656940+00:00",
+  "corrections": {
+    "schema_version": 1,
+    "resource_id": "bilibili-BV1zwgW6xEMv",
+    "source_manifest": "clips/assets/bilibili-BV1zwgW6xEMv.json",
+    "domain": "programming-language paradigms, type theory, functional programming, object orientation and critique of reductionism",
+    "glossary": [
+      {
+        "term": "OOP",
+        "meaning": "面向对象编程"
+      },
+      {
+        "term": "Smalltalk",
+        "meaning": "早期纯面向对象语言"
+      },
+      {
+        "term": "subtyping",
+        "meaning": "子类型关系"
+      },
+      {
+        "term": "parametric polymorphism",
+        "meaning": "参数多态"
+      },
+      {
+        "term": "ad-hoc polymorphism",
+        "meaning": "特设多态"
+      },
+      {
+        "term": "type class",
+        "meaning": "Haskell 中表达受约束多态的机制"
+      },
+      {
+        "term": "trait",
+        "meaning": "Rust 的共享行为抽象"
+      },
+      {
+        "term": "Lambda Cube",
+        "meaning": "组织多态、类型构造与依赖类型的类型系统框架"
+      },
+      {
+        "term": "UTLC",
+        "meaning": "Untyped Lambda Calculus，无类型 Lambda 演算"
+      },
+      {
+        "term": "first-class function/type",
+        "meaning": "可像普通值一样定义、传递和操作的函数或类型"
+      }
+    ],
+    "corrections": [
+      {
+        "timestamp": "00:08",
+        "from": "拥促",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:20",
+        "from": "拍子",
+        "to": "Python",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:31",
+        "from": "征脱",
+        "to": "挣脱",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:31",
+        "from": "范氏",
+        "to": "范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:34",
+        "from": "变成范氏",
+        "to": "编程范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:46",
+        "from": "拥促还原论",
+        "to": "庸俗还原论",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:48",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:48",
+        "from": "最拥促",
+        "to": "最庸俗",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:49",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:49",
+        "from": "java",
+        "to": "Java",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:49",
+        "from": "最拥促",
+        "to": "最庸俗",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:52",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "00:52",
+        "from": "java",
+        "to": "Java",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:02",
+        "from": "称良一切",
+        "to": "丈量一切",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:10",
+        "from": "冲锦",
+        "to": "崇敬",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:12",
+        "from": "small talk",
+        "to": "Smalltalk",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:24",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:28",
+        "from": "学术证明",
+        "to": "实践证明",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:30",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:30",
+        "from": "世界观众",
+        "to": "世界观中",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:34",
+        "from": "汇边",
+        "to": "汇编",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:37",
+        "from": "变成",
+        "to": "编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:39",
+        "from": "java",
+        "to": "Java",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:39",
+        "from": "pazen",
+        "to": "Python",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:43",
+        "from": "紫类型",
+        "to": "子类型",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "01:45",
+        "from": "紫类型",
+        "to": "子类型",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:03",
+        "from": "类型系统的技术",
+        "to": "类型系统的基石",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:11",
+        "from": "思语言",
+        "to": "C 语言",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:11",
+        "from": "指认",
+        "to": "指针",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:15",
+        "from": "拥吞",
+        "to": "拥趸",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:18",
+        "from": "万物鸡鱼",
+        "to": "万物基于",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:25",
+        "from": "变相对象",
+        "to": "面向对象",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:35",
+        "from": "C程学员爱用指针和勾兔",
+        "to": "C 程序员爱用指针和 goto",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:39",
+        "from": "Java用速",
+        "to": "Java 庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:40",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:40",
+        "from": "语法堂",
+        "to": "语法糖",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:42",
+        "from": "Lambda表达试试寒术试编程",
+        "to": "Lambda 表达式是函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:45",
+        "from": "毁掉韩数",
+        "to": "调用函数",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:51",
+        "from": "代码附用",
+        "to": "代码复用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:51",
+        "from": "语法堂",
+        "to": "语法糖",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "02:55",
+        "from": "变成实践",
+        "to": "编程实践",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:00",
+        "from": "参数多太",
+        "to": "参数多态",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:00",
+        "from": "特设多太",
+        "to": "特设多态",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:03",
+        "from": "子类型多太",
+        "to": "子类型多态",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:05",
+        "from": "Hasco",
+        "to": "Haskell",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:08",
+        "from": "Rustre",
+        "to": "Rust",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:08",
+        "from": "Treat",
+        "to": "trait",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:11",
+        "from": "组合优域继承",
+        "to": "组合优于继承",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:11",
+        "from": "被说暗了",
+        "to": "被说烂了",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:15",
+        "from": "Hasco和Rustre",
+        "to": "Haskell 和 Rust",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:20",
+        "from": "Java拥顿",
+        "to": "Java 拥趸",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:22",
+        "from": "用速",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:26",
+        "from": "多贩式",
+        "to": "多范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "03:44",
+        "from": "函数式变成",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:18",
+        "from": "欧星力穴",
+        "to": "呕心沥血",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:21",
+        "from": "事务性代码",
+        "to": "实用性代码",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:28",
+        "from": "逢和怪",
+        "to": "缝合怪",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:30",
+        "from": "上线",
+        "to": "上限",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:30",
+        "from": "语言的上线和开发者的上线",
+        "to": "语言的上限和开发者的上限",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:32",
+        "from": "变经",
+        "to": "辩经",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:40",
+        "from": "求之精神",
+        "to": "求知精神",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:45",
+        "from": "了草的学",
+        "to": "潦草地学",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:47",
+        "from": "了草的开始",
+        "to": "潦草地开始",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:52",
+        "from": "了草的学过",
+        "to": "潦草地学过",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "04:57",
+        "from": "拥苏",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:03",
+        "from": "加瓦",
+        "to": "Java",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:06",
+        "from": "一博恩加瓦",
+        "to": "一本 Java",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:16",
+        "from": "支建杖",
+        "to": "知见障",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:43",
+        "from": "学书",
+        "to": "学说",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:51",
+        "from": "四体业学书",
+        "to": "四体液学说",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "05:51",
+        "from": "西伯克底",
+        "to": "希波克拉底",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:14",
+        "from": "破账",
+        "to": "破障",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:16",
+        "from": "破账",
+        "to": "破障",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:32",
+        "from": "复职",
+        "to": "复制",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:37",
+        "from": "复职",
+        "to": "复制",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:39",
+        "from": "碧包",
+        "to": "闭包",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:39",
+        "from": "高等函数",
+        "to": "高阶函数",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:46",
+        "from": "顾名的SE",
+        "to": "顾名思义",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "06:57",
+        "from": "一直类型",
+        "to": "依值类型",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:00",
+        "from": "一直类型",
+        "to": "依值类型",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:39",
+        "from": "义父语句",
+        "to": "if 语句",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:41",
+        "from": "波尔",
+        "to": "Bool",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "07:58",
+        "from": "一切就函数",
+        "to": "一切皆函数",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:17",
+        "from": "上下文重",
+        "to": "上下文中",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:19",
+        "from": "撑凉",
+        "to": "衡量",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:25",
+        "from": "枝剑杖",
+        "to": "知见障",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:30",
+        "from": "雍俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:44",
+        "from": "雍俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "08:48",
+        "from": "雍俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:03",
+        "from": "胜名式变成和函数式变成",
+        "to": "声明式编程和函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:10",
+        "from": "Utlc",
+        "to": "UTLC",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:13",
+        "from": "UntypedLambdaCalculus",
+        "to": "Untyped Lambda Calculus",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:16",
+        "from": "Utlc",
+        "to": "UTLC",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:18",
+        "from": "无类型gA等于A到A",
+        "to": "无类型，λa. a 等于 a 到 a",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:28",
+        "from": "编程犯式",
+        "to": "编程范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:31",
+        "from": "编程犯式",
+        "to": "编程范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:47",
+        "from": "叠加",
+        "to": "叠甲",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "09:56",
+        "from": "叠加",
+        "to": "叠甲",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:12",
+        "from": "单则",
+        "to": "担责",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:16",
+        "from": "行误",
+        "to": "醒悟",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:24",
+        "from": "范氏",
+        "to": "范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:26",
+        "from": "行误",
+        "to": "醒悟",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:36",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:37",
+        "from": "毁",
+        "to": "怼",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:43",
+        "from": "OP",
+        "to": "OOP",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:43",
+        "from": "范氏",
+        "to": "范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:48",
+        "from": "主流程序员",
+        "to": "主流编程语言",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:48",
+        "from": "归孽",
+        "to": "圭臬",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "10:50",
+        "from": "韩束士特性",
+        "to": "函数式特性",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:00",
+        "from": "他作为上一事一句不提",
+        "to": "他嘴上是一句不提",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:13",
+        "from": "韩束士抨击者",
+        "to": "函数式抨击者",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:17",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:18",
+        "from": "练识调用",
+        "to": "链式调用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:18",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:21",
+        "from": "调识",
+        "to": "调试",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:23",
+        "from": "练识调用",
+        "to": "链式调用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:28",
+        "from": "练识调用",
+        "to": "链式调用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:47",
+        "from": "草顶",
+        "to": "槽点",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:49",
+        "from": "练识调用",
+        "to": "链式调用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:49",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:52",
+        "from": "异行流",
+        "to": "异步流",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:54",
+        "from": "异行流",
+        "to": "异步流",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "11:57",
+        "from": "韩束练识调用",
+        "to": "函数链式调用",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:02",
+        "from": "离火旺",
+        "to": "李火旺",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:04",
+        "from": "韩束",
+        "to": "函数",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:14",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:17",
+        "from": "编程三位书",
+        "to": "编程三味书",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:20",
+        "from": "程序与言",
+        "to": "程序语言",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:20",
+        "from": "韩束士编程",
+        "to": "函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:28",
+        "from": "范氏",
+        "to": "范式",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:31",
+        "from": "心思想",
+        "to": "新思想",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:35",
+        "from": "拥俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:35",
+        "from": "类笔",
+        "to": "类比",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:39",
+        "from": "高校",
+        "to": "高效",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:43",
+        "from": "拥俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:43",
+        "from": "类笔",
+        "to": "类比",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:46",
+        "from": "心思想",
+        "to": "新思想",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:48",
+        "from": "心思想",
+        "to": "新思想",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:51",
+        "from": "拥俗",
+        "to": "庸俗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "12:54",
+        "from": "缠综",
+        "to": "禅宗",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:07",
+        "from": "类笔",
+        "to": "类比",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:09",
+        "from": "一手指月",
+        "to": "以手指月",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:11",
+        "from": "见月望指",
+        "to": "见月忘指",
+        "reason": "Context and fixed terminology make this ASR correction unambiguous.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:14",
+        "from": "大扑",
+        "to": "当然",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:17",
+        "from": "数语",
+        "to": "术语",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "13:47",
+        "from": "Huskow",
+        "to": "Haskell",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "14:09",
+        "from": "verse",
+        "to": "Verse",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "14:14",
+        "from": "Huskow寒出石编程",
+        "to": "Haskell 函数式编程",
+        "reason": "Context-supported ASR terminology, homophone, segmentation, or product-name correction.",
+        "confidence": "high"
+      }
+    ],
+    "low_confidence_items": [
+      {
+        "timestamp_range": "00:00-14:19",
+        "text": "口语化中文 ASR 错字密集；只修正能由领域术语或固定表达明确判定的项目，其余保留原文。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "00:36-00:41",
+        "text": "“不在社区 / 痛苦的信息”仍疑似口语 ASR 残缺，缺少音频确认，保留原文。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "00:56-01:21",
+        "text": "“血按钮”“好端端一个小伙子…磨烂”“基础链体硬气功”“做妄道…”含梗或专名，无法仅凭上下文精确还原，保留原文待回听。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "01:49-01:57",
+        "text": "连续幻想作品/网络梗转写明显不稳，无法无损确认原句，保留原文待回听。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "05:06-05:10",
+        "text": "Java 相关人物/称号转写疑似专名，无法从当前材料精确确认，保留原文待回听。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "07:41-07:44",
+        "text": "函数类型表达式的符号被 ASR 口述化为“一一/一二”，应回听或对照画面后再恢复，当前保留原文。",
+        "confidence": "low"
+      },
+      {
+        "timestamp_range": "10:18-10:20",
+        "text": "“其他两位 / 无法选中”语义残缺，缺少足够上下文确认，保留原文待回听。",
+        "confidence": "low"
+      }
+    ]
+  },
+  "fact_check": {
+    "schema_version": 1,
+    "status": "completed",
+    "mode": "auto",
+    "checked_at": "2026-08-14",
+    "claims": [
+      {
+        "claim": "The video opens with the claim that all programming languages are Turing complete.",
+        "timestamp": "00:00",
+        "classification": "objective_fact",
+        "status": "contradicted",
+        "video_statement": "The video opens with the claim that all programming languages are Turing complete.",
+        "verified_result": "Contradicted as a universal statement. Many widely used general-purpose languages are modeled as Turing-complete under idealized assumptions, but programming languages need not be Turing-complete. Dhall officially describes itself as a non-Turing-complete programming language so that well-typed evaluation terminates, and the official Common Expression Language documentation likewise identifies CEL as non-Turing-complete by design. The narrower engineering point?that Turing-completeness alone does not make languages equivalent in safety, ergonomics, or domain fit?remains sound.",
+        "sources": [
+          {
+            "title": "Dhall documentation ? Safety guarantees: Turing-completeness",
+            "url": "https://docs.dhall-lang.org/discussions/Safety-guarantees.html",
+            "source_type": "primary"
+          },
+          {
+            "title": "Common Expression Language ? official overview",
+            "url": "https://cel.dev/",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video distinguishes parametric polymorphism and ad-hoc polymorphism from subtype polymorphism, citing Haskell type classes and Rust traits as examples.",
+        "timestamp": "03:00",
+        "classification": "objective_fact",
+        "status": "partially_confirmed",
+        "video_statement": "The video distinguishes parametric polymorphism and ad-hoc polymorphism from subtype polymorphism, citing Haskell type classes and Rust traits as examples.",
+        "verified_result": "Partially confirmed. Cardelli and Wegner's foundational taxonomy distinguishes universal polymorphism (including parametric and inclusion/subtype polymorphism) from ad-hoc polymorphism (overloading and coercion). The Haskell Report explicitly presents type classes as an overloading mechanism, and the Rust Reference defines traits as abstract interfaces implemented for specific types. Treating Rust traits wholesale as identical to Haskell type classes or as only ad-hoc polymorphism would be an oversimplification because their semantics and dispatch forms differ.",
+        "sources": [
+          {
+            "title": "Cardelli and Wegner — On Understanding Types, Data Abstraction, and Polymorphism",
+            "url": "https://www.classes.cs.uchicago.edu/archive/2012/spring/22300-1/papers/Cardelli-Wegner.pdf",
+            "source_type": "primary"
+          },
+          {
+            "title": "Haskell 98 Report — Type Classes and Overloading",
+            "url": "https://www.haskell.org/onlinereport/decls.html#sect4.3",
+            "source_type": "primary"
+          },
+          {
+            "title": "The Rust Reference — Traits",
+            "url": "https://doc.rust-lang.org/reference/items/traits.html",
+            "source_type": "primary"
+          }
+        ]
+      },
+      {
+        "claim": "The video says the Lambda Cube includes dependent types, in which types can be operated on and can depend on ordinary values.",
+        "timestamp": "06:54",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The video says the Lambda Cube includes dependent types, in which types can be operated on and can depend on ordinary values.",
+        "verified_result": "Confirmed in substance. Barendregt's Lambda Cube organizes typed lambda calculi by allowable dependencies, including types depending on terms (dependent types) and constructors mapping types to types. The wording 'types can be operated on' is informal; the formal framework distinguishes terms, types, kinds, abstractions, and products rather than treating all of them as ordinary runtime values.",
+        "sources": [
+          {
+            "title": "Henk Barendregt — Lambda Calculi with Types / Pure Type Systems",
+            "url": "https://homepages.inf.ed.ac.uk/wadler/papers/barendregt/pure-type-systems.pdf",
+            "source_type": "primary"
+          },
+          {
+            "title": "Carnegie Mellon 15-312 — Dependent Types",
+            "url": "https://www.cs.cmu.edu/~fp/courses/15312-f04/lectures/27-dependent.html",
+            "source_type": "secondary"
+          }
+        ]
+      },
+      {
+        "claim": "UTLC is expanded as Untyped Lambda Calculus, or untyped lambda calculus.",
+        "timestamp": "09:10",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "UTLC is expanded as Untyped Lambda Calculus, or untyped lambda calculus.",
+        "verified_result": "Confirmed. Standard programming-languages course material uses 'the untyped lambda-calculus' for the formal system; UTLC is the conventional abbreviation formed from that name.",
+        "sources": [
+          {
+            "title": "Carnegie Mellon 15-312 — The Untyped Lambda-Calculus",
+            "url": "https://www.cs.cmu.edu/~iliano/courses/15S-CMU-CS312/handouts/untyped.pdf",
+            "source_type": "secondary"
+          }
+        ]
+      },
+      {
+        "claim": "The speaker uses UTLC as an example of a formalism without a conventional static type distinction.",
+        "timestamp": "09:18",
+        "classification": "objective_fact",
+        "status": "confirmed",
+        "video_statement": "The speaker uses UTLC as an example of a formalism without a conventional static type distinction.",
+        "verified_result": "Confirmed. The cited CMU notes describe untyped languages as languages that do not use types and therefore have no static semantics, and describe untyped lambda calculus as a language of untyped functions in which every closed expression is a well-formed program. A technical nuance is that some semantic accounts call it 'unityped' because all terms can be represented under one universal type; that does not supply the conventional static distinctions the video is discussing.",
+        "sources": [
+          {
+            "title": "Carnegie Mellon 15-312 — Untyped Languages",
+            "url": "https://www.cs.cmu.edu/~iliano/courses/15S-CMU-CS312/handouts/untyped.pdf",
+            "source_type": "secondary"
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — The Lambda Calculus: Adding types",
+            "url": "https://plato.stanford.edu/entries/lambda-calculus/#AddiType",
+            "source_type": "secondary"
+          }
+        ]
+      }
+    ]
+  }
 }
