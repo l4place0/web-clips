@@ -166,6 +166,20 @@
       "contentDigest": "e0ea1fe3622c1bc49f79348db14ab4e40e0b184c7561cbf888e8270d1d3dab6f",
       "providerUserMessageId": "019ff63d-ace1-7a50-be48-e87f6abbfd90",
       "providerAssistantMessageId": "msg_0baa6bf92e86d23b016a7c7c3b6cec819a9a36737a080967ac"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786592577450-8kaz3e7",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1786592576970-k9frb05",
+      "timestamp": 1786592576970,
+      "rawDisplayText": "\"$bilibili-learning-helper\" 同步为最新技能名",
+      "canonicalText": "\"$bilibili-learning-helper\" 同步为最新技能名",
+      "images": [],
+      "contentDigest": "74189f7be87971062c540d0d50c463f19c7a360d53a298b89e036ad7f4e956d8",
+      "providerUserMessageId": "019ff937-979a-7713-a343-3fd0649ce283",
+      "providerAssistantMessageId": "019ff937-979a-7713-a343-3fd0649ce283"
     }
   ]
 }
