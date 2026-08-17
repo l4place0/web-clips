@@ -8,7 +8,7 @@ duration_seconds: 1404
 tags: ["开发", "Claude Code", "CLI", "命令行", "实战教程", "agent", "Agent", "skills", "Skills", "AI编程"]
 rid: "07bae895-f568-4007-8c45-aa822a523df7"
 permalink: "/r/07bae895-f568-4007-8c45-aa822a523df7"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/07bae895-f568-4007-8c45-aa822a523df7"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/07bae895-f568-4007-8c45-aa822a523df7"
 ---
 
 # 总结稿

@@ -195,7 +195,15 @@ function validateConfig(config) {
   }
   try {
     const publicBaseUrl = new URL(config.routes?.publicBaseUrl)
-    if (publicBaseUrl.protocol !== "https:" || publicBaseUrl.origin !== config.routes.publicBaseUrl) {
+    if (
+      publicBaseUrl.protocol !== "https:" ||
+      publicBaseUrl.username ||
+      publicBaseUrl.password ||
+      publicBaseUrl.search ||
+      publicBaseUrl.hash ||
+      (publicBaseUrl.pathname !== "/" && publicBaseUrl.pathname.endsWith("/")) ||
+      `${publicBaseUrl.origin}${publicBaseUrl.pathname === "/" ? "" : publicBaseUrl.pathname}` !== config.routes.publicBaseUrl
+    ) {
       problems.push("routes.publicBaseUrl")
     }
   } catch {

@@ -147,7 +147,7 @@ test("annotate-urls adds, corrects, and preserves the derived public URL idempot
   const first = await annotatePublicUrls(root)
   assert.equal(first.annotatedCount, 1)
   assert.equal(first.annotated[0].action, "added")
-  const expected = `https://l4p-web-clips.pages.dev/r/${RID_A}`
+  const expected = `https://l4place0.github.io/web-clips-publish/r/${RID_A}`
   const once = await read(root, "公开地址.md")
   assert.match(once, /^\uFEFF---\r\n/)
   assert.match(once, /title: 公开地址 # keep\r\n/)

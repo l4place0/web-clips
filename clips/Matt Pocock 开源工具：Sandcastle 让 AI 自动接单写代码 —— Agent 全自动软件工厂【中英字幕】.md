@@ -8,7 +8,7 @@ duration_seconds: 1395
 tags: ["开发", "AI", "Claude Code", "命令行", "CLI", "实战教程", "skills", "Codex", "Skills", "AI编程"]
 rid: "7b11cf38-354b-4a72-a049-111a2987d904"
 permalink: "/r/7b11cf38-354b-4a72-a049-111a2987d904"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/7b11cf38-354b-4a72-a049-111a2987d904"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/7b11cf38-354b-4a72-a049-111a2987d904"
 ---
 
 # 总结稿

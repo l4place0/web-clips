@@ -8,7 +8,7 @@ duration_seconds: 1498
 tags: ["开发", "AI", "教程", "编程", "Matt Pocock", "实战", "双语", "Agent", "Skills", "AI创作者"]
 rid: "57ec7a52-5ae6-4237-b929-b762f71e0ff6"
 permalink: "/r/57ec7a52-5ae6-4237-b929-b762f71e0ff6"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/57ec7a52-5ae6-4237-b929-b762f71e0ff6"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/57ec7a52-5ae6-4237-b929-b762f71e0ff6"
 ---
 
 # 总结

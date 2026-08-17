@@ -8,7 +8,7 @@ duration_seconds: 866
 tags: ["AI", "B站AI创造公开赛", "飞书AI绝活大会", "教程攻略", "看板", "codex"]
 rid: "6291538c-c226-45ba-ba25-93a95e7e35d5"
 permalink: "/r/6291538c-c226-45ba-ba25-93a95e7e35d5"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/6291538c-c226-45ba-ba25-93a95e7e35d5"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6291538c-c226-45ba-ba25-93a95e7e35d5"
 ---
 
 # 总结稿

@@ -8,7 +8,7 @@ duration_seconds: 1181
 tags: ["学习", "AI", "人工智能", "数学", "案例分析", "经验分享", "工作", "数论", "优化", "mathematica"]
 rid: "d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2"
 permalink: "/r/d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2"
 ---
 
 # 总结

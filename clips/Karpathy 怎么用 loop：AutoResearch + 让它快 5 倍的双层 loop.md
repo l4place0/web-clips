@@ -9,7 +9,7 @@ tags: ["AI", "人工智能", "B站AI创造公开赛", "Loop Engineering"]
 publish: true
 rid: "267504d7-da48-48b3-b7fc-acf9b1f4bf50"
 permalink: "/r/267504d7-da48-48b3-b7fc-acf9b1f4bf50"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/267504d7-da48-48b3-b7fc-acf9b1f4bf50"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/267504d7-da48-48b3-b7fc-acf9b1f4bf50"
 ---
 
 # 总结稿

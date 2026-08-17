@@ -10,7 +10,7 @@ Cover: "https://cdn3.ldstatic.com/optimized/4X/0/0/7/007d58d6227128a45224884ed21
 publish: true
 rid: "50e557f9-9169-4b3f-8729-bf8db0e828d7"
 permalink: "/r/50e557f9-9169-4b3f-8729-bf8db0e828d7"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/50e557f9-9169-4b3f-8729-bf8db0e828d7"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/50e557f9-9169-4b3f-8729-bf8db0e828d7"
 ---
 Info
 

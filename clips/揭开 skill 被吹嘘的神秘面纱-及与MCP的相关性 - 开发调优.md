@@ -14,7 +14,7 @@ Cover: "https://cdn.linux.do/user_avatar/linux.do/lianues/96/1038066_2.gif"
 publish: true
 rid: "9f68012f-7161-4bcb-ac9b-23c8b12bed67"
 permalink: "/r/9f68012f-7161-4bcb-ac9b-23c8b12bed67"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/9f68012f-7161-4bcb-ac9b-23c8b12bed67"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/9f68012f-7161-4bcb-ac9b-23c8b12bed67"
 ---
 [羽织](https://linux.do/u/lianues) [Lianues](https://linux.do/u/lianues)
 

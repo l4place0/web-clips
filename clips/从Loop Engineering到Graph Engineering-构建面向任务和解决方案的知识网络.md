@@ -8,7 +8,7 @@ duration_seconds: 270
 tags: ["AI", "人工智能", "本体论"]
 rid: "90fdf633-f46c-4c4c-93bf-d5439262cfbb"
 permalink: "/r/90fdf633-f46c-4c4c-93bf-d5439262cfbb"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/90fdf633-f46c-4c4c-93bf-d5439262cfbb"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/90fdf633-f46c-4c4c-93bf-d5439262cfbb"
 ---
 
 # 总结稿

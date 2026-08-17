@@ -8,7 +8,7 @@ duration_seconds: 2353
 tags: ["潜意识", "拖延症", "意志力", "习惯", "自律", "行为经济学", "目标", "身份认同", "个人成长", "万物研究所"]
 rid: "6a339282-048c-4922-b885-275f22dc3be7"
 permalink: "/r/6a339282-048c-4922-b885-275f22dc3be7"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/6a339282-048c-4922-b885-275f22dc3be7"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6a339282-048c-4922-b885-275f22dc3be7"
 ---
 
 # 总结

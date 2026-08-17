@@ -8,7 +8,7 @@ duration_seconds: 105
 tags: ["程序员", "人工智能", "编程"]
 rid: "b67bb34e-8b82-4db6-897b-95b4a92f02a6"
 permalink: "/r/b67bb34e-8b82-4db6-897b-95b4a92f02a6"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/b67bb34e-8b82-4db6-897b-95b4a92f02a6"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/b67bb34e-8b82-4db6-897b-95b4a92f02a6"
 ---
 
 # 总结稿

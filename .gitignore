@@ -23,7 +23,11 @@ node_modules/
 !.obsidian/plugins/obsidian-git/data.json
 
 # Codex repo-local skills and configuration
-.codex/
+.codex/*
+!.codex/skills/
+.codex/skills/*
+!.codex/skills/publish-media-assets/
+!.codex/skills/publish-media-assets/**
 
 # video-sum caches and working data
 .video-sum-cache/
@@ -35,6 +39,7 @@ node_modules/
 .publish-stage.tmp-*/
 .publish-stage.backup-*/
 .site-work.tmp-*/
+.publish-repo-work/
 publishing/.publish-transaction.json
 publishing/*.tmp-*
 publishing/*.backup-*
@@ -49,6 +54,10 @@ coverage/
 .quartz/
 public.tmp-*/
 public.backup-*/
+
+# Local media publish state (manifests remain tracked under publishing/assets/)
+.media-publish.tmp-*/
+.uv-skill-cache/
 
 # Logs and transient files
 *.log

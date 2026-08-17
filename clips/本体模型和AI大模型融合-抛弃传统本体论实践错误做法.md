@@ -8,7 +8,7 @@ duration_seconds: 442
 tags: ["AI", "人工智能", "模型", "Palantir", "AI大模型", "本体论"]
 rid: "b31a80fc-ca9b-4e5a-ab10-0373beac0f80"
 permalink: "/r/b31a80fc-ca9b-4e5a-ab10-0373beac0f80"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/b31a80fc-ca9b-4e5a-ab10-0373beac0f80"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/b31a80fc-ca9b-4e5a-ab10-0373beac0f80"
 ---
 
 # 总结

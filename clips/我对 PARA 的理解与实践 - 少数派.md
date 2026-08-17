@@ -13,7 +13,7 @@ Cover: "https://rssfile.sspai.com/2023/02/18/f56f708809bdfb59289e0d3ccaeee8cf.pn
 publish: true
 rid: "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae"
 permalink: "/r/84f1b6b2-1bdf-45a2-86ef-c8ef467663ae"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/84f1b6b2-1bdf-45a2-86ef-c8ef467663ae"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/84f1b6b2-1bdf-45a2-86ef-c8ef467663ae"
 ---
 ## 背景
 

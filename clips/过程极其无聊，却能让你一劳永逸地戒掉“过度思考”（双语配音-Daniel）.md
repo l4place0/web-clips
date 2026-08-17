@@ -8,7 +8,7 @@ duration_seconds: 1881
 tags: ["潜意识", "觉醒", "精神内耗", "反刍式思维", "意志力", "焦虑", "胡思乱想", "控制欲", "过度思考", "万物研究所"]
 rid: "7b77c047-8d46-45e4-a123-86e01a7a464c"
 permalink: "/r/7b77c047-8d46-45e4-a123-86e01a7a464c"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/7b77c047-8d46-45e4-a123-86e01a7a464c"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/7b77c047-8d46-45e4-a123-86e01a7a464c"
 ---
 
 # 总结

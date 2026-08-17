@@ -8,7 +8,7 @@ duration_seconds: 555
 tags: ["系统", "#ai", "#agent", "loop", "Graph"]
 rid: "69b30ff5-9b35-445f-b2b9-283556d04d28"
 permalink: "/r/69b30ff5-9b35-445f-b2b9-283556d04d28"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/69b30ff5-9b35-445f-b2b9-283556d04d28"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/69b30ff5-9b35-445f-b2b9-283556d04d28"
 ---
 
 # 总结稿

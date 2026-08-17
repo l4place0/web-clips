@@ -14,7 +14,7 @@ Cover: "https://cdn3.ldstatic.com/original/4X/7/3/5/735fc9259e0a95b5a27e7578c2b6
 publish: true
 rid: "07945d2c-9acb-4b99-ab99-97fd6f8e44dc"
 permalink: "/r/07945d2c-9acb-4b99-ab99-97fd6f8e44dc"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/07945d2c-9acb-4b99-ab99-97fd6f8e44dc"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/07945d2c-9acb-4b99-ab99-97fd6f8e44dc"
 ---
 
 [xk128](https://linux.do/u/xk128) 骐骥驰骋

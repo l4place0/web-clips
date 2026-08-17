@@ -8,6 +8,8 @@
     "publish:annotate-urls": "node publishing/cli.mjs annotate-urls",
     "publish:validate": "node publishing/cli.mjs validate",
     "publish:dry-run": "node publishing/cli.mjs build --dry-run",
+    "media": "node publishing/media-cli.mjs",
+    "media:verify": "node publishing/media-cli.mjs verify",
     "build:site": "node site/build.mjs",
     "test:publisher": "node --test --test-concurrency=1 publishing/*.test.mjs",
     "test:site": "node --test --test-concurrency=1 site/*.test.mjs",
@@ -37,6 +39,7 @@
     "wrangler": "^4.115.0"
   },
   "dependencies": {
+    "ali-oss": "^6.23.0",
     "yaml": "^2.8.1"
   },
   "engines": {

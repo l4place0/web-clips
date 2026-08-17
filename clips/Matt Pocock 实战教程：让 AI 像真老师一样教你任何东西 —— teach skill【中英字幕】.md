@@ -8,7 +8,7 @@ duration_seconds: 1584
 tags: ["中英字幕", "人工智能", "教程", "claude", "mattpocock", "ai", "实战教程", "agent", "codex", "Skills"]
 rid: "808d0915-08c3-4867-9570-660500ac6d53"
 permalink: "/r/808d0915-08c3-4867-9570-660500ac6d53"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/808d0915-08c3-4867-9570-660500ac6d53"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/808d0915-08c3-4867-9570-660500ac6d53"
 ---
 
 # 总结稿

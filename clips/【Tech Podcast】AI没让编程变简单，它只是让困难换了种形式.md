@@ -8,7 +8,7 @@ duration_seconds: 794
 tags: ["技术趋势", "AI编程", "程序员成长", "宝藏播客电台"]
 rid: "5f59bd5e-640c-4ea5-a69b-6cbba80a93fd"
 permalink: "/r/5f59bd5e-640c-4ea5-a69b-6cbba80a93fd"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/5f59bd5e-640c-4ea5-a69b-6cbba80a93fd"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/5f59bd5e-640c-4ea5-a69b-6cbba80a93fd"
 ---
 
 # 总结稿

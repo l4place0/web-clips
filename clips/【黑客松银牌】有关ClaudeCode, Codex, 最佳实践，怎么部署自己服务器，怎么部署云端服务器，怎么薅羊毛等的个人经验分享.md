@@ -26,7 +26,7 @@ description: |-
 publish: true
 rid: "988e7cdb-6eac-4583-bb46-7c843db80550"
 permalink: "/r/988e7cdb-6eac-4583-bb46-7c843db80550"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/988e7cdb-6eac-4583-bb46-7c843db80550"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/988e7cdb-6eac-4583-bb46-7c843db80550"
 ---
 
 # 【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享

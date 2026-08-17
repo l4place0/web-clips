@@ -8,7 +8,7 @@ duration_seconds: 530
 tags: ["编程", "AI Agent", "Vibe Coding", "大模型"]
 rid: "88cddc7c-bac1-450a-907b-1248f664e180"
 permalink: "/r/88cddc7c-bac1-450a-907b-1248f664e180"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/88cddc7c-bac1-450a-907b-1248f664e180"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/88cddc7c-bac1-450a-907b-1248f664e180"
 ---
 
 # 总结稿

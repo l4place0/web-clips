@@ -8,7 +8,7 @@ duration_seconds: 2686
 tags: ["HTML", "人工智能", "AI", "系统", "降本增效", "Trae", "Kimi", "算力", "宝藏知识UP跃迁计划"]
 rid: "e6ba0b25-7023-47ce-aa81-8596f1834a7b"
 permalink: "/r/e6ba0b25-7023-47ce-aa81-8596f1834a7b"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/e6ba0b25-7023-47ce-aa81-8596f1834a7b"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-aa81-8596f1834a7b"
 ---
 
 # 总结

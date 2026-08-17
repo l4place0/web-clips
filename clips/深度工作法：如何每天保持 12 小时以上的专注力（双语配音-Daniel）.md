@@ -8,7 +8,7 @@ duration_seconds: 2243
 tags: ["觉醒", "极简主义", "多巴胺", "专注力", "个人成长", "延迟满足", "平庸", "强者思维", "信息茧房", "万物研究所"]
 rid: "ac0e2da4-88eb-43a2-91f1-0bc028810842"
 permalink: "/r/ac0e2da4-88eb-43a2-91f1-0bc028810842"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/ac0e2da4-88eb-43a2-91f1-0bc028810842"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/ac0e2da4-88eb-43a2-91f1-0bc028810842"
 ---
 
 # 总结

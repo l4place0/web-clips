@@ -9,7 +9,7 @@ tags: ["学习", "教程", "subagent", "gpt-5.6", "ai", "codex", "gpt", "openai 
 publish: true
 rid: "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
 permalink: "/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/1993e015-b0f9-4d7d-aa67-a7e5c0aaac25"
 ---
 
 # 总结稿
@@ -70,13 +70,13 @@ flowchart TD
 
 这张图表达的是视频的机制推断，不是定量实验结论。作者没有给出延迟、token 或成本的对照测量，因此更稳妥的理解是：这些因素构成了值得排查的开销来源。
 
-![关键帧 6](assets/bilibili-BV1fXKx6WEXk-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/5b/5b9c09a6bb1319a5145ad2eb4f73734ef68581dca865953e89f458b4fc95d184.webp)
 
 ## 1. 路由与元数据可见性
 
 视频认为，若派发工具没有向 root 暴露可选择的 agent 类型、模型或推理档位，root 就难以把简单任务路由给轻量 subagent，结果可能继续使用与 root 相近的高规格配置。画面也明确区分了两层含义：字段是否被隐藏属于可观察实现行为；它是否必然导致错误模型选择，则仍是作者的推断。
 
-![关键帧 2](assets/bilibili-BV1fXKx6WEXk-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/3f/3ffd3edf736671c17fab7f92a14141775acc802aef7abc95a2d453303c6c6258.webp)
 
 实用启示不是“永远换成便宜模型”，而是先按任务性质路由：
 
@@ -97,7 +97,7 @@ flowchart TD
 | 完整接管、全会话复盘 | `all` | 任务本身依赖完整历史 |
 | 关键事实只存在于对话中 | `all`，或先压缩事实再派发 | 防止遗漏不可恢复的信息 |
 
-![关键帧 4](assets/bilibili-BV1fXKx6WEXk-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b8/b859bafd5f9563c05938feb1495c8e0f75d941c45f216ea8c7cb3e6dc6dc765b.webp)
 
 这里的关键不只是减少 token，而是让任务说明自包含：给 subagent 明确目标、输入、输出格式、允许修改的范围和停止条件，通常比无差别复制全部历史更可控。
 
@@ -125,7 +125,7 @@ flowchart TD
 - 结果与剩余风险交回 parent，由 parent 负责最终整合；
 - 默认不继续创建下级 agent。
 
-![关键帧 10](assets/bilibili-BV1fXKx6WEXk-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/b1/b1c6182f81927326d462aaa572d5412742c039a34bfde31f6a5e6a3373622d77.webp)
 
 画面明确把这套规则标为 soft limit。也就是说，它能改善模型倾向，却不构成系统硬限制；涉及成本、权限或递归风险时，仍应依靠宿主的并发限制、审批和可见性机制兜底。
 
@@ -133,7 +133,7 @@ flowchart TD
 
 作者展示了自己的 `config.toml`，其中包含代理深度、任务运行时间、派发元数据可见性、工具命名空间和会话并发数等设置，也为 root 与 subagent 追加了使用提示。
 
-![关键帧 9](assets/bilibili-BV1fXKx6WEXk-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/4e/4e4e6ca1547fa2ed2e662ff41f21172b4ec3ec00c29b2102706ad33dbe45c096.webp)
 
 这里不宜直接抄整份配置：
 
@@ -633,40 +633,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1fXKx6WEXk-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/1c/1c44e68c1503beff9f8c097bba63e24273fd1f5ae7c9d3dc1ddbc7e79833d40a.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1fXKx6WEXk-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/3f/3ffd3edf736671c17fab7f92a14141775acc802aef7abc95a2d453303c6c6258.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1fXKx6WEXk-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/55/55d6278a07121b61b67c66896db6a7447f6ed5c02b473a55dfddf1bb61336dad.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1fXKx6WEXk-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b8/b859bafd5f9563c05938feb1495c8e0f75d941c45f216ea8c7cb3e6dc6dc765b.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1fXKx6WEXk-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/35/35e9c665ac9435804d288d4be860adf614ee5390932c4af9f932e979f3fa8efb.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1fXKx6WEXk-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/5b/5b9c09a6bb1319a5145ad2eb4f73734ef68581dca865953e89f458b4fc95d184.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1fXKx6WEXk-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/44/44099f9ca2e58dcbe1bab46be927d5b0cad68323d94ee6094ed16a4e4c5f0fa7.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1fXKx6WEXk-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/bc/bc6d2f7bce0532de7071186ed4a3a24f8f13e81ee1a405e2fce5a61a846e0c53.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1fXKx6WEXk-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/4e/4e4e6ca1547fa2ed2e662ff41f21172b4ec3ec00c29b2102706ad33dbe45c096.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1fXKx6WEXk-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/b1/b1c6182f81927326d462aaa572d5412742c039a34bfde31f6a5e6a3373622d77.webp)

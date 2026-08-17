@@ -13,7 +13,7 @@ Created: "2026-06-26 10:30:00"
 publish: true
 rid: "ada23994-d3cb-4995-895a-227cfe5abbf0"
 permalink: "/r/ada23994-d3cb-4995-895a-227cfe5abbf0"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/ada23994-d3cb-4995-895a-227cfe5abbf0"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/ada23994-d3cb-4995-895a-227cfe5abbf0"
 ---
 
 # AI Coding工具对比 - 2026年最新

@@ -8,7 +8,7 @@ duration_seconds: 3101
 tags: ["SDLC", "提示词工程", "Claude Code", "智能体工程", "软件开发", "大模型", "Codex", "软件工厂", "AI编程"]
 rid: "8c3c3bdd-2dea-431d-b889-42f021e7941e"
 permalink: "/r/8c3c3bdd-2dea-431d-b889-42f021e7941e"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/8c3c3bdd-2dea-431d-b889-42f021e7941e"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/8c3c3bdd-2dea-431d-b889-42f021e7941e"
 ---
 
 # 总结

@@ -15,7 +15,7 @@ Cover: "https://cdn3.ldstatic.com/original/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c
 publish: true
 rid: "24135def-07d2-40e7-82e5-ca2b00f96176"
 permalink: "/r/24135def-07d2-40e7-82e5-ca2b00f96176"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/24135def-07d2-40e7-82e5-ca2b00f96176"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/24135def-07d2-40e7-82e5-ca2b00f96176"
 ---
 Info
 

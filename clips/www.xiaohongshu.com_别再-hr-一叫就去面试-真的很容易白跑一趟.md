@@ -20,7 +20,7 @@ Cover: "http://sns-webpic-qc.xhscdn.com/202606302304/33a171aba2880186ca225ce4286
 publish: true
 rid: "cedae9cb-caf7-4d4c-9b57-23892a6735f3"
 permalink: "/r/cedae9cb-caf7-4d4c-9b57-23892a6735f3"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/cedae9cb-caf7-4d4c-9b57-23892a6735f3"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/cedae9cb-caf7-4d4c-9b57-23892a6735f3"
 ---
 ![](https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/notes-attactments/1782831928571-8z3a1j.jpg)
 

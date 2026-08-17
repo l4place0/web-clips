@@ -8,7 +8,7 @@ duration_seconds: 1454
 tags: ["人工智能", "学习", "UNITY", "编程开发", "上B站看播客"]
 rid: "7e20be39-c970-4823-b097-af7df0e5b5c2"
 permalink: "/r/7e20be39-c970-4823-b097-af7df0e5b5c2"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/7e20be39-c970-4823-b097-af7df0e5b5c2"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/7e20be39-c970-4823-b097-af7df0e5b5c2"
 ---
 
 # 总结稿

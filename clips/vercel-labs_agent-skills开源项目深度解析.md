@@ -8,7 +8,7 @@ duration_seconds: 491
 tags: ["原创", "科普", "科技科普", "B站AI创造公开赛", "项目", "深度解析", "开源项目", "Python", "github", "全栈"]
 rid: "9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05"
 permalink: "/r/9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05"
 ---
 
 # 总结稿

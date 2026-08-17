@@ -16,7 +16,7 @@ Cover: "http://sns-webpic-qc.xhscdn.com/202606302301/9ceda0ef5396a8ecb00366f39e2
 publish: true
 rid: "6184ec72-c0b0-4866-9a20-379f9053a83c"
 permalink: "/r/6184ec72-c0b0-4866-9a20-379f9053a83c"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/6184ec72-c0b0-4866-9a20-379f9053a83c"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6184ec72-c0b0-4866-9a20-379f9053a83c"
 ---
 ![](https://l4p-bucket-1.oss-cn-shenzhen.aliyuncs.com/notes-attactments/1782831746242-z5isep.jpg)
 

@@ -15,7 +15,7 @@ Cover: "https://blog.veyliss.top/og.svg"
 publish: true
 rid: "ad536a24-c5ad-4259-83d2-f40cd58ca7cf"
 permalink: "/r/ad536a24-c5ad-4259-83d2-f40cd58ca7cf"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/ad536a24-c5ad-4259-83d2-f40cd58ca7cf"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/ad536a24-c5ad-4259-83d2-f40cd58ca7cf"
 ---
 这是一组爬虫和 JS 逆向相关的面试题。
 

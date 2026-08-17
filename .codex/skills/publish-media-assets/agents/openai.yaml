@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Media Assets"
+  short_description: "Safely publish local note media to OSS and rewrite Markdown"
+  default_prompt: "Use $publish-media-assets to preview and safely publish this note's local media to OSS."

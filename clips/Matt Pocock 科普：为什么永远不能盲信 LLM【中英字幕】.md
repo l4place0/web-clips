@@ -8,7 +8,7 @@ duration_seconds: 1702
 tags: ["人工智能", "科普", "开发", "AI", "claude code", "命令行", "CLI", "实战教程", "skills", "Skills"]
 rid: "d7bc1aa2-cc54-4f08-9358-d111a84a1a54"
 permalink: "/r/d7bc1aa2-cc54-4f08-9358-d111a84a1a54"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/d7bc1aa2-cc54-4f08-9358-d111a84a1a54"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/d7bc1aa2-cc54-4f08-9358-d111a84a1a54"
 ---
 
 # 总结稿

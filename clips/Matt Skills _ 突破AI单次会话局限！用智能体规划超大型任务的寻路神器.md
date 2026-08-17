@@ -8,7 +8,7 @@ duration_seconds: 909
 tags: ["学习", "人工智能", "AI", "编程", "AI Agent", "Vibe Coding", "神器", "任务", "大模型"]
 rid: "2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6"
 permalink: "/r/2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6"
-webClipUrl: "https://l4p-web-clips.pages.dev/r/2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6"
+webClipUrl: "https://l4place0.github.io/web-clips-publish/r/2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6"
 ---
 
 # 总结稿
