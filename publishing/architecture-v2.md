@@ -62,4 +62,6 @@ manifest 是审计和幂等状态，不是资源身份源。Markdown 中的 HTTP
 4. GitHub Pages 使用固定内容 SHA 构建成功；
 5. 本地 `clips/assets/` 文件仍保留，且已加入 `.gitignore`。
 
-旧 `site/` 只在新仓库完成并行验收后删除。
+以上门槛已于 2026-08-17 验收通过：393 个 OSS 对象全量核验成功，GitHub Pages 使用
+内容提交 `bb89b71c9027dc5b4055f916155379ff685caf09` 构建成功；`clips/assets/` 已停止 Git
+跟踪但本地缓存保留。旧 `site/` 与 Quartz 依赖随后从内容仓库移除。

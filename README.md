@@ -9,8 +9,8 @@ OSS；展示站代码位于独立仓库
 - OSS 媒体基地址：`https://assets.l4p.site/`
 - 展示站：<https://l4place0.github.io/web-clips-publish/>
 
-本地仍然只维护这一套文档库。`clips/assets/` 在全库媒体迁移完成前继续由 Git 跟踪；
-迁移完成后只停止 Git 跟踪，不删除本地文件。
+本地仍然只维护这一套文档库。`clips/assets/` 是已加入 `.gitignore` 的工作缓存，不由 Git
+跟踪，也不会被发布工具自动删除；公开 Markdown 只引用已经发布的 HTTPS 媒体 URL。
 
 ## 内容发布链路
 
@@ -61,12 +61,14 @@ HTML `img` 和 frontmatter `cover`，并以 SHA-256 生成不可变对象键。
 ```powershell
 npm.cmd run media -- check "clips/笔记.md"
 npm.cmd run media -- publish "clips/笔记.md" --dry-run
+npm.cmd run media -- publish --all --dry-run
 ```
 
 执行发布并验证：
 
 ```powershell
 npm.cmd run media -- publish "clips/笔记.md"
+npm.cmd run media -- publish --all
 npm.cmd run media -- status "clips/笔记.md"
 npm.cmd run media:verify
 ```
@@ -80,8 +82,8 @@ CLI 优先使用 `OSS_ACCESS_KEY_ID` 和 `OSS_ACCESS_KEY_SECRET`；未设置时�
 
 ## 仓库边界
 
-当前迁移期间仍保留旧 `site/`，只用于回滚和并行验收；生产展示由
-`web-clips-publish` 构建。新展示仓库稳定后，才从本仓库删除 Quartz 和展示依赖。
+本仓库不包含站点主题、Quartz 或 Pages 部署代码；生产展示完全由
+[`web-clips-publish`](https://github.com/l4place0/web-clips-publish) 构建和部署。
 
 详细契约：
 

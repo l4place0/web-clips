@@ -18,8 +18,8 @@ Work from the `web-clips` root containing both `publishing/media.config.json` an
 - For inspection, readiness, or diagnosis, run `check` and `status`; do not upload or edit.
 - For an explicit publish, upload, or migration request, run the publish workflow below.
 - For a request to verify already published media, run `media:verify`.
-- For several notes, check every note first, then publish sequentially so each note has an independent
-  manifest and atomic local transaction.
+- For several notes or a repository-wide migration, use `--all`; it validates the complete batch
+  before uploading, publishes notes independently, and preserves one atomic transaction per note.
 
 ## Inspect a note
 
@@ -63,13 +63,34 @@ Report the RID, local reference count, unique asset count, total bytes, and any 
 5. Report uploaded versus reused objects, manifest path, verification count, and changed files.
    Do not commit or push unless the user also asked for it.
 
+## Publish all pending notes
+
+Run the repository-wide read-only preflight first:
+
+```powershell
+npm.cmd run media -- publish --all --dry-run
+```
+
+Review `notesPending`, `localReferences`, object count, and total bytes. For an explicitly requested
+batch migration, run:
+
+```powershell
+npm.cmd run media -- publish --all
+npm.cmd run media -- publish --all --dry-run
+npm.cmd run media:verify
+npm.cmd run publish:validate
+```
+
+The second dry run must report zero pending notes and zero local references. Report per-note failures;
+do not retry by rewriting Markdown manually.
+
 ## Preserve safety invariants
 
 - Keep the Bucket private. Set only declared media objects to `public-read`.
 - Generate only `https://assets.l4p.site/...` Markdown URLs.
 - Never delete OSS objects automatically, including apparent orphans.
 - Never delete local cache files as part of publishing.
-- Do not stop Git tracking of `clips/assets/` until the repository-wide migration gate passes.
+- Keep `clips/assets/` ignored and untracked after the repository-wide migration gate has passed.
 - Treat uploads as immutable and content-addressed. An existing key must match SHA-256 and size.
 - Rewrite Markdown and its per-note manifest only after every object passes public HTTPS validation.
 - If upload or verification fails, leave Markdown and manifest unchanged and report the stable error code.
