@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+  "note": "clips/AI辅助构建-任意一个领域的可视化知识体系.md",
+  "publishedAt": "2026-08-17T13:57:06.494Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0012.webp",
+      "sha256": "1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17",
+      "size": 58382,
+      "mimeType": "image/webp",
+      "objectKey": "media/17/1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17.webp",
+      "url": "https://assets.l4p.site/media/17/1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0004.webp",
+      "sha256": "302f76616cee040e6a98d13779e2a3447c63999a7c863de91c326b91f9bb6685",
+      "size": 50388,
+      "mimeType": "image/webp",
+      "objectKey": "media/30/302f76616cee040e6a98d13779e2a3447c63999a7c863de91c326b91f9bb6685.webp",
+      "url": "https://assets.l4p.site/media/30/302f76616cee040e6a98d13779e2a3447c63999a7c863de91c326b91f9bb6685.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0007.webp",
+      "sha256": "31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8",
+      "size": 56082,
+      "mimeType": "image/webp",
+      "objectKey": "media/31/31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8.webp",
+      "url": "https://assets.l4p.site/media/31/31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0001.webp",
+      "sha256": "5eb759d6437564979b8f09a165bc48b508c53f243df3b9edcac23997f0477430",
+      "size": 62058,
+      "mimeType": "image/webp",
+      "objectKey": "media/5e/5eb759d6437564979b8f09a165bc48b508c53f243df3b9edcac23997f0477430.webp",
+      "url": "https://assets.l4p.site/media/5e/5eb759d6437564979b8f09a165bc48b508c53f243df3b9edcac23997f0477430.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0009.webp",
+      "sha256": "79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78",
+      "size": 61282,
+      "mimeType": "image/webp",
+      "objectKey": "media/79/79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78.webp",
+      "url": "https://assets.l4p.site/media/79/79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0006.webp",
+      "sha256": "7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0",
+      "size": 56232,
+      "mimeType": "image/webp",
+      "objectKey": "media/7f/7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0.webp",
+      "url": "https://assets.l4p.site/media/7f/7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0003.webp",
+      "sha256": "93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990",
+      "size": 28138,
+      "mimeType": "image/webp",
+      "objectKey": "media/93/93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990.webp",
+      "url": "https://assets.l4p.site/media/93/93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0013.webp",
+      "sha256": "a21e4b0cc16a9afab380401970f4e50e51555e4dccd10b4ddfab82306a007168",
+      "size": 68718,
+      "mimeType": "image/webp",
+      "objectKey": "media/a2/a21e4b0cc16a9afab380401970f4e50e51555e4dccd10b4ddfab82306a007168.webp",
+      "url": "https://assets.l4p.site/media/a2/a21e4b0cc16a9afab380401970f4e50e51555e4dccd10b4ddfab82306a007168.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0002.webp",
+      "sha256": "b4e54bc99fef03d645b3124c62070c1060b6e4883b7fca6c6968c967172d21cf",
+      "size": 52002,
+      "mimeType": "image/webp",
+      "objectKey": "media/b4/b4e54bc99fef03d645b3124c62070c1060b6e4883b7fca6c6968c967172d21cf.webp",
+      "url": "https://assets.l4p.site/media/b4/b4e54bc99fef03d645b3124c62070c1060b6e4883b7fca6c6968c967172d21cf.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0005.webp",
+      "sha256": "c55c906fcc247ea4aee7e3f3a9230583fcd9a8c93c05dea77d3177ec994df375",
+      "size": 47548,
+      "mimeType": "image/webp",
+      "objectKey": "media/c5/c55c906fcc247ea4aee7e3f3a9230583fcd9a8c93c05dea77d3177ec994df375.webp",
+      "url": "https://assets.l4p.site/media/c5/c55c906fcc247ea4aee7e3f3a9230583fcd9a8c93c05dea77d3177ec994df375.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0008.webp",
+      "sha256": "cdfbe494a5d0700a386c77a808850c821efdda0024528c5d7bf9d8eef962a05f",
+      "size": 41992,
+      "mimeType": "image/webp",
+      "objectKey": "media/cd/cdfbe494a5d0700a386c77a808850c821efdda0024528c5d7bf9d8eef962a05f.webp",
+      "url": "https://assets.l4p.site/media/cd/cdfbe494a5d0700a386c77a808850c821efdda0024528c5d7bf9d8eef962a05f.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0010.webp",
+      "sha256": "e6df5816f11f661e95067ddf8a3a68f859fdf443da8e842f2f1fc195181299eb",
+      "size": 14844,
+      "mimeType": "image/webp",
+      "objectKey": "media/e6/e6df5816f11f661e95067ddf8a3a68f859fdf443da8e842f2f1fc195181299eb.webp",
+      "url": "https://assets.l4p.site/media/e6/e6df5816f11f661e95067ddf8a3a68f859fdf443da8e842f2f1fc195181299eb.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1tQgb64E1f-frame-0011.webp",
+      "sha256": "f07364cc158068f520d6366ecdd4f6c36564647efea0df6ebe193c1824bee8c8",
+      "size": 56024,
+      "mimeType": "image/webp",
+      "objectKey": "media/f0/f07364cc158068f520d6366ecdd4f6c36564647efea0df6ebe193c1824bee8c8.webp",
+      "url": "https://assets.l4p.site/media/f0/f07364cc158068f520d6366ecdd4f6c36564647efea0df6ebe193c1824bee8c8.webp"
+    }
+  ]
+}

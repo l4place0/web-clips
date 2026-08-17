@@ -138,7 +138,7 @@ Kun 的日常动作近似“脑内清空”：想到一个需求就告诉 First 
 
 First Mate 的路由规则写在本地文件中：它根据任务复杂度、设计类型、模型能力、订阅额度与 harness 特性选择 crewmate。[15:54–17:18] 视频中，Kun 将强推理配置用于需要跨项目记忆和复杂判断的协调者；执行任务则按需选择不同模型和推理强度，而不是一律最高档。
 
-Herder 为这一层提供运行时视图：spaces 组织项目，agent 列表显示 working/idle/done 等状态，让“仍在工作”与“正在等我”可区分。[07:42–08:37] 如果协调者认为某项修复需要人决定，任务可以安全地停在 review，而不是被当作失败。![关键帧 6](assets/bilibili-BV19v3g6EENM-frame-0006.webp)
+Herder 为这一层提供运行时视图：spaces 组织项目，agent 列表显示 working/idle/done 等状态，让“仍在工作”与“正在等我”可区分。[07:42–08:37] 如果协调者认为某项修复需要人决定，任务可以安全地停在 review，而不是被当作失败。![关键帧 6](https://assets.l4p.site/media/7c/7c14dcf619ceb76b396c581432f68e4dbb9d0b23fc602427bed7de757a4a0d4f.webp)
 
 ```mermaid
 stateDiagram-v2
@@ -194,9 +194,9 @@ First Mate 主要由两类可修改资产组成：
 
 ## 成本不是“选最便宜模型”，而是系统级路由
 
-Kun 把额度做成 Baby Menu 面板，并通过 quota AXI 暴露给 agent：协调者不仅知道模型能力，也知道某项订阅是否接近耗尽。[17:17–18:50; 56:44–57:12] ![关键帧 5](assets/bilibili-BV19v3g6EENM-frame-0005.webp)
+Kun 把额度做成 Baby Menu 面板，并通过 quota AXI 暴露给 agent：协调者不仅知道模型能力，也知道某项订阅是否接近耗尽。[17:17–18:50; 56:44–57:12] ![关键帧 5](https://assets.l4p.site/media/d6/d6a9de7bcfa7125268568a4e5a57d8f60e260d6f004b7751e99f9f5ec85df305.webp)
 
-视频还以 Claude 使用限额变化为例，说明静态写死的额度假设很容易失效，因此配额状态需要成为路由输入，而不是只存在人的记忆中。![关键帧 4](assets/bilibili-BV19v3g6EENM-frame-0004.webp)
+视频还以 Claude 使用限额变化为例，说明静态写死的额度假设很容易失效，因此配额状态需要成为路由输入，而不是只存在人的记忆中。![关键帧 4](https://assets.l4p.site/media/a5/a5fc8314be8279b4e26d729b93e90be911e3263cb9e329d5983bc9c63704469e.webp)
 
 视频中的成本策略可归纳为四个维度：
 
@@ -209,13 +209,13 @@ Kun 把额度做成 Baby Menu 面板，并通过 quota AXI 暴露给 agent：协
 
 本地模型也不是自动答案。Kun 的 Mac mini 同时负责构建、远程会话和其他任务，本地推理会与这些工作争用计算，所以他当时并未把本地开源模型作为主路径。[29:33–30:47] 这提示成本评估应包含机器资源、延迟和机会成本，而不仅是 API 单价。
 
-具体型号、订阅额度和图表会变化；可迁移的是“能力 × 延迟 × 额度 × 风险”的路由框架，而不是照抄某一型号。视频用 DeepSWE 曲线说明，高推理档并不总意味着更好的性价比，较弱模型在困难任务上可能通过更多工具调用和推理循环消耗更多。[26:43–29:06] ![关键帧 9](assets/bilibili-BV19v3g6EENM-frame-0009.webp)
+具体型号、订阅额度和图表会变化；可迁移的是“能力 × 延迟 × 额度 × 风险”的路由框架，而不是照抄某一型号。视频用 DeepSWE 曲线说明，高推理档并不总意味着更好的性价比，较弱模型在困难任务上可能通过更多工具调用和推理循环消耗更多。[26:43–29:06] ![关键帧 9](https://assets.l4p.site/media/73/7324445552564d2c270a477f3cbeb42386691ee6b12d5aae1d3625b2e53be035.webp)
 
 ## Agent-first 工具接口：AXI 的真正含义
 
 Kun 认为许多 MCP 与 CLI 仍是按人的使用方式设计的。他展示的 benchmark 观点是：对同类 GitHub 操作，已有 CLI 在成本、轮次和速度上优于其比较的 MCP 方案；他进一步用 AXI 原则包装工具，希望让 agent 的接口更紧凑、明确、可恢复。[51:43–55:31]
 
-十条原则在画面中集中列出：![关键帧 10](assets/bilibili-BV19v3g6EENM-frame-0010.webp)
+十条原则在画面中集中列出：![关键帧 10](https://assets.l4p.site/media/cf/cf9f932e9b5e5ae8d3ba1ef20491b22700d3f7bbb02f146f4b7e6febbe2d79e2.webp)
 
 1. 使用 token-efficient 输出格式；
 2. 默认 schema 只给必要字段；
@@ -2533,40 +2533,40 @@ Kun 的 workflow 可以看成一家公司被压缩到本地终端：
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV19v3g6EENM-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/34/34b81b7ba629118e629db66056a0297f6feb2b00cbad98c8770dded4f82da1f1.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV19v3g6EENM-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/27/27bf9fab57e04c612fb453dccabe681c4a289d2ca8cf46830504deaa8ef5e721.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV19v3g6EENM-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/0e/0ea8e7282edeed05b1cad8136a28499e8a3b0e111d70d0cd9ecbc50296bb838e.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV19v3g6EENM-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/a5/a5fc8314be8279b4e26d729b93e90be911e3263cb9e329d5983bc9c63704469e.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV19v3g6EENM-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/d6/d6a9de7bcfa7125268568a4e5a57d8f60e260d6f004b7751e99f9f5ec85df305.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV19v3g6EENM-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7c/7c14dcf619ceb76b396c581432f68e4dbb9d0b23fc602427bed7de757a4a0d4f.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV19v3g6EENM-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/9c/9c5b8ce2fbaaec1d32838457c93cc0db535ba0a38d3a3dd1f05975e7dec3c7c8.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV19v3g6EENM-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/2f/2faae4443b00779ddd371fd43083ace6b30845c584480cc250f08f6044db8192.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV19v3g6EENM-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/73/7324445552564d2c270a477f3cbeb42386691ee6b12d5aae1d3625b2e53be035.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV19v3g6EENM-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/cf/cf9f932e9b5e5ae8d3ba1ef20491b22700d3f7bbb02f146f4b7e6febbe2d79e2.webp)

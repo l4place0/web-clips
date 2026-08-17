@@ -268,19 +268,29 @@ async function ensureRemoteAsset(client, asset, config) {
   return { uploaded: !existing }
 }
 
-async function verifyPublicAsset(asset, fetchImpl) {
-  const response = await fetchImpl(asset.url, { method: "HEAD", redirect: "follow", cache: "no-store" })
-  const contentLength = Number(response.headers.get("content-length"))
-  const contentType = response.headers.get("content-type")?.split(";", 1)[0]?.trim().toLowerCase()
-  const disposition = response.headers.get("content-disposition")?.toLowerCase()
-  if (!response.ok || contentLength !== asset.size || contentType !== asset.mimeType || disposition === "attachment") {
-    throw new MediaPublishError("E_MEDIA_PUBLIC_VERIFY", `Public OSS verification failed: ${asset.url}`, {
-      status: response.status,
-      contentLength,
-      contentType,
-      disposition,
-    })
+async function verifyPublicAsset(asset, fetchImpl, attempts = 3) {
+  let lastError
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetchImpl(asset.url, { method: "HEAD", redirect: "follow", cache: "no-store" })
+      const contentLength = Number(response.headers.get("content-length"))
+      const contentType = response.headers.get("content-type")?.split(";", 1)[0]?.trim().toLowerCase()
+      const disposition = response.headers.get("content-disposition")?.toLowerCase()
+      if (response.ok && contentLength === asset.size && contentType === asset.mimeType && disposition !== "attachment") {
+        return
+      }
+      lastError = new MediaPublishError("E_MEDIA_PUBLIC_VERIFY", `Public OSS verification failed: ${asset.url}`, {
+        status: response.status,
+        contentLength,
+        contentType,
+        disposition,
+      })
+    } catch (error) {
+      lastError = error
+    }
+    if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 250))
   }
+  throw lastError
 }
 
 async function commitLocalState(plan, rewritten, manifest) {
@@ -337,11 +347,16 @@ export async function publishMedia(rootInput, noteInput, options = {}) {
   const fetchImpl = options.fetchImpl ?? globalThis.fetch
   if (typeof fetchImpl !== "function") throw new MediaPublishError("E_MEDIA_CLIENT", "A fetch implementation is required")
 
+  const concurrency = Math.max(1, Math.min(Number(options.concurrency ?? 6), 8))
   let uploaded = 0
-  for (const asset of plan.assets) {
-    const result = await ensureRemoteAsset(options.client, asset, plan.config)
-    if (result.uploaded) uploaded += 1
-    await verifyPublicAsset(asset, fetchImpl)
+  for (let index = 0; index < plan.assets.length; index += concurrency) {
+    const group = plan.assets.slice(index, index + concurrency)
+    const results = await Promise.all(group.map(async (asset) => {
+      const result = await ensureRemoteAsset(options.client, asset, plan.config)
+      await verifyPublicAsset(asset, fetchImpl)
+      return result
+    }))
+    uploaded += results.filter((result) => result.uploaded).length
   }
 
   const publishedAt = (options.now ?? (() => new Date().toISOString()))()
@@ -406,20 +421,30 @@ export async function verifyMediaManifests(rootInput, options = {}) {
   if (!(await exists(manifestRoot))) return { ok: true, checked: 0, failures: [] }
   const fetchImpl = options.fetchImpl ?? globalThis.fetch
   const failures = []
-  let checked = 0
+  const assets = []
   for (const entry of await fs.readdir(manifestRoot, { withFileTypes: true })) {
     if (!entry.isFile() || !entry.name.endsWith(".json")) continue
     const manifest = JSON.parse(await fs.readFile(path.join(manifestRoot, entry.name), "utf8"))
     for (const asset of manifest.assets ?? []) {
-      checked += 1
-      try {
-        await verifyPublicAsset(asset, fetchImpl)
-      } catch (error) {
-        failures.push({ manifest: entry.name, url: asset.url, code: error.code ?? "E_MEDIA_VERIFY" })
-      }
+      assets.push({ manifest: entry.name, asset })
     }
   }
-  return { ok: failures.length === 0, checked, failures }
+  const concurrency = Math.max(1, Math.min(Number(options.concurrency ?? 12), 24))
+  for (let index = 0; index < assets.length; index += concurrency) {
+    const group = assets.slice(index, index + concurrency)
+    const results = await Promise.all(group.map(async ({ manifest, asset }) => {
+      try {
+        await verifyPublicAsset(asset, fetchImpl)
+        return null
+      } catch (error) {
+        return { manifest, url: asset.url, code: error.code ?? "E_MEDIA_VERIFY" }
+      }
+    }))
+    for (const failure of results) {
+      if (failure) failures.push(failure)
+    }
+  }
+  return { ok: failures.length === 0, checked: assets.length, failures }
 }
 
 export async function listMediaNotes(rootInput) {
@@ -479,7 +504,15 @@ export async function publishAllMedia(rootInput, options = {}) {
   }
   const results = []
   for (const plan of pending) {
-    results.push(await publishMedia(rootInput, plan.noteRelativePath, options))
+    const result = await publishMedia(rootInput, plan.noteRelativePath, options)
+    results.push(result)
+    options.onProgress?.({
+      completed: results.length,
+      total: pending.length,
+      note: result.note,
+      uploaded: result.uploaded,
+      reused: result.reused,
+    })
   }
   return {
     status: "published",

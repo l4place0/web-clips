@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "93b247db-03db-4f00-95dc-415889b62f58",
+  "note": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+  "publishedAt": "2026-08-17T13:57:23.001Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0010.webp",
+      "sha256": "0fb5165a20cf00c98d35e0874654640f1085c8cabaf10b12d6f9b91d56e4983e",
+      "size": 41044,
+      "mimeType": "image/webp",
+      "objectKey": "media/0f/0fb5165a20cf00c98d35e0874654640f1085c8cabaf10b12d6f9b91d56e4983e.webp",
+      "url": "https://assets.l4p.site/media/0f/0fb5165a20cf00c98d35e0874654640f1085c8cabaf10b12d6f9b91d56e4983e.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0001.webp",
+      "sha256": "5b2ea071c452836e94453efc3c6dc7403fee28101793f25e0f5f970f50b4e509",
+      "size": 44336,
+      "mimeType": "image/webp",
+      "objectKey": "media/5b/5b2ea071c452836e94453efc3c6dc7403fee28101793f25e0f5f970f50b4e509.webp",
+      "url": "https://assets.l4p.site/media/5b/5b2ea071c452836e94453efc3c6dc7403fee28101793f25e0f5f970f50b4e509.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0009.webp",
+      "sha256": "665222bceef5add3f0fb13b108e1ac2f67effcfaf6f54438fa8672cf3027ddc0",
+      "size": 29748,
+      "mimeType": "image/webp",
+      "objectKey": "media/66/665222bceef5add3f0fb13b108e1ac2f67effcfaf6f54438fa8672cf3027ddc0.webp",
+      "url": "https://assets.l4p.site/media/66/665222bceef5add3f0fb13b108e1ac2f67effcfaf6f54438fa8672cf3027ddc0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0006.webp",
+      "sha256": "77c1e2547c322451b48e579a22b74f83e195b3e2cd559951ec2b0467ec4d5705",
+      "size": 41820,
+      "mimeType": "image/webp",
+      "objectKey": "media/77/77c1e2547c322451b48e579a22b74f83e195b3e2cd559951ec2b0467ec4d5705.webp",
+      "url": "https://assets.l4p.site/media/77/77c1e2547c322451b48e579a22b74f83e195b3e2cd559951ec2b0467ec4d5705.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0008.webp",
+      "sha256": "9e8aac3535c279e8b0692a6a72f3267946cd81a718aed61088d670bc098372cc",
+      "size": 42726,
+      "mimeType": "image/webp",
+      "objectKey": "media/9e/9e8aac3535c279e8b0692a6a72f3267946cd81a718aed61088d670bc098372cc.webp",
+      "url": "https://assets.l4p.site/media/9e/9e8aac3535c279e8b0692a6a72f3267946cd81a718aed61088d670bc098372cc.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0002.webp",
+      "sha256": "a61e7e43ef5d8aad8c70f86c41338febde479288550aac51cc460c72419e9ce0",
+      "size": 15546,
+      "mimeType": "image/webp",
+      "objectKey": "media/a6/a61e7e43ef5d8aad8c70f86c41338febde479288550aac51cc460c72419e9ce0.webp",
+      "url": "https://assets.l4p.site/media/a6/a61e7e43ef5d8aad8c70f86c41338febde479288550aac51cc460c72419e9ce0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0004.webp",
+      "sha256": "bca3460867a0fca77297bdeb9822e132b94e64520d1517bc1bd15e2a9d473679",
+      "size": 21068,
+      "mimeType": "image/webp",
+      "objectKey": "media/bc/bca3460867a0fca77297bdeb9822e132b94e64520d1517bc1bd15e2a9d473679.webp",
+      "url": "https://assets.l4p.site/media/bc/bca3460867a0fca77297bdeb9822e132b94e64520d1517bc1bd15e2a9d473679.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0007.webp",
+      "sha256": "c4dc2ae23e52c5d0cedaee82ad235d9f206fc8193d3c1324869d3c0a9f39735e",
+      "size": 23710,
+      "mimeType": "image/webp",
+      "objectKey": "media/c4/c4dc2ae23e52c5d0cedaee82ad235d9f206fc8193d3c1324869d3c0a9f39735e.webp",
+      "url": "https://assets.l4p.site/media/c4/c4dc2ae23e52c5d0cedaee82ad235d9f206fc8193d3c1324869d3c0a9f39735e.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0003.webp",
+      "sha256": "cd0e6156f65c2190073e214b3bf1920abb05daa6d0e7f5eb77d61822845fbbe1",
+      "size": 22380,
+      "mimeType": "image/webp",
+      "objectKey": "media/cd/cd0e6156f65c2190073e214b3bf1920abb05daa6d0e7f5eb77d61822845fbbe1.webp",
+      "url": "https://assets.l4p.site/media/cd/cd0e6156f65c2190073e214b3bf1920abb05daa6d0e7f5eb77d61822845fbbe1.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1ejMP64EVE-frame-0005.webp",
+      "sha256": "e3ce5d2c74853b20f5ea882183e962d4966863441aa84d16752551532ffde04b",
+      "size": 49660,
+      "mimeType": "image/webp",
+      "objectKey": "media/e3/e3ce5d2c74853b20f5ea882183e962d4966863441aa84d16752551532ffde04b.webp",
+      "url": "https://assets.l4p.site/media/e3/e3ce5d2c74853b20f5ea882183e962d4966863441aa84d16752551532ffde04b.webp"
+    }
+  ]
+}

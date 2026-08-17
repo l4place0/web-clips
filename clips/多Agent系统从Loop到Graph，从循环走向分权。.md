@@ -61,7 +61,7 @@ Graph 更适合以下情形：
 
 **视频内容：** Loop 负责让局部工作持续向前；Graph 负责连接多个 Loop，并规定谁执行、谁验证、谁能否决、失败后回到哪里，以及何时必须交给人。这个区别首先是治理问题，其次才是拓扑问题。
 
-![关键帧 4](assets/bilibili-BV1gHuJ6AEnk-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/2e/2eca501f46f0843e6c46e44bb3727b79307683dea7b921ceb8e15d94e24296d0.webp)
 
 ```mermaid
 flowchart LR
@@ -94,13 +94,13 @@ flowchart LR
 
 **AI 辅助推断：** “独立”不等于一定换一个模型，而是至少要打破同一套上下文、假设和权限的闭环。验证可以由确定性测试、规则程序、另一个 Agent 或人承担；选择哪一种，取决于判断是否能被形式化，以及错误代价有多高。
 
-![关键帧 7](assets/bilibili-BV1gHuJ6AEnk-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/91/913eb3d2002097b540cb5f8d3efb5b956d1212d078cd037826c41d57f786425a.webp)
 
 ## 交接不是一句“完成了”，而是一份信任契约
 
 **视频内容：** Graph 的脆弱点常在节点之间。上游只交付结论，下游便只能相信其自我解释；这会把错误假设沿图放大。最低限度的交接包应覆盖成果、证据、限制、未验证假设，以及后续动作的允许/禁止边界。
 
-![关键帧 8](assets/bilibili-BV1gHuJ6AEnk-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/1b/1bb39af0ac0ad308e748793673de9f02fca8621d9c1a1f6d80af38fcb9ac387b.webp)
 
 可将交接契约写成以下检查表：
 
@@ -117,7 +117,7 @@ flowchart LR
 
 **视频内容：** Graph 不必把每条任务支路预先画死。稳定的权限、验收、预算和人工闸口可以提前定义；具体拆成几份、走哪条支路，则可在运行中调整。动态的是任务路径，不应是安全边界。
 
-![关键帧 9](assets/bilibili-BV1gHuJ6AEnk-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/23/23c55191da20e93cd990184d154c5c007d3d079ab0ac7878692e77dbdd9548af.webp)
 
 **AI 辅助推断：** 比较稳妥的设计是“外层确定、内层自适应”：
 
@@ -138,7 +138,7 @@ flowchart LR
 | 错误代价 | 低，失败后整体重跑便宜     | 高，需要独立检查、否决或人工升级 |
 | 协调成本 | 交接成本可能高于收益      | 并行与局部恢复足以覆盖协调成本  |
 
-![关键帧 10](assets/bilibili-BV1gHuJ6AEnk-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/58/58ddd20ed39e50bb62890f3f54bfdf480bd178034a961af9b9a45acb41c87d1a.webp)
 
 **视频内容：** 不要把 Agent 数量当作能力指标。Anthropic 的公开工程文章报告，其特定多 Agent Research 系统约使用普通聊天 15 倍 Token，这说明并行探索会带来显著调用与协调成本；该倍率并非所有系统的通则。[Anthropic 官方工程文章](https://www.anthropic.com/engineering/multi-agent-research-system)
 
@@ -324,40 +324,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1gHuJ6AEnk-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/a7/a7ee89418be1182b9194aa616fa81eaee2435e73d2e313d331dadc324ebbeeb2.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1gHuJ6AEnk-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/b0/b0d5f98dc4a503e0c1f62353bf1ea391ce79048c2dd596a24edd648733cbcc24.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1gHuJ6AEnk-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/74/744cce5bff0d4503edbbe898566ccb97047b483e8f0367f7ed61bccf2123d039.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1gHuJ6AEnk-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/2e/2eca501f46f0843e6c46e44bb3727b79307683dea7b921ceb8e15d94e24296d0.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1gHuJ6AEnk-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/26/26c6f1ec255d0bd62b8cd9984b7de0e71cc71f1c8c42b3c44cd090a2497863c2.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1gHuJ6AEnk-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/4d/4d933dfb03338ed1478aab3980866d49eb0300fa52af2e24e43924b0ae5658ab.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1gHuJ6AEnk-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/91/913eb3d2002097b540cb5f8d3efb5b956d1212d078cd037826c41d57f786425a.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1gHuJ6AEnk-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/1b/1bb39af0ac0ad308e748793673de9f02fca8621d9c1a1f6d80af38fcb9ac387b.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1gHuJ6AEnk-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/23/23c55191da20e93cd990184d154c5c007d3d079ab0ac7878692e77dbdd9548af.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1gHuJ6AEnk-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/58/58ddd20ed39e50bb62890f3f54bfdf480bd178034a961af9b9a45acb41c87d1a.webp)

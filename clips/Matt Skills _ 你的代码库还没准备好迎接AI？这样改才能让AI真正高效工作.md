@@ -37,7 +37,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/88cddc7c-bac1-450a-9
 
 开发者可能知道“认证”“视频编辑”“缩略图”等功能分别由哪些文件构成，但这种隐性分组若没有体现在目录、接口和依赖限制中，AI 只能看到一张任意互联的模块网。Frame 2 直观展示了跨区域箭头造成的边界穿透。
 
-![关键帧 2](assets/bilibili-BV1HnM269EV7-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/61/61f75bc3d67de2b7026e3a5524ce511aa042147e3ca78ddd6495ef358f786e89.webp)
 
 ```mermaid
 flowchart LR
@@ -61,13 +61,13 @@ flowchart LR
 
 Frame 6 展示大量“小而浅”的单元。单个小单元虽然可以测试，但当它们形成密集交叉依赖时，系统级修改仍难导航、难评估影响，也增加人的认知负担。
 
-![关键帧 6](assets/bilibili-BV1HnM269EV7-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/70/70e25ec0bf5fe93c8c4bad9a16a47938e6ab3cf5ed42d4afc4540381c1a11f09.webp)
 
 ### 视频内容：测试是 AI 的反馈通道
 
 清晰模块只解决“在哪里改”，测试与反馈循环才回答“改对了吗”。视频强调在规划阶段就确定受影响模块、接口和测试，使 AI 能够快速观察修改结果，而不是等到大范围集成后才发现偏差。
 
-![关键帧 8](assets/bilibili-BV1HnM269EV7-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/7e/7e7c325e5eb434957090d73e7a9d4d0547d00811b19346e26937cf6ac7d4c020.webp)
 
 ### AI 辅助推断：把代码库当作 Agent 的操作环境
 
@@ -779,40 +779,40 @@ Frame 6 展示大量“小而浅”的单元。单个小单元虽然可以测试
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1HnM269EV7-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/d9/d9adba3a62b3233b0e56611fb17365fe1c51e61a159200cc73f0389ff7b0b9d4.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1HnM269EV7-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/61/61f75bc3d67de2b7026e3a5524ce511aa042147e3ca78ddd6495ef358f786e89.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1HnM269EV7-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/88/888f195070c0cb0f0e4a0580d683918d0734fc5e5db277cb2b76def74978ad9e.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1HnM269EV7-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/f5/f5791f851e0547a63318b20adfe2f9213bc2f1e1f26a209707656b94a06354de.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1HnM269EV7-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/46/4600951cb3be5e41c39e1260daf09c0c7dc9617407a7d3de282db64308db69ce.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1HnM269EV7-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/70/70e25ec0bf5fe93c8c4bad9a16a47938e6ab3cf5ed42d4afc4540381c1a11f09.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1HnM269EV7-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/bf/bfd7b5b04d4f96071b7226f3ffec2e05946914aee81ed3b7305581479c6d3339.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1HnM269EV7-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/7e/7e7c325e5eb434957090d73e7a9d4d0547d00811b19346e26937cf6ac7d4c020.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1HnM269EV7-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ec/ecfa31e0ae7eb74d0d3b017250bdcc7df69d2ad1b8576c40dd58d033ef02b251.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1HnM269EV7-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/18/18445d7bda898e3d6798d5df4238adbef9aca6b8c5631800b3e91be0368c970b.webp)

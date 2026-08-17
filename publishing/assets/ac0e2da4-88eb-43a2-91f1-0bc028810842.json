@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "ac0e2da4-88eb-43a2-91f1-0bc028810842",
+  "note": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+  "publishedAt": "2026-08-17T13:54:49.133Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0002.webp",
+      "sha256": "2037f04d17367823b566c906c42c48561b41344628af3dd0c7ba8da2f9b07659",
+      "size": 109126,
+      "mimeType": "image/webp",
+      "objectKey": "media/20/2037f04d17367823b566c906c42c48561b41344628af3dd0c7ba8da2f9b07659.webp",
+      "url": "https://assets.l4p.site/media/20/2037f04d17367823b566c906c42c48561b41344628af3dd0c7ba8da2f9b07659.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0010.webp",
+      "sha256": "479f386782a39b476afd762f7635a332a092d5532e078558c5e4688360f03eac",
+      "size": 98088,
+      "mimeType": "image/webp",
+      "objectKey": "media/47/479f386782a39b476afd762f7635a332a092d5532e078558c5e4688360f03eac.webp",
+      "url": "https://assets.l4p.site/media/47/479f386782a39b476afd762f7635a332a092d5532e078558c5e4688360f03eac.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0004.webp",
+      "sha256": "65d8cf074fb168359280a085dc89153d80dc89230bbe97c91695ddcd04025b51",
+      "size": 105904,
+      "mimeType": "image/webp",
+      "objectKey": "media/65/65d8cf074fb168359280a085dc89153d80dc89230bbe97c91695ddcd04025b51.webp",
+      "url": "https://assets.l4p.site/media/65/65d8cf074fb168359280a085dc89153d80dc89230bbe97c91695ddcd04025b51.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0003.webp",
+      "sha256": "8e1860d632617efb3a2da830a67269e289efbdd0bd4c5a4bb14e0b9718e1d42b",
+      "size": 114228,
+      "mimeType": "image/webp",
+      "objectKey": "media/8e/8e1860d632617efb3a2da830a67269e289efbdd0bd4c5a4bb14e0b9718e1d42b.webp",
+      "url": "https://assets.l4p.site/media/8e/8e1860d632617efb3a2da830a67269e289efbdd0bd4c5a4bb14e0b9718e1d42b.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0007.webp",
+      "sha256": "ae2630bf6cf5ec79703a39e744c4b10826b38df933533c40b7b7b8f03918da0e",
+      "size": 126730,
+      "mimeType": "image/webp",
+      "objectKey": "media/ae/ae2630bf6cf5ec79703a39e744c4b10826b38df933533c40b7b7b8f03918da0e.webp",
+      "url": "https://assets.l4p.site/media/ae/ae2630bf6cf5ec79703a39e744c4b10826b38df933533c40b7b7b8f03918da0e.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0009.webp",
+      "sha256": "aea248d7ae4c83fe25ea03e3910a09b99b61dc8784693fdadcc2cf888afb9641",
+      "size": 86588,
+      "mimeType": "image/webp",
+      "objectKey": "media/ae/aea248d7ae4c83fe25ea03e3910a09b99b61dc8784693fdadcc2cf888afb9641.webp",
+      "url": "https://assets.l4p.site/media/ae/aea248d7ae4c83fe25ea03e3910a09b99b61dc8784693fdadcc2cf888afb9641.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0005.webp",
+      "sha256": "d5481f322abe31b9c14c1913028fa010bc503445e984bcef4ef30a09d509bcef",
+      "size": 87516,
+      "mimeType": "image/webp",
+      "objectKey": "media/d5/d5481f322abe31b9c14c1913028fa010bc503445e984bcef4ef30a09d509bcef.webp",
+      "url": "https://assets.l4p.site/media/d5/d5481f322abe31b9c14c1913028fa010bc503445e984bcef4ef30a09d509bcef.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0001.webp",
+      "sha256": "f7231d747a4ce36e19d976b1281389c032bda4924ec30144a7482a49a7bcd3db",
+      "size": 125826,
+      "mimeType": "image/webp",
+      "objectKey": "media/f7/f7231d747a4ce36e19d976b1281389c032bda4924ec30144a7482a49a7bcd3db.webp",
+      "url": "https://assets.l4p.site/media/f7/f7231d747a4ce36e19d976b1281389c032bda4924ec30144a7482a49a7bcd3db.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0008.webp",
+      "sha256": "f77a0be2da1dd3011ccf8e21f794a594caf2d716ab17305ec61e65f8864c9d86",
+      "size": 82908,
+      "mimeType": "image/webp",
+      "objectKey": "media/f7/f77a0be2da1dd3011ccf8e21f794a594caf2d716ab17305ec61e65f8864c9d86.webp",
+      "url": "https://assets.l4p.site/media/f7/f77a0be2da1dd3011ccf8e21f794a594caf2d716ab17305ec61e65f8864c9d86.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1HgNd6rEEJ-frame-0006.webp",
+      "sha256": "f7b7a68413fc48ba6fe8eea5b53c29493492d400f80f1476588dc21ad04bef75",
+      "size": 131008,
+      "mimeType": "image/webp",
+      "objectKey": "media/f7/f7b7a68413fc48ba6fe8eea5b53c29493492d400f80f1476588dc21ad04bef75.webp",
+      "url": "https://assets.l4p.site/media/f7/f7b7a68413fc48ba6fe8eea5b53c29493492d400f80f1476588dc21ad04bef75.webp"
+    }
+  ]
+}

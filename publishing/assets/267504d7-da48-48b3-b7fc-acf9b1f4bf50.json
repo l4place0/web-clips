@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+  "note": "clips/Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+  "publishedAt": "2026-08-17T13:58:03.736Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0006.webp",
+      "sha256": "193f9865e3b152d30c6c5d26f1c4a8a4de7323c13c170cf8681cecd7fcf51511",
+      "size": 62864,
+      "mimeType": "image/webp",
+      "objectKey": "media/19/193f9865e3b152d30c6c5d26f1c4a8a4de7323c13c170cf8681cecd7fcf51511.webp",
+      "url": "https://assets.l4p.site/media/19/193f9865e3b152d30c6c5d26f1c4a8a4de7323c13c170cf8681cecd7fcf51511.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0002.webp",
+      "sha256": "2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104",
+      "size": 41392,
+      "mimeType": "image/webp",
+      "objectKey": "media/29/2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104.webp",
+      "url": "https://assets.l4p.site/media/29/2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0010.webp",
+      "sha256": "420bf67dac138b5fc0cefcb7d8e9226a1a37e1357f98188c18d380a11f4a8081",
+      "size": 29414,
+      "mimeType": "image/webp",
+      "objectKey": "media/42/420bf67dac138b5fc0cefcb7d8e9226a1a37e1357f98188c18d380a11f4a8081.webp",
+      "url": "https://assets.l4p.site/media/42/420bf67dac138b5fc0cefcb7d8e9226a1a37e1357f98188c18d380a11f4a8081.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0009.webp",
+      "sha256": "62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59",
+      "size": 36508,
+      "mimeType": "image/webp",
+      "objectKey": "media/62/62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59.webp",
+      "url": "https://assets.l4p.site/media/62/62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0008.webp",
+      "sha256": "743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32",
+      "size": 49700,
+      "mimeType": "image/webp",
+      "objectKey": "media/74/743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32.webp",
+      "url": "https://assets.l4p.site/media/74/743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0003.webp",
+      "sha256": "81303fe55c175009362062942787b18581ea285601e8a8572df4900ba4b92029",
+      "size": 40120,
+      "mimeType": "image/webp",
+      "objectKey": "media/81/81303fe55c175009362062942787b18581ea285601e8a8572df4900ba4b92029.webp",
+      "url": "https://assets.l4p.site/media/81/81303fe55c175009362062942787b18581ea285601e8a8572df4900ba4b92029.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0007.webp",
+      "sha256": "8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77",
+      "size": 25986,
+      "mimeType": "image/webp",
+      "objectKey": "media/8e/8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77.webp",
+      "url": "https://assets.l4p.site/media/8e/8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0004.webp",
+      "sha256": "957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0",
+      "size": 45866,
+      "mimeType": "image/webp",
+      "objectKey": "media/95/957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0.webp",
+      "url": "https://assets.l4p.site/media/95/957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0001.webp",
+      "sha256": "999a21a40db192da029c6f37f02cf22f25b9b490c414af2432d590e621c8dc27",
+      "size": 49958,
+      "mimeType": "image/webp",
+      "objectKey": "media/99/999a21a40db192da029c6f37f02cf22f25b9b490c414af2432d590e621c8dc27.webp",
+      "url": "https://assets.l4p.site/media/99/999a21a40db192da029c6f37f02cf22f25b9b490c414af2432d590e621c8dc27.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1uwTS66Eqg-frame-0005.webp",
+      "sha256": "d2d90625a1e7ea3b6058d424973776180d9a6eab89454f5a680a6278a9123c52",
+      "size": 42402,
+      "mimeType": "image/webp",
+      "objectKey": "media/d2/d2d90625a1e7ea3b6058d424973776180d9a6eab89454f5a680a6278a9123c52.webp",
+      "url": "https://assets.l4p.site/media/d2/d2d90625a1e7ea3b6058d424973776180d9a6eab89454f5a680a6278a9123c52.webp"
+    }
+  ]
+}

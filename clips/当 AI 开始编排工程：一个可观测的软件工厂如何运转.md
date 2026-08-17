@@ -17,7 +17,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/8c3c3bdd-2dea-431d-b
 
 这支视频是讲者对 **Super Simple Software Factory（SSSF）** 的一次架构讲解和演示。它提出的不是一套已经被独立验证的“全自动软件工厂”标准，而是一种工程组织思路：让 Agent 负责产生候选方案与执行步骤，让确定性代码、测试和规则承担可重复的控制，让工程师保留目标、风险和最终验收的判断权。
 
-讲者把这套思路概括为三项原则：**可观测、可定制、可复用**。从演示界面看，工作流会把请求、规划、构建、审查、提交等阶段串起来，并显示运行状态和耗时。![关键帧 1](assets/bilibili-BV1WEuF6YEnS-frame-0001.webp) 这有助于把一次 Agent 执行从“黑箱对话”变成可以追踪的工程过程；但该画面只是视频中的产品/原型呈现，不能据此推断所有项目都具备相同的运行数据、能力或可靠性。
+讲者把这套思路概括为三项原则：**可观测、可定制、可复用**。从演示界面看，工作流会把请求、规划、构建、审查、提交等阶段串起来，并显示运行状态和耗时。![关键帧 1](https://assets.l4p.site/media/dc/dce70263f3bcc8c15c12815ae863ca021f76322d0abf2b2b3bbc9693494b92e7.webp) 这有助于把一次 Agent 执行从“黑箱对话”变成可以追踪的工程过程；但该画面只是视频中的产品/原型呈现，不能据此推断所有项目都具备相同的运行数据、能力或可靠性。
 
 视频中所说的 “Agentic Engineering（智能体工程）” 的关键，不是单独调用一个模型，而是把模型、提示词、上下文、工具、输出格式、规则和人工判断组织为一个可运行的工作流。讲者把这一层称作 Agent Harness（智能体运行/约束层），并用侦察、规划、构建、复盘/审查来描述主要阶段。其核心取舍是：
 
@@ -85,13 +85,13 @@ flowchart TD
 
 ### 1. 可观测记录回答的是“发生了什么”
 
-视频把提示词、配置、事件、工具调用、成本和输出放在可查看的控制面中。![关键帧 2](assets/bilibili-BV1WEuF6YEnS-frame-0002.webp) 这和通用 Agent tracing 的思路相符：追踪记录可帮助调试、可视化和监控一个 run 中的模型生成、工具调用、handoff 与 guardrail。[Tracing | OpenAI Agents SDK](https://openai.github.io/openai-agents-js/guides/tracing/)
+视频把提示词、配置、事件、工具调用、成本和输出放在可查看的控制面中。![关键帧 2](https://assets.l4p.site/media/e7/e7f5a6675045d8861a9fd4a33068f20847a6dd6c6fc6db09d6047975e3e8bf08.webp) 这和通用 Agent tracing 的思路相符：追踪记录可帮助调试、可视化和监控一个 run 中的模型生成、工具调用、handoff 与 guardrail。[Tracing | OpenAI Agents SDK](https://openai.github.io/openai-agents-js/guides/tracing/)
 
 它的正确目标是缩短定位问题的路径，而非证明系统天然可信。开始记录前，应先定义：哪些输入/输出会含敏感数据、哪些字段需要脱敏、保留期限、访问权限，以及一次失败时如何关联到具体请求、版本、模型和规则。视频中的 UI 只说明讲者重视这些信息，不足以证明任意工作流都已有完备审计能力。
 
 ### 2. 自动门禁提供“证据”，但不替代验收
 
-视频的 request → plan → build → test → commit 轨迹把阶段结果放到同一执行表中。![关键帧 6](assets/bilibili-BV1WEuF6YEnS-frame-0006.webp) 它有助于理解为什么应让工作流产出可检查的中间证据，而不是只要求模型给出最终答案。结构化输出、JSON、格式检查、类型检查和测试都可以承担一部分确定性约束。
+视频的 request → plan → build → test → commit 轨迹把阶段结果放到同一执行表中。![关键帧 6](https://assets.l4p.site/media/a5/a5fe023ba506f1183f23e4b13ce607bab0864c76b8368f09a215a09e84e31e7e.webp) 它有助于理解为什么应让工作流产出可检查的中间证据，而不是只要求模型给出最终答案。结构化输出、JSON、格式检查、类型检查和测试都可以承担一部分确定性约束。
 
 JSON Schema 官方说明支持校验类型、属性和必填字段等结构规则。[Creating your first schema | JSON Schema](https://json-schema.org/learn/getting-started-step-by-step) 但“符合 schema”只说明结构合格；它不证明业务需求被满足、测试足够、权限正确或上线安全。因而图中的“技术门禁通过”之后仍保留了人为的业务/风险判断节点。视频画面没有清楚展示实际人工批准，不能把该节点误写成已发生的自动或人工事实。
 
@@ -107,7 +107,7 @@ JSON Schema 官方说明支持校验类型、属性和必填字段等结构规�
 
 ### 4. “控制平面”要有可审查的交接契约
 
-视频展示的 SKILL.md 包含请求路由、硬规则、仓库目录和结构化交接的想法。![关键帧 8](assets/bilibili-BV1WEuF6YEnS-frame-0008.webp) 这种控制平面的价值在于：下一阶段不必只依赖自然语言回忆，而能接收明确的任务、约束、输入来源、预期输出和失败处理方式。
+视频展示的 SKILL.md 包含请求路由、硬规则、仓库目录和结构化交接的想法。![关键帧 8](https://assets.l4p.site/media/9b/9b8377acb3f49c020700ea370852a519301b11c1e34ad0929502ab10209d324d.webp) 这种控制平面的价值在于：下一阶段不必只依赖自然语言回忆，而能接收明确的任务、约束、输入来源、预期输出和失败处理方式。
 
 实践时，可把交接包最小化为：任务 ID、输入版本、允许的工具/权限、期望的结构化输出、完成条件、失败状态和人工升级路径。截图中提到的结构化 envelope 或 SQLite 输入只是讲者演示线索；单一画面不足以说明真实的数据模型、权限控制、依赖项或跨仓库兼容性。
 
@@ -873,40 +873,40 @@ Playwright 的 locator 可以帮助在 DOM 中定位元素，但不等于可以�
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1WEuF6YEnS-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/dc/dce70263f3bcc8c15c12815ae863ca021f76322d0abf2b2b3bbc9693494b92e7.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1WEuF6YEnS-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/e7/e7f5a6675045d8861a9fd4a33068f20847a6dd6c6fc6db09d6047975e3e8bf08.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1WEuF6YEnS-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/5a/5afa59caf7852ea1cf445c7ac8713c9c625beeb52189323753cb956c04b6ec0d.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1WEuF6YEnS-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/fe/fe12f8275ed33b9a73cde1310ef22872e04426b4f63af85d824b3eacb67d61fa.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1WEuF6YEnS-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/86/86702fa3612a497b4b2318db64c484960255012c4b94c24b0993245593630889.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1WEuF6YEnS-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/a5/a5fe023ba506f1183f23e4b13ce607bab0864c76b8368f09a215a09e84e31e7e.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1WEuF6YEnS-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/04/044b3ae3c4b64d81ea39ebaad46a53edc4bd60f375f31d645b28fc5617ab06e5.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1WEuF6YEnS-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/9b/9b8377acb3f49c020700ea370852a519301b11c1e34ad0929502ab10209d324d.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1WEuF6YEnS-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/c4/c40c7af028dcb9268effd40bf8f1e20605c61b12459837db3e9331b8d7ab9df4.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1WEuF6YEnS-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/52/52c62dd67f426e4262b5d741bb4190587b8d83731379eb36ffa64e40d944edf8.webp)

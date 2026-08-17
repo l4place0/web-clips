@@ -37,9 +37,18 @@ export class OssutilClient {
     return `oss://${this.bucket}/${key}`
   }
 
+  commonArgs() {
+    return [
+      "--endpoint", this.endpoint,
+      "--connect-timeout", "20",
+      "--read-timeout", "60",
+      "--retry-times", "3",
+    ]
+  }
+
   async head(key) {
     try {
-      const result = await run(this.executable, ["stat", this.url(key), "--endpoint", this.endpoint])
+      const result = await run(this.executable, ["stat", this.url(key), ...this.commonArgs()])
       const size = Number(field(result.stdout, "Content-Length"))
       const sha256 = field(result.stdout, "X-Oss-Meta-Sha256")
       return { size, meta: { sha256 }, res: { headers: { "content-length": String(size), "x-oss-meta-sha256": sha256 } } }
@@ -64,14 +73,13 @@ export class OssutilClient {
       "cp",
       file,
       this.url(key),
-      "--endpoint",
-      this.endpoint,
+      ...this.commonArgs(),
       "--meta",
       meta,
     ])
   }
 
   async putACL(key, acl) {
-    return run(this.executable, ["set-acl", this.url(key), acl, "--endpoint", this.endpoint])
+    return run(this.executable, ["set-acl", this.url(key), acl, ...this.commonArgs()])
   }
 }

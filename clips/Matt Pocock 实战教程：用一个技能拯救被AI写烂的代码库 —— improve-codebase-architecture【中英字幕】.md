@@ -56,7 +56,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/07bae895-f568-4007-8
 
 **视频内容：** AI 产生的局部改动若不断复制规则、穿越边界或新增浅封装，代码虽然仍能运行，却会越来越难预测下一次修改影响哪里。视频用散乱依赖图表达这种熵增：问题不一定是某一行错误，而是知识和责任逐渐分散。
 
-![关键帧 1](assets/bilibili-BV1zzgW6FE9m-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/42/42b8d696cd9662745ecaa5ba570f636b5fe87090e64a0d2877bbd4238a9d7f37.webp)
 
 ```mermaid
 flowchart LR
@@ -79,7 +79,7 @@ flowchart LR
 
 视频把 deep module 与 shallow module 并列：深模块隐藏大量实现，只暴露较薄接口；浅模块的接口几乎与内部实现同样复杂。
 
-![关键帧 4](assets/bilibili-BV1zzgW6FE9m-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/4e/4e2673fd4557fb301b80cb17cd3648bd9406cbd804c79d5e07eaf1c60761f638.webp)
 
 **外部核验补充：** 视频将这一思想归因于 John Ousterhout 的《A Philosophy of Software Design》。[书籍官方页面](https://web.stanford.edu/~ouster/cgi-bin/aposd.php)确认书名与作者，[官方 glossary](https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md)采用相同词汇；但本次核验来源未直接定位到书中相应段落，因此该归因仅获部分确认。
 
@@ -101,7 +101,7 @@ flowchart LR
 
 实战画面展示的不是一次自动改码，而是 Agent 为同一 insertion point 提出 narrow、medium、wide 三种边界方案，列出 trade-off，并暴露尚待澄清的语义问题。
 
-![关键帧 8](assets/bilibili-BV1zzgW6FE9m-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/93/9349e604c47ced9b6ccb7bdb348b1a97f2931ecd993c70596c5fcba53270945b.webp)
 
 **视频内容：** skill 先探索架构，找出可能缺少单一 seam、locality 较低或 leverage 较差的位置；人选择候选后，Agent 用两侧实际代码发起一轮 grilling session，提出模块形状与设计问题。确认后才把方案转成 Issue，交给后续执行流程。
 
@@ -124,7 +124,7 @@ flowchart TD
 
 视频用一张图把深模块的两类收益分开：维护者获得 locality，调用者获得 leverage。
 
-![关键帧 9](assets/bilibili-BV1zzgW6FE9m-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/a7/a722f149967eca6c61e6506f75371c33f82cd9df9ed60bc8412252e09c337193.webp)
 
 - **Locality** 关注变化：同一规则、bug 和修复是否集中在可预测位置。
 - **Leverage** 关注使用：调用者掌握少量接口后，是否能调用较丰富且一致的能力。
@@ -1072,43 +1072,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1zzgW6FE9m-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/42/42b8d696cd9662745ecaa5ba570f636b5fe87090e64a0d2877bbd4238a9d7f37.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1zzgW6FE9m-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/30/30bf443749577707a9880cf8d5d26b00acc1975c7b20b412e4f14735cde582cc.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1zzgW6FE9m-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/6b/6b6f73920aedfb76b987a99095eb938b2bf49aa66e32f567c23bed4de307bbc0.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1zzgW6FE9m-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/4e/4e2673fd4557fb301b80cb17cd3648bd9406cbd804c79d5e07eaf1c60761f638.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1zzgW6FE9m-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a0/a07087cc08ca1164167df33223933202d42b3624793e6a4485a72fc169c125b4.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1zzgW6FE9m-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/11/11a0150278bd6ad4e4d784da9cafab8beed1da5e885ee4f8b1800ceb4e08f6cb.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1zzgW6FE9m-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/91/916c100ceda49978ef1be85650f75f79efb7b5c47605742c1741b54417bd6bb6.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1zzgW6FE9m-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/93/9349e604c47ced9b6ccb7bdb348b1a97f2931ecd993c70596c5fcba53270945b.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1zzgW6FE9m-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/a7/a722f149967eca6c61e6506f75371c33f82cd9df9ed60bc8412252e09c337193.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1zzgW6FE9m-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/9e/9e88476ec8fcb2fedf7afd4ba32c72022732f17af70b63cb1b008e318a9947af.webp)
 
 ## 补充原始数据
 

@@ -36,7 +36,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/90fdf633-f46c-4c4c-9
 
 Loop Engineering 主要解决“一个目标如何持续纠偏”，Graph Engineering 则进一步解决“多个任务由谁先做、谁依赖谁、什么事件触发谁”。前者的核心是反馈闭环，后者的核心是显式的任务拓扑。
 
-![关键帧 1](assets/bilibili-BV1b3MD6jENw-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/df/dfa67975fa1618ab5ee54116db4a875a3c0b8dcb508975246fa56e95ffbe4e8d.webp)
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ flowchart LR
 
 图并没有消灭循环：每个节点内部仍可执行局部闭环；变化在于，外层由任务依赖图协调多个闭环。Frame 7 将“围绕问题反复回流”与“把分析路径和依赖显式化”的两种组织方式并列呈现。
 
-![关键帧 7](assets/bilibili-BV1b3MD6jENw-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/41/419a88f21eef3c1d057a33febf78626d9a78aec61ed4a0fb7551a9c71deceda2.webp)
 
 ### 视频内容：两层知识网络
 
@@ -217,40 +217,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1b3MD6jENw-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/df/dfa67975fa1618ab5ee54116db4a875a3c0b8dcb508975246fa56e95ffbe4e8d.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1b3MD6jENw-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/d5/d54c900a32ed3f970c162afa49cbf1ccf663680685b359a300a96570356db946.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1b3MD6jENw-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/12/126c2d8478f2062082486b4fbaed9b8a5cfa8c21a452615d9b19abe1218fe9c4.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1b3MD6jENw-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/24/24bcb2e3f10ad65228f569ead71768ea6c4f6181eb0b86a663ca241384a14291.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1b3MD6jENw-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/33/33f44675eed8b061a006e1eabb872feacab13fd71f3143d2ae8373fc5f4c0e87.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1b3MD6jENw-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/f4/f44b2b0b2821a355c9189c8272b0d845742e8dec10c89bece3013049339fbd17.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1b3MD6jENw-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/41/419a88f21eef3c1d057a33febf78626d9a78aec61ed4a0fb7551a9c71deceda2.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1b3MD6jENw-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/65/65b043fb9de2aff2c72f3b63a11e2b266fefe2ccd3f6171717dccba8ac95cf2f.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1b3MD6jENw-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/73/73efcb71dacd1fe612981f7449a1ba1f5acb2dae345ee8a2676e71e291a06d91.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1b3MD6jENw-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/78/78e2ea327f076305f158be8e5e36c74ff4766d6c2abe5267719f091bd16650e1.webp)

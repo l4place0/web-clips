@@ -29,7 +29,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-a
 
 视频先展示了用终端/对话式工具调研创作者与视频资料的做法：输入研究问题，收集链接和文本，再把过程与结论沉淀为文档。这里值得复用的是“产物导向”：每次调研至少留下来源、输入问题、生成步骤、输出位置和待核对项，后续模型或人才能接着审查，而不是从一段不可追溯的聊天重新开始。
 
-![可复用的调研产物](assets/bilibili-BV1i7Kx6EEEt-frame-0002.webp)
+![可复用的调研产物](https://assets.l4p.site/media/f6/f6ad11234509e83aa4a87c627b8525bee4c1f7e7313976dde68a289df0d4c85b.webp)
 
 视频中若干模型和工具名称的 ASR 识别不稳定，因此它不支持“某两个模型同源”“输出等价”或“某价格一定更划算”等结论。应保留的方法是：用工具做资料收集与整理，但把模型名称、版本、价格、额度和能力比较视为需要单独核验的配置事实。
 
@@ -37,7 +37,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-a
 
 讲者描述了一种实用交接：先让一个成本较低或中转式工具提出规划，再把可检查的建议交给主要执行工具实现。合理的工程解释不是“规划模型一定更聪明”，而是把它放在低风险的方案生成位置；执行前由人或主控制器检查目标、文件范围、数据权限、验收条件和回滚方式。
 
-![规划到实现的可审查交接](assets/bilibili-BV1i7Kx6EEEt-frame-0004.webp)
+![规划到实现的可审查交接](https://assets.l4p.site/media/f8/f819b03c9eeba5917fe4bc95437f411ed140eaa264849966784b49624e594618.webp)
 
 这也适用于任何带代码的研究系统：
 
@@ -50,7 +50,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-a
 
 视频里的组合/回测界面把累计收益、超额收益、市场暴露和方向漂移等放在同一视野中。无论这些指标最终如何计算，画面传达的正确要求是：交付物要暴露自己的定义与风险，而不是只展示一个漂亮的结果曲线。
 
-![量化指标与风险暴露](assets/bilibili-BV1i7Kx6EEEt-frame-0006.webp)
+![量化指标与风险暴露](https://assets.l4p.site/media/b6/b6c1a6da1d388cceb0230938f34e2529112d441ceca7aa9a67e3302d64673b84.webp)
 
 这里的实践推断是：每个策略、模型或仪表盘都应先回答四个问题——输入数据何时取得、目标变量是什么、使用了哪些约束、在什么条件下会被判为无效。仅有图表、单次回测或聊天解释，都不足以构成收益证据。
 
@@ -58,7 +58,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-a
 
 视频提出从论文出发、沿引用关系寻找较新研究、再生成和筛选候选因子的循环。这个循环适合用 Agent 加速“找资料—提取假设—建立待测候选集”，但不应被误写成自动发现有效因子的证明。
 
-![文献与候选因子研究循环](assets/bilibili-BV1i7Kx6EEEt-frame-0007.webp)
+![文献与候选因子研究循环](https://assets.l4p.site/media/d9/d95c4bcd5aeb9969f09ee5bd6997b106fbf602b390ff09a476ca5aa011f644a4.webp)
 
 尤其是视频中的某个风险调整后指标阈值、数值和筛选工具名都无法可靠确认。即便这里意在讨论 Sharpe Ratio，Sharpe 的原始工作定义的是风险调整后表现度量，并没有给出“超过某固定数值即可使用”的通用准入线；样本外表现、交易成本、容量、数据泄漏与多重试验仍需单独审查。参考：[Sharpe 的原始论文](https://www-leland.stanford.edu/~wfsharpe/art/mfp.pdf) 与 [The Sharpe Ratio](https://web.stanford.edu/~wfsharpe/art/sr/SR.htm)。
 
@@ -66,7 +66,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/e6ba0b25-7023-47ce-a
 
 “新闻交易指挥台”画面显示了事件、关注标的、状态、完成度、候选与数值指标组成的日报式队列。它比直接给出“买/卖结论”更有价值：新闻或事件首先成为带时间戳的对象，再被关联到标的、研究状态、证据和报告，便于追踪遗漏、延迟与后续验证。
 
-![事件到报告的可追踪队列](assets/bilibili-BV1i7Kx6EEEt-frame-0008.webp)
+![事件到报告的可追踪队列](https://assets.l4p.site/media/5e/5edd4b0c43e850943c54ff2aa910df9653861525db7612159622267976d6c46f.webp)
 
 视频把事件驱动研究与组合研究作收益比较，但该说法没有提供事件定义、数据时点、延迟、成本、基准、样本外检验或容量信息；本次核验将其标为**未验证的研究假设**，不是一般性的收益结论，更不是投资建议。
 
@@ -947,40 +947,40 @@ AI 可以显著加快“搜集—规划—实现—汇报”，但不能替代�
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1i7Kx6EEEt-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/5d/5d9b4a2093fa38553f1f234b663bd719d6a887ef3de8c087ab210a319454d608.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1i7Kx6EEEt-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/f6/f6ad11234509e83aa4a87c627b8525bee4c1f7e7313976dde68a289df0d4c85b.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1i7Kx6EEEt-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/3c/3c0f10c7bb4252034fab85ac2b4457bc11a6ed1f8e78117c6deae8396baf662e.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1i7Kx6EEEt-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/f8/f819b03c9eeba5917fe4bc95437f411ed140eaa264849966784b49624e594618.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1i7Kx6EEEt-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/ff/ff73ff70609c3e389b6e05678d19a0b997771d28eb27d76fe16c2c6a55bf242e.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1i7Kx6EEEt-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/b6/b6c1a6da1d388cceb0230938f34e2529112d441ceca7aa9a67e3302d64673b84.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1i7Kx6EEEt-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/d9/d95c4bcd5aeb9969f09ee5bd6997b106fbf602b390ff09a476ca5aa011f644a4.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1i7Kx6EEEt-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/5e/5edd4b0c43e850943c54ff2aa910df9653861525db7612159622267976d6c46f.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1i7Kx6EEEt-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/27/27ce7e02983327f8ea43325358f9da5e7f8bfe39cb91157c60f5a5af5bfa54e5.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1i7Kx6EEEt-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/1d/1d07c087c44dc52c57e462c32a80c6578fad4678383b2b4aacd1bba9af986fb2.webp)

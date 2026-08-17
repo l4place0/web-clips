@@ -81,7 +81,7 @@ flowchart LR
 
 官方 Wayfinder 文档把 map 定义为带 `wayfinder:map` 标签的单一 issue，其 child issues 是决策 tickets。map 至少承担四种职责：保存 destination、呈现地图结构、汇总 `Decisions so far`、指向仍待解决的 ticket。它不是把所有细节复制到一个超长正文，而是给每次新会话一个稳定入口。[Wayfinder 官方 SKILL.md](https://github.com/mattpocock/skills/blob/main/skills/engineering/wayfinder/SKILL.md)
 
-![关键帧 6](assets/bilibili-BV1VoGK6kEQj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/cc/cced80ed651e9b7d1c47a672607c85fd39094ed602855483f9b62e52c7f6bfec.webp)
 
 跨会话持久化依赖一个简单约定：结论不能只留在聊天记录里。完成 ticket 时，应在 resolution comment 中写明答案，关闭 issue，再把简短结论和上下文链接追加到 map。这样下一次 agent 不需要“记得”上一次对话，只需要重新读取 map、开放 tickets、阻塞关系和 resolution。
 
@@ -119,9 +119,9 @@ flowchart TD
     I --> C["Code review：验证整体结果"]
 ```
 
-![关键帧 8](assets/bilibili-BV1VoGK6kEQj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/75/755ada58fb40022b6ab0788c610f9b534efaabbbd53b1949ee3421f8a8cd8cca.webp)
 
-![关键帧 9](assets/bilibili-BV1VoGK6kEQj-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/fe/fe792ba9ee0788333e5e1ca5855992fab5d7f5e90a1bc05df4b9068bf6d70962.webp)
 
 - **Map 是 multi-session planning handoff**：它允许探索过程跨会话继续，保留未决问题和决策来源。
 - **Spec 是信息压缩层**：把已经解决的决策整理为连贯目标、约束和验收标准，避免实现者重新遍历全部探索历史。
@@ -133,7 +133,7 @@ flowchart TD
 
 视频关键帧把调用方式区分得很清楚：第一次用 `/wayfinder <prompt>` 建立目标与地图；后续用 `/wayfinder <ticket-url>` 让新会话从持久化 ticket 恢复上下文。
 
-![关键帧 7](assets/bilibili-BV1VoGK6kEQj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ef/ef9a0e0088493a29048f6c4769e8951578726f6556fab3214475781fe2fb0d60.webp)
 
 恢复后不要立刻实施。先检查 map 是否仍准确、哪些 ticket 位于 frontier、是否有失效链接或过时假设，再选择一个信息价值高的 ticket 继续。官方 skill 的“Plan, don't do”边界意味着 Wayfinder 阶段应专注于厘清路线；代码实施属于后续 tickets。
 
@@ -815,40 +815,40 @@ Wayfinder 最有价值的场景不是“任务很长”，而是“路线包含�
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1VoGK6kEQj-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/50/50fc91129d1b2e9a4325c0c10a302496247e7084033ce5c1211c21b6431e2476.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1VoGK6kEQj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/25/25da09a7813a162f85ab87c9edc012939346e74e36bb024ccb18366ce490ca9b.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1VoGK6kEQj-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/15/15dbb853133c54915f205648bb6d61b1fb617f29345bd86a58fa31b13a2fce35.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1VoGK6kEQj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/68/68d315dfa4b6cf2f58d4d41e60882196dc27d1e58d50e599fecf2441c79fc9e7.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1VoGK6kEQj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/af/afe7fa80f3ac25bcd59e6e70333e440abec68895a4e64b433a21d0d8b5ee8313.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1VoGK6kEQj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/cc/cced80ed651e9b7d1c47a672607c85fd39094ed602855483f9b62e52c7f6bfec.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1VoGK6kEQj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ef/ef9a0e0088493a29048f6c4769e8951578726f6556fab3214475781fe2fb0d60.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1VoGK6kEQj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/75/755ada58fb40022b6ab0788c610f9b534efaabbbd53b1949ee3421f8a8cd8cca.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1VoGK6kEQj-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/fe/fe792ba9ee0788333e5e1ca5855992fab5d7f5e90a1bc05df4b9068bf6d70962.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1VoGK6kEQj-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/b1/b11464f5fde922437340fcd4c2a5f419a98f4bc15bf77de28c89f06545988857.webp)

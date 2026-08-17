@@ -21,22 +21,22 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6a339282-048c-4922-b
 
 视频把很多目标的早期停滞解释为“零的重量”：当目标只呈现为遥远的大缺口，人容易把阻力归因于自己不够自律，转而拖延、过度规划或自责。它主张把重心从“逼自己更努力”移到“为行动预先布置条件”。这里的关键不是否认努力，而是不把人格评价当作唯一杠杆。
 
-![条件设计而非人格归因](assets/bilibili-BV11C3K64EpQ-frame-0002.webp)
+![条件设计而非人格归因](https://assets.l4p.site/media/da/da29d3b671de3740ee72cf6ee664d7227cffa58801a011e207c2a969250d53c0.webp)
 
 视频给出的路径有四步：
 
 1. **盘点真实的既有进展。** 写下过去尝试、学到的教训、已有技能、工具、联系人和已经完成的小动作；目标是找回证据，不是给自己加分。
 
-![盘点真实既有进展](assets/bilibili-BV11C3K64EpQ-frame-0003.webp)
+![盘点真实既有进展](https://assets.l4p.site/media/09/09ef9e9a8b0feed753dfe26a5c32ac48082cbe31f6e4ce055aed2f8e02957af6.webp)
 2. **把第一步压缩到今天能完成。** 不直接面对整个目标，而是选一个很小、可在当天完成的动作，让“计划”变成一次真实行动。
 3. **让进展可见。** 用自己会看的清单、日历、习惯追踪或简单图表留下痕迹；形式次要，能看见才重要。
 4. **把叙事改成“继续”，但不虚报。** 只把可验证的事实放上进度条。清单可以粗糙、杂乱、未整理；完整与诚实优先于好看。
 
-![真实证据清单](assets/bilibili-BV11C3K64EpQ-frame-0004.webp)
+![真实证据清单](https://assets.l4p.site/media/51/51201c67d3b43cac5a8038cc59debd196132547085022abad00c51370059f3ec.webp)
 
 视频的核心判断是：启动和延续在主观体验上不同。把已有记录摆在眼前，不能减少任务的客观难度，却可能减少“冷启动”的心理摩擦；之后每一次小完成都会为下一次行动提供可见的延续线索。
 
-![启动摩擦与延续线索](assets/bilibili-BV11C3K64EpQ-frame-0007.webp)
+![启动摩擦与延续线索](https://assets.l4p.site/media/6c/6c34d3bb857d07195d3625dbf00b1e864932f5f2d71ea4c48a7e12df5de83028.webp)
 
 ## 可迁移的实践法：把它当作可检验的行为设计
 
@@ -47,7 +47,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6a339282-048c-4922-b
 - 追踪器只记录已做事实，不记录愿望或“应该做”。下次回看时，问“下一步怎样延续这条记录”，而不是重新问“我到底能不能开始”。
 - 当连续的完成记录出现后，可以把身份叙事从“希望成为的人”改为“正在做这件事的人”；这是一种有用的自我描述方式，而非对未来完成率的承诺。
 
-![身份叙事与可见记录](assets/bilibili-BV11C3K64EpQ-frame-0008.webp)
+![身份叙事与可见记录](https://assets.l4p.site/media/49/49c31aa7874fbe2957b2fb22d8e5b8f192b980e0818343e37912d47179121ad5.webp)
 
 ## 事实核验与使用边界
 
@@ -868,40 +868,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV11C3K64EpQ-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/0f/0fd81e88d9c08267b96b2bb15e5ce01765dfcb1802d76749f5391e11b799fa95.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV11C3K64EpQ-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/da/da29d3b671de3740ee72cf6ee664d7227cffa58801a011e207c2a969250d53c0.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV11C3K64EpQ-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/09/09ef9e9a8b0feed753dfe26a5c32ac48082cbe31f6e4ce055aed2f8e02957af6.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV11C3K64EpQ-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/51/51201c67d3b43cac5a8038cc59debd196132547085022abad00c51370059f3ec.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV11C3K64EpQ-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/2d/2d620eadf1d8b390abd2ed99b707c1a5e7bcb72f8debae2b78f8de3323ae5f73.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV11C3K64EpQ-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/28/289684434512bd983de3da84d4d8a1ae34c916fe834b805731ac52fc0cd85661.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV11C3K64EpQ-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/6c/6c34d3bb857d07195d3625dbf00b1e864932f5f2d71ea4c48a7e12df5de83028.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV11C3K64EpQ-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/49/49c31aa7874fbe2957b2fb22d8e5b8f192b980e0818343e37912d47179121ad5.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV11C3K64EpQ-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/46/46a848e3316a6ecda08ea21135620332c03a9f247f6727883d83b4377575b79a.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV11C3K64EpQ-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/28/2858432816c660eea6606a7199befb82a913c2ba28370844df77d4760bb72888.webp)

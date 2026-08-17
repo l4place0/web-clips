@@ -40,7 +40,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/7e20be39-c970-4823-b
 
 **视频内容：**作者把项目划为 Data、3C、System、Gameplay、UI，并让公共 Framework 处于被依赖的位置。目录表达概念边界，`asmdef` 把边界落实到程序集层；这使“谁能调用谁”不再只靠口头约定。
 
-![关键帧 1](assets/bilibili-BV1qDuJ6GEnc-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/75/75d7dc952f556afaee4c9e5094c3613fb27226e68d89d8aad0ede1b9ebbb6ef4.webp)
 
 ```mermaid
 flowchart LR
@@ -62,7 +62,7 @@ flowchart LR
 
 **视频内容：**当 System 需要玩家对象的属性或行为时，作者定义由需求方拥有的接口，再让 `PlayerController` 实现并通过构造函数注入。这样 System 不必直接依赖 3C 的具体类型。若攻击逻辑只需广播“造成伤害”，让 UI 飘字、准星反馈等多个订阅者各自响应，则通过 Event Bus 通知，发布者与订阅者互不感知。
 
-![关键帧 6](assets/bilibili-BV1qDuJ6GEnc-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/d9/d9e6d944f12a918808a615ddb5d9722b0c254bcee67a10ffb866fabf68fa2d19.webp)
 
 ```mermaid
 flowchart TD
@@ -81,9 +81,9 @@ flowchart TD
 
 **视频内容：** 作者在 `SKILL.md` 中沉淀可读性、可维护性、可靠性证据、架构、依赖边界、Unity 约束等检查项。AI 先按照清单定位具体风险并给出修复建议，人工随后审查业务含义、补充测试并作最终判断。
 
-![关键帧 3](assets/bilibili-BV1qDuJ6GEnc-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/dc/dc555aed7c0d48601b5a8a22a21bd0d37bc40527a2edfee10808e3f957ad0288.webp)
 
-![关键帧 9](assets/bilibili-BV1qDuJ6GEnc-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/7b/7b49169fe3bd90649681236497876d2243c26ad5c32058b35456994624ae050d.webp)
 
 ```mermaid
 flowchart LR
@@ -1729,40 +1729,40 @@ AI 复审最适合先拦截以下问题：
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1qDuJ6GEnc-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/75/75d7dc952f556afaee4c9e5094c3613fb27226e68d89d8aad0ede1b9ebbb6ef4.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1qDuJ6GEnc-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/63/6362a133b3580de01a2b8d0395293c99ed660b03a40e7700d96a5e492f113894.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1qDuJ6GEnc-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/dc/dc555aed7c0d48601b5a8a22a21bd0d37bc40527a2edfee10808e3f957ad0288.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1qDuJ6GEnc-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/53/5366746f29c0361b62bbc28230e81b831e258dd84443200080394f80868b3695.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1qDuJ6GEnc-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/e4/e41e29e5bd6e60b55f0b8a06c3f0add52e1f16ef4baecac1369c42b68da36e07.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1qDuJ6GEnc-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/d9/d9e6d944f12a918808a615ddb5d9722b0c254bcee67a10ffb866fabf68fa2d19.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1qDuJ6GEnc-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/4a/4a97c1980cbe0ac7c963a2d59161d0539a6a4250ef857f837d745e176945bc8c.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1qDuJ6GEnc-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/46/466f1ba82a3548262767d1663fe73c3ee8d68204ae74e8a80f20b2c9099aabca.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1qDuJ6GEnc-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/7b/7b49169fe3bd90649681236497876d2243c26ad5c32058b35456994624ae050d.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1qDuJ6GEnc-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/1f/1f086211c5dfeb6e3bba744ea42b0ea776b7474d385f68ff859216786f160be1.webp)

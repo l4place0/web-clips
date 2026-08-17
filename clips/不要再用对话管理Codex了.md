@@ -45,9 +45,9 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/6291538c-c226-45ba-b
 
 **视频内容：** 视频反对的不是使用对话，而是用对话列表承担项目管理。帧 2 把新工作入口改为任务看板；帧 4 进一步说明任务可以跨多条对话承载上下文。
 
-![关键帧 2](assets/bilibili-BV1YWud6qEPj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/b1/b1ff67e2ee33bc899979c11bda15266715baa7a4dbf2d883852404f7553d4027.webp)
 
-![关键帧 4](assets/bilibili-BV1YWud6qEPj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/9b/9b2a51f0dacd38bbc5acafe5738fce48385e16669c1b3434e95f2775d6281559.webp)
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ flowchart LR
 
 帧 5 展示“积压事项、待办事项、审查中、完成”等列。它的解释价值不只是任务很多，而是不同状态拥有不同权限：积压代表尚未授权执行，待办代表可领取，审核中代表 Agent 不应自行宣布业务完成。
 
-![关键帧 5](assets/bilibili-BV1YWud6qEPj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/82/825db7db6cb80a38f608f026bd35665bc90dd3092adec1912160d2bab5aaad23.webp)
 
 **视频内容：** 这种任务池允许人在 Agent 忙碌、额度不足或自己离线时继续记录需求，自动化恢复后再领取任务。这里描述的是讲者自建流程，不应外推为所有 Codex 环境都会自动按额度调度。
 
@@ -82,7 +82,7 @@ flowchart LR
 
 帧 7 展示选题调研 Loop：兴趣选题进入积压池，经筛选后由 Codex 调研，最终回到人工判断。视频指出，如果“提供新选题”本身需要固定、额外的人工作业，这个循环很难持续。
 
-![关键帧 7](assets/bilibili-BV1YWud6qEPj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/29/292958d4fba47910a1a7e9e0344e0c62ba594d44a165ff1f7facdf8af3780e46.webp)
 
 ```mermaid
 flowchart TD
@@ -120,7 +120,7 @@ flowchart TD
 
 帧 10 展示“流程看板”配置界面，其中包含条件判断、Skill、MCP 和 API 等节点。它对应视频最后的判断：不是所有任务都能沿“待办→进行中→完成”单线前进，多种产物或条件路径需要显式分支。
 
-![关键帧 10](assets/bilibili-BV1YWud6qEPj-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/02/024ce42960d89f442023ba1d3ed44e63f987b52a621ac90969a0f6483b6dafe1.webp)
 
 ```mermaid
 flowchart LR
@@ -905,40 +905,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1YWud6qEPj-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/7e/7e3a0e55164ce6dc5f7d5eeff755a1d846cdd5a0c9ed197d937dd39e09a4a33f.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1YWud6qEPj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/b1/b1ff67e2ee33bc899979c11bda15266715baa7a4dbf2d883852404f7553d4027.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1YWud6qEPj-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/dd/dddcf8437f3e9383ca535515df7ac301f5c1ec5f92b895cdc1c9788ccb51f611.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1YWud6qEPj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/9b/9b2a51f0dacd38bbc5acafe5738fce48385e16669c1b3434e95f2775d6281559.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1YWud6qEPj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/82/825db7db6cb80a38f608f026bd35665bc90dd3092adec1912160d2bab5aaad23.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1YWud6qEPj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/ed/eda8a14145b4737aa9559ffd5174a06f10aec9e1d0faa6b154e2127d375b1e74.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1YWud6qEPj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/29/292958d4fba47910a1a7e9e0344e0c62ba594d44a165ff1f7facdf8af3780e46.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1YWud6qEPj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/05/05879938d6cff0bff9a469926eeadd65514d1fb8253cc7705d6710a0f4c1960b.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1YWud6qEPj-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/f6/f6c01dfe5b380c1b5dbda09df6f9be3d5d936eef4e4200f8375b3fccc206aa6b.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1YWud6qEPj-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/02/024ce42960d89f442023ba1d3ed44e63f987b52a621ac90969a0f6483b6dafe1.webp)

@@ -23,7 +23,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/7b77c047-8d46-45e4-a
 
 1. **区分解决问题与循环推演。** 讲者把前者描述为有对象、能得出下一步或结论的思考；把后者描述为反复回放过去、模拟未来、越想越累却没有新增行动的信息循环。下图只呈现视频把它称为“自动驾驶的心理习惯”的主张；它不证明任何观众的体验属于某种诊断。
 
-![视频中的自动驾驶习惯示意](assets/bilibili-BV1KpMn6tEi9-frame-0002.webp)
+![视频中的自动驾驶习惯示意](https://assets.l4p.site/media/b8/b874a8837a8fca2a2eea592548562be08e3defb94ad87aeb2faa6e40ab368321.webp)
 2. **解释“控制感”如何维持循环。** 视频认为，不确定感会被误读为“必须继续分析”的信号；短暂缓解又强化了继续分析的冲动。这个机制可作为理解讲者观点的模型，而非已被本视频证明的普遍因果规律。
 3. **提出“不再参与”的介入点。** 讲者反对用更强的意志力压制想法，主张先看见循环、允许不适存在，并停止把每个担忧都当成必须处理的任务。
 4. **把注意力落到方向与行动。** 视频建议写下一个当前目标、项目或下一步，让注意力有现实对象；其意图是把精力从重复推演转回可执行事项。这里的“目标/目的”是讲者的自助框架，不是焦虑或强迫性体验的替代治疗。
@@ -71,7 +71,7 @@ flowchart TD
     G --> F["一个具体、可执行的当前任务"]
 ```
 
-上图准确复现的是视频的解释路线：它把焦虑、控制感和重复分析串成循环，并把行动视为出口。![关键帧 7](assets/bilibili-BV1KpMn6tEi9-frame-0007.webp) 仅在此处帮助定位讲者“看见陷阱、停止参与”的论点。它不证明“看见即可治愈”，也不意味着面对所有侵入性想法都应自行处理。
+上图准确复现的是视频的解释路线：它把焦虑、控制感和重复分析串成循环，并把行动视为出口。![关键帧 7](https://assets.l4p.site/media/f0/f0776dfc0c40e8c229388de0bb6399f1439aea6cba8e55eac32f7a54e52ae4b0.webp) 仅在此处帮助定位讲者“看见陷阱、停止参与”的论点。它不证明“看见即可治愈”，也不意味着面对所有侵入性想法都应自行处理。
 
 ## 更精确地阅读几个关键句
 
@@ -92,7 +92,7 @@ flowchart TD
 4. 若暂时没有可做的下一步，给它一个明确的稍后复看时间，然后选择一项中性、现实的活动（如吃饭、洗漱、散步或继续既定工作）。这不是“禁止思考”，而是避免无限延长同一轮推演。
 5. 复盘时只记录：这一步是否让问题更清楚、是否产生了新信息、是否需要调整行动。不要以“我有没有彻底不焦虑”作为成败指标。
 
-![关键帧 9](assets/bilibili-BV1KpMn6tEi9-frame-0009.webp) 可放在第 2–4 步附近，说明视频把“目的/方向”当作生活的筛选器。更准确的用法是：让目标协助选择下一步，而不是相信目标必然消除任何心理困扰。
+![关键帧 9](https://assets.l4p.site/media/45/45f4d19313a0b1905582720f9d5cb15d821cffe3f13fa67f0e948cbddfac3169.webp) 可放在第 2–4 步附近，说明视频把“目的/方向”当作生活的筛选器。更准确的用法是：让目标协助选择下一步，而不是相信目标必然消除任何心理困扰。
 
 ## 何时不应只靠这套框架
 
@@ -592,40 +592,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1KpMn6tEi9-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/d6/d6f7734c22d3d29daecce51f88ee2b1abeca2e604670a3c5e079c0d12e350481.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1KpMn6tEi9-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/b8/b874a8837a8fca2a2eea592548562be08e3defb94ad87aeb2faa6e40ab368321.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1KpMn6tEi9-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/76/768fc3dbcd04e42e0853fb7c1faedfba0baa39a152fb30c34ef3be291e28b8f9.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1KpMn6tEi9-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/d5/d5abd11aa880fdf5a524b9d626630034442dfa25b70852b4d5537a0411f23f2a.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1KpMn6tEi9-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/ed/ed58c4d6c37aa3464911b1878980e6760d4e579b5b109c4222d7ed141344d60f.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1KpMn6tEi9-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/80/80edc38c8436838b3b5163e12d05ba3dee81022e1efe544a7079f5c4f0407c0f.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1KpMn6tEi9-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/f0/f0776dfc0c40e8c229388de0bb6399f1439aea6cba8e55eac32f7a54e52ae4b0.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1KpMn6tEi9-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/2f/2f4833c819b3800099d68d2534ff813e7b9b25c60915ae28738bbb09daff8019.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1KpMn6tEi9-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/45/45f4d19313a0b1905582720f9d5cb15d821cffe3f13fa67f0e948cbddfac3169.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1KpMn6tEi9-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/76/76df1d5dbbefbf846d92175e058bfb2dc2553cfd93a415482250f91071a1fc66.webp)

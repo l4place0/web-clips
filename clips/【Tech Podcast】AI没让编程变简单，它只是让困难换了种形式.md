@@ -82,7 +82,7 @@ flowchart TD
 - **教育迁移**：语法熟练度的重要性下降，复杂系统中的反馈训练上升。
 - **角色迁移**：开发者从直接生产每行代码，转为维护目标、约束和系统一致性。
 
-![关键帧 8](assets/bilibili-BV1FMgr6LEUo-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/5d/5d4e8ccc4321c13dd7f73251c451b7ca24b310414ae07122f8598f975c418dd3.webp)
 
 这句“代码不再是思考的唯一表现形式”很关键：规格、接口契约、测试、审查结论和决策记录也都是工程思考的产物。
 
@@ -821,40 +821,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1FMgr6LEUo-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/3b/3b66b48d013d13f37badcff703a6895f2a94a698eb5b4c5eb83ef9d84c7e7f30.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1FMgr6LEUo-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/5d/5d3fc134ec139bb585cd6d63b3257fc93b843a084dc4c2062df692abc2a472f8.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1FMgr6LEUo-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/79/799f66f26519d532c280735c3b7f6b8960901e629a129bf68c7d2fc05a15b6ca.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1FMgr6LEUo-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/77/77b311e957382cadf74f77beb596086b50e4d76a8b42adcee24698231fc79a12.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1FMgr6LEUo-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/34/3421daa33d60b5601f7524b65a7b6db4be3cf074f7d564e0bcd6dda9d70717ac.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1FMgr6LEUo-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/5d/5d3720397760c8d801dde91b4ae533a61716d1c8fcd181e3add975fc17e8d962.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1FMgr6LEUo-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ae/ae23868830241e7d0385bb8ab170691fb8171bbe7ea1f401dd11ad1ce74cc789.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1FMgr6LEUo-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/5d/5d4e8ccc4321c13dd7f73251c451b7ca24b310414ae07122f8598f975c418dd3.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1FMgr6LEUo-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/5c/5c1e6c0581f0b578609ef853868e0e8c7f657c8581a211196321efd1cd20ff95.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1FMgr6LEUo-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/5d/5ddbf9c8fe7160043ca57fa5aea22a2f52b5e15222a02a27062290240d384d04.webp)

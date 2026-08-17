@@ -64,13 +64,13 @@ flowchart TD
 
 ### 1. 架构与核心业务流
 
-![关键帧 3](assets/bilibili-BV1BWur6gECq-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/fa/fa1670aec0d4f408d796f2ed2c1da4c3c7afbe0aecd795284fc54fa71d90e0c5.webp)
 
 帧 3 把管理员、租户管理系统、租户 A/B、业务系统和不同 `tenant_id` 数据边界放在同一流程中。这样的图最适合回答：请求从哪里进入、跨过哪些边界、数据怎样隔离。随后应选一条代表性路径，在代码中定位入口、服务调用、持久化和权限检查，确认图中的每条关键边。
 
 ### 2. 风险地图
 
-![关键帧 4](assets/bilibili-BV1BWur6gECq-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/44/444a2e9181005078ef7bb3518fe6a56b19b8b7430ca0072a48a37fb01434470a.webp)
 
 帧 4 将数据隔离、性能隔离、权限隔离、功能定制、成本控制和可观测性组织成技术挑战表。它的价值不是宣告这些问题已经被实现正确，而是为阅读排序：先检查高后果、高跨域的风险，再看普通工具代码。
 
@@ -85,7 +85,7 @@ flowchart TD
 
 ### 3. 问题驱动的深挖模板
 
-![关键帧 10](assets/bilibili-BV1BWur6gECq-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/5e/5ef8252603cb1450ed34db48bc72c393a18a476d6ab027d83721fed2ebec1818.webp)
 
 帧 10 展示的长任务推演按 WHY、WHAT、HOW、代码落地、正确/错误示范、时序图和面试追问展开。相较于“解释整个仓库”，这种问题驱动方式更容易控制范围：先问一个具体机制为什么存在，再追到代码与失败案例，最后要求自己复述或修改。
 
@@ -93,7 +93,7 @@ flowchart TD
 
 ## 简历与面试材料的使用边界
 
-![关键帧 9](assets/bilibili-BV1BWur6gECq-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/4d/4dd07b80262cf8d798f70742e7541dd93ef2cd5c059d0b58b1e7efd94905b1d1.webp)
 
 视频把“简历怎么写、怎样展示、面试官可能问什么”作为重要产物。它可以帮助学习者把架构知识转成自测问题，但要守住经历真实性：
 
@@ -202,43 +202,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1BWur6gECq-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/82/822ed2888569c869e7847b081b83360d9b32f8b2990391a442848fafb65aeb59.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1BWur6gECq-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/12/1299f170d986db8238d8b2152dca8777812e2730c5f82b9a5940cde99bb15fd7.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1BWur6gECq-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/fa/fa1670aec0d4f408d796f2ed2c1da4c3c7afbe0aecd795284fc54fa71d90e0c5.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1BWur6gECq-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/44/444a2e9181005078ef7bb3518fe6a56b19b8b7430ca0072a48a37fb01434470a.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1BWur6gECq-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/5c/5c2d713868bd278b13edb4764cf7ace7f111360eb42e21e129370bd72d0b05d3.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1BWur6gECq-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/8c/8c03941fdbb166fe3e36ace3c85e13ec87701608ce29080dda539c0352fb443e.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1BWur6gECq-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/c9/c9a2ae3156c6c41f30595c1014537e2dff36c90b0bf90ebed5506a846afebcd1.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1BWur6gECq-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/90/9023abc7971bcfe04a5b423a23d281486ff40a226a1da587847e3bab21a4aab7.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1BWur6gECq-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/4d/4dd07b80262cf8d798f70742e7541dd93ef2cd5c059d0b58b1e7efd94905b1d1.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1BWur6gECq-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/5e/5ef8252603cb1450ed34db48bc72c393a18a476d6ab027d83721fed2ebec1818.webp)
 
 ## 补充原始数据
 

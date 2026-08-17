@@ -32,7 +32,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/1fe2d2f1-ea47-47be-8
 
 作者要解决的不是“让 AI 多写几篇文章”，而是把散落的提示词输出、Markdown 文档和已有知识库，组织成一个可以持续浏览、比较和规划学习的项目。首页把不同领域分别作为项目管理，演示样例横跨人工智能、金融、土木工程、西方哲学、CIO、FDE 等主题。
 
-![关键帧 12](assets/bilibili-BV1tQgb64E1f-frame-0012.webp)
+![关键帧 12](https://assets.l4p.site/media/17/1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17.webp)
 
 *作者演示的项目库覆盖学科、岗位与通用主题，并提供新建和 YAML 导入入口；这些样例只能证明演示库中存在相应项目，不能推出平台对任意领域都同样有效。*
 
@@ -57,7 +57,7 @@ flowchart LR
 
 第一条路径是 AI 生成：填写主题和描述，选择学术知识、行业工作或通用知识等类别，再触发生成。它适合从空白开始快速做出结构草案。
 
-![关键帧 3](assets/bilibili-BV1tQgb64E1f-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/93/93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990.webp)
 
 *作者演示的 AI 生成入口：填写主题和描述、选择知识类别后开始生成；画面只证明该入口存在，不能证明后台模型、生成质量或结果无需修订。*
 
@@ -69,7 +69,7 @@ flowchart LR
 
 思维导图把中心主题展开成主分支和下级节点，适合快速检查范围、层级与明显空白。平台左侧知识树、中间画布和右侧节点详情联动，使用户能够从全局结构进入单点说明。
 
-![关键帧 6](assets/bilibili-BV1tQgb64E1f-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7f/7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0.webp)
 
 *人工智能知识体系的思维导图示例：中心主题展开为机器学习、视觉、语言、推理等分支；这是作者演示中的分类结果，层级是否合理、是否遗漏仍需人工审核。*
 
@@ -77,7 +77,7 @@ flowchart LR
 
 树结构一次只能突出一条父子路径，矩阵则把学习阶段、知识领域、难度、重要度、成熟度和建议学习时长等属性交叉排列。它适合识别某一阶段应该覆盖哪些模块，也能发现某个区域是否过密或空缺。不过，界面中的评分和学习时长属于演示数据，不会因为被可视化就自动获得客观性。
 
-![关键帧 7](assets/bilibili-BV1tQgb64E1f-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/31/31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8.webp)
 
 *知识矩阵按领域、学习阶段等维度交叉排列，并在右侧呈现节点属性；这些标签和评分需要可追溯依据，不能直接视为通用标准。*
 
@@ -89,7 +89,7 @@ flowchart LR
 
 学习路线是在关系网络上增加场景和顺序。作者展示了快速入门、系统学习、机器学习等不同路线，并声称可以看到前导知识和后续外延。路线不是普通目录；它实际上包含了对学习目标、依赖强弱和学习者起点的判断。
 
-![关键帧 9](assets/bilibili-BV1tQgb64E1f-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/79/79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78.webp)
 
 *从左到右的学习路线示例：节点间可标注依赖、包含、演化、对比和类比；路线是否正确、是否适合具体学习者，仍需领域专家和真实学习反馈复核。*
 
@@ -348,52 +348,52 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1tQgb64E1f-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/5e/5eb759d6437564979b8f09a165bc48b508c53f243df3b9edcac23997f0477430.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1tQgb64E1f-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/b4/b4e54bc99fef03d645b3124c62070c1060b6e4883b7fca6c6968c967172d21cf.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1tQgb64E1f-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/93/93414acd7e09ab7ad0e18aed7a62243ac05e0f1e58e32c7c435dc45f98220990.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1tQgb64E1f-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/30/302f76616cee040e6a98d13779e2a3447c63999a7c863de91c326b91f9bb6685.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1tQgb64E1f-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/c5/c55c906fcc247ea4aee7e3f3a9230583fcd9a8c93c05dea77d3177ec994df375.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1tQgb64E1f-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7f/7fe5a6d284121773f4eda8f3f05b326e46973d3576e3eff8f93b3bc0ce3369d0.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1tQgb64E1f-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/31/31eeaa8891e3b5d50582d2d3a228a9d34b702247427eb35b5e8095ef534890a8.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1tQgb64E1f-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/cd/cdfbe494a5d0700a386c77a808850c821efdda0024528c5d7bf9d8eef962a05f.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1tQgb64E1f-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/79/79c26920d76f4a46bdc738398c7c5343d6ca10cbc7056e03583ddfadb22f0f78.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1tQgb64E1f-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/e6/e6df5816f11f661e95067ddf8a3a68f859fdf443da8e842f2f1fc195181299eb.webp)
 
 ### 关键帧 11
 
-![关键帧 11](assets/bilibili-BV1tQgb64E1f-frame-0011.webp)
+![关键帧 11](https://assets.l4p.site/media/f0/f07364cc158068f520d6366ecdd4f6c36564647efea0df6ebe193c1824bee8c8.webp)
 
 ### 关键帧 12
 
-![关键帧 12](assets/bilibili-BV1tQgb64E1f-frame-0012.webp)
+![关键帧 12](https://assets.l4p.site/media/17/1758c7b117deac1d8d5827619516640039f57fc6bb44c286949d9754aae96a17.webp)
 
 ### 关键帧 13
 
-![关键帧 13](assets/bilibili-BV1tQgb64E1f-frame-0013.webp)
+![关键帧 13](https://assets.l4p.site/media/a2/a21e4b0cc16a9afab380401970f4e50e51555e4dccd10b4ddfab82306a007168.webp)

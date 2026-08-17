@@ -84,6 +84,9 @@ async function main(argv) {
       return publishAllMedia(ROOT, {
         dryRun,
         client: dryRun ? undefined : createClient(config),
+        onProgress: dryRun ? undefined : (progress) => {
+          process.stderr.write(`${JSON.stringify({ status: "progress", ...progress })}\n`)
+        },
       })
     }
     const plan = await planMedia(ROOT, note)
@@ -97,7 +100,10 @@ async function main(argv) {
 }
 
 main(process.argv.slice(2)).then(
-  (result) => process.stdout.write(`${JSON.stringify(result, null, 2)}\n`),
+  (result) => {
+    process.stdout.write(`${JSON.stringify(result, null, 2)}\n`)
+    if (result?.ok === false) process.exitCode = 3
+  },
   (error) => {
     const code = error instanceof MediaPublishError ? error.code : "E_MEDIA_INTERNAL"
     process.stderr.write(`${JSON.stringify({ status: "error", code, message: error.message })}\n`)

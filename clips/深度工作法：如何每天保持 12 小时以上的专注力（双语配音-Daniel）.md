@@ -51,7 +51,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/ac0e2da4-88eb-43a2-9
 
 视频用“平衡是假象”来制造选择的紧迫感。可取的部分是避免把每件事都列为同等优先级；需要拒绝的部分是把多重身份、休息或照顾关系直接等同于软弱。把这一段当作“明确阶段性优先级”的提醒，而不是要求全盘否定平衡。
 
-![关键帧 1](assets/bilibili-BV1HgNd6rEEJ-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/f7/f7231d747a4ce36e19d976b1281389c032bda4924ec30144a7482a49a7bcd3db.webp)
 
 ### 一条更稳妥的行动循环
 
@@ -74,39 +74,39 @@ flowchart TD
 
 视频把取舍、孤独和身份变化描绘为通向成果的必要成本。这里的有效问题是“我愿意为目标让出什么”，但答案应由个人价值、职责与关系协商决定。更安全的做法是先明确工作边界、回应期待和恢复安排，而非把亲友自动归为障碍。
 
-![关键帧 3](assets/bilibili-BV1HgNd6rEEJ-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/8e/8e1860d632617efb3a2da830a67269e289efbdd0bd4c5a4bb14e0b9718e1d42b.webp)
 
 ### 把刺激管理做成环境实验
 
 视频建议切断高频刺激并把注意力转向工作。可以把它降级为一个低风险实验：改变通知、设备位置、浏览器入口或工作台面，观察是否减少无意识切换。它不要求持续 12 小时，也不要求把正常休闲直接称为成瘾。
 
-![关键帧 4](assets/bilibili-BV1HgNd6rEEJ-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/65/65d8cf074fb168359280a085dc89153d80dc89230bbe97c91695ddcd04025b51.webp)
 
 视频所谓“addiction switch”更适合作为行为设计隐喻：当即时线索变少、开始工作的步骤更短、完成任务有可见反馈时，部分人可能更容易把注意力留在任务上。它不是“把所有多巴胺清空后，大脑必然自动爱上工作”的科学结论。
 
-![关键帧 6](assets/bilibili-BV1HgNd6rEEJ-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/f7/f7b7a68413fc48ba6fe8eea5b53c29493492d400f80f1476588dc21ad04bef75.webp)
 
 ### 用仪式降低启动成本，用重复建立默认路径
 
 固定的杯子、笔记本、关门、清理桌面或写下第一步，都可以成为工作开始信号。重要的不是仪式有多神圣，而是它是否减少犹豫与切换。把仪式设计得短、小、可恢复；若它变成强迫、焦虑或排斥恢复，就应简化。
 
-![关键帧 7](assets/bilibili-BV1HgNd6rEEJ-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ae/ae2630bf6cf5ec79703a39e744c4b10826b38df933533c40b7b7b8f03918da0e.webp)
 
 ### 身份、牺牲与恢复的边界
 
 视频将“燃烧旧我”和失去某些关系浪漫化。长期表现不需要把痛苦、孤立或身体透支当成勋章。较成熟的标准是：目标是否值得、代价是否知情且可承受、是否仍保有睡眠、健康、支持关系和调整空间。
 
-![关键帧 8](assets/bilibili-BV1HgNd6rEEJ-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/f7/f77a0be2da1dd3011ccf8e21f794a594caf2d716ab17305ec61e65f8864c9d86.webp)
 
 ### 从全域审计到最小改动
 
 物理空间、数字环境、媒体、开放事项和精力曲线都可能影响注意力；但“全域审计”不等于一次性清空。先找最常出现、最可改变的一两个触发点，执行后复盘，再决定是否扩大调整范围，能避免把生活管理变成新的逃避任务。
 
-![关键帧 9](assets/bilibili-BV1HgNd6rEEJ-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ae/aea248d7ae4c83fe25ea03e3910a09b99b61dc8784693fdadcc2cf888afb9641.webp)
 
 “微承诺”是很好的审计入口：未决定的邀约、待回的信息、随手加入的项目和未关闭的购物车都会占用心智。可采用“澄清、安排、拒绝或删除”的处理方式，但不要把必要责任或重要关系机械地归为低价值。
 
-![关键帧 10](assets/bilibili-BV1HgNd6rEEJ-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/47/479f386782a39b476afd762f7635a332a092d5532e078558c5e4688360f03eac.webp)
 
 ## 事实核验
 
@@ -2992,40 +2992,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1HgNd6rEEJ-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/f7/f7231d747a4ce36e19d976b1281389c032bda4924ec30144a7482a49a7bcd3db.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1HgNd6rEEJ-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/20/2037f04d17367823b566c906c42c48561b41344628af3dd0c7ba8da2f9b07659.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1HgNd6rEEJ-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/8e/8e1860d632617efb3a2da830a67269e289efbdd0bd4c5a4bb14e0b9718e1d42b.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1HgNd6rEEJ-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/65/65d8cf074fb168359280a085dc89153d80dc89230bbe97c91695ddcd04025b51.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1HgNd6rEEJ-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/d5/d5481f322abe31b9c14c1913028fa010bc503445e984bcef4ef30a09d509bcef.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1HgNd6rEEJ-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/f7/f7b7a68413fc48ba6fe8eea5b53c29493492d400f80f1476588dc21ad04bef75.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1HgNd6rEEJ-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ae/ae2630bf6cf5ec79703a39e744c4b10826b38df933533c40b7b7b8f03918da0e.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1HgNd6rEEJ-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/f7/f77a0be2da1dd3011ccf8e21f794a594caf2d716ab17305ec61e65f8864c9d86.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1HgNd6rEEJ-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ae/aea248d7ae4c83fe25ea03e3910a09b99b61dc8784693fdadcc2cf888afb9641.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1HgNd6rEEJ-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/47/479f386782a39b476afd762f7635a332a092d5532e078558c5e4688360f03eac.webp)

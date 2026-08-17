@@ -40,7 +40,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/9b1c28fb-5c96-4b23-b
 
 视频将 Skill 描述为“提示词 + 脚本 + 参考文档”的能力包。它把一个模糊请求映射到更具体的检查或执行流程：先识别任务类型，再加载领域规则，最后输出建议、修改或部署结果。
 
-![关键帧 1](assets/bilibili-BV1quuM6rE8M-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/75/753871cb82cb52146abe74328d6384625fb26ade20e6a6aebef8cc6886c89b7a.webp)
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ flowchart LR
 
 这套机制适合规则明确、可反复检查的环节。例如 React 性能 Skill 将检查项分组并排序，比一句泛泛的“优化组件”更容易得到结构一致的结果。
 
-![关键帧 4](assets/bilibili-BV1quuM6rE8M-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/7d/7d503460ad465db58ee48bd7f0a0d8a2460c6143017913aa7cb77f1aa16dbeb0.webp)
 
 ## 视频内容：八类能力可以按任务阶段理解
 
@@ -68,7 +68,7 @@ flowchart LR
 
 安装后由 Agent 根据自然语言选择技能，是视频主张的低门槛入口。
 
-![关键帧 9](assets/bilibili-BV1quuM6rE8M-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/bd/bd4ca6a75763efb3fb7b72bf90349bf42867529232a8afffe3ae2f7033232a3b.webp)
 
 ## 外部核验补充
 
@@ -90,7 +90,7 @@ flowchart LR
 
 视频最后的风险页正好提醒了这种边界：平台依赖、建议的不确定性、敏感信息和版本更新都需要使用者负责。
 
-![关键帧 10](assets/bilibili-BV1quuM6rE8M-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/02/02e4ab697a56f89771895fd5c8540eedb92490b72e616afde4342f433a2c79c6.webp)
 
 # Data
 
@@ -572,40 +572,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1quuM6rE8M-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/75/753871cb82cb52146abe74328d6384625fb26ade20e6a6aebef8cc6886c89b7a.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1quuM6rE8M-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/32/3258e6c1d3620adbbdf62373f2d032bc30330dc15007090a4394b3abad0e2e47.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1quuM6rE8M-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/60/60c95bf7de74be91ce80034424f7c25bab678aece8434fb5f921c992025d78c1.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1quuM6rE8M-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/7d/7d503460ad465db58ee48bd7f0a0d8a2460c6143017913aa7cb77f1aa16dbeb0.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1quuM6rE8M-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/3a/3aa7874f5f5ed231911c7744b50f1233295e28e5a9ab083710fff2400fcc35f0.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1quuM6rE8M-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/e7/e76b164d1951d3107563193d28ecac88f3061b2f13da403aaf8498e89152175d.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1quuM6rE8M-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/98/988087f31fed63d68eb1b6f1ca69622a8cc11c2ebb9a957e495914c70ca2e86f.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1quuM6rE8M-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/54/543fb74fe8acb4f5a0cb0709e1c4946ae1f9281542e40984e1b969f0a8f609f3.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1quuM6rE8M-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/bd/bd4ca6a75763efb3fb7b72bf90349bf42867529232a8afffe3ae2f7033232a3b.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1quuM6rE8M-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/02/02e4ab697a56f89771895fd5c8540eedb92490b72e616afde4342f433a2c79c6.webp)

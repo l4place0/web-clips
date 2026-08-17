@@ -54,7 +54,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/b31a80fc-ca9b-4e5a-a
 
 讲者反对的不是让 AI 生成 OWL 或规则文件，而是生成后仍让 AI 退出流程。若业务模型没有行为、约束与验证，大模型只能充当文档助手。
 
-![关键帧 2](assets/bilibili-BV1ipjj6JE7x-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/89/89537050fea7a6a97e17e4fb12abdb9ac964999f319b0b2c67c903328f534940.webp)
 
 这张画面只锚定讲者“业务语义文档”的例子，不能作为任何技术优劣的视觉证据。
 
@@ -80,7 +80,7 @@ SHACL 的标准定位是 RDF 图的描述和验证；不能把它等同于一般
 
 静态对象—属性关系回答“有什么、如何关联”；动作和规则回答“谁能做什么、在何种条件下发生什么”。Palantir Foundry 官方确实区分 objects/properties/links 与 action types/functions；但“Action 等同于面向对象用例建模”仍是视频作者的解释。
 
-![关键帧 8](assets/bilibili-BV1ipjj6JE7x-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/03/0337741c9239613c72160de31eb0ead31766a86c5fcc98004cb7671acf644ea6.webp)
 
 为每个行为写下输入、前置条件、权限、确定性结果、异常处理与审计记录，再决定图查询、算法和模型各承担哪一步。
 
@@ -88,7 +88,7 @@ SHACL 的标准定位是 RDF 图的描述和验证；不能把它等同于一般
 
 OWL 或规则文件是实现产物，真正的验收是业务语义覆盖、规则可测试、执行可追溯，以及模型输出能否被约束和复核。视频的“精确算法 + 带置信度的动态推理”可作为实验假设，应用小型 benchmark 比较正确率、延迟、成本和失败模式。
 
-![关键帧 10](assets/bilibili-BV1ipjj6JE7x-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/5e/5e21e7d576c7d4a5eef20ab139c10083c8d1188797bae1a721ee2782fa58a27f.webp)
 
 # Data
 
@@ -356,40 +356,40 @@ OWL 或规则文件是实现产物，真正的验收是业务语义覆盖、规�
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1ipjj6JE7x-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/15/15b0343d6312947f625ae193ef3ce4559da2f14eda5a18b7ac22d750c20b11bd.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1ipjj6JE7x-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/89/89537050fea7a6a97e17e4fb12abdb9ac964999f319b0b2c67c903328f534940.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1ipjj6JE7x-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/d3/d3c1c603ef107e8fab7189329d58ef398225d1b0b35b5f8d1af6ef9717a607c6.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1ipjj6JE7x-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/37/379c96f9fce26ef7eb633c67ffab34950ca7b78e3fea7b87cb86c1193de5a02f.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1ipjj6JE7x-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/62/62e46be475e2ec376f3e7e37f4e3ab08f2eeeffc82a0243f542c46b7550c3abd.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1ipjj6JE7x-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/23/23066f138274ecaf164fedef2ca8ca5487fa4420c7f85bd40e596aa02c7c55ca.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1ipjj6JE7x-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/e4/e45050645da5713fb1d8dd1fadc535c09d033b27da1ab922b7306d4f963cbcba.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1ipjj6JE7x-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/03/0337741c9239613c72160de31eb0ead31766a86c5fcc98004cb7671acf644ea6.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1ipjj6JE7x-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/1b/1b7ca970465862927f652e2c8de76eb3fd045cd80a0c43dfa8ed70df26834741.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1ipjj6JE7x-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/5e/5e21e7d576c7d4a5eef20ab139c10083c8d1188797bae1a721ee2782fa58a27f.webp)

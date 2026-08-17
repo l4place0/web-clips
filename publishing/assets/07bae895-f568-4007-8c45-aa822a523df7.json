@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "07bae895-f568-4007-8c45-aa822a523df7",
+  "note": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+  "publishedAt": "2026-08-17T13:59:50.941Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0006.webp",
+      "sha256": "11a0150278bd6ad4e4d784da9cafab8beed1da5e885ee4f8b1800ceb4e08f6cb",
+      "size": 83154,
+      "mimeType": "image/webp",
+      "objectKey": "media/11/11a0150278bd6ad4e4d784da9cafab8beed1da5e885ee4f8b1800ceb4e08f6cb.webp",
+      "url": "https://assets.l4p.site/media/11/11a0150278bd6ad4e4d784da9cafab8beed1da5e885ee4f8b1800ceb4e08f6cb.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0002.webp",
+      "sha256": "30bf443749577707a9880cf8d5d26b00acc1975c7b20b412e4f14735cde582cc",
+      "size": 75622,
+      "mimeType": "image/webp",
+      "objectKey": "media/30/30bf443749577707a9880cf8d5d26b00acc1975c7b20b412e4f14735cde582cc.webp",
+      "url": "https://assets.l4p.site/media/30/30bf443749577707a9880cf8d5d26b00acc1975c7b20b412e4f14735cde582cc.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0001.webp",
+      "sha256": "42b8d696cd9662745ecaa5ba570f636b5fe87090e64a0d2877bbd4238a9d7f37",
+      "size": 70620,
+      "mimeType": "image/webp",
+      "objectKey": "media/42/42b8d696cd9662745ecaa5ba570f636b5fe87090e64a0d2877bbd4238a9d7f37.webp",
+      "url": "https://assets.l4p.site/media/42/42b8d696cd9662745ecaa5ba570f636b5fe87090e64a0d2877bbd4238a9d7f37.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0004.webp",
+      "sha256": "4e2673fd4557fb301b80cb17cd3648bd9406cbd804c79d5e07eaf1c60761f638",
+      "size": 43112,
+      "mimeType": "image/webp",
+      "objectKey": "media/4e/4e2673fd4557fb301b80cb17cd3648bd9406cbd804c79d5e07eaf1c60761f638.webp",
+      "url": "https://assets.l4p.site/media/4e/4e2673fd4557fb301b80cb17cd3648bd9406cbd804c79d5e07eaf1c60761f638.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0003.webp",
+      "sha256": "6b6f73920aedfb76b987a99095eb938b2bf49aa66e32f567c23bed4de307bbc0",
+      "size": 57920,
+      "mimeType": "image/webp",
+      "objectKey": "media/6b/6b6f73920aedfb76b987a99095eb938b2bf49aa66e32f567c23bed4de307bbc0.webp",
+      "url": "https://assets.l4p.site/media/6b/6b6f73920aedfb76b987a99095eb938b2bf49aa66e32f567c23bed4de307bbc0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0007.webp",
+      "sha256": "916c100ceda49978ef1be85650f75f79efb7b5c47605742c1741b54417bd6bb6",
+      "size": 75524,
+      "mimeType": "image/webp",
+      "objectKey": "media/91/916c100ceda49978ef1be85650f75f79efb7b5c47605742c1741b54417bd6bb6.webp",
+      "url": "https://assets.l4p.site/media/91/916c100ceda49978ef1be85650f75f79efb7b5c47605742c1741b54417bd6bb6.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0008.webp",
+      "sha256": "9349e604c47ced9b6ccb7bdb348b1a97f2931ecd993c70596c5fcba53270945b",
+      "size": 103932,
+      "mimeType": "image/webp",
+      "objectKey": "media/93/9349e604c47ced9b6ccb7bdb348b1a97f2931ecd993c70596c5fcba53270945b.webp",
+      "url": "https://assets.l4p.site/media/93/9349e604c47ced9b6ccb7bdb348b1a97f2931ecd993c70596c5fcba53270945b.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0010.webp",
+      "sha256": "9e88476ec8fcb2fedf7afd4ba32c72022732f17af70b63cb1b008e318a9947af",
+      "size": 54746,
+      "mimeType": "image/webp",
+      "objectKey": "media/9e/9e88476ec8fcb2fedf7afd4ba32c72022732f17af70b63cb1b008e318a9947af.webp",
+      "url": "https://assets.l4p.site/media/9e/9e88476ec8fcb2fedf7afd4ba32c72022732f17af70b63cb1b008e318a9947af.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0005.webp",
+      "sha256": "a07087cc08ca1164167df33223933202d42b3624793e6a4485a72fc169c125b4",
+      "size": 55330,
+      "mimeType": "image/webp",
+      "objectKey": "media/a0/a07087cc08ca1164167df33223933202d42b3624793e6a4485a72fc169c125b4.webp",
+      "url": "https://assets.l4p.site/media/a0/a07087cc08ca1164167df33223933202d42b3624793e6a4485a72fc169c125b4.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zzgW6FE9m-frame-0009.webp",
+      "sha256": "a722f149967eca6c61e6506f75371c33f82cd9df9ed60bc8412252e09c337193",
+      "size": 42094,
+      "mimeType": "image/webp",
+      "objectKey": "media/a7/a722f149967eca6c61e6506f75371c33f82cd9df9ed60bc8412252e09c337193.webp",
+      "url": "https://assets.l4p.site/media/a7/a722f149967eca6c61e6506f75371c33f82cd9df9ed60bc8412252e09c337193.webp"
+    }
+  ]
+}

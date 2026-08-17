@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+  "note": "clips/黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+  "publishedAt": "2026-08-17T13:53:24.921Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0002.webp",
+      "sha256": "18b66171dff803af684e1a4cb543aba0251aeeb8d1086de09670fd517e147b38",
+      "size": 176368,
+      "mimeType": "image/webp",
+      "objectKey": "media/18/18b66171dff803af684e1a4cb543aba0251aeeb8d1086de09670fd517e147b38.webp",
+      "url": "https://assets.l4p.site/media/18/18b66171dff803af684e1a4cb543aba0251aeeb8d1086de09670fd517e147b38.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0007.webp",
+      "sha256": "3366ee4169c253bbfe7c72eeffe9afa78fc26d58948b3e362e9c5a87995c1607",
+      "size": 220486,
+      "mimeType": "image/webp",
+      "objectKey": "media/33/3366ee4169c253bbfe7c72eeffe9afa78fc26d58948b3e362e9c5a87995c1607.webp",
+      "url": "https://assets.l4p.site/media/33/3366ee4169c253bbfe7c72eeffe9afa78fc26d58948b3e362e9c5a87995c1607.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0001.webp",
+      "sha256": "3482c90ee736508201708acb876b67e9b29714394cd558dcc3bc2a410af42027",
+      "size": 248232,
+      "mimeType": "image/webp",
+      "objectKey": "media/34/3482c90ee736508201708acb876b67e9b29714394cd558dcc3bc2a410af42027.webp",
+      "url": "https://assets.l4p.site/media/34/3482c90ee736508201708acb876b67e9b29714394cd558dcc3bc2a410af42027.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0009.webp",
+      "sha256": "48a46ddc30bda62c5735bfc05f6f72bc7c4339d85d15e4529307be263eaa6e7a",
+      "size": 194304,
+      "mimeType": "image/webp",
+      "objectKey": "media/48/48a46ddc30bda62c5735bfc05f6f72bc7c4339d85d15e4529307be263eaa6e7a.webp",
+      "url": "https://assets.l4p.site/media/48/48a46ddc30bda62c5735bfc05f6f72bc7c4339d85d15e4529307be263eaa6e7a.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0005.webp",
+      "sha256": "4ef788a3dda491e8eceddef63ebaf2f9e659c8aeb46a36ef8b5f6558db0f8ccd",
+      "size": 230970,
+      "mimeType": "image/webp",
+      "objectKey": "media/4e/4ef788a3dda491e8eceddef63ebaf2f9e659c8aeb46a36ef8b5f6558db0f8ccd.webp",
+      "url": "https://assets.l4p.site/media/4e/4ef788a3dda491e8eceddef63ebaf2f9e659c8aeb46a36ef8b5f6558db0f8ccd.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0003.webp",
+      "sha256": "6bd3901a1f3afdb06082e6ece15af5a7c9fb94a8bb190f9d6666577560838abc",
+      "size": 187298,
+      "mimeType": "image/webp",
+      "objectKey": "media/6b/6bd3901a1f3afdb06082e6ece15af5a7c9fb94a8bb190f9d6666577560838abc.webp",
+      "url": "https://assets.l4p.site/media/6b/6bd3901a1f3afdb06082e6ece15af5a7c9fb94a8bb190f9d6666577560838abc.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0008.webp",
+      "sha256": "739ab04e78974259b5be03a0d2fc01595557ed3090746be976dab886667f2f63",
+      "size": 183582,
+      "mimeType": "image/webp",
+      "objectKey": "media/73/739ab04e78974259b5be03a0d2fc01595557ed3090746be976dab886667f2f63.webp",
+      "url": "https://assets.l4p.site/media/73/739ab04e78974259b5be03a0d2fc01595557ed3090746be976dab886667f2f63.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0004.webp",
+      "sha256": "8d181850613eb02a4f9dd5eee3ccc16a6b69823646cb5dac05ed9a85f86df76e",
+      "size": 252354,
+      "mimeType": "image/webp",
+      "objectKey": "media/8d/8d181850613eb02a4f9dd5eee3ccc16a6b69823646cb5dac05ed9a85f86df76e.webp",
+      "url": "https://assets.l4p.site/media/8d/8d181850613eb02a4f9dd5eee3ccc16a6b69823646cb5dac05ed9a85f86df76e.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0010.webp",
+      "sha256": "8f71cbf40f69bf1ace14cc4e3cde473ec8a9c8bcd648883e26b13b9953294c5b",
+      "size": 217622,
+      "mimeType": "image/webp",
+      "objectKey": "media/8f/8f71cbf40f69bf1ace14cc4e3cde473ec8a9c8bcd648883e26b13b9953294c5b.webp",
+      "url": "https://assets.l4p.site/media/8f/8f71cbf40f69bf1ace14cc4e3cde473ec8a9c8bcd648883e26b13b9953294c5b.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV15T3E66Eo9-frame-0006.webp",
+      "sha256": "a623dc01bb639c5dd13031b0b047b86d126ef9dd1ea26a0907d85cc54a582955",
+      "size": 260084,
+      "mimeType": "image/webp",
+      "objectKey": "media/a6/a623dc01bb639c5dd13031b0b047b86d126ef9dd1ea26a0907d85cc54a582955.webp",
+      "url": "https://assets.l4p.site/media/a6/a623dc01bb639c5dd13031b0b047b86d126ef9dd1ea26a0907d85cc54a582955.webp"
+    }
+  ]
+}

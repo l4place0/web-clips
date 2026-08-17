@@ -35,7 +35,7 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/267504d7-da48-48b3-b
 
 视频给出的分界很实用：prompt 只定义“这一次做什么”，loop 则定义“什么算完成”。后者把下一步选择交给 agent，但同时必须给它边界。
 
-![关键帧 2](assets/bilibili-BV1uwTS66Eqg-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/29/2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104.webp)
 
 一个最小 loop 可以抽象为：
 
@@ -63,7 +63,7 @@ flowchart LR
 
 每一轮都在固定训练时间和算力预算下进行。验证指标变好便提交为新基线，没有变好就回退，再基于日志选择下一个实验。这样，提交记录与实验日志共同构成了可追踪状态。
 
-![关键帧 4](assets/bilibili-BV1uwTS66Eqg-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/95/957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0.webp)
 
 这套设计背后的工程原则是“把优化对象与裁判分离”。如果 agent 可以同时修改实现和评分标准，它就可能优化指标定义而不是目标本身；如果评估器独立且稳定，循环才有可靠的选择压力。
 
@@ -71,7 +71,7 @@ flowchart LR
 
 视频把工程化 loop 拆成五块：
 
-![关键帧 7](assets/bilibili-BV1uwTS66Eqg-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/8e/8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77.webp)
 
 1. **自动触发**：提供定时、事件或持续调度，让循环不依赖人手工启动每一轮。
 2. **Skill**：把项目知识、约束和操作规范固定下来，供每一轮重复读取。
@@ -85,7 +85,7 @@ flowchart LR
 
 单层 AutoResearch 在给定搜索机制下寻找更好的模型改动；Bilevel Autoresearch 再增加一个外层循环，观察内层的代码、轨迹和失败模式，然后生成新的搜索机制并注入内层。
 
-![关键帧 8](assets/bilibili-BV1uwTS66Eqg-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/74/743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32.webp)
 
 ```mermaid
 flowchart TB
@@ -109,7 +109,7 @@ flowchart TB
 
 不搭完整调度系统，也可以先体验闭环思维：
 
-![关键帧 9](assets/bilibili-BV1uwTS66Eqg-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/62/62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59.webp)
 
 1. 先把完成标准写成可评分的检查项。
 2. 每轮说明下一步计划，再实际修改产物。
@@ -469,40 +469,40 @@ flowchart TB
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1uwTS66Eqg-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/99/999a21a40db192da029c6f37f02cf22f25b9b490c414af2432d590e621c8dc27.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1uwTS66Eqg-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/29/2985ffd95db18b92e9e8ae5804a643b410e7396e7262c0ac2dfe414654d1f104.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1uwTS66Eqg-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/81/81303fe55c175009362062942787b18581ea285601e8a8572df4900ba4b92029.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1uwTS66Eqg-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/95/957fd155918d250d0f784cfa52d5f5c9f2cc6716d0f58a9c4d97ea70bfb171f0.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1uwTS66Eqg-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/d2/d2d90625a1e7ea3b6058d424973776180d9a6eab89454f5a680a6278a9123c52.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1uwTS66Eqg-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/19/193f9865e3b152d30c6c5d26f1c4a8a4de7323c13c170cf8681cecd7fcf51511.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1uwTS66Eqg-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/8e/8e1451b2fb6d04907cd1e4ef781dfa9786a41102ac4c0a355f188a3b822b3e77.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1uwTS66Eqg-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/74/743265511167a28752fd5647d574de04ea1683424c6b2f684aaa0b8985aa8f32.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1uwTS66Eqg-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/62/62eb5cac58b38cbca73f669c498fa9130333b887c3199c1f722bd4fadc681f59.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1uwTS66Eqg-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/42/420bf67dac138b5fc0cefcb7d8e9226a1a37e1357f98188c18d380a11f4a8081.webp)

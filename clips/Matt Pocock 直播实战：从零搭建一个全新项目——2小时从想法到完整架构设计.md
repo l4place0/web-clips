@@ -2828,40 +2828,40 @@ adapter 的职责是处理 hooks、插件、文件、数据库或其他可用表
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1FENq6WEdZ-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/15/151e7e8b53ff6e6523935161fba8e36f44955a1fe4037bf5e08303306f2c2e9f.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1FENq6WEdZ-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/99/9965bd1fec68982ee521a027846af513106720db272aaf9ed85c767697a117cc.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1FENq6WEdZ-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/b5/b55f4b6bad5f6bbe68e584a5766a0318eedbefed1f9dd627b13f2a327fd98e91.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1FENq6WEdZ-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/51/515bc6ee3a209bcbb41ff028b199a841441b10e8391c0e91d5f6aa8f6f2475db.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1FENq6WEdZ-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/43/43dae1a555eaaad88c66c6a3fed94dafffb11c98c8105ac240f9588215369b67.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1FENq6WEdZ-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/5a/5a59331986a2efc1841a9f461621c7123b1ec291b7a0f185f1d072303455fcba.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1FENq6WEdZ-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/b1/b1091c486434a132fbd09b87e2b492707724eb8e12b20f286ff529d6e5808e34.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1FENq6WEdZ-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/b3/b37d496539f3bbbb0c21b365c277d53f812556ba053f081dfc0208f0930db2f7.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1FENq6WEdZ-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/d9/d95a301bc079e83fefff99e651079983cc69099c66dee15d00a0174cd5b3425c.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1FENq6WEdZ-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/2d/2d6f2678cd3956b31631124a7ef12c24c49d89fc09887cd9b417c148d43033e7.webp)

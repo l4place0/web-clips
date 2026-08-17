@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "7b77c047-8d46-45e4-a123-86e01a7a464c",
+  "note": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+  "publishedAt": "2026-08-17T13:53:06.731Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0008.webp",
+      "sha256": "2f4833c819b3800099d68d2534ff813e7b9b25c60915ae28738bbb09daff8019",
+      "size": 98510,
+      "mimeType": "image/webp",
+      "objectKey": "media/2f/2f4833c819b3800099d68d2534ff813e7b9b25c60915ae28738bbb09daff8019.webp",
+      "url": "https://assets.l4p.site/media/2f/2f4833c819b3800099d68d2534ff813e7b9b25c60915ae28738bbb09daff8019.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0009.webp",
+      "sha256": "45f4d19313a0b1905582720f9d5cb15d821cffe3f13fa67f0e948cbddfac3169",
+      "size": 97358,
+      "mimeType": "image/webp",
+      "objectKey": "media/45/45f4d19313a0b1905582720f9d5cb15d821cffe3f13fa67f0e948cbddfac3169.webp",
+      "url": "https://assets.l4p.site/media/45/45f4d19313a0b1905582720f9d5cb15d821cffe3f13fa67f0e948cbddfac3169.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0003.webp",
+      "sha256": "768fc3dbcd04e42e0853fb7c1faedfba0baa39a152fb30c34ef3be291e28b8f9",
+      "size": 95580,
+      "mimeType": "image/webp",
+      "objectKey": "media/76/768fc3dbcd04e42e0853fb7c1faedfba0baa39a152fb30c34ef3be291e28b8f9.webp",
+      "url": "https://assets.l4p.site/media/76/768fc3dbcd04e42e0853fb7c1faedfba0baa39a152fb30c34ef3be291e28b8f9.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0010.webp",
+      "sha256": "76df1d5dbbefbf846d92175e058bfb2dc2553cfd93a415482250f91071a1fc66",
+      "size": 111784,
+      "mimeType": "image/webp",
+      "objectKey": "media/76/76df1d5dbbefbf846d92175e058bfb2dc2553cfd93a415482250f91071a1fc66.webp",
+      "url": "https://assets.l4p.site/media/76/76df1d5dbbefbf846d92175e058bfb2dc2553cfd93a415482250f91071a1fc66.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0006.webp",
+      "sha256": "80edc38c8436838b3b5163e12d05ba3dee81022e1efe544a7079f5c4f0407c0f",
+      "size": 101418,
+      "mimeType": "image/webp",
+      "objectKey": "media/80/80edc38c8436838b3b5163e12d05ba3dee81022e1efe544a7079f5c4f0407c0f.webp",
+      "url": "https://assets.l4p.site/media/80/80edc38c8436838b3b5163e12d05ba3dee81022e1efe544a7079f5c4f0407c0f.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0002.webp",
+      "sha256": "b874a8837a8fca2a2eea592548562be08e3defb94ad87aeb2faa6e40ab368321",
+      "size": 102058,
+      "mimeType": "image/webp",
+      "objectKey": "media/b8/b874a8837a8fca2a2eea592548562be08e3defb94ad87aeb2faa6e40ab368321.webp",
+      "url": "https://assets.l4p.site/media/b8/b874a8837a8fca2a2eea592548562be08e3defb94ad87aeb2faa6e40ab368321.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0004.webp",
+      "sha256": "d5abd11aa880fdf5a524b9d626630034442dfa25b70852b4d5537a0411f23f2a",
+      "size": 114062,
+      "mimeType": "image/webp",
+      "objectKey": "media/d5/d5abd11aa880fdf5a524b9d626630034442dfa25b70852b4d5537a0411f23f2a.webp",
+      "url": "https://assets.l4p.site/media/d5/d5abd11aa880fdf5a524b9d626630034442dfa25b70852b4d5537a0411f23f2a.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0001.webp",
+      "sha256": "d6f7734c22d3d29daecce51f88ee2b1abeca2e604670a3c5e079c0d12e350481",
+      "size": 120660,
+      "mimeType": "image/webp",
+      "objectKey": "media/d6/d6f7734c22d3d29daecce51f88ee2b1abeca2e604670a3c5e079c0d12e350481.webp",
+      "url": "https://assets.l4p.site/media/d6/d6f7734c22d3d29daecce51f88ee2b1abeca2e604670a3c5e079c0d12e350481.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0005.webp",
+      "sha256": "ed58c4d6c37aa3464911b1878980e6760d4e579b5b109c4222d7ed141344d60f",
+      "size": 103226,
+      "mimeType": "image/webp",
+      "objectKey": "media/ed/ed58c4d6c37aa3464911b1878980e6760d4e579b5b109c4222d7ed141344d60f.webp",
+      "url": "https://assets.l4p.site/media/ed/ed58c4d6c37aa3464911b1878980e6760d4e579b5b109c4222d7ed141344d60f.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1KpMn6tEi9-frame-0007.webp",
+      "sha256": "f0776dfc0c40e8c229388de0bb6399f1439aea6cba8e55eac32f7a54e52ae4b0",
+      "size": 121900,
+      "mimeType": "image/webp",
+      "objectKey": "media/f0/f0776dfc0c40e8c229388de0bb6399f1439aea6cba8e55eac32f7a54e52ae4b0.webp",
+      "url": "https://assets.l4p.site/media/f0/f0776dfc0c40e8c229388de0bb6399f1439aea6cba8e55eac32f7a54e52ae4b0.webp"
+    }
+  ]
+}

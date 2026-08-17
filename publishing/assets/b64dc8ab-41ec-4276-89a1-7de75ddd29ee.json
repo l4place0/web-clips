@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+  "note": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+  "publishedAt": "2026-08-17T13:55:58.851Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0002.webp",
+      "sha256": "0fb937715c22bc4b8902a2063c2b8b3e10e8d98c3699b7a570f5ceb270b36d0b",
+      "size": 74722,
+      "mimeType": "image/webp",
+      "objectKey": "media/0f/0fb937715c22bc4b8902a2063c2b8b3e10e8d98c3699b7a570f5ceb270b36d0b.webp",
+      "url": "https://assets.l4p.site/media/0f/0fb937715c22bc4b8902a2063c2b8b3e10e8d98c3699b7a570f5ceb270b36d0b.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0003.webp",
+      "sha256": "615fdaa8c2e1dff2b9fe06882ad5dbd71ad86fd9f615be9b04d1c200e65569c8",
+      "size": 24578,
+      "mimeType": "image/webp",
+      "objectKey": "media/61/615fdaa8c2e1dff2b9fe06882ad5dbd71ad86fd9f615be9b04d1c200e65569c8.webp",
+      "url": "https://assets.l4p.site/media/61/615fdaa8c2e1dff2b9fe06882ad5dbd71ad86fd9f615be9b04d1c200e65569c8.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0004.webp",
+      "sha256": "73d3379157eb1dfba6c819ff2bc1f3198ca4c0516d5eb6725d104325e01cc240",
+      "size": 41144,
+      "mimeType": "image/webp",
+      "objectKey": "media/73/73d3379157eb1dfba6c819ff2bc1f3198ca4c0516d5eb6725d104325e01cc240.webp",
+      "url": "https://assets.l4p.site/media/73/73d3379157eb1dfba6c819ff2bc1f3198ca4c0516d5eb6725d104325e01cc240.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0006.webp",
+      "sha256": "a8ac355df7b552fe7b7182ccf9ab64e66a13e2b0c82b7558c08bc5362dada127",
+      "size": 51146,
+      "mimeType": "image/webp",
+      "objectKey": "media/a8/a8ac355df7b552fe7b7182ccf9ab64e66a13e2b0c82b7558c08bc5362dada127.webp",
+      "url": "https://assets.l4p.site/media/a8/a8ac355df7b552fe7b7182ccf9ab64e66a13e2b0c82b7558c08bc5362dada127.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0009.webp",
+      "sha256": "ae87e939c0074074bf8346560dd70bbdb03057d57c6c141592a7cc64646a8cd4",
+      "size": 31198,
+      "mimeType": "image/webp",
+      "objectKey": "media/ae/ae87e939c0074074bf8346560dd70bbdb03057d57c6c141592a7cc64646a8cd4.webp",
+      "url": "https://assets.l4p.site/media/ae/ae87e939c0074074bf8346560dd70bbdb03057d57c6c141592a7cc64646a8cd4.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0001.webp",
+      "sha256": "b9522cd28cb770493859656801bb65c237a39d630d5c34c1a202e7720c427dc1",
+      "size": 16632,
+      "mimeType": "image/webp",
+      "objectKey": "media/b9/b9522cd28cb770493859656801bb65c237a39d630d5c34c1a202e7720c427dc1.webp",
+      "url": "https://assets.l4p.site/media/b9/b9522cd28cb770493859656801bb65c237a39d630d5c34c1a202e7720c427dc1.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0010.webp",
+      "sha256": "d40f94af4e87f4a5849f30c497268ed321a0eb3d8ada975bf7d7094039b9d35d",
+      "size": 35380,
+      "mimeType": "image/webp",
+      "objectKey": "media/d4/d40f94af4e87f4a5849f30c497268ed321a0eb3d8ada975bf7d7094039b9d35d.webp",
+      "url": "https://assets.l4p.site/media/d4/d40f94af4e87f4a5849f30c497268ed321a0eb3d8ada975bf7d7094039b9d35d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0005.webp",
+      "sha256": "d6ff20fe2f848bd782e8f3327bfef8b47083fff8927e8d20bebe48c43369b070",
+      "size": 40640,
+      "mimeType": "image/webp",
+      "objectKey": "media/d6/d6ff20fe2f848bd782e8f3327bfef8b47083fff8927e8d20bebe48c43369b070.webp",
+      "url": "https://assets.l4p.site/media/d6/d6ff20fe2f848bd782e8f3327bfef8b47083fff8927e8d20bebe48c43369b070.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0007.webp",
+      "sha256": "e6649f83f5496140bbfafa693abf5c27067f4e6b515f507f59aa09d43b5942de",
+      "size": 29846,
+      "mimeType": "image/webp",
+      "objectKey": "media/e6/e6649f83f5496140bbfafa693abf5c27067f4e6b515f507f59aa09d43b5942de.webp",
+      "url": "https://assets.l4p.site/media/e6/e6649f83f5496140bbfafa693abf5c27067f4e6b515f507f59aa09d43b5942de.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1LQNB6SE3d-frame-0008.webp",
+      "sha256": "ee7c4549014f1ffe6c9b0c1fc8d7344c1b22de3feccd44ca2c71bae4924c8df9",
+      "size": 28534,
+      "mimeType": "image/webp",
+      "objectKey": "media/ee/ee7c4549014f1ffe6c9b0c1fc8d7344c1b22de3feccd44ca2c71bae4924c8df9.webp",
+      "url": "https://assets.l4p.site/media/ee/ee7c4549014f1ffe6c9b0c1fc8d7344c1b22de3feccd44ca2c71bae4924c8df9.webp"
+    }
+  ]
+}

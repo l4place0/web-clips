@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "8fa25ac1-9d61-4dad-af8d-ec248e8f09c5",
+  "note": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+  "publishedAt": "2026-08-17T13:41:34.674Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0003.webp",
+      "sha256": "0add53f41d368a3ed23eb5c024c47505560c5c4d94acf73115e0082d05e6a533",
+      "size": 18966,
+      "mimeType": "image/webp",
+      "objectKey": "media/0a/0add53f41d368a3ed23eb5c024c47505560c5c4d94acf73115e0082d05e6a533.webp",
+      "url": "https://assets.l4p.site/media/0a/0add53f41d368a3ed23eb5c024c47505560c5c4d94acf73115e0082d05e6a533.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0008.webp",
+      "sha256": "2ccafc92ff5245fe7ff40833e7a9df1260bf4b70eac484b8da023f028841ee09",
+      "size": 19228,
+      "mimeType": "image/webp",
+      "objectKey": "media/2c/2ccafc92ff5245fe7ff40833e7a9df1260bf4b70eac484b8da023f028841ee09.webp",
+      "url": "https://assets.l4p.site/media/2c/2ccafc92ff5245fe7ff40833e7a9df1260bf4b70eac484b8da023f028841ee09.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0004.webp",
+      "sha256": "36824f1a9a7127ba3b1e4e12a125e85885732aa569e51203011e1c697200f4c0",
+      "size": 8442,
+      "mimeType": "image/webp",
+      "objectKey": "media/36/36824f1a9a7127ba3b1e4e12a125e85885732aa569e51203011e1c697200f4c0.webp",
+      "url": "https://assets.l4p.site/media/36/36824f1a9a7127ba3b1e4e12a125e85885732aa569e51203011e1c697200f4c0.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0001.webp",
+      "sha256": "66a8c44ed3cd8ca3c93979616a7de941fb8b6561bd3d6e64869f1d7f43a130f7",
+      "size": 87952,
+      "mimeType": "image/webp",
+      "objectKey": "media/66/66a8c44ed3cd8ca3c93979616a7de941fb8b6561bd3d6e64869f1d7f43a130f7.webp",
+      "url": "https://assets.l4p.site/media/66/66a8c44ed3cd8ca3c93979616a7de941fb8b6561bd3d6e64869f1d7f43a130f7.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0006.webp",
+      "sha256": "92801f2051af244b5474b0da08a442f8d0f32ab00dd09bd63f68785be1280544",
+      "size": 10828,
+      "mimeType": "image/webp",
+      "objectKey": "media/92/92801f2051af244b5474b0da08a442f8d0f32ab00dd09bd63f68785be1280544.webp",
+      "url": "https://assets.l4p.site/media/92/92801f2051af244b5474b0da08a442f8d0f32ab00dd09bd63f68785be1280544.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0010.webp",
+      "sha256": "9ac2a2ae233347c2869b7b33d5668d2b909a708767a83b3709cf1466e36060be",
+      "size": 24822,
+      "mimeType": "image/webp",
+      "objectKey": "media/9a/9ac2a2ae233347c2869b7b33d5668d2b909a708767a83b3709cf1466e36060be.webp",
+      "url": "https://assets.l4p.site/media/9a/9ac2a2ae233347c2869b7b33d5668d2b909a708767a83b3709cf1466e36060be.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0005.webp",
+      "sha256": "ad635b119a098ab27790d91e92d6409b657d086431ca866e0b166125e6fda721",
+      "size": 23532,
+      "mimeType": "image/webp",
+      "objectKey": "media/ad/ad635b119a098ab27790d91e92d6409b657d086431ca866e0b166125e6fda721.webp",
+      "url": "https://assets.l4p.site/media/ad/ad635b119a098ab27790d91e92d6409b657d086431ca866e0b166125e6fda721.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0007.webp",
+      "sha256": "d2038ef1887c36db70dc42c070cb90a60bd2c705a22862d0d4749d8698e53e87",
+      "size": 10148,
+      "mimeType": "image/webp",
+      "objectKey": "media/d2/d2038ef1887c36db70dc42c070cb90a60bd2c705a22862d0d4749d8698e53e87.webp",
+      "url": "https://assets.l4p.site/media/d2/d2038ef1887c36db70dc42c070cb90a60bd2c705a22862d0d4749d8698e53e87.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0009.webp",
+      "sha256": "d8080879d5190993e0a6cbcecb0eeb0fbd669e8db508676bbed123110a834999",
+      "size": 10584,
+      "mimeType": "image/webp",
+      "objectKey": "media/d8/d8080879d5190993e0a6cbcecb0eeb0fbd669e8db508676bbed123110a834999.webp",
+      "url": "https://assets.l4p.site/media/d8/d8080879d5190993e0a6cbcecb0eeb0fbd669e8db508676bbed123110a834999.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zwgW6xEMv-frame-0002.webp",
+      "sha256": "f44513bf31a61bbf4c9d8acdf748fb93e1ad5870016d1c2dee7cf3eb6f6b081d",
+      "size": 11670,
+      "mimeType": "image/webp",
+      "objectKey": "media/f4/f44513bf31a61bbf4c9d8acdf748fb93e1ad5870016d1c2dee7cf3eb6f6b081d.webp",
+      "url": "https://assets.l4p.site/media/f4/f44513bf31a61bbf4c9d8acdf748fb93e1ad5870016d1c2dee7cf3eb6f6b081d.webp"
+    }
+  ]
+}

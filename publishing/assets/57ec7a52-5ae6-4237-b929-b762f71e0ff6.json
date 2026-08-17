@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "57ec7a52-5ae6-4237-b929-b762f71e0ff6",
+  "note": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+  "publishedAt": "2026-08-17T14:00:27.685Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0005.webp",
+      "sha256": "10f2e67bcf87386b5ec751b2fc2dec2b9fe31548d95e5ede2fe637c9a438334d",
+      "size": 35800,
+      "mimeType": "image/webp",
+      "objectKey": "media/10/10f2e67bcf87386b5ec751b2fc2dec2b9fe31548d95e5ede2fe637c9a438334d.webp",
+      "url": "https://assets.l4p.site/media/10/10f2e67bcf87386b5ec751b2fc2dec2b9fe31548d95e5ede2fe637c9a438334d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0002.webp",
+      "sha256": "2414dcef1671e11325857642965a4b544cac72afacf90fc960842994de858e20",
+      "size": 85362,
+      "mimeType": "image/webp",
+      "objectKey": "media/24/2414dcef1671e11325857642965a4b544cac72afacf90fc960842994de858e20.webp",
+      "url": "https://assets.l4p.site/media/24/2414dcef1671e11325857642965a4b544cac72afacf90fc960842994de858e20.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0008.webp",
+      "sha256": "2fe8bebc84326c8936b0e45c370d41bee1a9d354993eb92ef238e7005df01730",
+      "size": 41062,
+      "mimeType": "image/webp",
+      "objectKey": "media/2f/2fe8bebc84326c8936b0e45c370d41bee1a9d354993eb92ef238e7005df01730.webp",
+      "url": "https://assets.l4p.site/media/2f/2fe8bebc84326c8936b0e45c370d41bee1a9d354993eb92ef238e7005df01730.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0010.webp",
+      "sha256": "3f997f180c30cc9f7cd247e2fa361e4befef69c79be5e743d6861ba815188d88",
+      "size": 62540,
+      "mimeType": "image/webp",
+      "objectKey": "media/3f/3f997f180c30cc9f7cd247e2fa361e4befef69c79be5e743d6861ba815188d88.webp",
+      "url": "https://assets.l4p.site/media/3f/3f997f180c30cc9f7cd247e2fa361e4befef69c79be5e743d6861ba815188d88.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0007.webp",
+      "sha256": "674b5817058710ab62512760eadecc2bced20b9dace87789cf59d8816d915545",
+      "size": 34656,
+      "mimeType": "image/webp",
+      "objectKey": "media/67/674b5817058710ab62512760eadecc2bced20b9dace87789cf59d8816d915545.webp",
+      "url": "https://assets.l4p.site/media/67/674b5817058710ab62512760eadecc2bced20b9dace87789cf59d8816d915545.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0003.webp",
+      "sha256": "6b1ef7a4718a2bacf85ea3db4977d8d7be127e880b41ff74989976e4286fa8ed",
+      "size": 58538,
+      "mimeType": "image/webp",
+      "objectKey": "media/6b/6b1ef7a4718a2bacf85ea3db4977d8d7be127e880b41ff74989976e4286fa8ed.webp",
+      "url": "https://assets.l4p.site/media/6b/6b1ef7a4718a2bacf85ea3db4977d8d7be127e880b41ff74989976e4286fa8ed.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0006.webp",
+      "sha256": "7f9430ad6c2196600430c49dc529b535f932175d34ae0ec64a43df79c07d4c6d",
+      "size": 31980,
+      "mimeType": "image/webp",
+      "objectKey": "media/7f/7f9430ad6c2196600430c49dc529b535f932175d34ae0ec64a43df79c07d4c6d.webp",
+      "url": "https://assets.l4p.site/media/7f/7f9430ad6c2196600430c49dc529b535f932175d34ae0ec64a43df79c07d4c6d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0004.webp",
+      "sha256": "7fd3a2f6f9f278a76019671f1199a9d1cc059b7319294575dac2750850eb7b96",
+      "size": 56984,
+      "mimeType": "image/webp",
+      "objectKey": "media/7f/7fd3a2f6f9f278a76019671f1199a9d1cc059b7319294575dac2750850eb7b96.webp",
+      "url": "https://assets.l4p.site/media/7f/7fd3a2f6f9f278a76019671f1199a9d1cc059b7319294575dac2750850eb7b96.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0009.webp",
+      "sha256": "8d78faa3f3fbc13421c1bf070b50b01b289913a962c00d10320c3c9be18433b8",
+      "size": 32386,
+      "mimeType": "image/webp",
+      "objectKey": "media/8d/8d78faa3f3fbc13421c1bf070b50b01b289913a962c00d10320c3c9be18433b8.webp",
+      "url": "https://assets.l4p.site/media/8d/8d78faa3f3fbc13421c1bf070b50b01b289913a962c00d10320c3c9be18433b8.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1zn396mEfz-frame-0001.webp",
+      "sha256": "9950ff148f485b0fd155b2f02e6f9b46deec6437744bf8f73e11d28b1d5a6d16",
+      "size": 60540,
+      "mimeType": "image/webp",
+      "objectKey": "media/99/9950ff148f485b0fd155b2f02e6f9b46deec6437744bf8f73e11d28b1d5a6d16.webp",
+      "url": "https://assets.l4p.site/media/99/9950ff148f485b0fd155b2f02e6f9b46deec6437744bf8f73e11d28b1d5a6d16.webp"
+    }
+  ]
+}

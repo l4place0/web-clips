@@ -42,7 +42,7 @@ Matt Pocock 的立场不是拒绝 LLM，而是拒绝**未经验证地信任**它
 
 **视频内容：** 讲者从三种常见失效切入：事实错误、虚构实体，以及忽略或反驳已经提供的上下文。画面将 “Contextual Inconsistency” 定义为忽略或违背显式上下文，这提醒我们：给模型材料并不等于它一定会忠实使用材料。
 
-![关键帧 4](assets/bilibili-BV16Tud6EEtj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/3f/3f7986c6a68f9eac7a7cf9ca086f42eddcae42922697468b310c99f6a201a789.webp)
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ flowchart TD
 
 **视频内容：** 开发者若直接采用模型虚构的软件包名，攻击者可能注册同名恶意包，把一次幻觉转化为供应链入口。视频用相关文章页面呈现这个风险，而不是把它停留在“答案可能有小错误”。
 
-![关键帧 3](assets/bilibili-BV16Tud6EEtj-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/41/414f6b06a3055b2bedf6f7f01be2f2e9e548bb413f7a1b30387e5aba5b61e163.webp)
 
 **外部核验补充：** 一项经 USENIX Security 2025 收录的研究在大规模生成代码样本中发现，软件包幻觉具有持续性，并可能为 package-confusion 攻击提供机会；这证明攻击面可信，但不能推导出每个虚构包都已经被利用。[USENIX Security 2025：We Have a Package for You!](https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen)
 
@@ -81,7 +81,7 @@ flowchart TD
 
 **视频内容：** 讲者引用 OpenAI 研究，说明只奖励答对可能让“猜一个答案”比“承认不知道”更有利。他把模型设计画成一条轴：一端足够主动、聪明地解决问题，另一端足够谦逊地表达未知；过度自信会幻觉，过度保守又会降低任务完成能力。
 
-![关键帧 8](assets/bilibili-BV16Tud6EEtj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/d9/d9a315a834b6ecc1e6d2b035692106d371685810505652383589312d0a5a6073.webp)
 
 ```mermaid
 flowchart LR
@@ -1602,40 +1602,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV16Tud6EEtj-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/77/77d962ef88a126d9db6acb1889108335b1b2992e0b6eae2f2738497e5730441d.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV16Tud6EEtj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/fc/fcbede4b3159ffe0b3da45abc0d4d9f4a7647f7449e39036a6c2513ad62593af.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV16Tud6EEtj-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/41/414f6b06a3055b2bedf6f7f01be2f2e9e548bb413f7a1b30387e5aba5b61e163.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV16Tud6EEtj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/3f/3f7986c6a68f9eac7a7cf9ca086f42eddcae42922697468b310c99f6a201a789.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV16Tud6EEtj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/8b/8b46d79d60ce58e3df7e1e6eb11ab893be0ddd084203e8ac3c3b66fbf6b3bc6f.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV16Tud6EEtj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/ce/ce71a2a50a69bcaa069b00d96f018ebfa477ff12bf931841784e2d312ce14baf.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV16Tud6EEtj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/05/052ffffb3b017ab12c06342868b3e8c14ede2ca9219e9924054aab58c15452cf.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV16Tud6EEtj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/d9/d9a315a834b6ecc1e6d2b035692106d371685810505652383589312d0a5a6073.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV16Tud6EEtj-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/4c/4ca12064b346f6c49962141c7bd3a3f2a87eedc5db6aae3e19791c854c4f9e78.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV16Tud6EEtj-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/51/51cdee0a2e896c91a2724015ba5a49be498b1446946b0c8c51df42b6a8d93f59.webp)

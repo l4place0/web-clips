@@ -49,7 +49,7 @@ Wayfinder 管理的不是一份静态计划，而是“当前有哪些未知、�
 
 普通拆任务方式往往默认“路径已经知道”，只需把大任务切成小块；视频指出，真正困难的大任务常常连正确路径都未知。此时过早固定 TODO，会把猜测伪装成计划。Wayfinder 改为维护一张共享地图：已解决的决策形成路径，未满足前提的事项留在 fog，可立即推进的事项构成 frontier。
 
-![关键帧 2](assets/bilibili-BV1P93h6oEta-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/11/11c033f6f382998b0f41d0e9e54f6ab5945eeba519e3de4841667372b6b2d5a9.webp)
 
 ```mermaid
 flowchart TD
@@ -71,7 +71,7 @@ flowchart TD
 
 这不是一次性生成完整路线，而是一个反馈循环：每个结果都可能解除阻塞、暴露新问题或改变后续优先级。关键画面中的分支与汇合比线性清单更能表达这种机制。
 
-![关键帧 5](assets/bilibili-BV1P93h6oEta-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/c7/c7f80861f667e7c80a37b9e449f76b73100478f438094bd5d8559c31c6d26f83.webp)
 
 ## 视频内容：地图、Spec 与 Tickets 各自承担什么
 
@@ -82,11 +82,11 @@ flowchart TD
 
 视频给出的总体链条是 `wayfinder → to-spec → to-tickets → implement → code review`。Wayfinder 位于规格形成之前，负责把未知问题逐步变成有依据的决定。
 
-![关键帧 8](assets/bilibili-BV1P93h6oEta-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/52/52367f1d957f7dfb21e5bfe986cc65e635c86331b8c73e356ba98e48c75fa34b.webp)
 
 Spec 与 ticket 的区别不只是篇幅：前者维持跨会话目标一致性，后者限制单次会话范围。两者结合，减少每次新会话重新解释全部背景的负担。
 
-![关键帧 9](assets/bilibili-BV1P93h6oEta-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/c7/c7b20e8e2c7db10696e3b8b16401c88a28611e3fdd7a291bc2a03aabe6304a1b.webp)
 
 ## 外部核验补充
 
@@ -1262,40 +1262,40 @@ Wayfinder 可以被理解为把 Agent 的工作记忆外部化到一个可审计
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1P93h6oEta-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/a9/a9f650d344b4cd688b11d3d97605d743423bb1829f82e23c7a4ff612e199f7bc.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1P93h6oEta-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/11/11c033f6f382998b0f41d0e9e54f6ab5945eeba519e3de4841667372b6b2d5a9.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1P93h6oEta-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/15/156ead7c168868ea0793177a7517eb2eccd4ac72454ff3b1d050b89948c55925.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1P93h6oEta-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/da/daf721de9269b0c588175dd69b5fd05b46834f0caf906a2478a9ca59d4915bbb.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1P93h6oEta-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/c7/c7f80861f667e7c80a37b9e449f76b73100478f438094bd5d8559c31c6d26f83.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1P93h6oEta-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7b/7b73ca8e102e0fb86f07d22ba2336a9ff9e51482f15cbd89b3bd3e5f48ddf0b0.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1P93h6oEta-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/44/44dc940c8cd6474d57fc42d50556b998c4e290a166d368567d3a93df191801e6.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1P93h6oEta-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/52/52367f1d957f7dfb21e5bfe986cc65e635c86331b8c73e356ba98e48c75fa34b.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1P93h6oEta-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/c7/c7b20e8e2c7db10696e3b8b16401c88a28611e3fdd7a291bc2a03aabe6304a1b.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1P93h6oEta-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/d6/d6b8b486e5772a128999798143d4b3ce6999999fee5e1324f2560c90e9aaa762.webp)

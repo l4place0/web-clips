@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "8c3c3bdd-2dea-431d-b889-42f021e7941e",
+  "note": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+  "publishedAt": "2026-08-17T13:52:25.002Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0007.webp",
+      "sha256": "044b3ae3c4b64d81ea39ebaad46a53edc4bd60f375f31d645b28fc5617ab06e5",
+      "size": 78470,
+      "mimeType": "image/webp",
+      "objectKey": "media/04/044b3ae3c4b64d81ea39ebaad46a53edc4bd60f375f31d645b28fc5617ab06e5.webp",
+      "url": "https://assets.l4p.site/media/04/044b3ae3c4b64d81ea39ebaad46a53edc4bd60f375f31d645b28fc5617ab06e5.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0010.webp",
+      "sha256": "52c62dd67f426e4262b5d741bb4190587b8d83731379eb36ffa64e40d944edf8",
+      "size": 43392,
+      "mimeType": "image/webp",
+      "objectKey": "media/52/52c62dd67f426e4262b5d741bb4190587b8d83731379eb36ffa64e40d944edf8.webp",
+      "url": "https://assets.l4p.site/media/52/52c62dd67f426e4262b5d741bb4190587b8d83731379eb36ffa64e40d944edf8.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0003.webp",
+      "sha256": "5afa59caf7852ea1cf445c7ac8713c9c625beeb52189323753cb956c04b6ec0d",
+      "size": 50546,
+      "mimeType": "image/webp",
+      "objectKey": "media/5a/5afa59caf7852ea1cf445c7ac8713c9c625beeb52189323753cb956c04b6ec0d.webp",
+      "url": "https://assets.l4p.site/media/5a/5afa59caf7852ea1cf445c7ac8713c9c625beeb52189323753cb956c04b6ec0d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0005.webp",
+      "sha256": "86702fa3612a497b4b2318db64c484960255012c4b94c24b0993245593630889",
+      "size": 68292,
+      "mimeType": "image/webp",
+      "objectKey": "media/86/86702fa3612a497b4b2318db64c484960255012c4b94c24b0993245593630889.webp",
+      "url": "https://assets.l4p.site/media/86/86702fa3612a497b4b2318db64c484960255012c4b94c24b0993245593630889.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0008.webp",
+      "sha256": "9b8377acb3f49c020700ea370852a519301b11c1e34ad0929502ab10209d324d",
+      "size": 88928,
+      "mimeType": "image/webp",
+      "objectKey": "media/9b/9b8377acb3f49c020700ea370852a519301b11c1e34ad0929502ab10209d324d.webp",
+      "url": "https://assets.l4p.site/media/9b/9b8377acb3f49c020700ea370852a519301b11c1e34ad0929502ab10209d324d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0006.webp",
+      "sha256": "a5fe023ba506f1183f23e4b13ce607bab0864c76b8368f09a215a09e84e31e7e",
+      "size": 70924,
+      "mimeType": "image/webp",
+      "objectKey": "media/a5/a5fe023ba506f1183f23e4b13ce607bab0864c76b8368f09a215a09e84e31e7e.webp",
+      "url": "https://assets.l4p.site/media/a5/a5fe023ba506f1183f23e4b13ce607bab0864c76b8368f09a215a09e84e31e7e.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0009.webp",
+      "sha256": "c40c7af028dcb9268effd40bf8f1e20605c61b12459837db3e9331b8d7ab9df4",
+      "size": 58586,
+      "mimeType": "image/webp",
+      "objectKey": "media/c4/c40c7af028dcb9268effd40bf8f1e20605c61b12459837db3e9331b8d7ab9df4.webp",
+      "url": "https://assets.l4p.site/media/c4/c40c7af028dcb9268effd40bf8f1e20605c61b12459837db3e9331b8d7ab9df4.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0001.webp",
+      "sha256": "dce70263f3bcc8c15c12815ae863ca021f76322d0abf2b2b3bbc9693494b92e7",
+      "size": 57404,
+      "mimeType": "image/webp",
+      "objectKey": "media/dc/dce70263f3bcc8c15c12815ae863ca021f76322d0abf2b2b3bbc9693494b92e7.webp",
+      "url": "https://assets.l4p.site/media/dc/dce70263f3bcc8c15c12815ae863ca021f76322d0abf2b2b3bbc9693494b92e7.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0002.webp",
+      "sha256": "e7f5a6675045d8861a9fd4a33068f20847a6dd6c6fc6db09d6047975e3e8bf08",
+      "size": 61766,
+      "mimeType": "image/webp",
+      "objectKey": "media/e7/e7f5a6675045d8861a9fd4a33068f20847a6dd6c6fc6db09d6047975e3e8bf08.webp",
+      "url": "https://assets.l4p.site/media/e7/e7f5a6675045d8861a9fd4a33068f20847a6dd6c6fc6db09d6047975e3e8bf08.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1WEuF6YEnS-frame-0004.webp",
+      "sha256": "fe12f8275ed33b9a73cde1310ef22872e04426b4f63af85d824b3eacb67d61fa",
+      "size": 69356,
+      "mimeType": "image/webp",
+      "objectKey": "media/fe/fe12f8275ed33b9a73cde1310ef22872e04426b4f63af85d824b3eacb67d61fa.webp",
+      "url": "https://assets.l4p.site/media/fe/fe12f8275ed33b9a73cde1310ef22872e04426b4f63af85d824b3eacb67d61fa.webp"
+    }
+  ]
+}

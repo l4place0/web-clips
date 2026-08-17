@@ -32,7 +32,7 @@ Jujutsu（jj）是作者采用的具体例子。它会自动快照工作区，�
 
 视频的主线不是模型排行榜，而是工作流的重构：把人脑中的隐式经验转换成 Agent 能理解、能检查、失败后能恢复的系统。作者采用“Leader + sub-agent”分层结构：Leader 负责分析、架构和任务编排，多个执行 Agent 承担查资料、改文件等具体工作。
 
-![关键帧 5](assets/bilibili-BV1QnML6pEZr-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a0/a009ea0641f6770ecbb14a2e39a0b343af39f046d31d59f60cfd3a4e3cf8ef63.webp)
 
 *图：作者设想的分层 Agent 编排。画面是工作流示意，不是产品的真实调度记录，也不能单独证明效果等价或成本更低。*
 
@@ -56,13 +56,13 @@ flowchart TD
 
 视频引用的“Agent 八荣八耻”把可靠执行拆成可操作的对照：查阅而非暗猜、确认而非含糊、复用而非重复创造、测试而非跳过验证、遵循架构而非随意破坏、诚实表达未知而非假装理解。
 
-![关键帧 6](assets/bilibili-BV1QnML6pEZr-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/4d/4d5a0a5ff0dd456cddedc6f28aa866fdf35bcc41428f49f049532a79a257ae14.webp)
 
 *图：视频列出的 Agent 协作自检原则。它是一组规范性建议，并非软件自动执行的安全策略。*
 
 作者进一步把责任拉回人类调度者：不要用“人类幻觉”替代调查；Agent 出错时，先问环境是否缺少清晰指令或顺手工具；上下文膨胀时，把经验压缩成短、准、新的说明，而不是长期堆积旧文档。
 
-![关键帧 7](assets/bilibili-BV1QnML6pEZr-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/b5/b5a9d10f8669f7324a4b6b013a5be5414ad5d3b429302535e26d373c1727da99.webp)
 
 *图：人类侧的三项提醒——主动查证、改善 Agent 友好度、控制上下文膨胀。具体文档和工具仍需按项目设计。*
 
@@ -78,7 +78,7 @@ flowchart TD
 
 作者偏爱 Jujutsu（jj），因为它减少了对暂存区等隐式状态的依赖，并强化了操作追踪。官方文档确认：多数 `jj` 命令会自动快照工作区；operation log 记录修改仓库的操作，可逐步 `undo`、撤销指定操作或恢复旧状态；同一 change 的历史版本也可通过 Change ID 和 evolog 追踪。
 
-![关键帧 8](assets/bilibili-BV1QnML6pEZr-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/d0/d0f343a6848ff125a3ebde3a68862eb6d8c0edba29abef577c2066b2ef4f19b0.webp)
 
 *图：作者对 Git 与 Jujutsu 的简化对比。可见的 `jj new`、`jj undo`、`jj op log` 体现其个人用法，不是完整迁移指南。*
 
@@ -88,7 +88,7 @@ flowchart TD
 
 作者每天使用的 `grilling` 是一种逐问式澄清协议：沿计划的决策树逐个追问，每次只问一个问题；环境中可以查明的事实由 Agent 自己查，真正的决策再交给用户。这些规则可由 Matt Pocock 的原始 `SKILL.md` 直接确认。
 
-![关键帧 9](assets/bilibili-BV1QnML6pEZr-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/70/70c6bcbec28b2c8eaa22f9716644b1639b634159fe7b64a1b5acf1942222267a.webp)
 
 *图：逐问式需求澄清示例。Postgres、行级权限和 JWT 只是画面中的示例建议，不能脱离具体项目照搬。*
 
@@ -229,40 +229,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1QnML6pEZr-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/71/719ddd66e6bec3114e7eff2397a5f74858536a14ef586235b9107401fee5a03b.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1QnML6pEZr-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/7b/7b973f6af237d46d812d159073098c6d26680fa67f26f5ed2c305049e15788f4.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1QnML6pEZr-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/91/91509b036f54f7ebfaa4aeef32127f388475b5e7ca0d751c8f0569cc85ce6576.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1QnML6pEZr-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/eb/eb28cda221479d5163f113a0f29642b29062ee304a278d87a138f3cd2d675517.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1QnML6pEZr-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a0/a009ea0641f6770ecbb14a2e39a0b343af39f046d31d59f60cfd3a4e3cf8ef63.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1QnML6pEZr-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/4d/4d5a0a5ff0dd456cddedc6f28aa866fdf35bcc41428f49f049532a79a257ae14.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1QnML6pEZr-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/b5/b5a9d10f8669f7324a4b6b013a5be5414ad5d3b429302535e26d373c1727da99.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1QnML6pEZr-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/d0/d0f343a6848ff125a3ebde3a68862eb6d8c0edba29abef577c2066b2ef4f19b0.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1QnML6pEZr-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/70/70c6bcbec28b2c8eaa22f9716644b1639b634159fe7b64a1b5acf1942222267a.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1QnML6pEZr-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/b8/b80f2c6b9a45a7bd7c88e73b5f02f743fe80abe84e97fd32695d261f2c742ccd.webp)

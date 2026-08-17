@@ -61,7 +61,7 @@ flowchart TD
 
 帧 3 同时显示 `MISSION.md`、`RESOURCES.md`、`NOTES.md`、`learning-records/`、`lessons/` 与 `reference/`。它说明连续性来自一组职责不同的持久化文件，而不是依赖某个无限增长的对话窗口。
 
-![关键帧 3](assets/bilibili-BV1xK3h6fE7a-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/33/33d9772e3dd510be01856f6f3bd3502b9103b1694b87b6ad63edc0b9fbe27cb5.webp)
 
 | 文件或目录 | 在视频中的作用 | 影响的后续决定 |
 |---|---|---|
@@ -78,7 +78,7 @@ flowchart TD
 
 视频认为 HTML 比 Markdown 更适合富交互课程。帧 4 中，讲解、notation 小节和 “CHECK YOURSELF” 测验位于同一页面，说明课程不仅给信息，也试图让学习者立即作答或操作。
 
-![关键帧 4](assets/bilibili-BV1xK3h6fE7a-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b4/b4676fbbacdb1986d0af5d7340c3e20b4569e3682c9c46936cb1265ab797f164.webp)
 
 **视频内容：** 测验只是反馈环的一种基础形式；更好的反馈来自实际完成技能。魔方案例不是只问“看懂了吗”，而是让学习者报告能否完成白十字、是否能盲做算法等具体表现。
 
@@ -86,7 +86,7 @@ flowchart TD
 
 帧 6 展示学习者在新会话中运行 `/teach`，汇报“基本能复原，但 corner cycle 尚未记牢”；Agent 随即检查既有教学工作区。视频借此说明：清空上下文不会清空学习进度，因为必要状态已经外置。
 
-![关键帧 6](assets/bilibili-BV1xK3h6fE7a-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/ef/ef3c0107b8e1d1f6fe3e5b46b7314442c99969992354f76c7fc4fa2ac417dbb9.webp)
 
 ```mermaid
 flowchart LR
@@ -105,7 +105,7 @@ flowchart LR
 
 帧 8 直接显示 `SKILL.md` 中的 **Knowledge / Skills / Wisdom** 哲学。视频要求知识来自高质量资源，技能通过相关课程和练习发展，而智慧最终需要与其他学习者、实践者和真实环境互动。
 
-![关键帧 8](assets/bilibili-BV1xK3h6fE7a-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/7c/7c844bc318e46f1bc640f714077eeaabbeea18bc29162963281b2283350102a1.webp)
 
 **AI 辅助推断：** 这一划分可用来检查 AI 教学是否“看起来丰富、实际上只在传递文字”：若没有可观察练习，就难以判断技能；若没有情境、后果与共同体反馈，也不应把模型回答包装成实践智慧。
 
@@ -355,40 +355,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1xK3h6fE7a-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/53/5328f502f159f9b7e64acf54f2574fe1675ce489e6614941769811c7f017a663.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1xK3h6fE7a-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/bb/bbcc5afbb7456359e0e460df06d389fc8dd8f32e32228f62f8f81353578e539a.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1xK3h6fE7a-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/33/33d9772e3dd510be01856f6f3bd3502b9103b1694b87b6ad63edc0b9fbe27cb5.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1xK3h6fE7a-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b4/b4676fbbacdb1986d0af5d7340c3e20b4569e3682c9c46936cb1265ab797f164.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1xK3h6fE7a-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/04/043a19e993f117b540fc71915f6f452f093ffc68bd2a22e8ee2854a9a18c3df9.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1xK3h6fE7a-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/ef/ef3c0107b8e1d1f6fe3e5b46b7314442c99969992354f76c7fc4fa2ac417dbb9.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1xK3h6fE7a-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/7d/7d3fa2e791810e946cb39b698c9bf4967d2ffd01e35a862a6225c67bcab8e97a.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1xK3h6fE7a-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/7c/7c844bc318e46f1bc640f714077eeaabbeea18bc29162963281b2283350102a1.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1xK3h6fE7a-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/35/359493aeabf05f314ff1953fc4322d0f551edacf8088f3112a1a34e8cb94e936.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1xK3h6fE7a-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/89/8913cf347a94f28c3a6e7694ce2b098fc4480a16e53e8504e38b10c78ccdfbf7.webp)

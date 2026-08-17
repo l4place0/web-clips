@@ -156,6 +156,30 @@ test("manifest verification reports broken public assets", async (t) => {
   assert.equal(result.failures[0].code, "E_MEDIA_PUBLIC_VERIFY")
 })
 
+test("manifest verification retries transient public failures", async (t) => {
+  const root = await fixture(t)
+  await fs.mkdir(path.join(root, "publishing", "assets"), { recursive: true })
+  await fs.writeFile(path.join(root, "publishing", "assets", `${RID}.json`), JSON.stringify({
+    version: 1,
+    rid: RID,
+    assets: [{ url: "https://assets.l4p.site/media/x.png", size: 1, mimeType: "image/png" }],
+  }))
+  let attempts = 0
+  const result = await verifyMediaManifests(root, {
+    fetchImpl: async () => {
+      attempts += 1
+      if (attempts === 1) throw new TypeError("temporary network failure")
+      return {
+        ok: true,
+        status: 200,
+        headers: new Headers({ "content-length": "1", "content-type": "image/png", "content-disposition": "inline" }),
+      }
+    },
+  })
+  assert.equal(result.ok, true)
+  assert.equal(attempts, 2)
+})
+
 test("batch planning validates all notes before publishing pending notes", async (t) => {
   const root = await fixture(t)
   await fs.writeFile(path.join(root, "clips", "one.md"), `---\nrid: ${RID}\n---\n![](assets/frame.png)\n`)

@@ -71,11 +71,11 @@ flowchart TD
 
 视频从 Claude Code 的 `bypassPermissions` 风险切入：若为了无人值守直接绕过权限确认，Agent 可能读取敏感文件或执行大范围宿主机操作。画面中的官方文档明确把绕过权限与安全风险并列，是理解 Sandcastle 动机最直接的一帧。
 
-![关键帧 1](assets/bilibili-BV1CWgJ69EGE-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/d4/d4a77654762f15b1adacbf174a409a50177cb1d5192f8cd52fa9a59c4f41f1d4.webp)
 
 **视频内容：** Sandcastle 示例通过 Dockerfile 准备 GitHub CLI、Agent 用户及编码 Agent CLI 等运行条件，把任务所需能力装进隔离环境，而不是把整台主机交给模型。
 
-![关键帧 5](assets/bilibili-BV1CWgJ69EGE-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a2/a2094445a30aeee279de8e5f3516c2a2f9a9d6a48054126e8e6934b2c2124312.webp)
 
 沙箱降低的是权限和环境污染风险，不会自动解决网络外传、凭据注入、镜像供应链、资源消耗或生成代码正确性。若工作流需要 GitHub 权限，仍应使用最小权限凭据、限定仓库范围，并为网络、文件系统、CPU、时长和预算设置边界。
 
@@ -83,7 +83,7 @@ flowchart TD
 
 终端日志同时展示 planner 的 Issue 规划和 implementer 的独立执行，使任务不再只存在于一段聊天上下文里。
 
-![关键帧 6](assets/bilibili-BV1CWgJ69EGE-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/f5/f5213d24a9158809fc6a04e01089334882a3f44010890cac1f6728f2d57f20d6.webp)
 
 **外部核验补充：** 官方 README 确认 GitHub Issues 是可选 tracker，planner 示例可读取开放任务；这支持“用 Issue 作为 AFK backlog”的能力，但不保证每次规划都能识别真实依赖或正确判断阻塞关系。[Sandcastle 官方 README](https://github.com/mattpocock/sandcastle#templates)
 
@@ -93,13 +93,13 @@ flowchart TD
 
 `main.mts` 画面显示 `Promise.allSettled`、`sandbox.run`、根据提交数量启动 reviewer，以及最终汇总实现/复审提交。这是本视频最能说明架构的一帧。
 
-![关键帧 7](assets/bilibili-BV1CWgJ69EGE-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/7e/7e1f5956adbe06f723973ee78387ebffdc7fed49ba8c645382429cf528d2d276.webp)
 
 **视频内容：** implementer 可能犯错，因此作者让 reviewer 读取 diff、检查正确性和维护性，并允许写入项目编码标准；merger 再接收分支与 Issue 信息，解决冲突并运行检查。官方模板源码确认这三个阶段存在，但“换一个角色”不等于自动获得独立判断：若 reviewer 继承了 implementer 的全部假设、使用相同薄弱测试或没有否决权，复审仍可能只是重复确认。[官方 main.mts 模板](https://github.com/mattpocock/sandcastle/blob/main/src/templates/parallel-planner-with-review/main.mts)
 
 最终日志显示该次演示完成了分支合并、类型检查、测试与 Issue 关闭。
 
-![关键帧 8](assets/bilibili-BV1CWgJ69EGE-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/cd/cd28c3dfd85e90cd556faa61dba47e46ec527e3509f49d510ba1cd2a2f6e81f4.webp)
 
 这只能证明录制中的一次运行轨迹。类型检查和测试是必要证据，但覆盖范围之外的架构退化、需求误解和安全问题仍可能存在。较稳妥的做法是按风险决定是否自动合并：局部、可回滚且验收清晰的任务可提高自治；公共 API、认证、计费、迁移与大范围架构变更则应保留人工闸口。
 
@@ -1312,43 +1312,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1CWgJ69EGE-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/d4/d4a77654762f15b1adacbf174a409a50177cb1d5192f8cd52fa9a59c4f41f1d4.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1CWgJ69EGE-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/0f/0f4c81f945f4f76c2a9c90461d66600552d76b9147ce05446818aa7d0a5a227d.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1CWgJ69EGE-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/e0/e08f7036487c082e56dc096e792d990d99389ad75e8db8d03a9d83da2b18626f.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1CWgJ69EGE-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/ff/ffa84a476ac37817a9d9054ea8e3e439dc124026142aaa13bbd60550ac5301e1.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1CWgJ69EGE-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a2/a2094445a30aeee279de8e5f3516c2a2f9a9d6a48054126e8e6934b2c2124312.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1CWgJ69EGE-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/f5/f5213d24a9158809fc6a04e01089334882a3f44010890cac1f6728f2d57f20d6.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1CWgJ69EGE-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/7e/7e1f5956adbe06f723973ee78387ebffdc7fed49ba8c645382429cf528d2d276.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1CWgJ69EGE-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/cd/cd28c3dfd85e90cd556faa61dba47e46ec527e3509f49d510ba1cd2a2f6e81f4.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1CWgJ69EGE-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ee/eee7c1402299620c68dbaa5b5468c1049c037ac702c0010a232cd950081f17ac.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1CWgJ69EGE-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/4d/4d9c3cce97362197face3e215b13d0f85cb7636141d5b0c69d1a7dcebf254fce.webp)
 
 ## 补充原始数据
 

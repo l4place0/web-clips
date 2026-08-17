@@ -53,17 +53,17 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/57ec7a52-5ae6-4237-b
 
 “Codex 问了 200 个问题”适合作为诊断信号：先检查问题是否需要更高保真度、范围是否过大、以及人是否还在引导会话。不要用强行限制次数来替代判断。
 
-![关键帧 1](assets/bilibili-BV1zn396mEfz-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/99/9950ff148f485b0fd155b2f02e6f9b46deec6437744bf8f73e11d28b1d5a6d16.webp)
 
 ### 低保真可讨论，高保真应获取证据
 
 低保真问题可以通过问答、已有约束、代码阅读或命名决策来收敛；高保真问题则依赖原型、实际构建、试用或可观察的行为。后者在纯文本会话里继续追问，常只会得到看似合理但缺乏证据的答案。
 
-![关键帧 5](assets/bilibili-BV1zn396mEfz-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/10/10f2e67bcf87386b5ec751b2fc2dec2b9fe31548d95e5ede2fe637c9a438334d.webp)
 
 skill 文档中“一次问一个问题”与“可由 codebase 回答时先探索 codebase”的原则，正是为了避免把查证工作伪装成访谈。它让问题在进入人的注意力前，先经过已有代码和文档的过滤。
 
-![关键帧 2](assets/bilibili-BV1zn396mEfz-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/24/2414dcef1671e11325857642965a4b544cac72afacf90fc960842994de858e20.webp)
 
 ### 高低保真到实现的交接回路
 
@@ -91,15 +91,15 @@ flowchart TD
 
 被动的一端是让 Agent 自行扩张访谈，最后用大量问题替代计划；过度主动的一端是持续争论本该通过构建验证的高保真问题。好的控制动作是明确指出目标、范围与下一次必须获得的证据，并在必要时切换到原型或实现。
 
-![关键帧 7](assets/bilibili-BV1zn396mEfz-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/67/674b5817058710ab62512760eadecc2bced20b9dace87789cf59d8816d915545.webp)
 
-![关键帧 9](assets/bilibili-BV1zn396mEfz-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/8d/8d78faa3f3fbc13421c1bf070b50b01b289913a962c00d10320c3c9be18433b8.webp)
 
 ### 参数知识与上下文知识：用于分析，不是简化分工
 
 视频把文件、提示和工具返回称为 contextual knowledge，把训练中获得的通用理解称为 parametric knowledge。这个区分有助于问两个问题：当前决定缺的是仓库/工具证据，还是需要一个能提出陌生假设的模型？但二者会相互作用；上下文可能不完整或冲突，参数知识也可能不稳定。
 
-![关键帧 8](assets/bilibili-BV1zn396mEfz-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/2f/2fe8bebc84326c8936b0e45c370d41bee1a9d354993eb92ef238e7005df01730.webp)
 
 讲者进一步主张规划阶段可用更强模型、实施阶段可用较弱模型。这应被当作待测试的工作流假设：为特定仓库设定样例，比较计划可执行性、遗漏、返工、测试通过率和成本，而不是只按“规划/实现”或参数规模二分。
 
@@ -523,40 +523,40 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1zn396mEfz-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/99/9950ff148f485b0fd155b2f02e6f9b46deec6437744bf8f73e11d28b1d5a6d16.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1zn396mEfz-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/24/2414dcef1671e11325857642965a4b544cac72afacf90fc960842994de858e20.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1zn396mEfz-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/6b/6b1ef7a4718a2bacf85ea3db4977d8d7be127e880b41ff74989976e4286fa8ed.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1zn396mEfz-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/7f/7fd3a2f6f9f278a76019671f1199a9d1cc059b7319294575dac2750850eb7b96.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1zn396mEfz-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/10/10f2e67bcf87386b5ec751b2fc2dec2b9fe31548d95e5ede2fe637c9a438334d.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1zn396mEfz-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7f/7f9430ad6c2196600430c49dc529b535f932175d34ae0ec64a43df79c07d4c6d.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1zn396mEfz-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/67/674b5817058710ab62512760eadecc2bced20b9dace87789cf59d8816d915545.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1zn396mEfz-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/2f/2fe8bebc84326c8936b0e45c370d41bee1a9d354993eb92ef238e7005df01730.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1zn396mEfz-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/8d/8d78faa3f3fbc13421c1bf070b50b01b289913a962c00d10320c3c9be18433b8.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1zn396mEfz-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/3f/3f997f180c30cc9f7cd247e2fa361e4befef69c79be5e743d6861ba815188d88.webp)

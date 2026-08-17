@@ -83,11 +83,11 @@ webClipUrl: "https://l4place0.github.io/web-clips-publish/r/d57e32f3-1d0a-4a1d-b
 
 通用模型接到任务时，通常只看到当前提示和被暴露的工具。它看不到你过去验证过哪些软件可用、哪些配置踩过坑、哪些结果需要二次校验，也不知道你的成本、时延和容错标准。即便它能工具调用，也仍需在多个不确定分支中选择。
 
-![关键帧 1](assets/bilibili-BV1Wf3d68EhN-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/8b/8bdc4b66f19324c004ca7aac711535373ca7a547cf091d1f27b95c5c85e7bd6a.webp)
 
 案例中的关键不是“有没有电脑里的软件”，而是是否把已验证的工具、条件与目标装进当前上下文。视频自报的耗时或正确性差异因缺乏复现材料而处于未验证状态，但作为控制变量的思路是有用的：比较时应固定模型、机器、工具可见性和验收标准，只改变流程约束。
 
-![关键帧 2](assets/bilibili-BV1Wf3d68EhN-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/41/4135b0e0ca4205b2297bccba56269beb5c0c4c39e4867f8bde5f0793834ab526.webp)
 
 ```mermaid
 flowchart TD
@@ -112,27 +112,27 @@ flowchart TD
 - **验证**：需要检查哪些边界样例、被排除对象、计数不变量或交叉结果。
 - **反馈**：异常、失败原因和复现样例如何回流到 benchmark 与 skill。
 
-![关键帧 5](assets/bilibili-BV1Wf3d68EhN-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/17/17e0f21c673adafd2cc454c841f776cdb713f847cd469e07c14ef36c25283923.webp)
 
 视频中关于 Wolfram MCP 的画面有助于理解“工具可用性需要被明确暴露”。但不要把特定工具名称等同于普遍性能保证：WolframScript 与 Wolfram MCP 的存在得到确认，具体哪个路径更快、更准仍需在自己的基准上测量。
 
-![关键帧 4](assets/bilibili-BV1Wf3d68EhN-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/8a/8a089d2ff2f1ba0550ee186ffff7687d9032779e07cbc6f69252aa6676aaeb0f.webp)
 
 ### 3. 为什么封装会提高可靠性
 
 封装不是为了让模型少思考，而是把已经被人或系统充分验证的子问题变成稳定接口。模型要自行处理的条件、分支、并行拆分和中间验证越多，单步误差就越多；早期错误又会成为后续上下文，形成累积风险。
 
-![关键帧 8](assets/bilibili-BV1Wf3d68EhN-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/1c/1c304c4c7505f823ac6c0f1211dd58c4a48cb7a89ef2016a828596e4cb1d32ce.webp)
 
 在视频数论示例中，可先利用确定的奇偶性规则排掉一半候选，再用专用素性判定函数处理其余项。这里已确认的部分是：正奇数 N 会使 N^11 + 5 成为大于 2 的偶数；PrimeQ 的素性判定用途也有文档支持。没有得到确认的是 PrimeQ 的具体内部算法如何按整数类型路由，因此不应据此设计依赖其实现细节的流程。
 
-![关键帧 9](assets/bilibili-BV1Wf3d68EhN-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/01/0190d53909b5e87340d908d28079f3fa0a7f26eb00d6f61dcb1140be191b3871.webp)
 
 ### 4. 个人 benchmark：让经验可测量、可迭代
 
 个人化不是给通用模型加更多说明，而是把真实工作中的失败变成可反复执行的评测。每一个 benchmark 例子都应能回答：输入是什么、正确输出是什么、在哪个环境运行、怎样判定失败、这次改动是否降低了成本或提高了成功率。
 
-![关键帧 10](assets/bilibili-BV1Wf3d68EhN-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/14/145b37be7d51b4f67a0821448d253abb3c6884053d51628d0f55370759aa80de.webp)
 
 ```mermaid
 flowchart LR
@@ -1104,40 +1104,40 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1Wf3d68EhN-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/8b/8bdc4b66f19324c004ca7aac711535373ca7a547cf091d1f27b95c5c85e7bd6a.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1Wf3d68EhN-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/41/4135b0e0ca4205b2297bccba56269beb5c0c4c39e4867f8bde5f0793834ab526.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1Wf3d68EhN-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/79/79d12772cf9ca55301dba5b120db78460cfdf20f3de7579b3cbb944dbef40b9d.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1Wf3d68EhN-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/8a/8a089d2ff2f1ba0550ee186ffff7687d9032779e07cbc6f69252aa6676aaeb0f.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1Wf3d68EhN-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/17/17e0f21c673adafd2cc454c841f776cdb713f847cd469e07c14ef36c25283923.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1Wf3d68EhN-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/65/654fe1d01a84f212f9cb8c941ba321f7e67d870fac569287be7bb0ba9db0a141.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1Wf3d68EhN-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/15/152e18b153f1958a925cd4c791e76cb006772dd4034ac5822a3b4e25446c49cc.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1Wf3d68EhN-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/1c/1c304c4c7505f823ac6c0f1211dd58c4a48cb7a89ef2016a828596e4cb1d32ce.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1Wf3d68EhN-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/01/0190d53909b5e87340d908d28079f3fa0a7f26eb00d6f61dcb1140be191b3871.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1Wf3d68EhN-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/14/145b37be7d51b4f67a0821448d253abb3c6884053d51628d0f55370759aa80de.webp)

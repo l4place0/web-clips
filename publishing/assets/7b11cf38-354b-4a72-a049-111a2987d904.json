@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "rid": "7b11cf38-354b-4a72-a049-111a2987d904",
+  "note": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+  "publishedAt": "2026-08-17T13:58:30.715Z",
+  "assets": [
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0002.webp",
+      "sha256": "0f4c81f945f4f76c2a9c90461d66600552d76b9147ce05446818aa7d0a5a227d",
+      "size": 80696,
+      "mimeType": "image/webp",
+      "objectKey": "media/0f/0f4c81f945f4f76c2a9c90461d66600552d76b9147ce05446818aa7d0a5a227d.webp",
+      "url": "https://assets.l4p.site/media/0f/0f4c81f945f4f76c2a9c90461d66600552d76b9147ce05446818aa7d0a5a227d.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0010.webp",
+      "sha256": "4d9c3cce97362197face3e215b13d0f85cb7636141d5b0c69d1a7dcebf254fce",
+      "size": 62474,
+      "mimeType": "image/webp",
+      "objectKey": "media/4d/4d9c3cce97362197face3e215b13d0f85cb7636141d5b0c69d1a7dcebf254fce.webp",
+      "url": "https://assets.l4p.site/media/4d/4d9c3cce97362197face3e215b13d0f85cb7636141d5b0c69d1a7dcebf254fce.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0007.webp",
+      "sha256": "7e1f5956adbe06f723973ee78387ebffdc7fed49ba8c645382429cf528d2d276",
+      "size": 84308,
+      "mimeType": "image/webp",
+      "objectKey": "media/7e/7e1f5956adbe06f723973ee78387ebffdc7fed49ba8c645382429cf528d2d276.webp",
+      "url": "https://assets.l4p.site/media/7e/7e1f5956adbe06f723973ee78387ebffdc7fed49ba8c645382429cf528d2d276.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0005.webp",
+      "sha256": "a2094445a30aeee279de8e5f3516c2a2f9a9d6a48054126e8e6934b2c2124312",
+      "size": 78934,
+      "mimeType": "image/webp",
+      "objectKey": "media/a2/a2094445a30aeee279de8e5f3516c2a2f9a9d6a48054126e8e6934b2c2124312.webp",
+      "url": "https://assets.l4p.site/media/a2/a2094445a30aeee279de8e5f3516c2a2f9a9d6a48054126e8e6934b2c2124312.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0008.webp",
+      "sha256": "cd28c3dfd85e90cd556faa61dba47e46ec527e3509f49d510ba1cd2a2f6e81f4",
+      "size": 83376,
+      "mimeType": "image/webp",
+      "objectKey": "media/cd/cd28c3dfd85e90cd556faa61dba47e46ec527e3509f49d510ba1cd2a2f6e81f4.webp",
+      "url": "https://assets.l4p.site/media/cd/cd28c3dfd85e90cd556faa61dba47e46ec527e3509f49d510ba1cd2a2f6e81f4.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0001.webp",
+      "sha256": "d4a77654762f15b1adacbf174a409a50177cb1d5192f8cd52fa9a59c4f41f1d4",
+      "size": 81082,
+      "mimeType": "image/webp",
+      "objectKey": "media/d4/d4a77654762f15b1adacbf174a409a50177cb1d5192f8cd52fa9a59c4f41f1d4.webp",
+      "url": "https://assets.l4p.site/media/d4/d4a77654762f15b1adacbf174a409a50177cb1d5192f8cd52fa9a59c4f41f1d4.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0003.webp",
+      "sha256": "e08f7036487c082e56dc096e792d990d99389ad75e8db8d03a9d83da2b18626f",
+      "size": 59678,
+      "mimeType": "image/webp",
+      "objectKey": "media/e0/e08f7036487c082e56dc096e792d990d99389ad75e8db8d03a9d83da2b18626f.webp",
+      "url": "https://assets.l4p.site/media/e0/e08f7036487c082e56dc096e792d990d99389ad75e8db8d03a9d83da2b18626f.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0009.webp",
+      "sha256": "eee7c1402299620c68dbaa5b5468c1049c037ac702c0010a232cd950081f17ac",
+      "size": 59900,
+      "mimeType": "image/webp",
+      "objectKey": "media/ee/eee7c1402299620c68dbaa5b5468c1049c037ac702c0010a232cd950081f17ac.webp",
+      "url": "https://assets.l4p.site/media/ee/eee7c1402299620c68dbaa5b5468c1049c037ac702c0010a232cd950081f17ac.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0006.webp",
+      "sha256": "f5213d24a9158809fc6a04e01089334882a3f44010890cac1f6728f2d57f20d6",
+      "size": 80162,
+      "mimeType": "image/webp",
+      "objectKey": "media/f5/f5213d24a9158809fc6a04e01089334882a3f44010890cac1f6728f2d57f20d6.webp",
+      "url": "https://assets.l4p.site/media/f5/f5213d24a9158809fc6a04e01089334882a3f44010890cac1f6728f2d57f20d6.webp"
+    },
+    {
+      "sourcePath": "clips/assets/bilibili-BV1CWgJ69EGE-frame-0004.webp",
+      "sha256": "ffa84a476ac37817a9d9054ea8e3e439dc124026142aaa13bbd60550ac5301e1",
+      "size": 61636,
+      "mimeType": "image/webp",
+      "objectKey": "media/ff/ffa84a476ac37817a9d9054ea8e3e439dc124026142aaa13bbd60550ac5301e1.webp",
+      "url": "https://assets.l4p.site/media/ff/ffa84a476ac37817a9d9054ea8e3e439dc124026142aaa13bbd60550ac5301e1.webp"
+    }
+  ]
+}
