@@ -22,12 +22,8 @@ node_modules/
 .obsidian/plugins/obsidian-git/*
 !.obsidian/plugins/obsidian-git/data.json
 
-# Codex repo-local skills and configuration
-.codex/*
-!.codex/skills/
-.codex/skills/*
-!.codex/skills/publish-media-assets/
-!.codex/skills/publish-media-assets/**
+# Codex machine-local configuration and skills
+.codex/
 
 # Machine-local agent state
 .belt/
@@ -37,17 +33,6 @@ node_modules/
 .video-sum-cache/
 .video-sum-work/
 .video-sum-temp/
-
-# Local publishing staging
-.publish-stage/
-.publish-stage.tmp-*/
-.publish-stage.backup-*/
-.site-work.tmp-*/
-.publish-repo-work/
-site/
-publishing/.publish-transaction.json
-publishing/*.tmp-*
-publishing/*.backup-*
 
 # Build, test, and deployment output
 dist/
@@ -60,7 +45,7 @@ coverage/
 public.tmp-*/
 public.backup-*/
 
-# Local media publish state (manifests remain tracked under publishing/assets/)
+# Local media cache and user-level publish state
 clips/assets/
 .media-publish/
 .media-publish.tmp-*/
