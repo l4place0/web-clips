@@ -1,0 +1,43 @@
+name: Normalize content metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "clips/**/*.md"
+      - ".github/scripts/sync-content-metadata.mjs"
+      - ".github/workflows/content-metadata.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: web-clips-content-metadata
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.14.1
+      - name: Normalize stable content metadata
+        run: node .github/scripts/sync-content-metadata.mjs
+      - name: Commit generated metadata
+        shell: bash
+        run: |
+          if git diff --quiet -- clips; then
+            echo "No metadata changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- clips
+          git commit -m "chore(content): normalize metadata [skip ci]"
+          git push

@@ -62,6 +62,7 @@ public.backup-*/
 
 # Local media publish state (manifests remain tracked under publishing/assets/)
 clips/assets/
+.media-publish/
 .media-publish.tmp-*/
 .uv-skill-cache/
 

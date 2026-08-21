@@ -1,4 +1,7 @@
 {
   "attachmentFolderPath": "clips/assets",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "node_modules/"
+  ]
 }

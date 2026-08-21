@@ -1,7 +1,8 @@
 # Web Clips 内容库
 
-公开的 Markdown 剪藏内容仓库。轻文档和发布元数据保存在 GitHub；重媒体发布到阿里云
-OSS；展示站代码位于独立仓库
+公开的 Markdown 剪藏内容仓库。本地 Vault 只承担文档编辑与 Git 同步；重媒体发布到阿里云
+OSS，内容校验、派生元数据和站点构建均由 GitHub Actions 或独立发布仓库负责。展示站代码位于
+独立仓库
 [`l4place0/web-clips-publish`](https://github.com/l4place0/web-clips-publish)。
 
 - 内容根：`clips/`
@@ -12,11 +13,12 @@ OSS；展示站代码位于独立仓库
 本地仍然只维护这一套文档库。`clips/assets/` 是已加入 `.gitignore` 的工作缓存，不由 Git
 跟踪，也不会被发布工具自动删除；公开 Markdown 只引用已经发布的 HTTPS 媒体 URL。
 
-## 内容发布链路
+## 内容同步与发布链路
 
 ```text
 Obsidian 保存
-→ Obsidian Git 频繁提交和推送内容仓库
+→ Obsidian Git 直接提交和推送 Markdown
+→ 本仓库 Actions 为缺失的 `rid`、`permalink`、`webClipUrl` 补充稳定元数据
 → web-clips-publish 每 30 分钟检查内容 main SHA
 → SHA 变化时固定 checkout 该提交
 → 校验、构建并部署 GitHub Pages
@@ -31,50 +33,25 @@ Obsidian 保存
 https://l4place0.github.io/web-clips-publish/r/<rid>
 ```
 
-## 内容校验
+## 内容元数据
 
-首次克隆后配置 Git hooks：
+本地不再安装 Node 依赖，也不运行 Git hooks。`.github/workflows/content-metadata.yml` 在内容推送后：
 
-```powershell
-git config core.hooksPath .githooks
-```
+1. 为缺失的公开笔记生成 UUID v4 `rid`；
+2. 根据 `rid` 幂等更新 `permalink` 和 `webClipUrl`；
+3. 检查 `rid` 格式与唯一性；
+4. 仅在元数据发生变化时创建一次机器人提交。
 
-常用命令：
-
-```powershell
-npm.cmd run publish:prepare
-npm.cmd run publish:annotate-urls
-npm.cmd run publish:validate
-npm.cmd run publish:dry-run
-npm.cmd test
-```
-
-`prepare` 显式分配缺失 RID；普通校验和构建不会隐式改变文档身份。
+已有 `rid` 不会因标题、路径或正文变化而改变。`publish: false` 的笔记不参与该流程。
 
 ## 媒体发布
 
-`publish-media-assets` Skill 编排同名 CLI。CLI 支持 Markdown 图片、Obsidian 图片嵌入、
-HTML `img` 和 frontmatter `cover`，并以 SHA-256 生成不可变对象键。
-
-检查和预览：
-
-```powershell
-npm.cmd run media -- check "clips/笔记.md"
-npm.cmd run media -- publish "clips/笔记.md" --dry-run
-npm.cmd run media -- publish --all --dry-run
-```
-
-执行发布并验证：
-
-```powershell
-npm.cmd run media -- publish "clips/笔记.md"
-npm.cmd run media -- publish --all
-npm.cmd run media -- status "clips/笔记.md"
-npm.cmd run media:verify
-```
+`publish-media-assets` 是用户级 Codex Skill，不属于 Vault 仓库。它读取被 Git 忽略的
+`clips/assets/`，上传并验证 OSS 对象，再把 Markdown 中的本地引用原子改写为公开 HTTPS URL。
+本地媒体清单保存在被忽略的 `.media-publish/`，不会进入内容 Git 历史。
 
 发布顺序固定为：扫描、路径校验、哈希、OSS 存在性检查、上传或复用、单对象
-`public-read`、公网 HTTPS 校验、原子改写 Markdown 与 `publishing/assets/<rid>.json`。
+`public-read`、公网 HTTPS 校验、原子改写 Markdown 与本地媒体清单。
 任何上传或公网验证错误都不会改写本地文档。
 
 CLI 优先使用 `OSS_ACCESS_KEY_ID` 和 `OSS_ACCESS_KEY_SECRET`；未设置时复用本机已经登录的
@@ -82,11 +59,7 @@ CLI 优先使用 `OSS_ACCESS_KEY_ID` 和 `OSS_ACCESS_KEY_SECRET`；未设置时�
 
 ## 仓库边界
 
-本仓库不包含站点主题、Quartz 或 Pages 部署代码；生产展示完全由
+本仓库不包含发布 CLI、站点主题、Quartz 或 Pages 部署代码；生产展示与完整内容校验由
 [`web-clips-publish`](https://github.com/l4place0/web-clips-publish) 构建和部署。
 
-详细契约：
-
-- [发布身份与内容边界](publishing/contract.md)
-- [双仓库与媒体架构](publishing/architecture-v2.md)
-- [媒体机器配置](publishing/media.config.json)
+本地 Git 同步不依赖 Node、npm、OSS 凭据或发布服务可用性。
