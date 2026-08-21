@@ -22,8 +22,13 @@ node_modules/
 .obsidian/plugins/obsidian-git/*
 !.obsidian/plugins/obsidian-git/data.json
 
-# Codex machine-local configuration and skills
-.codex/
+# Codex machine-local configuration; keep only the Vault-specific media Skill
+.codex/*
+!.codex/skills/
+.codex/skills/*
+!.codex/skills/publish-media-assets/
+!.codex/skills/publish-media-assets/**
+.codex/skills/publish-media-assets/node_modules/
 
 # Machine-local agent state
 .belt/

@@ -1,0 +1,13 @@
+{
+  "name": "publish-media-assets-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "ali-oss": "^6.23.0"
+  },
+  "engines": {
+    "node": "24.14.x",
+    "npm": ">=11"
+  }
+}

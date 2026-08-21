@@ -35,7 +35,7 @@ https://l4place0.github.io/web-clips-publish/r/<rid>
 
 ## 内容元数据
 
-本地不再安装 Node 依赖，也不运行 Git hooks。`.github/workflows/content-metadata.yml` 在内容推送后：
+内容同步不再使用仓库根级 Node 依赖，也不运行 Git hooks。`.github/workflows/content-metadata.yml` 在内容推送后：
 
 1. 为缺失的公开笔记生成 UUID v4 `rid`；
 2. 根据 `rid` 幂等更新 `permalink` 和 `webClipUrl`；
@@ -46,9 +46,13 @@ https://l4place0.github.io/web-clips-publish/r/<rid>
 
 ## 媒体发布
 
-`publish-media-assets` 是用户级 Codex Skill，不属于 Vault 仓库。它读取被 Git 忽略的
-`clips/assets/`，上传并验证 OSS 对象，再把 Markdown 中的本地引用原子改写为公开 HTTPS URL。
-本地媒体清单保存在被忽略的 `.media-publish/`，不会进入内容 Git 历史。
+`publish-media-assets` 是当前 Vault 专用的仓库级 Codex Skill，位于
+`.codex/skills/publish-media-assets/`。它读取被 Git 忽略的 `clips/assets/`，上传并验证 OSS
+对象，再把 Markdown 中的本地引用原子改写为公开 HTTPS URL。本地媒体清单保存在被忽略的
+`.media-publish/`，不会进入内容 Git 历史。
+
+该 Skill 自带独立的 `package.json`，依赖只安装在 Skill 目录且 `node_modules/` 不进入 Git。
+它不会被任何 Git hook 调用；即使媒体运行时未安装或 OSS 不可用，Obsidian Git 仍只同步文档。
 
 发布顺序固定为：扫描、路径校验、哈希、OSS 存在性检查、上传或复用、单对象
 `public-read`、公网 HTTPS 校验、原子改写 Markdown 与本地媒体清单。
