@@ -6,6 +6,9 @@ video_id: "BV139bD6gEa8"
 uploader: "技术爬爬虾"
 duration_seconds: 2678
 tags: ["科技", "AI", "计算机", "教程", "编程", "Claude Code", "Pi", "GitHub", "Agent", "Codex"]
+rid: 60bdf6a9-d4dc-4ca9-9278-e9f582108c0c
+permalink: /r/60bdf6a9-d4dc-4ca9-9278-e9f582108c0c
+webClipUrl: https://l4place0.github.io/web-clips-publish/r/60bdf6a9-d4dc-4ca9-9278-e9f582108c0c
 ---
 
 # 总结稿
