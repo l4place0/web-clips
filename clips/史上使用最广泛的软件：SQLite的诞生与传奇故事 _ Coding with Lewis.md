@@ -89,7 +89,7 @@ flowchart LR
 
 这不是“SQLite 在军舰上取代 Informix”的证据。SQLite 后来在该项目中主要用于开发/测试，正式客户仍坚持原系统。所谓政府停摆也只应写成 Hipp 回忆中的 funding hiatus；另一份原采访只说客户没有批准方案，他几个月后用自己的时间开始写，首个代码在 2000-05-29 check-in。
 
-![关键帧 2](assets/bilibili-BV19URKBLEUj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/33/33fbe0e92d5885f6e5d7508d0d46b631ebd0c02c205019c41aa751cc7ee001cb.webp)
 
 frame 2 只呈现“为什么不能直接从磁盘读”的问题句，是叙事入口，不是架构图或历史证据。
 
@@ -132,7 +132,7 @@ flowchart TD
 
 SQLite 官方列举 Android、iOS、Mac、Windows 10/11、Firefox、Chrome、Safari 等场景；Android 还有 AOSP `platform/external/sqlite` 和 API level 1 起的 SQLiteDatabase 作为独立一手证据。[Android AOSP SQLite](https://android.googlesource.com/platform/external/sqlite.git/)、[Android API](https://developer.android.com/reference/android/database/sqlite/package-summary)
 
-![关键帧 5](assets/bilibili-BV19URKBLEUj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/7c/7ccb770e8a6ec12d5efe8d71f784257a959f3e5354b6b5824fcd55db14c96f33.webp)
 
 frame 5 是视频内移动市场背景图，没有可见数据来源，不能据此计算 SQLite 份额或一万亿部署。
 
@@ -193,7 +193,7 @@ flowchart TD
 
 所以准确标签是 **open-source, not open-contribution**，不是“闭源”，也不是“绝不接受外部代码”。公共领域还不自动覆盖专有扩展、TH3、部分构建脚本、商标或某些司法辖区问题；需要法律凭证的组织可购买 Warranty of Title。
 
-![关键帧 6](assets/bilibili-BV19URKBLEUj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/b8/b8d8c460a22d3f4174818f3a96a159fa8e22f03a431ffa46465a35d3ada502f3.webp)
 
 frame 6 显示视频中的 Joe Mistachkin 人物卡，只能说明叙事对象。旧官方 crew 页面曾列 Richard Hipp、Dan Kennedy、Joe Mistachkin；[当前 crew 页面](https://www.sqlite.org/crew.html)已撤下名单，只称团队分布于三个大洲，因此“2026 年恰好三个人维护”未获当前官方确认。
 
@@ -902,43 +902,43 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV19URKBLEUj-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/45/4578264fd12b5da4083f070ac2745247240d185a5f597c9c698bb87e5b4cf96c.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV19URKBLEUj-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/33/33fbe0e92d5885f6e5d7508d0d46b631ebd0c02c205019c41aa751cc7ee001cb.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV19URKBLEUj-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/05/059a5325f8c7dd9a8ca3e5a2d0f1b073cb98004494addd17e9df3cd8869e927e.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV19URKBLEUj-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/99/9920c11479d432849164cfa59124057948865932f4ae674cbe9590dd3dc56f1a.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV19URKBLEUj-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/7c/7ccb770e8a6ec12d5efe8d71f784257a959f3e5354b6b5824fcd55db14c96f33.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV19URKBLEUj-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/b8/b8d8c460a22d3f4174818f3a96a159fa8e22f03a431ffa46465a35d3ada502f3.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV19URKBLEUj-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/2e/2e872158bd70bdb9718946699b0ae3e9e55063a3f92042fb66de1badfed1ba39.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV19URKBLEUj-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/a5/a56bc3976569ce3bbbe7d20fb1f35ef678ccb3122253ba12dd7ca1e70768f860.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV19URKBLEUj-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/fa/fa14b35d063af17570996d8c780661924614990639137aaf5b82f85c44f7d2f5.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV19URKBLEUj-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/51/516cea82cbd8e8adbdd43c38e3d7d1905a3e7f04db531ab9a6df100ad3cc95ef.webp)
 
 ## 补充原始数据
 

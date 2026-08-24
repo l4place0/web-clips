@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/082b60a2-9ac4-4d52-bd
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV1er3Z6SEko-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/2d/2db33f5d3ffb6075f2536ae13be983f3607ebca6bd6fdcf86c1ff4c89b0d4c42.png)
 [打开单页 HTML 总结](assets/bilibili-BV1er3Z6SEko-summary.html)
 
 ## 核心结论
@@ -85,7 +85,7 @@ flowchart LR
 
 这张图中的 AI 是加速器，而不是学习闭环的拥有者。只让 AI 从问题一路生成结果，可能得到短期可用的原型，却让使用者失去中间各环节的可解释性。
 
-![关键帧 7](assets/bilibili-BV1er3Z6SEko-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/23/23511b242ef59a3756f42e55911bb8c7bfb92f8cfaf482737fcf7786c6b760b7.webp)
 
 入选画面里的代码报错和 “1 error” 把 Piech 的理由具体化：代码训练有一种稀缺特性——**逻辑错了，程序通常会以可观察方式失败**。这种快速、可证伪的反馈，使人能在较短周期里反复练习判断。它支持的是一种教育理由，而不是“编程是唯一能教问题解决的学科”这一排他结论。
 
@@ -124,7 +124,7 @@ flowchart BT
     X[跳过基础] -. 难以解释与纠错 .-> A
 ```
 
-![关键帧 8](assets/bilibili-BV1er3Z6SEko-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/b2/b2b471640803395a8a4464487baa1857013ad21e97e07961c7519b92097028ea.webp)
 
 “下一代会比我们更聪明”是 Piech 明确提出的价值公理，不是实验结论。它的作用是确定教育目标：既然不放弃下一代的认知成长，就要重新设计基础训练，而不是因工具能完成操作便取消训练。
 
@@ -171,7 +171,7 @@ sequenceDiagram
 
 Piech 在视频中还称，学生接受约十分钟真人教师即时会话后，课程完成概率提高 **10 个百分点**。公开材料确认 Teach Now 参与者更可能完成课程，却没有公开足以复核这 10 个百分点的样本量、置信区间和分配方法；参与会话也可能存在自选择。因此它应写成**讲者报告的内部分析结果**，而不能写成“十分钟真人辅导必然导致完成率提高”的已证实因果规律。
 
-![关键帧 5](assets/bilibili-BV1er3Z6SEko-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/b8/b88153cff8904a10a5324319f07a914a38315240c9845c0912596deecbf5a50c.webp)
 
 这也解释了视频所谓“动机危机”：面对 2026 年的 AI，学生需要为 2030 年的就业作准备，却无法可靠预测四年后的岗位。Piech 对这种不确定性的观察是个人教学经验，视频没有给出总体比例或长期趋势数据。
 
@@ -205,7 +205,7 @@ stateDiagram-v2
 - **在真实使用中迭代**：高级工程能力越来越体现在把现实问题映射到应用、数据与研究。
 - **每天检查成长所有权**：如果无法解释、修改或承担结果，就说明外包超过了当前理解。
 
-![关键帧 10](assets/bilibili-BV1er3Z6SEko-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/8f/8f23c16e1685a1edb199419f02754ca5fa56aa21bd67f576c8d896150f7f3a6d.webp)
 
 “AI 放大人类”是 Piech 的收束性愿景。这里的“放大”有前提：医生的关怀、教师的责任、工程师的判断必须先存在，工具才可能扩大这些能力。视频对医疗速度与准确性的例子属于预测和价值表达，不应当作已验证的医疗效果。
 
@@ -883,43 +883,43 @@ stateDiagram-v2
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1er3Z6SEko-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/9d/9d6aae7856a104e79a91850a67dcdc43924b6b3992934a22b4893cc99cd7f4bc.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1er3Z6SEko-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/8e/8e53d07e9ca872a8fcc881405c869984781e85b30ca89ad73dcdd31f1fc0116b.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1er3Z6SEko-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/ef/ef183dee471d730dabac7af124a2c2665d82e737b738e4a06a4288925ed8ebd7.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1er3Z6SEko-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/4b/4b1685b9e074f443b06605550ba7d576b98f68cb4afa4d12a6569661e6591c99.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1er3Z6SEko-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/b8/b88153cff8904a10a5324319f07a914a38315240c9845c0912596deecbf5a50c.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1er3Z6SEko-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/33/335b031fa7aa3d0322cf41b8c0c94835f39ba47fec37009b56447234b95dcfca.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1er3Z6SEko-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/23/23511b242ef59a3756f42e55911bb8c7bfb92f8cfaf482737fcf7786c6b760b7.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1er3Z6SEko-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/b2/b2b471640803395a8a4464487baa1857013ad21e97e07961c7519b92097028ea.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1er3Z6SEko-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/89/89db5076d961fe16a1fc8b1d750fcc6f10fad7f2428a71c69edcf63009449d84.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1er3Z6SEko-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/8f/8f23c16e1685a1edb199419f02754ca5fa56aa21bd67f576c8d896150f7f3a6d.webp)
 
 ## 补充原始数据
 

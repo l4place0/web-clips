@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/9c9344c6-c359-4361-80
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV1AoT76CEQ9-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/fd/fd7d5b47b22bdf7029dc01d0c4d95be076e35603a61fa5e95636463e45616488.png)
 [打开单页 HTML 总结](assets/bilibili-BV1AoT76CEQ9-summary.html)
 
 ## 一句话结论
@@ -140,7 +140,7 @@ flowchart LR
 
 真正的优劣不是某个环节“最好看”，而是整条链路能否闭环。frame 1 把原始 Markdown 与展示结果放在同一画面，正好说明作者为何坚持同时检查输入结构与最终视图。
 
-![关键帧 1](assets/bilibili-BV1AoT76CEQ9-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/ab/abc9d1b2d9af075d5bbbd6be73328840a1d1ca9d1bd0ec79a6710aed5bf3c4cc.webp)
 
 ### 2. “不可能三角”不是定律，而是诊断工具
 
@@ -163,7 +163,7 @@ flowchart TB
 
 frame 2 展示了主题、布局、线条和节点等大量外观控制；它提醒我们，丰富的视图选项只是评价的一部分，必须回到数据模型检查。
 
-![关键帧 2](assets/bilibili-BV1AoT76CEQ9-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/fa/fa054624853699705673a9617f22e496c769abbc21d7a99d850dd94f8402501c.webp)
 
 ### 3. 为什么“改个样式”会改坏结构
 
@@ -181,7 +181,7 @@ flowchart TD
 
 更稳健的设计是让内容、结构与视图配置分层：正文仍是可读 Markdown，布局、主题、线型放在独立属性中。frame 10 展示的 `type: mindmap`、布局、主题和线型属性，就是这种分离思路的直观例子。
 
-![关键帧 10](assets/bilibili-BV1AoT76CEQ9-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/c4/c43bf09256d24cb107bcb886846bec0dfd4936e37ca411a265e384ef15579c76.webp)
 
 ### 4. 动态文本布局为什么难
 
@@ -199,7 +199,7 @@ flowchart LR
 
 因此“流畅”“局部可编辑”“结构可保存”常常不是一个渲染技巧就能同时解决。frame 4 将纯文本、CSS、Canvas/DOM、React 组件、控件与数据模型画在一起，是视频中最有解释价值的技术图。
 
-![关键帧 4](assets/bilibili-BV1AoT76CEQ9-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/f0/f04db61e077f66bbe43d15a77cba45b59e17f57f031d48b5a21d7533eff04889.webp)
 
 ### 5. 从导图到创作系统：哪些是观察，哪些是设想
 
@@ -211,7 +211,7 @@ flowchart LR
 
 frame 9 展示了三种海报/信息图形态，它适合说明第三层的想象空间；不能据此推断所有被测插件目前都能从 Markdown 自动生成这些成品。
 
-![关键帧 9](assets/bilibili-BV1AoT76CEQ9-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/41/4101fcf5447e136c1ec76e2ce21e7de8622c74381aaa631607be7997718faad6.webp)
 
 ### 6. 一个更可靠的试用实验
 
@@ -232,7 +232,7 @@ flowchart LR
 
 至少覆盖多级标题、普通段落、任务列表、引用、表格、代码、公式和链接。frame 5 展示了 Markdown 被完整导入成导图的外观，但实验必须继续走到“保存、重开、停用插件”之后，才算验证完成。
 
-![关键帧 5](assets/bilibili-BV1AoT76CEQ9-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a0/a0fe8f2548bd0964a56c2ece8b6b56086d3e1df0c37861d2c86e88b579985b9e.webp)
 
 ### 7. 事实与观点的边界
 
@@ -1495,43 +1495,43 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1AoT76CEQ9-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/ab/abc9d1b2d9af075d5bbbd6be73328840a1d1ca9d1bd0ec79a6710aed5bf3c4cc.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1AoT76CEQ9-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/fa/fa054624853699705673a9617f22e496c769abbc21d7a99d850dd94f8402501c.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1AoT76CEQ9-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/4a/4a6162d1a4b5b03a421817da1447a0009bfd6ab083dd34e6361b95174b73ebbd.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1AoT76CEQ9-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/f0/f04db61e077f66bbe43d15a77cba45b59e17f57f031d48b5a21d7533eff04889.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1AoT76CEQ9-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a0/a0fe8f2548bd0964a56c2ece8b6b56086d3e1df0c37861d2c86e88b579985b9e.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1AoT76CEQ9-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/a7/a7e51d45e5e77c64275cfdc5c68cc0fab7bb9561fa830ca77bd50a50fd3da4b2.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1AoT76CEQ9-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/e7/e7df9161b4011f2efa7af5a2a0a7d9fdd27dfdb5eb7df671b0b952831662fd83.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1AoT76CEQ9-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/82/82f881b65b0a0e0ce2550e6cc6cdd728f1ceb1097e5607c1539f18ec8cf6bad5.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1AoT76CEQ9-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/41/4101fcf5447e136c1ec76e2ce21e7de8622c74381aaa631607be7997718faad6.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1AoT76CEQ9-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/c4/c43bf09256d24cb107bcb886846bec0dfd4936e37ca411a265e384ef15579c76.webp)
 
 ## 补充原始数据
 

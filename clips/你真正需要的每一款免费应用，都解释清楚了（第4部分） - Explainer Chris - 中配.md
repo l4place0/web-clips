@@ -71,7 +71,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/ebe5530d-1890-4fb5-99
 
 这期视频真正有用的不是“8 款软件共省多少钱”，而是一张**任务—控制权—维护成本**地图。产品 Logo 只说明视频列举了谁；价格、加密、平台、许可证和维护状态必须回到当前官方资料。本理解稿只覆盖现有转录的 0–663.12 秒；metadata 的 1330 秒与完整片尾转录不一致，11:03 后内容是否缺失、重复或只是 metadata 异常仍未验证。
 
-![关键帧 1](assets/bilibili-BV1CfgK6pExt-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/b7/b7c304a921b7acaa59557547c80d4b52de9c4b65ffb1cf29cbfd4e553d212008.webp)
 
 frame 1 是八款应用的目录帧，适合作为任务导航；它不能证明任一产品免费、开源、安全、跨平台或仍在维护。
 
@@ -121,7 +121,7 @@ Everything 是 freeware，不是开源；Penpot 核心开源且可自托管，�
 
 ## 3. Everything：快来自索引，不代表只能搜文件名
 
-![关键帧 2](assets/bilibili-BV1CfgK6pExt-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/bd/bdacf89f8657d7c6482c35593d6ce08d8f5b1f0adcd8e136aa9f6439b28df768.webp)
 
 frame 2 显示 Everything 的真实 Search 菜单，包括正则、大小写、路径和类型过滤；它能证明界面存在这些入口，不能证明所有磁盘都瞬时搜索。
 
@@ -161,7 +161,7 @@ sequenceDiagram
 
 ## 5. Penpot：开放格式降低摩擦，但自托管不是零成本
 
-![关键帧 3](assets/bilibili-BV1CfgK6pExt-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/de/deb70b5de9d2ffafa6a0bb2adcdcec39b98743c2278354b91d4c8b61057a431f.webp)
 
 frame 3 展示免费、团队、企业与私有服务层，是“开源核心与商业服务可共存”的例子；画面价格强时效，不能离开当前官方页面引用。
 
@@ -216,7 +216,7 @@ flowchart TD
 
 ## 8. VSCodium：遥测边界与扩展供应链必须一起看
 
-![关键帧 8](assets/bilibili-BV1CfgK6pExt-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/e8/e8b8727d92b84796b3e3ae815853fa86ada70c324d7f7322ccd55c667175f5a0.webp)
 
 frame 8 是“open source marketplace”的概念图，不是 Open VSX 实际页面；它只适合提示扩展来源差异。
 
@@ -235,7 +235,7 @@ flowchart LR
 
 ## 9. Scribus：是否能印，不只看一个 CMYK 复选框
 
-![关键帧 9](assets/bilibili-BV1CfgK6pExt-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/2b/2b1472b7295d01b5ef5a61a42a8856fdf31f0f8b9ec6f4685384bcd91d69806c.webp)
 
 frame 9 用实体书册说明桌面出版场景，但没有展示色彩管理、出血、字体嵌入或 PDF/X 设置，不能作为印前能力证据。
 
@@ -1129,43 +1129,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1CfgK6pExt-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/b7/b7c304a921b7acaa59557547c80d4b52de9c4b65ffb1cf29cbfd4e553d212008.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1CfgK6pExt-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/bd/bdacf89f8657d7c6482c35593d6ce08d8f5b1f0adcd8e136aa9f6439b28df768.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1CfgK6pExt-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/de/deb70b5de9d2ffafa6a0bb2adcdcec39b98743c2278354b91d4c8b61057a431f.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1CfgK6pExt-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/33/33bded56b2fd40e73d19fde744bd65b6bcce01b19b69d77632c6eb8aa35c9fbb.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1CfgK6pExt-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/8c/8ce04ff6a157f0b981707aa8381feb67a76cc56e8cea455057e1b6c44e5bce75.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1CfgK6pExt-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/e7/e751ee2265bb6ae77ab276cce46c58b49c1697be1f28c12f07fd0f16fd54e1af.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1CfgK6pExt-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/7a/7a63bc9e7b6e964c7b5892c300136f5edba8f173f4fa2ce4f7fa1dcbc1efb923.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1CfgK6pExt-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/e8/e8b8727d92b84796b3e3ae815853fa86ada70c324d7f7322ccd55c667175f5a0.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1CfgK6pExt-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/2b/2b1472b7295d01b5ef5a61a42a8856fdf31f0f8b9ec6f4685384bcd91d69806c.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1CfgK6pExt-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/c0/c0d5383b6d17950f2234a64c19968d7ea5ae7257d632e218042902bd812f2caa.webp)
 
 ## 补充原始数据
 

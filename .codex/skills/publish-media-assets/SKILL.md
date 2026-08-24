@@ -1,6 +1,6 @@
 ---
 name: publish-media-assets
-description: Publish local media referenced by Markdown notes in the web-clips vault to Alibaba Cloud OSS, verify public HTTPS delivery, atomically rewrite note references, and maintain ignored local manifests. Use when the user asks to upload, publish, migrate, check, or verify local media for web-clips.
+description: Publish local media referenced by Markdown notes in the web-clips vault to Alibaba Cloud OSS, verify public HTTPS delivery, atomically rewrite note references, and maintain ignored local manifests. Use when the user asks to upload, publish, migrate, check, or verify web-clips media, and after bili-tutor-skill or video-sum composes or updates a web-clips note containing local assets that need public delivery. Do not invoke for text-only notes or before video compose succeeds.
 ---
 
 # Publish Media Assets
@@ -17,6 +17,17 @@ node $mediaCli check "clips/<note>.md"
 ```
 
 The CLI treats the current directory as the Vault root unless `WEB_CLIPS_VAULT_ROOT` is set. Its package dependency is scoped to this Skill directory; `node_modules/` remains ignored. `clips/assets/` is the retained ignored media cache; `.media-publish/manifests/` is the ignored local manifest cache.
+
+## Bili Tutor handoff
+
+After `bili-tutor-skill` or `video-sum resource compose` succeeds, inspect the returned final note. If it contains local media references under `clips/assets/`, continue with this Skill automatically:
+
+1. Run `check` for that exact note.
+2. Run `publish <note> --dry-run` when local references are pending.
+3. Show the dry-run result and obtain approval before uploading to OSS or rewriting Markdown.
+4. After approval, run `publish`, then `verify`, and inspect the note diff.
+
+The original video-ingestion request authorizes the automatic check and dry-run only. It does not authorize the external upload or Markdown rewrite. Skip the handoff when compose failed, the note is text-only, or every reference is already a verified public HTTPS URL.
 
 ## Inspect and publish
 

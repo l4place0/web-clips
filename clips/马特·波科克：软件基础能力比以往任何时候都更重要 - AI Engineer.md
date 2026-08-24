@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/53e03f69-e2a1-4f40-b1
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV1ysjP68E82-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/5b/5b9a246de2f45071dbf3daa6f7f0b144a137b01006806981abc8114d9cd12ef2.png)
 [打开单页 HTML 总结](assets/bilibili-BV1ysjP68E82-summary.html)
 
 ## 一句话结论
@@ -133,7 +133,7 @@ John Ousterhout 把复杂度定义为系统结构中使其难以理解和修改�
 
 这场演讲并不是要求开发者回到“拒绝 AI、所有代码手写”的时代，而是主张把 AI 放进一个经典的软件工程控制系统。代码生成速度上升后，系统最稀缺的部分变成：**意图是否明确、语言是否一致、反馈是否可信、模块边界是否简单、风险是否被人承担。**
 
-![关键帧 2](assets/bilibili-BV1ysjP68E82-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/a3/a3162f20ca0960b487a96712b02b408b1e1d537e1dbf435fac345416879e05dc.webp)
 
 frame 2 的 “Specs → Code → Worse Code” 是讲者对失败循环的抽象，不是缺陷率统计。它真正指出的是：如果每轮只改自然语言规格、却不检查结构与反馈，生成速度可能把错误方向放大。
 
@@ -154,7 +154,7 @@ flowchart TD
 
 `/grill-me` 把 AI 从立刻执行者变成访谈者：沿设计树追问每个分支与依赖，直到形成 shared understanding。
 
-![关键帧 6](assets/bilibili-BV1ysjP68E82-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/79/7928ef20bbaa90e58d17b858bf6b2cf64d123da40e32911f6f22bbd4652ce32b.webp)
 
 可以把访谈问题分成五组：
 
@@ -182,7 +182,7 @@ flowchart LR
 
 Eric Evans 的 Ubiquitous Language 要求领域专家与开发者围绕同一领域模型持续使用共同语言。[DDD Reference](https://www.domainlanguage.com/ddd/reference/) 视频把它应用到编码智能体：把术语写入仓库，让提示、代码命名和讨论共享词汇。
 
-![关键帧 7](assets/bilibili-BV1ysjP68E82-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/56/56a2d26a1f31b35b6f24970e65ee42b6c0e8072c1f08577f4c530db43978be50.webp)
 
 ```mermaid
 flowchart TD
@@ -228,7 +228,7 @@ stateDiagram-v2
 
 Ousterhout 的深模块强调**接口相对简单、提供的功能相对丰富、实现决策被隐藏**。[Stanford 模块化设计讲义](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php%3Ftopic%3DmodularDesign)
 
-![关键帧 9](assets/bilibili-BV1ysjP68E82-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/bc/bc50c16e64c6a2f4c71635faa392a7242ab579b4f8a1d3bb0c2c332b7e31e795.webp)
 
 ```mermaid
 flowchart LR
@@ -252,7 +252,7 @@ flowchart LR
 
 ## 5. “设计接口，委托实现”是风险分配
 
-![关键帧 10](assets/bilibili-BV1ysjP68E82-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/50/50d0462ec0094015282861acf26f028ee43740a15acbb4dab1dd3f508c128e31.webp)
 
 这句口号不是一刀切的角色规则。可以按风险和可验证性选择自治程度：
 
@@ -1343,43 +1343,43 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1ysjP68E82-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/31/31c13ab1e19acf100c3a18e2bf0f82fdc13b306e9a717c83ea09e7cbd5612d4c.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1ysjP68E82-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/a3/a3162f20ca0960b487a96712b02b408b1e1d537e1dbf435fac345416879e05dc.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1ysjP68E82-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/b4/b43d4c34b9a27d559d6f40be9bd3d410459b61b130f9814fe4d2f5b3ad463578.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1ysjP68E82-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/c0/c0604feae9fa6c474ddc017ac0fa8a074e29c3b20cb14ecb8c5d469601875ccd.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1ysjP68E82-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/af/afe88a78dd9fddb87bf953e6fd918e031b0b45be0e124527c2216073a159952b.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1ysjP68E82-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/79/7928ef20bbaa90e58d17b858bf6b2cf64d123da40e32911f6f22bbd4652ce32b.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1ysjP68E82-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/56/56a2d26a1f31b35b6f24970e65ee42b6c0e8072c1f08577f4c530db43978be50.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1ysjP68E82-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/5e/5e57ae1eec86945c21e8028cd8b8c4e722310710260bafce97cfa8596de65b47.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1ysjP68E82-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/bc/bc50c16e64c6a2f4c71635faa392a7242ab579b4f8a1d3bb0c2c332b7e31e795.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1ysjP68E82-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/50/50d0462ec0094015282861acf26f028ee43740a15acbb4dab1dd3f508c128e31.webp)
 
 ## 补充原始数据
 

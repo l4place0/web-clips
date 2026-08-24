@@ -14,7 +14,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/6d137637-43b2-40f3-b8
 # 总结稿
 
 [打开单页 HTML 总结](assets/bilibili-BV15MgG6QEz4-summary.html)
-![一图流总结](assets/bilibili-BV15MgG6QEz4-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/cf/cf4607e36a14ed1121aa1427e1e18cc481f65cd54f80c042b2f7108b56fc0298.png)
 
 ## 核心结论
 
@@ -97,7 +97,7 @@ flowchart LR
 
 讲者的起点是一个简单问题：当下使用的笔记与所有历史笔记混在一起，视野就会被积累淹没。Now 只暴露当前关注内容，Library 承载其余资料。[00:34–01:06]
 
-![关键帧 2](assets/bilibili-BV15MgG6QEz4-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/33/333ae2fa45a4b64864558dc3958f12ebbc5070df4501be7f47a199c9fdf36e80.webp)
 
 这张示例图把笔记分成 `Now Project` 与 `Library`。它证明的是视频如何表达这套框架，而不是证明该框架普遍提高效率。
 
@@ -105,7 +105,7 @@ flowchart LR
 
 视频把 NL 视角递归到文件夹、分类和单篇笔记：每到一个层级，都把少数当前重点显露出来，把完整材料留在后方。[01:09–03:25]
 
-![关键帧 3](assets/bilibili-BV15MgG6QEz4-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/07/07e28153e269f086f7eba22a9fdc837754799f5066b09cc92747ddec9a3119d9.webp)
 
 单篇笔记示例中，核心原则在表层，原因和关联留在下一层。这里的价值在于“摘要与证据分层”，而不是强制每篇笔记采用同一种模板。
 
@@ -140,7 +140,7 @@ stateDiagram-v2
 
 ## 从“重要/不重要”改写为“当前/非当前”
 
-![关键帧 8](assets/bilibili-BV15MgG6QEz4-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/84/8474153c55f9d296be7250145c3500b3373e162bd3eb29061eebc0a04b2f7664.webp)
 
 帧 8 把 Key/Minor、Now/Library 与“常用/不常用”联系起来。更稳妥的理解是：**Library 里的内容并非不重要，只是当前不需要占据注意力**。这样能避免把长期资料误判为低价值，也能让内容在 Now 与 Library 之间双向流动。[07:51–08:24]
 
@@ -976,43 +976,43 @@ stateDiagram-v2
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV15MgG6QEz4-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/cd/cd25dd9e407e13d4eedbce73186b6928f70664e3a4eb949b04ae956ef5cbf4fd.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV15MgG6QEz4-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/33/333ae2fa45a4b64864558dc3958f12ebbc5070df4501be7f47a199c9fdf36e80.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV15MgG6QEz4-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/07/07e28153e269f086f7eba22a9fdc837754799f5066b09cc92747ddec9a3119d9.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV15MgG6QEz4-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/6f/6fd7cf40c2297e87d8c4763bdb0b41c184bcffee42d09bdd970725f75c06f4e8.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV15MgG6QEz4-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/64/6436ca7cf17694d6de762d798df077536fef097db8178f5381ac69fb3e23eb7b.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV15MgG6QEz4-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/06/0601f59a55b8bcb75a63974f48d1c8b5fbfdb167efcbdbb9cc466d1ce37c597e.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV15MgG6QEz4-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/2a/2a2edf4a072054d9bdd323686e926bf0df6fbf3650c79b5f11f5bb2b00bdd6cd.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV15MgG6QEz4-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/84/8474153c55f9d296be7250145c3500b3373e162bd3eb29061eebc0a04b2f7664.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV15MgG6QEz4-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/32/32fe319b715055afe6bfd6e7964e29d3e31892dde4f6229eb5942c2382545ab3.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV15MgG6QEz4-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/c3/c3abd2f23c146a668d5888f081f630aedc37c272e3f2aad1e4faa865a3ad3c4e.webp)
 
 ## 补充原始数据
 
