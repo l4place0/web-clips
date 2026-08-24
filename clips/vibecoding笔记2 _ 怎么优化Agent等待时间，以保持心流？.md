@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/160e3c0f-18db-4951-ae
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV1JQbi6LE2Z-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/8d/8db0872f5b96be8b58428f4431ba33a182b04dd67a6a31f1d63dccc3fee94103.png)
 [打开单页 HTML 总结](assets/bilibili-BV1JQbi6LE2Z-summary.html)
 
 ## 核心结论
@@ -84,7 +84,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/160e3c0f-18db-4951-ae
 - **切换时机由通知决定**，而不是由人的自然停顿决定。
 - **等待任务可能反客为主**，一旦进入新的心流，再切回就会产生明显割裂。
 
-![关键帧 2](assets/bilibili-BV1JQbi6LE2Z-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/5b/5bfe1123f16ddcdc10f233d6d9957925b6be2480fca96107055629a96180c246.webp)
 
 ```mermaid
 flowchart LR
@@ -113,7 +113,7 @@ flowchart LR
 3. 每完成一个最小单元，就到达一次“微边界”。
 4. 只在微边界主动检查 Agent；未完成就继续下一个小单元。
 
-![关键帧 7](assets/bilibili-BV1JQbi6LE2Z-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/a6/a61fb4223d362d038b92c6f7c15c28f5af940e940dfc953a7a0f53af7380f097.webp)
 
 ```mermaid
 flowchart TD
@@ -144,7 +144,7 @@ flowchart LR
 
 视频给出的典型例子包括：测试、审查 diff、整理 Bug 清单，以及准备下一轮验收标准。深度写作或需要持续推理的任务则不适合，因为它们很容易形成新的心流。[02:20–03:32]
 
-![关键帧 8](assets/bilibili-BV1JQbi6LE2Z-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/95/952fb10796f5aa802101426cb7ec322488e6fad05131a2e16d516863e718b08a.webp)
 
 ## 两种时间尺度
 
@@ -157,7 +157,7 @@ flowchart LR
 
 未来方案的逻辑是：如果任务边界足够清楚，Agent 可以运行一个长回合，等待期便长到足以容纳另一段完整工作。但作者并未把它呈现为现成答案；相反，他坦承自己目前还写不出足以避免 Agent 出错的 PRD。[03:52–04:30]
 
-![关键帧 9](assets/bilibili-BV1JQbi6LE2Z-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/70/700bd5c61ee2579180e849a724c3020e984612fbe35059279339fc650c037c74.webp)
 
 ```mermaid
 flowchart LR
@@ -327,43 +327,43 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1JQbi6LE2Z-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/2d/2d2cf674d9715b8e9ceefa85ad4aef6d1b669628dad16eda1077d17512ebde8f.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1JQbi6LE2Z-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/5b/5bfe1123f16ddcdc10f233d6d9957925b6be2480fca96107055629a96180c246.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1JQbi6LE2Z-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/6f/6f99ce7acc6a422475258dd6a64eb254f3bff1520a546df238a1747198007af6.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1JQbi6LE2Z-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/67/671bad38f227c9606015e776d972e76a4993f1c2ead774f998d060023fbb2ae5.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1JQbi6LE2Z-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a6/a60b139aa4553f89cbf3454b3355f1f7299845c05e04923eea73e2bb5136461b.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1JQbi6LE2Z-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/24/24855c7e5333f9ee998b819b3b2527e9157622124e80b57e0bc23f0f427ceae5.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1JQbi6LE2Z-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/a6/a61fb4223d362d038b92c6f7c15c28f5af940e940dfc953a7a0f53af7380f097.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1JQbi6LE2Z-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/95/952fb10796f5aa802101426cb7ec322488e6fad05131a2e16d516863e718b08a.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1JQbi6LE2Z-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/70/700bd5c61ee2579180e849a724c3020e984612fbe35059279339fc650c037c74.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1JQbi6LE2Z-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/fc/fc991b0b8fb85c88f3ed816ed454678d9764b1e027fb685a55c3bf8004a556f1.webp)
 
 ## 补充原始数据
 

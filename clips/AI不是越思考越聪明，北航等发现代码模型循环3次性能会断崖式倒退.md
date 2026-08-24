@@ -14,7 +14,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/4499fdd0-f96d-4f41-b7
 # 总结稿
 
 [打开单页 HTML 总结](assets/bilibili-BV1hggh6AEZT-summary.html)
-![一图流总结](assets/bilibili-BV1hggh6AEZT-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/78/786f801741a19895a602c56e14f582fc6bf18ef2c154bc7fbe947a9992045f8f.png)
 
 ## 核心结论
 
@@ -68,7 +68,7 @@ flowchart LR
 
 ## 先看传统方案为什么昂贵
 
-![关键帧 2](assets/bilibili-BV1hggh6AEZT-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/0f/0fb5d541696a4011a3a2926dc220b15d53294a12d1c2d3672a4e7e097b54dc2a.webp)
 
 视频在此对比了两条朴素路径：堆参数会提高训练和部署成本；标准串行循环则让后一轮等待前一轮，并随循环数增加延迟与 KV-cache。这个画面适合建立问题背景，但其中“真实部署根本无法落地”是视频的强表达，不能视作论文证明的普遍结论。
 
@@ -77,11 +77,11 @@ PLT 的两项关键机制是：
 1. **CLP（Cross-Loop Position Offset）**：用相邻位置的跨轮信息近似替代严格的同 token 递归依赖，以换取并行执行。
 2. **G-SWA（shared-KV Gated Sliding-Window Attention）**：复用首轮全局 KV，并让后续循环只维护局部滑动窗口，再通过门控融合两类信息。
 
-![关键帧 9](assets/bilibili-BV1hggh6AEZT-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/49/490570078ff9da255d68d8dd208edb9a24c9b001392f6f50c6fea96f310d2d7e.webp)
 
 帧 9 把 CLP 的工程取舍画成“空间上的轻微错位换取跨轮并行”。它是视频制作者的概念图，不是原论文的可复算证据；是否真正加速仍取决于实现与硬件。
 
-![关键帧 8](assets/bilibili-BV1hggh6AEZT-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/42/426579c2ceedaa7807e0761e5d67631011a83143a866b08de7e3363ffffaae47.webp)
 
 画面将 G-SWA 表示为“冻结的全局 KV + 64-token 局部窗口 + 门控融合”。论文支持窗口大小 64 与首轮 KV 共享；“零额外显存”宜理解为循环扩展的缓存成本近似不再随循环数增长，而非真实系统总显存严格为零增量。参见视频 `[09:08]` 与[论文](https://arxiv.org/abs/2606.18023)。
 
@@ -96,13 +96,13 @@ PLT 的两项关键机制是：
 | 3 | 27.6 | 明显回退 |
 | 4 | 22.4 | 继续回退 |
 
-![关键帧 7](assets/bilibili-BV1hggh6AEZT-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/55/5543a3cdb1ae17bbf7bdc1df33e7ab1281e5f6a160789ac3d9b2787517b796cb.webp)
 
 该帧直观展示 R=2 的 64.4，但“跨界降维打击”等措辞属于视频包装。可以验证的是论文表格中的模型、训练协议与基准结果；不能据此宣称该模型在真实软件工程任务中有 64.4% 的普遍成功率。[论文](https://arxiv.org/abs/2606.18023) · [官方模型卡](https://huggingface.co/Multilingual-Multimodal-NLP/LoopCoder-V2)
 
 ## 微观诊断：路由在第二轮后趋于固化
 
-![关键帧 5](assets/bilibili-BV1hggh6AEZT-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/49/49c339dd2cc1e47101d444abe97d3e7b3440906b233a6aac9a5956f5fd32fdcb.webp)
 
 视频把 Loop 1→2 的注意力热图变化解释为信息路由重构，把 Loop 2→3 的高相似度解释为路由趋于固化。论文同时观察隐藏状态更新趋于震荡、表征有效秩下降、输出分布移动变弱。更稳妥的因果表述是：**这些诊断与三轮及以上模型的性能回退一致，并支持作者的 gain–cost 解释；它们不是单独证明所有性能下降都由注意力固化造成。**
 
@@ -677,43 +677,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1hggh6AEZT-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/e7/e7a06ba81e9811de9d27467c5c7dd24b6572b5b07b6758e05eed1d6391a2b363.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1hggh6AEZT-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/0f/0fb5d541696a4011a3a2926dc220b15d53294a12d1c2d3672a4e7e097b54dc2a.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1hggh6AEZT-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/e0/e089a6acfb4e4fa46b43809aeda9723d6efa0fc807dd6566171a30dd0b34d67d.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1hggh6AEZT-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/16/162030e3c181d68cd5153460d89ef0afe952cd3b053d2b76cc5ae2fb7e6bfe70.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1hggh6AEZT-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/49/49c339dd2cc1e47101d444abe97d3e7b3440906b233a6aac9a5956f5fd32fdcb.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1hggh6AEZT-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/66/66fb7596a57ffdbff330b7bbb2322cd7b584e6800c8f0e92efcf5f9025babc9e.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1hggh6AEZT-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/55/5543a3cdb1ae17bbf7bdc1df33e7ab1281e5f6a160789ac3d9b2787517b796cb.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1hggh6AEZT-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/42/426579c2ceedaa7807e0761e5d67631011a83143a866b08de7e3363ffffaae47.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1hggh6AEZT-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/49/490570078ff9da255d68d8dd208edb9a24c9b001392f6f50c6fea96f310d2d7e.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1hggh6AEZT-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/8f/8fd460a7f70598d52beaf5a6d6d716e3b277ac88e0c36e12009ddd8ad1aabcb5.webp)
 
 ## 补充原始数据
 

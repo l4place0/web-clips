@@ -14,7 +14,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/05a75b71-bb6b-415f-9a
 # 总结稿
 
 [打开单页 HTML 总结](assets/bilibili-BV1ktbq6SE3w-summary.html)
-![一图流总结](assets/bilibili-BV1ktbq6SE3w-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/cd/cde04d62be3e82ae0c5f0f07413923457632a69ee84a7efc10cb3d8e428390ed.png)
 
 ## 核心结论
 
@@ -124,7 +124,7 @@ flowchart LR
 
 ## 第一关：状态和数据模型
 
-![关键帧 1](assets/bilibili-BV1ktbq6SE3w-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/b2/b2a24b5b6323faf1999903874c8d70798c11c250a72d9b87eedfe080c925a447.webp)
 
 帧 1 把关系型与非关系型数据库并列，适合当作提问入口，不适合当作答案。真正的决策树应是：
 
@@ -147,17 +147,17 @@ flowchart TD
 
 ## 第二关：契约不是传输，传输不是业务语义
 
-![关键帧 5](assets/bilibili-BV1ktbq6SE3w-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/4e/4e4a6fc0ffc484127d25cb60e42bea21860a5064c8439d724f4893b356240124.webp)
 
 帧 5 能直观比较 REST 与 GraphQL 的常见表达方式，但“一次客户端请求”不等于“一次后端访问”。GraphQL resolver 仍可能产生多次存储访问；REST 也可通过聚合资源、缓存与批处理减少往返。应分别评估契约演进、客户端需求、缓存、授权粒度、可观测性和团队工具链。[GraphQL Specification](https://spec.graphql.org/)、[RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html)
 
-![关键帧 7](assets/bilibili-BV1ktbq6SE3w-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/bf/bf9f69bc725710c1acd1dd950dfa7b0003e381af4be54b99aeebb49c74d3dd31.webp)
 
 帧 7 用简化分层图把 HTTP/WebSocket/MQTT/AMQP/gRPC 与 TCP/UDP 放到不同层次。它的价值是提醒：API 风格不能替代传输层分析。视频在 `[01:01:48]` 把 TCP 称作 UDP 的“更安全可靠版本”并声称保证全部送达，这不准确。TCP 与 UDP 是独立协议，本身均不加密；TCP 提供连接内可靠有序字节流，但连接仍可失败。[RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html)、[RFC 768](https://www.rfc-editor.org/rfc/rfc768.html)
 
 ## 第三关：身份、令牌和权限分三层
 
-![关键帧 9](assets/bilibili-BV1ktbq6SE3w-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ef/ef107702fa2c8e1d587d2c3108fb2f9ba63e3c0fd2923df69c488d74e8fafce1.webp)
 
 ```mermaid
 sequenceDiagram
@@ -179,7 +179,7 @@ sequenceDiagram
 - Bearer 描述令牌的持有者使用方式，不等同 OAuth/OIDC 的全部协议。
 - Basic Auth 的 Base64 不是加密，必须依赖 TLS 保护传输，并配合凭据生命周期管理。
 
-![关键帧 10](assets/bilibili-BV1ktbq6SE3w-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/18/18b93052c79fb67d33e9bd1edcca4cab61c94f46432ebbfe3fb3049c89f3e70c.webp)
 
 帧 10 用文档资源上的 permission list 解释 ACL：粒度细，但资源和主体很多时管理成本上升。它是教学示意，不能据此推断 Google Drive 的内部实现或量化其扩展能力。RBAC、ABAC、ACL 可以组合：先用角色给出基线，再用属性表达上下文条件，对少数资源保留细粒度 ACL。
 
@@ -6708,43 +6708,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1ktbq6SE3w-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/b2/b2a24b5b6323faf1999903874c8d70798c11c250a72d9b87eedfe080c925a447.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1ktbq6SE3w-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/d4/d48679e3d14333958333e747f91b90d1aa161ba3889ea9d75bbb058d2ccefdce.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1ktbq6SE3w-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/3f/3f0843ca3a48bd3d54c88fa81bd24331e39c53e1be6d276981c3c30fda144ef0.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1ktbq6SE3w-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/ec/ec917d0e41bf5d9beacdb4f215e47d50f410a61c98f1904552aed2cc69f1e975.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1ktbq6SE3w-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/4e/4e4a6fc0ffc484127d25cb60e42bea21860a5064c8439d724f4893b356240124.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1ktbq6SE3w-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/95/95722701b4a78020d0f99dc175360ce921c1279572515a07afa24d774cdac456.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1ktbq6SE3w-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/bf/bf9f69bc725710c1acd1dd950dfa7b0003e381af4be54b99aeebb49c74d3dd31.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1ktbq6SE3w-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/e7/e7d3e1a99e841f01ad047260d47f985b0d69a9631205a2b5518af21ebe4a4a24.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1ktbq6SE3w-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/ef/ef107702fa2c8e1d587d2c3108fb2f9ba63e3c0fd2923df69c488d74e8fafce1.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1ktbq6SE3w-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/18/18b93052c79fb67d33e9bd1edcca4cab61c94f46432ebbfe3fb3049c89f3e70c.webp)
 
 ## 补充原始数据
 

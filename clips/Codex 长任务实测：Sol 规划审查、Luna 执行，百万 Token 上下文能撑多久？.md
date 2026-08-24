@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/1ae1b890-8af9-4236-86
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV12c8c6xEy4-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/62/629ab31623793c173cc7783823b9f0c7bea66d7f7199e341f41879057b583688.png)
 [打开单页 HTML 总结](assets/bilibili-BV12c8c6xEy4-summary.html)
 
 > [!warning] 覆盖范围异常
@@ -83,7 +83,7 @@ flowchart LR
     E -.审查/返工成本.-> H
 ```
 
-![关键帧 3](assets/bilibili-BV12c8c6xEy4-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/69/69aa866dab6ef54a248f22738c33e3094c1a7f7ac7a53130715bf5b6999a3f05.webp)
 
 这帧显示演示中的 Updated Plan：先检查项目规则，再把测试优先实现委派给 Luna，最后由主代理审查。它是**工作流证据**，不是 Sol/Luna 永久职责或效率优势的证明。
 
@@ -95,7 +95,7 @@ flowchart LR
 
 视频中只启动一个主要实现代理，随后又出现技术/规格审查，并在首轮复核后返工。讲者最终判断“不一定省很多钱”（[06:14](https://www.bilibili.com/video/BV12c8c6xEy4?t=374)）。这不是失败，而是说明**模型单价优化必须服从任务结构**：如果边界不清、共享状态多、验收昂贵，协调开销会吞掉价差。
 
-![关键帧 5](assets/bilibili-BV12c8c6xEy4-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a8/a8be8b00a09025e1a68ae3172b27d722b5c5bb163f1d498e27bf661d5ce7181b.webp)
 
 这帧只说明 Luna 子代理正在浏览项目、差异和测试文件；界面的 Working 状态不能证明真正并行、测试充分或性能领先。
 
@@ -110,7 +110,7 @@ flowchart TB
     E --> F[较小的新工作上下文<br/>依靠计划与压缩项继续]
 ```
 
-![关键帧 7](assets/bilibili-BV12c8c6xEy4-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/24/24c0a10b5aab7d64896d3e1fe517789e647cd0d24f7ae556a6e76387e188714c.webp)
 
 - **1,050,000** 是官方 API 模型页的总上下文规格，不自动等于 Codex 产品界面的有效输入空间。[Sol](https://developers.openai.com/api/docs/models/gpt-5.6-sol) · [Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna)
 - **828K** 可由核查时本机目录的 872,000 × 95% 得到；**258K** 可由默认 272,000 × 95% 得到。这解释了视频界面，但属于 2026-08-21 的特定产品目录口径，不宜永久化。
@@ -130,7 +130,7 @@ sequenceDiagram
     N->>N: 复核测试与差异后继续
 ```
 
-![关键帧 9](assets/bilibili-BV12c8c6xEy4-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/75/75415742358f404c9c2defcdb5cecceea413259021bb19f3d24516551e479239.webp)
 
 Frame 9 显示压缩叙述附近，代理重新收紧评分合同并继续修改。单帧无法证明压缩机制或记忆完整率；更稳妥的理解是：**压缩提供继续工作的机制，外置规格提供可核对的真值来源**。触发由 Token 阈值决定，不是固定 20 分钟；*loss-aware* 也不是零损失保证。[Codex 阈值逻辑](https://github.com/openai/codex/blob/main/codex-rs/protocol/src/openai_models.rs)
 
@@ -702,43 +702,43 @@ Frame 9 显示压缩叙述附近，代理重新收紧评分合同并继续修改
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV12c8c6xEy4-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/1c/1c91e3c47cf0aacffd88880c96a3a9cf392502f8629d6bd8571813ea1e4ac120.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV12c8c6xEy4-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/9f/9f482f4ea89771629f31a487d993921338e660b7dd8a4a0d0a4f1d1a045a8ed5.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV12c8c6xEy4-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/69/69aa866dab6ef54a248f22738c33e3094c1a7f7ac7a53130715bf5b6999a3f05.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV12c8c6xEy4-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/19/190cfd40e0dbdc23b7a6c05dcaacbc75d9064cf0205c8146bf6c10e1a2565df6.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV12c8c6xEy4-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/a8/a8be8b00a09025e1a68ae3172b27d722b5c5bb163f1d498e27bf661d5ce7181b.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV12c8c6xEy4-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/dd/dd3e7234314cb2ed21460468e49f3b8962b830660b724aaabd39e448af38191e.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV12c8c6xEy4-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/24/24c0a10b5aab7d64896d3e1fe517789e647cd0d24f7ae556a6e76387e188714c.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV12c8c6xEy4-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/d0/d0c925d8a4403e96827641276958276040f121066a048d84e7ceb96753362ac1.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV12c8c6xEy4-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/75/75415742358f404c9c2defcdb5cecceea413259021bb19f3d24516551e479239.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV12c8c6xEy4-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/20/2080c11fff5d31cbe7c2345235c7cd7c03a1606f4d8d43202eecfe7315256bbc.webp)
 
 ## 补充原始数据
 

@@ -14,7 +14,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/30853acd-12de-48bb-b1
 # 总结稿
 
 [打开单页 HTML 总结](assets/bilibili-BV139bD6gEa8-summary.html)
-![一图流总结](assets/bilibili-BV139bD6gEa8-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/11/114be61eddafb7af9a52c6243db18599af1167f58474bc91db795d91915cb6ec.png)
 
 ## 一句话结论
 
@@ -115,7 +115,7 @@ flowchart TB
     OS --> ISO[容器 / VM / micro-VM / 策略沙箱]
 ```
 
-![关键帧 5](assets/bilibili-BV139bD6gEa8-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/7c/7cd37b6b62e1860684cdfe400168c7f4a6a512905365533e578a27e08fa38688.webp)
 
 帧 5 是视频作者对“四个基础工具 + Skills”的概括图。官方当前资料确认默认四工具，但还提供可选的 `grep`、`find`、`ls`；所以它表达的是默认工具面，而不是 Pi 永远只有四种能力。[Pi Quickstart](https://pi.dev/docs/latest/quickstart)
 
@@ -136,7 +136,7 @@ flowchart TD
     G -- 无 --> I[本轮结束]
 ```
 
-![关键帧 3](assets/bilibili-BV139bD6gEa8-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/95/9534c050a359482340f83c753bfd24de085f300324aa30090e0cca55100556aa.webp)
 
 帧 3 把工具循环、steering 与 follow-up 放在同一张结构图中，适合解释“调整当前任务”和“排队下一轮”为什么不是一回事。它是视频的概念示意，不是可用于推导性能或并发语义的源码证据。[10:04]
 
@@ -151,7 +151,7 @@ flowchart TD
 | permission popup | 不内置 | 权限扩展 | 扩展是否覆盖所有执行路径 |
 | 真正隔离 | 不由项目 trust 提供 | 容器、VM、micro-VM、策略沙箱 | 挂载、凭据、网络与开发体验配置 |
 
-![关键帧 6](assets/bilibili-BV139bD6gEa8-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/4b/4ba397ba482e600e24ee2e1b016c6a30619e70eb3754662cb82bd36364276926.webp)
 
 帧 6 只证明视频当时展示了 Package Catalog 与安装入口。目录数量、包质量和可用性都具有时效性；官方也警告 Extensions 以完整系统权限运行，只安装来自可信来源并经过审查的代码。[Pi Extensions](https://pi.dev/docs/latest/extensions)
 
@@ -168,7 +168,7 @@ flowchart LR
     Q -- 否 --> P
 ```
 
-![关键帧 9](assets/bilibili-BV139bD6gEa8-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/38/38ba60158da30767e73e9c5298a61fdf2f3c450f3a761432f9bf1f99127ff9fe.webp)
 
 帧 9 直观展示项目根目录中的 `AGENTS.md`。项目级说明适合记录构建命令、约束与代码约定；全局说明只放真正跨项目稳定的偏好。注意：说明文件能影响模型行为，却不能替代文件权限、Git 检查点或沙箱。
 
@@ -2896,43 +2896,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV139bD6gEa8-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/d0/d00d15b27222f43561e47a84c95b2f643542ce5ce07fb06435481cb9b5f8a6b5.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV139bD6gEa8-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/05/05faed18a89ef3041d3408c3e532a80baba685f317a05d331e9ddef857a71a98.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV139bD6gEa8-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/95/9534c050a359482340f83c753bfd24de085f300324aa30090e0cca55100556aa.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV139bD6gEa8-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/7e/7e468dd578638fe3ce6e2f1dd81de0a597ba7c6ac9920f7dcba569b3029261e6.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV139bD6gEa8-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/7c/7cd37b6b62e1860684cdfe400168c7f4a6a512905365533e578a27e08fa38688.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV139bD6gEa8-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/4b/4ba397ba482e600e24ee2e1b016c6a30619e70eb3754662cb82bd36364276926.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV139bD6gEa8-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/8d/8d6cc1bd4b806028cb5d1332faaf75d61a20ab55a49660bb21c8f10229d8524d.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV139bD6gEa8-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/a2/a27e45dfc609dc5377c7cb9a93cdcbd66ecaed9e074fda558944270e003d2423.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV139bD6gEa8-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/38/38ba60158da30767e73e9c5298a61fdf2f3c450f3a761432f9bf1f99127ff9fe.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV139bD6gEa8-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/bc/bc0f8161ea02542cd349dc437b2cbd685954a2000dc3ddf17b4d41c84e2a16bf.webp)
 
 ## 补充原始数据
 

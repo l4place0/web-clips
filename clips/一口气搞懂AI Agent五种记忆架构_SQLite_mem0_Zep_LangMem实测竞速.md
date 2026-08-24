@@ -106,7 +106,7 @@ flowchart TD
     K --> K4[合并去重与反思]
 ```
 
-![关键帧 5](assets/bilibili-BV1DabS6vEba-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/73/7373a2b7ea46674dbb2e33b990bbad0a3d7d35b8fb11e69c98645385378ff2de.webp)
 
 frame 5 是教学白板，不是行业标准。它把表示、检索、维护并列，正适合做导航；下方“五层”表被裁切，也不能据此推导产品成熟度顺序。Waku 官方仓库的 [upgrade paths](https://github.com/ShenSeanChen/waku-agent) 也说明 SQLite FTS5、pgvector、mem0/Zep 等是可替换组合，而不是互斥层级。
 
@@ -129,7 +129,7 @@ stateDiagram-v2
     反思整理 --> 当前事实
 ```
 
-![关键帧 4](assets/bilibili-BV1DabS6vEba-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b2/b25d0613b798e48d1f0345c4fefb8c6df50ede9a743416934acc26ae60a486a8.webp)
 
 真正的生产实现还需要：触发条件、并发冲突、审计日志、provenance、回滚、用户纠正、彻底删除，以及防止 consolidation 把模型幻觉固化为长期事实。
 
@@ -171,7 +171,7 @@ flowchart TD
     R --> H[历史仍保留]
 ```
 
-![关键帧 3](assets/bilibili-BV1DabS6vEba-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/54/5476a16d27ca7282ca36dfda6527b2020632a1c016ea6e5316b4d5c878483045.webp)
 
 这张关系图只说明节点—边表示，不证明抽取正确、查询快或冲突处理无误。官方仓库还明确区分：**Graphiti 是 OSS 引擎；Zep 是托管 context infrastructure，底层使用专有 Context Graph Engine。** 因此视频里的 Zep UI、Zep Cloud 延迟和 Graphiti 自托管能力不能互相代替。
 
@@ -192,7 +192,7 @@ flowchart TD
     U --> U2[Delete]
 ```
 
-![关键帧 6](assets/bilibili-BV1DabS6vEba-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7f/7feed5b816d8699b4865449c2d31847d9750823f214a1f2e7374947c68e914e6.webp)
 
 frame 6 的 Memories 表格只证明某一时点 UI 展示了实体、内容、类别、Lifecycle 和操作入口，不证明自动维护准确或删除彻底。[mem0 开源仓库](https://github.com/mem0ai/mem0) 使用 Apache-2.0，但当前托管 Platform 的图/排序能力与 OSS 后端不能无条件视为相同；官方 [Graph Memory](https://github.com/mem0ai/mem0/blob/main/docs/platform/features/graph-memory.mdx) 页面也需按计划与版本读取。
 
@@ -212,7 +212,7 @@ flowchart LR
     BS --> P[Postgres 或其他持久后端]
 ```
 
-![关键帧 8](assets/bilibili-BV1DabS6vEba-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/4b/4b08f3d81381e6e714a2f5665bcb944481479ec9327f3481b17afc4285abb267.webp)
 
 frame 8 的 `langmem_native.py`、`mem0_native.py`、`zep_native.py` 只显示代码入口存在，并不证明这些适配器运行结果相同。正确说法是“LangMem 不自带一个托管持久数据库”，而不是“LangMem 什么都不存”。
 
@@ -2212,43 +2212,43 @@ Agent memory 的难点不在“记得越多越好”，而在**只保存值得�
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1DabS6vEba-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/5c/5c4989ca390e6619265147bce8213dc68fca7a9e6a38df351eb739d3e2105de1.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1DabS6vEba-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/e0/e02415e9d8c8eaec09c43d3e647750cc19faaa9e4e9352781d9e8af3f4de0f5b.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1DabS6vEba-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/54/5476a16d27ca7282ca36dfda6527b2020632a1c016ea6e5316b4d5c878483045.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1DabS6vEba-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/b2/b25d0613b798e48d1f0345c4fefb8c6df50ede9a743416934acc26ae60a486a8.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1DabS6vEba-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/73/7373a2b7ea46674dbb2e33b990bbad0a3d7d35b8fb11e69c98645385378ff2de.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1DabS6vEba-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/7f/7feed5b816d8699b4865449c2d31847d9750823f214a1f2e7374947c68e914e6.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1DabS6vEba-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/3e/3e98900630f236cc85562032c718e726628a5835636b9eeb65bdb17ce4568062.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1DabS6vEba-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/4b/4b08f3d81381e6e714a2f5665bcb944481479ec9327f3481b17afc4285abb267.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1DabS6vEba-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/df/dfef0eabaf3d3472f2d7ab7b6a9cc6604c903b38d68678f14b53b9de5eac3c80.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1DabS6vEba-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/b2/b29a7125e5dfe7f45bdbd608e6dda73bc117fca7511a65bc84450dc4f2dee79e.webp)
 
 ## 补充原始数据
 

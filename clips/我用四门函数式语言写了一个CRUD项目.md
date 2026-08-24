@@ -13,7 +13,7 @@ webClipUrl: https://l4place0.github.io/web-clips-publish/r/4853837d-dacf-499b-89
 
 # 总结稿
 
-![一图流总结](assets/bilibili-BV1QZub6bEfz-visual-summary.png)
+![一图流总结](https://assets.l4p.site/media/1a/1a230348cf16d392c6f3c6a14df02d9107405630a29ba5c5c90b2cac4ca2080c.png)
 [打开单页 HTML 总结](assets/bilibili-BV1QZub6bEfz-summary.html)
 
 ## 一句话总结
@@ -116,7 +116,7 @@ flowchart LR
     J -.构建与编排.-> I
 ```
 
-![关键帧 2](assets/bilibili-BV1QZub6bEfz-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/ff/ff76c65986775505a04f09af7f281ab09fbac9e0381260f4ef59901a5cf96eed.webp)
 
 这张架构图适合回答“谁负责什么”，但它是项目设计材料，不是运行正确性证明。
 
@@ -163,11 +163,11 @@ sequenceDiagram
 
 ## PureScript 后端抽象如何分层
 
-![关键帧 4](assets/bilibili-BV1QZub6bEfz-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/41/4143dd65865ee2cf8e51c13ea6b5fa77f524e1781e2d6152bc0ddfa89a771b17.webp)
 
 视频展示的 handler 负责把请求、认证与 CRUD 操作组织起来；核心抽象再把环境、错误、异步效果与响应类型组合。
 
-![关键帧 5](assets/bilibili-BV1QZub6bEfz-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/68/6837817ac3a9dd827803be2b45725d6fd29a70e7ceacaffce288f0b8e6df034d.webp)
 
 ```mermaid
 flowchart TD
@@ -704,43 +704,43 @@ mindmap
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1QZub6bEfz-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/ed/edecb3ae8abacfba5cb6b8c618316f145e7ec2a274f468352479f2069cb884a3.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1QZub6bEfz-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/ff/ff76c65986775505a04f09af7f281ab09fbac9e0381260f4ef59901a5cf96eed.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1QZub6bEfz-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/af/aff68c8de6b19c6f222a0f754269fe7fca23fdad8d96a5029d8f23f13b82623d.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1QZub6bEfz-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/41/4143dd65865ee2cf8e51c13ea6b5fa77f524e1781e2d6152bc0ddfa89a771b17.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1QZub6bEfz-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/68/6837817ac3a9dd827803be2b45725d6fd29a70e7ceacaffce288f0b8e6df034d.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1QZub6bEfz-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/00/0084f1ca4d3077fe34c0c45b7618e23d23328fef6d536c99541bc4eef2c43623.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1QZub6bEfz-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/d3/d30bbb9a0f1b37384718f470348a64c44ef9488df68f30f0e7d4823a55298955.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1QZub6bEfz-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/c3/c3f3cb6bb2f586d969aabc022191b5cb1b24b51c3e36d31f07e3051f08a23bc2.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1QZub6bEfz-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/9a/9a148fe702b0c7b62dd6e8db6ed554f1cfee4ce982b9341e2357b0357d8a2a51.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1QZub6bEfz-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/17/1721ba88439444cfa9ea5f3cbf91244618c14ff1fbb196c6b51d53319126ca4f.webp)
 
 ## 补充原始数据
 
