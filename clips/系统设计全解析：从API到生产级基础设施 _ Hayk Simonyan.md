@@ -6,6 +6,9 @@ video_id: "BV1ktbq6SE3w"
 uploader: "地层世界"
 duration_seconds: 7458
 tags: ["数据库", "负载均衡", "缓存", "GraphQL", "CDN", "后端开发", "系统设计", "软件架构", "RESTful API", "API设计"]
+rid: 155348fe-e5dd-4545-8ca8-3abd63d3189c
+permalink: /r/155348fe-e5dd-4545-8ca8-3abd63d3189c
+webClipUrl: https://l4place0.github.io/web-clips-publish/r/155348fe-e5dd-4545-8ca8-3abd63d3189c
 ---
 
 # 总结稿
