@@ -1,0 +1,25 @@
+{
+  "name": "web-clips",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "publish": "node publishing/cli.mjs",
+    "publish:prepare": "node publishing/cli.mjs prepare",
+    "publish:annotate-urls": "node publishing/cli.mjs annotate-urls",
+    "publish:validate": "node publishing/cli.mjs validate",
+    "publish:dry-run": "node publishing/cli.mjs build --dry-run",
+    "media": "node publishing/media-cli.mjs",
+    "media:verify": "node publishing/media-cli.mjs verify",
+    "test:publisher": "node --test --test-concurrency=1 publishing/*.test.mjs",
+    "test": "node --test --test-concurrency=1 publishing/*.test.mjs"
+  },
+  "dependencies": {
+    "ali-oss": "^6.23.0",
+    "yaml": "^2.8.1"
+  },
+  "engines": {
+    "node": "24.14.x",
+    "npm": ">=11"
+  },
+  "packageManager": "npm@11.11.0"
+}
