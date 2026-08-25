@@ -1,4 +1,4 @@
-name: Normalize content metadata
+name: Normalize and validate content
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - "clips/**/*.md"
       - ".github/scripts/sync-content-metadata.mjs"
+      - ".github/scripts/check-content-ready.mjs"
       - ".github/workflows/content-metadata.yml"
   workflow_dispatch:
 
@@ -29,6 +30,8 @@ jobs:
           node-version: 24.14.1
       - name: Normalize stable content metadata
         run: node .github/scripts/sync-content-metadata.mjs
+      - name: Check content delivery readiness
+        run: node .github/scripts/check-content-ready.mjs
       - name: Commit generated metadata
         shell: bash
         run: |

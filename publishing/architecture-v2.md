@@ -1,67 +1,55 @@
-# Web Clips 双仓库发布架构（v2）
+# Web Clips 双仓库发布架构（v3）
 
-本文是 `web-clips` 内容仓库、`web-clips-publish` 展示仓库和阿里云 OSS 之间的边界契约。
-身份与 Markdown 校验仍以 `publishing/contract.md` 为准；若旧文档中出现 Cloudflare Pages、
-同仓库站点构建或复制媒体到站点输出等描述，以本文为迁移后的目标状态。
+本文描述 `web-clips` 内容仓库、`web-clips-publish` 展示仓库和阿里云 OSS 的当前边界。
+Markdown 交付细则见 `publishing/contract.md`。
 
-## 1. 仓库职责
+## 1. `l4place0/web-clips`：内容与创作
 
-### `l4place0/web-clips`
+- 版本化保存 `clips/**/*.md` 及其稳定元数据。
+- 通过轻量 Action 幂等维护 `rid`、`permalink`、`webClipUrl`。
+- 在 Action 中检查真实图片嵌入是否仍指向本地 `clips/assets/`。
+- `clips/assets/` 与 `.media-publish/` 仅保留为忽略的本地工作缓存。
+- 仓库内 `publish-media-assets` Skill 属于创作侧媒体上传工具，不参与站点构建或 Git hooks。
+- 不包含 Quartz、Pages 部署器、站点 registry/manifest 或发布运行时。
 
-- 公开保存 `clips/**/*.md`、RID 注册表和轻量发布元数据。
-- `clips/assets/` 是本地工作缓存；媒体迁移完成后不再由 Git 跟踪。
-- 提供确定性的内容校验与导出接口，但不包含 Quartz、页面主题或 Pages 部署逻辑。
-- 提供 `publish-media-assets` CLI/Skill，将本地媒体上传到 OSS 后原子改写 Markdown。
+## 2. `l4place0/web-clips-publish`：校验、构建与展示
 
-### `l4place0/web-clips-publish`
+- 固定 checkout 内容仓库的一个完整 commit SHA。
+- 对该 SHA 执行完整内容契约、安全和跨版本身份校验。
+- 维护发布 registry、retired/tombstone 状态、暂存 manifest 与部署记录。
+- 生成隔离的 Quartz 内容树和 raw Markdown 副本。
+- 独立安装 Quartz、构建静态站并部署 GitHub Pages。
+- 只有构建和部署成功后才登记内容 SHA；失败时保留上一次成功站点。
 
-- 固定 checkout 内容仓库的一个完整 commit SHA，不跟随构建过程中的浮动分支。
-- 调用该 SHA 自带的内容导出器，消费 `.publish-stage` 和 manifest。
-- 独立安装 Quartz、构建静态站，并部署到 GitHub Pages。
-- 站点失败时不改变上一次成功部署。
+## 3. 阿里云 OSS：不可变媒体
 
-## 2. 内容到展示站
+- 公网基地址固定为 `https://assets.l4p.site/`。
+- object key 由内容 SHA-256 决定：
+  `media/<hash前2位>/<完整hash>.<规范扩展名>`。
+- Bucket 保持 private，只把已验证的目标 object 设置为 `public-read`。
+- 上传顺序为扫描、校验、哈希、HEAD/上传、ACL、公网验证、原子改写 Markdown。
+- 展示仓库只消费 Markdown 中的 HTTPS URL，不读取本地 `clips/assets/`。
 
-- Obsidian Git 的频繁 push 不直接触发展示站构建。
-- 展示仓库每 30 分钟轮询内容仓库 `main`，也支持 `workflow_dispatch`。
-- workflow 先解析远端 SHA；已经成功部署过相同 SHA 时直接结束。
-- 构建和部署成功后才登记该 SHA。任何失败都不得把失败 SHA 标记为已发布。
-- 初始站点基地址为 `https://l4place0.github.io/web-clips-publish`。
+## 4. 发布链路
 
-## 3. 媒体发布
+```text
+本地创作
+  -> 上传并验证 OSS 媒体
+  -> Markdown 改写为 HTTPS URL
+  -> 内容仓库 Action 维护元数据并做轻量就绪检查
+  -> 展示仓库选择固定内容 SHA
+  -> 完整校验与隔离暂存
+  -> Quartz 构建
+  -> GitHub Pages 部署
+```
 
-- 公网媒体基地址固定为 `https://assets.l4p.site/`，Markdown 不生成 HTTP URL。
-- OSS Bucket 为 `l4p-web-clips-hk`，region/endpoint 为 `oss-cn-hongkong`。
-- Bucket ACL 保持 private；发布器只把已验证的目标 object 设置为 `public-read`。
-- object key 由内容 SHA-256 决定：`media/<hash前2位>/<完整hash>.<规范扩展名>`。
-- 同一字节内容只对应一个 object；文件名、笔记标题和本地路径不参与公网身份。
-- 上传顺序为：扫描 → 校验 → 哈希 → HEAD/上传 → ACL → 公网 HEAD → 原子改写
-  Markdown 与 per-note manifest。
-- 上传成功但本地提交失败时允许留下不可变孤儿 object；不得自动删除远端 object。
-- dry-run、check、status 都必须是只读操作。
+Obsidian Git 的频繁 push 不需要在内容仓库中执行站点构建。展示仓库自行调度、去重并记录已经
+成功部署的内容 SHA。
 
-## 4. 媒体 manifest
+## 5. 故障边界
 
-每篇带 RID 的笔记使用 `publishing/assets/<rid>.json`，该文件纳入 Git。每项至少记录：
-
-- 原仓库相对路径；
-- SHA-256、字节数和 MIME；
-- OSS object key 与 HTTPS URL；
-- 最近一次成功发布时间。
-
-manifest 是审计和幂等状态，不是资源身份源。Markdown 中的 HTTPS URL 是展示构建唯一需要的
-媒体引用；展示仓库不读取本地 `clips/assets/`。
-
-## 5. 切换门槛
-
-只有同时满足以下条件才停止 Git 跟踪 `clips/assets/`：
-
-1. 全库扫描没有未发布的本地媒体引用；
-2. 所有 manifest 与 Markdown URL 一致；
-3. 所有 OSS URL 通过 HTTPS HEAD/GET 校验；
-4. GitHub Pages 使用固定内容 SHA 构建成功；
-5. 本地 `clips/assets/` 文件仍保留，且已加入 `.gitignore`。
-
-以上门槛已于 2026-08-17 验收通过：393 个 OSS 对象全量核验成功，GitHub Pages 使用
-内容提交 `bb89b71c9027dc5b4055f916155379ff685caf09` 构建成功；`clips/assets/` 已停止 Git
-跟踪但本地缓存保留。旧 `site/` 与 Quartz 依赖随后从内容仓库移除。
+- 媒体上传或公网验证失败：不得改写 Markdown。
+- 内容就绪检查失败：报告文件与行号，不运行任何站点发布逻辑。
+- 展示构建失败：不得把失败 SHA 标记为已发布。
+- Pages 部署失败：保持上一次成功部署。
+- 任一仓库都不得把 `clips/assets/`、`.media-publish/` 或整个私有工作树直接暴露为站点内容。
