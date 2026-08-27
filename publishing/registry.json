@@ -1,0 +1,2400 @@
+{
+  "version": 1,
+  "resources": {
+    "1fe2d2f1-ea47-47be-8925-083fb8e67d2a": {
+      "firstAssignedPath": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "lastKnownSourcePath": "clips/AI辅助构建-任意一个领域的可视化知识体系.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:04:27.213Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "43a0eb11-e472-4b3c-a312-7a2530276d8d": {
+      "firstAssignedPath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "lastKnownSourcePath": "clips/黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:04:53.797Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1": {
+      "firstAssignedPath": "2026年过半，我是怎样使用 Agent 的？.md",
+      "lastKnownSourcePath": "clips/2026年过半，我是怎样使用 Agent 的？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T16:05:11.194Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T16:14:00.610Z"
+    },
+    "9f68012f-7161-4bcb-ac9b-23c8b12bed67": {
+      "firstAssignedPath": "2026-04-08_WC_01.md",
+      "lastKnownSourcePath": "clips/揭开 skill 被吹嘘的神秘面纱-及与MCP的相关性 - 开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.024Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae": {
+      "firstAssignedPath": "2026-04-08_WC_02.md",
+      "lastKnownSourcePath": "clips/我对 PARA 的理解与实践 - 少数派.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.205Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21": {
+      "firstAssignedPath": "2026-04-19_WC.md",
+      "lastKnownSourcePath": "clips/AI无需恐慌，棋局尚未结束… - 搞七捻三.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.426Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2bafdbf3-58c1-4598-9c92-46a53c774058": {
+      "firstAssignedPath": "2026-04-20_WC_01.md",
+      "lastKnownSourcePath": "clips/[长文手敲] 回顾Agent的来时路，以及它将何去何从... - 搞七捻三.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:19.855Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2259721f-78d2-45f2-9f4a-20e703359cdc": {
+      "firstAssignedPath": "2026-04-20_WC_02.md",
+      "lastKnownSourcePath": "clips/作为多年病友，聊聊关于失眠的问题 - 搞七捻三.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.047Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "715a7ba8-da1e-4320-abb0-61628f520f5c": {
+      "firstAssignedPath": "2026-05-19_Sum_01.md",
+      "lastKnownSourcePath": "clips/19 - 协程、Goroutine、异步编程 [2026 南京大学操作系统原理].md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.229Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "cc318c9a-a0c8-4d69-ad6c-959b419c4a53": {
+      "firstAssignedPath": "2026-05-20_Sum_01.md",
+      "lastKnownSourcePath": "clips/人类想学会任何新知识，必须联系旧知识，因为演化让大脑以贝叶斯推理方式学习，所谓知识是由五类元素组成【吸收人类优秀学习理论31：新旧联系1】.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.372Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "7127a789-4722-4742-94b4-f2263418fa75": {
+      "firstAssignedPath": "2026-05-20_Sum_02.md",
+      "lastKnownSourcePath": "clips/情绪管理是第一优先级.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.542Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "995fbe00-95ab-49c6-a928-ad1d2a11cfa5": {
+      "firstAssignedPath": "2026-05-20_Sum_03.md",
+      "lastKnownSourcePath": "clips/无家族托举读研读博就业路线分享讨论.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.730Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1": {
+      "firstAssignedPath": "2026-05-20_Sum_04.md",
+      "lastKnownSourcePath": "clips/四个步骤，建立知识体系的简单方法，借助直觉，直觉不是瞎猜，不是超能力【吸收人类优秀学习理论32】.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:20.865Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "988e7cdb-6eac-4583-bb46-7c843db80550": {
+      "firstAssignedPath": "2026-05-20_Sum_05.md",
+      "lastKnownSourcePath": "clips/【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.009Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "3510b460-90c9-4fca-9155-0c2ff225684d": {
+      "firstAssignedPath": "2026-05-20_WC.md",
+      "lastKnownSourcePath": "clips/【开源推广】作为一名在读博士生，我在日常是如何与 AI 协作的？——ai-collab-playbook - 开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.138Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "50e557f9-9169-4b3f-8729-bf8db0e828d7": {
+      "firstAssignedPath": "2026-05-28_WC.md",
+      "lastKnownSourcePath": "clips/【开源】Agent需要的不是更长的context，而是可追溯的state - 开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.297Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "6d1fa00c-7224-4691-ad07-b170ad4510e6": {
+      "firstAssignedPath": "2026-05-29_WC.md",
+      "lastKnownSourcePath": "clips/AI科研不完全指北：Top10 PhD烧了上万刀的真实经验。 Context Is All You Need - 开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.565Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "24135def-07d2-40e7-82e5-ca2b00f96176": {
+      "firstAssignedPath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "lastKnownSourcePath": "clips/linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.698Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b8472df3-4e5a-4bcd-8e05-1e44b2945b20": {
+      "firstAssignedPath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "lastKnownSourcePath": "clips/linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:21.857Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "83350e33-0732-4452-a55b-bbc2f5122d9b": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Best_Practices.md",
+      "lastKnownSourcePath": "clips/AI_Coding_Best_Practices.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.046Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "88707bc6-cdf5-4ed4-8083-f00efe2f15cd": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Guide.md",
+      "lastKnownSourcePath": "clips/AI_Coding_Guide.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.299Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ada23994-d3cb-4995-895a-227cfe5abbf0": {
+      "firstAssignedPath": "2026-06-26_AI_Coding_Tools_Comparison.md",
+      "lastKnownSourcePath": "clips/AI_Coding_Tools_Comparison.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.416Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ad536a24-c5ad-4259-83d2-f40cd58ca7cf": {
+      "firstAssignedPath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "lastKnownSourcePath": "clips/blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.555Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "e2ff2ed1-2dab-475d-b9a3-17a219479a43": {
+      "firstAssignedPath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "lastKnownSourcePath": "clips/cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.672Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "845c5970-c51e-480a-863c-e84a613c7f64": {
+      "firstAssignedPath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "lastKnownSourcePath": "clips/www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.792Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3": {
+      "firstAssignedPath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "lastKnownSourcePath": "clips/www.cnblogs.com_爬虫面试题梳理.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:22.955Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "9e8c8aac-7857-4eba-a085-117d71f6fadf": {
+      "firstAssignedPath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "lastKnownSourcePath": "clips/zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.175Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ac8282be-cc85-4e70-98f0-5043d9cd0d20": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "lastKnownSourcePath": "clips/www.xiaohongshu.com_boss找工作望-周知.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.365Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "cedae9cb-caf7-4d4c-9b57-23892a6735f3": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "lastKnownSourcePath": "clips/www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.681Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "6184ec72-c0b0-4866-9a20-379f9053a83c": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "lastKnownSourcePath": "clips/www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:23.840Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "lastKnownSourcePath": "clips/www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.029Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce": {
+      "firstAssignedPath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "lastKnownSourcePath": "clips/www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.660Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ce936931-25bf-446e-a451-30808c82b729": {
+      "firstAssignedPath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "lastKnownSourcePath": "clips/linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:24.872Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "07945d2c-9acb-4b99-ab99-97fd6f8e44dc": {
+      "firstAssignedPath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "lastKnownSourcePath": "clips/linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.160Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "267504d7-da48-48b3-b7fc-acf9b1f4bf50": {
+      "firstAssignedPath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "lastKnownSourcePath": "clips/Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.548Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25": {
+      "firstAssignedPath": "gpt-5.6速度慢解决方法.md",
+      "lastKnownSourcePath": "clips/gpt-5.6速度慢解决方法.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:25.938Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "c8b78427-cef2-4a1f-b761-0af0397bb6f4": {
+      "firstAssignedPath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "lastKnownSourcePath": "clips/相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.446Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "ad2961fc-e3da-44ee-ad26-a36a3ccecba6": {
+      "firstAssignedPath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "lastKnownSourcePath": "clips/这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.623Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "39770cb1-ca37-4c6f-a7f8-253c0e01f32e": {
+      "firstAssignedPath": "连续21天十点睡六点起，我真的会变健康吗？.md",
+      "lastKnownSourcePath": "clips/连续21天十点睡六点起，我真的会变健康吗？.md",
+      "status": "active",
+      "assignedAt": "2026-07-29T20:44:26.883Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-07-29T20:45:18.548Z"
+    },
+    "b64dc8ab-41ec-4276-89a1-7de75ddd29ee": {
+      "firstAssignedPath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+      "lastKnownSourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T03:58:02.544Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-08-01T06:53:33.235Z"
+    },
+    "29855abf-0e06-4a68-9bd9-b8b1daf3d3ad": {
+      "firstAssignedPath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "lastKnownSourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "status": "retired",
+      "assignedAt": "2026-08-01T05:23:19.318Z",
+      "everPublished": false,
+      "retiredAt": "2026-08-01T06:53:33.235Z",
+      "retiredReason": "source-deleted"
+    },
+    "8187cb22-28eb-47b3-82b7-eebd43d9846c": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "status": "retired",
+      "assignedAt": "2026-08-01T05:23:27.582Z",
+      "everPublished": false,
+      "retiredAt": "2026-08-01T06:53:33.235Z",
+      "retiredReason": "source-deleted"
+    },
+    "93b247db-03db-4f00-95dc-415889b62f58": {
+      "firstAssignedPath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "lastKnownSourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T05:56:40.868Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-08-01T06:53:33.235Z"
+    },
+    "3a566b9f-f530-4b50-8de1-fd7339758124": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-01T05:56:53.503Z",
+      "everPublished": true,
+      "firstPublishedAt": "2026-08-01T06:53:33.235Z"
+    },
+    "2c267c78-b4c9-4492-b2f1-b0191bf961f7": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:37.045Z",
+      "everPublished": false
+    },
+    "ec123725-a482-4c03-86f4-cc086925ed1d": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:39.124Z",
+      "everPublished": false
+    },
+    "13e03286-c5a6-4c99-a876-8954707476c3": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:40.901Z",
+      "everPublished": false
+    },
+    "db763353-4bb2-41f2-ae14-daff23c44692": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:41:45.381Z",
+      "everPublished": false
+    },
+    "5bc8ebaa-f5d7-4f11-b10c-bf92a702ce04": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T04:45:06.165Z",
+      "everPublished": false
+    },
+    "3bbd41c0-2c65-4d9a-b484-027cdc59aaee": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:44.657Z",
+      "everPublished": false
+    },
+    "0a4fb376-c368-4bfa-80cd-cdcda44e012f": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:46.709Z",
+      "everPublished": false
+    },
+    "59890b49-10af-494c-a10f-65ab88176ebd": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:47.537Z",
+      "everPublished": false
+    },
+    "7abdc33e-1cfb-4728-a176-159f89b4ab85": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:48.062Z",
+      "everPublished": false
+    },
+    "3bc2298a-9067-445d-8944-95622ab51505": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:48.946Z",
+      "everPublished": false
+    },
+    "0c17b62d-9b12-4544-92c4-b996bcfd5730": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:51.382Z",
+      "everPublished": false
+    },
+    "1ec6a92a-66f3-4513-b2d3-e0d9861f6c2d": {
+      "firstAssignedPath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:53.329Z",
+      "everPublished": false
+    },
+    "f00d65d8-a135-4ca2-aada-c58c8b9dda64": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:55.765Z",
+      "everPublished": false
+    },
+    "4ae99eac-59be-4d28-ba27-ecfe0cb97e09": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:42:57.306Z",
+      "everPublished": false
+    },
+    "d895480f-e3f7-47a8-bf65-565fc5cd78c6": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1FENq6WEdZ/corrected-transcript.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1FENq6WEdZ/corrected-transcript.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:54:49.433Z",
+      "everPublished": false
+    },
+    "6c359796-7879-438a-a2a9-a36ddf0f3550": {
+      "firstAssignedPath": "clips/.work/bilibili-BV1FENq6WEdZ/summary.md",
+      "lastKnownSourcePath": "clips/.work/bilibili-BV1FENq6WEdZ/summary.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T05:54:55.582Z",
+      "everPublished": false
+    },
+    "e9e6bb17-6ddd-4c06-9446-309361ea48d5": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:36:58.971Z",
+      "everPublished": false
+    },
+    "fd8780af-f3be-4dc0-9495-acf4e63d575c": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:37:01.635Z",
+      "everPublished": false
+    },
+    "8e07de95-467c-4575-879e-1433f9ecc857": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T09:37:04.237Z",
+      "everPublished": false
+    },
+    "1644e8a3-6512-46ea-a26f-fc90700636ac": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T13:39:59.611Z",
+      "everPublished": false
+    },
+    "d9467977-462e-427a-b3f3-0b5969fbe74e": {
+      "firstAssignedPath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:15.012Z",
+      "everPublished": false
+    },
+    "57ec7a52-5ae6-4237-b929-b762f71e0ff6": {
+      "firstAssignedPath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:15.505Z",
+      "everPublished": false
+    },
+    "d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2": {
+      "firstAssignedPath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "lastKnownSourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:45.002Z",
+      "everPublished": false
+    },
+    "ac0e2da4-88eb-43a2-91f1-0bc028810842": {
+      "firstAssignedPath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-04T15:14:53.515Z",
+      "everPublished": false
+    },
+    "69608cb0-9a86-4242-9a99-a6a8c845bd33": {
+      "firstAssignedPath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "lastKnownSourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T05:30:59.358Z",
+      "everPublished": false
+    },
+    "f6af42d2-4d3e-4979-ade7-d32d901035ab": {
+      "firstAssignedPath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "lastKnownSourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:15.207Z",
+      "everPublished": false
+    },
+    "6a339282-048c-4922-b885-275f22dc3be7": {
+      "firstAssignedPath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "lastKnownSourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:30.855Z",
+      "everPublished": false
+    },
+    "b31a80fc-ca9b-4e5a-ab10-0373beac0f80": {
+      "firstAssignedPath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md",
+      "lastKnownSourcePath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T07:48:36.080Z",
+      "everPublished": false
+    },
+    "e6ba0b25-7023-47ce-aa81-8596f1834a7b": {
+      "firstAssignedPath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "lastKnownSourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T08:25:14.033Z",
+      "everPublished": false
+    },
+    "1f4cc888-4ccc-4e35-9845-8f0fdb7ba377": {
+      "firstAssignedPath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:03:05.908Z",
+      "everPublished": false
+    },
+    "8fc32ba1-d283-459e-9c68-343535ddc7fb": {
+      "firstAssignedPath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "lastKnownSourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:10:09.589Z",
+      "everPublished": false
+    },
+    "1aaf18aa-ea4c-4aec-9dab-57112bef6627": {
+      "firstAssignedPath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "lastKnownSourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:22:17.775Z",
+      "everPublished": false
+    },
+    "d4b4590b-0f32-4c45-8de2-c2785a9ce2cb": {
+      "firstAssignedPath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "lastKnownSourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:39:08.082Z",
+      "everPublished": false
+    },
+    "1935ec51-3590-4a21-aadb-70a0c27dfb79": {
+      "firstAssignedPath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "lastKnownSourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:47:03.911Z",
+      "everPublished": false
+    },
+    "7b77c047-8d46-45e4-a123-86e01a7a464c": {
+      "firstAssignedPath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "lastKnownSourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T09:51:30.649Z",
+      "everPublished": false
+    },
+    "8c3c3bdd-2dea-431d-b889-42f021e7941e": {
+      "firstAssignedPath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "lastKnownSourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T10:31:13.458Z",
+      "everPublished": false
+    },
+    "93edd8df-7936-4905-bcb2-8bcf0eb10159": {
+      "firstAssignedPath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "lastKnownSourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md",
+      "status": "active",
+      "assignedAt": "2026-08-05T10:34:48.623Z",
+      "everPublished": false
+    },
+    "7f38ffcf-ff84-41ba-a897-a42a44201559": {
+      "firstAssignedPath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "lastKnownSourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T09:40:44.183Z",
+      "everPublished": false
+    },
+    "69b30ff5-9b35-445f-b2b9-283556d04d28": {
+      "firstAssignedPath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "lastKnownSourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T10:04:47.780Z",
+      "everPublished": false
+    },
+    "02d95bbf-439c-4cc1-84e5-19b202c8a34f": {
+      "firstAssignedPath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "lastKnownSourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:43:31.154Z",
+      "everPublished": false
+    },
+    "ccb5a9a8-b2b7-4916-b54e-48a3e08b5c8d": {
+      "firstAssignedPath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "lastKnownSourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:46:38.835Z",
+      "everPublished": false
+    },
+    "66a74a03-3fd8-4a34-8436-edb68c6cca14": {
+      "firstAssignedPath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "lastKnownSourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:47:54.472Z",
+      "everPublished": false
+    },
+    "6bb9a372-9a0f-4c34-b325-66ef747cce29": {
+      "firstAssignedPath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:49:17.386Z",
+      "everPublished": false
+    },
+    "8fc9ef16-74f7-40e3-b32f-29ae8643c4a8": {
+      "firstAssignedPath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "lastKnownSourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:52:18.305Z",
+      "everPublished": false
+    },
+    "1e657d34-faeb-4dfc-9494-5896f0521efe": {
+      "firstAssignedPath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T11:55:54.364Z",
+      "everPublished": false
+    },
+    "5f59bd5e-640c-4ea5-a69b-6cbba80a93fd": {
+      "firstAssignedPath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "lastKnownSourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:57.471Z",
+      "everPublished": false
+    },
+    "88cddc7c-bac1-450a-907b-1248f664e180": {
+      "firstAssignedPath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:57.683Z",
+      "everPublished": false
+    },
+    "2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6": {
+      "firstAssignedPath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "lastKnownSourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.258Z",
+      "everPublished": false
+    },
+    "9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05": {
+      "firstAssignedPath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "lastKnownSourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.608Z",
+      "everPublished": false
+    },
+    "90fdf633-f46c-4c4c-93bf-d5439262cfbb": {
+      "firstAssignedPath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "lastKnownSourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:58.885Z",
+      "everPublished": false
+    },
+    "7e20be39-c970-4823-b097-af7df0e5b5c2": {
+      "firstAssignedPath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "lastKnownSourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md",
+      "status": "active",
+      "assignedAt": "2026-08-08T12:45:59.230Z",
+      "everPublished": false
+    },
+    "e4e4e49f-441f-4dfe-9c27-f27c1fa20abf": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T05:05:56.853Z",
+      "everPublished": false
+    },
+    "7f3c79d7-b3b2-4598-81dd-07f9e9576a02": {
+      "firstAssignedPath": "clips/不要再用对话管理Codex了.md",
+      "lastKnownSourcePath": "clips/不要再用对话管理Codex了.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T05:05:57.120Z",
+      "everPublished": false
+    },
+    "60790633-8052-4c18-9786-c311dccb8207": {
+      "firstAssignedPath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "lastKnownSourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T13:57:15.662Z",
+      "everPublished": false
+    },
+    "69b7e70e-649c-43ce-8c87-8b6bc494b4fa": {
+      "firstAssignedPath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T13:57:22.473Z",
+      "everPublished": false
+    },
+    "37665f2a-4573-4e55-952c-0faa25b04f7a": {
+      "firstAssignedPath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "lastKnownSourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:14.188Z",
+      "everPublished": false
+    },
+    "808d0915-08c3-4867-9570-660500ac6d53": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:16.323Z",
+      "everPublished": false
+    },
+    "d7bc1aa2-cc54-4f08-9358-d111a84a1a54": {
+      "firstAssignedPath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:17.695Z",
+      "everPublished": false
+    },
+    "6291538c-c226-45ba-ba25-93a95e7e35d5": {
+      "firstAssignedPath": "clips/不要再用对话管理Codex了.md",
+      "lastKnownSourcePath": "clips/不要再用对话管理Codex了.md",
+      "status": "active",
+      "assignedAt": "2026-08-11T14:51:19.611Z",
+      "everPublished": false
+    },
+    "bb9af336-964d-4c72-bb5b-1f8d6d94bea6": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:09:02.736Z",
+      "everPublished": false
+    },
+    "9d807cbb-27cc-4c50-9ec3-0e9e8be359eb": {
+      "firstAssignedPath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:09:03.562Z",
+      "everPublished": false
+    },
+    "ec76fbd3-bc54-4284-a62d-dca5704e2a03": {
+      "firstAssignedPath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "lastKnownSourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:25.954Z",
+      "everPublished": false
+    },
+    "fc50ce0d-5924-4614-a5c4-d04ad5f4e8a5": {
+      "firstAssignedPath": "clips/一口气了解杠杆（两融）.md",
+      "lastKnownSourcePath": "clips/一口气了解杠杆（两融）.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:26.397Z",
+      "everPublished": false
+    },
+    "c4422f95-d0cb-420c-80e2-0d7cd0ae29d4": {
+      "firstAssignedPath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "lastKnownSourcePath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:16:27.238Z",
+      "everPublished": false
+    },
+    "af9aafb1-8c5d-4f00-aa58-11ae00e6849a": {
+      "firstAssignedPath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "lastKnownSourcePath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T04:17:54.330Z",
+      "everPublished": false
+    },
+    "11ce3982-c4ce-462c-b4ee-fa43cae6c2ba": {
+      "firstAssignedPath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "lastKnownSourcePath": "clips/【中文字幕】如何在人工智能时代生存.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:27.962Z",
+      "everPublished": false
+    },
+    "8fa25ac1-9d61-4dad-af8d-ec248e8f09c5": {
+      "firstAssignedPath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "lastKnownSourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.105Z",
+      "everPublished": false
+    },
+    "07bae895-f568-4007-8c45-aa822a523df7": {
+      "firstAssignedPath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.300Z",
+      "everPublished": false
+    },
+    "7b11cf38-354b-4a72-a049-111a2987d904": {
+      "firstAssignedPath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "lastKnownSourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.460Z",
+      "everPublished": false
+    },
+    "a0e6be8d-70a5-4c92-bacd-45ac01b24845": {
+      "firstAssignedPath": "clips/一口气了解杠杆（两融）.md",
+      "lastKnownSourcePath": "clips/一口气了解杠杆（两融）.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.609Z",
+      "everPublished": false
+    },
+    "b67bb34e-8b82-4db6-897b-95b4a92f02a6": {
+      "firstAssignedPath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "lastKnownSourcePath": "clips/我是如何用AI高速学习陌生代码的.md",
+      "status": "active",
+      "assignedAt": "2026-08-14T05:03:28.740Z",
+      "everPublished": false
+    }
+  },
+  "events": [
+    {
+      "type": "assigned",
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "at": "2026-07-29T16:04:27.213Z",
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "at": "2026-07-29T16:04:53.797Z",
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "at": "2026-07-29T16:05:11.194Z",
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md"
+    },
+    {
+      "type": "published",
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "AI辅助构建-任意一个领域的可视化知识体系.md"
+    },
+    {
+      "type": "published",
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md"
+    },
+    {
+      "type": "published",
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "at": "2026-07-29T16:14:00.610Z",
+      "sourcePath": "2026年过半，我是怎样使用 Agent 的？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-29T20:44:19.024Z",
+      "sourcePath": "2026-04-08_WC_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-29T20:44:19.205Z",
+      "sourcePath": "2026-04-08_WC_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-29T20:44:19.426Z",
+      "sourcePath": "2026-04-19_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-29T20:44:19.855Z",
+      "sourcePath": "2026-04-20_WC_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-29T20:44:20.047Z",
+      "sourcePath": "2026-04-20_WC_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-29T20:44:20.229Z",
+      "sourcePath": "2026-05-19_Sum_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-29T20:44:20.372Z",
+      "sourcePath": "2026-05-20_Sum_01.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-29T20:44:20.542Z",
+      "sourcePath": "2026-05-20_Sum_02.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-29T20:44:20.730Z",
+      "sourcePath": "2026-05-20_Sum_03.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-29T20:44:20.865Z",
+      "sourcePath": "2026-05-20_Sum_04.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-29T20:44:21.009Z",
+      "sourcePath": "2026-05-20_Sum_05.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-29T20:44:21.138Z",
+      "sourcePath": "2026-05-20_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-29T20:44:21.297Z",
+      "sourcePath": "2026-05-28_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-29T20:44:21.565Z",
+      "sourcePath": "2026-05-29_WC.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-29T20:44:21.698Z",
+      "sourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-29T20:44:21.857Z",
+      "sourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-29T20:44:22.046Z",
+      "sourcePath": "2026-06-26_AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-29T20:44:22.299Z",
+      "sourcePath": "2026-06-26_AI_Coding_Guide.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-29T20:44:22.416Z",
+      "sourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-29T20:44:22.555Z",
+      "sourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-29T20:44:22.672Z",
+      "sourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-29T20:44:22.792Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-29T20:44:22.955Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-29T20:44:23.175Z",
+      "sourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-29T20:44:23.365Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-29T20:44:23.681Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-29T20:44:23.840Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-29T20:44:24.029Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-29T20:44:24.660Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-29T20:44:24.872Z",
+      "sourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-29T20:44:25.160Z",
+      "sourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+      "at": "2026-07-29T20:44:25.548Z",
+      "sourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25",
+      "at": "2026-07-29T20:44:25.938Z",
+      "sourcePath": "gpt-5.6速度慢解决方法.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "c8b78427-cef2-4a1f-b761-0af0397bb6f4",
+      "at": "2026-07-29T20:44:26.446Z",
+      "sourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ad2961fc-e3da-44ee-ad26-a36a3ccecba6",
+      "at": "2026-07-29T20:44:26.623Z",
+      "sourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "39770cb1-ca37-4c6f-a7f8-253c0e01f32e",
+      "at": "2026-07-29T20:44:26.883Z",
+      "sourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md"
+    },
+    {
+      "type": "published",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-08_WC_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-08_WC_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-19_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-20_WC_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-04-20_WC_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-19_Sum_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_01.md"
+    },
+    {
+      "type": "published",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_02.md"
+    },
+    {
+      "type": "published",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_03.md"
+    },
+    {
+      "type": "published",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_04.md"
+    },
+    {
+      "type": "published",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_Sum_05.md"
+    },
+    {
+      "type": "published",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-20_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-28_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-05-29_WC.md"
+    },
+    {
+      "type": "published",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "published",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "published",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "published",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Guide.md"
+    },
+    {
+      "type": "published",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "published",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "published",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "published",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "published",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "published",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "published",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "published",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "published",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "published",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "published",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "published",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "published",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "published",
+      "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md"
+    },
+    {
+      "type": "published",
+      "rid": "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "gpt-5.6速度慢解决方法.md"
+    },
+    {
+      "type": "published",
+      "rid": "c8b78427-cef2-4a1f-b761-0af0397bb6f4",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "相信我！这是一套能让你成为全才的思想【势环系统论】.md"
+    },
+    {
+      "type": "published",
+      "rid": "ad2961fc-e3da-44ee-ad26-a36a3ccecba6",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md"
+    },
+    {
+      "type": "published",
+      "rid": "39770cb1-ca37-4c6f-a7f8-253c0e01f32e",
+      "at": "2026-07-29T20:45:18.548Z",
+      "sourcePath": "连续21天十点睡六点起，我真的会变健康吗？.md"
+    },
+    {
+      "type": "moved",
+      "rid": "1fe2d2f1-ea47-47be-8925-083fb8e67d2a",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "AI辅助构建-任意一个领域的可视化知识体系.md",
+      "to": "clips/AI辅助构建-任意一个领域的可视化知识体系.md"
+    },
+    {
+      "type": "moved",
+      "rid": "43a0eb11-e472-4b3c-a312-7a2530276d8d",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md",
+      "to": "clips/黑灯软件工厂的致命诱惑：为什么无人读代码会失败？.md"
+    },
+    {
+      "type": "moved",
+      "rid": "dd8f9bf4-9da8-4480-af12-4bcbd04a8bd1",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026年过半，我是怎样使用 Agent 的？.md",
+      "to": "clips/2026年过半，我是怎样使用 Agent 的？.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-04-08_WC_01.md",
+      "to": "clips/2026-04-08_WC_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-04-08_WC_02.md",
+      "to": "clips/2026-04-08_WC_02.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-04-19_WC.md",
+      "to": "clips/2026-04-19_WC.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-04-20_WC_01.md",
+      "to": "clips/2026-04-20_WC_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-04-20_WC_02.md",
+      "to": "clips/2026-04-20_WC_02.md"
+    },
+    {
+      "type": "moved",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-19_Sum_01.md",
+      "to": "clips/2026-05-19_Sum_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_Sum_01.md",
+      "to": "clips/2026-05-20_Sum_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_Sum_02.md",
+      "to": "clips/2026-05-20_Sum_02.md"
+    },
+    {
+      "type": "moved",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_Sum_03.md",
+      "to": "clips/2026-05-20_Sum_03.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_Sum_04.md",
+      "to": "clips/2026-05-20_Sum_04.md"
+    },
+    {
+      "type": "moved",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_Sum_05.md",
+      "to": "clips/2026-05-20_Sum_05.md"
+    },
+    {
+      "type": "moved",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-20_WC.md",
+      "to": "clips/2026-05-20_WC.md"
+    },
+    {
+      "type": "moved",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-28_WC.md",
+      "to": "clips/2026-05-28_WC.md"
+    },
+    {
+      "type": "moved",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-05-29_WC.md",
+      "to": "clips/2026-05-29_WC.md"
+    },
+    {
+      "type": "moved",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "to": "clips/2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "moved",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "to": "clips/2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "moved",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_AI_Coding_Best_Practices.md",
+      "to": "clips/2026-06-26_AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "moved",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_AI_Coding_Guide.md",
+      "to": "clips/2026-06-26_AI_Coding_Guide.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_AI_Coding_Tools_Comparison.md",
+      "to": "clips/2026-06-26_AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "to": "clips/2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "moved",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "to": "clips/2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "moved",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "to": "clips/2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "moved",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "to": "clips/2026-06-26_www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "to": "clips/2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "to": "clips/2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "moved",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "to": "clips/2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "moved",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "to": "clips/2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "moved",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "to": "clips/2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "moved",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "to": "clips/2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "to": "clips/2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "to": "clips/20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "267504d7-da48-48b3-b7fc-acf9b1f4bf50",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md",
+      "to": "clips/Karpathy 怎么用 loop：AutoResearch + 让它快 5 倍的双层 loop.md"
+    },
+    {
+      "type": "moved",
+      "rid": "1993e015-b0f9-4d7d-aa67-a7e5c0aaac25",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "gpt-5.6速度慢解决方法.md",
+      "to": "clips/gpt-5.6速度慢解决方法.md"
+    },
+    {
+      "type": "moved",
+      "rid": "c8b78427-cef2-4a1f-b761-0af0397bb6f4",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "相信我！这是一套能让你成为全才的思想【势环系统论】.md",
+      "to": "clips/相信我！这是一套能让你成为全才的思想【势环系统论】.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ad2961fc-e3da-44ee-ad26-a36a3ccecba6",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md",
+      "to": "clips/这位L8首席工程师的AI编程工作流，穷孩亦可直接抄！（Kun Chen完整配置解析）.md"
+    },
+    {
+      "type": "moved",
+      "rid": "39770cb1-ca37-4c6f-a7f8-253c0e01f32e",
+      "at": "2026-07-30T07:27:12.820Z",
+      "from": "连续21天十点睡六点起，我真的会变健康吗？.md",
+      "to": "clips/连续21天十点睡六点起，我真的会变健康吗？.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-04-08_WC_01.md",
+      "to": "clips/WC_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-04-08_WC_02.md",
+      "to": "clips/WC_02.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-04-19_WC.md",
+      "to": "clips/WC.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-04-20_WC_01.md",
+      "to": "clips/WC_01-2.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-04-20_WC_02.md",
+      "to": "clips/WC_02-2.md"
+    },
+    {
+      "type": "moved",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-19_Sum_01.md",
+      "to": "clips/Sum_01.md"
+    },
+    {
+      "type": "moved",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_Sum_01.md",
+      "to": "clips/Sum_01-2.md"
+    },
+    {
+      "type": "moved",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_Sum_02.md",
+      "to": "clips/Sum_02.md"
+    },
+    {
+      "type": "moved",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_Sum_03.md",
+      "to": "clips/Sum_03.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_Sum_04.md",
+      "to": "clips/Sum_04.md"
+    },
+    {
+      "type": "moved",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_Sum_05.md",
+      "to": "clips/Sum_05.md"
+    },
+    {
+      "type": "moved",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-20_WC.md",
+      "to": "clips/WC-2.md"
+    },
+    {
+      "type": "moved",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-28_WC.md",
+      "to": "clips/WC-3.md"
+    },
+    {
+      "type": "moved",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-05-29_WC.md",
+      "to": "clips/WC-4.md"
+    },
+    {
+      "type": "moved",
+      "rid": "24135def-07d2-40e7-82e5-ca2b00f96176",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-25_linux.do_企业应如何开展agent工作-搞七捻三.md",
+      "to": "clips/linux.do_企业应如何开展agent工作-搞七捻三.md"
+    },
+    {
+      "type": "moved",
+      "rid": "b8472df3-4e5a-4bcd-8e05-1e44b2945b20",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-25_linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md",
+      "to": "clips/linux.do_如何写一个好的skill-让你的效率加倍-文档共建.md"
+    },
+    {
+      "type": "moved",
+      "rid": "83350e33-0732-4452-a55b-bbc2f5122d9b",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_AI_Coding_Best_Practices.md",
+      "to": "clips/AI_Coding_Best_Practices.md"
+    },
+    {
+      "type": "moved",
+      "rid": "88707bc6-cdf5-4ed4-8083-f00efe2f15cd",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_AI_Coding_Guide.md",
+      "to": "clips/AI_Coding_Guide.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ada23994-d3cb-4995-895a-227cfe5abbf0",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_AI_Coding_Tools_Comparison.md",
+      "to": "clips/AI_Coding_Tools_Comparison.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ad536a24-c5ad-4259-83d2-f40cd58ca7cf",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_blog.veyliss.top_爬虫与-js-逆向面试题复盘.md",
+      "to": "clips/blog.veyliss.top_爬虫与-js-逆向面试题复盘.md"
+    },
+    {
+      "type": "moved",
+      "rid": "e2ff2ed1-2dab-475d-b9a3-17a219479a43",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_cuiqingcai.com_网络爬虫工程师面试小笔记.md",
+      "to": "clips/cuiqingcai.com_网络爬虫工程师面试小笔记.md"
+    },
+    {
+      "type": "moved",
+      "rid": "845c5970-c51e-480a-863c-e84a613c7f64",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md",
+      "to": "clips/www.cnblogs.com_python爬虫工程师面经-2023年金三银四.md"
+    },
+    {
+      "type": "moved",
+      "rid": "b7c0efb0-8755-4412-bfad-e3f4e45d3ea3",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_www.cnblogs.com_爬虫面试题梳理.md",
+      "to": "clips/www.cnblogs.com_爬虫面试题梳理.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9e8c8aac-7857-4eba-a085-117d71f6fadf",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-26_zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md",
+      "to": "clips/zhangslob.github.io_爬虫面试-数据采集从入门到放弃.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ac8282be-cc85-4e70-98f0-5043d9cd0d20",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-30_www.xiaohongshu.com_boss找工作望-周知.md",
+      "to": "clips/www.xiaohongshu.com_boss找工作望-周知.md"
+    },
+    {
+      "type": "moved",
+      "rid": "cedae9cb-caf7-4d4c-9b57-23892a6735f3",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-30_www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md",
+      "to": "clips/www.xiaohongshu.com_别再-hr-一叫就去面试-真的很容易白跑一趟.md"
+    },
+    {
+      "type": "moved",
+      "rid": "6184ec72-c0b0-4866-9a20-379f9053a83c",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-30_www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md",
+      "to": "clips/www.xiaohongshu.com_真的被大家面试反问的思路深深震撼到.md"
+    },
+    {
+      "type": "moved",
+      "rid": "1818e5ca-b31a-46dc-b4f0-b3cd5955d0ab",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-30_www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md",
+      "to": "clips/www.xiaohongshu.com_面试入职前一定要和hr确认的7大问题.md"
+    },
+    {
+      "type": "moved",
+      "rid": "0a244d5d-84b1-4563-bc6b-b43ca65ea6ce",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-06-30_www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md",
+      "to": "clips/www.xiaohongshu.com_面试反问-不求有功-但求不翻车.md"
+    },
+    {
+      "type": "moved",
+      "rid": "ce936931-25bf-446e-a451-30808c82b729",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/2026-07-13_linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md",
+      "to": "clips/linux.do_人机协作-为什么大佬可以做到一个人盯10-20个agent-但是你不行-开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "07945d2c-9acb-4b99-ab99-97fd6f8e44dc",
+      "at": "2026-07-31T04:31:37.995Z",
+      "from": "clips/20260727_linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md",
+      "to": "clips/linux.do_pi-windows-工作流第二版-从第一版配置升级到现在有哪些改变-开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9f68012f-7161-4bcb-ac9b-23c8b12bed67",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC_01.md",
+      "to": "clips/揭开 skill 被吹嘘的神秘面纱-及与MCP的相关性 - 开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "84f1b6b2-1bdf-45a2-86ef-c8ef467663ae",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC_02.md",
+      "to": "clips/我对 PARA 的理解与实践 - 少数派.md"
+    },
+    {
+      "type": "moved",
+      "rid": "9c58ab47-0c47-4b85-88fe-c9fbbaeafc21",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC.md",
+      "to": "clips/AI无需恐慌，棋局尚未结束… - 搞七捻三.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bafdbf3-58c1-4598-9c92-46a53c774058",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC_01-2.md",
+      "to": "clips/[长文手敲] 回顾Agent的来时路，以及它将何去何从... - 搞七捻三.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2259721f-78d2-45f2-9f4a-20e703359cdc",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC_02-2.md",
+      "to": "clips/作为多年病友，聊聊关于失眠的问题 - 搞七捻三.md"
+    },
+    {
+      "type": "moved",
+      "rid": "715a7ba8-da1e-4320-abb0-61628f520f5c",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_01.md",
+      "to": "clips/19 - 协程、Goroutine、异步编程 [2026 南京大学操作系统原理].md"
+    },
+    {
+      "type": "moved",
+      "rid": "cc318c9a-a0c8-4d69-ad6c-959b419c4a53",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_01-2.md",
+      "to": "clips/人类想学会任何新知识，必须联系旧知识，因为演化让大脑以贝叶斯推理方式学习，所谓知识是由五类元素组成【吸收人类优秀学习理论31：新旧联系1】.md"
+    },
+    {
+      "type": "moved",
+      "rid": "7127a789-4722-4742-94b4-f2263418fa75",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_02.md",
+      "to": "clips/情绪管理是第一优先级.md"
+    },
+    {
+      "type": "moved",
+      "rid": "995fbe00-95ab-49c6-a928-ad1d2a11cfa5",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_03.md",
+      "to": "clips/无家族托举读研读博就业路线分享讨论.md"
+    },
+    {
+      "type": "moved",
+      "rid": "2bbc9776-cd5b-4acb-bc8a-0818ef4be2f1",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_04.md",
+      "to": "clips/四个步骤，建立知识体系的简单方法，借助直觉，直觉不是瞎猜，不是超能力【吸收人类优秀学习理论32】.md"
+    },
+    {
+      "type": "moved",
+      "rid": "988e7cdb-6eac-4583-bb46-7c843db80550",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/Sum_05.md",
+      "to": "clips/【黑客松银牌】有关ClaudeCode, Codex, 最佳实践，怎么部署自己服务器，怎么部署云端服务器，怎么薅羊毛等的个人经验分享.md"
+    },
+    {
+      "type": "moved",
+      "rid": "3510b460-90c9-4fca-9155-0c2ff225684d",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC-2.md",
+      "to": "clips/【开源推广】作为一名在读博士生，我在日常是如何与 AI 协作的？——ai-collab-playbook - 开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "50e557f9-9169-4b3f-8729-bf8db0e828d7",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC-3.md",
+      "to": "clips/【开源】Agent需要的不是更长的context，而是可追溯的state - 开发调优.md"
+    },
+    {
+      "type": "moved",
+      "rid": "6d1fa00c-7224-4691-ad07-b170ad4510e6",
+      "at": "2026-07-31T10:28:57.145Z",
+      "from": "clips/WC-4.md",
+      "to": "clips/AI科研不完全指北：Top10 PhD烧了上万刀的真实经验。 Context Is All You Need - 开发调优.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+      "at": "2026-08-01T03:58:02.544Z",
+      "sourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "29855abf-0e06-4a68-9bd9-b8b1daf3d3ad",
+      "at": "2026-08-01T05:23:19.318Z",
+      "sourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8187cb22-28eb-47b3-82b7-eebd43d9846c",
+      "at": "2026-08-01T05:23:27.582Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "93b247db-03db-4f00-95dc-415889b62f58",
+      "at": "2026-08-01T05:56:40.868Z",
+      "sourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3a566b9f-f530-4b50-8de1-fd7339758124",
+      "at": "2026-08-01T05:56:53.503Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md"
+    },
+    {
+      "type": "published",
+      "rid": "b64dc8ab-41ec-4276-89a1-7de75ddd29ee",
+      "at": "2026-08-01T06:53:33.235Z",
+      "sourcePath": "clips/一个人如何在看不到希望时，依然坚持去做难且正确的事？.md"
+    },
+    {
+      "type": "retired",
+      "rid": "29855abf-0e06-4a68-9bd9-b8b1daf3d3ad",
+      "at": "2026-08-01T06:53:33.235Z",
+      "reason": "source-deleted"
+    },
+    {
+      "type": "retired",
+      "rid": "8187cb22-28eb-47b3-82b7-eebd43d9846c",
+      "at": "2026-08-01T06:53:33.235Z",
+      "reason": "source-deleted"
+    },
+    {
+      "type": "published",
+      "rid": "93b247db-03db-4f00-95dc-415889b62f58",
+      "at": "2026-08-01T06:53:33.235Z",
+      "sourcePath": "clips/AI取代程序员彻底失败？2022-2026真相复盘.md"
+    },
+    {
+      "type": "published",
+      "rid": "3a566b9f-f530-4b50-8de1-fd7339758124",
+      "at": "2026-08-01T06:53:33.235Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用 wayfinder skill 跨会话规划任意规模的工作【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2c267c78-b4c9-4492-b2f1-b0191bf961f7",
+      "at": "2026-08-04T04:41:37.045Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ec123725-a482-4c03-86f4-cc086925ed1d",
+      "at": "2026-08-04T04:41:39.124Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "13e03286-c5a6-4c99-a876-8954707476c3",
+      "at": "2026-08-04T04:41:40.901Z",
+      "sourcePath": "clips/.work/bilibili-BV1HgNd6rEEJ/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "db763353-4bb2-41f2-ae14-daff23c44692",
+      "at": "2026-08-04T04:41:45.381Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "5bc8ebaa-f5d7-4f11-b10c-bf92a702ce04",
+      "at": "2026-08-04T04:45:06.165Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3bbd41c0-2c65-4d9a-b484-027cdc59aaee",
+      "at": "2026-08-04T05:42:44.657Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0a4fb376-c368-4bfa-80cd-cdcda44e012f",
+      "at": "2026-08-04T05:42:46.709Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "59890b49-10af-494c-a10f-65ab88176ebd",
+      "at": "2026-08-04T05:42:47.537Z",
+      "sourcePath": "clips/.work/bilibili-BV1Wf3d68EhN/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7abdc33e-1cfb-4728-a176-159f89b4ab85",
+      "at": "2026-08-04T05:42:48.062Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "3bc2298a-9067-445d-8944-95622ab51505",
+      "at": "2026-08-04T05:42:48.946Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "0c17b62d-9b12-4544-92c4-b996bcfd5730",
+      "at": "2026-08-04T05:42:51.382Z",
+      "sourcePath": "clips/.work/bilibili-BV1zn396mEfz/understanding.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1ec6a92a-66f3-4513-b2d3-e0d9861f6c2d",
+      "at": "2026-08-04T05:42:53.329Z",
+      "sourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "f00d65d8-a135-4ca2-aada-c58c8b9dda64",
+      "at": "2026-08-04T05:42:55.765Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "4ae99eac-59be-4d28-ba27-ecfe0cb97e09",
+      "at": "2026-08-04T05:42:57.306Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d895480f-e3f7-47a8-bf65-565fc5cd78c6",
+      "at": "2026-08-04T05:54:49.433Z",
+      "sourcePath": "clips/.work/bilibili-BV1FENq6WEdZ/corrected-transcript.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6c359796-7879-438a-a2a9-a36ddf0f3550",
+      "at": "2026-08-04T05:54:55.582Z",
+      "sourcePath": "clips/.work/bilibili-BV1FENq6WEdZ/summary.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e9e6bb17-6ddd-4c06-9446-309361ea48d5",
+      "at": "2026-08-04T09:36:58.971Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "fd8780af-f3be-4dc0-9495-acf4e63d575c",
+      "at": "2026-08-04T09:37:01.635Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8e07de95-467c-4575-879e-1433f9ecc857",
+      "at": "2026-08-04T09:37:04.237Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1644e8a3-6512-46ea-a26f-fc90700636ac",
+      "at": "2026-08-04T13:39:59.611Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d9467977-462e-427a-b3f3-0b5969fbe74e",
+      "at": "2026-08-04T15:14:15.012Z",
+      "sourcePath": "clips/Matt Pocock 直播实战：从零搭建一个全新项目——2小时从想法到完整架构设计.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "57ec7a52-5ae6-4237-b929-b762f71e0ff6",
+      "at": "2026-08-04T15:14:15.505Z",
+      "sourcePath": "clips/Matt Pocock：别让你的 Agent 问你 200 个问题 —— grill skill 的 9 个误区【双语字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d57e32f3-1d0a-4a1d-b840-6f4b2b6af9e2",
+      "at": "2026-08-04T15:14:45.002Z",
+      "sourcePath": "clips/从一个案例分析为什么通用AI不能自动胜任个人的工作任务.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ac0e2da4-88eb-43a2-91f1-0bc028810842",
+      "at": "2026-08-04T15:14:53.515Z",
+      "sourcePath": "clips/深度工作法：如何每天保持 12 小时以上的专注力（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "69608cb0-9a86-4242-9a99-a6a8c845bd33",
+      "at": "2026-08-05T05:30:59.358Z",
+      "sourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "f6af42d2-4d3e-4979-ade7-d32d901035ab",
+      "at": "2026-08-05T07:48:15.207Z",
+      "sourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6a339282-048c-4922-b885-275f22dc3be7",
+      "at": "2026-08-05T07:48:30.855Z",
+      "sourcePath": "clips/无论你想改变什么，永远不要从 0% 开始（双语配音-daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b31a80fc-ca9b-4e5a-ab10-0373beac0f80",
+      "at": "2026-08-05T07:48:36.080Z",
+      "sourcePath": "clips/本体模型和AI大模型融合-抛弃传统本体论实践错误做法.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e6ba0b25-7023-47ce-aa81-8596f1834a7b",
+      "at": "2026-08-05T08:25:14.033Z",
+      "sourcePath": "clips/Codex,Antigrativy, kimi, zcode,trae, qoder, workabuddy... AI的降本增效开发量化系统.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1f4cc888-4ccc-4e35-9845-8f0fdb7ba377",
+      "at": "2026-08-05T09:03:05.908Z",
+      "sourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fc32ba1-d283-459e-9c68-343535ddc7fb",
+      "at": "2026-08-05T09:10:09.589Z",
+      "sourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1aaf18aa-ea4c-4aec-9dab-57112bef6627",
+      "at": "2026-08-05T09:22:17.775Z",
+      "sourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d4b4590b-0f32-4c45-8de2-c2785a9ce2cb",
+      "at": "2026-08-05T09:39:08.082Z",
+      "sourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1935ec51-3590-4a21-aadb-70a0c27dfb79",
+      "at": "2026-08-05T09:47:03.911Z",
+      "sourcePath": "clips/聊聊带计算机实习生的一些感受和心得.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7b77c047-8d46-45e4-a123-86e01a7a464c",
+      "at": "2026-08-05T09:51:30.649Z",
+      "sourcePath": "clips/过程极其无聊，却能让你一劳永逸地戒掉“过度思考”（双语配音-Daniel）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8c3c3bdd-2dea-431d-b889-42f021e7941e",
+      "at": "2026-08-05T10:31:13.458Z",
+      "sourcePath": "clips/当 AI 开始编排工程：一个可观测的软件工厂如何运转.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "93edd8df-7936-4905-bcb2-8bcf0eb10159",
+      "at": "2026-08-05T10:34:48.623Z",
+      "sourcePath": "clips/[双语_写作] 我如何每天无干扰写作4小时以上.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7f38ffcf-ff84-41ba-a897-a42a44201559",
+      "at": "2026-08-08T09:40:44.183Z",
+      "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "69b30ff5-9b35-445f-b2b9-283556d04d28",
+      "at": "2026-08-08T10:04:47.780Z",
+      "sourcePath": "clips/多Agent系统从Loop到Graph，从循环走向分权。.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "02d95bbf-439c-4cc1-84e5-19b202c8a34f",
+      "at": "2026-08-08T11:43:31.154Z",
+      "sourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ccb5a9a8-b2b7-4916-b54e-48a3e08b5c8d",
+      "at": "2026-08-08T11:46:38.835Z",
+      "sourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "66a74a03-3fd8-4a34-8436-edb68c6cca14",
+      "at": "2026-08-08T11:47:54.472Z",
+      "sourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6bb9a372-9a0f-4c34-b325-66ef747cce29",
+      "at": "2026-08-08T11:49:17.386Z",
+      "sourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fc9ef16-74f7-40e3-b32f-29ae8643c4a8",
+      "at": "2026-08-08T11:52:18.305Z",
+      "sourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "1e657d34-faeb-4dfc-9494-5896f0521efe",
+      "at": "2026-08-08T11:55:54.364Z",
+      "sourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "5f59bd5e-640c-4ea5-a69b-6cbba80a93fd",
+      "at": "2026-08-08T12:45:57.471Z",
+      "sourcePath": "clips/【Tech Podcast】AI没让编程变简单，它只是让困难换了种形式.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "88cddc7c-bac1-450a-907b-1248f664e180",
+      "at": "2026-08-08T12:45:57.683Z",
+      "sourcePath": "clips/Matt Skills _ 你的代码库还没准备好迎接AI？这样改才能让AI真正高效工作.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "2ed94efc-a7e6-4a1d-a7b6-c9b6d90d61c6",
+      "at": "2026-08-08T12:45:58.258Z",
+      "sourcePath": "clips/Matt Skills _ 突破AI单次会话局限！用智能体规划超大型任务的寻路神器.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9b1c28fb-5c96-4b23-b7f9-34ccfcd37e05",
+      "at": "2026-08-08T12:45:58.608Z",
+      "sourcePath": "clips/vercel-labs_agent-skills开源项目深度解析.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "90fdf633-f46c-4c4c-93bf-d5439262cfbb",
+      "at": "2026-08-08T12:45:58.885Z",
+      "sourcePath": "clips/从Loop Engineering到Graph Engineering-构建面向任务和解决方案的知识网络.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7e20be39-c970-4823-b097-af7df0e5b5c2",
+      "at": "2026-08-08T12:45:59.230Z",
+      "sourcePath": "clips/来点干货,关于代码架构与AI复审我的浅显理解.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "e4e4e49f-441f-4dfe-9c27-f27c1fa20abf",
+      "at": "2026-08-11T05:05:56.853Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7f3c79d7-b3b2-4598-81dd-07f9e9576a02",
+      "at": "2026-08-11T05:05:57.120Z",
+      "sourcePath": "clips/不要再用对话管理Codex了.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "60790633-8052-4c18-9786-c311dccb8207",
+      "at": "2026-08-11T13:57:15.662Z",
+      "sourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "69b7e70e-649c-43ce-8c87-8b6bc494b4fa",
+      "at": "2026-08-11T13:57:22.473Z",
+      "sourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "37665f2a-4573-4e55-952c-0faa25b04f7a",
+      "at": "2026-08-11T14:51:14.188Z",
+      "sourcePath": "clips/【IT老齐899.74】中间件SDK封装六个核心原则.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "808d0915-08c3-4867-9570-660500ac6d53",
+      "at": "2026-08-11T14:51:16.323Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：让 AI 像真老师一样教你任何东西 —— teach skill【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "d7bc1aa2-cc54-4f08-9358-d111a84a1a54",
+      "at": "2026-08-11T14:51:17.695Z",
+      "sourcePath": "clips/Matt Pocock 科普：为什么永远不能盲信 LLM【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "6291538c-c226-45ba-ba25-93a95e7e35d5",
+      "at": "2026-08-11T14:51:19.611Z",
+      "sourcePath": "clips/不要再用对话管理Codex了.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "bb9af336-964d-4c72-bb5b-1f8d6d94bea6",
+      "at": "2026-08-14T04:09:02.736Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "9d807cbb-27cc-4c50-9ec3-0e9e8be359eb",
+      "at": "2026-08-14T04:09:03.562Z",
+      "sourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "ec76fbd3-bc54-4284-a62d-dca5704e2a03",
+      "at": "2026-08-14T04:16:25.954Z",
+      "sourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "fc50ce0d-5924-4614-a5c4-d04ad5f4e8a5",
+      "at": "2026-08-14T04:16:26.397Z",
+      "sourcePath": "clips/一口气了解杠杆（两融）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "c4422f95-d0cb-420c-80e2-0d7cd0ae29d4",
+      "at": "2026-08-14T04:16:27.238Z",
+      "sourcePath": "clips/我是如何用AI高速学习陌生代码的.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "af9aafb1-8c5d-4f00-aa58-11ae00e6849a",
+      "at": "2026-08-14T04:17:54.330Z",
+      "sourcePath": "clips/【中文字幕】如何在人工智能时代生存.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "11ce3982-c4ce-462c-b4ee-fa43cae6c2ba",
+      "at": "2026-08-14T05:03:27.962Z",
+      "sourcePath": "clips/【中文字幕】如何在人工智能时代生存.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "8fa25ac1-9d61-4dad-af8d-ec248e8f09c5",
+      "at": "2026-08-14T05:03:28.105Z",
+      "sourcePath": "clips/【编程杂谈】为什么庸俗还原论正在毒害你的编程思想？.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "07bae895-f568-4007-8c45-aa822a523df7",
+      "at": "2026-08-14T05:03:28.300Z",
+      "sourcePath": "clips/Matt Pocock 实战教程：用一个技能拯救被AI写烂的代码库 —— improve-codebase-architecture【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "7b11cf38-354b-4a72-a049-111a2987d904",
+      "at": "2026-08-14T05:03:28.460Z",
+      "sourcePath": "clips/Matt Pocock 开源工具：Sandcastle 让 AI 自动接单写代码 —— Agent 全自动软件工厂【中英字幕】.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "a0e6be8d-70a5-4c92-bacd-45ac01b24845",
+      "at": "2026-08-14T05:03:28.609Z",
+      "sourcePath": "clips/一口气了解杠杆（两融）.md"
+    },
+    {
+      "type": "assigned",
+      "rid": "b67bb34e-8b82-4db6-897b-95b4a92f02a6",
+      "at": "2026-08-14T05:03:28.740Z",
+      "sourcePath": "clips/我是如何用AI高速学习陌生代码的.md"
+    }
+  ]
+}
