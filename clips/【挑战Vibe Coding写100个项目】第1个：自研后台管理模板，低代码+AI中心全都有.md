@@ -78,15 +78,15 @@ flowchart LR
 
 这些分类来自视频走查；“完整、稳定、安全”不是它们的同义词。
 
-![关键帧 2](assets/bilibili-BV1knuR6SEMn-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/7e/7ef61ca86e35029d5869815068a2bba497ca317e9b1eeab383c8f258fc62e843.webp)
 
 帧 2 的三栏页面设计器最能说明作者在演示什么：左侧组件、中间画布、右侧属性。但它只证明设计器界面存在，不能证明生成代码、接口联调或版本迁移质量。
 
-![关键帧 4](assets/bilibili-BV1knuR6SEMn-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/20/203bca2694c420adaa62b2a2c2046bb09fabff13bc1a396677d763270d7a33b7.webp)
 
 帧 4 补充组件交互维度，展示拖拽排序布局。静态帧不能证明拖拽结果或状态持久化，应回到视频与代码测试。
 
-![关键帧 8](assets/bilibili-BV1knuR6SEMn-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/4f/4fb338658b66d2c8c3725ee530eec5ff02373c69823cc214c4852af7547fcbb1.webp)
 
 帧 8 与浅色工作台形成主题对照，支持“有主题切换”的画面判断；卡片数据仍是演示样例。
 
@@ -612,43 +612,43 @@ flowchart TD
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1knuR6SEMn-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/ca/ca7cacf4dfebc34afae235eddb84e57f14236735909e0470991ae7afb4fcdb6e.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1knuR6SEMn-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/7e/7ef61ca86e35029d5869815068a2bba497ca317e9b1eeab383c8f258fc62e843.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1knuR6SEMn-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/b9/b935cfb73b83ba0a26e4d42697b1d312b79563911d982ffc7b10a0afd8cdb9a1.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1knuR6SEMn-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/20/203bca2694c420adaa62b2a2c2046bb09fabff13bc1a396677d763270d7a33b7.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1knuR6SEMn-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/11/11b540f693b686cb8678747ed3615a2b0292d86be8640f262fc056f338f8a3ba.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1knuR6SEMn-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/a5/a5cf5e666431f0ee31f9365c833ba5f8bda3a3a193f700c93000b6e348f33191.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1knuR6SEMn-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/ed/ed839c3351dd162e33296ea53a3919ea41fb7b3472e16dc26af8ade4cb25da10.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1knuR6SEMn-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/4f/4fb338658b66d2c8c3725ee530eec5ff02373c69823cc214c4852af7547fcbb1.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1knuR6SEMn-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/62/62d490629880c45571de4e27f46449b08c5dd712d24c0cbc6c1ad90c629b65d0.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1knuR6SEMn-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/02/021ec835490185ac264e7fac958c22f897ddc723886ece69c4a3121b915d564a.webp)
 
 ## 补充原始数据
 

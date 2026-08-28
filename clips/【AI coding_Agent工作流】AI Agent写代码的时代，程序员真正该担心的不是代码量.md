@@ -75,19 +75,19 @@ flowchart LR
 
 这张图是基于视频“代码工厂”概览与工程常识的 AI 辅助推断，不是报告直接证明的因果模型。
 
-![关键帧 1](assets/bilibili-BV1GRgc6DE7z-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/49/49f6b80cf778ae24512de78f55c3b65fbaee2181323e6dc5dbed6b8306714ae9.webp)
 
 帧 1 是报告五主题目录，适合导航；网页自述不是独立证据。
 
-![关键帧 2](assets/bilibili-BV1GRgc6DE7z-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/71/718dea0161e6b2096d34b54133003f7967d91b21f2cea6dec61028f5fd215fcb.webp)
 
 帧 2 显示 Cursor 样本中新增代码行的上升趋势，同时讲者提醒行数不是完美指标。应把它当描述性代理量，而非生产率曲线。
 
-![关键帧 4](assets/bilibili-BV1GRgc6DE7z-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/de/dee6fd919b32d09451b246e7eaffb1f3a7e77df3c7181715e2896b346630bdb1.webp)
 
 帧 4 的工具调用折线支持“会话变深/变长”的计量说法，不证明复杂任务完成得更好。
 
-![关键帧 8](assets/bilibili-BV1GRgc6DE7z-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/67/677f2c68f669eecde847e00490e89cb41b55f75924b3ac23c726b1f57528d6b1.webp)
 
 帧 8 展示 CursorBench 的成本—分数前沿；这是内部评测、版本敏感，适合做选择框架而非绝对排名。
 
@@ -1434,43 +1434,43 @@ flowchart LR
 
 ### 关键帧 1
 
-![关键帧 1](assets/bilibili-BV1GRgc6DE7z-frame-0001.webp)
+![关键帧 1](https://assets.l4p.site/media/49/49f6b80cf778ae24512de78f55c3b65fbaee2181323e6dc5dbed6b8306714ae9.webp)
 
 ### 关键帧 2
 
-![关键帧 2](assets/bilibili-BV1GRgc6DE7z-frame-0002.webp)
+![关键帧 2](https://assets.l4p.site/media/71/718dea0161e6b2096d34b54133003f7967d91b21f2cea6dec61028f5fd215fcb.webp)
 
 ### 关键帧 3
 
-![关键帧 3](assets/bilibili-BV1GRgc6DE7z-frame-0003.webp)
+![关键帧 3](https://assets.l4p.site/media/f2/f2a2ad671317b6a1c85d2cf2eba309ab6576a3dc166da26c3ae7f58068459ff6.webp)
 
 ### 关键帧 4
 
-![关键帧 4](assets/bilibili-BV1GRgc6DE7z-frame-0004.webp)
+![关键帧 4](https://assets.l4p.site/media/de/dee6fd919b32d09451b246e7eaffb1f3a7e77df3c7181715e2896b346630bdb1.webp)
 
 ### 关键帧 5
 
-![关键帧 5](assets/bilibili-BV1GRgc6DE7z-frame-0005.webp)
+![关键帧 5](https://assets.l4p.site/media/77/77054b11ce2432af27404ecc4c0fe17885a6e1913385104d01febbd7892e0a94.webp)
 
 ### 关键帧 6
 
-![关键帧 6](assets/bilibili-BV1GRgc6DE7z-frame-0006.webp)
+![关键帧 6](https://assets.l4p.site/media/62/62e6ba943252ff458f56a08ad694d97e30e25c435f6effa0b0490432631fbcdc.webp)
 
 ### 关键帧 7
 
-![关键帧 7](assets/bilibili-BV1GRgc6DE7z-frame-0007.webp)
+![关键帧 7](https://assets.l4p.site/media/96/966d7dd3539daffde5ef1258fc39adc3b0402264cac76edf87b1a5593e60ac86.webp)
 
 ### 关键帧 8
 
-![关键帧 8](assets/bilibili-BV1GRgc6DE7z-frame-0008.webp)
+![关键帧 8](https://assets.l4p.site/media/67/677f2c68f669eecde847e00490e89cb41b55f75924b3ac23c726b1f57528d6b1.webp)
 
 ### 关键帧 9
 
-![关键帧 9](assets/bilibili-BV1GRgc6DE7z-frame-0009.webp)
+![关键帧 9](https://assets.l4p.site/media/0d/0de0807ccdf00a46161ba202795f5461b3417d59f3644a0df9853ac72a1e316e.webp)
 
 ### 关键帧 10
 
-![关键帧 10](assets/bilibili-BV1GRgc6DE7z-frame-0010.webp)
+![关键帧 10](https://assets.l4p.site/media/c7/c725c76e674814fb68086aa186796c0828de5031e15661228d92775966227b5e.webp)
 
 ## 补充原始数据
 
